@@ -5,7 +5,7 @@ Create project directory and directories where to mount project code and databas
 ```
 mkdir project_dir
 cd project_dir
-git clone git@github.com:intbio/histonedb.git
+git clone https://github.com/intbio/histonedb.git
 mkdir db
 ```
 
