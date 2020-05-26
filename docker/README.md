@@ -5,9 +5,10 @@ Create project directory and directories where to mount project code and databas
 ```
 mkdir project_dir
 cd project_dir
-mkdir histonedb
+git clone git@github.com:intbio/histonedb.git
 mkdir db
 ```
+
 Then you can run HistoneDB via two ways.
 
 ## Running via docker
