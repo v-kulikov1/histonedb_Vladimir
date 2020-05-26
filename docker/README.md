@@ -17,6 +17,8 @@ Then you can run HistoneDB via two ways.
 
 ```docker run --name histdb -d -p 8080:10080 -v project_dir/histonedb:/var/www/histonedb -v project_dir/db:/var/lib/mysql intbio/histonedb:0.0.1  ```
 
+- Check the website is available at http://localhost:8080
+
 - Get into container and start db regeneration
 
 ```docker exec -it histdb bash```
