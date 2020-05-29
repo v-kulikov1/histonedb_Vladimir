@@ -6,6 +6,9 @@ Create project directory and directories where to mount project code and databas
 mkdir project_dir
 cd project_dir
 git clone https://github.com/intbio/histonedb.git
+cd histonedb
+git checkout histonedb_py36
+cd ../
 mkdir db
 ```
 
@@ -15,7 +18,7 @@ Then you can run HistoneDB via two ways.
 
 - Run as a service in docker, this will run apache and attempt to start mysqld
 
-```docker run --name histdb -d -p 8080:10080 -v project_dir/histonedb:/var/www/histonedb -v project_dir/db:/var/lib/mysql intbio/histonedb:0.0.1  ```
+```docker run --name histdb -d -p 8080:10080 -v project_dir/histonedb:/var/www/histonedb -v project_dir/db:/var/lib/mysql intbio/histonedb:0.2.0  ```
 
 - Check the website is available at http://localhost:8080
 
@@ -35,7 +38,7 @@ Then you can run HistoneDB via two ways.
 
 - Build singularity container
 
-```singularity build --sandbox cont docker://intbio/histonedb:0.0.1```
+```singularity build --sandbox cont docker://intbio/histonedb:0.2.0```
 
 - Run apache on prot 10080 and attempt to start mysqld
 
