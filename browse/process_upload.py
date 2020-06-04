@@ -135,6 +135,8 @@ def upload_hmmer(sequences, evalue=10):
 
     db = os.path.join(settings.STATIC_ROOT_AUX, "browse", "hmms", "combined_hmm.hmm")
     hmmsearch = os.path.join(os.path.dirname(sys.executable), "hmmsearch")
+    if not os.path.isdir(hmmsearch):
+       hmmsearch = os.path.join("/var/www/hmmer-3.1b2/src", "hmmsearch")
 
     results = {}
 
@@ -155,8 +157,8 @@ def upload_hmmer(sequences, evalue=10):
 
     process = subprocess.Popen([hmmsearch, "-E", str(evalue), "--notextw", db, temp_seq_path], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     output, error = process.communicate()
-    hmmerFile = io.BytesIO()
-    hmmerFile.write(output)
+    hmmerFile = io.StringIO()
+    hmmerFile.write(output.decode("utf-8"))
     hmmerFile.seek(0)
     for variant_query in SearchIO.parse(hmmerFile, "hmmer3-text"):
         variant = variant_query.id
