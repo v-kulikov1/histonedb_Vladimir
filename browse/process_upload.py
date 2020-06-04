@@ -28,7 +28,7 @@ def process_upload(sequences, format, request):
         raise InvalidFASTA("Invalid format: {}. Must be either 'file' or 'text'.".format(format))
 
     if format == "text":
-        seq_file = io.BytesIO()
+        seq_file = io.StringIO()
         seq_file.write(sequences)
         seq_file.seek(0)
         sequences = seq_file

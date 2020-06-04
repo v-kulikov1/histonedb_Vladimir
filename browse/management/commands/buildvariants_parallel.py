@@ -144,7 +144,7 @@ class Command(BaseCommand):
             # new_score, created = Score.objects.get_or_create(variant__id="H2A.X",sequence=s)
             obj = Score.objects.filter(variant__id="H2A.X",sequence=s)
             if(len(obj)>1):
-                self.log.warning('More than one score object for one variant found - stange!!!')
+                self.log.warning('More than one score object for one variant found - strange!!!')
                 self.log.warning(obj)
             if(len(obj)==0):
                 new_score, created = Score.objects.get_or_create(variant__id="H2A.X",sequence=s)
