@@ -74,7 +74,7 @@ def upload_blastp(sequences):
         db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa"), 
         evalue=0.01, outfmt=5)
     out, err = blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
-    blastFile = io.BytesIO()
+    blastFile = io.StringIO()
     blastFile.write(out)
     blastFile.seek(0)
     
