@@ -83,6 +83,10 @@ def load_hmm_results(hmmerFile, id_file):
             if(seq.reviewed==True):
               break #we do not want to alter a reviewed sequence!
             # print "Already in database", seq
+
+            if not make_blastp(str(hsp.hit.seq)):
+              break
+
             best_scores = seq.all_model_scores.filter(used_for_classification=True)
             if len(best_scores)>0:
             ##Sequence have passed the threshold for one of previous models.
@@ -224,4 +228,60 @@ def get_many_prot_seqrec_by_accession(accession_list):
             log.info("Mismatch: {} {}".format(num, len(fasta_seqrec)))
     log.info("FASTA Records downloaded: {}".format(len(fasta_seqrec)))
     return(fasta_seqrec)
+
+
+def make_blastp(sequences):
+  import os
+  import sys
+  import subprocess
+  import io
+
+  import uuid
+  from Bio import SeqIO, SearchIO
+  from Bio.Blast.Applications import NcbiblastpCommandline
+  from Bio.Blast import NCBIXML
+
+  class InvalidFASTA(Exception):
+    pass
+
+  if not isinstance(sequences, list):
+    sequences = [sequences]
+
+  blastp =  os.path.join(os.path.dirname(sys.executable), "blastp")
+  output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
+  blastp_cline = NcbiblastpCommandline(
+    cmd=blastp,
+    db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences_0.fa"),
+    evalue=0.005, outfmt=5)
+  out, err = blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
+  blastFile = io.StringIO()
+  blastFile.write(out)
+  blastFile.seek(0)
+
+  results = []
+  for i, blast_record in enumerate(NCBIXML.parse(blastFile)):
+    result = []
+    for alignment in blast_record.alignments:
+      try:
+        accession = alignment.hit_def.split("|")[1]
+      except IndexError:
+        continue
+      # print(accession)
+      result.append(alignment)
+    if not result:
+      raise InvalidFASTA("No blast hits for {}.".format(blast_record.query))
+    results.append(result)
+  if not results:
+    raise InvalidFASTA("No blast hits.")
+
+  positive_res = 0
+  for r in results[0]:
+    if r.hsps[0].score > 100.0:
+      positive_res += 1
+
+  if positive_res > 0:
+    return True
+  else:
+    return False
+
 

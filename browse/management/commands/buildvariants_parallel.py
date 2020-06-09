@@ -67,7 +67,7 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         self.log.info('=======================================================')
-        self.log.info('===               buildvariants START               ===')
+        self.log.info('===          buildvariants_parallel START           ===')
         self.log.info('=======================================================')
         self.start_time=datetime.now()
         ##If no nr file is present in the main dir, will download nr from the NCBI ftp.
@@ -112,6 +112,9 @@ class Command(BaseCommand):
             #Search inputted seuqence database using our variantt models
             self.search_in_db_parallel()
 
+        # Make BLASTDB for curated sequences
+        self.make_blastdb()
+
         #Load the sequences and classify them based on thresholds
         self.load_from_db_parallel()
         # self.extract_full_sequences_from_ncbi()
@@ -128,7 +131,7 @@ class Command(BaseCommand):
         self.log.info(' The database has %d sequences now !!!'%seq_num)
         self.log.info(' %d sequences came from automatic search !!!'%seqauto_num)
         self.log.info('=======================================================')
-        self.log.info('===       buildvariants_parallel SUCCESSFULLY finished       ===')
+        self.log.info('===   buildvariants_parallel SUCCESSFULLY finished  ===')
         self.log.info('=======================================================')
 
     def canonical2H2AX(self):
@@ -594,5 +597,22 @@ class Command(BaseCommand):
                 auto=Sequence.objects.filter(variant=v,reviewed=False).count()
 
                 f.write('%12s|%8d|%8d|%8d\n'%(v.id,tot,rev,auto))
+
+    def make_blastdb(self):
+        curated_all_fasta = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "curated_all_0.fasta")
+        with open(curated_all_fasta, "w") as f:
+            for hist_type, seed in self.get_seeds():
+                seed_aln_file = os.path.join(self.seed_directory, hist_type, seed)
+                for s in SeqIO.parse(seed_aln_file, "fasta"):
+                    s.seq = s.seq.ungap("-")
+                    SeqIO.write(s, f, "fasta")
+
+        seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences_0.fasta")
+        with open(seqs_file, "w") as seqs:
+            for s in SeqIO.parse(curated_all_fasta, "fasta"):
+                SeqIO.write(s, seqs, "fasta")
+
+        makeblastdb = os.path.join(os.path.dirname(sys.executable), "makeblastdb")
+        subprocess.call(["makeblastdb", "-in", seqs_file, "-dbtype", "prot", "-title", "HistoneDB"])
 
 
