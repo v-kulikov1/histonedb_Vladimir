@@ -113,7 +113,7 @@ class Command(BaseCommand):
             self.search_in_db_parallel()
 
         # Make BLASTDB for curated sequences
-        self.make_blastdb()
+        # self.make_blastdb()
 
         #Load the sequences and classify them based on thresholds
         self.load_from_db_parallel()
