@@ -56,7 +56,7 @@ cd /var/www
 
 ```bash db_gen.sh -mysql_db_reinit -histdb_reinit```
 or
-```bash db_gen.sh -mysql_db_reinit -histdb_reinit > log/db_gen_blast.log 2>log/db_gen_error_blast.log```
+```bash db_gen.sh -mysql_db_reinit -histdb_reinit > histonedb/log/db_gen.log 2>histonedb/log/db_gen_error.log```
 
 - To stop the container run
 
