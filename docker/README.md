@@ -55,6 +55,8 @@ cd /var/www
 - Next in ```reinit_histdb_local.sh``` adjust the database you would want to build HistoneDB from (swissprot, nr, etc.)
 
 ```bash db_gen.sh -mysql_db_reinit -histdb_reinit```
+or
+```bash db_gen.sh -mysql_db_reinit -histdb_reinit > log/db_gen_blast.log 2>log/db_gen_error_blast.log```
 
 - To stop the container run
 
