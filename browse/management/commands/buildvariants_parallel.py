@@ -8,6 +8,7 @@ import os, sys
 import re
 import io
 from tools.taxonomy_from_accessions import taxonomy_from_header, easytaxonomy_from_header, fetch_taxids, update_taxonomy
+from tools.blast_search import make_blastp, load_blast_search
 
 from Bio import SearchIO
 from Bio import SeqIO
@@ -112,13 +113,13 @@ class Command(BaseCommand):
             #Search inputted seuqence database using our variantt models
             self.search_in_db_parallel()
 
-        # Make BLASTDB for curated sequences
-        # self.make_blastdb()
-
         #Load the sequences and classify them based on thresholds
         self.load_from_db_parallel()
         # self.extract_full_sequences_from_ncbi()
         self.extract_full_sequences_parallel()
+
+        # Make BLASTDB for curated sequences and blast sequences extracted by HMMs
+        self.make_blastdb()
 
         # self.extract_full_sequences()
         self.canonical2H2AX()
@@ -352,9 +353,9 @@ class Command(BaseCommand):
             for record in SeqIO.parse(self.full_length_seqs_file+"%d"%i, "fasta"):
                 headers = record.description.split('\x01')
                 for header in headers:
-                    gi = header.split(" ")[0]
+                    accession = header.split(" ")[0]
                     try:
-                        seq = Sequence.objects.get(id=gi)
+                        seq = Sequence.objects.get(id=accession)
                         # self.log.info("Updating sequence: {}".format(seq.description))
                         seq.sequence = str(record.seq)
                         seq.save()
@@ -614,5 +615,11 @@ class Command(BaseCommand):
 
         makeblastdb = os.path.join(os.path.dirname(sys.executable), "makeblastdb")
         subprocess.call(["makeblastdb", "-in", seqs_file, "-dbtype", "prot", "-title", "HistoneDB"])
+
+    def search_and_load_blast(self):
+        # sequences = Sequence.objects.filter(reviewed=False).values_list('sequence')
+        sequences = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=False)]
+        blastp_res, error = make_blastp(sequences)
+        load_blast_search(blastp_res)
 
 

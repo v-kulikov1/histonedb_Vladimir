@@ -25,4 +25,6 @@ sudo apt install apache2-dev
 sudo apt-get install mysql-server
 sudo apt-get install libapache2-mod-wsgi-py3
 
+sudo apt install virtualenv
+
 

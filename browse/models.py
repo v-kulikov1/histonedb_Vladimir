@@ -70,12 +70,13 @@ class Sequence(models.Model):
     id       = models.CharField(max_length=255, primary_key=True) #GI, superseeded by ACCESSION
     # id       = models.CharField(max_length=255, primary_key=True,db_index=True) #GI, superseeded by ACCESSION
     variant  = models.ForeignKey(Variant, related_name="sequences")
+    variant_blast = models.ForeignKey(Variant, related_name="sequences_by_blast")
     gene     = models.IntegerField(null=True, validators=[MaxValueValidator(15),MinValueValidator(1)])
     splice   = models.IntegerField(null=True, validators=[MaxValueValidator(15),MinValueValidator(1)]) 
     taxonomy = models.ForeignKey(Taxonomy)
     header   = models.CharField(max_length=255)
     sequence = models.TextField()
-    reviewed = models.BooleanField() 
+    reviewed = models.BooleanField()
 
     # class Meta:
     #     ordering=['taxonomy__name']
@@ -168,6 +169,31 @@ class Score(models.Model):
     seqEnd                  = models.IntegerField()
     used_for_classification = models.BooleanField()
     regex                   = models.BooleanField()
+
+    def __str__(self):
+        return "<{} variant={}; score={}; above_threshold={}; used_for_classification={} >".format(self.sequence.id, self.variant.id, self.score, self.above_threshold, self.used_for_classification)
+
+    def description(self):
+        return "[Score: {}; Evalue:{}]"
+
+
+class ScoreBlast(models.Model):
+    """
+    The score class for Blast, assigns a bunch of score entries to the sequence. For each variant a score.
+    """
+    # id                      = models.IntegerField(primary_key=True)
+    # id = models.AutoField(primary_key=True)
+    sequence                = models.ForeignKey(Sequence, related_name="all_model_blast_scores")
+    variant                 = models.ForeignKey(Variant, related_name="+blast")
+    score                   = models.FloatField()
+    bitScore                = models.FloatField()
+    evalue                  = models.FloatField()
+    blastStart              = models.IntegerField()
+    blastEnd                = models.IntegerField()
+    seqStart                = models.IntegerField()
+    seqEnd                  = models.IntegerField()
+    align_length            = models.IntegerField()
+    used_for_classification = models.BooleanField()
 
     def __str__(self):
         return "<{} variant={}; score={}; above_threshold={}; used_for_classification={} >".format(self.sequence.id, self.variant.id, self.score, self.above_threshold, self.used_for_classification)

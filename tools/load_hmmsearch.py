@@ -51,7 +51,7 @@ def load_hmm_results(hmmerFile, id_file):
       #The format should be strictly the genbank format: gi|343434|fafsf gdgfdg gi|65656|534535 fdafaf
       # print("{}-----{}".format(hit.id, hit.description))
       headers = "{} {}".format(hit.id, hit.description).split('\x01')
-      load_hmmhsps(headers, hit, variant_model)
+      load_hmmhsps(headers, hit.hsps, variant_model)
 
   #Save original header to extract full sequence
   ids = open(id_file, "w")
@@ -90,9 +90,9 @@ def get_or_create_unknown_variant():
     unknown_model.save()
   return unknown_model
 
-def load_hmmhsps(headers, hit, variant_model):
+def load_hmmhsps(headers, hsps, variant_model):
   ###Iterate through high scoring fragments.
-  for hsp in hit.hsps:
+  for hsp in hsps:
     hmmthreshold_passed = hsp.bitscore >= variant_model.hmmthreshold
     ##Iterate through headers of identical sequences.
     for header in headers:
@@ -160,6 +160,7 @@ def add_sequence(accession, variant_model, taxonomy, header, sequence):
   seq = Sequence(
     id       = accession,
     variant  = variant_model,
+    variant_blast  = None,
     gene     = None,
     splice   = None,
     taxonomy = taxonomy,
@@ -230,59 +231,5 @@ def get_many_prot_seqrec_by_accession(accession_list):
     log.info("FASTA Records downloaded: {}".format(len(fasta_seqrec)))
     return(fasta_seqrec)
 
-
-def make_blastp(sequences):
-  import os
-  import sys
-  import subprocess
-  import io
-
-  import uuid
-  from Bio import SeqIO, SearchIO
-  from Bio.Blast.Applications import NcbiblastpCommandline
-  from Bio.Blast import NCBIXML
-
-  class InvalidFASTA(Exception):
-    pass
-
-  if not isinstance(sequences, list):
-    sequences = [sequences]
-
-  blastp =  os.path.join(os.path.dirname(sys.executable), "blastp")
-  output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
-  blastp_cline = NcbiblastpCommandline(
-    cmd=blastp,
-    db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences_0.fa"),
-    evalue=0.005, outfmt=5)
-  out, err = blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
-  blastFile = io.StringIO()
-  blastFile.write(out)
-  blastFile.seek(0)
-
-  results = []
-  for i, blast_record in enumerate(NCBIXML.parse(blastFile)):
-    result = []
-    for alignment in blast_record.alignments:
-      try:
-        accession = alignment.hit_def.split("|")[1]
-      except IndexError:
-        continue
-      # print(accession)
-      result.append(alignment)
-    if not result:
-      raise InvalidFASTA("No blast hits for {}.".format(blast_record.query))
-    results.append(result)
-  if not results:
-    raise InvalidFASTA("No blast hits.")
-
-  positive_res = 0
-  for r in results[0]:
-    if r.hsps[0].score > 100.0:
-      positive_res += 1
-
-  if positive_res > 0:
-    return True
-  else:
-    return False
 
 
