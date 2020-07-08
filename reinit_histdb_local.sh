@@ -23,11 +23,14 @@ python manage.py buildtaxonomytoc
 
 # python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
 python manage.py buildvariants_parallel -f --db nr
+#python manage.py buildvariants_parallel -f --db nr_small_50seq
 # python manage.py buildvariants_parallel -f --db swissprot # this should work reasonably fast
+python manage.py buildblastdb -f
+python manage.py blastvariants -f
 
 python manage.py buildtrees -f
 python manage.py buildsunburst -f
-python manage.py buildblastdb -f
+#python manage.py buildblastdb -f
 python manage.py buildvariantinfo -f
 python manage.py buildseedinfo -f
 python manage.py shell < tools/export_data.py # exporting data

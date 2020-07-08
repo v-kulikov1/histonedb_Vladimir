@@ -65,12 +65,27 @@ class Command(BaseCommand):
             action="store_true",
             help="Adjust threshold")
 
+        parser.add_argument(
+            "--adjust_hmmer_procs",
+            default=20,
+            action="store_true",
+            help="Adjust hmmer_procs")
+
+        parser.add_argument(
+            "--test",
+            default=False,
+            action="store_true",
+            help="Use this option for test running if you need a small version of specified database")
+
 
     def handle(self, *args, **options):
         self.log.info('=======================================================')
         self.log.info('===          buildvariants_parallel START           ===')
         self.log.info('=======================================================')
         self.start_time=datetime.now()
+        ## If hmmer_procs in options change the value
+        if 'adjust_hmmer_procs' in options:
+            HMMER_PROCS=options["adjust_hmmer_procs"]
         ##If no nr file is present in the main dir, will download nr from the NCBI ftp.
         self.db_file=options['db_file']
         if self.db_file == "nr":
@@ -117,9 +132,6 @@ class Command(BaseCommand):
         self.load_from_db_parallel()
         # self.extract_full_sequences_from_ncbi()
         self.extract_full_sequences_parallel()
-
-        # Make BLASTDB for curated sequences and blast sequences extracted by HMMs
-        self.make_blastdb()
 
         # self.extract_full_sequences()
         self.canonical2H2AX()
@@ -247,7 +259,7 @@ class Command(BaseCommand):
     def search_in_db_parallel(self):
         return self.search_parallel(hmms_db=self.combined_hmm_file, out=self.db_search_results_file, sequences=self.db_file)
 
-    def search_parallel(self, hmms_db, out, sequences=None, E=10):
+    def search_parallel_test_for_small(self, hmms_db, out, sequences=None, E=10):
         """Use HMMs to search the nr database"""
         self.log.info("Searching HMMs in parallel...")
         # print >> self.stdout, "Searching HMMs..."
@@ -263,15 +275,26 @@ class Command(BaseCommand):
         os.system('split --bytes=%d --numeric-suffixes=1 %s db_split/split'%(split_size,sequences))
         #We need to heal broken fasta records
         for i in range(1,HMMER_PROCS+1):
-            for k in range(1,10000):
-                outsp=subprocess.check_output(['head','-n','%d'%k,'db_split/split%02d'%i])
-                if(outsp.split(b'\n')[-2].decode("utf-8")[0]=='>'):
-                    print(k)
-                    break
-            if(k>1):
-                os.system('head -n %d db_split/split%02d >>db_split/split%02d '%(k-1,i,i-1))
-                os.system('tail -n +%d db_split/split%02d> db_split/temp'%(k,i))
-                os.system('mv db_split/temp db_split/split%02d'%i)
+            outsp = subprocess.check_output(['head', '-n', '1', 'db_split/split%02d' % i])
+            if outsp.split(b'\n')[0].decode("utf-8")[0] != '>':
+                if len(outsp.split(b'\n')) > 1:
+                    for k in range(2,10000):
+                        if(outsp.split(b'\n')[-2].decode("utf-8")[0]=='>'):
+                            print(k)
+                            break
+                    os.system('head -n %d db_split/split%02d >>db_split/split%02d ' % (k - 1, i, i - 1))
+                    os.system('tail -n +%d db_split/split%02d> db_split/temp' % (k, i))
+                    os.system('mv db_split/temp db_split/split%02d' % i)
+
+                else:
+                    for kp in range(1, 10000):
+                        outsp_prev = subprocess.check_output(['tail', '-n', '%d' % kp, 'db_split/split%02d' % i - 1])
+                        if outsp_prev.split(b'\n')[-kp].decode("utf-8")[0] == '>':
+                            break
+                    os.system('tail -n %d db_split/split%02d> db_split/temp' % (kp, i - 1))
+                    os.system('head -n %d db_split/split%02d >>db_split/temp' % (1, i))
+                    os.system('mv db_split/temp db_split/split%02d' % i)
+                    os.system('tail -n %d db_split/split%02d> db_split/temp' % (kp, i - 1))
         
         self.log.info("Launching %d processes"%HMMER_PROCS)
         #!!!!!!!!!!!!!!
@@ -284,6 +307,44 @@ class Command(BaseCommand):
         for cp in child_procs:
             cp.wait()
 
+    def search_parallel(self, hmms_db, out, sequences=None, E=10):
+        """Use HMMs to search the nr database"""
+        self.log.info("Searching HMMs in parallel...")
+        # print >> self.stdout, "Searching HMMs..."
+
+        if sequences is None:
+            sequences = self.db_file
+        self.log.info("Splitting database file into %d parts" % HMMER_PROCS)
+        # !!!!!!!!!!!!!!!
+        os.system('mkdir db_split')
+        # This is tricky tricky to make it fast
+        size = os.path.getsize(sequences)
+        split_size = int(size / HMMER_PROCS) + 1
+        os.system('split --bytes=%d --numeric-suffixes=1 %s db_split/split' % (split_size, sequences))
+        # We need to heal broken fasta records
+        for i in range(1, HMMER_PROCS + 1):
+            for k in range(1, 10000):
+                outsp = subprocess.check_output(['head', '-n', '%d' % k, 'db_split/split%02d' % i])
+                if (outsp.split(b'\n')[-2].decode("utf-8")[0] == '>'):
+                    print(k)
+                    break
+            if (k > 1):
+                os.system('head -n %d db_split/split%02d >>db_split/split%02d ' % (k - 1, i, i - 1))
+                os.system('tail -n +%d db_split/split%02d> db_split/temp' % (k, i))
+                os.system('mv db_split/temp db_split/split%02d' % i)
+
+        self.log.info("Launching %d processes" % HMMER_PROCS)
+        # !!!!!!!!!!!!!!
+        child_procs = []
+        for i in range(HMMER_PROCS):
+            outp = out + "%d" % i
+            self.log.info(" ".join(["nice", "hmmsearch", "-o", outp, '--cpu', '2', "-E", str(E), "--notextw", hmms_db,
+                                    "db_split/split%02d" % (i + 1)]))
+            p = subprocess.Popen(["nice", "hmmsearch", "-o", outp, '--cpu', '2', "-E", str(E), "--notextw", hmms_db,
+                                  "db_split/split%02d" % (i + 1)])
+            child_procs.append(p)
+        for cp in child_procs:
+            cp.wait()
 
     def extract_full_sequences(self, sequences=None):
         """Create database to extract full length sequences"""
@@ -472,6 +533,7 @@ class Command(BaseCommand):
                 yield hist_type, seed
 
     def estimate_thresholds(self, specificity=0.95):
+
         """
         Estimate HMM threshold that we will use for variant classification.
         Construct two sets for every variant:
@@ -598,28 +660,5 @@ class Command(BaseCommand):
                 auto=Sequence.objects.filter(variant=v,reviewed=False).count()
 
                 f.write('%12s|%8d|%8d|%8d\n'%(v.id,tot,rev,auto))
-
-    def make_blastdb(self):
-        curated_all_fasta = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "curated_all_0.fasta")
-        with open(curated_all_fasta, "w") as f:
-            for hist_type, seed in self.get_seeds():
-                seed_aln_file = os.path.join(self.seed_directory, hist_type, seed)
-                for s in SeqIO.parse(seed_aln_file, "fasta"):
-                    s.seq = s.seq.ungap("-")
-                    SeqIO.write(s, f, "fasta")
-
-        seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences_0.fasta")
-        with open(seqs_file, "w") as seqs:
-            for s in SeqIO.parse(curated_all_fasta, "fasta"):
-                SeqIO.write(s, seqs, "fasta")
-
-        makeblastdb = os.path.join(os.path.dirname(sys.executable), "makeblastdb")
-        subprocess.call(["makeblastdb", "-in", seqs_file, "-dbtype", "prot", "-title", "HistoneDB"])
-
-    def search_and_load_blast(self):
-        # sequences = Sequence.objects.filter(reviewed=False).values_list('sequence')
-        sequences = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=False)]
-        blastp_res, error = make_blastp(sequences)
-        load_blast_search(blastp_res)
 
 

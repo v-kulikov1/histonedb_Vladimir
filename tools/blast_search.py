@@ -24,6 +24,7 @@ from tools.taxonomy_from_accessions import taxonomy_from_header, easytaxonomy_fr
 
 
 from tqdm import tqdm
+import pickle
 
 from browse.models import *
 from djangophylocore.models import Taxonomy
@@ -33,7 +34,7 @@ class InvalidFASTA(Exception):
 
 log = logging.getLogger(__name__)
 
-def make_blastp(sequences):
+def make_blastp(sequences, save_to):
 
   if not isinstance(sequences, list):
     sequences = [sequences]
@@ -42,44 +43,54 @@ def make_blastp(sequences):
   output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
   blastp_cline = NcbiblastpCommandline(
     cmd=blastp,
-    db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences_0.fa"),
+    db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa"),
     evalue=0.005, outfmt=5)
-  return blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
+  result, error = blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
 
-def load_blast_search(blastp_result):
-  blastFile = io.StringIO()
-  blastFile.write(blastp_result)
-  blastFile.seek(0)
+  with open(save_to, 'w') as f:
+    f.write(result)
+
+  log.info('Blast results saved to {}'.format(save_to))
+  # if save_to:
+  #   with open(save_to, 'wb') as f:
+  #     pickle.dump(result, f)
+  # return result
+
+def load_blast_search(blastFile_name):
+  # blastFile = io.StringIO()
+  # blastFile.write(blastp_result)
+  # blastFile.seek(0)
+  blastFile = open(blastFile_name)
+  # log.info('Loaded Blast results from {}'.format(blastFile_name))
 
   for i, blast_record in enumerate(NCBIXML.parse(blastFile)):
+    accession = blast_record.query.split('|')[0]
+    # accession = blast_record.query.split("|")[1]
+    # log.info('Loading {}: {}'.format(accession, blast_record.query))
     if len(blast_record.alignments) == 0:
       raise InvalidFASTA("No blast hits for {}.".format(blast_record.query))
     for alignment in blast_record.alignments:
       variant_model = Variant.objects.get(id=alignment.hit_def.split("|")[2])
-      load_blasthsps(blast_record.query, alignment.hsps, variant_model)
+      # log.info('Alignment of variant {}'.format(alignment.hit_def))
+      load_blasthsps(accession, blast_record.query, alignment.hsps, variant_model)
 
-def add_sequence(accession, variant_model, taxonomy, header, sequence):
+    # if i%10000==0:
+    #   log.info('Loaded {} BlastRecords'.format(i))
+
+def add_sequence(accession, variant_model):
   """Add sequence into the database, autfilling empty Parameters"""
-  seq = Sequence(
-    id             = accession,
-    variant        = None,
-    variant_blast  = variant_model,
-    gene           = None,
-    splice         = None,
-    taxonomy       = taxonomy,
-    header         = header[:250],
-    sequence       = str(sequence).replace("-", "").upper(),
-    reviewed       = False,
+  seq = SequenceBlast(
+    accession      = accession,
+    variant        = variant_model,
     )
   seq.save()
   return seq
 
-def add_score(seq, variant_model, hsp, best=False):
+def add_score(seq_blast, variant_model, hsp, best=False):
   """Add score for a given sequence"""
-  # score_num = Score.objects.count()+1
   score = ScoreBlast(
     # id                      = score_num,
-    sequence                = seq,
+    sequence                = seq_blast,
     variant                 = variant_model,
     score                   = hsp.score,
     bitScore                = hsp.bits,
@@ -93,57 +104,50 @@ def add_score(seq, variant_model, hsp, best=False):
     )
   score.save()
 
-def load_blasthsps(header, hsps, variant_model):
+def load_blasthsps(accession, header, hsps, variant_model):
   ###Iterate through high scoring fragments.
   for hsp in hsps:
     # hmmthreshold_passed = hsp.score >= 100.0
-    accession = header.split('|')[2]
-    # accession = header.split("|")[1]
-    seqs = Sequence.objects.filter(id=accession)
-    if len(seqs) > 0:
-      # Sequence already exists. Compare bit scores, if loaded bit score is
-      # greater than current, reassign variant and update scores. Else, append score
-      seq = seqs.first()
-      if (seq.reviewed == True):
-        continue  # we do not want to alter a reviewed sequence!
-      # print "Already in database", seq
 
-      best_scores = seq.all_model_scores.filter(used_for_classification=True)
+    try:
+      # seq = Sequence.objects.filter(id=accession).first()
+      seqs_blast = SequenceBlast.objects.filter(accession=accession)
+    except AttributeError:
+      log.info('AttributeError: BlastRecord for {} with full header {}'.format(accession, header))
+      accession = '|'.join(header.split('|')[:3])
+      log.info('New accession {} got'.format(accession))
+      # seq = Sequence.objects.filter(id=accession).first()
+      seqs_blast = SequenceBlast.objects.filter(accession=accession)
+
+    if len(seqs_blast) > 0:
+      seq_blast = seqs_blast.first()
+      best_scores = seq_blast.all_model_scores.filter(used_for_classification=True)
       if len(best_scores) > 0:
         ##Sequence have passed the threshold for one of previous models.
         best_score = best_scores.first()  # Why we extract first?
-        if hsp.bitscore > best_score.score:
+        if hsp.score > best_score.score:
           # best scoring
-          seq.variant_blast = variant_model
-          seq.sequence = str(hsp.query)
-          best_score_2 = Score.objects.get(id=best_score.id)
+          seq_blast.variant = variant_model
+          best_score_2 = ScoreBlast.objects.get(id=best_score.id)
           best_score_2.used_for_classification = False
           best_score_2.save()
-          seq.save()
+          seq_blast.save()
           # print "UPDATED VARIANT"
-          add_score(seq, variant_model, hsp, best=True)
+          add_score(seq_blast, variant_model, hsp, best=True)
         else:
-          add_score(seq, variant_model, hsp, best=False)
+          add_score(seq_blast, variant_model, hsp, best=False)
       else:
         # No previous model passed the threshold, it is the first
-        seq.variant_blast = variant_model
-        seq.sequence = str(hsp.query)
-        seq.save()
-        add_score(seq, variant_model, hsp, best=True)
+        seq_blast.variant = variant_model
+        seq_blast.save()
+        add_score(seq_blast, variant_model, hsp, best=True)
     else:
+      # log.error("New Sequence found for {}".format(header))
       ##A new sequence is found that passed treshold.
-      taxonomy = taxonomy_from_header(header, accession)
-      sequence = Seq(str(hsp.query))
       try:
-        seq = add_sequence(
+        seq_blast = add_sequence(
           accession,
-          variant_model,
-          taxonomy,
-          header,
-          sequence)
-        add_score(seq, variant_model, hsp, best=True)
+          variant_model)
+        add_score(seq_blast, variant_model, hsp, best=True)
       except IntegrityError as e:
-        log.error("Error adding sequence {}".format(seq))
-        global already_exists
-        already_exists.append(accession)
-        continue
+        log.error("Error adding sequence {}".format(seq_blast))

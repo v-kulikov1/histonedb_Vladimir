@@ -160,7 +160,6 @@ def add_sequence(accession, variant_model, taxonomy, header, sequence):
   seq = Sequence(
     id       = accession,
     variant  = variant_model,
-    variant_blast  = None,
     gene     = None,
     splice   = None,
     taxonomy = taxonomy,

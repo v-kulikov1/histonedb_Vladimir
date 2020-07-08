@@ -70,7 +70,7 @@ class Sequence(models.Model):
     id       = models.CharField(max_length=255, primary_key=True) #GI, superseeded by ACCESSION
     # id       = models.CharField(max_length=255, primary_key=True,db_index=True) #GI, superseeded by ACCESSION
     variant  = models.ForeignKey(Variant, related_name="sequences")
-    variant_blast = models.ForeignKey(Variant, related_name="sequences_by_blast")
+    # variant_blast = models.ForeignKey(Variant, related_name="sequences_by_blast", blank=True, null=True)
     gene     = models.IntegerField(null=True, validators=[MaxValueValidator(15),MinValueValidator(1)])
     splice   = models.IntegerField(null=True, validators=[MaxValueValidator(15),MinValueValidator(1)]) 
     taxonomy = models.ForeignKey(Taxonomy)
@@ -177,16 +177,20 @@ class Score(models.Model):
         return "[Score: {}; Evalue:{}]"
 
 
+class SequenceBlast(models.Model):
+    accession = models.CharField(max_length=255, primary_key=True)
+    variant   = models.ForeignKey(Variant, related_name="sequences_blast")
+
 class ScoreBlast(models.Model):
     """
     The score class for Blast, assigns a bunch of score entries to the sequence. For each variant a score.
     """
     # id                      = models.IntegerField(primary_key=True)
     # id = models.AutoField(primary_key=True)
-    sequence                = models.ForeignKey(Sequence, related_name="all_model_blast_scores")
-    variant                 = models.ForeignKey(Variant, related_name="+blast")
+    sequence                = models.ForeignKey(SequenceBlast, related_name="all_model_scores")
+    variant                 = models.ForeignKey(Variant, related_name="b+")
     score                   = models.FloatField()
-    bitScore                = models.FloatField()
+    bitScore                = models.FloatField(blank=True, null=True)
     evalue                  = models.FloatField()
     blastStart              = models.IntegerField()
     blastEnd                = models.IntegerField()
