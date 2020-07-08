@@ -17,6 +17,8 @@ from tqdm import tqdm
 import logging
 from datetime import date, datetime
 
+from cProfile import Profile
+
 HMMER_PROCS=20
 
 #This command is the main one in creating the histone database system from seed alignments
@@ -77,8 +79,14 @@ class Command(BaseCommand):
             action="store_true",
             help="Use this option for test running if you need a small version of specified database")
 
+        parser.add_argument(
+            "--profile",
+            default=False,
+            action="store_true",
+            help="Profile the command")
 
-    def handle(self, *args, **options):
+
+    def _handle(self, *args, **options):
         self.log.info('=======================================================')
         self.log.info('===          buildvariants_parallel START           ===')
         self.log.info('=======================================================')
@@ -146,6 +154,14 @@ class Command(BaseCommand):
         self.log.info('=======================================================')
         self.log.info('===   buildvariants_parallel SUCCESSFULLY finished  ===')
         self.log.info('=======================================================')
+
+    def handle(self, *args, **options):
+        if options['profile']:
+            profiler = Profile()
+            profiler.runcall(self._handle, *args, **options)
+            profiler.print_stats()
+        else:
+            self._handle(*args, **options)
 
     def canonical2H2AX(self):
         """Fix an issue where the canonical variant takes over sequence from H2A.X. 
