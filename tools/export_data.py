@@ -16,16 +16,20 @@ import os
 #     for s in Score.objects.all():
 #         f.write("%s,%s,%s,%s\n"%(s.sequence.id,s.variant,s.score,s.used_for_classification))
 #
-# with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('scores_blast')),'w') as f:
-#     f.write("accession,blast_model,score,used_for_classification\n")
-#     for s in ScoreBlast.objects.all():
-#         f.write("%s,%s,%s,%s\n"%(s.sequence.id,s.variant,s.score,s.used_for_classification))
+with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('scores_blast')),'w') as f:
+    f.write("accession,blast_model,score,bit_score,evalue,hsp_length,used_for_classification,hit_accession,sequence,hit_sequence,match\n")
+    for s in ScoreBlast.objects.all():
+        sequence_obj = Sequence.objects.get(id=s.sequence.id)
+        # print(s.hit_accession)
+        hit_seq = Sequence.objects.get(id=s.hit_accession)
+        f.write("%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(s.sequence.id,s.variant,s.score,s.bitScore,s.evalue,s.align_length,
+                                                   s.used_for_classification,s.hit_accession,sequence_obj.sequence,hit_seq.sequence,s.match))
 
 with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('seqs_with_blast')),'w') as f:
     f.write("accession,hist_type,hist_var_hmm,hist_var_blast,taxid,curated,score_hmm,score_blast,bitscore_blast\n")
     for seq in Sequence.objects.all():
         try:
-            seq_blast = SequenceBlast.objects.filter(accession=seq.id).first()
+            seq_blast = SequenceBlast.objects.get(id=seq.id)
             hist_var_blast = seq_blast.variant.id
             score_obj = seq_blast.all_model_scores.filter(used_for_classification=True).first()
             score_blast = score_obj.score

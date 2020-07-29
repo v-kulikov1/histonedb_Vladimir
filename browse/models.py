@@ -178,7 +178,7 @@ class Score(models.Model):
 
 
 class SequenceBlast(models.Model):
-    accession = models.CharField(max_length=255, primary_key=True)
+    id = models.CharField(max_length=255, primary_key=True)
     variant   = models.ForeignKey(Variant, related_name="sequences_blast")
 
 class ScoreBlast(models.Model):
@@ -197,6 +197,8 @@ class ScoreBlast(models.Model):
     seqStart                = models.IntegerField()
     seqEnd                  = models.IntegerField()
     align_length            = models.IntegerField()
+    match                   = models.TextField(default='')
+    hit_accession           = models.CharField(max_length=255, default='')
     used_for_classification = models.BooleanField()
 
     def __str__(self):

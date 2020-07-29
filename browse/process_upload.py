@@ -32,6 +32,13 @@ def process_upload(sequences, format, request):
         seq_file.write(sequences)
         seq_file.seek(0)
         sequences = seq_file
+    if format == 'file':
+        seq_file = io.StringIO()
+        seq_file.write(sequences.read().decode('utf-8'))
+        seq_file.seek(0)
+        sequences = seq_file
+        # sequences = sequences.content_type
+        # print(sequences)
 
     sequences = SeqIO.parse(sequences, "fasta", IUPAC.ExtendedIUPACProtein())
 
@@ -62,6 +69,76 @@ def process_upload(sequences, format, request):
     }]
 
     return result
+
+def process_upload_blast(sequences, format, request):
+    if format not in ["file", "text"]:
+        raise InvalidFASTA("Invalid format: {}. Must be either 'file' or 'text'.".format(format))
+
+    if format == "text":
+        seq_file = io.StringIO()
+        seq_file.write(sequences)
+        seq_file.seek(0)
+        sequences = seq_file
+    if format == 'file':
+        seq_file = io.StringIO()
+        seq_file.write(sequences.read().decode('utf-8'))
+        seq_file.seek(0)
+        sequences = seq_file
+
+    sequences = SeqIO.parse(sequences, "fasta", IUPAC.ExtendedIUPACProtein())
+
+    # try:
+    #     sequence = next(sequences)
+    # except StopIteration:
+    #     raise InvalidFASTA("No sequences parsed.")
+    #
+    # if not Alphabet._verify_alphabet(sequence.seq):
+    #     raise InvalidFASTA("Sequence {} is not a protein.".format(sequence.id))
+
+    results = []
+    request.session["uploaded_sequences"] = {}
+    for sequence in sequences:
+        if not Alphabet._verify_alphabet(sequence.seq):
+            raise InvalidFASTA("Sequence {} is not a protein.".format(sequence.id))
+
+        result = [str(sequence.id).replace('|', '_')]
+        result.append(upload_blastp(sequence)[0])
+        result.append(result[-1][0]["id"])
+        result.append(result[-2][0]["variant"])
+        # print(result[-1])
+
+        results.append(result)
+
+        request.session["uploaded_sequences"][result[-2]+'-'+str(sequence.id).replace('|', '_')] = [{
+            "id":"QUERY", #sequence.id,
+            # "variant":classifications[0][1],
+            "sequence":str(sequence.seq),
+            "taxonomy":result[-3][0]["taxonomy"]
+        }]
+
+    if len(results) < 1: raise InvalidFASTA("No sequences parsed.")
+
+    # try:
+    #     sequence = next(sequences)
+    # except StopIteration:
+    #     raise InvalidFASTA("No sequences parsed.")
+    #
+    # if not Alphabet._verify_alphabet(sequence.seq):
+    #     raise InvalidFASTA("Sequence {} is not a protein.".format(sequence.id))
+    #
+    # result = [str(sequence.id)]
+    # result.append(upload_blastp(sequence)[0])
+    # result.append(result[-1][0]["id"])
+    # result.append(result[-2][0]["variant"])
+    #
+    # request.session["uploaded_sequences"] = [{
+    #     "id":"QUERY", #sequence.id,
+    #     # "variant":classifications[0][1],
+    #     "sequence":str(sequence.seq),
+    #     "taxonomy":result[-3][0]["taxonomy"]
+    # }]
+
+    return results
 
 def upload_blastp(sequences):
     if not isinstance(sequences, list):

@@ -12,12 +12,13 @@ import pickle
 
 from cProfile import Profile
 
-BLAST_PROCS=200
+BLAST_PROCS=100
 
 class Command(BaseCommand):
     help = 'Blast sequences from HistoneDB and load classification data'
     seed_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "seeds")
     blast_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "search", "blast_search.out")
+    blast_curated_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "search", "blast_search_curated.out")
     # Logging info
     logging.basicConfig(filename='log/blastvariants.log',
                         format='%(asctime)s %(name)s %(levelname)-8s %(message)s',
@@ -31,7 +32,15 @@ class Command(BaseCommand):
             "--force",
             default=False,
             action="store_true",
-            help="Force the regeneration of HMM from seeds, HUMMER search in db_file, Test models and loading of results to database")
+            help="Force the regeneration of BLAST from Database, BLASTP search in db_file and loading of results to database")
+
+        parser.add_argument(
+            "-t",
+            "--test",
+            default=False,
+            action="store_true",
+            help="Test algorithm of BLAST classification on curated")
+
         parser.add_argument(
             "--profile",
             default=False,
@@ -48,15 +57,18 @@ class Command(BaseCommand):
             SequenceBlast.objects.all().delete()
             ScoreBlast.objects.all().delete()
 
-        self.load_curated()
+        if options["test"]:
+            self.test_curated()
+        else:
+            self.load_curated()
 
-        # Make BLASTDB for curated sequences and blast sequences extracted by HMMs
-        # self.make_blastdb()
-        # if options["force"] or not os.path.isfile(self.blast_file + "0"):
-        if not os.path.isfile(self.blast_file + "0"):
-            self.search_blast()
+            # Make BLASTDB for curated sequences and blast sequences extracted by HMMs
+            # self.make_blastdb()
+            # if options["force"] or not os.path.isfile(self.blast_file + "0"):
+            if not os.path.isfile(self.blast_file + "0"):
+                self.search_blast()
 
-        self.load_in_db()
+            self.load_in_db()
 
         self.log.info('=======================================================')
         self.log.info('===       blastvariants SUCCESSFULLY finished       ===')
@@ -74,7 +86,7 @@ class Command(BaseCommand):
         self.log.info('Loading curated...')
         for s in Sequence.objects.filter(reviewed=True):
             seq = SequenceBlast(
-                accession=s.id,
+                id=s.id,
                 variant=s.variant,
             )
             seq.save()
@@ -107,6 +119,7 @@ class Command(BaseCommand):
         self.log.info("Running BLASTP for {} sequences...".format(len(sequences_all)))
         split_count = int(len(sequences_all)/BLAST_PROCS)
 
+        # for i in [28]:
         for i in range(BLAST_PROCS+1):
             sequences = sequences_all[split_count * i:split_count * i + split_count]
             save_to = self.blast_file + "%d" % i
@@ -115,10 +128,22 @@ class Command(BaseCommand):
 
     def load_in_db(self):
         self.log.info("Loading BLASTP data into HistoneDB...")
-        # for i in range(BLAST_PROCS + 1):
-        for i in range(2):
+        # for i in [28]:
+        for i in range(BLAST_PROCS+1):
             load_blast_search(self.blast_file + "%d" % i)
             # self.log.info('Loaded {} BlastRecords'.format(len(sequences)))
             self.log.info('Loaded {}/{} BlastRecords'.format(i,BLAST_PROCS))
+
+    def test_curated(self):
+        sequences = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=True)]
+        self.log.info("Running BLASTP for {} curated sequences...".format(len(sequences)))
+
+        save_to = self.blast_curated_file
+        self.log.info('Starting Blast sequences for {}'.format(len(sequences)))
+        make_blastp(sequences, save_to=save_to)
+
+        self.log.info("Loading BLASTP data into HistoneDB...")
+        load_blast_search(self.blast_curated_file)
+        self.log.info('Loaded {} BlastRecords'.format(len(sequences)))
 
 
