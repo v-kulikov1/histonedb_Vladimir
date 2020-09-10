@@ -3,7 +3,7 @@ from django.conf import settings
 from browse.models import Sequence, SequenceBlast, ScoreBlast
 import subprocess
 import os, sys
-from tools.blast_search import make_blastp, load_blast_search
+from tools.blast_search import make_blastp, load_blast_search, load_blast_search_diagnosis
 
 from Bio import SeqIO
 
@@ -64,8 +64,8 @@ class Command(BaseCommand):
 
             # Make BLASTDB for curated sequences and blast sequences extracted by HMMs
             # self.make_blastdb()
-            # if options["force"] or not os.path.isfile(self.blast_file + "0"):
-            if not os.path.isfile(self.blast_file + "0"):
+            if options["force"] or not os.path.isfile(self.blast_file + "0"):
+            # if not os.path.isfile(self.blast_file + "0"):
                 self.search_blast()
 
             self.load_in_db()
@@ -130,8 +130,7 @@ class Command(BaseCommand):
         self.log.info("Loading BLASTP data into HistoneDB...")
         # for i in [28]:
         for i in range(BLAST_PROCS+1):
-            load_blast_search(self.blast_file + "%d" % i)
-            # self.log.info('Loaded {} BlastRecords'.format(len(sequences)))
+            load_blast_search_diagnosis(self.blast_file + "%d" % i)
             self.log.info('Loaded {}/{} BlastRecords'.format(i,BLAST_PROCS))
 
     def test_curated(self):

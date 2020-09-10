@@ -76,7 +76,7 @@ def load_blast_search_diagnosis(blastFile_name):
     for alignment in blast_record.alignments:
       variant_model = Variant.objects.get(id=alignment.hit_def.split("|")[2])
       # log.info('Alignment of variant {}'.format(alignment.hit_def))
-      load_blasthsps(accession, blast_record.query, alignment.hsps, variant_model, alignment.hit_def.split("|")[1])
+      load_blasthsps_diagnosis(accession, blast_record.query, alignment.hsps, variant_model, alignment.hit_def.split("|")[0])
 
     # if i%10000==0:
     #   log.info('Loaded {} BlastRecords'.format(i))

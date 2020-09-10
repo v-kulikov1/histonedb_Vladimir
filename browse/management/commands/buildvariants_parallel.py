@@ -560,6 +560,19 @@ class Command(BaseCommand):
         for hist_type_pos, seed_pos in self.get_seeds():
             variant_name = seed_pos[:-6]
 
+            # if "generic" in variant_name:
+            #     # Let's put the parameter data to the database,
+            #     # We can set hist_type directly by ID, which is hist_type_pos in this case - because it is the primary key in Histone class.
+            #     variant_model, create = Variant.objects.get_or_create(id=variant_name,
+            #                                                           hist_type_id=hist_type_pos)
+            #     if create:
+            #         self.log.info("Created {} variant model in database".format(variant_model.id))
+            #     # self.log.info("Updating thresholds for {}".format(variant_model.id))
+            #     # variant_model.hmmthreshold = None
+            #     # variant_model.aucroc = None
+            #     # variant_model.save()
+            #     continue
+
             #Getting all paths right
             positive_seed_aln_file = os.path.join(self.seed_directory, hist_type_pos, seed_pos)
             hmm_file = os.path.join(self.hmm_directory, hist_type_pos, "{}.hmm".format(variant_name))
@@ -605,7 +618,7 @@ class Command(BaseCommand):
 
             #Let's put the parameter data to the database,
             #We can set hist_type directly by ID, which is hist_type_pos in this case - because it is the primary key in Histone class.
-            variant_model, create = Variant.objects.get_or_create(id=variant_name,hist_type_id=hist_type_pos) #,hist_type_id=hist_type_pos)
+            variant_model, create = Variant.objects.get_or_create(id=variant_name,hist_type_id=hist_type_pos)
             if create:
                 self.log.info("Created {} variant model in database".format(variant_model.id))
             self.log.info("Updating thresholds for {}".format(variant_model.id))

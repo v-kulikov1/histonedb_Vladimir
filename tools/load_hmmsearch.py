@@ -137,7 +137,7 @@ def load_hmmhsps(headers, hsps, variant_model):
           seq.sequence = str(hsp.hit.seq)
           seq.save()
           add_score(seq, variant_model, hsp, best=True)
-      elif hmmthreshold_passed:
+      else:
         ##A new sequence is found that passed treshold.
         taxonomy = taxonomy_from_header(header, accession)
         sequence = Seq(str(hsp.hit.seq))
@@ -154,6 +154,7 @@ def load_hmmhsps(headers, hsps, variant_model):
           global already_exists
           already_exists.append(accession)
           continue
+
 
 def add_sequence(accession, variant_model, taxonomy, header, sequence):
   """Add sequence into the database, autfilling empty Parameters"""
