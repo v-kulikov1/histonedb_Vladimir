@@ -84,5 +84,7 @@ The running port of web server willbe 10081
 ```python -m cProfile -s cumtime manage.py buildvariants```
 
 - Imaging
-```docker image build -t intbio/histonedb:0.2.0 .
-docker push intbio/histonedb:0.2.0```
+```
+docker image build -t intbio/histonedb:0.2.0 .
+docker push intbio/histonedb:0.2.0
+```
