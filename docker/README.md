@@ -73,10 +73,16 @@ So it means on the host
   /var/lib/mysql-files/** rwk,
 ```
 
+### Run a second indtance in singularity
+Use 
+```singularity build --sandbox cont docker://intbio/histonedb:0.2.0p2```
+And change port to port = 13307 in HistoneDB/database_info.txt
+The running port of web server willbe 10081
+
 ### For development
 - Profiling
 ```python -m cProfile -s cumtime manage.py buildvariants```
 
 - Imaging
-```docker image build -t intbio/histonedb:0.2.0 .```
-```docker push intbio/histonedb:0.2.0```
+```docker image build -t intbio/histonedb:0.2.0 .
+docker push intbio/histonedb:0.2.0```
