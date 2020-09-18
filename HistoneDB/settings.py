@@ -82,7 +82,8 @@ INSTALLED_APPS = (
     'djangophylocore',
     'django_extensions',
     # 'mod_wsgi.server',
-    'analytics'
+    'analytics',
+    'human_hist'
 )
 
 MIDDLEWARE_CLASSES = (
