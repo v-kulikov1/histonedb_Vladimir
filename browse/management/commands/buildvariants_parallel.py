@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 from browse.models import Histone, Variant, Sequence, Score, Feature
-from tools.load_hmmsearch import load_hmm_results, add_score, get_many_prot_seqrec_by_accession
+from tools.load_hmmsearch import load_hmm_results, add_score, get_many_prot_seqrec_by_accession, load_hmm_classification_results
 from tools.test_model import test_model
 import subprocess
 import os, sys
@@ -31,9 +31,12 @@ class Command(BaseCommand):
     help = 'Build HistoneDB by first loading the seed sequences and then parsing the database file'
     seed_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "seeds")
     hmm_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "hmms")
-    combined_hmm_file = os.path.join(hmm_directory, "combined_hmm.hmm")
+    # combined_hmm_file = os.path.join(hmm_directory, "combined_hmm.hmm") #removed by Preety
+    combined_hmm_histtypes_file = os.path.join(hmm_directory, "combined_hmm_histtypes.hmm") #file for combined sequences by hist_types (by Preety)
+    combined_hmm_variants_file = os.path.join(hmm_directory, "combined_hmm_variants.hmm") #file for combined sequences by variants (by Preety)
     pressed_combined_hmm_file = os.path.join(hmm_directory, "combined_hmm.h3f")
     db_search_results_file = os.path.join(hmm_directory, "db_search_results.out")
+    db_classification_results_file = os.path.join(hmm_directory, "db_classification_results.out")
     curated_all_fasta=os.path.join(hmm_directory, "curated_all.fasta")
     curated_search_results_file = os.path.join(hmm_directory, "curated_all_search_results.out")
     model_evaluation = os.path.join(hmm_directory, "model_evaluation")
@@ -70,7 +73,6 @@ class Command(BaseCommand):
         parser.add_argument(
             "--adjust_hmmer_procs",
             default=20,
-            action="store_true",
             help="Adjust hmmer_procs")
 
         parser.add_argument(
@@ -94,6 +96,7 @@ class Command(BaseCommand):
         ## If hmmer_procs in options change the value
         if 'adjust_hmmer_procs' in options:
             HMMER_PROCS=options["adjust_hmmer_procs"]
+        self.log.info('HMMER_PROCS !!!! {}'.format(HMMER_PROCS))
         ##If no nr file is present in the main dir, will download nr from the NCBI ftp.
         self.db_file=options['db_file']
         if self.db_file == "nr":
@@ -120,7 +123,7 @@ class Command(BaseCommand):
         if options["force"]:
             self.create_histone_types()
 
-        if options["force"] or not os.path.isfile(self.combined_hmm_file):
+        if options["force"] or not os.path.isfile(self.combined_hmm_histtypes_file):
             #Create HMMs from seeds and compress them to one HMM file tp faster search with hmmpress.
             self.build_hmms_from_seeds()
             self.press_hmms()
@@ -130,16 +133,24 @@ class Command(BaseCommand):
 
             #Load our curated sets taken from seed alignments into the database an run classification algorithm
             self.load_curated()
+            self.get_stats(filename_suff='curated_test')
             self.get_scores_for_curated_via_hmm()
+            self.get_stats(filename_suff='scores_test')
 
         if options["force"] or not os.path.isfile(self.db_search_results_file+"0"):
             #Search inputted seuqence database using our variantt models
+            #Updated to search sequences by hist_type models (by Preety). We need this just to get sequences suits to histone models.
             self.search_in_db_parallel()
+            self.get_stats(filename_suff='searchindb_test')
 
         #Load the sequences and classify them based on thresholds
         self.load_from_db_parallel()
+        self.get_stats(filename_suff='loadfromdb_test')
         # self.extract_full_sequences_from_ncbi()
         self.extract_full_sequences_parallel()
+        self.get_stats(filename_suff='extractfullseqs_test')
+        self.classify_by_hmm()
+        self.get_stats(filename_suff='classify_test')
 
         # self.extract_full_sequences()
         self.canonical2H2AX()
@@ -231,26 +242,28 @@ class Command(BaseCommand):
         self.log.info("Building HMMs...")
         # print >> self.stdout, "Building HMMs..."
         
-        with open(self.combined_hmm_file, "w") as combined_hmm:
-            for hist_type, seed in self.get_seeds():
+        with open(self.combined_hmm_histtypes_file, "w") as combined_hmm_histtypes, open(self.combined_hmm_variants_file, "w") as combined_hmm_variants:
+            for hist_type, seed in self.get_seeds(combined_alignments=True):
                 #Build HMMs
                 hmm_dir = os.path.join(self.hmm_directory, hist_type)
                 if not os.path.exists(hmm_dir):
                     os.makedirs(hmm_dir)
                 hmm_file = os.path.join(hmm_dir, "{}.hmm".format(seed[:-6]))
                 self.build_hmm(seed[:-6], hmm_file, os.path.join(self.seed_directory, hist_type, seed))
+                if hist_type=='': #combine all combined by hist_types sequences in one file (by Preety)
+                    with open(hmm_file) as hmm:
+                        print(hmm.read().rstrip(), file=combined_hmm_histtypes)
+                    continue
                 with open(hmm_file) as hmm:
-                    # print('TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT')
-                    # print(hmm.read().rstrip())
-                    # print('TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT')
-                    print(hmm.read().rstrip(), file=combined_hmm)
+                    print(hmm.read().rstrip(), file=combined_hmm_variants)
 
     def build_hmm(self, name, db, seqs):
         self.log.info(' '.join(["hmmbuild", "-n", name, db, seqs]))
         subprocess.call(["hmmbuild", "-n", name, db, seqs])
 
     def press_hmms(self):
-        return self.press(self.combined_hmm_file)
+        self.press(self.combined_hmm_histtypes_file)
+        self.press(self.combined_hmm_variants_file)
 
     def press(self, combined_hmm):
         """Press the HMMs into a single HMM file, overwriting if present"""
@@ -258,8 +271,8 @@ class Command(BaseCommand):
         # print >> self.stdout, "Pressing HMMs..."
         subprocess.call(["hmmpress", "-f", combined_hmm])
 
-    def search_in_db(self):
-        return self.search(hmms_db=self.combined_hmm_file, out=self.db_search_results_file, sequences=self.db_file)
+    def search_in_db(self, sequences_file):
+        return self.search(hmms_db=self.combined_hmm_file, out=self.db_results_file, sequences=self.db_file)
 
     def search(self, hmms_db, out, sequences=None, E=10):
         """Use HMMs to search the nr database"""
@@ -271,9 +284,12 @@ class Command(BaseCommand):
         self.log.info(" ".join(["hmmsearch", "-o", out, "-E", str(E), "--notextw", hmms_db, sequences]))
         subprocess.call(["hmmsearch", "-o", out, "-E", str(E), "--notextw", hmms_db, sequences])
 
+    def search_in_db_classification(self):
+        for i in range(HMMER_PROCS):
+            self.search(hmms_db=self.combined_hmm_variants_file, out=self.db_classification_results_file, sequences=self.full_length_seqs_file+"%d"%i)
 
     def search_in_db_parallel(self):
-        return self.search_parallel(hmms_db=self.combined_hmm_file, out=self.db_search_results_file, sequences=self.db_file)
+        return self.search_parallel(hmms_db=self.combined_hmm_histtypes_file, out=self.db_search_results_file, sequences=self.db_file)
 
     def search_parallel_test_for_small(self, hmms_db, out, sequences=None, E=10):
         """Use HMMs to search the nr database"""
@@ -330,8 +346,25 @@ class Command(BaseCommand):
 
         if sequences is None:
             sequences = self.db_file
+        self.db_split(sequences)
+
+        self.log.info("Launching %d processes" % HMMER_PROCS)
+        # !!!!!!!!!!!!!!
+        child_procs = []
+        for i in range(HMMER_PROCS):
+            outp = out + "%d" % i
+            self.log.info(" ".join(["nice", "hmmsearch", "-o", outp, '--cpu', '2', "-E", str(E), "--notextw", hmms_db,
+                                    "db_split/split%02d" % (i + 1)]))
+            p = subprocess.Popen(["nice", "hmmsearch", "-o", outp, '--cpu', '2', "-E", str(E), "--notextw", hmms_db,
+                                  "db_split/split%02d" % (i + 1)])
+            child_procs.append(p)
+        for cp in child_procs:
+            cp.wait()
+
+    def db_split(self, sequences):
         self.log.info("Splitting database file into %d parts" % HMMER_PROCS)
         # !!!!!!!!!!!!!!!
+        os.system('rm -rf db_split')
         os.system('mkdir db_split')
         # This is tricky tricky to make it fast
         size = os.path.getsize(sequences)
@@ -348,19 +381,6 @@ class Command(BaseCommand):
                 os.system('head -n %d db_split/split%02d >>db_split/split%02d ' % (k - 1, i, i - 1))
                 os.system('tail -n +%d db_split/split%02d> db_split/temp' % (k, i))
                 os.system('mv db_split/temp db_split/split%02d' % i)
-
-        self.log.info("Launching %d processes" % HMMER_PROCS)
-        # !!!!!!!!!!!!!!
-        child_procs = []
-        for i in range(HMMER_PROCS):
-            outp = out + "%d" % i
-            self.log.info(" ".join(["nice", "hmmsearch", "-o", outp, '--cpu', '2', "-E", str(E), "--notextw", hmms_db,
-                                    "db_split/split%02d" % (i + 1)]))
-            p = subprocess.Popen(["nice", "hmmsearch", "-o", outp, '--cpu', '2', "-E", str(E), "--notextw", hmms_db,
-                                  "db_split/split%02d" % (i + 1)])
-            child_procs.append(p)
-        for cp in child_procs:
-            cp.wait()
 
     def extract_full_sequences(self, sequences=None):
         """Create database to extract full length sequences"""
@@ -460,7 +480,7 @@ class Command(BaseCommand):
                     s.seq = s.seq.ungap("-")
                     SeqIO.write(s, f, "fasta")
         #Search it by our HMMs
-        self.search(hmms_db=self.combined_hmm_file, out=self.curated_search_results_file,sequences=self.curated_all_fasta)
+        self.search(hmms_db=self.combined_hmm_variants_file, out=self.curated_search_results_file,sequences=self.curated_all_fasta)
         ##We need to parse this results file;
         ##we take here a snippet from load_hmmsearch.py, and tune it to work for our curated seq header format
         for variant_query in SearchIO.parse(self.curated_search_results_file, "hmmer3-text"):
@@ -469,7 +489,6 @@ class Command(BaseCommand):
             for hit in variant_query:
                 accession = hit.id.split("|")[1]
                 seq = Sequence.objects.get(id=accession)
-                # print hit
                 try: #sometimes we get this:    [No individual domains that satisfy reporting thresholds (although complete target did)]
                     best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
                     add_score(seq, variant_model, best_hsp, seq.variant==variant_model)
@@ -484,6 +503,14 @@ class Command(BaseCommand):
         for i in range(HMMER_PROCS):
             self.log.info("Processing file %s ..."%(self.db_search_results_file+"%d"%i))
             load_hmm_results(self.db_search_results_file+"%d"%i, self.ids_file+"%d"%i)
+
+    def classify_by_hmm(self,reset=True):
+        """Classify loaded data in the histone database according to hmmer results"""
+        #TODO: Test method
+        self.log.info("Classification of the data of HistoneDB...")
+        # accessions = Sequence.objects.filter(reviewed=False).values_list('id', flat=True)
+        self.search_in_db_classification()
+        load_hmm_classification_results(self.db_classification_results_file)
 
 
     def load_from_db(self,reset=True):
@@ -502,7 +529,7 @@ class Command(BaseCommand):
         we accept only this patterns to extract GIs
         """
         accessions=[]
-        for hist_type, seed in self.get_seeds():
+        for hist_type, seed in self.get_seeds(generic=True):
             variant_name = seed[:-6]
             self.log.info(' '.join([variant_name,"==========="]))
             seed_aln_file = os.path.join(self.seed_directory, hist_type, seed)
@@ -518,34 +545,39 @@ class Command(BaseCommand):
                     taxid=1
                     accessions.append(accession)
                 self.log.info("Loading {}".format(s.id))
-                
+
+                variant_model, create = Variant.objects.get_or_create(id=variant_name, hist_type_id=hist_type)
+                if create:
+                    self.log.info("Created {} variant model in database".format(variant_model.id))
                 seq = Sequence(
-                    id       = accession,
-                    variant_id  = variant_name,
-                    gene     = None,
-                    splice   = None,
-                    taxonomy_id = taxid,
-                    header   = "CURATED SEQUENCE: {}".format(s.description),
-                    sequence = s.seq,
-                    reviewed = True,
-               )
+                    id=accession,
+                    variant=variant_model,
+                    gene=None,
+                    splice=None,
+                    taxonomy_id=taxid,
+                    header="CURATED SEQUENCE: {}".format(s.description),
+                    sequence=s.seq,
+                    reviewed=True,
+                )
                 seq.save()
 
         # Now let's lookup taxid for those having ACCESSIONs via NCBI.
         update_taxonomy(accessions)
 
-    def get_seeds(self):
+    def get_seeds(self, combined_alignments=False, generic=False):
         """
         Goes through static/browse/seeds directories and returns histone type names and fasta file name of variant (without path).
         """
         for i, (root, _, files) in enumerate(os.walk(self.seed_directory)):
             hist_type = os.path.basename(root)
-            if hist_type=="seeds": #means we are in top dir, we skip,
+            if hist_type=="seeds" and not combined_alignments: #means we are in top dir, we skip,
             # combinded alignmnents for hist types are their, but we do not use them in database constuction,
             #only in visualization on website
                 continue
+            elif hist_type=="seeds":
+                hist_type = ""
             for seed in files: 
-                if not seed.endswith(".fasta"): continue
+                if not seed.endswith(".fasta") or (not generic and 'generic' in seed): continue
                 yield hist_type, seed
 
     def estimate_thresholds(self, specificity=0.95):
@@ -559,19 +591,6 @@ class Command(BaseCommand):
         """
         for hist_type_pos, seed_pos in self.get_seeds():
             variant_name = seed_pos[:-6]
-
-            # if "generic" in variant_name:
-            #     # Let's put the parameter data to the database,
-            #     # We can set hist_type directly by ID, which is hist_type_pos in this case - because it is the primary key in Histone class.
-            #     variant_model, create = Variant.objects.get_or_create(id=variant_name,
-            #                                                           hist_type_id=hist_type_pos)
-            #     if create:
-            #         self.log.info("Created {} variant model in database".format(variant_model.id))
-            #     # self.log.info("Updating thresholds for {}".format(variant_model.id))
-            #     # variant_model.hmmthreshold = None
-            #     # variant_model.aucroc = None
-            #     # variant_model.save()
-            #     continue
 
             #Getting all paths right
             positive_seed_aln_file = os.path.join(self.seed_directory, hist_type_pos, seed_pos)
@@ -612,7 +631,7 @@ class Command(BaseCommand):
 
             #Here we are doing ROC curve analysis and returning parameters
             specificity = 0.8 if ("canonical" in variant_name) else 0.9 #Hack to make canoical have a lower threshold and ther variants higher threshold
-            specificity = 0.05 if ("generic" in variant_name)  else specificity #Hack to make canoical have a lower threshold and ther variants higher threshold
+            # specificity = 0.05 if ("generic" in variant_name)  else specificity #Hack to make canoical have a lower threshold and ther variants higher threshold
 
             parameters = test_model(variant_name, output_dir, positive_examples_out, negative_examples_out, measure_threshold=specificity)
 
@@ -654,12 +673,12 @@ class Command(BaseCommand):
                 self.log.error('Sequence with accession {} does not exist in DB.'.format(accession))
                 pass
 
-    def get_stats(self):
+    def get_stats(self, filename_suff = ''):
         self.log.info('Outputting statistics file ...')
 
         now = datetime.now()
         dt_string = now.strftime("%Y%m%d-%H%M%S")
-        with open('log/db_stat_'+dt_string,'w') as f:
+        with open('log/db_stat_'+dt_string+filename_suff,'w') as f:
             f.write("Variant database regeneration stitics\n")
             f.write("DB regen start time: %s \n"%self.start_time)
             f.write("DB regen end time: %s\n"%now)
