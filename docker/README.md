@@ -15,7 +15,7 @@ Then you can run HistoneDB via two ways.
 
 - Run as a service in docker, this will run apache and attempt to start mysqld
 
-```docker run --name histdb -d -p 8080:10080 -v project_dir/histonedb:/var/www/histonedb -v project_dir/db:/var/lib/mysql intbio/histonedb:0.2.0  ```
+```docker run --name histdb -d -p 8080:10080 -v project_dir/histonedb:/var/www/histonedb -v project_dir/db:/var/lib/mysql intbio/histonedb:0.2.1  ```
 
 - Check the website is available at http://localhost:8080
 
@@ -35,7 +35,7 @@ Then you can run HistoneDB via two ways.
 
 - Build singularity container
 
-```singularity build --sandbox cont docker://intbio/histonedb:0.2.0```
+```singularity build --sandbox cont docker://intbio/histonedb:0.2.1```
 
 - Run apache on prot 10080 and attempt to start mysqld
 
@@ -55,6 +55,8 @@ cd /var/www
 - Next in ```reinit_histdb_local.sh``` adjust the database you would want to build HistoneDB from (swissprot, nr, etc.)
 
 ```bash db_gen.sh -mysql_db_reinit -histdb_reinit```
+or
+```bash db_gen.sh -mysql_db_reinit -histdb_reinit > histonedb/log/db_gen.log 2>histonedb/log/db_gen_error.log```
 
 - To stop the container run
 
@@ -71,6 +73,18 @@ So it means on the host
   /var/lib/mysql-files/** rwk,
 ```
 
+### Run a second indtance in singularity
+Use 
+```singularity build --sandbox cont docker://intbio/histonedb:0.2.0p2```
+And change port to port = 13307 in HistoneDB/database_info.txt
+The running port of web server willbe 10081
+
 ### For development
 - Profiling
 ```python -m cProfile -s cumtime manage.py buildvariants```
+
+- Imaging
+```
+docker image build -t intbio/histonedb:0.2.0 .
+docker push intbio/histonedb:0.2.0
+```

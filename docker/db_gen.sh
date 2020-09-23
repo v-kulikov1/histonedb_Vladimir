@@ -34,7 +34,7 @@ mysqld --initialize-insecure --datadir=$mysqldatadir --user=mysql
 
 #/usr/bin/mysqld_safe
 echo "Rerunning mysql in the background"
-mysqld_safe --datadir=$mysqldatadir --port=13306 &
+mysqld_safe --datadir=$mysqldatadir --port=13307 &
 fi
 
 
