@@ -142,6 +142,13 @@ def load_hmmhsps(headers, hsps, variant_model):
       # to distinct accession from description and if accession is like pir||S24178 get S24178
       accession = header.split(" ")[0]
 
+      # if accession == 'AAH81020.1':
+      #   log.info('DEBUG::{}'.format(accession))
+      #   log.info('DEBUG::variant_model {}'.format(variant_model.id))
+      #   log.info('DEBUG::hmmthreshold_passed {}'.format(hmmthreshold_passed))
+      #   log.info('DEBUG::hsp.bitscore {}'.format(hsp.bitscore))
+      #   log.info('DEBUG::hsp.variant_model.hmmthreshold {}'.format(variant_model.hmmthreshold))
+
       seqs = Sequence.objects.filter(id=accession)
       if len(seqs) <= 0:
         log.error("New sequence is found: {}. This is strange.".format(accession))

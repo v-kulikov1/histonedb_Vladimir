@@ -133,24 +133,18 @@ class Command(BaseCommand):
 
             #Load our curated sets taken from seed alignments into the database an run classification algorithm
             self.load_curated()
-            self.get_stats(filename_suff='curated_test')
             self.get_scores_for_curated_via_hmm()
-            self.get_stats(filename_suff='scores_test')
 
         if options["force"] or not os.path.isfile(self.db_search_results_file+"0"):
             #Search inputted seuqence database using our variantt models
             #Updated to search sequences by hist_type models (by Preety). We need this just to get sequences suits to histone models.
             self.search_in_db_parallel()
-            self.get_stats(filename_suff='searchindb_test')
 
         #Load the sequences and classify them based on thresholds
         self.load_from_db_parallel()
-        self.get_stats(filename_suff='loadfromdb_test')
         # self.extract_full_sequences_from_ncbi()
         self.extract_full_sequences_parallel()
-        self.get_stats(filename_suff='extractfullseqs_test')
         self.classify_by_hmm()
-        self.get_stats(filename_suff='classify_test')
 
         # self.extract_full_sequences()
         self.canonical2H2AX()
@@ -286,7 +280,7 @@ class Command(BaseCommand):
 
     def search_in_db_classification(self):
         for i in range(HMMER_PROCS):
-            self.search(hmms_db=self.combined_hmm_variants_file, out=self.db_classification_results_file, sequences=self.full_length_seqs_file+"%d"%i)
+            self.search(hmms_db=self.combined_hmm_variants_file, out=self.db_classification_results_file+"%d"%i, sequences=self.full_length_seqs_file+"%d"%i)
 
     def search_in_db_parallel(self):
         return self.search_parallel(hmms_db=self.combined_hmm_histtypes_file, out=self.db_search_results_file, sequences=self.db_file)
@@ -510,7 +504,9 @@ class Command(BaseCommand):
         self.log.info("Classification of the data of HistoneDB...")
         # accessions = Sequence.objects.filter(reviewed=False).values_list('id', flat=True)
         self.search_in_db_classification()
-        load_hmm_classification_results(self.db_classification_results_file)
+        for i in range(HMMER_PROCS):
+            if not os.path.isfile(self.db_classification_results_file+"%d"%i): continue
+            load_hmm_classification_results(self.db_classification_results_file+"%d"%i)
 
 
     def load_from_db(self,reset=True):
