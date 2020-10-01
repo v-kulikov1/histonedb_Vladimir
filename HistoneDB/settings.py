@@ -83,7 +83,9 @@ INSTALLED_APPS = (
     'django_extensions',
     # 'mod_wsgi.server',
     'analytics',
-    'human_hist'
+    'human_hist',
+    'django_tables2'
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -110,6 +112,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },
