@@ -44,3 +44,4 @@ db_19.csv
 db_20.csv
 docker/db_seq_to_csv.py
 HistoneDB/database_info_dev.txt
+nr.gz
