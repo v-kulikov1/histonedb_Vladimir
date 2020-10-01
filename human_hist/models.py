@@ -30,28 +30,30 @@ class Histone_Human_proteins(models.Model):
 
     def __unicode__(self):
         return self.id
-
-class Histone_Human_mutations(models.Model):
-    gene           = models.ManyToManyField(Histone_Human_genes, related_name="human_mutations")
-    aa_change      = models.CharField(max_length=100)
-    mutation_type  = models.CharField(max_length=100)
-    ref_allele     = models.CharField(max_length=100)
-    var_allele     = models.CharField(max_length=100)
-    var_allele_freq= models.FloatField()
-    case        =  models.ManyToManyField(Histone_Human_cancer, related_name="human_mutations") # try it related_name="human_mutations_1"
-
-
-
-    def __unicode__(self):
-        return self.id
-
-class Histone_Human_cancer(models.Model):
+    
+class Histone_Human_cancers(models.Model):
     case_id          =  models.CharField(max_length=100)
     sequencing_center=  models.CharField(max_length=100)
     cancer           =  models.CharField(max_length=100)
 
     def __unicode__(self):
         return self.id
+
+class Histone_Human_mutations(models.Model):
+    gene           = models.ManyToManyField(Histone_Human_genes, related_name="human_mutations")
+    aa_change      = models.CharField(max_length=100)
+    mutation_type  = models.CharField(max_length=100)
+    ref_allele     = models.CharField(max_length=250)
+    var_allele     = models.CharField(max_length=150)
+    var_allele_freq= models.FloatField()
+    case        =  models.ManyToManyField(Histone_Human_cancers, related_name="human_mutations") # try it related_name="human_mutations_1"
+
+
+
+    def __unicode__(self):
+        return self.id
+
+
 
 
 

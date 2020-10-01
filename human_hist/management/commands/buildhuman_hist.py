@@ -1,4 +1,5 @@
 from django.core.management.base import BaseCommand, CommandError
+from django.core.exceptions import ObjectDoesNotExist
 
 import os
 import logging
@@ -11,7 +12,7 @@ from itertools import groupby
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
-from human_hist.models import * # Histone_Human_genes, Histone_Human_proteins, Histone_Human_mutations, Histone_Human_cancer
+from human_hist.models import * # Histone_Human_genes, Histone_Human_proteins, Histone_Human_mutations, Histone_Human_cancers
 
 import pandas as pd
 
@@ -43,7 +44,7 @@ class Command(BaseCommand):
         Histone_Human_genes.objects.all().delete()
         Histone_Human_proteins.objects.all().delete()
         Histone_Human_mutations.objects.all().delete()
-        Histone_Human_cancer.objects.all().delete()
+        Histone_Human_cancers.objects.all().delete()
 
         # Genes
         self.log.info('===   GENES START  ===')
@@ -91,44 +92,42 @@ class Command(BaseCommand):
 
 
             if obj:
-                self.log.info("{} was created".format(obj.gene))
+                self.log.info("{} was created".format(obj.enst))
 
-    # CAncer
-    self.log.info('===   CANCERS START  ===')
-    human_hist_cancer_info_path = os.path.join(self.info_directory, "human_hist_cancers.csv")
-    human_cancers_table = pd.read_csv(human_hist_cancers_info_path)
-    for index, patient in human_hist_cancers_table.iterrows():
-        obj = Histone_Human_cancers(case_id=patient['case_id'], \
+        # CAncer
+        self.log.info('===   CANCERS START  ===')
+        human_hist_cancers_info_path = os.path.join(self.info_directory, "human_hist_cancers.csv")
+        human_cancers_table = pd.read_csv(human_hist_cancers_info_path)
+        
+        for index, patient in human_cancers_table.iterrows():
+            obj = Histone_Human_cancers(case_id=patient['case_id'], \
                                       sequencing_center=patient['sequencing_center'], cancer=patient['cancer'])
-        obj.save()
+            obj.save()
 
-        #if obj:
-        #    self.log.info("{} was created".format(obj.patient))
+            if obj:
+                self.log.info("{} was created".format(obj.case_id))
 
-    # Mutations
-    self.log.info('===   MUTATIONS START  ===')
-    human_hist_mutations_info_path = os.path.join(self.info_directory, "human_hist_mutations.csv")
-    human_mutations_table = pd.read_csv(human_hist_mutations_info_path)
+        # Mutations
+        self.log.info('===   MUTATIONS START  ===')
+        human_hist_mutations_info_path = os.path.join(self.info_directory, "human_hist_mutations.csv")
+        human_mutations_table = pd.read_csv(human_hist_mutations_info_path)
 
-    for index, mutation in human_hist_mutations_table.iterrows():
+        for index, mutation in human_mutations_table.iterrows():
 
-        genes = Histone_Human_genes.objects.filter(hgnc_symbol=mutation['HGNC Symbol'])
-        # without 'chr','start_position','end_position',
-        cases = Histone_Human_cancer.objects.filter(case_id=mutation['case_id'])
+            genes = Histone_Human_genes.objects.filter(hgnc_symbol=mutation['HGNC Symbol'])
+            # without 'chr','start_position','end_position',
+            cases = Histone_Human_cancers.objects.filter(case_id=mutation['case_id'])
 
-        obj = Histone_Human_mutations(aa_change=mutation['amino_acid_change'], \
+            obj = Histone_Human_mutations(aa_change=mutation['amino_acid_change'], \
                                   mutation_type=mutation['mutation_type'], ref_allele=mutation['reference_allele'], \
                                   var_allele=mutation['variant_allele'],
                                   var_allele_freq=mutation['variant_allele_freq_tumor'])
-        obj.save()
+            obj.save()
 
-        obj.case.add(*cases)
-        obj.gene.add(*genes)
-
-
-
-       # if obj:
-       #     self.log.info("{} was created".format(obj.mutation))
+            obj.case.add(*cases)
+            obj.gene.add(*genes)
+            if obj:
+                self.log.info("{} was created".format(obj.aa_change))
 
 
 
