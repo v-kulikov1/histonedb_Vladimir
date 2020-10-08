@@ -44,3 +44,8 @@ db_19.csv
 db_20.csv
 docker/db_seq_to_csv.py
 HistoneDB/database_info_dev.txt
+nr.gz
+nr
+nr_small_352mb
+human_hist/migrations
+human_hist/migrations/*

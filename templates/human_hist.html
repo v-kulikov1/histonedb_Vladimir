@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block includes %}
+<link rel="stylesheet" type="text/css" href="{% static 'browse/css/msa0.4.6.css' %}" />
+<script src="{% static 'browse/js/xhr@latest.js' %}"></script>
+<script src="{% static 'browse/js/msa@0.4.6.js' %}"></script>
+<script src="{% static 'browse/js/biojs-io-fasta.js' %}"></script>
+<script src="{% static 'browse/js/biojs-io-gff.js' %}"></script>
+<script src="{% static 'browse/js/msa.js' %}"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="{% static 'browse/js/jquery-2.1.3.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'browse/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'browse/js/jquery.csv.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'browse/js/jquery.dataTables.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'browse/js/dataTables.bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'browse/js/csv_to_html_table.js' %}"></script>
+
+
+    
+{% block javascript %}
+    {% load static %}
+    
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('human').DataTable({
+           
+        });
+    });
+{% endblock %}    
+    
+     function format_hgnc(ncbi_gene_id){
+        if (ncbi_gene_id)
+            return "<a href='https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/' + ncbi_gene_id + "''>"+ncbi_gene_id+"</a>";
+        else
+            return ncbi_gene_id;   
+                       
+{% block content %}
+            <table id="human" class="table table-striped table-bordered table-sm" cellspacing="0" width="75%">
+                <thead>
+                    <th>HGNC Symbol</th> 
+                    <th>Previous HGNC Symbol</th>
+                    <th>NCBI gene ID</th>
+                    <th>Ensembl gene ID</th>
+                    <th>Expr. timing</th>
+                    <th>Expr. pattern</th>
+                    <th>Biotype</th>
+                    <th>Bona fide canonical</th>
+                    <th>PMIDs</th>  
+                    <th>variant</th> 
+                    
+                </thead>
+                <tbody>
+                  {% for gene in human_histones %}
+                    <tr>
+                        <td {{ gene.hgnc_symbol }}> 
+                           <a href='https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/' + gene.ncbi_gene_id"> gene.ncbi_gene_id </a>
+                            // format_hgnc( {{ gene.ncbi_gene_id }} ) 
+                        </td>
+                        
+                        <td>{{ gene.prev_hgnc_symb}}</td>
+                        <td>{{ gene.ncbi_gene_id}}</td>
+                        <td>{{ gene.ensg}}</td>
+                        <td>{{ gene.expr_timing}}</td>
+                        <td>{{ gene.expr_pattern}}</td>
+                        <td>{{ gene.biotype}}</td>
+                        <td>{{ gene.bona_fidecanonical}}</td>
+                        <td>{{ gene.pmids}}</td>
+                        <td>{{ gene.variant}}</td>
+                        
+                    </tr>
+                  {% endfor %}
+                </tbody>
+            </table>
+    
+    </script>
+    
+    {% endblock %}
+{% endblock %}

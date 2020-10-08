@@ -1,0 +1,116 @@
+  <table id="votes_list" class="display", style="width:100%">
+        <thead>
+            <tr>
+                <th>Właściciel</th> 
+                <th>Grupa</th> 
+                <th>Rada</th> 
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in json_data %}
+                <tr>{{ data.user }}</tr>
+                <tr>{{ data.group }} </tr>
+                <tr>{{ data.council }} </tr>
+            {% endfor %}
+        </tbody>
+   </table>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#votes_list').DataTable();
+        }
+    </script>
+
+
+<script type="text/javascript">
+    var hgnc_symbol = []
+    var prev_hgnc_symb = []
+
+    {% for gene in human_histones %}
+      hgnc_symbol.push('{{gene.hgnc_symbol}}');       
+      prev_hgnc_symb.push('{{gene.prev_hgnc_symb}}');
+
+    {% endfor %}
+
+</script>
+
+
+
+
+<table id="votes_list" class="display", style="width:100%">
+    <thead>
+        <tr>
+            <th>HGNC Symbol</th> 
+            <th>Prev</th> 
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in human_histones %}
+            <tr>{{ human_histones.hgnc_symbol }}</tr>
+            <tr>{{ human_histones.prev_hgnc_symb }} </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#votes_list').DataTable();
+    }
+</script>
+
+{% block javascript %}
+{% load static %}
+    
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#votes_list').DataTable({
+           
+    });
+});
+    
+</script>
+    
+
+
+
+ var $table = $('#table-javascript').bootstrapTable({
+          pagination:true,
+          pageList:[5, 10, 20, 50, 100, 200, 500, 'All'],
+          pageSize:100,
+          cookie:true,
+          //cookieIdTable:"table-{{ page_name }}",
+          height:750,
+          //{% if blast_results %}
+          data: [
+    {
+      id: 1,
+      name: 'Item 1',
+      _name_rowspan: 2,
+      price: '$1'
+    },
+    {
+      id: 2,
+      price: '$2'
+    }
+  ],
+          sidePagination:"client",
+
+          onLoadSuccess: function(){ 'YES' },
+          })
+
+
+
+        <table id="table"></table>
+            
+            $('#table').bootstrapTable({
+    columns: [{
+        field: 'id',
+        title: 'Item ID'
+    }, {
+        field: 'name',
+        title: 'Item Name'
+    }, {
+        field: 'price',
+        title: 'Item Price'
+    }, ]
+});

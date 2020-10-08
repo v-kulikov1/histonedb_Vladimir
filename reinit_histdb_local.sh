@@ -22,7 +22,7 @@ python manage.py buildtaxonomytoc
 # python manage.py buildvariants_parallel -f --db nr_5march2020
 
 # python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
-python manage.py buildvariants_parallel -f --db nr
+python manage.py buildvariants_parallel -f --db nr_small_352mb
 # python manage.py buildvariants_parallel -f --db swissprot # this should work reasonably fast
 python manage.py human_hist
 python manage.py buildtrees -f
