@@ -838,16 +838,6 @@ RHLQLAIRGDEELDSLIK--ATIAGG---G-VIPHIHKS-----LIGKKGQQKTA-----
 ------------------------------------------------------------
 ------------------------------------------------------------
 ----------
->H2A.Z|Dictyostelium|XP_637656.1 Dictyostelium|XP_637656.1|H2A.Z Dictyostelium_H2A.Z_66807867
-------------------------------------------------------------
--------MTES-------ETTSKKVNKRVKP----------------VPKSTKAGLIFPV
-GRIHRMLKNKVPLK-RVSILSSVYLAAILEYLASEVLELTISQVSIQSKEYHN-VRRISP
-RHLLLAIKTDEELDNLIRVSTTIAGG---G-VIPYIHEVLKKVEQKPTHPQQKQTI---K
-SI----------------------------------------------------------
-------------------------------------------------------------
-------------------------------------------------------------
-------------------------------------------------------------
-----------
 >H2A.Z|Drosophila|NP_524519.1 Drosophila|NP_524519.1|H2A.Z Drosophila_H2A.Z_17738227
 ------------------------------------------------------------
 ------MAGGK---------AGK-DSGKAKA--------------KAVSRSARAGLQFPV
@@ -1168,7 +1158,7 @@ RHLQLAVRNDEELNKLLG-GVTIAQG---G-VLPNIQAV-----LLPKKTEKAAKGK---
 ------------------------------------------------------------
 ------------------------------------------------------------
 ----------
->canonical_H2A|Dictyostelium|XP_637656.1 Dictyostelium|XP_637656.1|canonical_H2A Dictyostelium_canonical_H2A_66807867
+>generic_H2A|Dictyostelium|XP_637656.1 Dictyostelium|XP_637656.1|canonical_H2A Dictyostelium_canonical_H2A_66807867
 ------------------------------------------------------------
 -------MTES-------ETTSKKVNKRVKP----------------VPKSTKAGLIFPV
 GRIHRMLKNKVPLK-RVSILSSVYLAAILEYLASEVLELTISQVSIQSKEYHN-VRRISP

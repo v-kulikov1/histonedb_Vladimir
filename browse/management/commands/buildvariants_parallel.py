@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
-from browse.models import Histone, Variant, Sequence, Score, Feature
-from tools.load_hmmsearch import load_hmm_results, add_score, get_many_prot_seqrec_by_accession, load_hmm_classification_results
+from browse.models import Histone, Variant, Sequence, Score, ScoreForHistoneType, Feature
+from tools.load_hmmsearch import load_hmm_results, add_score, add_histone_score, add_generic_score, get_many_prot_seqrec_by_accession, load_hmm_classification_results, load_generic_scores
 from tools.test_model import test_model
 import subprocess
 import os, sys
@@ -38,7 +38,9 @@ class Command(BaseCommand):
     db_search_results_file = os.path.join(hmm_directory, "db_search_results.out")
     db_classification_results_file = os.path.join(hmm_directory, "db_classification_results.out")
     curated_all_fasta=os.path.join(hmm_directory, "curated_all.fasta")
+    curated_generic_fasta=os.path.join(hmm_directory, "curated_generic.fasta")
     curated_search_results_file = os.path.join(hmm_directory, "curated_all_search_results.out")
+    curated_gen_search_results_file = os.path.join(hmm_directory, "curated_generic_search_results.out")
     model_evaluation = os.path.join(hmm_directory, "model_evaluation")
     ids_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.ids")
     full_length_seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fasta")
@@ -116,6 +118,7 @@ class Command(BaseCommand):
             #Clean the DB, removing all sequence/variants/etc
             Sequence.objects.all().delete()
             Score.objects.all().delete()
+            ScoreForHistoneType.objects.all().delete()
             Variant.objects.all().delete()
             Histone.objects.all().delete()
 
@@ -265,7 +268,7 @@ class Command(BaseCommand):
         # print >> self.stdout, "Pressing HMMs..."
         subprocess.call(["hmmpress", "-f", combined_hmm])
 
-    def search_in_db(self, sequences_file):
+    def search_in_db(self):
         return self.search(hmms_db=self.combined_hmm_file, out=self.db_results_file, sequences=self.db_file)
 
     def search(self, hmms_db, out, sequences=None, E=10):
@@ -467,13 +470,14 @@ class Command(BaseCommand):
         This is needed to supply the same type of information for curated as well as for automatic seqs.
         """
         #Construct the one big file from all cureated seqs.
-        with open(self.curated_all_fasta, "w") as f:
-            for hist_type, seed in self.get_seeds():
+        with open(self.curated_all_fasta, "w") as f, open(self.curated_generic_fasta, "w") as fg:
+            for hist_type, seed in self.get_seeds(generic=True):
                 seed_aln_file = os.path.join(self.seed_directory, hist_type, seed)
                 for s in SeqIO.parse(seed_aln_file, "fasta"):
                     s.seq = s.seq.ungap("-")
-                    SeqIO.write(s, f, "fasta")
-        #Search it by our HMMs
+                    if 'generic' in seed: SeqIO.write(s, fg, "fasta")
+                    else: SeqIO.write(s, f, "fasta")
+        #Search all curated except generic by our HMMs
         self.search(hmms_db=self.combined_hmm_variants_file, out=self.curated_search_results_file,sequences=self.curated_all_fasta)
         ##We need to parse this results file;
         ##we take here a snippet from load_hmmsearch.py, and tune it to work for our curated seq header format
@@ -488,6 +492,26 @@ class Command(BaseCommand):
                     add_score(seq, variant_model, best_hsp, seq.variant==variant_model)
                 except:
                     pass
+        #Search generic by our HMMs for histone types
+        self.search(hmms_db=self.combined_hmm_histtypes_file, out=self.curated_gen_search_results_file,sequences=self.curated_generic_fasta)
+        ##We have no any scores by variants for generic, but we can add scores to histone types
+        self.log.info("Loading hmmsearch for generic curated")
+        for histtype_query in SearchIO.parse(self.curated_gen_search_results_file, "hmmer3-text"):
+            histtype = histtype_query.id
+            self.log.info("Loading hmmsearch for histone type: {}".format(histtype))
+            for hit in histtype_query:
+                accession = hit.id.split("|")[1]
+                seq = Sequence.objects.get(id=accession)
+                # best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
+                # hist_score = add_histone_score(seq, Histone.objects.get(id=histtype), best_hsp)
+                # add_generic_score(seq, Variant.objects.get(id='generic_{}'.format(histtype)), hist_score)
+                try: #sometimes we get this:    [No individual domains that satisfy reporting thresholds (although complete target did)]
+                    best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
+                    hist_score = add_histone_score(seq, Histone.objects.get(id=histtype), best_hsp)
+                    add_generic_score(seq, Variant.objects.get(id='generic_{}'.format(histtype)), hist_score)
+                except:
+                    pass
+
 
     def load_from_db_parallel(self,reset=True):
         """Load data into the histone database"""
@@ -506,7 +530,9 @@ class Command(BaseCommand):
         self.search_in_db_classification()
         for i in range(HMMER_PROCS):
             if not os.path.isfile(self.db_classification_results_file+"%d"%i): continue
+            self.log.info("Processing file %s ..." % (self.db_classification_results_file + "%d" % i))
             load_hmm_classification_results(self.db_classification_results_file+"%d"%i)
+        load_generic_scores()
 
 
     def load_from_db(self,reset=True):

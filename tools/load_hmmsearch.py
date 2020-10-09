@@ -37,13 +37,13 @@ def get_or_create_unknown_variant(hist_type='Unknown'):
   # at while searching
 
   try:
-    unknown_model = Variant.objects.get(id="Unknown{}".format(hist_type))
+    unknown_model = Variant.objects.get(id="generic_{}".format(hist_type))
   except Variant.DoesNotExist:
     try:
       hist_model = Histone.objects.get(id=hist_type)
     except Histone.DoesNotExist:
       hist_model = get_or_create_unknown_histone()
-    unknown_model = Variant(hist_type=hist_model, id="Unknown{}".format(hist_type))
+    unknown_model = Variant(hist_type=hist_model, id="generic_{}".format(hist_type))
     unknown_model.save()
   return unknown_model
 
@@ -74,7 +74,8 @@ def load_hmm_results(hmmerFile, id_file):
       #The format should be strictly the genbank format: gi|343434|fafsf gdgfdg gi|65656|534535 fdafaf
       # print("{}-----{}".format(hit.id, hit.description))
       headers = "{} {}".format(hit.id, hit.description).split('\x01')
-      load_hmmhit(headers, get_or_create_unknown_variant(hist_type=histone_query.id))
+      # best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
+      load_hmmhit(headers, histone_query.id, hit)
 
   #Save original header to extract full sequence
   ids = open(id_file, "w")
@@ -88,7 +89,7 @@ def load_hmm_results(hmmerFile, id_file):
   #Now let's lookup taxid for those we could not pare from header using NCBI eutils.
   update_taxonomy(Sequence.objects.filter(taxonomy__name="unidentified").values_list("id", flat=True))
 
-def load_hmmhit(headers, variant_model):
+def load_hmmhit(headers, hist_type, hit):
   for header in headers:
     accession = header.split(" ")[0]
 
@@ -98,12 +99,20 @@ def load_hmmhit(headers, variant_model):
       if (seq.reviewed == True): continue
 
     taxonomy = taxonomy_from_header(header, accession)
-    add_sequence(
+    seq = add_sequence(
       accession,
-      variant_model,
+      get_or_create_unknown_variant(hist_type=hist_type),
       taxonomy,
       header,
       '')
+    try:
+      best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
+      add_histone_score(
+        seq,
+        Histone.objects.get(id=hist_type),
+        best_hsp)
+    except:
+      pass
 
 #@transaction.atomic # looks like we cannot do it here, since transactions are not atomic in this block
 def load_hmm_classification_results(hmmerFile):
@@ -129,8 +138,10 @@ def load_hmm_classification_results(hmmerFile):
       # print("{}-----{}".format(hit.id, hit.description))
       headers = "{} {}".format(hit.id, hit.description).split('\x01')
       load_hmmhsps(headers, hit.hsps, variant_model)
-  load_generic()
-  delete_unknown()
+
+  log.info('Classified {} dequences'.format(Sequence.objects.exclude(variant__id__startswith='generic').count()))
+  # load_generic()
+  # delete_unknown()
 
 def load_hmmhsps(headers, hsps, variant_model):
   ###Iterate through high scoring fragments.
@@ -141,13 +152,6 @@ def load_hmmhsps(headers, hsps, variant_model):
     for header in headers:
       # to distinct accession from description and if accession is like pir||S24178 get S24178
       accession = header.split(" ")[0]
-
-      # if accession == 'AAH81020.1':
-      #   log.info('DEBUG::{}'.format(accession))
-      #   log.info('DEBUG::variant_model {}'.format(variant_model.id))
-      #   log.info('DEBUG::hmmthreshold_passed {}'.format(hmmthreshold_passed))
-      #   log.info('DEBUG::hsp.bitscore {}'.format(hsp.bitscore))
-      #   log.info('DEBUG::hsp.variant_model.hmmthreshold {}'.format(variant_model.hmmthreshold))
 
       seqs = Sequence.objects.filter(id=accession)
       if len(seqs) <= 0:
@@ -197,6 +201,46 @@ def load_generic():
       unknown_model_seq.save()
     log.info("Classified %d seqs as generic %s" % (unknown_model_sequences.count(), hist_type))
 
+def load_generic_scores_1():
+  for hist_type in ['H2A', 'H2B', 'H3', 'H4', 'H1']:
+    generic_model = get_or_create_unknown_variant(hist_type=hist_type)
+    generic_model_sequences = generic_model.sequences.all()
+    log.info("Found %d seqs where HMMsearch found a hit but did not pass threshold for %s and classified as generic" % (
+      generic_model_sequences.count(), hist_type))
+    for generic_model_seq in generic_model_sequences:
+      hist_score = generic_model_seq.histone_model_scores.first()
+      score = Score(
+        sequence=generic_model_seq,
+        variant=generic_model,
+        score=hist_score.score,
+        evalue=hist_score.evalue,
+        above_threshold=False,
+        hmmStart=hist_score.hmmStart,
+        hmmEnd=hist_score.hmmEnd,
+        seqStart=hist_score.seqStart,
+        seqEnd=hist_score.seqEnd,
+        used_for_classification=False, # Here
+        regex=False,
+      )
+      score.save()
+    # log.info("Classified %d seqs as generic %s" % (generic_model_sequences.count(), hist_type))
+
+def load_generic_scores():
+  for hist_type in ['H2A', 'H2B', 'H3', 'H4', 'H1']:
+    generic_model = get_or_create_unknown_variant(hist_type=hist_type)
+    generic_model_sequences = generic_model.sequences.all()
+    log.info("Found %d seqs where HMMsearch found a hit but did not pass threshold for %s" % (
+      generic_model_sequences.count(), hist_type))
+    for generic_model_seq in generic_model_sequences:
+      # log.info(generic_model_seq.histone_model_scores.count())
+      if generic_model_seq.reviewed: continue
+      # if generic_model_seq.all_model_scores.filter(variant=generic_model).count() > 0: continue
+      try:
+        add_generic_score(generic_model_seq, generic_model, generic_model_seq.histone_model_scores.first())
+      except:
+        pass
+    log.info("Classified %d seqs as generic %s" % (generic_model_sequences.count(), hist_type))
+
 def delete_unknown():
   # Delete 'unknown' records that were found by HMMsearch but did not pass threshold
   unknown_model = get_or_create_unknown_variant(hist_type='Unknown')
@@ -239,6 +283,40 @@ def add_score(seq, variant_model, hsp, best=False):
     regex                   = False,
     )
   score.save()
+  return score
+
+def add_histone_score(seq, histone_model, hsp):
+  """Add score for a given sequence"""
+  score = ScoreForHistoneType(
+    sequence                = seq,
+    histone                 = histone_model,
+    score                   = hsp.bitscore,
+    evalue                  = hsp.evalue,
+    hmmStart                = hsp.query_start,
+    hmmEnd                  = hsp.query_end,
+    seqStart                = hsp.hit_start,
+    seqEnd                  = hsp.hit_end,
+    regex                   = False,
+    )
+  score.save()
+  return score
+
+def add_generic_score(seq, generic_model, hist_score):
+  score = Score(
+    sequence=seq,
+    variant=generic_model,
+    score=hist_score.score,
+    evalue=hist_score.evalue,
+    above_threshold=False,
+    hmmStart=hist_score.hmmStart,
+    hmmEnd=hist_score.hmmEnd,
+    seqStart=hist_score.seqStart,
+    seqEnd=hist_score.seqEnd,
+    used_for_classification=True,
+    regex=False,
+  )
+  score.save()
+  return score
 
 
 def get_many_prot_seqrec_by_accession(accession_list):

@@ -180,9 +180,9 @@ def browse_variant(request, histone_type, variant, accession=None):
         human_sequence = sequences.filter(reviewed=True).first()
     print(human_sequence)
 
-    if 'generic' in variant.id:
-        sequences = Sequence.objects.filter(variant__id=variant)
-        human_sequence = sequences.filter(reviewed=True).first()
+    # if 'generic' in variant.id:
+    #     sequences = Sequence.objects.filter(variant__id=variant)
+    #     human_sequence = sequences.filter(reviewed=True).first()
 
     try:
         publication_ids = ",".join(map(str, variant.publication_set.values_list("id", flat=True)))

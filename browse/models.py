@@ -177,6 +177,27 @@ class Score(models.Model):
         return "[Score: {}; Evalue:{}]"
 
 
+class ScoreForHistoneType(models.Model):
+    """
+    The histone type score class, assigns a bunch of score entries to the sequence. For each histone a score.
+    """
+    sequence                = models.ForeignKey(Sequence, related_name="histone_model_scores")
+    histone                 = models.ForeignKey(Histone, related_name="histone_+")
+    score                   = models.FloatField()
+    evalue                  = models.FloatField()
+    hmmStart                = models.IntegerField()
+    hmmEnd                  = models.IntegerField()
+    seqStart                = models.IntegerField()
+    seqEnd                  = models.IntegerField()
+    regex                   = models.BooleanField()
+
+    def __str__(self):
+        return "<{} histone={}; score={} >".format(self.sequence.id, self.histone.id, self.score)
+
+    def description(self):
+        return "[Score: {}; Evalue:{}]"
+
+
 class SequenceBlast(models.Model):
     id = models.CharField(max_length=255, primary_key=True)
     variant   = models.ForeignKey(Variant, related_name="sequences_blast")
