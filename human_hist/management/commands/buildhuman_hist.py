@@ -16,7 +16,8 @@ from human_hist.models import * # Histone_Human_genes, Histone_Human_proteins, H
 
 import pandas as pd
 
-
+    
+    
 class Command(BaseCommand):
     info_directory = os.path.join(settings.STATIC_ROOT_AUX, "human_hist", "info")
 
@@ -35,7 +36,9 @@ class Command(BaseCommand):
             default=False,
             action="store_true",
             help="Force the regeneration of HMM from seeds, HUMMER search in db_file, Test models and loading of results to database")
-
+   
+    
+    
     def handle(self, *args, **options):
         self.log.info('=======================================================')
         self.log.info('===            buildhuman_hist START              ===')
@@ -45,7 +48,24 @@ class Command(BaseCommand):
         Histone_Human_proteins.objects.all().delete()
         Histone_Human_mutations.objects.all().delete()
         Histone_Human_cancers.objects.all().delete()
-
+        Human_variants.objects.all().delete()
+        
+        #Variants
+        self.log.info('===   VARIANTS START  ===')
+        human_variants_info_path = os.path.join(self.info_directory, "human_variants.csv")
+        human_variants_table = pd.read_csv(human_variants_info_path)
+        for index, variant in human_variants_table.iterrows():
+            self.log.info('{}'.format(index))
+            try:
+                var = Human_variants.objects.get(id=variant['human'])
+                obj = Human_variants(variant=var, id = variant['human'])
+            except: #ObjectDoesNotExist
+                 obj = Human_variants(id = variant['human'])
+            
+            obj.save()
+            if obj:
+                self.log.info("{} was created".format(obj.id))
+        
         # Genes
         self.log.info('===   GENES START  ===')
         human_hist_genes_info_path = os.path.join(self.info_directory, "human_hist_genes.csv")
@@ -54,20 +74,30 @@ class Command(BaseCommand):
         for index, gene in human_genes_table.iterrows():
             self.log.info('{}'.format(index))
             try:
-                variant = Variant.objects.get(id=gene['Histone variant'])
-            except ObjectDoesNotExist:
-                self.log.info('not in Variant model {}'.format(gene['Histone variant']))
-                continue
-
-            obj = Histone_Human_genes(hgnc_symbol=gene["HGNC Symbol"], prev_hgnc_symb=gene['Previous HGNC Symbol'], \
+                variant = Human_variants.objects.get(id=gene['Histone variant'])
+                obj = Histone_Human_genes(hgnc_symbol=gene["HGNC Symbol"], prev_hgnc_symb=gene['Previous HGNC Symbol'], \
                                       ncbi_gene_id=gene['NCBI gene ID'], ensg=gene['Ensembl gene ID'],
                                       expr_timing=gene['Expr. timing'], \
                                       expr_pattern=gene['Expr. pattern'], biotype=gene['Biotype'],
                                       bona_fidecanonical=gene['Bona fide canonical'], \
-                                      pmids=gene['PMIDs'], variant = variant )
+                                      pmids=gene['PMIDs'], hist_type = gene['Histone type'], variant = variant )
 
+            except:
+                obj = Histone_Human_genes(hgnc_symbol=gene["HGNC Symbol"], prev_hgnc_symb=gene['Previous HGNC Symbol'], \
+                                      ncbi_gene_id=gene['NCBI gene ID'], ensg=gene['Ensembl gene ID'],
+                                      expr_timing=gene['Expr. timing'], \
+                                      expr_pattern=gene['Expr. pattern'], biotype=gene['Biotype'],
+                                      bona_fidecanonical=gene['Bona fide canonical'], \
+                                      pmids=gene['PMIDs'], hist_type = gene['Histone type'])
             obj.save()
-
+            
+#            try:
+#                variant = Variant.objects.get(id=gene['Histone variant'])
+#            except: #ObjectDoesNotExist
+#                #variant = self.unknown_variant()
+#                #variant = unknown_model.objects.get(id="Unknown")
+#                self.log.info('not in Variant model {}'.format(gene['Histone variant']))
+#                continue
 
             if obj:
                 self.log.info("{} was created".format(obj.hgnc_symbol))
@@ -128,6 +158,17 @@ class Command(BaseCommand):
             obj.gene.add(*genes)
             if obj:
                 self.log.info("{} was created".format(obj.aa_change))
+    
+    
+#    def unknown_variant(self):    
+#        try:
+#            hist_unknown = Histone.objects.get(id="Unknown")
+#        except:
+#            hist_unknown = Histone("Unknown")
+#            hist_unknown.save()
+#        unknown_model = Variant(hist_type=hist_unknown, id="Unknown")
+#        unknown_model.save()
+#        return unknown_model.objects.get(id="Unknown")
 
 
 

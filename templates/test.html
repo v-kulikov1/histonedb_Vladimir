@@ -69,6 +69,33 @@ $(document).ready(function() {
 });
     
 </script>
+
+
+
+      <th data-field="id">ID</th>
+      //<th data-field="name">Item Name</th>
+      //<th data-field="price">Item Price</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+  var $table = $('#table')
+
+  $(function() {
+    var data = [
+           {
+        'id': 0,
+        'name': 'Item 0',
+      },
+         {
+        'id': 1,
+        'name': 'Item 45',
+      },
+
+    ]
+    $table.bootstrapTable({data: data})
+  })
     
 
 
@@ -114,3 +141,16 @@ $(document).ready(function() {
         title: 'Item Price'
     }, ]
 });
+    
+    
+        var prev_hgnc_symb = []
+    var ncbi_gene_id = []
+    var ensg = []
+    var expr_timing = []
+    var expr_pattern = []
+    {% gene in human_histones %}
+    prev_hgnc_symb.push( '{{gene.prev_hgnc_symb}}' );       
+    ncbi_gene_id.push( {{gene.ncbi_gene_id}} );
+    ensg.push( '{{gene.ensg}}' );
+    expr_timing.push( '{{gene.expr_timing}}' );
+    {% endfor %}

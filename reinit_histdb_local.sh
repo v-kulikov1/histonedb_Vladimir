@@ -3,7 +3,7 @@
 echo "Reinitializing HistDB from scratch"
 
 python manage.py flush << EOF
-yes
+yes    
 EOF
 
 #python manage.py migrate
@@ -24,11 +24,12 @@ python manage.py buildtaxonomytoc
 # python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
 python manage.py buildvariants_parallel -f --db nr_small_352mb
 # python manage.py buildvariants_parallel -f --db swissprot # this should work reasonably fast
-python manage.py human_hist
+
 python manage.py buildtrees -f
-python manage.py buildsunburst -f
+python manage.py buildsunburst -f 
 python manage.py buildblastdb -f
 python manage.py buildvariantinfo -f
 python manage.py buildseedinfo -f
-python manage.py shell < tools/export_data.py # exporting data
+python manage.py buildhuman_hist 2>log/temp_error.log
+python manage.py shell < tools/export_data.py # exporting data  
 

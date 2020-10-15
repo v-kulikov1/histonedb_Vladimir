@@ -3,11 +3,21 @@ from browse.models import *
 
 
 # Create your models here.
+
+class Human_variants(models.Model):
+    id = models.CharField(max_length=25, primary_key=True)
+    db_variant = models.ForeignKey(Variant, related_name="human_variants", blank=True, null=True)
+    
+    def __unicode__(self):
+        return self.id
+    
 class Histone_Human_genes(models.Model):
     # id             = models.CharField(max_length=25, primary_key=True)
     hgnc_symbol = models.CharField(max_length=25)
     prev_hgnc_symb = models.CharField(max_length=25)
-    variant = models.ForeignKey(Variant, related_name="human_genes")
+    hist_type = models.CharField(max_length=5) # оставить в генах db_type = models.ForeignKey(Histone, related_name="human_variants")
+    variant = models.ForeignKey(Human_variants, related_name="variants", blank=True, null=True)
+    #variant = models.ForeignKey(Variant, related_name="human_genes")
     ncbi_gene_id = models.IntegerField()
     ensg = models.CharField(max_length=100)
     expr_timing = models.CharField(max_length=25)
@@ -18,7 +28,6 @@ class Histone_Human_genes(models.Model):
 
     def __unicode__(self):
         return self.id
-
 
 class Histone_Human_proteins(models.Model):
     # id             = models.CharField(max_length=25, primary_key=True)

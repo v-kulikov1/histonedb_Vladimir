@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load browse_filters %}
+
 
 {% block includes %}
 <link rel="stylesheet" type="text/css" href="{% static 'browse/css/msa0.4.6.css' %}" />
@@ -19,37 +21,81 @@
 <script type="text/javascript" src="{% static 'browse/js/dataTables.bootstrap.js' %}"></script>
 <script type="text/javascript" src="{% static 'browse/js/csv_to_html_table.js' %}"></script>
 
-<link rel="stylesheet" href="bootstrap.min.css">
-<script src="jquery.min.js"></script>
-<script src="bootstrap.min.js"></script>
-
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.css" rel="stylesheet"/>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.js"></script>
+<script type="text/javascript" src="{% static 'browse/js/bootstrap.js' %}"></script>
+<script type="text/javascript" src="{% static 'browse/js/bootstrap-table.min.js' %}"></script>
 
 
 {% block javascript %}
-    {% load static %}
+{% load static %}
+
+<div id="toolbar" class="select">
+  <select class="form-control">
+    <option value="">Export Basic</option>
+    <option value="all">Export All</option>
+    <option value="selected">Export Selected</option>
+  </select>
+</div>
+
+
+<table id="table"></table>
+
+<script>
+  var $table = $('#table')
     
-        <script type="text/javascript">
-            <table id="table"></table>
-        var $table = $('#table');
-var mydata = [{
-  "id": 0, 
-  "name": "test0",
-  "price": "$0"
-}];
+  function format_ncbi(ncbi_id){
+        if (ncbi_id)
+            return "<a href='https://www.ncbi.nlm.nih.gov/gene/" + ncbi_id + "'>" + ncbi_id + "</a>";
+        else
+            return ncbi_id;
+  
+  
+  $(function() {
+    var data = [{% for gene in human_histones %}
+                { "hgnc_symbol" : "{{ gene.hgnc_symbol }}",
+                "prev_hgnc_symb" : "{{ gene.prev_hgnc_symb }}",
+                "ncbi_gene_id" : format_ncbi("{{ gene.ncbi_gene_id }}"),
+                "ensg" : "{{ gene.ensg }}",
+                "expr_timing" : "{{ gene.expr_timing }}",
+                "expr_pattern" : "{{ gene.expr_pattern }}",
+                "biotype" : "{{ gene.biotype }}",
+                "bona_fidecanonical" : "{{ gene.bona_fidecanonical }}",
+                "pmids" : "{{ gene.pmids }}",
+           //     "variant" : "{{ gene.variant }}",
+                },
+    {% endfor %}
+    ]}
+      
+    
+    $table.bootstrapTable({
+        data: data,
+        pagination:true,
+        pageList:[5, 10, 20, 50, 100, 200, 500, 'All'],
+        pageSize:100,
+        height:750,
+        sidePagination:"client",
 
-$(function() {
-  $('#table').bootstrapTable(
-    data: mydata)
-  );
-});
+          columns: [
+              {field:"state", checkbox:true},
+              {field:"hgnc_symbol", sortable:true, title:"HGNC Symbol", clickToSelect:false},
+              {field:"prev_hgnc_symb", sortable:true, title:"Previous HGNC Symbol", clickToSelect:false},
+              {field:"ncbi_gene_id", sortable:true, title:"NCBI gene id", clickToSelect:false},
+              {field:"ensg", sortable:true, title:"Ensembl gene ID", clickToSelect:false},
+              {field:"expr_timing", sortable:true, title:"Expr. timing", clickToSelect:false},
+              {field:"expr_pattern", sortable:true, title:"Expr. pattern", clickToSelect:false},
+              {field:"biotype", sortable:true, title:"Biotype", clickToSelect:false},
+              {field:"bona_fidecanonical", sortable:true, title:"Bona fide canonical", clickToSelect:false},
+              {field:"pmids", sortable:true, title:"PMIDs", clickToSelect:false},
+      //        {field:"variant", sortable:true, title:"Variant", clickToSelect:false},
+            ]
+   //       search:true,
+        //  clickToSelect:true,
+            exportDataType: $(this).val(),
+            exportTypes: ['csv'],
+        });
             
-</script>
+  })  
 
+           
+</script>
 {% endblock %}
 {% endblock %}
