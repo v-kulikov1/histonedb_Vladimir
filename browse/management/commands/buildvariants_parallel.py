@@ -177,22 +177,22 @@ class Command(BaseCommand):
         """
         self.log.info('Starting canonical2H2AX transformation ...')
 
-        for s in Sequence.objects.filter(variant="canonical_H2A",reviewed=False, sequence__regex="SQ[ED][YFLIA]$"):
-            old_score = s.all_model_scores.get(used_for_classification=True)
+        for s in Sequence.objects.filter(variant_hmm="canonical_H2A",reviewed=False, sequence__regex="SQ[ED][YFLIA]$"):
+            old_score = s.all_model_hmm_scores.get(used_for_classification=True)
             old_score.used_for_classification = False
             old_score.save()
-            # new_score, created = Score.objects.get_or_create(variant__id="H2A.X",sequence=s)
+            # new_score, created = Score.objects.get_or_create(variant_hmm__id="H2A.X",sequence=s)
             obj = Score.objects.filter(variant__id="H2A.X",sequence=s)
             if(len(obj)>1):
                 self.log.warning('More than one score object for one variant found - strange!!!')
                 self.log.warning(obj)
             if(len(obj)==0):
-                new_score, created = Score.objects.get_or_create(variant__id="H2A.X",sequence=s)
+                new_score, created = Score.objects.get_or_create(variant_hmm__id="H2A.X",sequence=s)
             else:
                 new_score=obj.first()
             new_score.used_for_classification = True
             new_score.regex = True
-            s.variant_id="H2A.X"
+            s.variant_hmm_id="H2A.X"
             new_score.save()
             s.save()
 
@@ -268,9 +268,6 @@ class Command(BaseCommand):
         # print >> self.stdout, "Pressing HMMs..."
         subprocess.call(["hmmpress", "-f", combined_hmm])
 
-    def search_in_db(self):
-        return self.search(hmms_db=self.combined_hmm_file, out=self.db_results_file, sequences=self.db_file)
-
     def search(self, hmms_db, out, sequences=None, E=10):
         """Use HMMs to search the nr database"""
         self.log.info("Searching HMMs...")
@@ -286,7 +283,7 @@ class Command(BaseCommand):
             self.search(hmms_db=self.combined_hmm_variants_file, out=self.db_classification_results_file+"%d"%i, sequences=self.full_length_seqs_file+"%d"%i)
 
     def search_in_db_parallel(self):
-        return self.search_parallel(hmms_db=self.combined_hmm_histtypes_file, out=self.db_search_results_file, sequences=self.db_file)
+        return self.search_parallel(hmms_db=self.combined_hmm_histtypes_file, out=self.db_search_results_file, sequences=self.db_file, E=10)
 
     def search_parallel_test_for_small(self, hmms_db, out, sequences=None, E=10):
         """Use HMMs to search the nr database"""
@@ -478,7 +475,7 @@ class Command(BaseCommand):
                     if 'generic' in seed: SeqIO.write(s, fg, "fasta")
                     else: SeqIO.write(s, f, "fasta")
         #Search all curated except generic by our HMMs
-        self.search(hmms_db=self.combined_hmm_variants_file, out=self.curated_search_results_file,sequences=self.curated_all_fasta)
+        self.search(hmms_db=self.combined_hmm_variants_file, out=self.curated_search_results_file,sequences=self.curated_all_fasta, E=10)
         ##We need to parse this results file;
         ##we take here a snippet from load_hmmsearch.py, and tune it to work for our curated seq header format
         for variant_query in SearchIO.parse(self.curated_search_results_file, "hmmer3-text"):
@@ -489,11 +486,11 @@ class Command(BaseCommand):
                 seq = Sequence.objects.get(id=accession)
                 try: #sometimes we get this:    [No individual domains that satisfy reporting thresholds (although complete target did)]
                     best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
-                    add_score(seq, variant_model, best_hsp, seq.variant==variant_model)
+                    add_score(seq, variant_model, best_hsp, seq.variant_hmm==variant_model)
                 except:
                     pass
         #Search generic by our HMMs for histone types
-        self.search(hmms_db=self.combined_hmm_histtypes_file, out=self.curated_gen_search_results_file,sequences=self.curated_generic_fasta)
+        self.search(hmms_db=self.combined_hmm_histtypes_file, out=self.curated_gen_search_results_file,sequences=self.curated_generic_fasta, E=10)
         ##We have no any scores by variants for generic, but we can add scores to histone types
         self.log.info("Loading hmmsearch for generic curated")
         for histtype_query in SearchIO.parse(self.curated_gen_search_results_file, "hmmer3-text"):
@@ -573,7 +570,7 @@ class Command(BaseCommand):
                     self.log.info("Created {} variant model in database".format(variant_model.id))
                 seq = Sequence(
                     id=accession,
-                    variant=variant_model,
+                    variant_hmm=variant_model,
                     gene=None,
                     splice=None,
                     taxonomy_id=taxid,
@@ -716,18 +713,18 @@ class Command(BaseCommand):
             f.write('\n---Histone type statistics----\n')
             f.write('Type        | Total  |Reviewed|  Auto  \n')
             for h in Histone.objects.all():
-                tot=Sequence.objects.filter(variant__hist_type=h).count()
-                rev=Sequence.objects.filter(variant__hist_type=h,reviewed=True).count()
-                auto=Sequence.objects.filter(variant__hist_type=h,reviewed=False).count()
+                tot=Sequence.objects.filter(variant_hmm__hist_type=h).count()
+                rev=Sequence.objects.filter(variant_hmm__hist_type=h,reviewed=True).count()
+                auto=Sequence.objects.filter(variant_hmm__hist_type=h,reviewed=False).count()
 
                 f.write('%12s|%8d|%8d|%8d\n'%(h.id,tot,rev,auto))
 
             f.write('\n---Histone variant statistics----\n')
             f.write('Variant     | Total  |Reviewed|  Auto  \n')
             for v in Variant.objects.all():
-                tot=Sequence.objects.filter(variant=v).count()
-                rev=Sequence.objects.filter(variant=v,reviewed=True).count()
-                auto=Sequence.objects.filter(variant=v,reviewed=False).count()
+                tot=Sequence.objects.filter(variant_hmm=v).count()
+                rev=Sequence.objects.filter(variant_hmm=v,reviewed=True).count()
+                auto=Sequence.objects.filter(variant_hmm=v,reviewed=False).count()
 
                 f.write('%12s|%8d|%8d|%8d\n'%(v.id,tot,rev,auto))
 

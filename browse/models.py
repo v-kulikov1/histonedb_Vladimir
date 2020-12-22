@@ -32,6 +32,7 @@ class Variant(models.Model):
     taxonomic_span = models.CharField(max_length=100) #models.ForeignKey(Taxonomy)?
     description   = models.CharField(max_length=1000)
     hmmthreshold  = models.FloatField(null=True) # parameter used in hmmersearch during sequence annotation
+    blastthreshold  = models.FloatField(null=True) # parameter used in blastthreshold during sequence annotation
     aucroc        = models.IntegerField(null=True) # another parameter - these paramters are calculated during testing phase of manage.py buildvariants
 
     def __str__(self):
@@ -69,8 +70,8 @@ class TemplateSequence(models.Model):
 class Sequence(models.Model):
     id       = models.CharField(max_length=255, primary_key=True) #GI, superseeded by ACCESSION
     # id       = models.CharField(max_length=255, primary_key=True,db_index=True) #GI, superseeded by ACCESSION
-    variant  = models.ForeignKey(Variant, related_name="sequences")
-    # variant_blast = models.ForeignKey(Variant, related_name="sequences_by_blast", blank=True, null=True)
+    variant  = models.ForeignKey(Variant, related_name="sequences", blank=True, null=True)
+    variant_hmm = models.ForeignKey(Variant, related_name="sequences_by_hmm", blank=True, null=True)
     gene     = models.IntegerField(null=True, validators=[MaxValueValidator(15),MinValueValidator(1)])
     splice   = models.IntegerField(null=True, validators=[MaxValueValidator(15),MinValueValidator(1)]) 
     taxonomy = models.ForeignKey(Taxonomy)
@@ -158,7 +159,7 @@ class Score(models.Model):
     """
     # id                      = models.IntegerField(primary_key=True)
     # id = models.AutoField(primary_key=True)
-    sequence                = models.ForeignKey(Sequence, related_name="all_model_scores")
+    sequence                = models.ForeignKey(Sequence, related_name="all_model_hmm_scores")
     variant                 = models.ForeignKey(Variant, related_name="+")
     above_threshold         = models.BooleanField()
     score                   = models.FloatField()
@@ -189,6 +190,7 @@ class ScoreForHistoneType(models.Model):
     hmmEnd                  = models.IntegerField()
     seqStart                = models.IntegerField()
     seqEnd                  = models.IntegerField()
+    used_for_classification = models.BooleanField()
     regex                   = models.BooleanField()
 
     def __str__(self):
@@ -208,19 +210,20 @@ class ScoreBlast(models.Model):
     """
     # id                      = models.IntegerField(primary_key=True)
     # id = models.AutoField(primary_key=True)
-    sequence                = models.ForeignKey(SequenceBlast, related_name="all_model_scores")
+    # sequence                = models.ForeignKey(SequenceBlast, related_name="all_model_scores")
+    sequence                = models.ForeignKey(Sequence, related_name="all_model_scores")
     variant                 = models.ForeignKey(Variant, related_name="b+")
     score                   = models.FloatField()
     bitScore                = models.FloatField(blank=True, null=True)
     evalue                  = models.FloatField()
-    blastStart              = models.IntegerField()
-    blastEnd                = models.IntegerField()
-    seqStart                = models.IntegerField()
-    seqEnd                  = models.IntegerField()
-    align_length            = models.IntegerField()
+    blastStart              = models.IntegerField(blank=True, null=True)
+    blastEnd                = models.IntegerField(blank=True, null=True)
+    seqStart                = models.IntegerField(blank=True, null=True)
+    seqEnd                  = models.IntegerField(blank=True, null=True)
+    align_length            = models.IntegerField(blank=True, null=True)
     match                   = models.TextField(default='')
     hit_accession           = models.CharField(max_length=255, default='')
-    used_for_classification = models.BooleanField()
+    used_for_classification = models.BooleanField(default=False)
 
     def __str__(self):
         return "<{} variant={}; score={}; above_threshold={}; used_for_classification={} >".format(self.sequence.id, self.variant.id, self.score, self.above_threshold, self.used_for_classification)

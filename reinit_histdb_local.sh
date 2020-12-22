@@ -34,4 +34,5 @@ python manage.py buildsunburst -f
 python manage.py buildvariantinfo -f
 python manage.py buildseedinfo -f
 python manage.py shell < tools/export_data.py # exporting data
+python manage.py shell < tools/export_statistics.py # exporting statistics
 

@@ -97,6 +97,21 @@ def load_hmmhit(headers, hist_type, hit):
     if len(seqs) > 0:
       seq = seqs.first()
       if (seq.reviewed == True): continue
+      try:
+        best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
+        best_score = seq.histone_model_scores.filter(used_for_classification=True).first()
+        if best_hsp.score > best_score.score:
+          seq.variant_hmm = get_or_create_unknown_variant(hist_type=hist_type)
+          seq.save()
+          best_score.used_for_classification = False
+          add_histone_score(
+            seq,
+            Histone.objects.get(id=hist_type),
+            best_hsp,
+            best=True)
+      except:
+        pass
+      continue
 
     taxonomy = taxonomy_from_header(header, accession)
     seq = add_sequence(
@@ -110,7 +125,8 @@ def load_hmmhit(headers, hist_type, hit):
       add_histone_score(
         seq,
         Histone.objects.get(id=hist_type),
-        best_hsp)
+        best_hsp,
+        best=True)
     except:
       pass
 
@@ -139,7 +155,7 @@ def load_hmm_classification_results(hmmerFile):
       headers = "{} {}".format(hit.id, hit.description).split('\x01')
       load_hmmhsps(headers, hit.hsps, variant_model)
 
-  log.info('Classified {} dequences'.format(Sequence.objects.exclude(variant__id__startswith='generic').count()))
+  log.info('Classified {} dequences'.format(Sequence.objects.exclude(variant_hmm__id__startswith='generic').count()))
   # load_generic()
   # delete_unknown()
 
@@ -167,13 +183,13 @@ def load_hmmhsps(headers, hsps, variant_model):
         add_score(seq, variant_model, hsp, best=hmmthreshold_passed)
         continue
 
-      best_scores = seq.all_model_scores.filter(used_for_classification=True)
+      best_scores = seq.all_model_hmm_scores.filter(used_for_classification=True)
       if len(best_scores) > 0:
         ##Sequence have passed the threshold for one of previous models.
         best_score = best_scores.first()
         if hsp.bitscore > best_score.score:
           # best scoring
-          seq.variant = variant_model
+          seq.variant_hmm = variant_model
           best_score_2 = Score.objects.get(id=best_score.id)
           best_score_2.used_for_classification = False
           best_score_2.save()
@@ -183,7 +199,7 @@ def load_hmmhsps(headers, hsps, variant_model):
           add_score(seq, variant_model, hsp, best=False)
       else:
         # No previous model passed the threshold, it is the first
-        seq.variant = variant_model
+        seq.variant_hmm = variant_model
         seq.save()
         add_score(seq, variant_model, hsp, best=True)
 
@@ -197,7 +213,7 @@ def load_generic():
     variant_model = Variant(hist_type=Histone.objects.get(id=hist_type), id="generic_{}".format(hist_type))
     variant_model.save()
     for unknown_model_seq in unknown_model_sequences:
-      unknown_model_seq.variant = variant_model
+      unknown_model_seq.variant_hmm = variant_model
       unknown_model_seq.save()
     log.info("Classified %d seqs as generic %s" % (unknown_model_sequences.count(), hist_type))
 
@@ -211,7 +227,7 @@ def load_generic_scores_1():
       hist_score = generic_model_seq.histone_model_scores.first()
       score = Score(
         sequence=generic_model_seq,
-        variant=generic_model,
+        variant_hmm=generic_model,
         score=hist_score.score,
         evalue=hist_score.evalue,
         above_threshold=False,
@@ -234,7 +250,7 @@ def load_generic_scores():
     for generic_model_seq in generic_model_sequences:
       # log.info(generic_model_seq.histone_model_scores.count())
       if generic_model_seq.reviewed: continue
-      # if generic_model_seq.all_model_scores.filter(variant=generic_model).count() > 0: continue
+      # if generic_model_seq.all_model_hmm_scores.filter(variant_hmm=generic_model).count() > 0: continue
       try:
         add_generic_score(generic_model_seq, generic_model, generic_model_seq.histone_model_scores.first())
       except:
@@ -254,7 +270,7 @@ def add_sequence(accession, variant_model, taxonomy, header, sequence):
   """Add sequence into the database, autfilling empty Parameters"""
   seq = Sequence(
     id       = accession,
-    variant  = variant_model,
+    variant_hmm  = variant_model,
     gene     = None,
     splice   = None,
     taxonomy = taxonomy,
@@ -285,7 +301,7 @@ def add_score(seq, variant_model, hsp, best=False):
   score.save()
   return score
 
-def add_histone_score(seq, histone_model, hsp):
+def add_histone_score(seq, histone_model, hsp, best=False):
   """Add score for a given sequence"""
   score = ScoreForHistoneType(
     sequence                = seq,
@@ -296,6 +312,7 @@ def add_histone_score(seq, histone_model, hsp):
     hmmEnd                  = hsp.query_end,
     seqStart                = hsp.hit_start,
     seqEnd                  = hsp.hit_end,
+    used_for_classification = best,
     regex                   = False,
     )
   score.save()
@@ -304,7 +321,7 @@ def add_histone_score(seq, histone_model, hsp):
 def add_generic_score(seq, generic_model, hist_score):
   score = Score(
     sequence=seq,
-    variant=generic_model,
+    variant_hmm=generic_model,
     score=hist_score.score,
     evalue=hist_score.evalue,
     above_threshold=False,

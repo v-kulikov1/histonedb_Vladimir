@@ -166,3 +166,28 @@ def calcualte_threshold(positives, negatives, measure="SPC", measure_threshold=0
     return saveThreshold, thresholds, values
 
 
+def plot_scores(seq_accession, save_dir, scores_sorted, best_threshold):
+    """Plot the scores
+
+    Returns:
+    A dictionary with images of dynamic score changes
+    """
+
+    pp = PdfPages(os.path.join(save_dir, "{}_model_evaluation.pdf".format(seq_accession)))
+
+    sns.set(style="darkgrid")
+    colors = sns.color_palette("Set2", 7)
+
+    plt.plot(range(len(scores_sorted)), scores_sorted, linewidth=2)
+    plt.axhline(best_threshold)
+
+    plt.legend()
+    plt.ylabel("Score")
+    plt.xlabel("Threshold")
+
+    plt.title("{} Model Evaluation".format(seq_accession), fontsize=20)
+
+    pp.savefig()
+    pp.close()
+
+
