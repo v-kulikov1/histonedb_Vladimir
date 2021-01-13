@@ -3,7 +3,7 @@ A database for all histone proteins in NR organized by their known non-allelic p
 
 The database can be accessed at https://histonedb.bioeng.ru
 
-To test HistoneDB you can use [instructions how to run via virtual machine ](docker/README.md) or follow the following instructions.
+To test HistoneDB you can use [instructions how to run via virtual machine ](docker/README.md) or follow the instructions below.
 
 ## Requirements ##
 
@@ -25,7 +25,7 @@ All executables must be present in the bin dir of virual environment.
 
 ## System setup ##
 
-If you want to test the server on your own machine, you must make sure have all of the dependencies listed above, or if you have Ubuntu 18.04 you can follow the instructions below:
+If you want to test the server on your own machine, you must make sure you have all of the dependencies listed above, or if you have Ubuntu 18.04 you can follow the instructions below:
 
 1) Change file ```system_setup/db_setup_query.sql``` by replacing ```db_name```, ```db_user``` and ```pwd```
 ```
