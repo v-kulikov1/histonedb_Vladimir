@@ -10,6 +10,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import math
 
 from ete3 import NCBITaxa
 import seaborn as sns
@@ -19,9 +20,15 @@ from matplotlib.backends.backend_pdf import PdfPages
 NOW = datetime.now()
 DT_STRING = NOW.strftime("%Y%m%d-%H%M%S")
 
+def get_nr_version():
+    with open('NR_VERSION', 'r') as nrv:
+        return nrv.read()
+
 STAT_DIR = os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics")
-CURR_STAT_DIR = os.path.join(STAT_DIR, DT_STRING)
-CURR_STAT_DIR = os.path.join(STAT_DIR, '20201219-195135')
+CURR_STAT_DIR = os.path.join(STAT_DIR, '{}_{}'.format(get_nr_version(), DT_STRING))
+# CURR_STAT_DIR = os.path.join(STAT_DIR, DT_STRING)
+# CURR_STAT_DIR = os.path.join(STAT_DIR, '20201219-195135')
+# CURR_STAT_DIR = os.path.join(STAT_DIR, 'nr_small_per10_v4_20210126-183517')
 DATA_DIR = os.path.join(CURR_STAT_DIR, 'data')
 
 SEQS_FILE = os.path.join(DATA_DIR, 'seqs.csv')
@@ -157,7 +164,7 @@ def general_statistics():
     pp = PdfPages(os.path.join(CURR_STAT_DIR, "Variants_hist.pdf"))
     data = get_seqs_data(curated=False)
     plt.figure(figsize=(15, 16))
-    ax = sns.countplot(y='hist_var', data=data)
+    ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
     for p in ax.patches:
         x = p.get_bbox().get_points()[1, 0]
         y = p.get_bbox().get_points()[:, 1]
@@ -168,7 +175,7 @@ def general_statistics():
     pp = PdfPages(os.path.join(CURR_STAT_DIR, "Variants_hist_curated.pdf"))
     data = get_seqs_data(curated=True)
     plt.figure(figsize=(15, 16))
-    ax = sns.countplot(y='hist_var', data=data)
+    ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
     for p in ax.patches:
         x = p.get_bbox().get_points()[1, 0]
         y = p.get_bbox().get_points()[:, 1]
@@ -177,111 +184,112 @@ def general_statistics():
     pp.savefig()
     pp.close()
 
-def var_distrib_within_histtypes():
+def general_statistics_2():
+    with open(os.path.join(CURR_STAT_DIR, "general_stat"), 'w') as f:
+        f.write('---Database statistics----\n')
+        f.write('Total seqs = %d\n' % Sequence.objects.all().count())
+        f.write('Reviewed seqs = %d\n' % Sequence.objects.filter(reviewed=True).count())
+        f.write('Automatic seqs = %d\n' % Sequence.objects.filter(reviewed=False).count())
+        f.write('\n---Histone type statistics----\n')
+        f.write('Type        | Total  |Reviewed|  Auto  \n')
+        for h in Histone.objects.all():
+            tot = Sequence.objects.filter(variant__hist_type=h).count()
+            rev = Sequence.objects.filter(variant__hist_type=h, reviewed=True).count()
+            auto = Sequence.objects.filter(variant__hist_type=h, reviewed=False).count()
+            f.write('%12s|%8d|%8d|%8d\n' % (h.id, tot, rev, auto))
+        f.write('\n---Histone variant statistics----\n')
+        f.write('Variant     | Total  |Reviewed|  Auto  \n')
+        for v in Variant.objects.all():
+            tot = Sequence.objects.filter(variant=v).count()
+            rev = Sequence.objects.filter(variant=v, reviewed=True).count()
+            auto = Sequence.objects.filter(variant=v, reviewed=False).count()
+            f.write('%12s|%8d|%8d|%8d\n' % (v.id, tot, rev, auto))
+        # f.write('\n---Matching with HMM algorithm----\n')
+        # f.write('Variant     | Total  |Reviewed|  Auto  \n')
+    pp = PdfPages(os.path.join(CURR_STAT_DIR, "Variants_hist.pdf"))
+    data = get_seqs_data()
+    plt.figure(figsize=(30, 40))
+    ax = sns.countplot(y='hist_var', hue='curated', data=data, order = data['hist_var'].value_counts().index)
+    for p in ax.patches:
+        x = p.get_bbox().get_points()[1, 0]
+        y = p.get_bbox().get_points()[:, 1]
+        # print(x)
+        # print(y)
+        # print(p.get_bbox())
+        import math
+        if math.isnan(x):
+            # print(x)
+            x = 1.0
+        ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
+    plt.title('Distribution of variants')
+    pp.savefig()
+    pp.close()
+
+def var_distrib_within_histtypes(filename='Variants_distribution'):
     for histone_type in ['H1', 'H2A', 'H2B', 'H3', 'H4']:
-        data = get_seqs_data(curated=False, hist_type=histone_type)
-        pp = PdfPages(os.path.join(os.path.join(CURR_STAT_DIR, histone_type), "Variants_distribution_{}.pdf".format(histone_type)))
-        plt.figure(figsize=(15, 16))
-        ax = sns.countplot(y='hist_var', data=data)
+        # data = get_seqs_data(curated=False, hist_type=histone_type)
+        data = get_seqs_data(hist_type=histone_type)
+        pp = PdfPages(os.path.join(os.path.join(CURR_STAT_DIR, histone_type), "{}_{}.pdf".format(filename, histone_type)))
+        plt.figure(figsize=(15, 5))
+        ax = sns.countplot(y='hist_var', hue='curated', data=data, order = data['hist_var'].value_counts().index)
         for p in ax.patches:
             x = p.get_bbox().get_points()[1, 0]
             y = p.get_bbox().get_points()[:, 1]
+            if math.isnan(x): x = .0
             ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
         plt.title('Distribution of variants within {}'.format(histone_type))
         pp.savefig()
         pp.close()
 
-def var_distrib_for_highlvltaxa():
+def var_distrib_for_highlvltaxa(filename='Variants_distribution'):
     for hlvl_taxa in HIGHLVL_TAXA:
-        data = get_seqs_data(curated=False, highlvl_taxid=TAXIDS_DICT[hlvl_taxa][0])
-        pp = PdfPages(os.path.join(os.path.join(CURR_STAT_DIR, hlvl_taxa), "Variants_distribution_{}.pdf".format(hlvl_taxa)))
-        plt.figure(figsize=(15, 16))
-        ax = sns.countplot(y='hist_var', data=data)
+        # data = get_seqs_data(curated=False, highlvl_taxid=TAXIDS_DICT[hlvl_taxa][0])
+        data = get_seqs_data(highlvl_taxid=TAXIDS_DICT[hlvl_taxa][0])
+        pp = PdfPages(os.path.join(os.path.join(CURR_STAT_DIR, hlvl_taxa), "{}_{}.pdf".format(filename, hlvl_taxa)))
+        plt.figure(figsize=(25, 20))
+        ax = sns.countplot(y='hist_var', hue='curated', data=data, linewidth=0, order = data['hist_var'].value_counts().index)
         for p in ax.patches:
             x = p.get_bbox().get_points()[1, 0]
             y = p.get_bbox().get_points()[:, 1]
+            if math.isnan(x): x = .0
             ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
         plt.title('Distribution of variants for {}'.format(hlvl_taxa))
         pp.savefig()
         pp.close()
 
-def var_distrib_within_histtypes_for_highlvltaxa():
+def var_distrib_within_histtypes_for_highlvltaxa(filename='Variants_distribution'):
     for histone_type in ['H1', 'H2A', 'H2B', 'H3', 'H4']:
         for hlvl_taxa in HIGHLVL_TAXA:
-            data = get_seqs_data(curated=False, hist_type=histone_type, highlvl_taxid=TAXIDS_DICT[hlvl_taxa][0])
+            # data = get_seqs_data(curated=False, hist_type=histone_type, highlvl_taxid=TAXIDS_DICT[hlvl_taxa][0])
+            data = get_seqs_data(hist_type=histone_type, highlvl_taxid=TAXIDS_DICT[hlvl_taxa][0])
+            if data.empty: continue
             pp = PdfPages(os.path.join(os.path.join(CURR_STAT_DIR, histone_type, hlvl_taxa),
-                                       "Variants_distribution_{}_{}.pdf".format(histone_type, hlvl_taxa)))
+                                       "{}_{}_{}.pdf".format(filename, histone_type, hlvl_taxa)))
             plt.figure(figsize=(15, 16))
-            ax = sns.countplot(y='hist_var', data=data)
+            ax = sns.countplot(y='hist_var', hue='curated', data=data, linewidth=0, order = data['hist_var'].value_counts().index)
             for p in ax.patches:
                 x = p.get_bbox().get_points()[1, 0]
                 y = p.get_bbox().get_points()[:, 1]
+                if math.isnan(x): x = .0
                 ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
             plt.title('Distribution of variants within {} for {}'.format(histone_type, hlvl_taxa))
             pp.savefig()
             pp.close()
 
-def scores_boxplot():
-    data = get_scores_data(curated=False)
+def scores_boxplot(filename='Scores_boxplot'):
+    variants = Variant.objects.all()
     pp = PdfPages(
-        os.path.join(os.path.join(CURR_STAT_DIR), "Scores_boxplot.pdf"))
-    plt.figure(figsize=(20, 5))
-    ax = sns.boxplot(data['score'])
-    for p in ax.patches:
-        x = p.get_bbox().get_points()[1, 0]
-        y = p.get_bbox().get_points()[:, 1]
-        ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
+        os.path.join(os.path.join(CURR_STAT_DIR), filename+".pdf"))
+    plt.figure(figsize=(25, 50))
+    data = get_scores_data()
+    sns.boxplot(x='score', y='blast_model', hue='curated', data=data)
     plt.title('Alignment scores')
     pp.savefig()
     pp.close()
 
-def scores_boxplot_within_variants():
-    variants = Variant.objects.all()
-    pp = PdfPages(
-        os.path.join(os.path.join(CURR_STAT_DIR), "Scores_boxplot_within_variants.pdf"))
-    f, axes = plt.subplots(len(variants), figsize=(10, 5*len(variants)))
-    for i, var in enumerate(variants):
-        data = get_scores_data(curated=False, blast_model=var.id)
-        sns.boxplot(data['score'], ax=axes[i])
-        axes[i].set_title('Alignment scores for {}'.format(var.id))
-    pp.savefig()
-    pp.close()
-
-def curated_scores_boxplot_within_variants():
-    variants = Variant.objects.all()
-    pp = PdfPages(
-        os.path.join(os.path.join(CURR_STAT_DIR), "Curated_scores_boxplot_within_variants.pdf"))
-    f, axes = plt.subplots(len(variants), figsize=(10, 5*len(variants)))
-    for i, var in enumerate(variants):
-        data = get_scores_data(curated=True, blast_model=var.id)
-        sns.boxplot(data['score'], ax=axes[i])
-        axes[i].set_title('Alignment scores for curated {}'.format(var.id))
-    pp.savefig()
-    pp.close()
-
-def compare_scores_boxplot_within_variants():
-    variants = Variant.objects.all()
-    pp = PdfPages(
-        os.path.join(os.path.join(CURR_STAT_DIR), "Compare_scores_boxplot_within_variants.pdf"))
-    f, axes = plt.subplots(len(variants), figsize=(10, 5*len(variants)))
-    for i, var in enumerate(variants):
-        data = get_scores_data(curated=False, blast_model=var.id)
-        data_curated = get_scores_data(curated=True, blast_model=var.id)
-        sns.boxplot(data['score'], ax=axes[i], color=sns.xkcd_rgb["denim blue"])
-        sns.boxplot(data_curated['score'], ax=axes[i], color=sns.xkcd_rgb["pale red"])
-        # sns.boxplot(data['score'], ax=axes[i], color=sns.xkcd_rgb["denim blue"], label='Automatically extracted sequences')
-        # sns.boxplot(data_curated['score'], ax=axes[i], color=sns.xkcd_rgb["pale red"], label='Curated sequences')
-        axes[i].legend(loc="upper left")
-        axes[i].set_title('Alignment scores for {}'.format(var.id))
-    pp.savefig()
-    pp.close()
-
-# create_directories()
-# general_statistics()
-# var_distrib_within_histtypes()
-# var_distrib_for_highlvltaxa()
-# var_distrib_within_histtypes_for_highlvltaxa()
-# scores_boxplot()
-# scores_boxplot_within_variants()
-# curated_scores_boxplot_within_variants()
-compare_scores_boxplot_within_variants()
+create_directories()
+general_statistics()
+var_distrib_within_histtypes()
+var_distrib_for_highlvltaxa()
+var_distrib_within_histtypes_for_highlvltaxa()
+scores_boxplot()

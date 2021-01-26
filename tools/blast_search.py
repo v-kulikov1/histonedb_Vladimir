@@ -74,7 +74,6 @@ def add_score(seq, variant_model, hsp, hit_accession, best=False):
 
 def load_blast_search(blastFile_name):
   blastFile = open(blastFile_name)
-  # log.info('Loaded Blast results from {}'.format(blastFile_name))
 
   for i, blast_record in enumerate(NCBIXML.parse(blastFile)):
     query_split = blast_record.query.split('|')
@@ -134,7 +133,6 @@ def load_blast_search(blastFile_name):
                               'best_hsp': best_algn_hsp,
                               'score': best_algn_hsp.score})
     best_alignments = sorted(best_alignments, key=lambda algn: algn['score'], reverse=True)
-    log.error('DEBUG:: best_alignments: {}'.format(best_alignments))
 
     if best_alignments[0]['variant'] == 'macroH2A':
       feature = Feature.objects.filter(template__variant=best_alignments[0]['variant'], name='Macro domain').first()
@@ -163,7 +161,7 @@ def load_blast_search(blastFile_name):
     # for best_algn in best_alignments[1:]:
     #   add_score(seq, Variant.objects.get(id=best_algn['variant']), best_algn['best_hsp'], best_algn['accession'], best=False)
 
-  # blastFile.close()
+  blastFile.close()
 
 def get_best_hsp(hsps, align_longer=0):
   best_alignment_hsp = hsps[0]

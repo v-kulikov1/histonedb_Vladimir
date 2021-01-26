@@ -29,7 +29,7 @@ class Command(BaseCommand):
             with open(seqs_file, "w") as seqs:
                 for s in Sequence.objects.filter(reviewed=True): #here we restrict the blast DB to reviewed seqs
                     # Do we need generics?
-                    if 'generic' in s.variant.id: continue
+                    if 'generic' in s.variant_hmm.id: continue
                     SeqIO.write(s.to_biopython(ungap=True), seqs, "fasta")
 
         makeblastdb = os.path.join(os.path.dirname(sys.executable), "makeblastdb")

@@ -5,6 +5,7 @@ from tools.blast_search import get_best_hsp
 from tools.test_model import plot_scores
 import subprocess
 import os, sys, io
+import re
 from tools.blast_search import make_blastp, load_blast_search, load_blast_search_diagnosis, add_score
 
 from Bio import SeqIO
@@ -18,8 +19,8 @@ from datetime import date, datetime
 
 from cProfile import Profile
 
-# BLAST_PROCS=100
-BLAST_PROCS=25
+# BLAST_PROCS=25
+BLAST_PROCS=5 # for small random data
 
 class Command(BaseCommand):
     help = 'Blast sequences from HistoneDB and load classification data'
@@ -62,7 +63,7 @@ class Command(BaseCommand):
         self.log.info('=======================================================')
         self.start_time = datetime.now()
         if options["force"]:
-            # Clean the DB, removing all sequence/variants/etc
+            # Clean the DB, removing all sequence/scores/etc
             ScoreBlast.objects.all().delete()
             for s in Sequence.objects.all():
                 s.variant = None
@@ -133,18 +134,18 @@ class Command(BaseCommand):
                 # best_scores = [get_best_hsp(alignment.hsps).score for alignment in blast_record.alignments]
                 # add_score(sequence, sequence.variant, best_hsp, best_alignment.hit_def.split("|")[0], best=True)
                 best_scores.sort(reverse=True)
-                self.log.info('DEBUG::{}'.format(best_scores))
+                # self.log.info('DEBUG::{}'.format(best_scores))
 
                 i_treshold = 1
                 seq_treshold = best_scores[i_treshold]
-                self.log.info('DEBUG::{}-{}-{}'.format(best_scores[i_treshold-1], seq_treshold, best_scores[i_treshold+1]))
-                self.log.info('DEBUG::{}-{}'.format(best_scores[i_treshold+1]-seq_treshold, (seq_treshold-best_scores[i_treshold-1])+.00001))
+                # self.log.info('DEBUG::{}-{}-{}'.format(best_scores[i_treshold-1], seq_treshold, best_scores[i_treshold+1]))
+                # self.log.info('DEBUG::{}-{}'.format(best_scores[i_treshold+1]-seq_treshold, (seq_treshold-best_scores[i_treshold-1])+.00001))
                 while (best_scores[i_treshold+1]-seq_treshold)/((seq_treshold-best_scores[i_treshold-1])+.00001) > .8:
                 # while best_scores[i_treshold+1]/seq_treshold > .9:
                     i_treshold+=1
                     seq_treshold = best_scores[i_treshold]
                     if i_treshold+1==len(best_scores): break
-                self.log.info('DEBUG::i_treshold-{}'.format(i_treshold))
+                # self.log.info('DEBUG::i_treshold-{}'.format(i_treshold))
                 # seq_treshold = best_scores[2]
                 if sequence.variant.id not in thresholds_scores:
                     thresholds_scores[sequence.variant.id] = []
@@ -218,6 +219,10 @@ class Command(BaseCommand):
         self.log.info("Loading BLASTP data into HistoneDB...")
         for hist_type in ['H1', 'H2A', 'H2B', 'H3', 'H4']:
             for i in range(BLAST_PROCS+1):
+                with open(self.blast_file + hist_type + "%d" % i) as blastFile:
+                    if re.search(r'^\s*$', blastFile.read()):
+                        self.log.warning('Results of {} is empty'.format(self.blast_file + hist_type + "%d" % i))
+                        continue
                 load_blast_search(self.blast_file + hist_type + "%d" % i)
                 self.log.info('Loaded {}/{} BlastRecords of {}'.format(i,BLAST_PROCS, hist_type))
                 self.log.info('Classified {} from {}'.format(Sequence.objects.exclude(variant=None).count(),Sequence.objects.all().count()))
@@ -305,6 +310,9 @@ class Command(BaseCommand):
     def get_stats(self, filename_suff = ''):
         self.log.info('Outputting statistics file ...')
 
+        with open('NR_VERSION', 'r') as nrv:
+            nr_version = nrv.read()
+
         now = datetime.now()
         dt_string = now.strftime("%Y%m%d-%H%M%S")
         with open('log/blast_db_stat_'+dt_string+filename_suff,'w') as f:
@@ -313,6 +321,7 @@ class Command(BaseCommand):
             f.write("DB regen end time: %s\n"%now)
             f.write("Time taken for regeneration of variants: %f hours\n"%(float((now-self.start_time).total_seconds())/3600.))
             f.write("Parallel threads used %d\n"%BLAST_PROCS)
+            f.write("DB file used: %s\n" % nr_version)
             f.write('---Database statistics----\n')
             f.write('Total seqs = %d\n'%Sequence.objects.all().count())
             f.write('Reviewed seqs = %d\n'%Sequence.objects.filter(reviewed=True).count())

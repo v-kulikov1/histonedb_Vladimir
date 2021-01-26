@@ -19,7 +19,8 @@ from datetime import date, datetime
 
 from cProfile import Profile
 
-HMMER_PROCS=20
+# HMMER_PROCS=20
+HMMER_PROCS=4 # for small random data
 
 #This command is the main one in creating the histone database system from seed alignments
 #and by using HMMs constructed based on these alignment to classify the bigger database.
@@ -694,6 +695,9 @@ class Command(BaseCommand):
 
     def get_stats(self, filename_suff = ''):
         self.log.info('Outputting statistics file ...')
+
+        with open('NR_VERSION', 'w') as nrv:
+            nrv.write(self.db_file)
 
         now = datetime.now()
         dt_string = now.strftime("%Y%m%d-%H%M%S")
