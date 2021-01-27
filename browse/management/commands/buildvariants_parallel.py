@@ -116,16 +116,10 @@ class Command(BaseCommand):
 
 
         if options["force"]:
-            #Clean the DB, removing all sequence/variants/etc
+            #Clean the DB, removing all sequence/scores/etc
             Sequence.objects.all().delete()
             Score.objects.all().delete()
             ScoreForHistoneType.objects.all().delete()
-            Variant.objects.all().delete()
-            Histone.objects.all().delete()
-
-        #Populate our Histone types table add descriptions
-        if options["force"]:
-            self.create_histone_types()
 
         if options["force"] or not os.path.isfile(self.combined_hmm_histtypes_file):
             #Create HMMs from seeds and compress them to one HMM file tp faster search with hmmpress.
@@ -196,21 +190,6 @@ class Command(BaseCommand):
             s.variant_hmm_id="H2A.X"
             new_score.save()
             s.save()
-
-    def create_histone_types(self):
-        """Create basic histone types
-        Check that these names are consistent with the folder names in static/browse/seeds/
-        """
-        for i in ['H3','H4','H2A','H2B']:
-            obj,created = Histone.objects.get_or_create(id=i,taxonomic_span="Eukaryotes",\
-                      description="Core histone")
-            if created:
-                self.log.info("Histone {} type was created in database.".format(obj.id))
-
-        obj,created = Histone.objects.get_or_create(id="H1",taxonomic_span="Eukaryotes",\
-                      description="Linker histone")
-        if created:
-            self.log.info("Histone {} type was created in database.".format(obj.id))
 
     def get_nr(self):
         """Download nr if not present"""
@@ -566,9 +545,7 @@ class Command(BaseCommand):
                     accessions.append(accession)
                 self.log.info("Loading {}".format(s.id))
 
-                variant_model, create = Variant.objects.get_or_create(id=variant_name, hist_type_id=hist_type)
-                if create:
-                    self.log.info("Created {} variant model in database".format(variant_model.id))
+                variant_model = Variant.objects.get(id=variant_name)
                 seq = Sequence(
                     id=accession,
                     variant_hmm=variant_model,
@@ -657,9 +634,7 @@ class Command(BaseCommand):
 
             #Let's put the parameter data to the database,
             #We can set hist_type directly by ID, which is hist_type_pos in this case - because it is the primary key in Histone class.
-            variant_model, create = Variant.objects.get_or_create(id=variant_name,hist_type_id=hist_type_pos)
-            if create:
-                self.log.info("Created {} variant model in database".format(variant_model.id))
+            variant_model = Variant.objects.get(id=variant_name)
             self.log.info("Updating thresholds for {}".format(variant_model.id))
             variant_model.hmmthreshold = parameters["threshold"]
             variant_model.aucroc = parameters["roc_auc"]

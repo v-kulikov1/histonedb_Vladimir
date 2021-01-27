@@ -21,7 +21,9 @@ python manage.py buildtaxonomytoc
 # gunzip nr_5march2020.gz
 # python manage.py buildvariants_parallel -f --db nr_5march2020
 
+python manage.py buildvarianttypes
 python manage.py buildvariantinfo -f
+
 # python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
 python manage.py buildvariants_parallel -f --db nr_small_per10_v4
 # python manage.py buildvariants_parallel -f --db swissprot # this should work reasonably fast
