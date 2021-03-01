@@ -134,6 +134,7 @@ def load_blast_search(blastFile_name):
                               'score': best_algn_hsp.score})
     best_alignments = sorted(best_alignments, key=lambda algn: algn['score'], reverse=True)
 
+    # If hsp contains macro domain?
     if best_alignments[0]['variant'] == 'macroH2A':
       feature = Feature.objects.filter(template__variant=best_alignments[0]['variant'], name='Macro domain').first()
       hsp_start = best_alignments[0]['best_hsp'].sbjct_start # get start and end of hit HSP

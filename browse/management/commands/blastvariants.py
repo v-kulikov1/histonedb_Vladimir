@@ -96,15 +96,24 @@ class Command(BaseCommand):
             self._handle(*args, **options)
 
     def estimate_thresholds(self):
+        """
+            Estimate BLAST thresholds that we will use for variant classification.
+            # Construct two sets for every variant:
+            #     negative: The seed alignmnents from every other variant
+            #     positive: the current seed alignment for the variant
+            # And estimate params from ROC-curves.
+        """
         thresholds_scores = {}
         for sequence in Sequence.objects.filter(reviewed=True):
             if 'generic' in sequence.variant.id: continue
-            
+
+            # Let's create BLASTDB for search including align (query) sequence
             hist_type = sequence.variant.hist_type.id
             seqs_file = os.path.join(self.model_evaluation, hist_type, "BLASTDB_sequences_{}.fa".format(sequence.id))
             # self.create_blastdb(Sequence.objects.filter(reviewed=True).exclude(id=sequence.id), seqs_file)
             self.create_blastdb(Sequence.objects.filter(reviewed=True), seqs_file)
 
+            # BLASTP search
             blastp = os.path.join(os.path.dirname(sys.executable), "blastp")
             # output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
             blastp_cline = NcbiblastpCommandline(
@@ -118,10 +127,14 @@ class Command(BaseCommand):
             resultFile.write(result.encode("utf-8"))
             resultFile.seek(0)
 
+            # Analyze BLASTP search results
             for i, blast_record in enumerate(NCBIXML.parse(resultFile)):
+                # sometimes it happens, is it OK?
                 if len(blast_record.alignments) == 0:
                     continue
 
+                # Extracting best score of the hit and saving to the list best_scores
+                # And sorting best_scores in descending order
                 best_alignment = blast_record.alignments[0]
                 best_hsp = get_best_hsp(best_alignment.hsps)
                 best_scores = [best_hsp.score]
@@ -206,7 +219,7 @@ class Command(BaseCommand):
 
             sequences_all = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=False).filter(variant_hmm__hist_type__id=hist_type)]
             # sequences_all = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=False)]
-            self.log.info("Running BLASTPb for {} sequences of {}...".format(len(sequences_all), hist_type))
+            self.log.info("Running BLASTP for {} sequences of {}...".format(len(sequences_all), hist_type))
             split_count = int(len(sequences_all)/BLAST_PROCS)
 
             for i in range(BLAST_PROCS+1):

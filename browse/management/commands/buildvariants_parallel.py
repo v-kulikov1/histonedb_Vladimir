@@ -9,6 +9,7 @@ import re
 import io
 from tools.taxonomy_from_accessions import taxonomy_from_header, easytaxonomy_from_header, fetch_taxids, update_taxonomy
 from tools.blast_search import make_blastp, load_blast_search
+from tools.hist_ss import get_variant_features
 
 from Bio import SearchIO
 from Bio import SeqIO
@@ -31,6 +32,7 @@ HMMER_PROCS=4 # for small random data
 class Command(BaseCommand):
     help = 'Build HistoneDB by first loading the seed sequences and then parsing the database file'
     seed_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "seeds")
+    fold_seed_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "seeds_fold")
     hmm_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "hmms")
     # combined_hmm_file = os.path.join(hmm_directory, "combined_hmm.hmm") #removed by Preety
     combined_hmm_histtypes_file = os.path.join(hmm_directory, "combined_hmm_histtypes.hmm") #file for combined sequences by hist_types (by Preety)
@@ -123,6 +125,7 @@ class Command(BaseCommand):
 
         if options["force"] or not os.path.isfile(self.combined_hmm_histtypes_file):
             #Create HMMs from seeds and compress them to one HMM file tp faster search with hmmpress.
+            self.create_fold_seeds()
             self.build_hmms_from_seeds()
             self.press_hmms()
 
@@ -220,13 +223,13 @@ class Command(BaseCommand):
         # print >> self.stdout, "Building HMMs..."
         
         with open(self.combined_hmm_histtypes_file, "w") as combined_hmm_histtypes, open(self.combined_hmm_variants_file, "w") as combined_hmm_variants:
-            for hist_type, seed in self.get_seeds(combined_alignments=True):
+            for hist_type, seed in self.get_fold_seeds(combined_alignments=True):
                 #Build HMMs
                 hmm_dir = os.path.join(self.hmm_directory, hist_type)
                 if not os.path.exists(hmm_dir):
                     os.makedirs(hmm_dir)
                 hmm_file = os.path.join(hmm_dir, "{}.hmm".format(seed[:-6]))
-                self.build_hmm(seed[:-6], hmm_file, os.path.join(self.seed_directory, hist_type, seed))
+                self.build_hmm(seed[:-6], hmm_file, os.path.join(self.fold_seed_directory, hist_type, seed))
                 if hist_type=='': #combine all combined by hist_types sequences in one file (by Preety)
                     with open(hmm_file) as hmm:
                         print(hmm.read().rstrip(), file=combined_hmm_histtypes)
@@ -564,6 +567,7 @@ class Command(BaseCommand):
     def get_seeds(self, combined_alignments=False, generic=False):
         """
         Goes through static/browse/seeds directories and returns histone type names and fasta file name of variant (without path).
+        If combined_alignments returns histone types as seed and '' as hist_type, additionally to variants
         """
         for i, (root, _, files) in enumerate(os.walk(self.seed_directory)):
             hist_type = os.path.basename(root)
@@ -574,6 +578,79 @@ class Command(BaseCommand):
             elif hist_type=="seeds":
                 hist_type = ""
             for seed in files: 
+                if not seed.endswith(".fasta") or (not generic and 'generic' in seed): continue
+                yield hist_type, seed
+
+    def create_fold_seeds(self):
+        """
+        Goes through static/browse/seeds directories and creates similar structure in static/browse/seeds_fold with clipped sequences.
+        Directory static/browse/seeds_fold contains similar seed sequences clipped to contain only histone folds.
+        """
+        from Bio.Align import MultipleSeqAlignment
+        from Bio.Align.AlignInfo import SummaryInfo
+        from Bio.SeqRecord import SeqRecord
+        from Bio.Seq import Seq
+        from Bio.Alphabet import IUPAC
+
+        self.log.info('Creating seeds_fold directory with same sequences clipped to contain only histone folds...')
+        if not os.path.exists(self.fold_seed_directory):
+            os.makedirs(self.fold_seed_directory)
+        for i, (root, _, files) in enumerate(os.walk(self.seed_directory)):
+            for seed in files:
+                if not seed.endswith(".fasta"): continue
+                hist_type = os.path.basename(root) if os.path.basename(root)!='seeds' else seed[:-6]
+                create_file = os.path.join(self.fold_seed_directory, hist_type, seed) if os.path.basename(root)!='seeds' else os.path.join(self.fold_seed_directory, seed)
+                variant = Variant.objects.get(id='canonical_{}'.format(hist_type)) if hist_type!='H1' else Variant.objects.get(id='generic_H1')
+                seqFile = os.path.join(root, seed)
+                sequences = list(SeqIO.parse(seqFile, "fasta"))
+                try:
+                    msa = MultipleSeqAlignment(sequences)
+                    a = SummaryInfo(msa)
+                    cons = Sequence(id="Consensus", variant_id=variant.id, taxonomy_id=1,
+                                    sequence=str(a.dumb_consensus(threshold=0.1, ambiguous='X')))
+                    features = get_variant_features(cons, variants=[variant], save_gff=False, only_general=True)
+                    cutting_params = [next(filter(lambda x: x.id.split('_', 2)[-1].strip() == 'General{}_root_alpha1'.format(hist_type), features)).start,
+                                      next(filter(lambda x: x.id.split('_', 2)[-1].strip() == 'General{}_root_alpha3'.format(hist_type), features)).end]
+                    # cutting_params = list(filter(None, [feature.start if feature.id=='General{}_root_alpha1'.format(seed[:-6]) else feature.end if feature.id=='General{}_root_alpha3'.format(seed[:-6]) else None for feature in features]))
+                    try:
+                        fd = open(create_file, 'w')
+                    except FileNotFoundError:
+                        os.makedirs(os.path.join(self.fold_seed_directory, hist_type))
+                        fd = open(create_file, 'w')
+                    for s in SeqIO.parse(seqFile, "fasta"):
+                        s.seq = Seq(str(s.seq)[cutting_params[0]:cutting_params[1]+1], IUPAC.protein)
+                        SeqIO.write(s, fd, "fasta")
+                    fd.close()
+                except StopIteration:
+                    self.log.warning('StopIteration: hist_type {}, seed {}'.format(hist_type, seed))
+                    try:
+                        fd = open(create_file, 'w')
+                    except FileNotFoundError:
+                        os.makedirs(os.path.join(self.fold_seed_directory, hist_type))
+                        fd = open(create_file, 'w')
+                    for s in SeqIO.parse(seqFile, "fasta"):
+                        SeqIO.write(s, fd, "fasta")
+                    fd.close()
+        self.log.info('Sequences clipped. See static/browse/seeds_fold directory.')
+
+    def get_fold_seeds(self, combined_alignments=False, generic=False):
+        """
+        Goes through static/browse/seeds_fold directories and returns histone type names and fasta file name of variant (without path).
+        If combined_alignments returns histone types as seed and '' as hist_type, additionally to variants
+        If there is no such directory creates new one with cut sequences from static/browse/seeds
+        """
+        if not os.path.exists(self.fold_seed_directory):
+            self.create_fold_seeds()
+
+        for i, (root, _, files) in enumerate(os.walk(self.fold_seed_directory)):
+            hist_type = os.path.basename(root)
+            if hist_type=="seeds" and not combined_alignments: #means we are in top dir, we skip,
+            # combinded alignmnents for hist types are their, but we do not use them in database constuction,
+            #only in visualization on website
+                continue
+            elif hist_type=="seeds_fold":
+                hist_type = ""
+            for seed in files:
                 if not seed.endswith(".fasta") or (not generic and 'generic' in seed): continue
                 yield hist_type, seed
 
