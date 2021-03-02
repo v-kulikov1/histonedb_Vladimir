@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 from browse.models import Sequence, SequenceBlast, ScoreBlast, Histone, Variant
 from tools.blast_search import get_best_hsp
-from tools.test_model import plot_scores
+from tools.test_model import plot_scores, test_variant
 import subprocess
 import os, sys, io
 import re
@@ -96,6 +96,40 @@ class Command(BaseCommand):
             self._handle(*args, **options)
 
     def estimate_thresholds(self):
+        """
+            Estimate BLAST thresholds that we will use for variant classification.
+            # Construct two sets for every variant:
+            #     negative: The seed alignmnents from every other variant
+            #     positive: the current seed alignment for the variant
+            # And estimate params from ROC-curves.
+        """
+        for variant in Variant.objects.exclude(id__startswith='generic'):
+            hist_type = variant.hist_type.id
+            positive_seq = variant.sequences.filter(reviewed=True)
+            # Do we need to exclude generic here?
+            # negative_seq = Sequence.objects.filter(reviewed=True).exclude(variant__id=variant.id, id__startswith='generic')
+            negative_seq = Sequence.objects.filter(reviewed=True).exclude(variant__id=variant.id)
+
+            # POSITIVE
+            # Let's create BLASTDB for search including align (query) sequences
+            blastdb_file_positive = os.path.join(self.model_evaluation, hist_type, "BLASTDB_positive_{}.fa".format(variant.id))
+            self.create_blastdb(positive_seq, blastdb_file_positive)
+            # BLASTP search
+            positive_results = os.path.join(self.model_evaluation, hist_type, "BLASTP_positive_{}.fa".format(variant.id))
+            make_blastp(positive_seq, blastdb_file_positive, save_to=positive_results)
+
+            # NEGATIVE
+            # Let's create BLASTDB for search including align (query) sequences
+            blastdb_file_negative = os.path.join(self.model_evaluation, hist_type, "BLASTDB_negative_{}.fa".format(variant.id))
+            self.create_blastdb(negative_seq, blastdb_file_negative)
+            # BLASTP search
+            negative_results = os.path.join(self.model_evaluation, hist_type, "BLASTP_negative_{}.fa".format(variant.id))
+            make_blastp(negative_seq, blastdb_file_negative, save_to=negative_results)
+
+            test_variant(positive_results, negative_results)
+
+
+    def estimate_thresholds_old(self):
         """
             Estimate BLAST thresholds that we will use for variant classification.
             # Construct two sets for every variant:
@@ -260,44 +294,6 @@ class Command(BaseCommand):
             score.save()
 
 
-    def search_blast_old(self):
-        # sequences = Sequence.objects.filter(reviewed=False).values_list('sequence')
-        sequences_all = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=False)]
-        self.log.info("Running BLASTP for {} sequences...".format(len(sequences_all)))
-        split_count = int(len(sequences_all) / BLAST_PROCS)
-
-        for i in range(BLAST_PROCS + 1):
-            sequences = sequences_all[split_count * i:split_count * i + split_count]
-            save_to = self.blast_file + "%d" % i
-            self.log.info('Starting Blast sequences for {}/{}'.format(i, BLAST_PROCS))
-            blastdb_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa")
-            make_blastp(sequences, blastdb=blastdb_file, save_to=save_to)
-
-    def load_in_db_old(self):
-        self.log.info("Loading BLASTP data into HistoneDB...")
-        for i in range(BLAST_PROCS+1):
-            load_blast_search(self.blast_file + "%d" % i)
-            self.log.info('Loaded {}/{} BlastRecords'.format(i,BLAST_PROCS))
-            self.log.info('Classified {} from {}'.format(Sequence.objects.exclude(variant=None).count(),Sequence.objects.all().count()))
-
-        non_classified = Sequence.objects.filter(variant=None)
-        for s in non_classified:
-            s.variant = Variant.objects.get(id='generic_{}'.format(s.variant_hmm.hist_type.id))
-            s.save()
-            score = ScoreBlast(
-                sequence=s,
-                variant=s.variant,
-                score=.000001,
-                bitScore=None,
-                evalue=.011,
-                blastStart=None,
-                blastEnd=None,
-                seqStart=None,
-                seqEnd=None,
-                align_length=None,
-                used_for_classification=True,
-            )
-            score.save()
 
     def test_curated(self):
         sequences = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=True)]

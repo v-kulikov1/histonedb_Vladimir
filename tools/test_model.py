@@ -29,6 +29,8 @@ from scipy.interpolate import interp1d
 
 sns.set(style="white", context="talk")
 
+# HMMsearch
+
 #Thresholds decided by manualy looking at the headers in the hmmsearch output. Useful to compare.
 original_thresholds = {
     "H2A": {
@@ -177,7 +179,39 @@ def calcualte_threshold(positives, negatives, measure="SPC", measure_threshold=0
     return saveThreshold, thresholds, values
 
 
-def plot_scores(seq_accession, save_dir, scores_sorted, best_threshold):
+# BLASTsearch
+
+def get_variant_scores(blast_output):
+    """Get the score for each hit/domain in a blastsearch result
+
+        Parameters:
+        -----------
+        blast_output: str or File-like object
+            Path to blastsearch output file
+
+        Return:
+        -------
+        A list of all scores
+        """
+    blast_result = open(blast_output)
+    for i, blast_record in enumerate(NCBIXML.parse(resultFile)):
+        # it seems that sometimes it happens, is it OK?
+        if len(blast_record.alignments) == 0:
+            self.log.warning('While estimating BLAST score thresholds no alignments found for blast_record {}'.format(
+                blast_record.query))
+            continue
+
+def test_variant(postive_file, negative_file):
+    """Test the model by calcuating
+
+        Returns:
+        # A dictionary with containg the AUCROC and Threshold. An image is also saved
+        # with the ROC and score histograms.
+        """
+    postive_scores = get_variant_scores(postive_file)
+    negative_scores = get_variant_scores(negative_file)
+
+def plot_scores(seq_accession, save_dir, scores_sorted, best_threshold=None):
     """Plot the scores
 
     Returns:
@@ -190,7 +224,7 @@ def plot_scores(seq_accession, save_dir, scores_sorted, best_threshold):
     colors = sns.color_palette("Set2", 7)
 
     plt.plot(range(len(scores_sorted)), scores_sorted, linewidth=2)
-    plt.axhline(best_threshold)
+    if best_threshold: plt.axhline(best_threshold)
 
     plt.legend()
     plt.ylabel("Score")
