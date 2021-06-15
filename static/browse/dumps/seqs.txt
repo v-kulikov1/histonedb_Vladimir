@@ -23,9 +23,9 @@ accession,hist_type,hist_var,taxid,curated
 3LEL_K,H3,canonical_H3,8355,False
 3LEL_O,H3,canonical_H3,8355,False
 4ZUX_A,H3,canonical_H3,8355,False
-4ZUX_D,H2B,canonical_H2B,559292,False
-4ZUX_E,H3,canonical_H3,559292,False
-4ZUX_H,H2B,canonical_H2B,9606,False
+4ZUX_D,H2B,canonical_H2B,8355,False
+4ZUX_E,H3,canonical_H3,8355,False
+4ZUX_H,H2B,canonical_H2B,8355,False
 4ZUX_K,H3,canonical_H3,8355,False
 4ZUX_N,H2B,canonical_H2B,8355,False
 4ZUX_O,H3,canonical_H3,8355,False
@@ -901,7 +901,7 @@ XP_001517430.3,H2A,H2A.1,9258,False
 XP_001548661.1,H4,canonical_H4,332648,False
 XP_001637578.1,H2A,macroH2A,45351,True
 XP_001682282.1,H2A,H2A.Z,347515,False
-XP_001704715.1,H2A,H2A.X,184922,True
+XP_001704715.1,H2A,H2A.X,5741,True
 XP_001713521.1,H3,canonical_H3,55529,True
 XP_001907764.1,H4,canonical_H4,515849,False
 XP_002111498.1,H2A,H2A.Z,10228,True
@@ -1103,7 +1103,7 @@ XP_016416878.1,H2A,canonical_H2A,307959,False
 XP_016586559.1,H4,canonical_H4,1397361,False
 XP_017212661.1,H2B,canonical_H2B,7955,False
 XP_017345146.1,H2A,canonical_H2A,7998,False
-XP_017383891.1,H2A,canonical_H2A,1737458,False
+XP_017383891.1,H2A,canonical_H2A,3036168,False
 XP_017500149.1,H2A,canonical_H2A,9974,False
 XP_017729003.1,H2A,canonical_H2A,61621,False
 XP_018082407.1,H2A,macroH2A,8355,False
