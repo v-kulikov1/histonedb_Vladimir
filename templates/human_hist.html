@@ -24,8 +24,9 @@
 <script type="text/javascript" src="{% static 'browse/js/bootstrap.js' %}"></script>
 <script type="text/javascript" src="{% static 'browse/js/bootstrap-table.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'browse/js/bootstrap-table-export.min.js' %}"></script>
+{% endblock %}
 
-
+{% block content %}
 <style>
 #toolbar {
   margin: 0;
@@ -84,9 +85,6 @@
   </div>
 
 
-
-{% block javascript %}
-{% load static %}
 
 <table id="table"
   data-show-export="true"
@@ -325,6 +323,14 @@
                  
                 {% endfor %}
     ]
+
+      $(function() {
+        createMSA("quick_msa-analyze_sequences", "{% url 'browse.views.get_aln_and_features' %}?upload=true&id={{ result.5 }}", "", 975, 75, false);
+        $('#sequence_table_analyze_sequences tr[data-index="0"]').addClass('success');
+      });
+
+
+
     
     $table.bootstrapTable({
         data: data,
@@ -338,28 +344,44 @@
               {field:"state", checkbox:true, }, //visible: $(this).val() === 'selected'
               {field:"hist_type", sortable:true, title:"Histone type", clickToSelect:true},
               {field:"variant", sortable:true, title:"Histone variant", clickToSelect:true},
-              {field:"hgnc_symbol", sortable:true, title:"HGNC Symbol", clickToSelect:false},
-              {field:"prev_hgnc_symb", sortable:true, title:"Previous HGNC Symbol", clickToSelect:false},
-              {field:"ncbi_gene_id", sortable:true, title:"NCBI gene id", clickToSelect:false},
-              {field:"ensg", sortable:true, title:"Ensembl gene ID", clickToSelect:false},
-              {field:"expr_timing", sortable:true, title:"Expr. timing", clickToSelect:false},
-              {field:"expr_pattern", sortable:true, title:"Expr. pattern", clickToSelect:false},
-              {field:"biotype", sortable:true, title:"Biotype", clickToSelect:false},
-              {field:"bona_fidecanonical", sortable:true, title:"Bona fide canonical", clickToSelect:false},
-              {field:"pmids", sortable:true, title:"PMIDs", clickToSelect:false},
-              {field:"enst", sortable:true, title:"Transcript stable ID", clickToSelect:false},
-              {field:"refseq_transcript_id", sortable:true, title:"RefSeq transcript ID", clickToSelect:false},
-              {field:"refseq_protein_id", sortable:true, title:"RefSeq protein ID", clickToSelect:false},
-              {field:"prot_lenght", sortable:true, title:"Protein lenght", clickToSelect:false},
-              {field:"isoform", sortable:true, title:"Isoform", clickToSelect:false},
+              {field:"hgnc_symbol", sortable:true, title:"HGNC Symbol", clickToSelect:true},
+              {field:"prev_hgnc_symb", sortable:true, title:"Previous HGNC Symbol", clickToSelect:true},
+              {field:"ncbi_gene_id", sortable:true, title:"NCBI gene id", clickToSelect:true},
+              {field:"ensg", sortable:true, title:"Ensembl gene ID", clickToSelect:true},
+              {field:"expr_timing", sortable:true, title:"Expr. timing", clickToSelect:true},
+              {field:"expr_pattern", sortable:true, title:"Expr. pattern", clickToSelect:true},
+              {field:"biotype", sortable:true, title:"Biotype", clickToSelect:true},
+              {field:"bona_fidecanonical", sortable:true, title:"Bona fide canonical", clickToSelect:true},
+              {field:"pmids", sortable:true, title:"PMIDs", clickToSelect:true},
+              {field:"enst", sortable:true, title:"Transcript stable ID", clickToSelect:true},
+              {field:"refseq_transcript_id", sortable:true, title:"RefSeq transcript ID", clickToSelect:true},
+              {field:"refseq_protein_id", sortable:true, title:"RefSeq protein ID", clickToSelect:true},
+              {field:"prot_lenght", sortable:true, title:"Protein lenght", clickToSelect:true},
+              {field:"isoform", sortable:true, title:"Isoform", clickToSelect:true},
             ]
    //       search:true,
         //  clickToSelect:true,
+
+
+        // toolbar:"#sequence_toolbar_browse_curated_variants_H3",
+        // onLoadSuccess: function(data){
+        //     if(data.rows.length>0){
+        //       createMSA("quick_msa-{{page_name}}", "/data/sequences+features/json?id="+data.rows[0].id, "", 975, 75, false);
+        //       $('#sequence_table_browse_curated_variants_H3 tr[data-index="0"]').addClass('success');
+        //         }
+        //
+        //   },
+        // onClickCell:function(event, value, row, index){
+        //
+        //       createMSA("quick_msa-browse_{{page_name}}", "/data/sequences+features/json?id="+row.id, "", 975, 75, false);
+        //
+        //   },
+
+
         });
             
   })  
 
            
 </script>
-{% endblock %}
 {% endblock %}

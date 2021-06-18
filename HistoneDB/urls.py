@@ -9,5 +9,3 @@ urlpatterns = [
 
 urlpatterns += [url(r'^admin/', include(admin.site.urls))]
 urlpatterns += [url(r'human_hist/', include('human_hist.urls'))]
-
-

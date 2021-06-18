@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load browse_filters %}
+
+
+{% block includes %}
+<!--<link rel="stylesheet" type="text/css" href="{% static 'browse/css/msa0.4.6.css' %}" />-->
+<!--<script src="{% static 'browse/js/xhr@latest.js' %}"></script>-->
+<!--<script src="{% static 'browse/js/msa@0.4.6.js' %}"></script>-->
+<!--<script src="{% static 'browse/js/biojs-io-fasta.js' %}"></script>-->
+<!--<script src="{% static 'browse/js/biojs-io-gff.js' %}"></script>-->
+<!--<script src="{% static 'browse/js/msa.js' %}"></script>-->
+
+<!--&lt;!&ndash; Bootstrap core JavaScript-->
+<!--================================================== &ndash;&gt;-->
+<!--&lt;!&ndash; Placed at the end of the document so the pages load faster &ndash;&gt;-->
+<!--<script type="text/javascript" src="{% static 'browse/js/jquery-2.1.3.min.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/bootstrap.min.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/jquery.csv.min.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/jquery.dataTables.min.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/dataTables.bootstrap.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/csv_to_html_table.js' %}"></script>-->
+
+<!--<script type="text/javascript" src="{% static 'browse/js/bootstrap.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/bootstrap-table.min.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'browse/js/bootstrap-table-export.min.js' %}"></script>-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/cdsjsd3/g3-viz/0.5.0/g3-lollipop.min.css">
+<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/cdsjsd3/css/gist.css">
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/cdsjsd3/g3-viz/0.5.0/g3-lollipop.min.js"></script>
+{% endblock %}
+{% block content %}
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+
+<!--<body>-->
+    <div>
+        <div>
+            <span class="btn-group">
+                <button id="save-as-png">save as PNG</button>
+                <button id="save-as-svg">save as SVG</button>
+            </span>
+        </div>
+
+        <div id="lollipop"></div>
+    </div>
+
+
+
+    <script>
+        var mutation_data = [
+            {
+                "Hugo_Symbol": "PIK3CA",
+                "Variant_Classification": "Silent",
+                "HGVSp_Short": "p.F70F",
+                "Mutation_Class": "Inframe",
+                "AA_Position": 70
+            }, {
+                "Hugo_Symbol": "PIK3CA",
+                "Variant_Classification": "Missense_Mutation",
+                "HGVSp_Short": "p.E81K",
+                "Mutation_Class": "Missense",
+                "AA_Position": 81
+            }, {
+                "Hugo_Symbol": "PIK3CA",
+                "Variant_Classification": "Missense_Mutation",
+                "HGVSp_Short": "p.E81K",
+                "Mutation_Class": "Missense",
+                "AA_Position": 81
+            }, {
+                "Hugo_Symbol": "PIK3CA",
+                "Variant_Classification": "Missense_Mutation",
+                "HGVSp_Short": "p.F83S",
+                "Mutation_Class": "Missense",
+                "AA_Position": 83
+            }, {
+                "Hugo_Symbol": "PIK3CA",
+                "Variant_Classification": "Missense_Mutation",
+                "HGVSp_Short": "p.R88Q",
+                "Mutation_Class": "Missense",
+                "AA_Position": 88
+            }
+        ];
+
+        var mutation_data_default_settings = {
+            x: "AA_Position",         // mutation position
+            y: "Protein_Change",      // amino-acid changes
+            factor: "Mutation_Class", // classify mutations by certain factor (optional)
+        };
+
+        var pfam_data = {
+           "hgnc_symbol":"TP53",
+           "protein_name":"tumor protein p53",
+           "uniprot_id":"P04637",
+           "length":393,
+           "pfam":[
+              {
+                 "pfam_ac":"PF08563",
+                 "pfam_start":6,
+                 "pfam_end":29,
+                 "pfam_id":"P53_TAD"
+              },
+              {
+                 "pfam_ac":"PF00870",
+                 "pfam_start":95,
+                 "pfam_end":288,
+                 "pfam_id":"P53"
+              },
+              {
+                 "pfam_ac":"PF07710",
+                 "pfam_start":318,
+                 "pfam_end":358,
+                 "pfam_id":"P53_tetramer"
+              }
+           ]
+        };
+
+        var pfam_data_default_settings = {
+            domainType: "pfam",       // key to the domain annotation entries
+            length: "length",         // protein length
+            details: {
+                start: "pfam_start",  // protein domain start position
+                end: "pfam_end",      // protein domain end position
+                name: "pfam_id",      // protein domain name
+            },
+        };
+
+        // create in "g3lollipop" div
+        var lollipop = g3.Lollipop("g3lollipop");
+
+        // add mutation data
+        lollipop.data.snvData = mutation_data;
+        // mutation data format settings
+        lollipop.format.snvData = mutation_data_default_settings;
+
+        // Pfam domain data
+        lollipop.data.domainData = pfam_data;
+        // Pfam data format settings
+        lollipop.format.domainData = pfam_data_default_settings;
+
+        // set up more chart options ...
+        lollipop.options.chartMargin = {
+            "left": 40, "right": 40, "top": 30, "bottom": 25
+        };
+        lollipop.options.titleFont = "normal 20px Sans";
+        lollipop.options.titleColor = "steelblue";
+        lollipop.options.titleAlignment = "middle";
+        lollipop.options.titleDy = "0.3em";
+
+        var plot_options = {
+            "chartMargin": {
+                "left": 40, "right": 40, "top": 30, "bottom": 25
+            },
+            "titleFont": "normal 20px Sans",
+            "titleColor": "steelblue",
+            "titleAlignment": "middle",
+            "titleDy": "0.3em"
+        };
+
+        // add chart options
+        lollipop.setOptions(plot_options);
+
+        // draw lollipop
+        lollipop.draw();
+
+        // get chart div id
+        var chartID = lollipop.options.chartID;
+
+        // set default filename
+        var output_chart_filename = "lollipop"
+
+
+    </script>
+
+
+<!--</body>-->
+<!--</html>-->
+{% endblock %}

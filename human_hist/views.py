@@ -35,3 +35,6 @@ def human_histones(request):
 
 def browse_variant_with_highlighted_sequence(request, histone_type, variant, accession):
     return browse_variant(request, histone_type, variant, accession)
+
+def hist_mutations(request):
+    return render(request, 'hist_mutations.html')
