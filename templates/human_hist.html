@@ -301,6 +301,16 @@
             return undefined
     };
 
+
+
+
+  function addToBasket{{ page_name }}(ids){
+      var basket = JSON.parse(localStorage.getItem('basket')) || [];
+      var new_basket = unique($.merge(basket, ids));
+      localStorage.setItem('basket', JSON.stringify(new_basket));
+      $(".badge-basket").html(new_basket.length);
+    }
+
   $(function() {
     var data = [{% for gene in human_histones %}
                 { "hgnc_symbol" : format_hgnc("{{ gene.hgnc_symbol }}", "{{ gene.ncbi_gene_id }}"),

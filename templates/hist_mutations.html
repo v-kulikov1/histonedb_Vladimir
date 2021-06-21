@@ -31,13 +31,10 @@
 <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/cdsjsd3/css/gist.css">
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/cdsjsd3/g3-viz/0.5.0/g3-lollipop.min.js"></script>
+<!--<script src="https://s3-us-west-2.amazonaws.com/cdsjsd3/data/TCGA-BRCA-varscan-somatic-PIK3CA-trimmed.js"></script>-->
 {% endblock %}
 {% block content %}
 
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-
-<!--<body>-->
     <div>
         <div>
             <span class="btn-group">
@@ -52,131 +49,188 @@
 
 
     <script>
-        var mutation_data = [
-            {
-                "Hugo_Symbol": "PIK3CA",
-                "Variant_Classification": "Silent",
-                "HGVSp_Short": "p.F70F",
-                "Mutation_Class": "Inframe",
-                "AA_Position": 70
+        var domainData = {
+            "symbol": "PIK3CA",
+            "uniprot": "P42336",
+            "length": 1068,
+            "pfam": [{
+                "hmm.acc": "PF02192",
+                "hmm.name": "PI3K_p85B",
+                "start": 32,
+                "end": 107,
+                "type": "Family"
             }, {
-                "Hugo_Symbol": "PIK3CA",
-                "Variant_Classification": "Missense_Mutation",
-                "HGVSp_Short": "p.E81K",
-                "Mutation_Class": "Missense",
-                "AA_Position": 81
+                "hmm.acc": "PF00794",
+                "hmm.name": "PI3K_rbd",
+                "start": 173,
+                "end": 292,
+                "type": "Family"
             }, {
-                "Hugo_Symbol": "PIK3CA",
-                "Variant_Classification": "Missense_Mutation",
-                "HGVSp_Short": "p.E81K",
-                "Mutation_Class": "Missense",
-                "AA_Position": 81
+                "hmm.acc": "PF00792",
+                "hmm.name": "PI3K_C2",
+                "start": 350,
+                "end": 485,
+                "type": "Domain"
             }, {
-                "Hugo_Symbol": "PIK3CA",
-                "Variant_Classification": "Missense_Mutation",
-                "HGVSp_Short": "p.F83S",
-                "Mutation_Class": "Missense",
-                "AA_Position": 83
+                "hmm.acc": "PF00613",
+                "hmm.name": "PI3Ka",
+                "start": 519,
+                "end": 704,
+                "type": "Family"
             }, {
-                "Hugo_Symbol": "PIK3CA",
-                "Variant_Classification": "Missense_Mutation",
-                "HGVSp_Short": "p.R88Q",
-                "Mutation_Class": "Missense",
-                "AA_Position": 88
+                "hmm.acc": "PF00454",
+                "hmm.name": "PI3_PI4_kinase",
+                "start": 796,
+                "end": 1015,
+                "type": "Family"
+            }]
+        };
+
+        var domainDataFormat = {
+            "length": "length",
+            "domainType": "pfam",
+            "details": {
+                "start": "start",
+                "end": "end",
+                "name": "hmm.name"
             }
-        ];
-
-        var mutation_data_default_settings = {
-            x: "AA_Position",         // mutation position
-            y: "Protein_Change",      // amino-acid changes
-            factor: "Mutation_Class", // classify mutations by certain factor (optional)
         };
 
-        var pfam_data = {
-           "hgnc_symbol":"TP53",
-           "protein_name":"tumor protein p53",
-           "uniprot_id":"P04637",
-           "length":393,
-           "pfam":[
-              {
-                 "pfam_ac":"PF08563",
-                 "pfam_start":6,
-                 "pfam_end":29,
-                 "pfam_id":"P53_TAD"
-              },
-              {
-                 "pfam_ac":"PF00870",
-                 "pfam_start":95,
-                 "pfam_end":288,
-                 "pfam_id":"P53"
-              },
-              {
-                 "pfam_ac":"PF07710",
-                 "pfam_start":318,
-                 "pfam_end":358,
-                 "pfam_id":"P53_tetramer"
-              }
-           ]
-        };
-
-        var pfam_data_default_settings = {
-            domainType: "pfam",       // key to the domain annotation entries
-            length: "length",         // protein length
-            details: {
-                start: "pfam_start",  // protein domain start position
-                end: "pfam_end",      // protein domain end position
-                name: "pfam_id",      // protein domain name
-            },
-        };
-
-        // create in "g3lollipop" div
-        var lollipop = g3.Lollipop("g3lollipop");
-
-        // add mutation data
-        lollipop.data.snvData = mutation_data;
-        // mutation data format settings
-        lollipop.format.snvData = mutation_data_default_settings;
-
-        // Pfam domain data
-        lollipop.data.domainData = pfam_data;
-        // Pfam data format settings
-        lollipop.format.domainData = pfam_data_default_settings;
-
-        // set up more chart options ...
-        lollipop.options.chartMargin = {
-            "left": 40, "right": 40, "top": 30, "bottom": 25
-        };
-        lollipop.options.titleFont = "normal 20px Sans";
-        lollipop.options.titleColor = "steelblue";
-        lollipop.options.titleAlignment = "middle";
-        lollipop.options.titleDy = "0.3em";
-
-        var plot_options = {
+        var plotOptions = {
+            "chartWidth": 800,
+            "chartType": "pie",
             "chartMargin": {
-                "left": 40, "right": 40, "top": 30, "bottom": 25
+                "left": 40,
+                "right": 40,
+                "top": 30,
+                "bottom": 25
             },
+            "titleText": "PIK3CA (TCGA-BRCA)",
             "titleFont": "normal 20px Sans",
             "titleColor": "steelblue",
             "titleAlignment": "middle",
             "titleDy": "0.3em"
         };
 
-        // add chart options
-        lollipop.setOptions(plot_options);
+        var mutationData = [{
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Silent",
+            "HGVSp_Short": "p.F70F",
+            "Mutation_Class": "Inframe",
+            "AA_Position": 70
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.E81K",
+            "Mutation_Class": "Missense",
+            "AA_Position": 81
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.E81K",
+            "Mutation_Class": "Missense",
+            "AA_Position": 81
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.F83S",
+            "Mutation_Class": "Missense",
+            "AA_Position": 83
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.R88Q",
+            "Mutation_Class": "Missense",
+            "AA_Position": 88
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.R88Q",
+            "Mutation_Class": "Missense",
+            "AA_Position": 88
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "In_Frame_Del",
+            "HGVSp_Short": "p.E103_G106delinsD",
+            "Mutation_Class": "Inframe",
+            "AA_Position": 103
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "In_Frame_Del",
+            "HGVSp_Short": "p.E103_P104del",
+            "Mutation_Class": "Inframe",
+            "AA_Position": 103
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.P104L",
+            "Mutation_Class": "Missense",
+            "AA_Position": 104
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "In_Frame_Del",
+            "HGVSp_Short": "p.V105_R108del",
+            "Mutation_Class": "Inframe",
+            "AA_Position": 105
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "In_Frame_Del",
+            "HGVSp_Short": "p.G106_R108del",
+            "Mutation_Class": "Inframe",
+            "AA_Position": 106
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "Missense_Mutation",
+            "HGVSp_Short": "p.R108H",
+            "Mutation_Class": "Missense",
+            "AA_Position": 108
+        }, {
+            "Hugo_Symbol": "PIK3CA",
+            "Variant_Classification": "In_Frame_Del",
+            "HGVSp_Short": "p.E109_I112delinsD",
+            "Mutation_Class": "Inframe",
+            "AA_Position": 109
 
-        // draw lollipop
+        }];
+        var mutationDataFormat = {
+            "x": "AA_Position",
+            "y": "HGVSp_Short",
+            "factor": "Variant_Classification"
+        };
+
+
+            // new lollipop chart
+        var lollipop = g3.Lollipop("lollipop");
+
+        // add data
+        lollipop.data.snvData = mutationData;
+        lollipop.data.domainData = domainData;
+
+        // add data options
+        lollipop.format.snvData = mutationDataFormat;
+        lollipop.format.domainData = domainDataFormat;
+
+        // add chart options
+        lollipop.setOptions(plotOptions);
+
+        // draw
         lollipop.draw();
 
         // get chart div id
         var chartID = lollipop.options.chartID;
 
         // set default filename
-        var output_chart_filename = "lollipop"
+        var output_chart_filename = "lollipop";
+        // button actions: download chart
+        document.getElementById("save-as-png").onclick = function (e) {
+            g3.output().toPNG(output_chart_filename, chartID);
+        };
+
+        document.getElementById("save-as-svg").onclick = function (e) {
+            g3.output().toSVG(output_chart_filename, chartID);
+        };
 
 
     </script>
 
-
-<!--</body>-->
-<!--</html>-->
 {% endblock %}
