@@ -304,12 +304,12 @@
 
 
 
-  function addToBasket{{ page_name }}(ids){
-      var basket = JSON.parse(localStorage.getItem('basket')) || [];
-      var new_basket = unique($.merge(basket, ids));
-      localStorage.setItem('basket', JSON.stringify(new_basket));
-      $(".badge-basket").html(new_basket.length);
-    }
+  // function addToBasket{{ page_name }}(ids){
+  //     var basket = JSON.parse(localStorage.getItem('basket')) || [];
+  //     var new_basket = unique($.merge(basket, ids));
+  //     localStorage.setItem('basket', JSON.stringify(new_basket));
+  //     $(".badge-basket").html(new_basket.length);
+  //   }
 
   $(function() {
     var data = [{% for gene in human_histones %}
@@ -322,7 +322,7 @@
                 "biotype" : "{{ gene.biotype }}",
                 "bona_fidecanonical" : format_bona_fidecanonical("{{ gene.bona_fidecanonical }}"),
                 "pmids" : format_pmid("{{ gene.pmids }}"),
-                "variant" : format_variant("{{ gene.variant.id }}"),
+                "variant" : format_variant("{{ gene.variant }}"),
                 "hist_type" : format_type("{{ gene.hist_type }}"),
                 "enst" : format_enst("{{ gene.enst }}"), 
                 "refseq_transcript_id" : format_ncbi_mrna("{{ gene.refseq_transcript_id }}"), 
@@ -334,10 +334,10 @@
                 {% endfor %}
     ]
 
-      $(function() {
-        createMSA("quick_msa-analyze_sequences", "{% url 'browse.views.get_aln_and_features' %}?upload=true&id={{ result.5 }}", "", 975, 75, false);
-        $('#sequence_table_analyze_sequences tr[data-index="0"]').addClass('success');
-      });
+      // $(function() {
+      //   createMSA("quick_msa-analyze_sequences", "{% url 'browse.views.get_aln_and_features' %}?upload=true&id={{ result.5 }}", "", 975, 75, false);
+      //   $('#sequence_table_analyze_sequences tr[data-index="0"]').addClass('success');
+      // });
 
 
 

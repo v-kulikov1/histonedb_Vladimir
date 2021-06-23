@@ -48,23 +48,23 @@ class Command(BaseCommand):
         Histone_Human_proteins.objects.all().delete()
         Histone_Human_mutations.objects.all().delete()
         Histone_Human_cancers.objects.all().delete()
-        Human_variants.objects.all().delete()
+        # Human_variants.objects.all().delete()
         
         #Variants
-        self.log.info('===   VARIANTS START  ===')
-        human_variants_info_path = os.path.join(self.info_directory, "human_variants.csv")
-        human_variants_table = pd.read_csv(human_variants_info_path)
-        for index, variant in human_variants_table.iterrows():
-            self.log.info('{}'.format(index))
-            try:
-                var = Human_variants.objects.get(id=variant['human'])
-                obj = Human_variants(variant=var, id = variant['human'])
-            except: #ObjectDoesNotExist
-                 obj = Human_variants(id = variant['human'])
-            
-            obj.save()
-            if obj:
-                self.log.info("{} was created".format(obj.id))
+        # self.log.info('===   VARIANTS START  ===')
+        # human_variants_info_path = os.path.join(self.info_directory, "human_variants.csv")
+        # human_variants_table = pd.read_csv(human_variants_info_path)
+        # for index, variant in human_variants_table.iterrows():
+        #     self.log.info('{}'.format(index))
+        #     try:
+        #         var = Human_variants.objects.get(id=variant['human'])
+        #         obj = Human_variants(variant=var, id = variant['human'])
+        #     except: #ObjectDoesNotExist
+        #          obj = Human_variants(id = variant['human'])
+        #
+        #     obj.save()
+        #     if obj:
+        #         self.log.info("{} was created".format(obj.id))
         
         # Genes
         self.log.info('===   GENES START  ===')
@@ -74,13 +74,13 @@ class Command(BaseCommand):
         for index, gene in human_genes_table.iterrows():
             self.log.info('{}'.format(index))
             try:
-                variant = Human_variants.objects.get(id=gene['Histone variant'])
+                # variant = Human_variants.objects.get(id=gene['Histone variant'])
                 obj = Histone_Human_genes(hgnc_symbol=gene["HGNC Symbol"], prev_hgnc_symb=gene['Previous HGNC Symbol'], \
                                       ncbi_gene_id=gene['NCBI gene ID'], ensg=gene['Ensembl gene ID'],
                                       expr_timing=gene['Expr. timing'], \
                                       expr_pattern=gene['Expr. pattern'], biotype=gene['Biotype'],
                                       bona_fidecanonical=gene['Bona fide canonical'], \
-                                      pmids=gene['PMIDs'], hist_type = gene['Histone type'], variant = variant )
+                                      pmids=gene['PMIDs'], hist_type = gene['Histone type'], variant = gene['Histone variant'] )
 
             except:
                 obj = Histone_Human_genes(hgnc_symbol=gene["HGNC Symbol"], prev_hgnc_symb=gene['Previous HGNC Symbol'], \
