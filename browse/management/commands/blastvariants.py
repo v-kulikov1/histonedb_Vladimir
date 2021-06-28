@@ -1,17 +1,20 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
+
 from browse.models import Sequence, SequenceBlast, ScoreBlast, Histone, Variant
 from tools.blast_search import get_best_hsp
-from tools.test_model import plot_scores, test_variant
+from tools.test_model import plot_scores, test_curated
+from tools.blast_search import make_blastp, load_blast_search, load_blast_search_diagnosis, add_score
+
+from Bio import SeqIO, AlignIO #, pairwise2
+from Bio.Blast.Applications import NcbiblastpCommandline
+from Bio.Blast import NCBIXML
+from Bio.Emboss.Applications import NeedleCommandline
+
 import subprocess
 import os, sys, io
 import re
-from tools.blast_search import make_blastp, load_blast_search, load_blast_search_diagnosis, add_score
-
-from Bio import SeqIO
-from Bio.Blast.Applications import NcbiblastpCommandline
-from Bio.Blast import NCBIXML
-
+import uuid
 import logging
 import pickle
 
@@ -27,7 +30,6 @@ class Command(BaseCommand):
     seed_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "seeds")
     blast_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast")
     blast_file = os.path.join(blast_directory, "search", "blast_search.out")
-    blast_curated_file = os.path.join(blast_directory, "search", "blast_search_curated.out")
     model_evaluation = os.path.join(blast_directory, "model_evaluation")
     # Logging info
     logging.basicConfig(filename='log/blastvariants.log',
@@ -70,7 +72,10 @@ class Command(BaseCommand):
                 s.save()
 
         if options["test"]:
-            self.test_curated()
+            # self.load_curated()
+            # self.add_scores_for_curated()
+            self.add_identities_for_curated()
+            # self.estimate_thresholds()
         else:
             self.load_curated()
             self.add_scores_for_curated()
@@ -103,30 +108,7 @@ class Command(BaseCommand):
             #     positive: the current seed alignment for the variant
             # And estimate params from ROC-curves.
         """
-        for variant in Variant.objects.exclude(id__startswith='generic'):
-            hist_type = variant.hist_type.id
-            positive_seq = variant.sequences.filter(reviewed=True)
-            # Do we need to exclude generic here?
-            # negative_seq = Sequence.objects.filter(reviewed=True).exclude(variant__id=variant.id, id__startswith='generic')
-            negative_seq = Sequence.objects.filter(reviewed=True).exclude(variant__id=variant.id)
-
-            # POSITIVE
-            # Let's create BLASTDB for search including align (query) sequences
-            blastdb_file_positive = os.path.join(self.model_evaluation, hist_type, "BLASTDB_positive_{}.fa".format(variant.id))
-            self.create_blastdb(positive_seq, blastdb_file_positive)
-            # BLASTP search
-            positive_results = os.path.join(self.model_evaluation, hist_type, "BLASTP_positive_{}.fa".format(variant.id))
-            make_blastp(positive_seq, blastdb_file_positive, save_to=positive_results)
-
-            # NEGATIVE
-            # Let's create BLASTDB for search including align (query) sequences
-            blastdb_file_negative = os.path.join(self.model_evaluation, hist_type, "BLASTDB_negative_{}.fa".format(variant.id))
-            self.create_blastdb(negative_seq, blastdb_file_negative)
-            # BLASTP search
-            negative_results = os.path.join(self.model_evaluation, hist_type, "BLASTP_negative_{}.fa".format(variant.id))
-            make_blastp(negative_seq, blastdb_file_negative, save_to=negative_results)
-
-            test_variant(positive_results, negative_results)
+        test_curated(save_dir=self.model_evaluation)
 
 
     def estimate_thresholds_old(self):
@@ -216,6 +198,33 @@ class Command(BaseCommand):
     def add_scores_for_curated(self):
         # ScoreBlast.objects.filter(sequence__reviewed=True).delete()
         for sequence in Sequence.objects.filter(reviewed=True):
+            seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa")
+
+            blastp = os.path.join(os.path.dirname(sys.executable), "blastp")
+            # output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
+            blastp_cline = NcbiblastpCommandline(
+                cmd=blastp,
+                db=seqs_file,
+                evalue=.01, outfmt=5)
+            result, error = blastp_cline(stdin="\n".join([s.format("fasta") for s in [sequence]]))
+
+            resultFile = io.BytesIO()
+            resultFile.write(result.encode("utf-8"))
+            resultFile.seek(0)
+
+            for i, blast_record in enumerate(NCBIXML.parse(resultFile)):
+                if len(blast_record.alignments) == 0:
+                    self.log.error('No BLAST record alignments for {} during adding scores for curated sequences'.format(sequence.id))
+                    continue
+
+                for algn in blast_record.alignments:
+                    algn_self = False if sequence.id != algn.hit_def.split("|")[0] else True # alignment on itself
+                    for hsp in algn.hsps:
+                        add_score(sequence, sequence.variant, hsp, algn.hit_def.split("|")[0], best=algn_self) ### looks like there is an error
+
+    def add_scores_for_curated_old(self):
+        # ScoreBlast.objects.filter(sequence__reviewed=True).delete()
+        for sequence in Sequence.objects.filter(reviewed=True):
             hist_type = sequence.variant.hist_type.id
             seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", hist_type, "BLASTDB_sequence_{}.fa".format(sequence.id))
             # self.create_blastdb(Sequence.objects.filter(reviewed=True).exclude(id=sequence.id), seqs_file)
@@ -243,6 +252,67 @@ class Command(BaseCommand):
 
                 best_alignment = blast_record.alignments[0]
                 add_score(sequence, sequence.variant, get_best_hsp(best_alignment.hsps), best_alignment.hit_def.split("|")[0], best=True)
+
+    def add_identities_for_curated(self):
+        for asequence in Sequence.objects.filter(reviewed=True):
+            for bsequence in Sequence.objects.filter(reviewed=True):
+                # global_align = pairwise2.align.globalxx(asequence.format(format='fasta', ungap=True),
+                #                                         bsequence.format(format='fasta', ungap=True))
+                # print(global_align)
+                # print(global_align[0])
+                with open(os.path.join(self.model_evaluation, "aseq.fasta"), 'w') as f:
+                    f.write(asequence.format(format='fasta', ungap=True))
+                with open(os.path.join(self.model_evaluation, "bseq.fasta"), 'w') as f:
+                    f.write(bsequence.format(format='fasta', ungap=True))
+
+                n2 = str(uuid.uuid4())
+                needle_results = os.path.join(self.model_evaluation, "needle_{}.txt".format(n2))
+                cmd = os.path.join(os.path.dirname(sys.executable), "needle")
+
+                if not os.path.isfile(cmd):
+                    cmd = "needle"
+                needle_cline = NeedleCommandline(
+                    cmd=cmd,
+                    asequence=os.path.join(self.model_evaluation, "aseq.fasta"),
+                    bsequence=os.path.join(self.model_evaluation, "bseq.fasta"),
+                    gapopen=10,
+                    gapextend=1,
+                    nobrief=True,
+                    # similarity=True,
+                    outfile=needle_results)
+                # needle_cline.similarity = True
+                stdout, stderr = needle_cline()
+                with open(needle_results) as f:
+                    out_split = f.readlines()
+                # print(needle_cline)
+                # print(needle_cline.nobrief)
+                # print(needle_cline.similarity)
+                print(out_split[24])
+                print(out_split[25])
+
+                identity_split = re.search(r'\d+\/\d+', out_split[24]).group(0).split('/')
+                similarity_split = re.search(r'\d+\/\d+', out_split[25]).group(0).split('/')
+                identity = float(identity_split[0])/float(identity_split[1])
+                similarity = float(similarity_split[0])/float(similarity_split[1])
+                print(identity)
+                print(similarity)
+                self.add_identity_score(asequence, bsequence.variant, identity, similarity, bsequence.id,
+                                        best=False if asequence.id != bsequence.id else True)
+                break
+            break
+
+    def add_identity_score(self, seq, variant_model, identity, similarity, hit_accession, best=False):
+        """Add score for a given sequence"""
+        score = ScoreIdentity(
+            # id                      = score_num,
+            sequence=seq,
+            variant=variant_model,
+            score=identity,
+            similarity=similarity,
+            hit_accession=hit_accession,
+            used_for_classification=best,
+        )
+        score.save()
 
     def search_blast(self):
         # sequences = Sequence.objects.filter(reviewed=False).values_list('sequence')
@@ -293,19 +363,6 @@ class Command(BaseCommand):
             )
             score.save()
 
-
-
-    def test_curated(self):
-        sequences = [seq.format(format='fasta') for seq in Sequence.objects.filter(reviewed=True)]
-        self.log.info("Running BLASTP for {} curated sequences...".format(len(sequences)))
-
-        save_to = self.blast_curated_file
-        self.log.info('Starting Blast sequences for {}'.format(len(sequences)))
-        make_blastp(sequences, save_to=save_to)
-
-        self.log.info("Loading BLASTP data into HistoneDB...")
-        load_blast_search(self.blast_curated_file)
-        self.log.info('Loaded {} BlastRecords'.format(len(sequences)))
 
     def create_blastdb(self, sequences, seqs_file):
         # seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa")

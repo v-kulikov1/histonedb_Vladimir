@@ -24,8 +24,8 @@ python manage.py buildtaxonomytoc
 python manage.py buildvarianttypes
 python manage.py buildvariantinfo -f
 
-#python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
- python manage.py buildvariants_parallel -f --db nr_small_per10_v4 # this should work reasonably fast
+# python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
+python manage.py buildvariants_parallel -f --db nr_small_per10_v4 # this should work reasonably fast
 python manage.py buildblastdb -f
 python manage.py blastvariants -f
 

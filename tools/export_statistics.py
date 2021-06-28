@@ -2,6 +2,8 @@ from browse.models import Sequence, Score, ScoreBlast, SequenceBlast, Histone, V
 from django.conf import settings
 # from django.db.models import Q
 
+from tools.stat_taxa import *
+
 #This script is used to export tables from database for futher use in research
 
 import os
@@ -12,7 +14,6 @@ import numpy as np
 import pandas as pd
 import math
 
-from ete3 import NCBITaxa
 import seaborn as sns
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
@@ -25,7 +26,8 @@ def get_nr_version():
         return nrv.read()
 
 STAT_DIR = os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics")
-CURR_STAT_DIR = os.path.join(STAT_DIR, '{}_{}'.format(get_nr_version(), DT_STRING))
+# CURR_STAT_DIR = os.path.join(STAT_DIR, '{}_{}'.format(get_nr_version(), DT_STRING))
+CURR_STAT_DIR = os.path.join(STAT_DIR, 'nr_small_per10_v4_20210622-152129')
 # CURR_STAT_DIR = os.path.join(STAT_DIR, DT_STRING)
 # CURR_STAT_DIR = os.path.join(STAT_DIR, '20201219-195135')
 # CURR_STAT_DIR = os.path.join(STAT_DIR, 'nr_small_per10_v4_20210126-183517')
@@ -34,13 +36,6 @@ DATA_DIR = os.path.join(CURR_STAT_DIR, 'data')
 SEQS_FILE = os.path.join(DATA_DIR, 'seqs.csv')
 SCORES_FILE = os.path.join(DATA_DIR, 'scores.csv')
 SCORES_HMM_FILE = os.path.join(DATA_DIR, 'scores_hmm.csv')
-
-HIGHLVL_TAXA = ['Metazoa', 'Fungi',
-                'Rhodophyta', 'Viridiplantae',
-                'Rhizaria', 'Alveolata', 'Stramenopiles']
-NCBI_TAXA = NCBITaxa()
-TAXIDS_DICT = NCBI_TAXA.get_name_translator(HIGHLVL_TAXA)
-TAXIDS = [TAXIDS_DICT[name][0] for name in HIGHLVL_TAXA]
 
 def create_directories():
     Path(CURR_STAT_DIR).mkdir(parents=True, exist_ok=True)
@@ -69,10 +64,10 @@ def get_seqs_data(rewrite = False, curated=None, hist_type=None, hist_var=None, 
                 highlvl_taxid = intersection.pop()
         except ValueError as e:
             highlvl_taxid = ''
-        data.append([seq.id, seq.variant.hist_type, seq.variant, seq.variant_hmm, seq.taxonomy_id, highlvl_taxid, seq.reviewed])
-    data = pd.DataFrame(np.array(data),
+        data.append([seq.id, seq.variant.hist_type.id, seq.variant.id, seq.variant_hmm.id, seq.taxonomy_id, highlvl_taxid, seq.reviewed])
+    data = pd.DataFrame(data,
                         columns=['accession', 'hist_type', 'hist_var', 'hist_var_hmm', 'taxid', 'highlvl_taxid', 'curated'])
-    data.to_csv(SEQS_FILE)
+    data.to_csv(SEQS_FILE, index=False)
     return filter_seqs_data(data, curated, hist_type, hist_var, hist_var_hmm, taxid, highlvl_taxid)
 
 def filter_seqs_data(data, curated=None, hist_type=None, hist_var=None, hist_var_hmm=None, taxid=None, highlvl_taxid=None):
@@ -108,12 +103,12 @@ def get_scores_data(rewrite = False, curated=None, hist_type=None, blast_model=N
                 highlvl_taxid = intersection.pop()
         except ValueError as e:
             highlvl_taxid = ''
-        data.append([s.sequence.id, s.variant.hist_type, s.variant,
+        data.append([s.sequence.id, s.variant.hist_type.id, s.variant.id,
                      s.score, s.bitScore, s.evalue, s.align_length, s.used_for_classification,
                      s.hit_accession, s.sequence.sequence, hit_seq, s.match,
                      s.blastStart, s.blastEnd, s.seqStart, s.seqEnd,
                      s.sequence.taxonomy_id, highlvl_taxid, s.sequence.reviewed])
-    data = pd.DataFrame(np.array(data),
+    data = pd.DataFrame(data,
                         columns=['accession', 'hist_type', 'blast_model',
                                  'score', 'bit_score', 'evalue', 'hsp_length', 'used_for_classification',
                                  'hit_accession', 'sequence', 'hit_sequence', 'match',
@@ -165,6 +160,8 @@ def general_statistics():
     data = get_seqs_data(curated=False)
     plt.figure(figsize=(15, 16))
     ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
+    print(ax.get_yticklabels())
+    print(ax.get_legend_handles_labels())
     for p in ax.patches:
         x = p.get_bbox().get_points()[1, 0]
         y = p.get_bbox().get_points()[:, 1]
@@ -183,6 +180,149 @@ def general_statistics():
     plt.title('Distribution of curated variants')
     pp.savefig()
     pp.close()
+
+def general_statistics_pickle():
+    import pickle
+    import mpld3
+    from mpld3 import plugins
+    data = get_seqs_data(curated=False)
+    fig = plt.figure(figsize=(17, 8))
+    ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
+    for p in ax.patches:
+        x = p.get_bbox().get_points()[1, 0]
+        y = p.get_bbox().get_points()[:, 1]
+        ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
+        ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='right', va='center')
+    # handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    # interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+    #                                                          ax.collections),
+    #                                                      labels,
+    #                                                      alpha_unsel=0.5,
+    #                                                      alpha_over=1.5,
+    #                                                      start_visible=True)
+    # plugins.connect(fig, interactive_legend)
+    ax.set_xlabel('Count')
+    ax.set_ylabel('Histone variant')
+    ax.set_title('Distribution of variants', size=20)
+    html_fig = mpld3.fig_to_html(fig, template_type='general')
+    plt.close(fig)
+    with open(os.path.join(CURR_STAT_DIR, 'Variants_hist.pickle'), 'wb') as f:
+        pickle.dump(html_fig, f)
+    data = get_seqs_data(curated=True)
+    fig = plt.figure(figsize=(15, 16))
+    ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
+    for p in ax.patches:
+        x = p.get_bbox().get_points()[1, 0]
+        y = p.get_bbox().get_points()[:, 1]
+        ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
+    handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+                                                             ax.collections),
+                                                         labels,
+                                                         alpha_unsel=0.5,
+                                                         alpha_over=1.5,
+                                                         start_visible=True)
+    plugins.connect(fig, interactive_legend)
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    ax.set_title('Distribution of curated variants', size=20)
+    html_fig = mpld3.fig_to_html(fig, template_type='general')
+    plt.close(fig)
+    with open(os.path.join(CURR_STAT_DIR, 'Variants_hist_curated.pickle'), 'wb') as f:
+        pickle.dump(html_fig, f)
+
+def general_statistics_html():
+    import mpld3
+    from mpld3 import plugins
+    data = get_seqs_data(curated=False)
+    fig = plt.figure(figsize=(10, 8))
+    ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
+    # ax.set_yticklabels(ax.get_yticklabels(), fontsize=7)
+    # print(ax.get_yticklabels())
+    # print(ax.get_legend_handles_labels())
+    for p in ax.patches:
+        x = p.get_bbox().get_points()[1, 0]
+        y = p.get_bbox().get_points()[:, 1]
+        ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
+    # handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    # interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+    #                                                          ax.collections),
+    #                                                      labels,
+    #                                                      alpha_unsel=0.5,
+    #                                                      alpha_over=1.5,
+    #                                                      start_visible=True)
+    # plugins.connect(fig, interactive_legend)
+    ax.set_xlabel('Count')
+    ax.set_ylabel('Histone variant')
+    ax.set_title('Distribution of variants', size=20)
+    # print(ax.get_legend_handles_labels())
+    # tooltip = mpld3.plugins.PointLabelTooltip(ax.get_yticklabels(), labels=data['hist_var'].value_counts().index)
+    # mpld3.plugins.connect(fig, tooltip)
+    # html_fig = mpld3.fig_to_html(fig, template_type='general')
+    print(mpld3.fig_to_dict(fig))
+    mpld3.save_html(fig,os.path.join('templates', 'var_hist.html'), template_type='general')
+    plt.close(fig)
+    # with open(os.path.join(CURR_STAT_DIR, 'Variants_hist.pickle'), 'wb') as f:
+    #     pickle.dump(html_fig, f)
+    # data = get_seqs_data(curated=True)
+    # fig = plt.figure(figsize=(15, 16))
+    # ax = sns.countplot(y='hist_var', data=data, order = data['hist_var'].value_counts().index)
+    # for p in ax.patches:
+    #     x = p.get_bbox().get_points()[1, 0]
+    #     y = p.get_bbox().get_points()[:, 1]
+    #     ax.annotate('{}'.format(int(x)), (x + 1, y.mean()), ha='left', va='center')
+    # handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    # interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+    #                                                          ax.collections),
+    #                                                      labels,
+    #                                                      alpha_unsel=0.5,
+    #                                                      alpha_over=1.5,
+    #                                                      start_visible=True)
+    # plugins.connect(fig, interactive_legend)
+    # ax.set_xlabel('x')
+    # ax.set_ylabel('y')
+    # ax.set_title('Distribution of curated variants', size=20)
+    # # html_fig = mpld3.fig_to_html(fig, template_type='general')
+    # mpld3.save_html(fig,os.path.join('templates', 'Variants_hist_curated.html'), template_type='general')
+    # plt.close(fig)
+    # # with open(os.path.join(CURR_STAT_DIR, 'Variants_hist_curated.pickle'), 'wb') as f:
+    # #     pickle.dump(html_fig, f)
+
+def general_statistics_pickle_test():
+    import pickle
+    import mpld3
+    from mpld3 import plugins
+    np.random.seed(9615)
+    N = 100
+    df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
+                      columns=['a', 'b', 'c', 'd', 'e'], )
+    # plot line + confidence interval
+    fig, ax = plt.subplots()
+    ax.grid(True, alpha=0.3)
+    for key, val in df.iteritems():
+        l, = ax.plot(val.index, val.values, label=key)
+        ax.fill_between(val.index,
+                        val.values * .5, val.values * 1.5,
+                        color=l.get_color(), alpha=.4)
+    handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+                                                             ax.collections),
+                                                         labels,
+                                                         alpha_unsel=0.5,
+                                                         alpha_over=1.5,
+                                                         start_visible=True)
+    plugins.connect(fig, interactive_legend)
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    ax.set_title('Distribution of variants', size=20)
+    html_fig = mpld3.fig_to_html(fig, template_type='general')
+    plt.close(fig)
+    # with open(os.path.join(CURR_STAT_DIR, 'test_fig.pickle'), 'wb') as f:
+    #     pickle.dump(fig, f)
+    # with open(os.path.join(CURR_STAT_DIR, 'test_ax.pickle'), 'wb') as f:
+    #     pickle.dump(ax, f)
+    with open(os.path.join(CURR_STAT_DIR, 'test_html_fig.pickle'), 'wb') as f:
+        pickle.dump(html_fig, f)
 
 def general_statistics_2():
     with open(os.path.join(CURR_STAT_DIR, "general_stat"), 'w') as f:
@@ -287,9 +427,13 @@ def scores_boxplot(filename='Scores_boxplot'):
     pp.savefig()
     pp.close()
 
-create_directories()
-general_statistics()
-var_distrib_within_histtypes()
-var_distrib_for_highlvltaxa()
-var_distrib_within_histtypes_for_highlvltaxa()
-scores_boxplot()
+# create_directories()
+# general_statistics()
+# var_distrib_within_histtypes()
+# var_distrib_for_highlvltaxa()
+# var_distrib_within_histtypes_for_highlvltaxa()
+# scores_boxplot()
+
+# general_statistics_pickle()
+general_statistics_html()
+# general_statistics_pickle_test()

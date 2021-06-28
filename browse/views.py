@@ -338,6 +338,79 @@ def human(request):
     }
     return render(request, 'human.html', data)
 
+def statistics_test_delete(request):
+    # data = {}
+    # data = {
+    #     "filter_form": AdvancedFilterForm(),
+    #     "original_query": {},
+    #     "current_query": {}
+    # }
+    # return render(request, 'statistics.html', data)
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import pandas as pd
+    import mpld3
+    from mpld3 import plugins
+    np.random.seed(9615)
+
+    N = 100
+    df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
+                      columns=['a', 'b', 'c', 'd', 'e'], )
+
+    # plot line + confidence interval
+    fig, ax = plt.subplots()
+    ax.grid(True, alpha=0.3)
+
+    for key, val in df.iteritems():
+        l, = ax.plot(val.index, val.values, label=key)
+        ax.fill_between(val.index,
+                        val.values * .5, val.values * 1.5,
+                        color=l.get_color(), alpha=.4)
+
+    handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+                                                             ax.collections),
+                                                         labels,
+                                                         alpha_unsel=0.5,
+                                                         alpha_over=1.5,
+                                                         start_visible=True)
+    plugins.connect(fig, interactive_legend)
+
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    ax.set_title('Interactive legend', size=20)
+
+    html_fig = mpld3.fig_to_html(fig, template_type='general')
+    plt.close(fig)
+    return render(request, 'statistics.html', {'figure': html_fig})
+
+def statistics(request):
+    from django.conf import settings
+    import os
+    import pickle
+
+    general_stat = {'database_statistics':(Sequence.objects.all().count(),
+                                           Sequence.objects.filter(reviewed=True).count(),
+                                           Sequence.objects.filter(reviewed=False).count()),
+                    'hist_type_stat': [(h.id,
+                                        Sequence.objects.filter(variant__hist_type=h).count(),
+                                        Sequence.objects.filter(variant__hist_type=h, reviewed=True).count(),
+                                        Sequence.objects.filter(variant__hist_type=h, reviewed=False).count()) for h in
+                                       Histone.objects.all()],
+                    'hist_var_stat': [(v.id,
+                                       Sequence.objects.filter(variant=v).count(),
+                                       Sequence.objects.filter(variant=v, reviewed=True).count(),
+                                       Sequence.objects.filter(variant=v, reviewed=False).count()) for v in
+                                      Variant.objects.all()], }
+
+    # with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics", 'nr_small_per10_v4_20210622-152129', 'Variants_hist.pickle'), 'rb') as f:
+    #     html_fig = pickle.load(f)
+
+    # with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics", 'nr_small_per10_v4_20210622-152129', 'test_html_fig.pickle'), 'rb') as f:
+    #     html_fig = pickle.load(f)
+    # return render(request, 'statistics.html', {'figure': html_fig, 'general_stat': general_stat})
+    return render(request, 'statistics.html', {'general_stat': general_stat})
+
 
 def get_sequence_table_data(request):
     """Downloads the previous search and converts into json required by Bootstrap table

@@ -223,10 +223,32 @@ class ScoreBlast(models.Model):
     align_length            = models.IntegerField(blank=True, null=True)
     match                   = models.TextField(default='')
     hit_accession           = models.CharField(max_length=255, default='')
+    # hit_sequence = models.ForeignKey(Sequence, related_name="aligned_scores")
     used_for_classification = models.BooleanField(default=False)
 
     def __str__(self):
-        return "<{} variant={}; score={}; above_threshold={}; used_for_classification={} >".format(self.sequence.id, self.variant.id, self.score, self.above_threshold, self.used_for_classification)
+        return "<{} variant={}; score={}; used_for_classification={} >".format(self.sequence.id, self.variant.id, self.score, self.used_for_classification)
+
+    def description(self):
+        return "[Score: {}; Evalue:{}]"
+
+class ScoreIdentity(models.Model):
+    """
+    The score class for Blast, assigns a bunch of score entries to the sequence. For each variant a score.
+    """
+    # id                      = models.IntegerField(primary_key=True)
+    # id = models.AutoField(primary_key=True)
+    # sequence                = models.ForeignKey(SequenceBlast, related_name="all_model_scores")
+    sequence                = models.ForeignKey(Sequence, related_name="all_model_identities")
+    variant                 = models.ForeignKey(Variant, related_name="i+")
+    score                   = models.FloatField() # Identity value is the percentage of identical matches between the two sequences over the reported aligned region (including any gaps in the length).
+    similarity              = models.FloatField() # Similarity value is the percentage of matches between the two sequences over the reported aligned region (including any gaps in the length).
+    hit_accession           = models.CharField(max_length=255, default='')
+    # hit_sequence = models.ForeignKey(Sequence, related_name="aligned_scores")
+    used_for_classification = models.BooleanField(default=False)
+
+    def __str__(self):
+        return "<{} variant={}; score={}; used_for_classification={} >".format(self.sequence.id, self.variant.id, self.score, self.used_for_classification)
 
     def description(self):
         return "[Score: {}; Evalue:{}]"

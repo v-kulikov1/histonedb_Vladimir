@@ -11,6 +11,7 @@ import argparse
 import json
 import os
 import logging
+from pathlib import Path
 
 #BioPython
 from Bio import SearchIO
@@ -20,12 +21,17 @@ from Bio.Seq import Seq
 #Required Libraries
 import numpy as np
 import seaborn as sns
+import pandas as pd
 
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc, matthews_corrcoef
 from matplotlib.backends.backend_pdf import PdfPages
 
 from scipy.interpolate import interp1d
+
+from browse.models import Sequence, ScoreBlast, Histone, Variant
+from django.conf import settings
+# from tools.stat_taxa import *
 
 sns.set(style="white", context="talk")
 
@@ -181,39 +187,165 @@ def calcualte_threshold(positives, negatives, measure="SPC", measure_threshold=0
 
 # BLASTsearch
 
-def get_variant_scores(blast_output):
-    """Get the score for each hit/domain in a blastsearch result
+def scores_model_to_dataframe(hist_type=None):
+    """Prepares scores of curated sequences for statistical analysis, returns a DataFrame according to filter parameters"""
 
-        Parameters:
-        -----------
-        blast_output: str or File-like object
-            Path to blastsearch output file
+    if Path(os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "model_evaluation", "score.csv")).exists():
+        return filter_scores_data(pd.read_csv(os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "model_evaluation", "score.csv")), hist_type)
 
-        Return:
-        -------
-        A list of all scores
-        """
-    blast_result = open(blast_output)
-    for i, blast_record in enumerate(NCBIXML.parse(resultFile)):
-        # it seems that sometimes it happens, is it OK?
-        if len(blast_record.alignments) == 0:
-            self.log.warning('While estimating BLAST score thresholds no alignments found for blast_record {}'.format(
-                blast_record.query))
-            continue
+    data = []
+    # for s in ScoreBlast.objects.filter(sequence__reviewed=True).exclude(sequence__variant__startswith='generic'):
+    for s in ScoreBlast.objects.filter(sequence__reviewed=True):
+        if 'generic' in s.variant.id: continue
 
-def test_variant(postive_file, negative_file):
-    """Test the model by calcuating
+        # hit_seq = Sequence.objects.get(id=s.hit_accession).sequence
+        # hit_var = Sequence.objects.get(id=s.hit_accession).variant
+        hit = Sequence.objects.get(id=s.hit_accession)
+        is_positive = 'True positive' if s.variant.id == hit.variant.id else 'False positive'
+        relative_length = s.align_length/len(hit.sequence)
+        # try:
+        #     lineage = NCBI_TAXA.get_lineage(s.sequence.taxonomy_id)
+        #     intersection = set(TAXIDS).intersection(set(lineage))
+        #     if len(intersection) == 0:
+        #         highlvl_taxid = ''
+        #     elif len(intersection) == 1:
+        #         highlvl_taxid = intersection.pop()
+        # except ValueError as e:
+        #     highlvl_taxid = ''
+        data.append([s.sequence.id, s.variant.hist_type, s.variant, s.score, s.evalue,
+                     s.align_length, relative_length,
+                     s.used_for_classification,
+                     s.hit_accession, hit.variant, is_positive,
+                     s.sequence.sequence, hit.sequence,
+                     s.blastStart, s.blastEnd, s.seqStart, s.seqEnd])
+    data = pd.DataFrame(np.array(data),
+                        columns=['accession', 'hist_type', 'variant', 'score', 'evalue',
+                                 'hsp_length', 'relative_length',
+                                 'used_for_classification',
+                                 'hit_accession', 'expected_variant', 'is_positive',
+                                 'sequence', 'hit_sequence',
+                                 'query_start', 'query_end', 'sbjct_start', 'sbjct_end'])
+    data.to_csv(os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "model_evaluation", "score.csv"))
 
-        Returns:
-        # A dictionary with containg the AUCROC and Threshold. An image is also saved
-        # with the ROC and score histograms.
-        """
-    postive_scores = get_variant_scores(postive_file)
-    negative_scores = get_variant_scores(negative_file)
+    return filter_scores_data(data, hist_type)
+
+def filter_scores_data(data, hist_type=None):
+    data = data[data['hist_type'] == hist_type] if hist_type else data
+    return data
+
+def test_curated(save_dir):
+    """Test the model by visualizing score data"""
+
+    visualize_general_stat(save_dir)
+    # visualize_variants_stat(save_dir)
+
+def visualize_general_stat(save_dir):
+    """Visualize all scores, hsp_lengths and relative_lengths via violinplots"""
+
+    hsps_data = scores_model_to_dataframe()
+    hsps_data['score'] = hsps_data['score'].astype('float64')
+
+    pp = PdfPages(os.path.join(save_dir, "General_statistics.pdf"))
+
+    # Scores
+    sns.set(style="darkgrid")
+    colors = sns.color_palette("Set2", 7)
+    ax = sns.catplot(x="score", y="variant", hue="is_positive",
+                     data=hsps_data, orient="h", palette="Set2", split=True,
+                     kind="violin")
+    ax.fig.set_size_inches(7, 10)
+    plt.title('Distribution of scores')
+    pp.savefig()
+    # plt.close()
+
+    # HSP_length
+    sns.set(style="darkgrid")
+    colors = sns.color_palette("Set2", 7)
+    ax = sns.catplot(x="hsp_length", y="variant", hue="is_positive",
+                     data=hsps_data, orient="h", palette="Set2", split=True,
+                     kind="violin")
+    ax.fig.set_size_inches(7, 10)
+    plt.title('Distribution of HSP length')
+    pp.savefig()
+
+    # Relative_length
+    sns.set(style="darkgrid")
+    colors = sns.color_palette("Set2", 7)
+    ax = sns.catplot(x="relative_length", y="variant", hue="is_positive",
+                     data=hsps_data, orient="h", palette="Set2", split=True,
+                     kind="violin")
+    ax.fig.set_size_inches(7, 10)
+    plt.title('Distribution of relative length')
+    pp.savefig()
+
+    pp.close()
+
+def visualize_variants_stat(save_dir):
+    """Visualize scores, hsp_lengths and relative_lengths for each histone variant"""
+    for histone_type in ['H1', 'H2A', 'H2B', 'H3', 'H4']:
+        hsps_data = scores_model_to_dataframe(hist_type=histone_type)
+        hsps_data['score'] = hsps_data['score'].astype('float64')
+
+        for variant in set(hsps_data['variant']):
+            print('{}'.format(variant))
+            pp = PdfPages(os.path.join(os.path.join(save_dir, histone_type), "{}.pdf".format(variant)))
+
+            # Scores
+            sns.set(style="darkgrid")
+            colors = sns.color_palette("Set2", 7)
+            ax = sns.catplot(x="score", y="accession", hue="is_positive", row="variant",
+                             data=hsps_data[hsps_data['variant']==variant], orient="h", palette="Set2", split=True,
+                             kind="violin")
+            ax.fig.set_size_inches(7, 10)
+            plt.title('Distribution of scores within {}'.format(variant))
+            pp.savefig()
+
+            # HSP length
+            sns.set(style="darkgrid")
+            colors = sns.color_palette("Set2", 7)
+            ax = sns.catplot(x="hsp_length", y="accession",
+                             hue="is_positive", row="variant",
+                             data=hsps_data[hsps_data['variant'] == variant],
+                             orient="h", palette="Set2", split=True, kind="violin")
+            ax.fig.set_size_inches(7, 10)
+            plt.title('Distribution of HSP length within {}'.format(variant))
+            pp.savefig()
+
+            # Relative length
+            sns.set(style="darkgrid")
+            colors = sns.color_palette("Set2", 7)
+            ax = sns.catplot(x="relative_length", y="accession",
+                             hue="is_positive", row="variant",
+                             data=hsps_data[hsps_data['variant'] == variant],
+                             orient="h", palette="Set2", split=True, kind="violin")
+            ax.fig.set_size_inches(7, 10)
+            plt.title('Distribution of relative length within {}'.format(variant))
+            pp.savefig()
+
+            # Relation between score and HSP length
+            sns.set(style="darkgrid")
+            colors = sns.color_palette("Set2", 7)
+            ax = sns.relplot(data=hsps_data[hsps_data['variant'] == variant],
+                             x="hsp_length", y="score",
+                             hue="is_positive", style="accession", palette="Set2")
+            ax.fig.set_size_inches(7, 10)
+            plt.title('Relationship between score and HSP length within {}'.format(variant))
+            pp.savefig()
+
+            # Relation between score and relative length
+            sns.set(style="darkgrid")
+            colors = sns.color_palette("Set2", 7)
+            ax = sns.relplot(data=hsps_data[hsps_data['variant'] == variant],
+                             x="relative_length", y="score",
+                             hue="is_positive", style="accession", palette="Set2")
+            ax.fig.set_size_inches(7, 10)
+            plt.title('Relationship between score and relative length within {}'.format(variant))
+            pp.savefig()
+
+            pp.close()
 
 def plot_scores(seq_accession, save_dir, scores_sorted, best_threshold=None):
     """Plot the scores
-
     Returns:
     A dictionary with images of dynamic score changes
     """
@@ -234,5 +366,4 @@ def plot_scores(seq_accession, save_dir, scores_sorted, best_threshold=None):
 
     pp.savefig()
     pp.close()
-
 

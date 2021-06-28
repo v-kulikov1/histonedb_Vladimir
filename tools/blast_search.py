@@ -37,7 +37,9 @@ log = logging.getLogger(__name__)
 
 
 def make_blastp(sequences, blastdb, save_to):
-    if hasattr(sequences, '__iter__'):
+    # log.error('Error:: sequences {}'.format(len(sequences)))
+    # log.error('Error:: hasattr {}'.format(hasattr(sequences, '__iter__')))
+    if not hasattr(sequences, '__iter__'):
         sequences = [sequences]
 
     blastp = os.path.join(os.path.dirname(sys.executable), "blastp")

@@ -81,6 +81,12 @@ class Command(BaseCommand):
             help="Adjust hmmer_procs")
 
         parser.add_argument(
+            "--HMMER_classification",
+            default=True,
+            action="store_true",
+            help="Classify sequences based on HMMER search")
+
+        parser.add_argument(
             "--test",
             default=False,
             action="store_true",
@@ -129,7 +135,7 @@ class Command(BaseCommand):
             self.build_hmms_from_seeds()
             self.press_hmms()
 
-            #Determine HMMER thresholds params used to decide if sequence is a variant ot not. If sequence is above 
+            #Determine HMMER thresholds params used to classify sequence based on HMMER
             self.estimate_thresholds()
 
             #Load our curated sets taken from seed alignments into the database an run classification algorithm
@@ -137,14 +143,16 @@ class Command(BaseCommand):
             self.get_scores_for_curated_via_hmm()
 
         if options["force"] or not os.path.isfile(self.db_search_results_file+"0"):
-            #Search inputted seuqence database using our variantt models
-            #Updated to search sequences by hist_type models (by Preety). We need this just to get sequences suits to histone models.
+            #Search sequences by hist_type models (by Preety). We need this just to get sequences suits to histone models.
             self.search_in_db_parallel()
 
-        #Load the sequences and classify them based on thresholds
+        #Load the sequences
         self.load_from_db_parallel()
         # self.extract_full_sequences_from_ncbi()
         self.extract_full_sequences_parallel()
+        #Classify loaded sequences based on variant HMMER thresholds that includes:
+        #search loaded seuqences to database using our variantt models
+        #load search results based on variant HMMER thresholds
         self.classify_by_hmm()
 
         # self.extract_full_sequences()
