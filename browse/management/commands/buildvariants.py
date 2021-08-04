@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
-from browse.models import Histone, Variant, Sequence, Score, Feature
+from browse.models import Histone, Variant, Sequence, ScoreHmm, Feature
 from tools.load_hmmsearch import load_hmm_results, add_score, get_many_prot_seqrec_by_accession
 from tools.test_model import test_model
 import subprocess
@@ -79,7 +79,7 @@ class Command(BaseCommand):
         if options["force"]:
             #Clean the DB, removing all sequence/variants/etc
             Sequence.objects.all().delete()
-            Score.objects.all().delete()
+            ScoreHmm.objects.all().delete()
             Variant.objects.all().delete()
             Histone.objects.all().delete()
 
@@ -122,7 +122,7 @@ class Command(BaseCommand):
             old_score = s.all_model_scores.get(used_for_classification=True)
             old_score.used_for_classification = False
             old_score.save()
-            new_score, created = Score.objects.get_or_create(variant__id="H2A.X",sequence=s)
+            new_score, created = ScoreHmm.objects.get_or_create(variant__id="H2A.X",sequence=s)
             new_score.used_for_classification = True
             new_score.regex = True
             s.variant_id="H2A.X"

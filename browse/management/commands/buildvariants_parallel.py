@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
-from browse.models import Histone, Variant, Sequence, Score, ScoreForHistoneType, Feature
+from browse.models import Histone, Variant, Sequence, ScoreHmm, ScoreForHistoneType, Feature
 from tools.load_hmmsearch import load_hmm_results, add_score, add_histone_score, add_generic_score, get_many_prot_seqrec_by_accession, load_hmm_classification_results, load_generic_scores
 from tools.test_model import test_model
 import subprocess
@@ -126,12 +126,11 @@ class Command(BaseCommand):
         if options["force"]:
             #Clean the DB, removing all sequence/scores/etc
             Sequence.objects.all().delete()
-            Score.objects.all().delete()
+            ScoreHmm.objects.all().delete()
             ScoreForHistoneType.objects.all().delete()
 
         if options["force"] or not os.path.isfile(self.combined_hmm_histtypes_file):
             #Create HMMs from seeds and compress them to one HMM file tp faster search with hmmpress.
-            self.create_fold_seeds()
             self.build_hmms_from_seeds()
             self.press_hmms()
 
@@ -187,13 +186,13 @@ class Command(BaseCommand):
             old_score = s.all_model_hmm_scores.get(used_for_classification=True)
             old_score.used_for_classification = False
             old_score.save()
-            # new_score, created = Score.objects.get_or_create(variant_hmm__id="H2A.X",sequence=s)
-            obj = Score.objects.filter(variant__id="H2A.X",sequence=s)
+            # new_score, created = ScoreHmm.objects.get_or_create(variant_hmm__id="H2A.X",sequence=s)
+            obj = ScoreHmm.objects.filter(variant__id="H2A.X",sequence=s)
             if(len(obj)>1):
                 self.log.warning('More than one score object for one variant found - strange!!!')
                 self.log.warning(obj)
             if(len(obj)==0):
-                new_score, created = Score.objects.get_or_create(variant_hmm__id="H2A.X",sequence=s)
+                new_score, created = ScoreHmm.objects.get_or_create(variant_hmm__id="H2A.X",sequence=s)
             else:
                 new_score=obj.first()
             new_score.used_for_classification = True
@@ -721,6 +720,7 @@ class Command(BaseCommand):
             #We can set hist_type directly by ID, which is hist_type_pos in this case - because it is the primary key in Histone class.
             variant_model = Variant.objects.get(id=variant_name)
             self.log.info("Updating thresholds for {}".format(variant_model.id))
+            self.log.info("Threshold = {}, roc_auc = {}".format(parameters["threshold"], parameters["roc_auc"]))
             variant_model.hmmthreshold = parameters["threshold"]
             variant_model.aucroc = parameters["roc_auc"]
             variant_model.save()

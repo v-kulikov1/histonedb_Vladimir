@@ -123,7 +123,7 @@ def load_hmmhsps(headers, hsps, variant_model):
             # best scoring
             seq.variant = variant_model
             seq.sequence = str(hsp.hit.seq)
-            best_score_2 = Score.objects.get(id=best_score.id)
+            best_score_2 = ScoreHmm.objects.get(id=best_score.id)
             best_score_2.used_for_classification = False
             best_score_2.save()
             seq.save()
@@ -173,8 +173,8 @@ def add_sequence(accession, variant_model, taxonomy, header, sequence):
 
 def add_score(seq, variant_model, hsp, best=False):
   """Add score for a given sequence"""
-  # score_num = Score.objects.count()+1
-  score = Score(
+  # score_num = ScoreHmm.objects.count()+1
+  score = ScoreHmm(
     # id                      = score_num,
     sequence                = seq,
     variant                 = variant_model,

@@ -60,7 +60,7 @@ def make_blastp(sequences, blastdb, save_to):
 
 def add_score(seq, variant_model, hsp, hit_accession, best=False):
     """Add score for a given sequence"""
-    score = ScoreBlast(
+    score = Score(
         # id                      = score_num,
         sequence=seq,
         variant=variant_model,
@@ -97,7 +97,7 @@ def load_blast_search(blastFile_name):
             # raise InvalidFASTA("No blast hits for {}.".format(blast_record.query))
             seq.variant = Variant.objects.get(id='generic_{}'.format(seq.variant_hmm.hist_type.id))
             seq.save()
-            score = ScoreBlast(
+            score = Score(
                 sequence=seq,
                 variant=seq.variant,
                 score=.000001,
@@ -228,7 +228,7 @@ def load_blasthsps_diagnosis(accession, header, hsps, variant_model, hit_accessi
                 # best scoring
                 seq.variant_hmm = seq.variant
                 seq.variant = variant_model
-                best_score_2 = ScoreBlast.objects.get(id=best_score.id)
+                best_score_2 = Score.objects.get(id=best_score.id)
                 best_score_2.used_for_classification = False
                 best_score_2.save()
                 seq.save()

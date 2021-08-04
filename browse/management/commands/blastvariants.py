@@ -1,7 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 
-from browse.models import Sequence, SequenceBlast, ScoreBlast, Histone, Variant
+from browse.models import Sequence, Score, Histone, Variant
 from tools.blast_search import get_best_hsp
 from tools.test_model import plot_scores, test_curated
 from tools.blast_search import make_blastp, load_blast_search, load_blast_search_diagnosis, add_score
@@ -66,7 +66,7 @@ class Command(BaseCommand):
         self.start_time = datetime.now()
         if options["force"]:
             # Clean the DB, removing all sequence/scores/etc
-            ScoreBlast.objects.all().delete()
+            Score.objects.all().delete()
             for s in Sequence.objects.all():
                 s.variant = None
                 s.save()
@@ -110,85 +110,6 @@ class Command(BaseCommand):
         """
         test_curated(save_dir=self.model_evaluation)
 
-
-    def estimate_thresholds_old(self):
-        """
-            Estimate BLAST thresholds that we will use for variant classification.
-            # Construct two sets for every variant:
-            #     negative: The seed alignmnents from every other variant
-            #     positive: the current seed alignment for the variant
-            # And estimate params from ROC-curves.
-        """
-        thresholds_scores = {}
-        for sequence in Sequence.objects.filter(reviewed=True):
-            if 'generic' in sequence.variant.id: continue
-
-            # Let's create BLASTDB for search including align (query) sequence
-            hist_type = sequence.variant.hist_type.id
-            seqs_file = os.path.join(self.model_evaluation, hist_type, "BLASTDB_sequences_{}.fa".format(sequence.id))
-            # self.create_blastdb(Sequence.objects.filter(reviewed=True).exclude(id=sequence.id), seqs_file)
-            self.create_blastdb(Sequence.objects.filter(reviewed=True), seqs_file)
-
-            # BLASTP search
-            blastp = os.path.join(os.path.dirname(sys.executable), "blastp")
-            # output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
-            blastp_cline = NcbiblastpCommandline(
-                cmd=blastp,
-                db=seqs_file,
-                evalue=.01, outfmt=5)
-            # evalue=0.004, outfmt=5)
-            result, error = blastp_cline(stdin="\n".join([s.format("fasta") for s in [sequence]]))
-
-            resultFile = io.BytesIO()
-            resultFile.write(result.encode("utf-8"))
-            resultFile.seek(0)
-
-            # Analyze BLASTP search results
-            for i, blast_record in enumerate(NCBIXML.parse(resultFile)):
-                # sometimes it happens, is it OK?
-                if len(blast_record.alignments) == 0:
-                    continue
-
-                # Extracting best score of the hit and saving to the list best_scores
-                # And sorting best_scores in descending order
-                best_alignment = blast_record.alignments[0]
-                best_hsp = get_best_hsp(best_alignment.hsps)
-                best_scores = [best_hsp.score]
-                for alignment in blast_record.alignments[1:]:
-                    best_alignment_hsp = get_best_hsp(alignment.hsps)
-                    best_scores.append(best_alignment_hsp.score)
-                    if best_alignment_hsp.score > best_hsp.score:
-                        best_alignment = alignment
-                        best_hsp = best_alignment_hsp
-                # best_scores = [get_best_hsp(alignment.hsps).score for alignment in blast_record.alignments]
-                # add_score(sequence, sequence.variant, best_hsp, best_alignment.hit_def.split("|")[0], best=True)
-                best_scores.sort(reverse=True)
-                # self.log.info('DEBUG::{}'.format(best_scores))
-
-                i_treshold = 1
-                seq_treshold = best_scores[i_treshold]
-                # self.log.info('DEBUG::{}-{}-{}'.format(best_scores[i_treshold-1], seq_treshold, best_scores[i_treshold+1]))
-                # self.log.info('DEBUG::{}-{}'.format(best_scores[i_treshold+1]-seq_treshold, (seq_treshold-best_scores[i_treshold-1])+.00001))
-                while (best_scores[i_treshold+1]-seq_treshold)/((seq_treshold-best_scores[i_treshold-1])+.00001) > .8:
-                # while best_scores[i_treshold+1]/seq_treshold > .9:
-                    i_treshold+=1
-                    seq_treshold = best_scores[i_treshold]
-                    if i_treshold+1==len(best_scores): break
-                # self.log.info('DEBUG::i_treshold-{}'.format(i_treshold))
-                # seq_treshold = best_scores[2]
-                if sequence.variant.id not in thresholds_scores:
-                    thresholds_scores[sequence.variant.id] = []
-                thresholds_scores[sequence.variant.id].append(seq_treshold)
-
-                plot_scores(sequence.id, save_dir=os.path.join(self.model_evaluation, hist_type),
-                            scores_sorted=best_scores, best_threshold=seq_treshold)
-
-        for var_name in thresholds_scores:
-            var = Variant.objects.get(id=var_name)
-            var.blastthreshold = min(thresholds_scores[var_name])
-            var.save()
-            # print('{}: {}'.format(var_name, var.blastthreshold))
-
     def load_curated(self):
         self.log.info('Loading curated...')
         for s in Sequence.objects.filter(reviewed=True):
@@ -196,7 +117,7 @@ class Command(BaseCommand):
             s.save()
 
     def add_scores_for_curated(self):
-        # ScoreBlast.objects.filter(sequence__reviewed=True).delete()
+        # Score.objects.filter(sequence__reviewed=True).delete()
         for sequence in Sequence.objects.filter(reviewed=True):
             seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa")
 
@@ -221,37 +142,6 @@ class Command(BaseCommand):
                     algn_self = False if sequence.id != algn.hit_def.split("|")[0] else True # alignment on itself
                     for hsp in algn.hsps:
                         add_score(sequence, sequence.variant, hsp, algn.hit_def.split("|")[0], best=algn_self) ### looks like there is an error
-
-    def add_scores_for_curated_old(self):
-        # ScoreBlast.objects.filter(sequence__reviewed=True).delete()
-        for sequence in Sequence.objects.filter(reviewed=True):
-            hist_type = sequence.variant.hist_type.id
-            seqs_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", hist_type, "BLASTDB_sequence_{}.fa".format(sequence.id))
-            # self.create_blastdb(Sequence.objects.filter(reviewed=True).exclude(id=sequence.id), seqs_file)
-            self.create_blastdb(Sequence.objects.filter(id=sequence.id, reviewed=True), seqs_file)
-
-            blastp = os.path.join(os.path.dirname(sys.executable), "blastp")
-            # output = os.path.join("/", "tmp", "{}.xml".format(uuid.uuid4()))
-            blastp_cline = NcbiblastpCommandline(
-                cmd=blastp,
-                db=seqs_file,
-                evalue=.01, outfmt=5)
-            # evalue=0.004, outfmt=5)
-            result, error = blastp_cline(stdin="\n".join([s.format("fasta") for s in [sequence]]))
-
-            resultFile = io.BytesIO()
-            resultFile.write(result.encode("utf-8"))
-            resultFile.seek(0)
-
-            for i, blast_record in enumerate(NCBIXML.parse(resultFile)):
-                if len(blast_record.alignments) == 0:
-                    self.log.error('No BLAST record alignments for {}'.format(sequence.id))
-                    continue
-                if len(blast_record.alignments) > 0:
-                    self.log.error('More than 1 BLAST record alignments for {}'.format(sequence.id))
-
-                best_alignment = blast_record.alignments[0]
-                add_score(sequence, sequence.variant, get_best_hsp(best_alignment.hsps), best_alignment.hit_def.split("|")[0], best=True)
 
     def add_identities_for_curated(self):
         for asequence in Sequence.objects.filter(reviewed=True):
@@ -348,7 +238,7 @@ class Command(BaseCommand):
         for s in non_classified:
             s.variant = Variant.objects.get(id='generic_{}'.format(s.variant_hmm.hist_type.id))
             s.save()
-            score = ScoreBlast(
+            score = Score(
                 sequence=s,
                 variant=s.variant,
                 score=.000001,

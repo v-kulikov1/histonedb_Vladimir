@@ -161,6 +161,8 @@ def load_hmm_classification_results(hmmerFile):
 
 def load_hmmhsps(headers, hsps, variant_model):
   ###Iterate through high scoring fragments.
+  if variant_model.id == 'H2A.Z':
+      log.error('Variant H2A.Z has bitscores: {}'.format([hsp.bitscore for hsp in hsps]))
   for hsp in hsps:
     # Compare bit scores
     hmmthreshold_passed = hsp.bitscore >= variant_model.hmmthreshold
@@ -190,7 +192,7 @@ def load_hmmhsps(headers, hsps, variant_model):
         if hsp.bitscore > best_score.score:
           # best scoring
           seq.variant_hmm = variant_model
-          best_score_2 = Score.objects.get(id=best_score.id)
+          best_score_2 = ScoreHmm.objects.get(id=best_score.id)
           best_score_2.used_for_classification = False
           best_score_2.save()
           seq.save()
@@ -225,7 +227,7 @@ def load_generic_scores_1():
       generic_model_sequences.count(), hist_type))
     for generic_model_seq in generic_model_sequences:
       hist_score = generic_model_seq.histone_model_scores.first()
-      score = Score(
+      score = ScoreHmm(
         sequence=generic_model_seq,
         variant_hmm=generic_model,
         score=hist_score.score,
@@ -283,8 +285,8 @@ def add_sequence(accession, variant_model, taxonomy, header, sequence):
 
 def add_score(seq, variant_model, hsp, best=False):
   """Add score for a given sequence"""
-  # score_num = Score.objects.count()+1
-  score = Score(
+  # score_num = ScoreHmm.objects.count()+1
+  score = ScoreHmm(
     # id                      = score_num,
     sequence                = seq,
     variant                 = variant_model,
@@ -319,9 +321,9 @@ def add_histone_score(seq, histone_model, hsp, best=False):
   return score
 
 def add_generic_score(seq, generic_model, hist_score):
-  score = Score(
+  score = ScoreHmm(
     sequence=seq,
-    variant_hmm=generic_model,
+    variant=generic_model,
     score=hist_score.score,
     evalue=hist_score.evalue,
     above_threshold=False,

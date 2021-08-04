@@ -1,6 +1,7 @@
 from django.core.management.base import BaseCommand, CommandError
 from django.conf import settings
 from browse.models import Histone, Variant
+from tools.browse_service import *
 
 import json
 import os
@@ -14,7 +15,7 @@ class Command(BaseCommand):
     variants_list_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "variants_list.json")
 
     # Logging info
-    logging.basicConfig(filename='log/buildvarianttypes.log',
+    logging.basicConfig(filename=os.path.join(LOG_DIRECTORY, "buildvarianttypes.log"),
                         format='%(asctime)s %(name)s %(levelname)-8s %(message)s',
                         level=logging.INFO,
                         datefmt='%Y-%m-%d %H:%M:%S')

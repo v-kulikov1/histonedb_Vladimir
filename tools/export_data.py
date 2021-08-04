@@ -1,4 +1,4 @@
-from browse.models import Sequence, Score, ScoreBlast, SequenceBlast, Feature
+from browse.models import Sequence, ScoreHmm, Score, SequenceBlast, Feature
 from django.conf import settings
 # from django.db.models import Q
 
@@ -20,12 +20,12 @@ with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".
 
 with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".format('scores', dt_string)),'w') as f:
     f.write("accession,hmm_model,score,used_for_classification\n")
-    for s in Score.objects.all():
+    for s in ScoreHmm.objects.all():
         f.write("%s,%s,%s,%s\n"%(s.sequence.id,s.variant_hmm,s.score,s.used_for_classification))
 
 with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".format('scores_blast', dt_string)),'w') as f:
     f.write("accession,blast_model,score,bit_score,evalue,hsp_length,used_for_classification,hit_accession,sequence,hit_sequence,match,blastStart,blastEnd,seqStart,seqEnd\n")
-    for s in ScoreBlast.objects.all():
+    for s in Score.objects.all():
         # sequence_obj = Sequence.objects.get(id=s.sequence.id)
         # print(s.hit_accession)
         if s.hit_accession=='':

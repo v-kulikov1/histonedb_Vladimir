@@ -29,7 +29,7 @@ from matplotlib.backends.backend_pdf import PdfPages
 
 from scipy.interpolate import interp1d
 
-from browse.models import Sequence, ScoreBlast, Histone, Variant
+from browse.models import Sequence, ScoreHmm, Histone, Variant
 from django.conf import settings
 # from tools.stat_taxa import *
 
@@ -194,8 +194,8 @@ def scores_model_to_dataframe(hist_type=None):
         return filter_scores_data(pd.read_csv(os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "model_evaluation", "score.csv")), hist_type)
 
     data = []
-    # for s in ScoreBlast.objects.filter(sequence__reviewed=True).exclude(sequence__variant__startswith='generic'):
-    for s in ScoreBlast.objects.filter(sequence__reviewed=True):
+    # for s in Score.objects.filter(sequence__reviewed=True).exclude(sequence__variant__startswith='generic'):
+    for s in ScoreHmm.objects.filter(sequence__reviewed=True):
         if 'generic' in s.variant.id: continue
 
         # hit_seq = Sequence.objects.get(id=s.hit_accession).sequence

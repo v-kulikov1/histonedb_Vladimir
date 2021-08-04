@@ -1,4 +1,4 @@
-from browse.models import Sequence, Score, ScoreBlast, SequenceBlast, Histone, Variant
+from browse.models import Sequence, ScoreHmm, Score, Histone, Variant
 from django.conf import settings
 # from django.db.models import Q
 
@@ -26,8 +26,8 @@ def get_nr_version():
         return nrv.read()
 
 STAT_DIR = os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics")
-# CURR_STAT_DIR = os.path.join(STAT_DIR, '{}_{}'.format(get_nr_version(), DT_STRING))
-CURR_STAT_DIR = os.path.join(STAT_DIR, 'nr_small_per10_v4_20210622-152129')
+CURR_STAT_DIR = os.path.join(STAT_DIR, '{}_{}'.format(get_nr_version(), DT_STRING))
+# CURR_STAT_DIR = os.path.join(STAT_DIR, 'nr_small_per10_v4_20210622-152129')
 # CURR_STAT_DIR = os.path.join(STAT_DIR, DT_STRING)
 # CURR_STAT_DIR = os.path.join(STAT_DIR, '20201219-195135')
 # CURR_STAT_DIR = os.path.join(STAT_DIR, 'nr_small_per10_v4_20210126-183517')
@@ -88,7 +88,7 @@ def get_scores_data(rewrite = False, curated=None, hist_type=None, blast_model=N
                                   score_1, score_2, hsp_length_1, hsp_length_2,
                                   seq_taxid, seq_highlvl_taxid)
     data = []
-    for s in ScoreBlast.objects.all():
+    for s in Score.objects.all():
         print(s.id)
         if s.hit_accession == '':
             hit_seq = ''
@@ -104,13 +104,13 @@ def get_scores_data(rewrite = False, curated=None, hist_type=None, blast_model=N
         except ValueError as e:
             highlvl_taxid = ''
         data.append([s.sequence.id, s.variant.hist_type.id, s.variant.id,
-                     s.score, s.bitScore, s.evalue, s.align_length, s.used_for_classification,
+                     s.score, s.bitScore, s.evalue, s.identity, s.align_length, s.used_for_classification,
                      s.hit_accession, s.sequence.sequence, hit_seq, s.match,
                      s.blastStart, s.blastEnd, s.seqStart, s.seqEnd,
                      s.sequence.taxonomy_id, highlvl_taxid, s.sequence.reviewed])
     data = pd.DataFrame(data,
                         columns=['accession', 'hist_type', 'blast_model',
-                                 'score', 'bit_score', 'evalue', 'hsp_length', 'used_for_classification',
+                                 'score', 'bit_score', 'evalue', 'identity', 'hsp_length', 'used_for_classification',
                                  'hit_accession', 'sequence', 'hit_sequence', 'match',
                                  'blastStart', 'blastEnd', 'seqStart', 'seqEnd',
                                  'seq_taxid', 'seq_highlvl_taxid', 'curated'])
@@ -427,13 +427,13 @@ def scores_boxplot(filename='Scores_boxplot'):
     pp.savefig()
     pp.close()
 
-# create_directories()
-# general_statistics()
-# var_distrib_within_histtypes()
-# var_distrib_for_highlvltaxa()
-# var_distrib_within_histtypes_for_highlvltaxa()
-# scores_boxplot()
+create_directories()
+general_statistics()
+var_distrib_within_histtypes()
+var_distrib_for_highlvltaxa()
+var_distrib_within_histtypes_for_highlvltaxa()
+scores_boxplot()
 
-# general_statistics_pickle()
-general_statistics_html()
-# general_statistics_pickle_test()
+# # general_statistics_pickle()
+# general_statistics_html()
+# # general_statistics_pickle_test()
