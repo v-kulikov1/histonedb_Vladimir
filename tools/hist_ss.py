@@ -52,7 +52,7 @@ Entrez.email = "l.singh@intbio.org"
 # Logging info
 log = logging.getLogger(__name__)
 
-def get_variant_features(sequence, variants=None, save_dir="", save_not_found=False, save_gff=True):
+def get_variant_features(sequence, variants=None, save_dir="", save_not_found=False, save_gff=True, only_general=False):
     """Get the features of a sequence based on its variant.
 
     Parameters:
@@ -83,7 +83,8 @@ def get_variant_features(sequence, variants=None, save_dir="", save_not_found=Fa
         variants = [sequence.variant]
 
     for variant in variants:
-        for template_variant in [variant.id, "General{}".format(variant.hist_type.id)]:
+        templates = [variant.id, "General{}".format(variant.hist_type.id)] if not only_general else ["General{}".format(variant.hist_type.id)]
+        for template_variant in templates:
             try:
                 features = Feature.objects.filter(template__variant=template_variant)
             except:

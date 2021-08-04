@@ -14,9 +14,11 @@ urlpatterns = [
 
     url(r'^search/$', views.search),
     url(r'^analyze/$', views.analyze),
+    url(r'^blast_sequences/$', views.blast_sequences),
     url(r'^help/$', views.help),
     url(r'^basket/$', views.basket),
     url(r'^human/$', views.human),
+    url(r'^statistics/$', views.statistics),
 
     #Parameters are stored as session variables a GET response
     url(r'^data/sequences/json$', views.get_sequence_table_data),
@@ -24,6 +26,7 @@ urlpatterns = [
     url(r'^data/msa/json$', views.get_all_sequences),
     url(r'^data/features/gff$', views.get_sequence_features),
     url(r'^data/sequences\+features/json$', views.get_aln_and_features),
+    url(r'^data/sequences\+features_1/json$', views.get_aln_and_features_1),
     url(r'^data/seed/([a-zA-Z0-9\._]+)$', views.get_seed_aln_and_features),
     url(r'^data/sunburst$', views.get_sunburst_json),
 ]

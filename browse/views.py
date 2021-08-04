@@ -14,7 +14,7 @@ from django.templatetags.static import static
 
 from browse.forms import AdvancedFilterForm, AnalyzeFileForm
 from browse.search import HistoneSearch
-from browse.process_upload import process_upload, InvalidFASTA
+from browse.process_upload import process_upload, process_upload_blast, InvalidFASTA
 
 from colour import Color
 import pandas as pd
@@ -180,6 +180,10 @@ def browse_variant(request, histone_type, variant, accession=None):
         human_sequence = sequences.filter(reviewed=True).first()
     print(human_sequence)
 
+    # if 'generic' in variant.id:
+    #     sequences = Sequence.objects.filter(variant__id=variant)
+    #     human_sequence = sequences.filter(reviewed=True).first()
+
     try:
         publication_ids = ",".join(map(str, variant.publication_set.values_list("id", flat=True)))
         handle = Entrez.efetch(db="pubmed", id=publication_ids, rettype="medline", retmode="text")
@@ -291,6 +295,38 @@ def analyze(request):
     # print data.get('result',0)
     return render(request, 'analyze.html', data)
 
+def blast_sequences(request):
+    data = {
+        "filter_form":AdvancedFilterForm(),
+        "original_query":{},
+        "current_query":{}
+    }
+    if request.method == "POST":
+        if request.FILES.get("file"):
+            format="file"
+            sequences = request.FILES["file"]
+        elif request.POST.get("sequence"):
+            format = "text"
+            sequences = request.POST["sequence"]
+        else:
+            sequences = None
+            data["error"] = "Unable to read sequence."
+
+        if sequences:
+            try:
+                data["result"] = process_upload_blast(sequences, format, request)
+            except InvalidFASTA as e:
+                # data["error"] = "{}: {}".format(e.__class__.__name__, e.message)
+                data["error"] = "{}".format(e.message)
+
+                data["analyze_form"] = AnalyzeFileForm()
+
+        data["search_type"] = type
+    else:
+        data["analyze_form"] = AnalyzeFileForm(initial={"sequence":">Arabidopsis|NP_181415.1|H2A.Z Arabidopsis_H2A.Z_15224957\nMAGKGGKGLLAAKTTAA\nAANKDSVKKKSISRSSRAGIQFPVGRIHRQLKQRVSAHGRVGATAAVYTASI\nLEYLTAEVLELAGNASKDLKVKRITPRHLQLAIRGDEELDTLIKGTIAGGGVI\nPHIHKSLVNKVTKD"})
+    # print data.get('result',0)
+    return render(request, 'blast_sequences.html', data)
+
 def human(request):
     # human_proteins = pd.read_csv('/home/l_singh/histonedb/histone_proteins.csv').fillna('')
     # human_proteins = pd.read_csv(os.path.join(settings.BASE_DIR, "histone_proteins.csv")).fillna('')
@@ -301,6 +337,79 @@ def human(request):
         "current_query":{}
     }
     return render(request, 'human.html', data)
+
+def statistics_test_delete(request):
+    # data = {}
+    # data = {
+    #     "filter_form": AdvancedFilterForm(),
+    #     "original_query": {},
+    #     "current_query": {}
+    # }
+    # return render(request, 'statistics.html', data)
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import pandas as pd
+    import mpld3
+    from mpld3 import plugins
+    np.random.seed(9615)
+
+    N = 100
+    df = pd.DataFrame((.1 * (np.random.random((N, 5)) - .5)).cumsum(0),
+                      columns=['a', 'b', 'c', 'd', 'e'], )
+
+    # plot line + confidence interval
+    fig, ax = plt.subplots()
+    ax.grid(True, alpha=0.3)
+
+    for key, val in df.iteritems():
+        l, = ax.plot(val.index, val.values, label=key)
+        ax.fill_between(val.index,
+                        val.values * .5, val.values * 1.5,
+                        color=l.get_color(), alpha=.4)
+
+    handles, labels = ax.get_legend_handles_labels()  # return lines and labels
+    interactive_legend = plugins.InteractiveLegendPlugin(zip(handles,
+                                                             ax.collections),
+                                                         labels,
+                                                         alpha_unsel=0.5,
+                                                         alpha_over=1.5,
+                                                         start_visible=True)
+    plugins.connect(fig, interactive_legend)
+
+    ax.set_xlabel('x')
+    ax.set_ylabel('y')
+    ax.set_title('Interactive legend', size=20)
+
+    html_fig = mpld3.fig_to_html(fig, template_type='general')
+    plt.close(fig)
+    return render(request, 'statistics.html', {'figure': html_fig})
+
+def statistics(request):
+    from django.conf import settings
+    import os
+    import pickle
+
+    general_stat = {'database_statistics':(Sequence.objects.all().count(),
+                                           Sequence.objects.filter(reviewed=True).count(),
+                                           Sequence.objects.filter(reviewed=False).count()),
+                    'hist_type_stat': [(h.id,
+                                        Sequence.objects.filter(variant__hist_type=h).count(),
+                                        Sequence.objects.filter(variant__hist_type=h, reviewed=True).count(),
+                                        Sequence.objects.filter(variant__hist_type=h, reviewed=False).count()) for h in
+                                       Histone.objects.all()],
+                    'hist_var_stat': [(v.id,
+                                       Sequence.objects.filter(variant=v).count(),
+                                       Sequence.objects.filter(variant=v, reviewed=True).count(),
+                                       Sequence.objects.filter(variant=v, reviewed=False).count()) for v in
+                                      Variant.objects.all()], }
+
+    # with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics", 'nr_small_per10_v4_20210622-152129', 'Variants_hist.pickle'), 'rb') as f:
+    #     html_fig = pickle.load(f)
+
+    # with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "statistics", 'nr_small_per10_v4_20210622-152129', 'test_html_fig.pickle'), 'rb') as f:
+    #     html_fig = pickle.load(f)
+    # return render(request, 'statistics.html', {'figure': html_fig, 'general_stat': general_stat})
+    return render(request, 'statistics.html', {'general_stat': general_stat})
 
 
 def get_sequence_table_data(request):
@@ -537,6 +646,168 @@ def get_aln_and_features(request, ids=None):
             aln = MultipleSeqAlignment([SeqRecord(Seq(s["seq"]), id=s["name"]) for s in sequences[1:]])
             result_pdf = write_alignments(
                 [aln], 
+                save_dir = save_dir
+           )
+
+            with open(result_pdf) as pdf:
+                response.write(pdf.read())
+
+            #Cleanup
+            os.remove(result_pdf)
+        else:
+            #Default format is json
+            result = {"seqs":sequences, "features":features} #.full_gff() if features else ""}
+            response.write(json.dumps(result))
+
+        return response
+
+def get_aln_and_features_1(request, ids=None):
+    from tools.hist_ss import get_variant_features
+    from tools.L_shade_hist_aln import write_alignments
+    import subprocess
+    import io
+    from Bio.Align import MultipleSeqAlignment
+    from Bio.Align.AlignInfo import SummaryInfo
+    from Bio.SeqRecord import SeqRecord
+
+    save_dir = os.path.join(os.path.sep, "tmp", "HistoneDB")
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+        os.chmod(save_dir,0o777)
+
+    if ids is None and request.method == "GET" and "id" in request.GET:
+        ids = request.GET.getlist("id")
+        sequences = Sequence.objects.filter(id__in=[full_id.split('-')[0] for full_id in ids])
+        # print(ids)
+        # print([full_id.split('-')[0] for full_id in ids])
+        download = False
+        upload = False
+    elif request.GET.get("download", False) == "true":
+        download = True
+        upload = False
+    else:
+        #Returning 'false' stops Bootstrap table
+        return "false"
+
+    if request.GET.get("upload", False) == "true":
+        uploaded_sequence = request.session.get("uploaded_sequences", [])
+        # uploaded_sequence = uploaded_sequence[sequences[0].id]
+        uploaded_sequence = uploaded_sequence[ids[0]]
+        if len(uploaded_sequence) > 0:
+            try:
+                variant = Variant.objects.get(id=uploaded_sequence[0]["variant"])
+            except:
+                if len(sequences) > 0:
+                    variant = sequences[0].variant
+                else:
+                    return "false"
+
+            uploaded_sequence = Sequence(
+                id=uploaded_sequence[0]["id"],
+                variant=variant,
+                sequence=uploaded_sequence[0]["sequence"],
+                taxonomy=Taxonomy.objects.get(name=uploaded_sequence[0]["taxonomy"]))
+            upload = True
+            download = False
+
+
+    if not download:
+        if len(sequences) == 0:
+            return None, None
+        elif len(sequences) == 1:
+            #Already aligned to core histone
+            seq = sequences[0]
+            hist_type = seq.variant.hist_type.id
+            variants = [seq.variant]
+            if upload:
+                sequences = [uploaded_sequence, seq]
+            else:
+                #let's load the corresponding canonical
+                try:
+                    if(("canonical" in str(seq.variant)) or ("generic" in str(seq.variant))):
+                        canonical=seq
+                    elif(str(seq.variant.hist_type)=="H1"):
+                        canonical=Sequence.objects.filter(variant_id='generic_'+str(seq.variant.hist_type),reviewed=True,taxonomy=seq.taxonomy)[0]
+                    else:
+                        canonical=Sequence.objects.filter(variant_id='canonical_'+str(seq.variant.hist_type),reviewed=True,taxonomy=seq.taxonomy)[0]
+                except:
+                    try: #try H2A.X as a substitute for canonical
+                        if(str(seq.variant.hist_type)=='H2A'):
+                            canonical=Sequence.objects.filter(variant_id='H2A.X',reviewed=True,taxonomy=seq.taxonomy)[0]
+                        elif(str(seq.variant.hist_type)=='H3'): #Try H3.3
+                            canonical=Sequence.objects.filter(variant_id='H3.3',reviewed=True,taxonomy=seq.taxonomy)[0]
+                        elif(str(seq.variant.id)=='scH1'):
+                            canonical=seq
+                        else:
+                            raise
+
+                    except:
+                        canonical=seq #we here default not to show the sequence by simply suppling itslef - only one line will be displayed
+                        #default Xenopus
+                        # if(str(seq.variant.hist_type)=="H1"):
+                        #     canonical = Sequence(id="0000|xenopus|generic{}".format(hist_type), sequence=str(TemplateSequence.objects.get(variant="General{}".format(hist_type)).get_sequence().seq))
+                        # else:
+                        #     canonical = Sequence(id="0000|xenopus|canonical{}".format(hist_type), sequence=str(TemplateSequence.objects.get(variant="General{}".format(hist_type)).get_sequence().seq))
+                sequences = [canonical, seq]
+            sequence_label = seq.short_description
+
+        else:
+            seq = sequences[0]
+            variants = list(Variant.objects.filter(id__in=sequences.values_list("variant", flat=True).distinct()))
+            sequence_label = "Consensus"
+
+        muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
+        process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        sequences = "\n".join([s.format() for s in sequences])
+        aln, error = process.communicate(sequences.encode('utf-8'))
+        seqFile = io.StringIO()
+        seqFile.write(aln.decode('utf-8'))
+        seqFile.seek(0)
+        sequences = list(SeqIO.parse(seqFile, "fasta")) #Not in same order, but does it matter?
+        msa = MultipleSeqAlignment(sequences)
+        a = SummaryInfo(msa)
+        cons = Sequence(id=sequence_label, variant_id=variants[0].id, taxonomy_id=1, sequence=str(a.dumb_consensus(threshold=0.1, ambiguous='X')))
+
+        save_dir = os.path.join(os.path.sep, "tmp", "HistoneDB")
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
+
+        features = get_variant_features(cons, variants=variants, save_dir=save_dir)
+
+        #A hack to avoid two canonical seqs
+        unique_sequences = [sequences[0]] if len(sequences) == 2 and sequences[0].id == sequences[1].id else sequences
+        # doing the Sequence.short_description work
+        #Note that the gffs are also generated with the short description not
+        sequences = [{"name":"QUERY" if "QUERY" in s.id else Sequence.long_to_short_description(s.id), "seq":str(s.seq)} for s in unique_sequences]
+        # sequences = [{"name":s.id, "seq":str(s.seq)} for s in sequences]
+
+        if sequence_label == "Consensus":
+            sequences.insert(0, cons.to_dict(id=True))
+
+        request.session["calculated_msa_seqs"] = sequences
+        request.session["calculated_msa_features"] = features#.to_ict() if features else {}
+
+        result = {"seqs":sequences, "features":features} #.full_gff() if features else ""}
+        return JsonResponse(result, safe=False)
+    else:
+        format = request.GET.get("format", "json")
+        response = HttpResponse(content_type='text')
+        response['Content-Disposition'] = 'attachment; filename="sequences.{}"'.format(format)
+
+
+        sequences = request.session.get("calculated_msa_seqs", [])
+        features = request.session.get("calculated_msa_features", "")
+        #features = Features.from_dict(Sequence("Consensus"), features_dict) if features_dict else None
+
+        if format == "fasta":
+            for s in sequences:
+                print(">{}\n{}".format(s["name"], s["seq"]), file=response)
+        elif format == "gff":
+            response.write(features) #.full_gff() if features else "")
+        elif format == "pdf":
+            aln = MultipleSeqAlignment([SeqRecord(Seq(s["seq"]), id=s["name"]) for s in sequences[1:]])
+            result_pdf = write_alignments(
+                [aln],
                 save_dir = save_dir
            )
 

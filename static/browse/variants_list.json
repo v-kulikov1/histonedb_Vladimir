@@ -1,0 +1,7 @@
+{
+	"H2A": ["generic_H2A", "canonical_H2A", "H2A.Z", "H2A.X", "macroH2A", "H2A.L", "H2A.W", "H2A.B", "H2A.1", "H2A.P"],
+	"H2B": ["generic_H2B", "canonical_H2B", "subH2B", "H2B.1", "H2B.W", "sperm_H2B", "H2B.Z"],
+	"H3": ["generic_H3", "canonical_H3", "cenH3", "H3.Y", "H3.3", "TS_H3.4", "H3.5"],
+	"H4": ["generic_H4", "canonical_H4"],
+	"H1": ["generic_H1", "H1.0", "TS_H1.6", "TS_H1.7", "OO_H1.8", "TS_H1.9", "H1.10", "scH1"]
+}

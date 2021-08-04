@@ -28,10 +28,17 @@ def process_upload(sequences, format, request):
         raise InvalidFASTA("Invalid format: {}. Must be either 'file' or 'text'.".format(format))
 
     if format == "text":
-        seq_file = io.BytesIO()
+        seq_file = io.StringIO()
         seq_file.write(sequences)
         seq_file.seek(0)
         sequences = seq_file
+    if format == 'file':
+        seq_file = io.StringIO()
+        seq_file.write(sequences.read().decode('utf-8'))
+        seq_file.seek(0)
+        sequences = seq_file
+        # sequences = sequences.content_type
+        # print(sequences)
 
     sequences = SeqIO.parse(sequences, "fasta", IUPAC.ExtendedIUPACProtein())
 
@@ -63,6 +70,130 @@ def process_upload(sequences, format, request):
 
     return result
 
+def process_upload_blast(sequences, format, request):
+    if format not in ["file", "text"]:
+        raise InvalidFASTA("Invalid format: {}. Must be either 'file' or 'text'.".format(format))
+
+    if format == "text":
+        seq_file = io.StringIO()
+        seq_file.write(sequences)
+        seq_file.seek(0)
+        sequences = seq_file
+    if format == 'file':
+        seq_file = io.StringIO()
+        seq_file.write(sequences.read().decode('utf-8'))
+        seq_file.seek(0)
+        sequences = seq_file
+        # sequences = sequences.content_type
+        # print(sequences)
+
+    sequences = SeqIO.parse(sequences, "fasta", IUPAC.ExtendedIUPACProtein())
+
+    try:
+        sequence_query = next(sequences)
+        sequence_hist = next(sequences)
+    except StopIteration:
+        raise InvalidFASTA("No sequences parsed.")
+
+    if not Alphabet._verify_alphabet(sequence_query.seq):
+        raise InvalidFASTA("Sequence {} is not a protein.".format(sequence_query.id))
+    if not Alphabet._verify_alphabet(sequence_hist.seq):
+        raise InvalidFASTA("Sequence {} is not a protein.".format(sequence_hist.id))
+
+    sequence_hist_header = str(sequence_hist.id)
+    sequence_hist = Sequence.objects.filter(
+                        (~Q(variant__id="Unknown") & Q(all_model_scores__used_for_classification=True)) | \
+                        (Q(variant__id="Unknown") & Q(all_model_scores__used_for_classification=False)) \
+                   ).annotate(
+                        num_scores=Count("all_model_scores"),
+                        score=Max("all_model_scores__score"),
+                        evalue=Min("all_model_scores__evalue")
+                   ).get(id=sequence_hist.id.split('|')[0])
+
+    # result = [str(sequence_query.id).replace('|', '_')]
+    result = [str(sequence_query.id)]
+
+    result.append([{
+                        "id":str(sequence_hist.id),
+                        "variant":str(sequence_hist.variant_id),
+                        "gene":str(sequence_hist.gene) if sequence_hist.gene else "-",
+                        "splice":str(sequence_hist.splice) if sequence_hist.splice else "-",
+                        "taxonomy":str(sequence_hist.taxonomy.name.capitalize()),
+                        "header":str(sequence_hist.header),
+                    }])
+    result.append(result[-1][0]["id"])
+    result.append(result[-2][0]["variant"])
+    result.append(sequence_hist_header)
+
+    request.session["uploaded_sequences"] = [{
+        "id":"QUERY", #sequence.id,
+        "sequence":str(sequence_query.seq),
+        "taxonomy":result[-4][0]["taxonomy"]
+    }]
+
+    return result
+
+def process_upload_blast_old(sequences, format, request):
+    if format not in ["file", "text"]:
+        raise InvalidFASTA("Invalid format: {}. Must be either 'file' or 'text'.".format(format))
+
+    if format == "text":
+        seq_file = io.StringIO()
+        seq_file.write(sequences)
+        seq_file.seek(0)
+        sequences = seq_file
+    if format == 'file':
+        seq_file = io.StringIO()
+        seq_file.write(sequences.read().decode('utf-8'))
+        seq_file.seek(0)
+        sequences = seq_file
+
+    sequences = SeqIO.parse(sequences, "fasta", IUPAC.ExtendedIUPACProtein())
+
+    results = []
+    request.session["uploaded_sequences"] = {}
+    for sequence in sequences:
+        if not Alphabet._verify_alphabet(sequence.seq):
+            raise InvalidFASTA("Sequence {} is not a protein.".format(sequence.id))
+
+        result = [str(sequence.id).replace('|', '_')]
+        result.append(upload_blastp(sequence)[0])
+        result.append(result[-1][0]["id"])
+        result.append(result[-2][0]["variant"])
+        # print(result[-1])
+
+        results.append(result)
+
+        request.session["uploaded_sequences"][result[-2]+'-'+str(sequence.id).replace('|', '_')] = [{
+            "id":"QUERY", #sequence.id,
+            "sequence":str(sequence.seq),
+            "taxonomy":result[-3][0]["taxonomy"]
+        }]
+
+    if len(results) < 1: raise InvalidFASTA("No sequences parsed.")
+
+    # try:
+    #     sequence = next(sequences)
+    # except StopIteration:
+    #     raise InvalidFASTA("No sequences parsed.")
+    #
+    # if not Alphabet._verify_alphabet(sequence.seq):
+    #     raise InvalidFASTA("Sequence {} is not a protein.".format(sequence.id))
+    #
+    # result = [str(sequence.id)]
+    # result.append(upload_blastp(sequence)[0])
+    # result.append(result[-1][0]["id"])
+    # result.append(result[-2][0]["variant"])
+    #
+    # request.session["uploaded_sequences"] = [{
+    #     "id":"QUERY", #sequence.id,
+    #     # "variant":classifications[0][1],
+    #     "sequence":str(sequence.seq),
+    #     "taxonomy":result[-3][0]["taxonomy"]
+    # }]
+
+    return results
+
 def upload_blastp(sequences):
     if not isinstance(sequences, list):
         sequences = [sequences]
@@ -74,7 +205,7 @@ def upload_blastp(sequences):
         db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa"), 
         evalue=0.01, outfmt=5)
     out, err = blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
-    blastFile = io.BytesIO()
+    blastFile = io.StringIO()
     blastFile.write(out)
     blastFile.seek(0)
     
@@ -135,6 +266,8 @@ def upload_hmmer(sequences, evalue=10):
 
     db = os.path.join(settings.STATIC_ROOT_AUX, "browse", "hmms", "combined_hmm.hmm")
     hmmsearch = os.path.join(os.path.dirname(sys.executable), "hmmsearch")
+    if not os.path.isdir(hmmsearch):
+       hmmsearch = os.path.join("/var/www/hmmer-3.1b2/src", "hmmsearch")
 
     results = {}
 
@@ -155,8 +288,8 @@ def upload_hmmer(sequences, evalue=10):
 
     process = subprocess.Popen([hmmsearch, "-E", str(evalue), "--notextw", db, temp_seq_path], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
     output, error = process.communicate()
-    hmmerFile = io.BytesIO()
-    hmmerFile.write(output)
+    hmmerFile = io.StringIO()
+    hmmerFile.write(output.decode("utf-8"))
     hmmerFile.seek(0)
     for variant_query in SearchIO.parse(hmmerFile, "hmmer3-text"):
         variant = variant_query.id

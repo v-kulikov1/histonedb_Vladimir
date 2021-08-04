@@ -21,14 +21,19 @@ python manage.py buildtaxonomytoc
 # gunzip nr_5march2020.gz
 # python manage.py buildvariants_parallel -f --db nr_5march2020
 
-# python manage.py buildvariants_parallel -f #This will download new nr if not present in dir
-python manage.py buildvariants_parallel -f --db nr
-# python manage.py buildvariants_parallel -f --db swissprot # this should work reasonably fast
+python manage.py buildvarianttypes
+python manage.py buildvariantinfo -f
+
+python manage.py buildhmms
+python manage.py buildblastdbs
+# python manage.py extractvariants -f #This will download new nr if not present in dir
+python manage.py extractvariants -f --db nr_small_per10_v4
+python manage.py classifyvariants -f
 
 python manage.py buildtrees -f
 python manage.py buildsunburst -f
-python manage.py buildblastdb -f
-python manage.py buildvariantinfo -f
+#python manage.py buildblastdb -f
 python manage.py buildseedinfo -f
-python manage.py shell < tools/export_data.py # exporting data
+#python manage.py shell < tools/export_data.py # exporting data to dumps
+python manage.py shell < tools/export_statistics.py # exporting statistics to statistics including data
 
