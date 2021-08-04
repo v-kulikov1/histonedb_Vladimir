@@ -82,7 +82,9 @@ INSTALLED_APPS = (
     'djangophylocore',
     'django_extensions',
     # 'mod_wsgi.server',
-    'analytics'
+    'analytics',
+    'human_hist',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -109,6 +111,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.request',
             ],
         },
     },

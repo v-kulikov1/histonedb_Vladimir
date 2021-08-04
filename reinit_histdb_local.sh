@@ -3,7 +3,7 @@
 echo "Reinitializing HistDB from scratch"
 
 python manage.py flush << EOF
-yes
+yes    
 EOF
 
 #python manage.py migrate
@@ -34,6 +34,8 @@ python manage.py buildtrees -f
 python manage.py buildsunburst -f
 #python manage.py buildblastdb -f
 python manage.py buildseedinfo -f
-#python manage.py shell < tools/export_data.py # exporting data to dumps
+python manage.py buildhuman_hist 2>log/temp_error.log
+python manage.py shell < tools/export_data.py # exporting data to dumps
 python manage.py shell < tools/export_statistics.py # exporting statistics to statistics including data
+
 

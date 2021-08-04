@@ -1,13 +1,14 @@
 from browse.models import Sequence, ScoreHmm, Score, SequenceBlast, Feature
+from human_hist.models import Human_variants
+
 from django.conf import settings
 # from django.db.models import Q
+from django.core.exceptions import ObjectDoesNotExist
 
 #This script is used to export tables from database for futher use in research
 
 import os
 from datetime import date, datetime
-
-from django.core.exceptions import ObjectDoesNotExist
 
 now = datetime.now()
 dt_string = now.strftime("%Y%m%d-%H%M%S")
@@ -68,4 +69,9 @@ with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".
 #         f.write("%s,%s,%s,%s,%s,%s,%s,%s,%s\n"%(seq.id,seq.variant.hist_type,seq.variant,hist_var_blast,seq.taxonomy_id,seq.reviewed,
 #                                              seq.all_model_scores.filter(used_for_classification=True).first().score,
 #                                              score_blast, bitscore_blast))
+
+with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('human_hist')),'w') as f:
+    f.write("variant,id\n")
+    for s in Human_variants.objects.all():
+        f.write("%s,%s\n"%(s.variant,s.id))
 
