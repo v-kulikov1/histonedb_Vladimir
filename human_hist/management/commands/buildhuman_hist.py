@@ -115,14 +115,14 @@ class Command(BaseCommand):
             obj = Histone_Human_proteins(enst=protein['Transcript stable ID'],
                                          refseq_transcript_id=protein['RefSeq mRNA ID'], \
                                          refseq_protein_id=protein['RefSeq peptide ID'], prot_lenght=protein['Protein length'],\
-                                       isoform = protein['canonical_isoform'] )
+                                       isoform = protein['canonical_isoform'], ) #sequence_id = protein['RefSeq peptide ID']
             obj.save()
             obj.gene.add(*genes)
 
-
-
+            
             if obj:
                 self.log.info("{} was created".format(obj.enst))
+                          
 
         # CAncer
         self.log.info('===   CANCERS START  ===')

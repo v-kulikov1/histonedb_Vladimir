@@ -107,8 +107,13 @@
 				{"name":"H2A.Lap4"}
 			],
 		    "publications":["22025671", "9700202"]
-
-		}
+		},
+		"H2A.J": {
+			"description":"H2A.J ...",
+			"taxonomic_span":"Homo",
+			"alternate_names": [],
+		    "publications":["25731851"]
+		}      
 	},
 	"H2B": {
 		"canonical_H2B":{
@@ -166,7 +171,13 @@
 				{"name":"H2Bv"}
 			],
 			"publications":["22650316"]
-		}
+		},
+		"H2B.S": {
+			"description":"H2B.S ...",
+			"taxonomic_span":"Homo",
+			"alternate_names": [],
+			"publications":[]
+		}        
 	},
 	"H3": {
 		"canonical_H3":{
@@ -260,6 +271,36 @@
 			],
 			"publications":["22650316","23945933","7066298","2898141"]
 		},
+		"H1.1":{
+			"description":"H1.1 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},        
+		"H1.2":{
+			"description":"H1.2 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},   
+		"H1.3":{
+			"description":"H1.3 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},   
+		"H1.4":{
+			"description":"H1.4 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},   
+		"H1.5":{
+			"description":"H1.5 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},          
 		"TS_H1.6": {
 			"description":"Sequences collected here belong to (TS) H1.6 - a testis specific variant of H1 common in mammals.",
 			"taxonomic_span": "Mammals",

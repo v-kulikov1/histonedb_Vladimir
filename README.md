@@ -7,15 +7,19 @@ To test HistoneDB you can use [instructions how to run via virtual machine ](doc
 
 ## Requirements ##
 
-- Python 2.7
+- Python 3.6.9
 - Required python packages are specified in requirements.txt (use "pip install -r requirements.txt"). They include:
---Flup 1.0.2, if using fastcgi
--- Django 1.8, django-debug_toolbar, django-filter, django-filters(?)
--- django-extensions 1.5.3
--- MySQL-python 1.2.5
--- BioPython 1.65
--- colour 0.1.1
--- pyparsing, matplotlib, seaborn, sklearn, networkx, more_itertools
+--biopython==1.74
+--colour==0.1.5
+--Django==1.8.19, django-extensions, django-filter
+--gunicorn>=19.5.0
+--mysqlclient
+--networkx==1.10
+--PyMySQL
+--pyparsing==2.4.6
+--numpy, pandas, scikit-learn, scipy, sklearn
+--matplotlib==1.4.3, seaborn==0.6.0
+
 - [HMMER 3.1b2](http://hmmer.janelia.org)
 - [BLAST+](http://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download) v 2.2.26
 - [EMBOSS](http://emboss.sourceforge.net) v6.5.7

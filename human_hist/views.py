@@ -15,7 +15,6 @@ def human_histones(request):
                     "hgnc_symbol" : gene.hgnc_symbol,
                     "prev_hgnc_symb" : gene.prev_hgnc_symb,
                     "ncbi_gene_id" : gene.ncbi_gene_id,
-                    "prev_hgnc_symb" : gene.prev_hgnc_symb,
                     "ensg" : gene.ensg,
                     "expr_timing" : gene.expr_timing,
                     "expr_pattern" : gene.expr_pattern,

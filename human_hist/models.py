@@ -38,6 +38,8 @@ class Histone_Human_proteins(models.Model):
     refseq_protein_id = models.CharField(max_length=100)
     prot_lenght = models.IntegerField()
     isoform = models.CharField(max_length=40)
+    # test
+    # sequence = models.ForeignKey(Sequence, related_name="human_proteins_seq", default='default')
 
     def __unicode__(self):
         return self.id
