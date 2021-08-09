@@ -10,7 +10,7 @@ import logging
 from cProfile import Profile
 
 class Command(BaseCommand):
-    help = 'Build HMMs for histone types and histone variants'
+    help = 'Build BLASTDBs for histone types'
 
     # Logging info
     logging.basicConfig(filename=os.path.join(LOG_DIRECTORY, "buildblastdbs.log"),

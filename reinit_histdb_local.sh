@@ -25,9 +25,9 @@ python manage.py buildvarianttypes
 python manage.py buildvariantinfo -f
 
 python manage.py buildhmms
-python manage.py buildblastdbs
 # python manage.py extractvariants -f #This will download new nr if not present in dir
 python manage.py extractvariants -f --db nr_small_per10_v4
+python manage.py buildblastdbs
 python manage.py classifyvariants -f
 
 python manage.py buildtrees -f

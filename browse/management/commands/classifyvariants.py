@@ -410,7 +410,7 @@ class Command(BaseCommand):
                                             blastdb=BLASTDB_FILE, hist_type=hist_type,
                                             result_file=DB_HISTVARIANTS_PARSED_RESULTS_FILE,
                                             do_search=force, load_to_db=True, procs=BLAST_PROCS)
-        self.checkH2AX()
+        # self.checkH2AX()
 
     def predict_variants_via_blast(self, sequences, blastout, blastdb, hist_type, result_file=None, do_search=True, load_to_db=True, procs=1):
         if do_search:
