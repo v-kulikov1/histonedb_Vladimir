@@ -38,6 +38,7 @@ colors = [
     "#bc80bd",
     "#ccebc5",
     "#ffed6f",
+    "#ffed6f", # !!!
 ]
 
 class Command(BaseCommand):

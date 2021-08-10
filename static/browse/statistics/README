@@ -1,0 +1,7 @@
+File name	Description
+20201219-195135	Statistical information of v3.2.1 (v3.1 + considering only HSPs overlaps with macro domain of the hit seq if hit seq is macroH2A)
+nr_20210221-222038	Statistical information of v3.2.3 (v3.1 + v3.2.1 + considering histone fold in HMMsearch)
+nr_20210226-121700	Statistical information of v3.2.2 (v3.1 + considering only histone fold in HMMsearch)
+nr_small_per10_v4_20210114-113514	Statistical information of v3.2.1 for nr_small_per10_v4 (v3.1 + considering only HSPs overlaps with macro domain of the hit seq if hit seq is macroH2A)
+nr_small_per10_v4_20210216-095427	Statistical information of v3.2.3 for nr_small_per10_v4 (v3.1 + v3.2.1 + considering histone fold in HMMsearch)
+nr_small_per10_v4_20210301-143414	Statistical information of v3.2.3 for nr_small_per10_v4 (v3.1 + v3.2.1 + considering histone fold in HMMsearch)
