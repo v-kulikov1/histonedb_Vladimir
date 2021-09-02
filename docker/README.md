@@ -12,7 +12,7 @@ cd ..
 
 Then you can run HistoneDB via two ways.
 
-## Running via docker
+## Running via docker (allow at least 4Gb of RAM in Docker preferences)
 
 - Run as a service in docker, this will run apache and attempt to start mysqld
 ```
