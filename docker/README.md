@@ -7,6 +7,7 @@ mkdir project_dir
 cd project_dir
 git clone https://github.com/intbio/histonedb.git
 mkdir db
+cd ..
 ```
 
 Then you can run HistoneDB via two ways.
