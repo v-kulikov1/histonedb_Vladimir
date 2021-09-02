@@ -40,7 +40,7 @@ docker run --name histdb -d -p 8080:10081 -v `pwd`/project_dir/histonedb:/var/ww
 
 ```singularity build --sandbox cont docker://intbio/histonedb:0.2.1```
 
-- Run apache on prot 10080 and attempt to start mysqld
+- Run apache on prot 10081 and attempt to start mysqld
 
 ```singularity instance start --writable --bind project_dir/histonedb:/var/www/histonedb,project_dir/db:/var/lib/mysql cont histdb```
 
