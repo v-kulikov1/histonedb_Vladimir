@@ -1,5 +1,5 @@
-from browse.models import Sequence, ScoreHmm, Score, SequenceBlast, Feature
-from human_hist.models import Human_variants
+from browse.models import Sequence, ScoreHmm, Score #, SequenceBlast, Feature
+#from human_hist.models import Human_variants
 
 from django.conf import settings
 # from django.db.models import Q
@@ -37,10 +37,10 @@ with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".
                                                                   s.used_for_classification,s.hit_accession,s.sequence.sequence,hit_seq,s.match,
                                                                   s.blastStart,s.blastEnd,s.seqStart,s.seqEnd))
 
-with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".format('features', dt_string)),'w') as f:
-    bytes_written=f.write("id,variant,name,start,end\n")
-    for feature in Feature.objects.all():
-        bytes_written=f.write("%s,%s,%s,%s,%s\n"%(feature.id,feature.template.variant,feature.name,feature.start,feature.end))
+# with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".format('features', dt_string)),'w') as f:
+#     bytes_written=f.write("id,variant,name,start,end\n")
+#     for feature in Feature.objects.all():
+#         bytes_written=f.write("%s,%s,%s,%s,%s\n"%(feature.id,feature.template.variant,feature.name,feature.start,feature.end))
 
 
 # with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('scores_blast')),'w') as f:
