@@ -82,7 +82,10 @@ def build_sunburst(sequences):
     def get_color_for_taxa(taxon): 
         avg_score = taxon.children.filter(sequence__all_model_scores__used_for_classification=True).aggregate(score=Avg("sequence__all_model_scores__score"))["score"]
         avg_score = avg_score if avg_score else scores_min
-        scaled = int(floor((float(avg_score-scores_min)/float(scores_max-scores_min))*100))
+        if scores_max-scores_min>0: #avoid dividing by zero
+            scaled = int(floor((float(avg_score-scores_min)/float(scores_max-scores_min))*100))
+        else:
+            scaled = 50
         color_index = scaled if scaled <= 99 else 99
         color_index = color_index if color_index >= 0 else 0
         return str(color_range[color_index])
