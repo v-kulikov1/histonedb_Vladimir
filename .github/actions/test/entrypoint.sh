@@ -10,4 +10,6 @@ apachectl start
 cd /var/www
 ls /github/workspace
 ln -s /github/workspace /var/www/histonedb
+echo "Making a link ======="
+ls /var/www/histonedb
 bash db_gen.sh -mysql_db_reinit -histdb_reinit
