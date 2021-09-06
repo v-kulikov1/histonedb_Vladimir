@@ -70,8 +70,8 @@ with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}_{}.txt".
 #                                              seq.all_model_scores.filter(used_for_classification=True).first().score,
 #                                              score_blast, bitscore_blast))
 
-with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('human_hist')),'w') as f:
-    bytes_written=f.write("variant,id\n")
-    for s in Human_variants.objects.all():
-        bytes_written=f.write("%s,%s\n"%(s.variant,s.id))
+# with open(os.path.join(settings.STATIC_ROOT_AUX, "browse", "dumps", "{}.txt".format('human_hist')),'w') as f:
+#     bytes_written=f.write("variant,id\n")
+#     for s in Human_variants.objects.all():
+#         bytes_written=f.write("%s,%s\n"%(s.variant,s.id))
 
