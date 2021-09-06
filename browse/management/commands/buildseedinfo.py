@@ -33,7 +33,7 @@ class Command(BaseCommand):
         self.log.info('=======================================================')
         self.log.info('===               buildseedinfo START               ===')
         self.log.info('=======================================================')
-        save_dir = os.path.join(os.path.sep, "tmp", "HistoneDB")
+        save_dir = os.path.join("tmp", "HistoneDB")
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
         for variant, seed in self.get_seeds():
