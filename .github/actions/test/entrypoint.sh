@@ -3,13 +3,12 @@ mysqldatadir=/var/lib/mysql/
 echo "Running mysql in the background"
 mysqld_safe --datadir=$mysqldatadir --port=13307 &
 
+rm -rf /var/www/histonedb
+ln -s /github/workspace /var/www/histonedb
+
 
 cd /var/www/histonedb
 echo 'Starting apache2'
 apachectl start
 cd /var/www
-ls /github/workspace
-ln -s /github/workspace /var/www/histonedb
-echo "Making a link ======="
-ls /var/www/histonedb
 bash db_gen.sh -mysql_db_reinit -histdb_reinit
