@@ -82,7 +82,7 @@ class Command(BaseCommand):
 
         ##If no nr file is present in the main dir, will download nr from the NCBI ftp.
         self.db_file = options['db_file']
-        self.set_nr_version()
+        
         if self.db_file == "nr":
             if options["force"] or not os.path.isfile('nr'):
                 self.get_nr()
@@ -95,7 +95,9 @@ class Command(BaseCommand):
             subprocess.call(["wget", self.db_file, '-O', 'db.gz'])
             subprocess.call(["gunzip", "db.gz"])
             self.db_file = 'db'
-
+            
+        self.set_nr_version()
+        
         if options["force"]:
             # Clean the DB, removing all sequence/scores/etc
             Sequence.objects.all().delete()
