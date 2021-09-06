@@ -331,6 +331,7 @@ class Command(NoArgsCommand):
         global DUMP_PATH
         # Taxa.dmp
         list_line = []
+        dmpfile=open(os.path.join(DUMP_PATH, 'taxonomy.dmp'), 'w')
         for species in tqdm(sorted(list(TBI.keys()),key = lambda x: int(x))):
             if self.TEST:
                 if species not in self.list_id:
@@ -344,13 +345,16 @@ class Command(NoArgsCommand):
               self.RANK[TBI[species]['rank']],
               TBI[species]['parent']
            )
-            list_line.append(line)
-        open(os.path.join(DUMP_PATH, 'taxonomy.dmp'), 'w').write(''.join(list_line))
+#             list_line.append(line)
+            dmpfile.write(line)
+        dmpfile.close()
+        
 
     def make_parents(self):
         global DUMP_PATH
         id_rel = 0
         list_parents = []
+        dmpfile=open(os.path.join(DUMP_PATH, 'parentsrelation.dmp'), 'w')
         for species in tqdm(sorted(list(TBI.keys()),key = lambda x: int(x))):
             index = 0
             if self.TEST:
@@ -359,9 +363,11 @@ class Command(NoArgsCommand):
             for parent_id in TBI[species]["parents"]:
                 id_rel += 1
                 line = '%s|%s|%s|%s\n' % (id_rel,species, parent_id, index)
-                list_parents.append(line)
+#                 list_parents.append(line)
+                dmpfile.write(line)
                 index += 1
-        open(os.path.join(DUMP_PATH, 'parentsrelation.dmp'), 'w').write(''.join(list_parents))
+        dmpfile.close()
+        
 
 
 
