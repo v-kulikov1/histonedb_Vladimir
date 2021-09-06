@@ -1,5 +1,20 @@
 # HistoneDB via virtual machine
 
+## TL;DR; for Docker in OSX
+```
+mkdir project_dir
+cd project_dir
+git clone https://github.com/intbio/histonedb.git
+mkdir db
+cd ..
+docker stop histdb; docker rm histdb # optional if container exists and is running
+docker run --name histdb -d -p 8080:10081 -v `pwd`/project_dir/histonedb:/var/www/histonedb -v `pwd`/project_dir/db:/var/lib/mysql intbio/histonedb:0.2.1
+docker exec -it histdb bash -c "bash /var/www/db_gen.sh -mysql_db_reinit -histdb_reinit"
+```
+Check the website at http://localhost:8080
+
+# Instructions
+## Prepare directories and clone repo
 Create project directory and directories where to mount project code and database
 
 ```
@@ -29,10 +44,6 @@ docker run --name histdb -d -p 8080:10081 -v `pwd`/project_dir/histonedb:/var/ww
 - Next in reinit_histdb_local.sh adjust the database you would want to build HistoneDB from (swissprot, nr, etc.)
 
 ```bash db_gen.sh -mysql_db_reinit -histdb_reinit```
-
-- Or use a one-line solution if you are ok with using a small test dataset to regenerate HistoneDB.
-
-```docker exec -it histdb bash -c "bash /var/www/db_gen.sh -mysql_db_reinit -histdb_reinit"```
 
 - To stop the container run
 
