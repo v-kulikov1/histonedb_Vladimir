@@ -1,11 +1,4 @@
-mysqldatadir=/var/lib/mysql/
-#/usr/bin/mysqld_safe
-echo "Running mysql in the background"
-mysqld_safe --datadir=$mysqldatadir --port=13307 &
+FROM intbio/histonedb:0.2.1
 
-
-cd /var/www/histonedb
-echo 'Starting apache2'
-apachectl start
-cd /var/www
-bash db_gen.sh -mysql_db_reinit -histdb_reinit
+COPY entrypoint.sh entrypoint.sh
+ENTRYPOINT ["bash", "/var/www/entrypoint.sh"]
