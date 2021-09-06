@@ -30,6 +30,10 @@ docker run --name histdb -d -p 8080:10081 -v `pwd`/project_dir/histonedb:/var/ww
 
 ```bash db_gen.sh -mysql_db_reinit -histdb_reinit```
 
+- Or use a one-line solution if you are ok with using a small test dataset to regenerate HistoneDB.
+- 
+```docker exec -it histdb bash -c "bash /var/www/db_gen.sh -mysql_db_reinit -histdb_reinit"```
+
 - To stop the container run
 
 ```docker stop histdb```
