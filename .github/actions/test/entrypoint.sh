@@ -8,5 +8,6 @@ cd /var/www/histonedb
 echo 'Starting apache2'
 apachectl start
 cd /var/www
+ls /github/workspace
 ln -s /github/workspace /var/www/histonedb
 bash db_gen.sh -mysql_db_reinit -histdb_reinit
