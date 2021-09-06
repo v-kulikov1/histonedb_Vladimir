@@ -1,0 +1,9 @@
+name: 'HistoneDB Test Docker Action'
+description: 'Test HistoneDB in its container'
+author: 'Alexey Shaytan'
+branding:
+  icon: 'package'  
+  color: 'purple'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
