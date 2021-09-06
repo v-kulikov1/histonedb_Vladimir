@@ -30,9 +30,9 @@ HMM_DIRECTORY                       = os.path.join(settings.STATIC_ROOT_AUX, "br
 BLAST_DIRECTORY                     = os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast")
 BLASTDBS_DIR                        = os.path.join(BLAST_DIRECTORY, 'blastdbs')
 
-CURATED_ALL_FASTA                   = os.path.join(SEED_DIRECTORY, "curated.fasta")
-CURATED_GENERICLESS_FASTA           = os.path.join(SEED_DIRECTORY, "curated_genericless.fasta")
-CURATED_GENERIC_FASTA               = os.path.join(SEED_DIRECTORY, "curated_generic.fasta")
+CURATED_ALL_FASTA                   = os.path.join(HMM_DIRECTORY, 'model_evaluation',"curated.fasta")
+CURATED_GENERICLESS_FASTA           = os.path.join(HMM_DIRECTORY, 'model_evaluation', "curated_genericless.fasta")
+CURATED_GENERIC_FASTA               = os.path.join(HMM_DIRECTORY, 'model_evaluation', "curated_generic.fasta")
 # file for combined sequences by hi st_types
 COMBINED_HMM_HISTTYPES_FILE         = os.path.join(HMM_DIRECTORY, "combined_hmm", "histone_types.hmm")
 # file for combined sequences by va riants
