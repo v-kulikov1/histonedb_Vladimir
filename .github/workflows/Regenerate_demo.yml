@@ -1,0 +1,22 @@
+name: Regenerate Demo
+on: [workflow_dispatch]
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands 
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        port: ${{ secrets.PORT }}
+        script: |
+          cd *_test_dir/
+          cd histonedb
+          git stash
+          git pull
+          git stash pop
+          singularity exec instance://histdb_test bash -c 'cd /var/www; bash db_gen.sh -mysql_db_reinit -histdb_reinit'
