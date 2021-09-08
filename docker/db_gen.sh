@@ -61,7 +61,7 @@ cd /var/www/histonedb
 
 echo 'Start HistoneDB initialization ...'
 #    sh reinit_histdb_local.sh > reinit.log 2>error.log
-bash reinit_histdb_local.sh
+bash -e reinit_histdb_local.sh
 echo 'Initialization complete. See loginfo in log/ directory.'
 fi
 # echo 'For reinitialization run file reinit_histdb_local.sh'
