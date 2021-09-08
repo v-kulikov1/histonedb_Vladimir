@@ -15,4 +15,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd *_test_dir/
-          ls -al
+          cd histonedb
+          git stash
+          git pull
+          git stash pop
