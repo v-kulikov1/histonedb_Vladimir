@@ -12572,40 +12572,14 @@ stat.prototype.resetSeqs = function reset(seqs) {
       var seqArr = this.mseqs.pluck("seq");
       this.resetSeqs(seqArr);
     };
-    // seqs.on("add change reset ", mSeqsPluck, this);
-    // mSeqsPluck.call(this);
+    seqs.on("add change reset ", mSeqsPluck, this);
+    mSeqsPluck.call(this);
   } else {
     this.addSeqs(seqs);
     this._reset();
     this.trigger("reset");
   }
 };
-
-// stat.prototype.resetSeqs = function reset(seqs) {
-//     this.seqs = [];
-//
-//     // support sequence models
-//     if (!Array.isArray(seqs)) {
-//       var test = 20;
-//     }
-//     if ("at" in seqs) {
-//       var test = 30;
-//     }
-//     if (!Array.isArray(seqs) || "at" in seqs) {
-//         this.mseqs = seqs;
-//         var test = 10;
-//         seqs.on("add change reset ", function () {
-//             var seqArr = this.mseqs.pluck("seq");
-//             this.resetSeqs(seqArr);
-//             return seqArr;
-//         }, this)
-//
-//     } else {
-//         this.addSeqs(seqs);
-//         this._reset();
-//         this.trigger("reset");
-//     }
-// };
 
 var calcValues = ["consensus", "frequency", "maxLength", "ic", "gaps"];
 
