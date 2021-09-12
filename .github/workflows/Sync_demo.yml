@@ -22,4 +22,5 @@ jobs:
           git stash
           git pull
           git checkout ${GITHUB_REF##*/}
+          git pull
           git stash pop
