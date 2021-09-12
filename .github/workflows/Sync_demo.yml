@@ -21,6 +21,7 @@ jobs:
           cd histonedb
           git stash
           git pull
+          echo Checking out to branch ${GITHUB_REF##*/}
           git checkout ${GITHUB_REF##*/}
           git pull
           git stash pop
