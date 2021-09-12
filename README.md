@@ -70,7 +70,7 @@ ALTER DATABASE DB_NAME CHARACTER SET utf8 COLLATE utf8_general_ci
 For more information about server setup and database intitializaition including how to update, rebuild and add new variants you can read [HistoneDB setup instructions](system_setup/SERVER_SETUP.md).
 
 ## Cite ##
-
+ 
 Coming soon.
 
 ## Acknowledgements ##
