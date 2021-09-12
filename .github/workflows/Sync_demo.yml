@@ -6,6 +6,8 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
+    - name: Extract branch name
+      run: echo running on branch ${GITHUB_REF##*/}
     - name: executing remote ssh commands 
       uses: appleboy/ssh-action@master
       with:
@@ -18,4 +20,5 @@ jobs:
           cd histonedb
           git stash
           git pull
+          git checkout ${GITHUB_REF##*/}
           git stash pop
