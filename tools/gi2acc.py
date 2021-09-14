@@ -2,9 +2,6 @@ import os
 import logging
 
 from Bio import SearchIO, SeqIO, Entrez
-from Bio.SeqRecord import SeqRecord
-from Bio.Seq import Seq
-from Bio.Alphabet import IUPAC
 
 seed_directory = "../static/browse/seeds"
 seed_acc_dir = "../static/browse/seeds_accession"

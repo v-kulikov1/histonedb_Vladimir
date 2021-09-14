@@ -52,18 +52,33 @@ def process_upload(sequences, format, request):
 
     result = [str(sequence.id)]
 
-    classifications, ids, rows = upload_hmmer(sequence)
-    result.append(classifications[0][1])
-    secondary_classification = classifications[0][2]
+    # classifications, ids, rows = upload_hmmer(sequence)
+    # result.append(classifications[0][1])
+    # secondary_classification = classifications[0][2]
+    # result.append(secondary_classification if secondary_classification != "Unknown" else None)
+    # result.append(rows)
+    # result.append(upload_blastp(sequence)[0])
+    # result.append(result[-1][0]["id"])
+    # result.append(result[-2][0]["variant"])
+    #
+    # request.session["uploaded_sequences"] = [{
+    #     "id":"QUERY", #sequence.id,
+    #     "variant":classifications[0][1],
+    #     "sequence":str(sequence.seq),
+    #     "taxonomy":result[-3][0]["taxonomy"]
+    # }]
+
+    result.append("depricated")
+    secondary_classification = "Unknown"
     result.append(secondary_classification if secondary_classification != "Unknown" else None)
-    result.append(rows)
+    result.append([])
     result.append(upload_blastp(sequence)[0])
     result.append(result[-1][0]["id"])
     result.append(result[-2][0]["variant"])
 
     request.session["uploaded_sequences"] = [{
         "id":"QUERY", #sequence.id,
-        "variant":classifications[0][1],
+        "variant":"depricated",
         "sequence":str(sequence.seq),
         "taxonomy":result[-3][0]["taxonomy"]
     }]
@@ -108,7 +123,7 @@ def process_upload_blast(sequences, format, request):
                         num_scores=Count("all_model_scores"),
                         score=Max("all_model_scores__score"),
                         evalue=Min("all_model_scores__evalue")
-                   ).get(id=sequence_hist.id.split('|')[0])
+                   ).get(id=sequence_hist.id.split('|')[1])
 
     # result = [str(sequence_query.id).replace('|', '_')]
     result = [str(sequence_query.id)]

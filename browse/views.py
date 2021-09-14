@@ -317,13 +317,14 @@ def blast_sequences(request):
                 data["result"] = process_upload_blast(sequences, format, request)
             except InvalidFASTA as e:
                 # data["error"] = "{}: {}".format(e.__class__.__name__, e.message)
-                data["error"] = "{}".format(e.message)
+                # data["error"] = "{}".format(e.message)
+                data["error"] = "{}".format(e)
 
                 data["analyze_form"] = AnalyzeFileForm()
 
         data["search_type"] = type
     else:
-        data["analyze_form"] = AnalyzeFileForm(initial={"sequence":">Arabidopsis|NP_181415.1|H2A.Z Arabidopsis_H2A.Z_15224957\nMAGKGGKGLLAAKTTAA\nAANKDSVKKKSISRSSRAGIQFPVGRIHRQLKQRVSAHGRVGATAAVYTASI\nLEYLTAEVLELAGNASKDLKVKRITPRHLQLAIRGDEELDTLIKGTIAGGGVI\nPHIHKSLVNKVTKD"})
+        data["analyze_form"] = AnalyzeFileForm(initial={"sequence":">Arabidopsis|NP_181415.1|H2A.Z Arabidopsis_H2A.Z_15224957\nMAGKGGKGLLAAKTTAA\nAANKDSVKKKSISRSSRAGIQFPVGRIHRQLKQRVSAHGRVGATAAVYTASI\nLEYLTAEVLELAGNASKDLKVKRITPRHLQLAIRGDEELDTLIKGTIAGGGVI\nPHIHKSLVNKVTKD\n>Trypanosoma|XP_846259.1|H2A.Z Trypanosoma_H2A.Z_72391930\nMSLTGDDAVPQAPLVGGVAMSPEQASALTGGKLGGKAVGPAHGKGKGKGKGK\nRGGKTGGKAGRRDKMTRAARADLNFPVGRIHSRLKDGLNRKQRCGASAAIYC\nAALLEYLTSEVIELAGAAAKAQKTERIKPRHLLLAIRGDEELNQIVNATIAR\nGGVVPFVHKSLEKKIIKKSKRGS"})
     # print data.get('result',0)
     return render(request, 'blast_sequences.html', data)
 

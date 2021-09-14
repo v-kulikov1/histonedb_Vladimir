@@ -194,7 +194,8 @@ class Command(BaseCommand):
                 try:  # sometimes we get this:    [No individual domains that satisfy reporting thresholds (although complete target did)]
                     best_hsp = max(hit, key=lambda hsp: hsp.bitscore)
                     add_hmm_score(seq, variant_model, best_hsp, seq.variant_hmm == variant_model)
-                except:
+                except Exception as e:
+                    self.log.warning('Failed while loading scores for curated: {}'.format(str(e)))
                     pass
         # Search generic by our HMMs for histone types
         self.search_via_hmm(hmms_db=COMBINED_HMM_HISTTYPES_FILE, out=CURATED_GEN_HISTVAR_RESULTS_FILE,
@@ -215,7 +216,7 @@ class Command(BaseCommand):
                     hist_score = add_histone_score(seq, Histone.objects.get(id=histtype), best_hsp)
                     add_generic_score(seq, Variant.objects.get(id='generic_{}'.format(histtype)), hist_score)
                 except Exception as e:
-                    self.log.warning('Failed curated: {}'.format(str(e)))
+                    self.log.warning('Failed while loading scores for curated generic: {}'.format(str(e)))
                     pass
 
     def classify_via_hmm(self, reset=True):
