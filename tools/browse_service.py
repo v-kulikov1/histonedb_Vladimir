@@ -53,8 +53,8 @@ DB_HISTVARIANTS_PARSED_RESULTS_FILE = os.path.join(BLAST_DIRECTORY, "results", "
 
 # Parameters for parallel extraction variant sequences from file
 # HMMER_PROCS=20 # recommended for large data files
-HMMER_PROCS = 4 # recommended for small data files (nearby 14GB)
 # BLAST_PROCS=25 # recommended for large data
+HMMER_PROCS = 4 # recommended for small data files (nearby 14GB)
 BLAST_PROCS = 5 # recommended for small random data
 SEEDS_FOR_HMM = 'seeds_fold'
 CLASSIFICATION_TYPES = ['BLAST'] #['HMM', 'BLAST']
