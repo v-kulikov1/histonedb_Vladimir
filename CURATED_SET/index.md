@@ -1,4 +1,4 @@
-<script src="//cdn.bio.sh/msa/1.0/msa.min.gz.js"></script>
+<script src="msa.min.js"></script>
 # Interactive preview of CURATED SET of histone sequences used for HistoneDB 3.0
 
 
@@ -8,6 +8,7 @@
 
 
 <script>
+var msa = require("msa");
         // this is a way how you use a bundled file parser
         // set your custom properties
         // @see: https://github.com/greenify/biojs-vis-msa/tree/master/src/g 
