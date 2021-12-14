@@ -1,4 +1,4 @@
-<script src="https://cdn.bio.sh.s3.eu-central-1.amazonaws.com/msa/latest/msa.min.gz.js"></script>
+<script src="//cdn.bio.sh/msa/1.0/msa.min.gz.js"></script>
 # Interactive preview of CURATED SET of histone sequences used for HistoneDB 3.0
 
 
