@@ -31,13 +31,7 @@
         // init msa
         var m = new msa.msa(opts);
 
-        // search in URL for fasta or clustal
-        function getURLParameter(name) {
-            return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [, ""])[1].replace(/\+/g, '%20')) || null;
-        }
-
-        var defaultURL = "https://raw.githubusercontent.com/greenify/msa/master/snippets/data/fer1.clustal";
-        var url = getURLParameter('seq') || defaultURL;
+        var url = "../static/browse/seeds/H3/H3.3.fasta";
 
         m.u.file.importURL(url, renderMSA);
 
