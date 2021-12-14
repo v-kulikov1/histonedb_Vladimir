@@ -8,7 +8,7 @@
 
 
 <script>
-var msa = require("msa");
+//var msa = require("msa");
         // this is a way how you use a bundled file parser
         // set your custom properties
         // @see: https://github.com/greenify/biojs-vis-msa/tree/master/src/g 
