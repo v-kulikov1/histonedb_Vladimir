@@ -3,6 +3,7 @@
 
 
 <script>
+ var msa = require("msa");
   // your fasta file (advice: save it in a DOM node)
 var fasta = ">seq1\n\
 ACTG\n\
