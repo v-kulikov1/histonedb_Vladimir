@@ -30,4 +30,9 @@ Accession.version, Type, Variant, Subvariant, Doublet, GI, TaxonomyID, Organism,
 ## classification.json
 
 This is a very important file detailing all classification of hisone variants currently used, and all info about them.
-classificationDef.json - defines json schema.
+The classification is hierarchichal.
+[classificationDef.json](classificationDef.json) - defines and describes json schema.
+
+Here are key point about our classification:
+- 
+
