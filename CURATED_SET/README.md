@@ -38,7 +38,9 @@ The classification is hierarchichal.
 - Top level is type: H3, H4, H2A, H2B or Archaeal
 - Next level is top-level variants, e.g. canonical H2A in Metazoa
 - Variants are always specify in their name the taxonomic span of this particular variant.
-- Every variant has an id of the following form VARIANTNAME_(Taxa)
+- Every variant has an id of the following form VARIANTNAME_(Taxanomic span)
 - Variant ids are case-insensitive in the database, but during representation case is important.
 - Variants also have a full name. E.g.
+- We can subdivide a variant into sub-variants from different taxanomic groups, only if they do not have common functional subvariants.
+
 
