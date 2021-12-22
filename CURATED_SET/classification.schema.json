@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://intbio.org/histonedb/CURATED_SET/classification.schema.json",
+  "title": "Histone classification schema",
+  "description": "A schema to describe histone proteins' classification",
+  "type": "object",
+  "properties": {
+    "tree": {
+      "description": "Hierarchical tree of histone variants",
+      "type": "object",
+      "properties": {}
+    },
+    "info": {
+      "description": "Information about hisotne variants",
+      "type": "object",
+      "properties":{
+      		"description": {
+      					"description": "Variant of type description",
+      					"type": "string"
+      					},
+      		"taxonomic_span": {
+      					"description": "Variant taxonomic span",
+      					"type": "string"
+      					},
+      			
+    }
+  },
+  "required": [ "tree", "info" ]
+}
