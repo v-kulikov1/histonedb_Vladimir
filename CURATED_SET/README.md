@@ -33,6 +33,12 @@ This is a very important file detailing all classification of hisone variants cu
 The classification is hierarchichal.
 [classificationDef.json](classificationDef.json) - defines and describes json schema.
 
-Here are key point about our classification:
-- 
+### Here are key points about our classification:
+- Classification is hierarchical.
+- Top level is type: H3, H4, H2A, H2B or Archaeal
+- Next level is top-level variants, e.g. canonical H2A in Metazoa
+- Variants are always specify in their name the taxonomic span of this particular variant.
+- Every variant has an id of the following form VARIANTNAME_(Taxa)
+- Variant ids are case-insensitive in the database, but during representation case is important.
+- Variants also have a full name. E.g.
 
