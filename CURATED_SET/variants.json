@@ -1,0 +1,352 @@
+{
+	"H2A": {
+		"canonical_H2A":{
+			"description":"Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail.",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+			  				{"name":"ca H2A"}
+			],
+			"publications":["22650316","25731851"]
+		},
+		"H2A.Z": {
+			"description":"H2A.Z containing nucleosomes often localize near transcription start and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions.",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names":[
+				{"name":"H2A.Z-1", "gene":1},
+				{"name":"H2A.Z-2", "gene":2},
+				{"name":"H2A.Z", "splice":1},
+				{"name":"H2A.Z", "splice":2},
+				{"name":"H2A.Zc", "splice":3},
+				{"name":"Htz1p", "taxonomy":"saccharomyces"},
+				{"name":"hv1", "taxonomy":"tetrahymena"},
+				{"name":"H2A.V", "taxonomy":"drosophila"},
+				{"name":"H2Av", "taxonomy":"drosophila", "notes":"sometime H2A.X"},
+				{"name":"H2AvD", "taxonomy":"drosophila"},
+				{"name":"D2", "taxonomy":"drosophila"},
+				{"name":"member Z"}
+			],
+		  	"publications":["22650316","25731851","11101893","18275809","24311584","19193230","24969791","22467210","20003410","24768041","23301656","20197778"]
+
+		},
+		"H2A.X": {
+			"description":"H2A.X most notably is involved in DNA damage response, marking the double strand DNA breaks with its phosphorylated form ɣ-H2A.X. It is also more broadly implicated in chromatin remodeling, found at collapsed replication forks and heterochromatin. It is the only non-monophyletic variant in H2A and has the charactristic SQE/DΦ motif at C-terminus (SQAY in Drosophila), where Φ-represents a hydrophobic residue (usually Tyr in mammals), and S is phosphorylation site. Nematodes are the only known species that lack H2A.X. In yeast H2A.X function is fulfilled by conventional H2A, while in Drosophila melanogaster by H2A.Z.",
+			"taxonomic_span": "Eukaryotes except nematode",
+			"alternate_names": [
+				{"name":"member X"}
+			],
+		  	"publications":["22650316","25731851","18095327","23301656"]
+
+		},
+		"macroH2A": {
+			"description":"macroH2A is involved in X-inactivation and transcriptional regulation; can be found in inactivated X chromosome, gene promoters, and heterochromatin. It contains a ∼30 kDa additional globular macrodomain attached to C-terminus. Its taxonomic span was thought to be restricted to vertebrates, but this is currently disputed.",
+			"taxonomic_span": "Vertebrates(?)",
+			"alternate_names": [
+				{"name":"mH2A"},
+				{"name":"macroH2A1", "gene":1},
+				{"name":"macroH2A2", "gene":2},
+				{"name":"macroH2A1.1", "gene":1, "splice":1},
+				{"name":"macroH2A1.2", "gene":1, "splice":2},
+				{"name":"macroH2A2.1", "gene":2, "splice":1},
+				{"name":"macroH2A2.2", "gene":2, "splice":2}
+			],
+		    "publications":["22650316","25731851","16107708","20543561","16803903"]
+
+		},
+		"H2A.L": {
+			"description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
+			"taxonomic_span":"Certain mammals",
+			"alternate_names": [
+				{"name":"H2AL"},
+				{"name":"H2AL1", "gene":1},
+				{"name":"H2AL2", "gene":2},
+			  	{"name":"H2A.Lap2"},
+			  	{"name":"H2A.Lap3"}
+			],
+		    "publications":["22650316","25731851","19506029","17261847","18703863"]
+
+		},
+	  "H2A.W": {
+			"description": "H2A.W is a plant specific variant, that has SPKK motifs at the N-terminus, which have putative minor-groove-binding activity.",
+			"taxonomic_span":"Plants",
+			"alternate_names": [
+ 				{"name":"H2A with SPKK motifs"}
+
+			],
+		    "publications":["22650316","2023250"]
+
+		},
+		"H2A.B": {
+			"description": "H2A.B, also known as \"Barr body defficient\" variant, it has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
+			"taxonomic_span":"Mammals",
+			"alternate_names": [
+				{"name":"H2A.Bbd"},
+			    {"name":"H2A.Lap1(mouse)"}
+			],
+		  "publications":["22650316","25731851","24853749","18329190","17726088","24213378","22795134","24753410"]
+
+		},
+	  	"H2A.1": {
+			"description": "H2A.1 is a mammalian testis, oocyte and zygote specific variant. It can preferentially dimerize with  H2B.1. So far characterized only in mouse, but a similar gene in human is available. The gene is located  at the end of the largest histone gene cluster.",
+			"taxonomic_span":"Mammals",
+			"alternate_names": [
+				{"name":"TH2A"},
+			    {"name":"TS H2A.1"}
+
+			],
+		  "publications":["22650316","25731851","24506885","26188507"]
+
+		},
+		"H2A.P": {
+			"description":"H2A.P is a putative variant closely related to H2A.B and H2A.L, but forming a distinct clade. It is likely restricted to placental mammals.",
+			"taxonomic_span":"Placentalia",
+			"alternate_names": [
+				{"name":"Huntingtin-interacting protein M"},
+				{"name":"HYPM"},
+				{"name":"CXorf27"},
+				{"name":"HIP17"},
+				{"name":"H2A.Lap4"}
+			],
+		    "publications":["22025671", "9700202"]
+		},
+		"H2A.J": {
+			"description":"H2A.J ...",
+			"taxonomic_span":"Homo",
+			"alternate_names": [],
+		    "publications":["25731851"]
+		}      
+	},
+	"H2B": {
+		"canonical_H2B":{
+			"description":"Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+ 				{"name":"ca H2B"}
+
+			],
+			"publications":["22650316","25731851"]
+		},
+		"subH2B": {
+			"description":"subH2B is involved in spermiogenesis and is found in subacrosomes of spermatozoa. It has a bipartite nuclear localization signal. This variant is present outside of nucleus in acrosomal space of spermatozoa, extent of its involvement in nucleosome formation is unclear",
+			"taxonomic_span":"Primates, rodents, marsupials, and bovids",
+			"alternate_names": [
+				{"name":"H2BL1"},
+				{"name":"subH2Bv"}
+			],
+			"publications":["22650316","25731851","11892742","22156475"]
+		},
+		"H2B.1": {
+			"description":"H2B.1 is a mammalian testis, oocyte and zygote specific variant that forms subnucleosomal particles in spermatids. It can preferentially dimerize with H2A.L and H2A.1. The gene is located  at the end of the largest histone gene cluster.",
+			"taxonomic_span":"Mammals",
+			"alternate_names": [
+				{"name":"TH2B"},
+				{"name":"H2B.1"},
+			  {"name":"TS H2B.1"},
+				{"name":"hTSH2B", "taxonomy":"rodentia"}
+			],
+			"publications":["22650316","12408966","24506885","25252820","15709765","23884607","25731851","26188507"]
+		},
+		"H2B.W": {
+			"description":"H2B.W is involved in spermiogenesis and telomere associated functions in sperm and is found in spermatogenic cells. It has an extended N-terminal tail",
+			"taxonomic_span":"Mammals",
+			"alternate_names": [
+				{"name":"H2BFWT"},
+				{"name":"member W"},
+				{"name":"type W-T"}
+			],
+			"publications":["22650316","25731851","19583817","16449661","16449661"]
+		},
+	  	"sperm_H2B": {
+			"description":"Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
+			"taxonomic_span":"Echinoidea(?)",
+			"alternate_names": [
+				{"name":"early H2B"},
+			    {"name":"cleavage H2B"}
+			],
+			"publications":["22650316","710402"]
+		},
+		"H2B.Z": {
+			"description":"H2B.Z in an apicomplexan specific variant that is known to interact with H2A.Z.",
+			"taxonomic_span":"Apicomplexa",
+			"alternate_names": [
+				{"name":"H2Bv"}
+			],
+			"publications":["22650316"]
+		},
+		"H2B.S": {
+			"description":"H2B.S ...",
+			"taxonomic_span":"Homo",
+			"alternate_names": [],
+			"publications":[]
+		}        
+	},
+	"H3": {
+		"canonical_H3":{
+			"description":"Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+ 				{"name":"ca H3"}
+
+			],
+			"publications":["22650316"]
+		},
+		"cenH3":{
+			"description":"cenH3 is a centromere-specific histone variant, which replaces canonical H3 in centromeric nucleosomes. It is required for kinetochore formation, mitotic progression and chromosome segregation. cenH3 has an extended L1-loop and its N-terminal tail is very different from other H3 variants. cenH3s have an extended L1-loop and usually replace Phe84 in canonical H3 with Trp, and Thr 107 with Ala, Cys, or Ser. cenH3s ususally lack a conserved glutamine in the alpha1 helix of the histone fold. cenH3s typically have only about 50-60% amino acid identity to canonical H3 in the histone fold domain and no conservation of the N-terminus.",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+				{"name":"CENP-A"},
+				{"name":"Cse4"},
+				{"name":"HCP-3"},
+				{"name":"CNP1"},
+			  	{"name":"HTR12"},
+			  	{"name":"CNA1"},
+			  	{"name":"cid"}
+
+			],
+			"publications":["22650316","19766562","25956076","23324462","21743476","14583738"]
+		},
+		"H3.Y": {
+			"description": "H3.Y is involved in memory formation due to its presence in neurons in human hippocampus. One splice isoform has an extended C-terminal alpha tail that may interacts with the H2A.Z acidic patch",
+			"taxonomic_span": "Primates",
+			"alternate_names": [
+				{"name":"H3.X", "gene":2}
+			],
+			"publications":["22650316", "20819935"]
+		},
+		"H3.3": {
+			"description": "The major replication-independent or replacement H3, important for development, transcription, and chromosome segregation. It typically differs from the canonical H3 by only a few amino acids that are necessary for replication-independent assembly. ",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+				{"name":"soH3-1", "gene":1},
+				{"name":"soH3-2", "gene":2},
+			  	{"name":"hv2", "gene":1}
+			],
+			"publications":["22650316", "20738881","19412883","24229707","14583738"]
+		},
+	  "TS_H3.4": {
+			"description": "Testis spesific mamal H3 variant.",
+			"taxonomic_span": "Mammals",
+			"alternate_names": [
+			  {"name":"H3.1t"}
+
+			],
+			"publications":["22650316","8986613"]
+		},
+	    "H3.5": {
+			"description": "A hominid specific variant expressed in seminiferous tubules of human testis.",
+			"taxonomic_span": "Hominids",
+			"alternate_names": [
+			],
+			"publications":["21274551"]
+		}
+	},
+	"H4": {
+		"canonical_H4":{
+			"description":"Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+ 				{"name":"ca H4"}
+
+			],
+			"publications":["22650316"]
+		}
+	},
+	"H1": {
+	  "generic_H1":{
+			"description":"H1 has mainly species specific variants. In current version of HistoneDB all H1 are presented as genericH1 class, except for several interesting species specific variants which are provided as separate classes.",
+			"taxonomic_span": "Eukaryotes",
+			"alternate_names": [
+ 				{"name":"gen H1"}
+
+			],
+			"publications":["22650316","23945933","10973918","11149891","26212454"]
+		},
+		"H1.0":{
+			"description":"H1.0 is a replication independent linker histone found in animals expressed in terminally differentiated cells. Has a common monophyletic origin that can be traced back before the differentiation between protostomes and deuterostomes, very early in metazoan evolution.",
+			"taxonomic_span": "Metazoa",
+			"alternate_names": [
+				{"name":"H1°"},
+				{"name":"H5", "taxonomy":"aves"},
+				{"name":"H1δ"},
+			  	{"name":"RI H1"}
+			],
+			"publications":["22650316","23945933","7066298","2898141"]
+		},
+		"H1.1":{
+			"description":"H1.1 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},        
+		"H1.2":{
+			"description":"H1.2 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},   
+		"H1.3":{
+			"description":"H1.3 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},   
+		"H1.4":{
+			"description":"H1.4 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},   
+		"H1.5":{
+			"description":"H1.5 is a replication independent linker histone.",
+			"taxonomic_span": "Homo",
+			"alternate_names": [],
+			"publications":["26689747"]
+		},          
+		"TS_H1.6": {
+			"description":"Sequences collected here belong to (TS) H1.6 - a testis specific variant of H1 common in mammals.",
+			"taxonomic_span": "Mammals",
+			"alternate_names": [
+				{"name":"H1t"}
+			],
+			"publications":["22650316"]
+		},
+		"TS_H1.7": {
+			"description":"Sequences collected here belong to (TS) H1.7 - a testis specific variant of H1 common in mammals.",
+			"taxonomic_span": "Mammals",
+			"alternate_names": [
+				{"name":"H1T2"}
+			],
+			"publications":["22650316"]
+		},
+		"OO_H1.8": {
+			"description":"Sequences collected here belong to (OO) H1.8 - an oocyte specific variant of H1 common in mammals.",
+			"taxonomic_span": "Mammals",
+			"alternate_names": [
+				{"name":"H1oo"}
+			],
+			"publications":["22650316"]
+		},
+		"TS_H1.9": {
+			"description":"Sequences collected here belong to (TS) H1.9 - a testis specific variant of H1 common in mammals.",
+			"taxonomic_span": "Mammals",
+			"alternate_names": [
+				{"name":"Hils1"}
+			],
+			"publications":["22650316"]
+		},
+		"H1.10": {
+			"description":"Sequences collected here belong to H1.10 here - a vertebrate specific H1 variant.",
+			"taxonomic_span": "Vertebrates",
+			"alternate_names": [
+				{"name":"H1x"}
+			],
+			"publications":["22650316"]
+		},
+	   "scH1": {
+			"description":"A special variant of H1 found in Saccharomyces and probably other yeast species that has two globular domains. Saccharomyces cerevisiae has only one gene that encodes H1 histone (HHO1).",
+			"taxonomic_span": "Saccharomyces(?)",
+			"alternate_names": [
+			],
+			"publications":["8772381"]
+		}
+	}
+}
