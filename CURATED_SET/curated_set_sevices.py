@@ -6,16 +6,25 @@ from Bio.Align import MultipleSeqAlignment
 import pandas as pd
 import collections
 import sys, os, re, subprocess, io
+from datetime import datetime
+
+HISTONES_FILE = 'histones.csv'
+HISTONES_PROCESSED_FILE = 'histones_processed.csv'
+FEATURES_FILE = 'features.json'
+BACKUP_DIR = 'backups'
+
+NONCBI_IDENTIFICATOR = 'NONCBI'
+
 
 class CuratedSet(object):
     def __init__(self):
-        self.curated_filename = 'curated_histones.csv'
-        self.curated_data = pd.read_csv(self.curated_filename).fillna('')
-        self.curated_data.index = list(self.curated_data['accession'])
+        self.data = pd.read_csv(HISTONES_FILE).fillna('') # needs sprting
+        self.data.index = list(self.data['accession'])
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
-        self.msa_full = None # MultipleSeqAlignment object
+        self.features_variant = {} # keys - variant, values Feature Object
+        self.features_type = {} # keys - type, values Feature Object
 
     def has_duplicates(self):
         '''
@@ -31,59 +40,56 @@ class CuratedSet(object):
             if acc_count[1] == 1: continue
             else: yield acc_count[0]
 
-    def get_count(self): return self.curated_data.shape[0]
+    def get_count(self): return self.data.shape[0]
 
-    def get_accessions_list(self): return list(self.curated_data['accession'])
+    def get_accessions_list(self): return list(self.data['accession'])
 
-    def get_gis_list(self): return list(self.curated_data['gi'])
+    def get_gis_list(self): return list(self.data['gi'])
 
-    def get_variant(self, accession):
-        if not hasattr(accession, '__iter__'):
-            return self.curated_data.loc[self.curated_data['accession']==accession]['variant'].iloc[0]
-        for acc in accession:
-            yield self.curated_data.loc[self.curated_data['accession']==acc]['variant'].iloc[0]
+    def get_variant(self, accession): return self.data.loc[self.data['accession'] == accession]['variant'].iloc[0]
 
-    def get_type(self, accession):
-        if not hasattr(accession, '__iter__'):
-            return self.curated_data.loc[self.curated_data['accession']==accession]['type'].iloc[0]
-        for acc in accession:
-            yield self.curated_data.loc[self.curated_data['accession']==acc]['type'].iloc[0]
+    def get_type(self, accession): return self.data.loc[self.data['accession'] == accession]['type'].iloc[0]
 
-    def get_gi(self, accession):
-        if not hasattr(accession, '__iter__'):
-            return self.curated_data.loc[self.curated_data['accession']==accession]['gi'].iloc[0]
-        for acc in accession:
-            yield self.curated_data.loc[self.curated_data['accession']==acc]['gi'].iloc[0]
+    def get_gi(self, accession): return self.data.loc[self.data['accession'] == accession]['gi'].iloc[0]
 
     def get_taxid_genus(self, accession):
-        if not 'taxid' in self.curated_data:
+        if not 'taxonomyid' in self.data:
             print('No taxid loaded yet. Update update_taxids fisrt.')
             return
-        return (self.curated_data.loc[self.curated_data['accession']==accession]['taxid'].iloc[0],
-                self.curated_data.loc[self.curated_data['accession'] == accession]['organism'].iloc[0])
+        return (self.data.loc[self.data['accession'] == accession]['taxonomyid'].iloc[0],
+                self.data.loc[self.data['accession'] == accession]['organism'].iloc[0])
 
-    def save(self):
-        self.curated_data.to_csv(self.curated_filename, mode='w', index=False)
-        print(f'Results saved to {self.curated_filename}')
+    def save(self, filename=None, processed=False):
+        #backup file first to history
+        data_old = pd.read_csv(HISTONES_FILE).fillna('')
+        backup_file = os.path.join(BACKUP_DIR, f'{HISTONES_FILE}-{datetime.now().strftime("%b%d%y%H%M%S")}')
+        data_old.to_csv(backup_file, mode='w', index=False)
+        print(f'Previous data backuped to {backup_file}')
+        if not filename: filename = HISTONES_FILE
+        if processed: filename = HISTONES_PROCESSED_FILE
+        self.data.to_csv(filename, mode='w', index=False)
+        print(f'Results saved to {filename}')
 
     def add_curated_data(self, filemane, save=False):
         add_curated_data = pd.read_csv(filemane).fillna('')
-        self.curated_data = self.curated_data.append(add_curated_data)
+        self.data = self.data.append(add_curated_data)
         f = self.has_duplicates()
         if f: print(f'Duplicates: {list(f)}')
         elif save: self.save()
 
-    def update_accession_version(self, save=False):
-        curated_data_with_acc = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False) == False]
-        curated_data_nogi = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)]
+    def update_accession_version(self):
+        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
+        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
         for i in range(10):
             try:
                 handle = Entrez.efetch(db="protein", id=",".join(list(curated_data_with_acc['accession'])), rettype="gb", retmode="text")
                 sequences = list(SeqIO.parse(handle, "gb"))
                 if (len(curated_data_with_acc['accession']) == len(sequences)):
                     new_accessions = [s.id for s in sequences]
-                    new_accessions.extend(list(curated_data_nogi['accession']))
-                    self.curated_data['accession'] = new_accessions
+                    for new_acc, acc in zip(new_accessions, curated_data_with_acc['accession']):
+                        if acc!=new_acc: print(f'{acc} changes to {new_acc}')
+                    curated_data_with_acc['accession'] = new_accessions
+                    self.data = curated_data_with_acc.append(curated_data_noncbi)
                     break
                 else:
                     print("Mismatch:", len(curated_data_with_acc['accession']), " ", len(sequences))
@@ -95,14 +101,13 @@ class CuratedSet(object):
                             ",".join(list(curated_data_with_acc))))
                 else:
                     continue
-        if save: self.save()
 
-    def update_taxonomy_group(self, save=False):
-        curated_data_with_acc = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)==False]
-        curated_data_nogi = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)]
+    def update_taxonomy_group(self):
+        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
+        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
 
         sequences = []
-        # if len(self.curated_data['accession'].values) == 0:
+        # if len(self.data['accession'].values) == 0:
         #     sequences = []
         # Bug in eutils
         # E.g. 6A5L_FF cannot be retrieved, 6A5L_f cannot
@@ -146,19 +151,18 @@ class CuratedSet(object):
                 print("!!!!!!Unable to get TAXID for \n {} setting it to 1".format(s))
                 taxids.append(1)  # unable to identify
 
-        # taxids for NOGI set as root. We will change them manually!
-        taxids.extend([1]*curated_data_nogi.shape[0])
-        genus.extend(['root']*curated_data_nogi.shape[0])
-        self.curated_data['taxid'] = taxids
-        self.curated_data['organism'] = genus
-        if save: self.save()
+        # taxids for NONCBI set as root. We will change them manually!
+        taxids.extend([1]*curated_data_noncbi.shape[0])
+        genus.extend(['root']*curated_data_noncbi.shape[0])
+        self.data['taxonomyid'] = taxids
+        self.data['organism'] = genus
 
-    def update_taxids(self, save=False):
-        curated_data_with_acc = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)==False]
-        curated_data_nogi = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)]
+    def update_taxids(self):
+        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
+        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
 
         sequences = []
-        # if len(self.curated_data['accession'].values) == 0:
+        # if len(self.data['accession'].values) == 0:
         #     sequences = []
         # Bug in eutils
         # E.g. 6A5L_FF cannot be retrieved, 6A5L_f cannot
@@ -202,12 +206,11 @@ class CuratedSet(object):
                 print("!!!!!!Unable to get TAXID for \n {} setting it to 1".format(s))
                 taxids.append(1)  # unable to identify
 
-        # taxids for NOGI set as root. We will change them manually!
-        taxids.extend([1]*curated_data_nogi.shape[0])
-        genus.extend(['root']*curated_data_nogi.shape[0])
-        self.curated_data['taxid'] = taxids
-        self.curated_data['organism'] = genus
-        if save: self.save()
+        # taxids for NONCBI set as root. We will change them manually!
+        taxids.extend([1]*curated_data_noncbi.shape[0])
+        genus.extend(['root']*curated_data_noncbi.shape[0])
+        self.data['taxonomyid'] = taxids
+        self.data['organism'] = genus
 
     def update_fasta_seqrec(self):
         """
@@ -216,8 +219,8 @@ class CuratedSet(object):
         """
 
         print("Downloading FASTA SeqRecords by ACCESSIONs from NCBI")
-        curated_data_with_acc = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)==False]
-        curated_data_nogi = self.curated_data[self.curated_data['accession'].str.startswith('NOGI', na=False)]
+        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
+        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
 
         num = curated_data_with_acc.shape[0]
         for i in range(10):
@@ -231,12 +234,14 @@ class CuratedSet(object):
                 queryKey = result["QueryKey"]
                 handle = Entrez.efetch(db="protein", rettype='fasta', retmode='text', webenv=webEnv, query_key=queryKey)
                 for r in SeqIO.parse(handle, 'fasta'):
+                    if r.id not in curated_data_with_acc['accession']:
+                        raise Exception(f'{r.id} is not in accessions list')
                     if '|' in r.id:
                         self.fasta_seqrec[r.id.split('|')[1]] = r
-                        self.curated_data.at[r.id.split('|')[1],'sequence'] = str(r.seq)
+                        self.data.at[r.id.split('|')[1], 'sequence'] = str(r.seq)
                     else:
                         self.fasta_seqrec[r.id] = r
-                        self.curated_data.at[r.id,'sequence'] = str(r.seq)
+                        self.data.at[r.id, 'sequence'] = str(r.seq)
             except Exception as e:
                 continue
             if (len(self.fasta_seqrec) == num):
@@ -248,78 +253,49 @@ class CuratedSet(object):
             return
         print(f"FASTA Records downloaded: {len(self.fasta_seqrec)}")
 
-        print("Creating FASTA Records for NOGI sequences...")
-        for i, row in curated_data_nogi.iterrows():
+        print("Creating FASTA Records for NONCBI sequences...")
+        for i, row in curated_data_noncbi.iterrows():
             self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
                                                             description=f"{row['accession']} histone {row['type']}")
 
         return self.fasta_seqrec
 
-    def muscle_aln(self):
+    def muscle_aln(self, accessions):
         """
-        Align with muscle all sequences if only you have updated it
-        :return: MultipleSeqAlignment object if only you have updated it else None
+        Align with muscle all sequences from defined accessions
+        accessions: list of accessions
+        :return: MultipleSeqAlignment object
         """
-        if not self.fasta_seqrec:
-            print('Empty data. Update fasta_seqrec fisrt.')
-            return
+        if not self.fasta_seqrec: self.update_fasta_seqrec()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
         process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-        sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items()])
+        sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items() if key in [accessions]])
         print(sequences)
-        aln, error = process.communicate(sequences)
-        seqFile = io.BytesIO()
-        seqFile.write(aln)
+        aln, error = process.communicate(sequences.encode('utf-8'))
+        seqFile = io.StringIO()
+        seqFile.write(aln.decode('utf-8'))
         seqFile.seek(0)
         sequences = list(SeqIO.parse(seqFile, "fasta"))  # Not in same order, but does it matter?
-        self.msa_full = MultipleSeqAlignment(sequences)
-        return self.msa_full
+        msa = MultipleSeqAlignment(sequences)
+        return msa
 
     def muscle_aln_for_variant(self):
         """
-        Align with muscle sequences grouped by histone variant if only you have updated it
-        :return: dict MultipleSeqAlignment for variants object if only you have updated it else None
+        Align with muscle sequences grouped by histone variant
+        :return: dict MultipleSeqAlignment for variants object
         """
-        self.msa_variant = {}
-        if not self.fasta_seqrec:
-            print('Empty data. Update fasta_seqrec fisrt.')
-            return
-        for variant in set(self.curated_data['variant']):
-            variant_fasta_seqrec = {acc: self.fasta_seqrec[acc] for acc in self.curated_data[self.curated_data['variant']==variant]['accession']}
-            muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
-            process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-            sequences = "\n".join([s.format("fasta") for key, s in variant_fasta_seqrec.items()])
-            print(sequences)
-            aln, error = process.communicate(sequences.encode('utf-8'))
-            seqFile = io.StringIO()
-            seqFile.write(aln.decode('utf-8'))
-            seqFile.seek(0)
-            sequences = list(SeqIO.parse(seqFile, "fasta"))
-            self.msa_variant[variant] = MultipleSeqAlignment(sequences)
+        if not self.fasta_seqrec: self.update_fasta_seqrec()
+        self.msa_variant = {variant: self.muscle_aln(self.data[self.data['variant'] == variant]['accession']) for variant in set(self.data['variant'])}
         return self.msa_variant
 
     def muscle_aln_for_type(self):
         """
-        Align with muscle sequences grouped by histone types if only you have updated it
-        :return: dict MultipleSeqAlignment for types object if only you have updated it else None
+        Align with muscle sequences grouped by histone types
+        :return: dict MultipleSeqAlignment for types object
         """
-        self.msa_type = {}
-        if not self.fasta_seqrec:
-            print('Empty data. Update fasta_seqrec fisrt.')
-            return
-        for type in set(self.curated_data['type']):
-            variant_fasta_seqrec = {acc: self.fasta_seqrec[acc] for acc in self.curated_data[self.curated_data['type']==type]['accession']}
-            muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
-            process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-            sequences = "\n".join([s.format("fasta") for key, s in variant_fasta_seqrec.items()])
-            print(sequences)
-            aln, error = process.communicate(sequences.encode('utf-8'))
-            seqFile = io.StringIO()
-            seqFile.write(aln.decode('utf-8'))
-            seqFile.seek(0)
-            sequences = list(SeqIO.parse(seqFile, "fasta"))  # Not in same order, but does it matter?
-            self.msa_type[type] = MultipleSeqAlignment(sequences)
+        if not self.fasta_seqrec: self.update_fasta_seqrec()
+        self.msa_type = {hist_type: self.muscle_aln(self.data[self.data['type'] == hist_type]['accession']) for hist_type in set(self.data['type'])}
         return self.msa_type
 
     def generate_seeds(self, directory='draft_seeds'):
@@ -329,7 +305,7 @@ class CuratedSet(object):
         if not os.path.exists(directory):
             os.makedirs(directory)
         for hist_type in ['H2A', 'H2B', 'H3', 'H4', 'H1']:
-            for hist_var in set(self.curated_data[self.curated_data['type']==hist_type]['variant']):
+            for hist_var in set(self.data[self.data['type'] == hist_type]['variant']):
                 print("##########Starting", hist_var, hist_type, f'{hist_var}.fasta')
                 if not os.path.exists(os.path.join(directory, hist_type)):
                     os.makedirs(os.path.join(directory, hist_type))
@@ -372,6 +348,90 @@ class CuratedSet(object):
             msa_r.sort()
             AlignIO.write(msa_r, os.path.join("draft_seeds", f'{hist_type}.fasta'), 'fasta')
 
+
+class Feature(object):
+    def __init__(self):
+        id          = None
+        template    = None
+        start       = None
+        end         = None
+        name        = None
+        description = None
+        color       = None
+        objects     = None
+
+    def __str__(self):
+        """Returns Jalview GFF format"""
+        return self.gff(str(self.template))
+
+    def gff(self, sequence_label=None, featureType="{}"):
+        tmp = ""
+        if sequence_label is None:
+            tmp += "color1\t{}\n".format(self.color)
+            sequence_label = str(self.template)
+            featureType = "color1"
+
+        tmp += "\t".join((self.name, sequence_label, "-1", str(self.start), str(self.end), featureType))
+        tmp += "\n"
+        return tmp
+
+    def get_variant_features(self, sequence, variants=None, save_dir="", save_not_found=False, save_gff=True,
+                             only_general=False):
+        """Get the features of a sequence based on its variant.
+
+        Parameters:
+        -----------
+        sequence: Sequence django model
+            The seuqence to add get features for with identified variant
+        variants: List of Variant models
+            Anntate others variants. Optional.
+        save_dir: str
+            Path to save temp files.
+        save_not_found: bool
+            Add Features even if they weren't found. Indices will be (-1, -1)
+
+        Return:
+        -------
+        A string containing the gff file of all features
+        """
+        # Save query fasta to a file to EMBOSS needle can read it
+        n2 = str(uuid.uuid4())
+        test_record = sequence.to_biopython()
+        query_file = os.path.join(save_dir, "query_{}.fa".format(n2))
+        SeqIO.write(test_record, query_file, 'fasta')
+
+        # A list of updated Features for the query
+        variant_features = set()
+
+        if not variants:
+            variants = [sequence.variant]
+
+        for variant in variants:
+            templates = [variant.id, "General{}".format(variant.hist_type.id)] if not only_general else [
+                "General{}".format(variant.hist_type.id)]
+            for template_variant in templates:
+                try:
+                    features = Feature.objects.filter(template__variant=template_variant)
+                except:
+                    continue
+                # Find features with the same taxonomy
+                tax_features = features.filter(template__taxonomy=sequence.taxonomy)
+                if len(tax_features) == 0:
+                    # Find features with closest taxonomy => rank class
+                    tax_features = features.filter(
+                        template__taxonomy__parent__parent__parent=sequence.taxonomy.parent.parent.parent)
+                if len(tax_features) == 0:
+                    # Nothing, use unidentified which is the standard
+                    tax_features = features.filter(template__taxonomy__name="undefined")
+                features = tax_features
+                for updated_feature in transfer_features_from_template_to_query(features, query_file, save_dir=save_dir,
+                                                                                save_not_found=save_not_found):
+                    variant_features.add(updated_feature)
+
+        os.remove(query_file)
+        if save_gff:
+            return Feature.objects.gff(sequence.id, variant_features)
+        return variant_features
 
 
 
