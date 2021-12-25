@@ -10,7 +10,7 @@ This directory includes:
 
 ## histones.csv
 
-accession, type, variant, subvariant, doublet, gi, geneid, taxonomyid, organism, taxonomy_group, info, sequence (if no NCBI accession is present)
+accession, type, variant, subvariant, doublet, gi, geneid, taxonomyid, organism, taxonomy_group, info, references, sequence (if no NCBI accession is present)
 
 - accession - this is NCBI id of the sequence with version(!), also will be used as an id in HistoneDB. If the sequence in NCBI is not present, than a custom id is used (might be NONCBI_VARIANTNAME_NUMBER), and sequence is provided in Sequence column.
 - Type - according to classification, H3, H4, H2A, H2B or Archaeal.
@@ -23,6 +23,7 @@ accession, type, variant, subvariant, doublet, gi, geneid, taxonomyid, organism,
 - Organism - NCBI human readable taxonomy name.
 - Taxonomy_group - this is usually taxonomy class if available or higher order rank if not. We adhere to NCBI current taxnomy name E.g. Mammalia, Magnoliopsida, etc.
 - Info - information about this particular sequence - including its function and references to literature as [PMID].
+- references - PMIDs of papers where info about this sequence can be found.
 - Sequence - sequence as a string if no NCBI accession is available.
 
 ### Special cases
