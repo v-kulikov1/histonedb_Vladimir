@@ -4,27 +4,39 @@
   "title": "Histone classification schema",
   "description": "A schema to describe histone proteins' classification",
   "type": "object",
-  "properties": {
-  
-    "tree": {
+  "properties": 
+    {
+
+    "tree": 
+      {
       "description": "Hierarchical tree of histone variants",
       "type": "object",
-      "properties": {}
-    },
+      },
 
-    "info": {
+    "info": 
+      {
       "description": "Information about hisotne variants",
       "type": "object",
-      "properties":{
-      		"description": {
-      					"description": "Variant of type description",
-      					"type": "string"
-      					},
-      		"taxonomic_span": {
-      					"description": "Variant taxonomic span",
-      					"type": "string"
-      					},			
-    }
-  },
+      "properties":
+        {
+        "level":
+          {
+          "type":"string",
+          "enum": ["type","variant","subvariant"]
+          },
+      	"description":
+          {
+      		"description": "Variant of type description",
+      		"type": "string"
+      		},
+      	"taxonomic_span": 
+          {
+      		"description": "Variant taxonomic span",
+      		"type": "string"
+      		},
+        "required":["level","description","taxonomic_span"]			
+        }
+      },
+
   "required": [ "tree", "info" ]
 }
