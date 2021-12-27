@@ -25,6 +25,11 @@ class CuratedSet(object):
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
         self.features_variant = {} # keys - variant, values Feature Object
         self.features_type = {} # keys - type, values Feature Object
+        print("Creating FASTA Records for sequences...")
+        for i, row in self.data.iterrows():
+            if row['sequence'] != '':
+                self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
+                                                                description=f"{row['accession']} histone {row['type']}")
 
     def has_duplicates(self):
         '''
@@ -102,60 +107,7 @@ class CuratedSet(object):
                 else:
                     continue
 
-    def update_taxonomy_group(self):
-        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
-        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
-
-        sequences = []
-        # if len(self.data['accession'].values) == 0:
-        #     sequences = []
-        # Bug in eutils
-        # E.g. 6A5L_FF cannot be retrieved, 6A5L_f cannot
-        # This is likely a bad fix!!! but nothing else  can be done at the moment
-        # Here is an addhock fix.
-        accessions = []
-        p1 = re.compile("(\w{4})_([a-zA-Z]{2})")
-        p2 = re.compile("(\w{4})_([a-z]{1})")
-
-        for ac in curated_data_with_acc['accession'].values:
-            m1 = p1.match(ac)
-            m2 = p2.match(ac)
-
-            if m1: accessions.append(m1.group(1) + '_' + m1.group(2)[0].upper())
-            elif m2: accessions.append(m2.group(1) + '_' + m2.group(2)[0].upper())
-            else: accessions.append(ac)
-        else:
-            for i in range(10):
-                try:
-                    handle = Entrez.efetch(db="protein", id=",".join(accessions), rettype="gb", retmode="text")
-                    sequences = list(SeqIO.parse(handle, "gb"))
-                    if (len(accessions) == len(sequences)): break
-                except:
-                    print("Unexpected error: {}, Retrying, attempt {}".format(sys.exc_info()[0], i))
-                    if i == 9:
-                        print("FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (",".join(accessions)))
-                    else: continue
-
-        taxids, genus = [], []
-        for s in sequences:
-            genus.append(s.annotations["organism"])
-            try:
-                for a in s.features[0].qualifiers['db_xref']:
-                    text = re.search('(\S+):(\S+)', a).group(1)
-                    id = re.search('(\S+):(\S+)', a).group(2)
-                    if (text == "taxon"):
-                        print("Fetched taxid from NCBI {}".format(id))
-                        taxids.append(id)
-                    else: continue
-            except:
-                print("!!!!!!Unable to get TAXID for \n {} setting it to 1".format(s))
-                taxids.append(1)  # unable to identify
-
-        # taxids for NONCBI set as root. We will change them manually!
-        taxids.extend([1]*curated_data_noncbi.shape[0])
-        genus.extend(['root']*curated_data_noncbi.shape[0])
-        self.data['taxonomyid'] = taxids
-        self.data['organism'] = genus
+    def update_taxonomy_group(self): return
 
     def update_taxids(self):
         curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
@@ -199,18 +151,23 @@ class CuratedSet(object):
                     text = re.search('(\S+):(\S+)', a).group(1)
                     id = re.search('(\S+):(\S+)', a).group(2)
                     if (text == "taxon"):
-                        print("Fetched taxid from NCBI {}".format(id))
+                        # print("Fetched taxid from NCBI {}".format(id))
                         taxids.append(id)
                     else: continue
             except:
                 print("!!!!!!Unable to get TAXID for \n {} setting it to 1".format(s))
                 taxids.append(1)  # unable to identify
 
+        for t_new, t, g_new, g in zip(taxids, curated_data_with_acc['taxonomyid'], genus,
+                                      curated_data_with_acc['organism']):
+            if int(t) != int(t_new): print(f'{t} changes to {t_new}')
+            if g != g_new: print(f'{g} changes to {g_new}')
+        curated_data_with_acc['taxonomyid'] = taxids
+        curated_data_with_acc['organism'] = genus
         # taxids for NONCBI set as root. We will change them manually!
-        taxids.extend([1]*curated_data_noncbi.shape[0])
-        genus.extend(['root']*curated_data_noncbi.shape[0])
-        self.data['taxonomyid'] = taxids
-        self.data['organism'] = genus
+        curated_data_noncbi['taxonomyid'] = [1] * curated_data_noncbi.shape[0]
+        curated_data_noncbi['organism'] = ['root'] * curated_data_noncbi.shape[0]
+        self.data = curated_data_with_acc.append(curated_data_noncbi)
 
     def update_fasta_seqrec(self):
         """
@@ -224,7 +181,7 @@ class CuratedSet(object):
 
         num = curated_data_with_acc.shape[0]
         for i in range(10):
-            self.fasta_seqrec = dict()
+            fasta_seqrec_with_acc = dict()
             try:
                 print("Fetching %d seqs" % (num))
                 strn = ",".join(list(curated_data_with_acc['accession']))
@@ -237,26 +194,31 @@ class CuratedSet(object):
                     if r.id not in curated_data_with_acc['accession']:
                         raise Exception(f'{r.id} is not in accessions list')
                     if '|' in r.id:
-                        self.fasta_seqrec[r.id.split('|')[1]] = r
+                        fasta_seqrec_with_acc[r.id.split('|')[1]] = r
                         self.data.at[r.id.split('|')[1], 'sequence'] = str(r.seq)
                     else:
-                        self.fasta_seqrec[r.id] = r
+                        fasta_seqrec_with_acc[r.id] = r
                         self.data.at[r.id, 'sequence'] = str(r.seq)
             except Exception as e:
                 continue
-            if (len(self.fasta_seqrec) == num):
+            if (len(fasta_seqrec_with_acc) == num):
                 break
             else:
-                print("Mismatch:", num, " ", len(self.fasta_seqrec))
-        if (len(self.fasta_seqrec) != num):
+                print("Mismatch:", num, " ", len(fasta_seqrec_with_acc))
+        if (len(fasta_seqrec_with_acc) != num):
             print('FASTA Records could not be fetched')
             return
-        print(f"FASTA Records downloaded: {len(self.fasta_seqrec)}")
+        print(f"FASTA Records downloaded: {len(fasta_seqrec_with_acc)}")
+        print(f"Added SeqRecords for {fasta_seqrec_with_acc.keys()}")
+
+        self.fasta_seqrec.update(fasta_seqrec_with_acc)
 
         print("Creating FASTA Records for NONCBI sequences...")
         for i, row in curated_data_noncbi.iterrows():
-            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
-                                                            description=f"{row['accession']} histone {row['type']}")
+            print(f"Adding SeqRecord for {row['accession']}")
+            if row['accession'] not in self.fasta_seqrec.keys():
+                self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
+                                                                description=f"{row['accession']} histone {row['type']}")
 
         return self.fasta_seqrec
 
