@@ -18,7 +18,7 @@ NONCBI_IDENTIFICATOR = 'NONCBI'
 
 class CuratedSet(object):
     def __init__(self):
-        self.data = pd.read_csv(HISTONES_FILE).fillna('') # needs sprting
+        self.data = pd.read_csv(HISTONES_FILE, sep=',|;', engine='python').fillna('') # needs sprting
         self.data.index = list(self.data['accession'])
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
@@ -66,9 +66,13 @@ class CuratedSet(object):
 
     def save(self, filename=None, processed=False):
         #backup file first to history
-        data_old = pd.read_csv(HISTONES_FILE).fillna('')
+        data_old = pd.read_csv(HISTONES_FILE, sep=',|;', engine='python').fillna('')
+        data_old.index = list(data_old['accession'])
+        print(data_old.compare(self.data))
         backup_file = os.path.join(BACKUP_DIR, f'{HISTONES_FILE}-{datetime.now().strftime("%b%d%y%H%M%S")}')
-        data_old.to_csv(backup_file, mode='w', index=False)
+        # data_old.to_csv(backup_file, mode='w', index=False)
+        print(f'cp {HISTONES_FILE} {backup_file}')
+        os.system(f'cp {HISTONES_FILE} {backup_file}')
         print(f'Previous data backuped to {backup_file}')
         if not filename: filename = HISTONES_FILE
         if processed: filename = HISTONES_PROCESSED_FILE
@@ -143,7 +147,7 @@ class CuratedSet(object):
                         print("FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (",".join(accessions)))
                     else: continue
 
-        taxids, genus = [], []
+        taxids, genus, taxonomy_group = [], [], []
         for s in sequences:
             genus.append(s.annotations["organism"])
             try:
@@ -151,22 +155,27 @@ class CuratedSet(object):
                     text = re.search('(\S+):(\S+)', a).group(1)
                     id = re.search('(\S+):(\S+)', a).group(2)
                     if (text == "taxon"):
-                        # print("Fetched taxid from NCBI {}".format(id))
+                        print("Fetched taxid from NCBI {}".format(id))
                         taxids.append(id)
                     else: continue
             except:
                 print("!!!!!!Unable to get TAXID for \n {} setting it to 1".format(s))
                 taxids.append(1)  # unable to identify
+            handle = Entrez.efetch(id=taxids[-1], db="taxonomy", retmode="xml")
+            tax_data = Entrez.read(handle)
+            lineage = {d['Rank']: d['ScientificName'] for d in
+                       tax_data[0]['LineageEx'] if d['Rank'] in ['class', 'phylum']}
+            taxonomy_group.append(lineage.get('class', lineage.get('phylum', 'None')))
 
-        for t_new, t, g_new, g in zip(taxids, curated_data_with_acc['taxonomyid'], genus,
-                                      curated_data_with_acc['organism']):
+        for t_new, t, g_new, g, tg_new, tg in zip(taxids, curated_data_with_acc['taxonomyid'],
+                                      genus, curated_data_with_acc['organism'],
+                                      taxonomy_group, curated_data_with_acc['taxonomy_group']):
             if int(t) != int(t_new): print(f'{t} changes to {t_new}')
             if g != g_new: print(f'{g} changes to {g_new}')
+            if tg != tg_new: print(f'{tg} changes to {tg_new}')
         curated_data_with_acc['taxonomyid'] = taxids
         curated_data_with_acc['organism'] = genus
-        # taxids for NONCBI set as root. We will change them manually!
-        curated_data_noncbi['taxonomyid'] = [1] * curated_data_noncbi.shape[0]
-        curated_data_noncbi['organism'] = ['root'] * curated_data_noncbi.shape[0]
+        curated_data_with_acc['taxonomy_group'] = taxonomy_group
         self.data = curated_data_with_acc.append(curated_data_noncbi)
 
     def update_fasta_seqrec(self):
