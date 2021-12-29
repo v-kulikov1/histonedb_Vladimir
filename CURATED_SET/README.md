@@ -1,10 +1,10 @@
 # CURATED SET of histone sequences and their classification
 
 This directory includes:
-1. List of all curated histone sequences in csv format [histones.csv](histones.csv) - this file is manully edited and curated.
+1. list of all curated histone sequences in csv format [histones.csv](histones.csv) - this file is manully edited and curated.
 2. [classification.json](classification.json) - this file includes all info about histone classification, types, variants, sub-variants, etc. [classification_schema.json](classification.schema.json) - defines JSON Schema.
 3. [features.json](features.json) - this file includes info about sequence features of different histones and variants. [features.schema.json](features.schema.json) - defines JSON Schema.
-4. a library to analyze and vizualize histone sequence information which produces web-pages rendered with GitHub pages.
+4. a library to analyze and vizualize histone sequence information which produces web-pages rendered with GitHub pages (ex. [curated_service.ipynb](curated_service.ipynb)).
 5. a library to prepare inputs for HistoneDB, namely [histones_processed.csv](histones_processed.csv), which contains actual sequences (and not only NCBI accessions).
 
 
@@ -48,4 +48,19 @@ The classification is hierarchichal.
 - Unclassified_H2A, 
 - Fields to include in variant description: name, description, taxonomic_span, alternate_names, publications, members
 
+##Documetation of a library to analyze and vizualize histone sequence information
+To start with just import the library and create CuratedSet object:
 
+```
+from curated_set_services import CuratedSet 
+curated_set = CuratedSet()
+```
+
+Parameters:
+- data: Contains data from histones.csv (DataFrame object)
+- fasta_seqrec: keys - accession, values SeqRec Object (dict object)
+- msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
+- msa_type = {} # keys - type, values MultipleSeqAlignment Object
+- features_variant = {} # keys - variant, values Feature Object
+- features_type = {} # keys - type, values Feature Object
+- create_fasta_seqrec(self.data[self.data['sequence']!=''])

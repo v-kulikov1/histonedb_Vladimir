@@ -4,6 +4,7 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Align import MultipleSeqAlignment
 
 import pandas as pd
+import numpy as np
 import collections
 import sys, os, re, subprocess, io
 from datetime import datetime
@@ -18,18 +19,19 @@ NONCBI_IDENTIFICATOR = 'NONCBI'
 
 class CuratedSet(object):
     def __init__(self):
-        self.data = pd.read_csv(HISTONES_FILE, sep=',|;', engine='python').fillna('') # needs sprting
-        self.data.index = list(self.data['accession'])
+        self.data = self.read_data(HISTONES_FILE)
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
         self.features_variant = {} # keys - variant, values Feature Object
         self.features_type = {} # keys - type, values Feature Object
-        print("Creating FASTA Records for sequences...")
-        for i, row in self.data.iterrows():
-            if row['sequence'] != '':
-                self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
-                                                                description=f"{row['accession']} histone {row['type']}")
+        self.create_fasta_seqrec(self.data[self.data['sequence']!=''])
+
+    def read_data(self, filename):
+        df = pd.read_csv(filename, sep=',|;', engine='python').fillna('')
+        df['taxonomyid'] = df['taxonomyid'].astype(str)
+        df.index = list(df['accession'])
+        return df
 
     def has_duplicates(self):
         '''
@@ -45,6 +47,11 @@ class CuratedSet(object):
             if acc_count[1] == 1: continue
             else: yield acc_count[0]
 
+    def create_fasta_seqrec(self, data):
+        for i, row in data.iterrows():
+            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
+                                                            description=f"{row['accession']} histone {row['type']}")
+
     def get_count(self): return self.data.shape[0]
 
     def get_accessions_list(self): return list(self.data['accession'])
@@ -59,63 +66,68 @@ class CuratedSet(object):
 
     def get_taxid_genus(self, accession):
         if not 'taxonomyid' in self.data:
-            print('No taxid loaded yet. Update update_taxids fisrt.')
+            print('No taxonomyid loaded yet. Update update_taxids fisrt.')
             return
         return (self.data.loc[self.data['accession'] == accession]['taxonomyid'].iloc[0],
                 self.data.loc[self.data['accession'] == accession]['organism'].iloc[0])
 
+    def get_ncbi_data(self): return self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
+
+    def get_noncbi_data(self): return self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
+
+    def get_blank_data(self, columns):
+        data = self.get_ncbi_data()
+        return data.iloc[list(np.where(data[columns]=='')[0])]
+
     def save(self, filename=None, processed=False):
-        #backup file first to history
-        data_old = pd.read_csv(HISTONES_FILE, sep=',|;', engine='python').fillna('')
-        data_old.index = list(data_old['accession'])
-        print(data_old.compare(self.data))
+        # compare current data with data loaded from file
+        data_old = self.read_data(HISTONES_FILE)
+        for i, row in data_old.compare(self.data).iterrows():
+            print(row)
+
+        # backup file first to history
         backup_file = os.path.join(BACKUP_DIR, f'{HISTONES_FILE}-{datetime.now().strftime("%b%d%y%H%M%S")}')
         # data_old.to_csv(backup_file, mode='w', index=False)
         print(f'cp {HISTONES_FILE} {backup_file}')
         os.system(f'cp {HISTONES_FILE} {backup_file}')
         print(f'Previous data backuped to {backup_file}')
+
+        # saving
         if not filename: filename = HISTONES_FILE
         if processed: filename = HISTONES_PROCESSED_FILE
         self.data.to_csv(filename, mode='w', index=False)
         print(f'Results saved to {filename}')
 
-    def add_curated_data(self, filemane, save=False):
-        add_curated_data = pd.read_csv(filemane).fillna('')
-        self.data = self.data.append(add_curated_data)
-        f = self.has_duplicates()
-        if f: print(f'Duplicates: {list(f)}')
-        elif save: self.save()
-
     def update_accession_version(self):
-        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
-        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
+        updating_data = self.get_ncbi_data()
         for i in range(10):
             try:
-                handle = Entrez.efetch(db="protein", id=",".join(list(curated_data_with_acc['accession'])), rettype="gb", retmode="text")
+                handle = Entrez.efetch(db="protein", id=",".join(list(updating_data['accession'])), rettype="gb", retmode="text")
                 sequences = list(SeqIO.parse(handle, "gb"))
-                if (len(curated_data_with_acc['accession']) == len(sequences)):
+                if (len(updating_data['accession']) == len(sequences)):
                     new_accessions = [s.id for s in sequences]
-                    for new_acc, acc in zip(new_accessions, curated_data_with_acc['accession']):
+                    for new_acc, acc in zip(new_accessions, updating_data['accession']):
                         if acc!=new_acc: print(f'{acc} changes to {new_acc}')
-                    curated_data_with_acc['accession'] = new_accessions
-                    self.data = curated_data_with_acc.append(curated_data_noncbi)
+                    updating_data['accession'] = new_accessions
+                    self.data = updating_data.append(self.get_noncbi_data())
                     break
                 else:
-                    print("Mismatch:", len(curated_data_with_acc['accession']), " ", len(sequences))
+                    print("Mismatch:", len(updating_data['accession']), " ", len(sequences))
             except:
                 print("Unexpected error: {}, Retrying, attempt {}".format(sys.exc_info()[0], i))
                 if i == 9:
                     print(
                         "FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (
-                            ",".join(list(curated_data_with_acc))))
+                            ",".join(list(updating_data))))
                 else:
                     continue
 
-    def update_taxonomy_group(self): return
-
-    def update_taxids(self):
-        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
-        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
+    def update_taxids(self, blank_data=False, accessions=None, exclude=None):
+        if blank_data and (accessions or exclude): raise AssertionError(f'blank_data cannot be true when accessions list is given. Please, use only one of the options.')
+        updating_data = self.get_ncbi_data()
+        if blank_data: updating_data = self.get_blank_data(['taxonomyid', 'organism', 'taxonomy_group'])
+        if accessions: updating_data = self.data.loc[accessions]
+        if exclude: updating_data = updating_data.drop(exclude)
 
         sequences = []
         # if len(self.data['accession'].values) == 0:
@@ -128,24 +140,24 @@ class CuratedSet(object):
         p1 = re.compile("(\w{4})_([a-zA-Z]{2})")
         p2 = re.compile("(\w{4})_([a-z]{1})")
 
-        for ac in curated_data_with_acc['accession'].values:
+        for ac in updating_data['accession'].values:
             m1 = p1.match(ac)
             m2 = p2.match(ac)
 
             if m1: accessions.append(m1.group(1) + '_' + m1.group(2)[0].upper())
             elif m2: accessions.append(m2.group(1) + '_' + m2.group(2)[0].upper())
             else: accessions.append(ac)
-        else:
-            for i in range(10):
-                try:
-                    handle = Entrez.efetch(db="protein", id=",".join(accessions), rettype="gb", retmode="text")
-                    sequences = list(SeqIO.parse(handle, "gb"))
-                    if (len(accessions) == len(sequences)): break
-                except:
-                    print("Unexpected error: {}, Retrying, attempt {}".format(sys.exc_info()[0], i))
-                    if i == 9:
-                        print("FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (",".join(accessions)))
-                    else: continue
+
+        for i in range(10):
+            try:
+                handle = Entrez.efetch(db="protein", id=",".join(accessions), rettype="gb", retmode="text")
+                sequences = list(SeqIO.parse(handle, "gb"))
+                if (len(accessions) == len(sequences)): break
+            except:
+                print("Unexpected error: {}, Retrying, attempt {}".format(sys.exc_info()[0], i))
+                if i == 9:
+                    print("FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (",".join(accessions)))
+                else: continue
 
         taxids, genus, taxonomy_group = [], [], []
         for s in sequences:
@@ -167,49 +179,49 @@ class CuratedSet(object):
                        tax_data[0]['LineageEx'] if d['Rank'] in ['class', 'phylum']}
             taxonomy_group.append(lineage.get('class', lineage.get('phylum', 'None')))
 
-        for t_new, t, g_new, g, tg_new, tg in zip(taxids, curated_data_with_acc['taxonomyid'],
-                                      genus, curated_data_with_acc['organism'],
-                                      taxonomy_group, curated_data_with_acc['taxonomy_group']):
-            if int(t) != int(t_new): print(f'{t} changes to {t_new}')
+        for t_new, t, g_new, g, tg_new, tg in zip(taxids, updating_data['taxonomyid'],
+                                      genus, updating_data['organism'],
+                                      taxonomy_group, updating_data['taxonomy_group']):
+            if t != t_new: print(f'{t} changes to {t_new}')
             if g != g_new: print(f'{g} changes to {g_new}')
             if tg != tg_new: print(f'{tg} changes to {tg_new}')
-        curated_data_with_acc['taxonomyid'] = taxids
-        curated_data_with_acc['organism'] = genus
-        curated_data_with_acc['taxonomy_group'] = taxonomy_group
-        self.data = curated_data_with_acc.append(curated_data_noncbi)
+        updating_data['taxonomyid'] = taxids
+        updating_data['organism'] = genus
+        updating_data['taxonomy_group'] = taxonomy_group
+        self.data = updating_data.append(self.data.drop(list(updating_data['accession'])))
 
-    def update_fasta_seqrec(self):
+    def update_sequence(self, noncbi=False, blank_data=False):
         """
         Download a dictionary of fasta SeqsRec from NCBI given a list of ACCESSIONs.
         :return: dict of fasta SeqRecords
         """
 
         print("Downloading FASTA SeqRecords by ACCESSIONs from NCBI")
-        curated_data_with_acc = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
-        curated_data_noncbi = self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False)]
+        updating_data = self.get_ncbi_data()
+        if blank_data: updating_data = self.get_blank_data(['sequence'])
 
-        num = curated_data_with_acc.shape[0]
+        num = updating_data.shape[0]
         for i in range(10):
             fasta_seqrec_with_acc = dict()
             try:
                 print("Fetching %d seqs" % (num))
-                strn = ",".join(list(curated_data_with_acc['accession']))
+                strn = ",".join(list(updating_data['accession']))
                 request = Entrez.epost(db="protein", id=strn)
                 result = Entrez.read(request)
                 webEnv = result["WebEnv"]
                 queryKey = result["QueryKey"]
                 handle = Entrez.efetch(db="protein", rettype='fasta', retmode='text', webenv=webEnv, query_key=queryKey)
                 for r in SeqIO.parse(handle, 'fasta'):
-                    if r.id not in curated_data_with_acc['accession']:
-                        raise Exception(f'{r.id} is not in accessions list')
-                    if '|' in r.id:
-                        fasta_seqrec_with_acc[r.id.split('|')[1]] = r
-                        self.data.at[r.id.split('|')[1], 'sequence'] = str(r.seq)
-                    else:
-                        fasta_seqrec_with_acc[r.id] = r
-                        self.data.at[r.id, 'sequence'] = str(r.seq)
-            except Exception as e:
-                continue
+                    id = r.id
+                    if '|' in r.id: id = r.id.split('|')[1]
+                    if id not in updating_data['accession']:
+                        raise AssertionError(f'{id} is not in accessions list')
+                    fasta_seqrec_with_acc[id] = r
+                    if self.data.loc[id, 'sequence'] != str(r.seq):
+                        print(f'Sequence for {id} changes from {self.data.loc[id, "sequence"]} to {str(r.seq)}')
+                        self.data.at[id, 'sequence'] = str(r.seq)
+            except AssertionError: raise
+            except Exception as e: continue
             if (len(fasta_seqrec_with_acc) == num):
                 break
             else:
@@ -222,14 +234,11 @@ class CuratedSet(object):
 
         self.fasta_seqrec.update(fasta_seqrec_with_acc)
 
-        print("Creating FASTA Records for NONCBI sequences...")
-        for i, row in curated_data_noncbi.iterrows():
-            print(f"Adding SeqRecord for {row['accession']}")
-            if row['accession'] not in self.fasta_seqrec.keys():
-                self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
-                                                                description=f"{row['accession']} histone {row['type']}")
+        if noncbi:
+            print("Creating FASTA Records for NONCBI sequences...")
+            self.create_fasta_seqrec(self.get_noncbi_data())
 
-        return self.fasta_seqrec
+        return self.fasta_seqrec # maybe not need
 
     def muscle_aln(self, accessions):
         """
@@ -237,11 +246,11 @@ class CuratedSet(object):
         accessions: list of accessions
         :return: MultipleSeqAlignment object
         """
-        if not self.fasta_seqrec: self.update_fasta_seqrec()
+        if not self.fasta_seqrec: self.update_sequence()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
         process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-        sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items() if key in [accessions]])
+        sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items() if key in accessions])
         print(sequences)
         aln, error = process.communicate(sequences.encode('utf-8'))
         seqFile = io.StringIO()
@@ -256,7 +265,7 @@ class CuratedSet(object):
         Align with muscle sequences grouped by histone variant
         :return: dict MultipleSeqAlignment for variants object
         """
-        if not self.fasta_seqrec: self.update_fasta_seqrec()
+        if not self.fasta_seqrec: self.update_sequence()
         self.msa_variant = {variant: self.muscle_aln(self.data[self.data['variant'] == variant]['accession']) for variant in set(self.data['variant'])}
         return self.msa_variant
 
@@ -265,12 +274,12 @@ class CuratedSet(object):
         Align with muscle sequences grouped by histone types
         :return: dict MultipleSeqAlignment for types object
         """
-        if not self.fasta_seqrec: self.update_fasta_seqrec()
+        if not self.fasta_seqrec: self.update_sequence()
         self.msa_type = {hist_type: self.muscle_aln(self.data[self.data['type'] == hist_type]['accession']) for hist_type in set(self.data['type'])}
         return self.msa_type
 
     def generate_seeds(self, directory='draft_seeds'):
-        if not self.fasta_seqrec: self.update_fasta_seqrec()
+        if not self.fasta_seqrec: self.update_sequence()
         if not self.msa_variant: self.muscle_aln_for_variant()
 
         if not os.path.exists(directory):
