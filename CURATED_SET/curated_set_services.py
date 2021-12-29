@@ -159,7 +159,7 @@ class CuratedSet(object):
                     print("FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (",".join(accessions)))
                 else: continue
 
-        taxids, genus, taxonomy_group = [], [], []
+        taxids, genus, phylum, taxonomy_class = [], [], [], []
         for s in sequences:
             genus.append(s.annotations["organism"])
             try:
@@ -177,17 +177,21 @@ class CuratedSet(object):
             tax_data = Entrez.read(handle)
             lineage = {d['Rank']: d['ScientificName'] for d in
                        tax_data[0]['LineageEx'] if d['Rank'] in ['class', 'phylum']}
-            taxonomy_group.append(lineage.get('class', lineage.get('phylum', 'None')))
+            phylum.append(lineage.get('phylum', 'None'))
+            taxonomy_class.append(lineage.get('class', 'None'))
 
-        for t_new, t, g_new, g, tg_new, tg in zip(taxids, updating_data['taxonomyid'],
+        for t_new, t, g_new, g, ph_new, ph, tc_new, tc in zip(taxids, updating_data['taxonomyid'],
                                       genus, updating_data['organism'],
-                                      taxonomy_group, updating_data['taxonomy_group']):
+                                      phylum, updating_data['phylum'],
+                                      taxonomy_class, updating_data['class']):
             if t != t_new: print(f'{t} changes to {t_new}')
             if g != g_new: print(f'{g} changes to {g_new}')
-            if tg != tg_new: print(f'{tg} changes to {tg_new}')
+            if ph != ph_new: print(f'{ph} changes to {ph_new}')
+            if tc != tc_new: print(f'{tc} changes to {tc_new}')
         updating_data['taxonomyid'] = taxids
         updating_data['organism'] = genus
-        updating_data['taxonomy_group'] = taxonomy_group
+        updating_data['phylum'] = phylum
+        updating_data['class'] = taxonomy_class
         self.data = updating_data.append(self.data.drop(list(updating_data['accession'])))
 
     def update_sequence(self, noncbi=False, blank_data=False):
