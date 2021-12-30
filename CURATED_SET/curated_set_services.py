@@ -2,6 +2,10 @@ from Bio import Entrez, SeqIO, AlignIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 from Bio.Align import MultipleSeqAlignment
+from Bio.Align.AlignInfo import SummaryInfo
+
+from pynucl.hist_features import hist_shf4seq
+from pytexshade import ipyshade
 
 import pandas as pd
 import numpy as np
@@ -23,8 +27,6 @@ class CuratedSet(object):
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
-        self.features_variant = {} # keys - variant, values Feature Object
-        self.features_type = {} # keys - type, values Feature Object
         self.create_fasta_seqrec(self.data[self.data['sequence']!=''])
 
     def read_data(self, filename):
@@ -250,7 +252,8 @@ class CuratedSet(object):
         accessions: list of accessions
         :return: MultipleSeqAlignment object
         """
-        if not self.fasta_seqrec: self.update_sequence()
+        # if not self.fasta_seqrec: self.update_sequence()
+        if not set(accessions).issubset(self.fasta_seqrec.keys()): self.update_sequence()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
         process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
@@ -264,12 +267,49 @@ class CuratedSet(object):
         msa = MultipleSeqAlignment(sequences)
         return msa
 
+    def show_aln(self, accessions,
+                 shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
+                 ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=True):
+        msa = self.muscle_aln(accessions=accessions)
+        a = SummaryInfo(msa)
+        cons = a.dumb_consensus(threshold=0.1, ambiguous='X')
+        features = hist_shf4seq(cons)
+        return ipyshade.shadedmsa(msa,
+                                  shading_modes=shading_modes,
+                                  legend=legend,
+                                  features=features,
+                                  title=title,
+                                  logo=logo,
+                                  hideseqs=hideseqs,
+                                  splitN=splitN,
+                                  setends=setends,
+                                  ruler=ruler,
+                                  show_seq_names=show_seq_names,
+                                  funcgroups=funcgroups,
+                                  show_seq_length=show_seq_length,
+                                  debug=debug
+                                 )
+
+    def show_aln_by_features(self, hist_type=None, variant=None, subvariant=None, taxonomyid=None, organism=None, phylum=None, taxonomy_class=None,
+                             shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
+                             ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=True):
+        df = self.data
+        if hist_type: df = df.loc[self.data['type'] == hist_type]
+        if variant: df = df.loc[self.data['variant'] == variant]
+        if subvariant: df = df.loc[self.data['subvariant'] == subvariant]
+        if taxonomyid: df = df.loc[self.data['taxonomyid'] == taxonomyid]
+        if organism: df = df.loc[self.data['organism'] == organism]
+        if phylum: df = df.loc[self.data['phylum'] == phylum]
+        if taxonomy_class: df = df.loc[self.data['class'] == taxonomy_class]
+        if df.shape[0] < 1: raise AssertionError(f'No such sequences')
+        return self.show_aln(list(df['accession']), shading_modes=shading_modes, legend=legend, title=title, logo=logo, hideseqs=hideseqs, splitN=splitN,
+                             setends=setends, ruler=ruler, show_seq_names=show_seq_names, funcgroups=funcgroups, show_seq_length=show_seq_length, debug=debug)
+
     def muscle_aln_for_variant(self):
         """
         Align with muscle sequences grouped by histone variant
         :return: dict MultipleSeqAlignment for variants object
         """
-        if not self.fasta_seqrec: self.update_sequence()
         self.msa_variant = {variant: self.muscle_aln(self.data[self.data['variant'] == variant]['accession']) for variant in set(self.data['variant'])}
         return self.msa_variant
 
@@ -278,12 +318,10 @@ class CuratedSet(object):
         Align with muscle sequences grouped by histone types
         :return: dict MultipleSeqAlignment for types object
         """
-        if not self.fasta_seqrec: self.update_sequence()
         self.msa_type = {hist_type: self.muscle_aln(self.data[self.data['type'] == hist_type]['accession']) for hist_type in set(self.data['type'])}
         return self.msa_type
 
     def generate_seeds(self, directory='draft_seeds'):
-        if not self.fasta_seqrec: self.update_sequence()
         if not self.msa_variant: self.muscle_aln_for_variant()
 
         if not os.path.exists(directory):
@@ -331,104 +369,3 @@ class CuratedSet(object):
                 msa_r.append(i)
             msa_r.sort()
             AlignIO.write(msa_r, os.path.join("draft_seeds", f'{hist_type}.fasta'), 'fasta')
-
-
-class Feature(object):
-    def __init__(self):
-        id          = None
-        template    = None
-        start       = None
-        end         = None
-        name        = None
-        description = None
-        color       = None
-        objects     = None
-
-    def __str__(self):
-        """Returns Jalview GFF format"""
-        return self.gff(str(self.template))
-
-    def gff(self, sequence_label=None, featureType="{}"):
-        tmp = ""
-        if sequence_label is None:
-            tmp += "color1\t{}\n".format(self.color)
-            sequence_label = str(self.template)
-            featureType = "color1"
-
-        tmp += "\t".join((self.name, sequence_label, "-1", str(self.start), str(self.end), featureType))
-        tmp += "\n"
-        return tmp
-
-    def get_variant_features(self, sequence, variants=None, save_dir="", save_not_found=False, save_gff=True,
-                             only_general=False):
-        """Get the features of a sequence based on its variant.
-
-        Parameters:
-        -----------
-        sequence: Sequence django model
-            The seuqence to add get features for with identified variant
-        variants: List of Variant models
-            Anntate others variants. Optional.
-        save_dir: str
-            Path to save temp files.
-        save_not_found: bool
-            Add Features even if they weren't found. Indices will be (-1, -1)
-
-        Return:
-        -------
-        A string containing the gff file of all features
-        """
-        # Save query fasta to a file to EMBOSS needle can read it
-        n2 = str(uuid.uuid4())
-        test_record = sequence.to_biopython()
-        query_file = os.path.join(save_dir, "query_{}.fa".format(n2))
-        SeqIO.write(test_record, query_file, 'fasta')
-
-        # A list of updated Features for the query
-        variant_features = set()
-
-        if not variants:
-            variants = [sequence.variant]
-
-        for variant in variants:
-            templates = [variant.id, "General{}".format(variant.hist_type.id)] if not only_general else [
-                "General{}".format(variant.hist_type.id)]
-            for template_variant in templates:
-                try:
-                    features = Feature.objects.filter(template__variant=template_variant)
-                except:
-                    continue
-                # Find features with the same taxonomy
-                tax_features = features.filter(template__taxonomy=sequence.taxonomy)
-                if len(tax_features) == 0:
-                    # Find features with closest taxonomy => rank class
-                    tax_features = features.filter(
-                        template__taxonomy__parent__parent__parent=sequence.taxonomy.parent.parent.parent)
-                if len(tax_features) == 0:
-                    # Nothing, use unidentified which is the standard
-                    tax_features = features.filter(template__taxonomy__name="undefined")
-                features = tax_features
-                for updated_feature in transfer_features_from_template_to_query(features, query_file, save_dir=save_dir,
-                                                                                save_not_found=save_not_found):
-                    variant_features.add(updated_feature)
-
-        os.remove(query_file)
-        if save_gff:
-            return Feature.objects.gff(sequence.id, variant_features)
-        return variant_features
-
-
-
-# curated_set = CuratedSet()
-# curated_set.rename('macroH2A', '')
-# # print(list(curated_set.has_duplicates()))
-# curated_set.update_accession_version()
-# curated_set.update_fasta_seqrec()
-# curated_set.muscle_aln_for_variant()
-# print(curated_set.msa_variant)
-# curated_set.muscle_aln_for_type()
-# print(curated_set.msa_type)
-# curated_set.generate_seeds()
-# print(curated_set.get_taxid_genus('XP_846259.1'))
-# for i in curated_set.get_taxid_genus('XP_846259.1'):
-#     print(i)
