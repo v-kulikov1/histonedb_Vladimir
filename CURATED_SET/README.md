@@ -48,7 +48,18 @@ The classification is hierarchichal.
 - Unclassified_H2A, 
 - Fields to include in variant description: name, description, taxonomic_span, alternate_names, publications, members
 
-##Documetation of a library to analyze and vizualize histone sequence information
+## Documetation of a library to analyze and vizualize histone sequence information
+### Conda environment setup
+```
+conda create --name histdb_curation
+conda activate histdb_curation
+conda install -c conda-forge -c etetoolkit -c intbio notebook pytexshade pandas numpy matplotlib jupyter_contrib_nbextensions pip mdanalysis biopython"<=1.77" nglview requests tectonic ete3
+conda install -c bioconda muscle fasttree
+pip install git+https://github.com/intbio/pynucl.git@master
+pip install git+https://github.com/intbio/DNAtools.git@master
+jupyter notebook
+```
+
 To start with just import the library and create CuratedSet object:
 
 ```
