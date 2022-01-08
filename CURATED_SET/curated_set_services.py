@@ -104,7 +104,7 @@ class CuratedSet(object):
         updating_data = self.get_ncbi_data()
         for i in range(10):
             try:
-                handle = Entrez.efetch(db="protein", id=",".join(list(updating_data['accession'])), rettype="gb", retmode="text")
+                handle = Entrez.efetch(db="protein", id=",".join([i.split('.')[0] for i in list(updating_data['accession'])]), rettype="gb", retmode="text")
                 sequences = list(SeqIO.parse(handle, "gb"))
                 if (len(updating_data['accession']) == len(sequences)):
                     new_accessions = [s.id for s in sequences]
