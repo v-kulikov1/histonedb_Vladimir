@@ -27,7 +27,7 @@ accession, type, variant, subvariant, doublet, gi, geneid, taxonomyid, organism,
 - Sequence - sequence as a string if no NCBI accession is available.
 
 ### Special cases
-- If histone is a doublet - we include it ones - see above.
+- If histone is a doublet - we include it once - see above.
 
 ## classification.json
 
@@ -40,7 +40,7 @@ The classification is hierarchichal.
 - Top level is type: H3, H4, H2A, H2B or Archaeal
 - Next level is top-level variants, e.g. canonical H2A in Metazoa
 - Variants are always specify in their name the taxonomic span of this particular variant.
-- Every variant has an id of the following form VARIANTNAME_(Taxanomic span)
+- Every variant has an id of the following form VARIANTNAME_(Taxanomic_span)
 - Variant ids are case-insensitive in the database, but during representation case is important.
 - Variants also have a full name. E.g.
 - We can subdivide a variant into sub-variants from different taxonomic groups, only if they do not have common functional subvariants. I.e. we give priority to functional similarity above taxanomic similarity.
@@ -53,7 +53,7 @@ The classification is hierarchichal.
 ```
 conda create --name histdb_curation
 conda activate histdb_curation
-conda install -c conda-forge -c etetoolkit -c intbio notebook pytexshade pandas numpy matplotlib jupyter_contrib_nbextensions pip mdanalysis biopython"<=1.77" nglview requests tectonic ete3
+conda install -c conda-forge -c etetoolkit -c intbio notebook pytexshade pandas numpy matplotlib jupyter_contrib_nbextensions jupyterlab jupyterlab-fasta pip mdanalysis biopython"<=1.77" nglview requests tectonic ete3
 conda install -c bioconda muscle fasttree
 pip install git+https://github.com/intbio/pynucl.git@master
 pip install git+https://github.com/intbio/DNAtools.git@master

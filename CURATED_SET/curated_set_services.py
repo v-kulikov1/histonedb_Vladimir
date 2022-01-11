@@ -20,6 +20,60 @@ BACKUP_DIR = 'backups'
 
 NONCBI_IDENTIFICATOR = 'NONCBI'
 
+#Auxillary functions
+
+from IPython.display import display
+
+def show_msa_jl(msa):
+    """
+    This requires jupyterlab-fasta extenstion and works only in jupyterlab
+    """
+    data=msa.format('fasta')
+    bundle = {}
+    bundle['application/vnd.fasta.fasta'] = data
+    bundle['text/plain'] = data
+    display(bundle, raw=True)
+
+# def show_msa_with_features(self, hist_type=None, variant=None, subvariant=None, taxonomyid=None, organism=None, phylum=None, taxonomy_class=None,
+#                              shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
+#                              ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=False):
+#         df = self.data
+#         if hist_type: df = df.loc[self.data['type'] == hist_type]
+#         if variant: df = df.loc[self.data['variant'] == variant]
+#         if subvariant: df = df.loc[self.data['subvariant'] == subvariant]
+#         if taxonomyid: df = df.loc[self.data['taxonomyid'] == taxonomyid]
+#         if organism: df = df.loc[self.data['organism'] == organism]
+#         if phylum: df = df.loc[self.data['phylum'] == phylum]
+#         if taxonomy_class: df = df.loc[self.data['class'] == taxonomy_class]
+#         if df.shape[0] < 1: raise AssertionError(f'No such sequences')
+#         return self.show_aln(list(df['accession']), shading_modes=shading_modes, legend=legend, title=title, logo=logo, hideseqs=hideseqs, splitN=splitN,
+#                              setends=setends, ruler=ruler, show_seq_names=show_seq_names, funcgroups=funcgroups, show_seq_length=show_seq_length, debug=debug)
+
+# def show_aln(self, accessions,
+#                  shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
+#                  ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=True):
+#         msa = self.muscle_aln(accessions=accessions)
+#         a = SummaryInfo(msa)
+#         cons = a.dumb_consensus(threshold=0.1, ambiguous='X')
+#         features = hist_shf4seq(cons)
+#         return ipyshade.shadedmsa(msa,
+#                                   shading_modes=shading_modes,
+#                                   legend=legend,
+#                                   features=features,
+#                                   title=title,
+#                                   logo=logo,
+#                                   hideseqs=hideseqs,
+#                                   splitN=splitN,
+#                                   setends=setends,
+#                                   ruler=ruler,
+#                                   show_seq_names=show_seq_names,
+#                                   funcgroups=funcgroups,
+#                                   show_seq_length=show_seq_length,
+#                                   debug=debug
+#                                  )
+
+
+#Main class    
 
 class CuratedSet(object):
     def __init__(self):
@@ -51,8 +105,8 @@ class CuratedSet(object):
 
     def create_fasta_seqrec(self, data):
         for i, row in data.iterrows():
-            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession'],
-                                                            description=f"{row['accession']} histone {row['type']}")
+            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession']+'_'+row['variant']+'_'+row['organism'].replace(' ','_'),
+                                                            description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
 
     def get_count(self): return self.data.shape[0]
 
@@ -246,7 +300,7 @@ class CuratedSet(object):
 
         return self.fasta_seqrec # maybe not need
 
-    def muscle_aln(self, accessions):
+    def muscle_aln(self, accessions, debug = False):
         """
         Align with muscle all sequences from defined accessions
         accessions: list of accessions
@@ -256,10 +310,18 @@ class CuratedSet(object):
         if not set(accessions).issubset(self.fasta_seqrec.keys()): self.update_sequence()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
-        process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+        process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items() if key in accessions])
-        print(sequences)
+
         aln, error = process.communicate(sequences.encode('utf-8'))
+        if debug:
+            print(sequences)
+            print()
+            print("Stderr:")
+            print(error.decode('utf-8')) 
+            print("Stdout:")
+            print(aln.decode('utf-8')) 
+
         seqFile = io.StringIO()
         seqFile.write(aln.decode('utf-8'))
         seqFile.seek(0)
@@ -267,43 +329,7 @@ class CuratedSet(object):
         msa = MultipleSeqAlignment(sequences)
         return msa
 
-    def show_aln(self, accessions,
-                 shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
-                 ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=True):
-        msa = self.muscle_aln(accessions=accessions)
-        a = SummaryInfo(msa)
-        cons = a.dumb_consensus(threshold=0.1, ambiguous='X')
-        features = hist_shf4seq(cons)
-        return ipyshade.shadedmsa(msa,
-                                  shading_modes=shading_modes,
-                                  legend=legend,
-                                  features=features,
-                                  title=title,
-                                  logo=logo,
-                                  hideseqs=hideseqs,
-                                  splitN=splitN,
-                                  setends=setends,
-                                  ruler=ruler,
-                                  show_seq_names=show_seq_names,
-                                  funcgroups=funcgroups,
-                                  show_seq_length=show_seq_length,
-                                  debug=debug
-                                 )
 
-    def show_aln_by_features(self, hist_type=None, variant=None, subvariant=None, taxonomyid=None, organism=None, phylum=None, taxonomy_class=None,
-                             shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
-                             ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=True):
-        df = self.data
-        if hist_type: df = df.loc[self.data['type'] == hist_type]
-        if variant: df = df.loc[self.data['variant'] == variant]
-        if subvariant: df = df.loc[self.data['subvariant'] == subvariant]
-        if taxonomyid: df = df.loc[self.data['taxonomyid'] == taxonomyid]
-        if organism: df = df.loc[self.data['organism'] == organism]
-        if phylum: df = df.loc[self.data['phylum'] == phylum]
-        if taxonomy_class: df = df.loc[self.data['class'] == taxonomy_class]
-        if df.shape[0] < 1: raise AssertionError(f'No such sequences')
-        return self.show_aln(list(df['accession']), shading_modes=shading_modes, legend=legend, title=title, logo=logo, hideseqs=hideseqs, splitN=splitN,
-                             setends=setends, ruler=ruler, show_seq_names=show_seq_names, funcgroups=funcgroups, show_seq_length=show_seq_length, debug=debug)
 
     def muscle_aln_for_variant(self):
         """
