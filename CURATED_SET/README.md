@@ -54,7 +54,7 @@ The classification is hierarchichal.
 conda create --name histdb_curation
 conda activate histdb_curation
 conda install -c conda-forge -c etetoolkit -c intbio notebook pytexshade pandas numpy matplotlib jupyter_contrib_nbextensions jupyterlab jupyterlab-fasta pip mdanalysis biopython"<=1.77" nglview requests tectonic ete3
-conda install -c bioconda muscle fasttree
+conda install -c bioconda muscle fasttree gblocks
 pip install git+https://github.com/intbio/pynucl.git@master
 pip install git+https://github.com/intbio/DNAtools.git@master
 jupyter notebook

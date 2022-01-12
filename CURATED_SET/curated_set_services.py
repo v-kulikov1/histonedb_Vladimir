@@ -105,8 +105,7 @@ class CuratedSet(object):
 
     def create_fasta_seqrec(self, data):
         for i, row in data.iterrows():
-            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['accession']+'_'+row['variant']+'_'+row['organism'].replace(' ','_'),
-                                                            description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
+            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['variant']+'_'+row['organism'].replace(' ','_')+'_'+row['accession'],description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
 
     def get_count(self): return self.data.shape[0]
 
@@ -300,7 +299,7 @@ class CuratedSet(object):
 
         return self.fasta_seqrec # maybe not need
 
-    def muscle_aln(self, accessions, debug = False):
+    def muscle_aln(self, accessions, options=[],debug = False):
         """
         Align with muscle all sequences from defined accessions
         accessions: list of accessions
@@ -310,7 +309,7 @@ class CuratedSet(object):
         if not set(accessions).issubset(self.fasta_seqrec.keys()): self.update_sequence()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
-        process = subprocess.Popen([muscle], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen([muscle]+options, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items() if key in accessions])
 
         aln, error = process.communicate(sequences.encode('utf-8'))
