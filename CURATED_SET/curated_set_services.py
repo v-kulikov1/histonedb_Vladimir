@@ -49,7 +49,35 @@ def dict2tree(tree,d):
         if isinstance(v,dict):
             dict2tree(CH,v)
    # return t
-    
+
+def muscle_p2p_aln(msa1,msa2, options=[],debug = False):
+    """
+    align two alignments
+    :return: MultipleSeqAlignment object
+    """
+    with open('tmp/one.afa','w') as f:
+        f.write(msa1.format('fasta'))
+    with open('tmp/two.afa','w') as f:
+        f.write(msa2.format('fasta'))
+
+    muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
+    process = subprocess.Popen([muscle]+options+['-profile','-in1','tmp/one.afa','-in2','tmp/two.afa'], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+    aln, error = process.communicate()
+    if debug:
+        print("Stderr:")
+        print(error.decode('utf-8')) 
+        print("Stdout:")
+        print(aln.decode('utf-8')) 
+
+    seqFile = io.StringIO()
+    seqFile.write(aln.decode('utf-8'))
+    seqFile.seek(0)
+    sequences = list(SeqIO.parse(seqFile, "fasta"))  # Not in same order, but does it matter?
+    msa = MultipleSeqAlignment(sequences)
+    return msa
+
+
 # def show_msa_with_features(self, hist_type=None, variant=None, subvariant=None, taxonomyid=None, organism=None, phylum=None, taxonomy_class=None,
 #                              shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
 #                              ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=False):

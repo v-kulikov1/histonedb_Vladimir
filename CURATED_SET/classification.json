@@ -3,8 +3,7 @@
 	{
 	"H2A":
         {
-        "H2A.Z":
-            {"H2A.Z.1":"null"},
+        "H2A.Z":"null",
         "H2A.B":"null",
         "macroH2A":"null"
         },
