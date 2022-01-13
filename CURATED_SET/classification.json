@@ -2,9 +2,13 @@
 "tree":
 	{
 	"H2A":
-		{},
-	"H2B":
-		{},
+        {
+        "H2A.Z":
+            {"H2A.Z.1":"null"},
+        "H2A.B":"null",
+        "macroH2A":"null"
+        },
+	"H2B":"null",
 	"H3":
 		{
 		"cH3_(Metazoa)": 
@@ -24,10 +28,8 @@
 		"H3_(Viruses)": "null",
 		"H3_unclassified": "null"
 		},
-	"H4":
-		{},
-	"Archaeal":
-		{}
+	"H4":"null",
+	"Archaeal":"null"
 	},
 "info": 
 	{

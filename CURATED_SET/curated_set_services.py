@@ -6,6 +6,7 @@ from Bio.Align.AlignInfo import SummaryInfo
 
 from pynucl.hist_features import hist_shf4seq
 from pytexshade import ipyshade
+from ete3 import Tree
 
 import pandas as pd
 import numpy as np
@@ -34,6 +35,21 @@ def show_msa_jl(msa):
     bundle['text/plain'] = data
     display(bundle, raw=True)
 
+def dict2tree(tree,d):
+    """
+    converts tree from classification.json to a ete3 object
+    d is
+    with open('classification.json') as json_file:
+        data = json.load(json_file)
+    d=data['tree']
+    """
+#     t=Tree()
+    for k,v in d.items():
+        CH=tree.add_child(name=k)
+        if isinstance(v,dict):
+            dict2tree(CH,v)
+   # return t
+    
 # def show_msa_with_features(self, hist_type=None, variant=None, subvariant=None, taxonomyid=None, organism=None, phylum=None, taxonomy_class=None,
 #                              shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
 #                              ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=False):
@@ -330,67 +346,67 @@ class CuratedSet(object):
 
 
 
-    def muscle_aln_for_variant(self):
-        """
-        Align with muscle sequences grouped by histone variant
-        :return: dict MultipleSeqAlignment for variants object
-        """
-        self.msa_variant = {variant: self.muscle_aln(self.data[self.data['variant'] == variant]['accession']) for variant in set(self.data['variant'])}
-        return self.msa_variant
+#     def muscle_aln_for_variant(self):
+#         """
+#         Align with muscle sequences grouped by histone variant
+#         :return: dict MultipleSeqAlignment for variants object
+#         """
+#         self.msa_variant = {variant: self.muscle_aln(self.data[self.data['variant'] == variant]['accession']) for variant in set(self.data['variant'])}
+#         return self.msa_variant
 
-    def muscle_aln_for_type(self):
-        """
-        Align with muscle sequences grouped by histone types
-        :return: dict MultipleSeqAlignment for types object
-        """
-        self.msa_type = {hist_type: self.muscle_aln(self.data[self.data['type'] == hist_type]['accession']) for hist_type in set(self.data['type'])}
-        return self.msa_type
+#     def muscle_aln_for_type(self):
+#         """
+#         Align with muscle sequences grouped by histone types
+#         :return: dict MultipleSeqAlignment for types object
+#         """
+#         self.msa_type = {hist_type: self.muscle_aln(self.data[self.data['type'] == hist_type]['accession']) for hist_type in set(self.data['type'])}
+#         return self.msa_type
 
-    def generate_seeds(self, directory='draft_seeds'):
-        if not self.msa_variant: self.muscle_aln_for_variant()
+#     def generate_draft_seeds(self, directory='draft_seeds'):
+#         if not self.msa_variant: self.muscle_aln_for_variant()
 
-        if not os.path.exists(directory):
-            os.makedirs(directory)
-        for hist_type in ['H2A', 'H2B', 'H3', 'H4', 'H1']:
-            for hist_var in set(self.data[self.data['type'] == hist_type]['variant']):
-                print("##########Starting", hist_var, hist_type, f'{hist_var}.fasta')
-                if not os.path.exists(os.path.join(directory, hist_type)):
-                    os.makedirs(os.path.join(directory, hist_type))
-                print(self.msa_variant[hist_var])
-                # generate new msa with refactored title
-                msa_r = MultipleSeqAlignment([])
-                for i in self.msa_variant[hist_var]:
-                    # print(f'-------------------{i.id}')
-                    accession = i.id
-                    if '|' in accession: accession = accession.split('|')[1]
-                    try:
-                        genus = re.search(r"\[(\S+)\s+.+\S+\]", i.description).group(1)
-                    except:
-                        genus = self.get_taxid_genus(accession)[1]
+#         if not os.path.exists(directory):
+#             os.makedirs(directory)
+#         for hist_type in ['H2A', 'H2B', 'H3', 'H4', 'H1']:
+#             for hist_var in set(self.data[self.data['type'] == hist_type]['variant']):
+#                 print("##########Starting", hist_var, hist_type, f'{hist_var}.fasta')
+#                 if not os.path.exists(os.path.join(directory, hist_type)):
+#                     os.makedirs(os.path.join(directory, hist_type))
+#                 print(self.msa_variant[hist_var])
+#                 # generate new msa with refactored title
+#                 msa_r = MultipleSeqAlignment([])
+#                 for i in self.msa_variant[hist_var]:
+#                     # print(f'-------------------{i.id}')
+#                     accession = i.id
+#                     if '|' in accession: accession = accession.split('|')[1]
+#                     try:
+#                         genus = re.search(r"\[(\S+)\s+.+\S+\]", i.description).group(1)
+#                     except:
+#                         genus = self.get_taxid_genus(accession)[1]
 
-                    i.id = genus + "|" + accession + "|" + hist_var
-                    i.description = genus + "_" + hist_var + "_" + accession
-                    msa_r.append(i)
-                msa_r.sort()
-                print(msa_r)
-                AlignIO.write(msa_r, os.path.join("draft_seeds", hist_type, f'{hist_var}.fasta'), 'fasta')
+#                     i.id = genus + "|" + accession + "|" + hist_var
+#                     i.description = genus + "_" + hist_var + "_" + accession
+#                     msa_r.append(i)
+#                 msa_r.sort()
+#                 print(msa_r)
+#                 AlignIO.write(msa_r, os.path.join("draft_seeds", hist_type, f'{hist_var}.fasta'), 'fasta')
 
-            # combines MSA
-            if not self.msa_type: self.muscle_aln_for_type()
-            # generate new msa with refactored title
-            msa_r = MultipleSeqAlignment([])
-            for i in self.msa_type[hist_type]:
-                print(i.description)
-                accession = i.id
-                if '|' in accession: accession = accession.split('|')[1]
-                try:
-                    genus=re.search(r"\[(\S+)\s+.+\S+\]",i.description).group(1)
-                except:
-                    genus = self.get_taxid_genus(accession)[1]
-                # text = re.search(r"(\S+)\|(\d+)\|(\S+)", i.id)
-                print(f'-------------------{i.id}')
-                i.id = genus + "|" + accession + "|" + hist_type
-                # i.description=genus+"_"+variant+"_"+gi
-                msa_r.append(i)
-            msa_r.sort()
-            AlignIO.write(msa_r, os.path.join("draft_seeds", f'{hist_type}.fasta'), 'fasta')
+#             # combines MSA
+#             if not self.msa_type: self.muscle_aln_for_type()
+#             # generate new msa with refactored title
+#             msa_r = MultipleSeqAlignment([])
+#             for i in self.msa_type[hist_type]:
+#                 print(i.description)
+#                 accession = i.id
+#                 if '|' in accession: accession = accession.split('|')[1]
+#                 try:
+#                     genus=re.search(r"\[(\S+)\s+.+\S+\]",i.description).group(1)
+#                 except:
+#                     genus = self.get_taxid_genus(accession)[1]
+#                 # text = re.search(r"(\S+)\|(\d+)\|(\S+)", i.id)
+#                 print(f'-------------------{i.id}')
+#                 i.id = genus + "|" + accession + "|" + hist_type
+#                 # i.description=genus+"_"+variant+"_"+gi
+#                 msa_r.append(i)
+#             msa_r.sort()
+#             AlignIO.write(msa_r, os.path.join("draft_seeds", f'{hist_type}.fasta'), 'fasta')
