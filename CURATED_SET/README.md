@@ -15,7 +15,7 @@ accession, type, variant_group, variant, doublet, gi, geneid, taxonomyid, organi
 - accession - this is NCBI id of the sequence with version(!), also will be used as an id in HistoneDB. If the sequence in NCBI is not present, than a custom id is used (might be NONCBI_VARIANTNAME_NUMBER), and sequence is provided in Sequence column.
 - Type - according to classification, H3, H4, H2A, H2B or Archaeal.
 - variant_group - this is the id of the top-level variant classification in our hierarchy attributable to the sequence. If sequence has to be attributed to two variant groups wirte them separated with a space, e.g. "H2A.X H2A.Z"
-- Variant - this is the id of the most specific level variant classification in our hierarchy attributable to the sequence, it is equal to Variant_group if no more specific classification is possible. If sequence has to be attributed to two variants wirte them separated with a space.
+- Variant - this is the id of the most specific level variant classification in our hierarchy attributable to the sequence, it is equal to Variant_group if no more specific classification is possible. If sequence has to be attributed to two variants wirte them separated with a space. Every sequence MUST has something in Variant column. If unknown use _unclassified variants.
 - Doublet - true if it is a doublet. if it is of both types - write them with a space in Type column. E.g. "H3 H4"
 - GI - legacy field for GIs.
 - NCBI gene id
