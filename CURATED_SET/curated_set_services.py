@@ -125,7 +125,7 @@ class CuratedSet(object):
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
-        self.create_fasta_seqrec(self.data[self.data['sequence']!=''])
+        self.create_fasta_seqrec()
 
     def read_data(self, filename):
         df = pd.read_csv(filename, sep=',|;', engine='python').fillna('')
@@ -147,9 +147,14 @@ class CuratedSet(object):
             if acc_count[1] == 1: continue
             else: yield acc_count[0]
 
-    def create_fasta_seqrec(self, data):
-        for i, row in data.iterrows():
-            self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']), id=row['variant']+'_'+row['organism'].replace(' ','_')+'_'+row['accession'],description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
+    def create_fasta_seqrec(self):
+        for i, row in self.data.iterrows():
+            if row['sequence'] == '':
+                continue
+            if row['accession'] not in self.fasta_seqrec.keys():
+                self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']),
+                                                                id=row['variant']+'_'+row['organism'].replace(' ','_')+'_'+row['accession'],
+                                                                description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
 
     def get_count(self): return self.data.shape[0]
 
@@ -293,7 +298,7 @@ class CuratedSet(object):
         updating_data['class'] = taxonomy_class
         self.data = updating_data.append(self.data.drop(list(updating_data['accession'])))
 
-    def update_sequence(self, noncbi=False, blank_data=False):
+    def update_sequence(self, blank_data=False):
         """
         Download a dictionary of fasta SeqsRec from NCBI given a list of ACCESSIONs.
         :return: dict of fasta SeqRecords
@@ -304,9 +309,10 @@ class CuratedSet(object):
         if blank_data: updating_data = self.get_blank_data(['sequence'])
 
         num = updating_data.shape[0]
+        updated_num = 0
         for i in range(10):
-            fasta_seqrec_with_acc = dict()
             try:
+                updated_num = 0
                 print("Fetching %d seqs" % (num))
                 strn = ",".join(list(updating_data['accession']))
                 request = Entrez.epost(db="protein", id=strn)
@@ -314,34 +320,26 @@ class CuratedSet(object):
                 webEnv = result["WebEnv"]
                 queryKey = result["QueryKey"]
                 handle = Entrez.efetch(db="protein", rettype='fasta', retmode='text', webenv=webEnv, query_key=queryKey)
-                for r in SeqIO.parse(handle, 'fasta'):
-                    id = r.id
-                    if '|' in r.id: id = r.id.split('|')[1]
-                    if id not in updating_data['accession']:
-                        raise AssertionError(f'{id} is not in accessions list')
-                    fasta_seqrec_with_acc[id] = r
-                    if self.data.loc[id, 'sequence'] != str(r.seq):
-                        print(f'Sequence for {id} changes from {self.data.loc[id, "sequence"]} to {str(r.seq)}')
-                        self.data.at[id, 'sequence'] = str(r.seq)
+                seq_records = list(SeqIO.parse(handle, 'fasta'))
+                if (len(seq_records) == num):
+                    for r in seq_records:
+                        id = r.id
+                        if '|' in r.id: id = r.id.split('|')[1]
+                        if id not in updating_data['accession']:
+                            raise AssertionError(f'{id} is not in accessions list')
+                        if self.data.loc[id, 'sequence'] != str(r.seq):
+                            print(f'Sequence for {id} changes from {self.data.loc[id, "sequence"]} to {str(r.seq)}')
+                            self.data.at[id, 'sequence'] = str(r.seq)
+                            updated_num += 1
+                    break
+                else: print("Mismatch:", num, " ", len(seq_records))
             except AssertionError: raise
             except Exception as e: continue
-            if (len(fasta_seqrec_with_acc) == num):
-                break
-            else:
-                print("Mismatch:", num, " ", len(fasta_seqrec_with_acc))
-        if (len(fasta_seqrec_with_acc) != num):
-            print('FASTA Records could not be fetched')
+        if (len(seq_records) != num):
+            print(f'FASTA Records could not be fetched: updated {updated_num} from {num}')
             return
-        print(f"FASTA Records downloaded: {len(fasta_seqrec_with_acc)}")
-        print(f"Added SeqRecords for {fasta_seqrec_with_acc.keys()}")
-
-        self.fasta_seqrec.update(fasta_seqrec_with_acc)
-
-        if noncbi:
-            print("Creating FASTA Records for NONCBI sequences...")
-            self.create_fasta_seqrec(self.get_noncbi_data())
-
-        return self.fasta_seqrec # maybe not need
+        if updated_num == 0: print(f"Sequences is up-to-date")
+        else: print(f"Sequences updated: {updated_num}")
 
     def muscle_aln(self, accessions, options=[],debug = False):
         """
@@ -349,7 +347,7 @@ class CuratedSet(object):
         accessions: list of accessions
         :return: MultipleSeqAlignment object
         """
-        # if not self.fasta_seqrec: self.update_sequence()
+        self.create_fasta_seqrec()
         if not set(accessions).issubset(self.fasta_seqrec.keys()): self.update_sequence()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
