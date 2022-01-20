@@ -1,5 +1,7 @@
+debug
 debug/*
 tmp/*
+tmp
 static/browse/hmms/combined_variants.hmm.h3f
 static/browse/hmms/combined_variants.hmm.h3i
 static/browse/hmms/combined_variants.hmm.h3m
