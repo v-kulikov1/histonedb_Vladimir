@@ -1,0 +1,31 @@
+
+<html>
+<h1> Classification tree of histones and their variants used in HistoneDB</h1>
+<h3>Click on node to view sequence alignment</h3>
+<div id="demo">
+</div>
+<script src="https://unpkg.com/@phylocanvas/phylocanvas.gl@latest/dist/bundle.min.js"></script>
+<script>
+  const tree = new phylocanvas.PhylocanvasGL(
+  document.querySelector("#demo"),
+    {
+    styles: {
+      // set colour, default shape and label
+      H3: { fillColour: "blue" },
+      H4: { fillColour: "green" },
+      H2A: { fillColour: "yellow" },
+      H2B: { fillColour: "red" },
+      },
+    interactive: true,
+        showLabels: true,
+        showLeafLabels: true,
+        showInternalLabels: true,
+        //collapsedIds: ["H2A"],
+      size: { width: 600, height: 400 },
+      source: `((H2A.Z:1,H2A.B:1,macroH2A:1)H2A:1,H2B:1,((cH3.1__Metazoa?_:1,cH3.2__Metazoa?_:1)cH3__Metazoa_:1,cH3__Plants_:1,cenH3__Eukarya_:1,H3.3__Eukarya_:1,H3.5__Mammals?_:1,H3.5__Hominids?_:1,H3.Y__Primates?_:1,H3.P__Moneuplotes?_:1,H3.V__Trypanosomes?_:1,H3.B__Giardia?_:1,H3__Viruses_:1,H3_unclassified:1)H3:1,H4:1,Archaeal:1);`,
+      type: phylocanvas.TreeTypes.Rectangular,
+    },
+  );
+   //tree.collapseNode("1");
+</script>
+</html>
