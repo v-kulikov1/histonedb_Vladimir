@@ -140,7 +140,8 @@ function update(source) {
   const links = root.links();
 
   // Compute the new tree layout.
-
+  tree(root);
+  
   let left = root;
   let right = root;
   root.eachBefore((node) => {
