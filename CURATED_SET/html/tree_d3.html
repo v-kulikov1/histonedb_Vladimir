@@ -176,10 +176,23 @@ function update(source) {
     //})
     ;
 
+
+
+function histcolor(d) {
+let r = 0xF, g=0xF, b=0xF;
+if(d.data.name.includes('H3')) { r= 0; g=0; b = 0xF ;}
+if(d.data.name.includes('H4')) { r= 0; g=0xF; b = 0 ;}
+if(d.data.name.includes('H2A')) { r= 0xF; g=0xF; b = 0 ;}
+if(d.data.name.includes('H2B')) { r= 0xF; g=0; b = 0 ;}
+if(d.data.name.includes('H1')) { r= 0xF; g=0; b = 0xF ;}
+if(d.data.name.includes('Arch')) { r= 0; g=0xF; b = 0xF ;}
+return d._children ? "#"+(r & 0x5).toString(16)+(g& 0x5).toString(16)+(b& 0x5).toString(16) :  "#"+(r& 0x9).toString(16)+(g& 0x9).toString(16)+(b& 0x9).toString(16)
+}
+
   nodeEnter
     .append("circle")
     .attr("r", 2.5)
-    .attr("fill", (d) => (d._children ? "#555" : "#999"))
+    .attr("fill", (d) => histcolor(d) )
     .attr("stroke-width", 10)
     .on("click", (event, d) => {
     d.children = d.children ? null : d._children;
@@ -225,6 +238,7 @@ function update(source) {
   const linkEnter = link
     .enter()
     .append("path")
+    .attr("stroke", (d) => histcolor(d.source))
     .attr("d", (d) => {
       const o = { x: source.x0, y: source.y0 };
       return diagonal({ source: o, target: o });
