@@ -44,7 +44,9 @@ label {
 <body>
 <h1> Classification tree of histones and their variants used in HistoneDB 3.0</h1>
 <h3>Click on node label to view sequence alignment. Click on node to collapse/expand branches.</h3>
-<div id="app"></div>
+<div id="tree"></div>
+<h1>Multiple sequence alignment will appear below</h1>
+<div id="msa"></div>
 <script >
 
 //polyfill for at
@@ -131,7 +133,7 @@ const gNode = svg
 
 update(root);
 
-document.querySelector("#app").appendChild(svg.node());
+document.querySelector("#tree").appendChild(svg.node());
 
 function update(source) {
   const duration = d3.event && d3.event.altKey ? 2500 : 250;
