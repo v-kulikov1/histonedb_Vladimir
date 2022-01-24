@@ -40,6 +40,8 @@ label {
 </style>
 <head>
     <script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://intbio.org/histonedb/CURATED_SET/msa.min.gz.js"></script>
+
 </head>
 <body>
 <h1> Classification tree of histones and their variants used in HistoneDB 3.0</h1>
@@ -204,7 +206,7 @@ return d._children ? "#"+(r & 0x5).toString(16)+(g& 0x5).toString(16)+(b& 0x5).t
 
   nodeEnter
     .append("a")
-    .attr("xlink:href", (d)=>d.data.name+'.html')
+    .attr("xlink:href", (d)=>"javascript:upd_msa(\""+d.data.name+"\")")
     .append("text")
     .attr("dy", "0.31em")
     .attr("x", (d) => (d._children ? -6 : 6))
@@ -266,6 +268,26 @@ return d._children ? "#"+(r & 0x5).toString(16)+(g& 0x5).toString(16)+(b& 0x5).t
   });
 }
  });
+
+var rootDiv = document.getElementById("msa");
+
+function upd_msa(name) {
+  msa({
+  el: rootDiv,
+  importURL: "../draft_seeds/"+name+".fasta",
+  vis: {
+    labelId: false,
+    conserv: true
+  },
+  zoomer: {
+  labelNameLength:200,
+  alignmentHeight: 800},
+  colorscheme: {"scheme": "PID"}
+})};
+
+
 </script>
+
+
 </body>
 </html>
