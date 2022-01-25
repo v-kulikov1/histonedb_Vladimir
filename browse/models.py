@@ -27,13 +27,14 @@ class Variant(models.Model):
     H2A.X -> multiple species, same varaint
     H2A.10 -> one species, different varaint that are species speficific
     """
-    id            = models.CharField(max_length=25, primary_key=True)
-    hist_type     = models.ForeignKey(Histone, related_name="variants")
-    taxonomic_span = models.CharField(max_length=100) #models.ForeignKey(Taxonomy)?
-    description   = models.CharField(max_length=1000)
-    hmmthreshold  = models.FloatField(null=True) # parameter used in hmmersearch during sequence annotation
+    id              = models.CharField(max_length=25, primary_key=True)
+    hist_type       = models.ForeignKey(Histone, related_name="variants")
+    taxonomic_span  = models.CharField(max_length=100) #models.ForeignKey(Taxonomy)?
+    description     = models.CharField(max_length=1000)
+    hmmthreshold    = models.FloatField(null=True) # parameter used in hmmersearch during sequence annotation
     blastthreshold  = models.FloatField(null=True) # parameter used in blastthreshold during sequence annotation
-    aucroc        = models.IntegerField(null=True) # another parameter - these paramters are calculated during testing phase of manage.py buildvariants
+    aucroc          = models.IntegerField(null=True) # another parameter - these paramters are calculated during testing phase of manage.py buildvariants
+    parent          = models.ForeignKey('self', related_name = 'direct_children', null = True)
 
     def __str__(self):
         return self.id

@@ -12,7 +12,6 @@ from cProfile import Profile
 
 class Command(BaseCommand):
     help = 'Creating histone types and variants for the seed sequences'
-    variants_list_file = os.path.join(settings.STATIC_ROOT_AUX, "browse", "variants_list.json")
 
     # Logging info
     logging.basicConfig(filename=os.path.join(LOG_DIRECTORY, "buildvarianttypes.log"),
@@ -58,7 +57,10 @@ class Command(BaseCommand):
 
     def create_histone_types(self):
         """Create basic histone types"""
-        for i in ['H3','H4','H2A','H2B']:
+        with open(VARIANTS_JSON) as f:
+            variants_list = json.loads(f.read())
+        for i in variants_list['tree'].keys():
+            if i=='H1': continue
             obj,created = Histone.objects.get_or_create(id=i,taxonomic_span="Eukaryotes",\
                       description="Core histone")
             if created:
@@ -69,17 +71,25 @@ class Command(BaseCommand):
         if created:
             self.log.info("Histone {} type was created in database.".format(obj.id))
 
-    def get_variants(self):
-        """Get iterator for variants with its histone type"""
-        with open(self.variants_list_file) as f:
-            variants_list = json.loads(f.read())
-        for histtype in variants_list.keys():
-            for var in variants_list[histtype]:
-                yield histtype, var
+    # def get_variants(self):
+    #     """Get iterator for variants with its histone type"""
+    #     with open(VARIANTS_JSON) as f:
+    #         variants_list = json.loads(f.read())
+    #     for histtype in variants_list['tree'].keys():
+    #         for var in variants_list['tree'][histtype].keys():
+    #             yield histtype, var
 
     def create_histone_variants(self):
         """Create variants (including generics for each histone type) listed in variants_list.json"""
-        for hist_type_pos, variant_name in self.get_variants():
-            variant_model, create = Variant.objects.get_or_create(id=variant_name, hist_type_id=hist_type_pos)
-            if create:
-                self.log.info("Created {} variant model in database".format(variant_model.id))
+        with open(VARIANTS_JSON) as f:
+            variants_classification = json.loads(f.read())
+        variants_list = variants_classification['tree']
+        for hist_type_pos in variants_list.keys():
+            for variant_name in variants_list[hist_type_pos].keys():
+                variant_model, create = Variant.objects.get_or_create(id=variant_name, hist_type_id=hist_type_pos)
+                if create:
+                    self.log.info("Created {} variant model in database".format(variant_model.id))
+                for subvar_name in variants_list[hist_type_pos][variant_name].keys():
+                    variant_model, create = Variant.objects.get_or_create(id=subvar_name, hist_type_id=hist_type_pos, parent_id=variant_name)
+                    if create:
+                        self.log.info("Created {} subvariant model in database".format(variant_model.id))

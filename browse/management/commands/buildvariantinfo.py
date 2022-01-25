@@ -15,7 +15,6 @@ from tools.browse_service import *
 
 class Command(BaseCommand):
     help = 'Reset sequence features'
-    info_directory = os.path.join(settings.STATIC_ROOT_AUX, "browse", "info")
 
     # Logging info
     logging.basicConfig(filename=os.path.join(LOG_DIRECTORY, "buildvariantinfo.log"),
@@ -37,55 +36,18 @@ class Command(BaseCommand):
         self.log.info('===             buildvariantinfo START              ===')
         self.log.info('=======================================================')
         Publication.objects.all().delete()
-        variant_info_path = os.path.join(self.info_directory, "variants.json")
 
-        with open(variant_info_path, encoding='utf-8') as variant_info_file:
-            variant_info = json.load(variant_info_file)
+        with open(VARIANTS_JSON, encoding='utf-8') as variant_info_file:
+            variant_classification = json.load(variant_info_file)
+        variant_info = variant_classification['info']
 
-        for hist_type_name, variants in variant_info.items():
-            for variant_name, info in variants.items():
-                self.log.info(variant_name)
-                variant = Variant.objects.get(id=variant_name)
-                variant.description = info["description"]
-                variant.taxonomic_span = info["taxonomic_span"]
-                variant.save()
+        for name, info in variant_info.items():
+            if info['level'] == 'type':
+                self.add_type_info(name, info)
+            else:
+                self.add_variant_info(name, info)
 
-                for alternate_name in info["alternate_names"]:
-                    tax_name = alternate_name.get("taxonomy", "eukaryota")
-                    self.log.info(tax_name)
-                    # tax_eu = Taxonomy.objects.get(name='eucaryotes')
-                    # print('===================== {}'.format(tax_eu))
-                    alt_variant = OldStyleVariant(
-                        updated_variant = variant,
-                        name            = alternate_name["name"],
-                        gene            = alternate_name.get("gene"),
-                        splice          = alternate_name.get("splice"),
-                        taxonomy        = Taxonomy.objects.get(name=tax_name)
-                   )
-                    try:
-                        alt_variant.save()
-                    except:
-                        from django.db import connection
-                        cursor = connection.cursor()
-                        cursor.execute("ALTER TABLE browse_feature CONVERT TO CHARACTER SET utf8 COLLATE     utf8_general_ci;")
-                        alt_variant.save()
-
-                for publication_id in info["publications"]:
-                    publication, created = Publication.objects.get_or_create(id=publication_id, cited=False)
-                    publication.variants.add(variant)
-
-        type_info_path = os.path.join(self.info_directory, "types.json")
-
-        with open(type_info_path, encoding='utf-8') as type_info_file:
-            type_info = json.load(type_info_file)
-
-
-        for type_name, info in type_info.items():
-            hist_type = Histone.objects.get(id=type_name)
-            hist_type.description = info["description"]
-            hist_type.save()
-
-        feature_info_path = os.path.join(self.info_directory, "features.json")
+        feature_info_path = os.path.join(settings.STATIC_ROOT_AUX, "browse", "info", "features.json")
         with open(feature_info_path, encoding='utf-8') as feature_info_file:
             feature_info = json.load(feature_info_file)
         
@@ -94,9 +56,9 @@ class Command(BaseCommand):
             self.log.info("Making features for {}".format(type_name))
             hist_type = Histone.objects.get(id=type_name)
             for variant, info in variants.items():
-                self.log.info("Making features for {}".format(variant_name))
-                if variant_name.startswith("General"):
-                    variant = "General{}".format(hist_type)
+                self.log.info("Making features for {}".format(variant))
+                # if variant.startswith("General"):
+                #     variant = "General{}".format(hist_type)
 
                 sequence = str(info["sequence"])
                 position_lines = [str(position) for key, position in info.items() if key.startswith("feature") and not key.endswith("info")]
@@ -138,3 +100,39 @@ class Command(BaseCommand):
         self.log.info('=======================================================')
         self.log.info('===     buildvariantinfo SUCCESSFULLY finished      ===')
         self.log.info('=======================================================')
+
+    def add_variant_info(self, variant_name, info):
+        self.log.info(variant_name)
+        variant = Variant.objects.get(id=variant_name)
+        variant.description = info["description"]
+        variant.taxonomic_span = info["taxonomic_span"]
+        variant.save()
+
+        for alternate_name in info["alternate_names"]:
+            tax_name = alternate_name.get("taxonomy", "eukaryota")
+            self.log.info(tax_name)
+            # tax_eu = Taxonomy.objects.get(name='eucaryotes')
+            # print('===================== {}'.format(tax_eu))
+            alt_variant = OldStyleVariant(
+                updated_variant=variant,
+                name=alternate_name["name"],
+                gene=alternate_name.get("gene"),
+                splice=alternate_name.get("splice"),
+                taxonomy=Taxonomy.objects.get(name=tax_name)
+            )
+            try:
+                alt_variant.save()
+            except:
+                from django.db import connection
+                cursor = connection.cursor()
+                cursor.execute("ALTER TABLE browse_feature CONVERT TO CHARACTER SET utf8 COLLATE     utf8_general_ci;")
+                alt_variant.save()
+
+        for publication_id in info["publications"]:
+            publication, created = Publication.objects.get_or_create(id=publication_id, cited=False)
+            publication.variants.add(variant)
+
+    def add_type_info(self, type_name, info):
+        hist_type = Histone.objects.get(id=type_name)
+        hist_type.description = info["description"]
+        hist_type.save()
