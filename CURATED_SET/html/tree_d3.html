@@ -287,14 +287,25 @@ function upd_msa(name) {
   zoomer: {
   labelNameLength:350,
   alignmentHeight: 400},
-colorscheme: {scheme: "pid"}
+   
+//colorscheme: {scheme: "pid"}
 })
 
-m.g.colorscheme.addDynScheme("fscheme", function(letter,info){
-  console.log(info);
-  return info.pos % 2 == 0 ? "#00f" : "#ddd";
+var fun={}
+fun.init = function(){
+  // you have here access to the conservation or the sequence object
+  console.log("====");
+  
+  this.cons = this.opt.conservation();
+  console.log(this.opt.seqs);
 }
-  );
+
+fun.run = function(letter,opts){
+
+  return this.cons[opts.pos] > 0.8 ? "red" : "#fff"
+};
+
+m.g.colorscheme.addDynScheme("fscheme", fun);
 m.g.colorscheme.set("scheme", "fscheme");
 // the menu is independent to the MSA container
 var menuOpts = {};
