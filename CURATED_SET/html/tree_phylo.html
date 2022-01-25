@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0.625em auto;
+      max-width: 60em;
+    }
+    #phylocanvas {
+      width: 100%;
+      height: 30em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Phylocanvas Quickstart</h1>
+  <div id="phylocanvas"></div>
+  <script type="application/javascript" src="http://cdn.rawgit.com/phylocanvas/phylocanvas-quickstart/v2.8.1/phylocanvas-quickstart.js"></script>
+  <script type="application/javascript">
+    (function (Phylocanvas) {
+      var tree = Phylocanvas.createTree('phylocanvas');
+      tree.load('((H2A.Z:1,H2A.B:1,macroH2A:1)H2A:1,H2B:1,((cH3.1__Metazoa?_:1,cH3.2__Metazoa?_:1)cH3__Metazoa_:1,cH3__Plants_:1,cenH3__Eukarya_:1,H3.3__Eukarya_:1,H3.5__Mammals?_:1,H3.5__Hominids?_:1,H3.Y__Primates?_:1,H3.P__Moneuplotes?_:1,H3.V__Trypanosomes?_:1,H3.B__Giardia?_:1,H3__Viruses_:1,H3_unclassified:1)H3:1,H4:1,Archaeal:1);');
+      tree.setTreeType('rectangular');
+      tree.displayLabels();
+      tree.displayInternalLabels();
+      tree.branches['pcn3'].collapsed = true;
+    })(window.Phylocanvas);
+  </script>
+</body>
+</html>
