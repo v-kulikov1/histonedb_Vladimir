@@ -45,7 +45,7 @@ label {
 </head>
 <body>
 <h1> Classification tree of histones and their variants used in HistoneDB 3.0</h1>
-<h3>Click on node label to view sequence alignment. Click on node to collapse/expand branches.</h3>
+<h3>Click on node to collapse/expand branches. Click on node label to view info, sequence alignment and phylogeny. </h3>
 <div id="tree"></div>
 <h1>Multiple sequence alignment will appear below</h1>
 <div id="menu"></div>
@@ -279,10 +279,12 @@ var menuDiv = document.getElementById("menu");
 function upd_msa(name) {
  var m = msa({
   el: rootDiv,
-  importURL: "../draft_seeds/"+name+".fasta",
+  importURL: "../seeds/"+name+".fasta",
+  all: true,
   vis: {
     labelId: false,
-    conserv: true
+    conserv: true,
+    all: true
   },
   zoomer: {
   labelNameLength:350,
@@ -292,21 +294,56 @@ function upd_msa(name) {
 })
 
 var fun={}
+
+var myseq = 0.8;
+
 fun.init = function(){
   // you have here access to the conservation or the sequence object
-  console.log("====");
-  
   this.cons = this.opt.conservation();
-  console.log(this.opt.seqs);
+  this.consensus= this.opt.consensus();
+  this.frequency= this.opt.frequency();
+  this.consensus80="";
+  this.frequency.forEach((it,i) => {
+    let aa="*";
+    for(let i2 in it) {
+     if (it[i2] >=0.8) {
+      aa=i2;}
+    }
+    this.consensus80+=aa;
+  });
+
+  this.consensus50="";
+  this.frequency.forEach((it,i) => {
+    let aa="*";
+    for(let i2 in it) {
+     if (it[i2] >=0.5) {
+      aa=i2;}
+    }
+    this.consensus50+=aa;
+  });
+}
+
+function aasimilar(aa1,aa2) {
+const groups = {pos:"KRH", neg:"ED", aliph:"VLAIM",oh:"TS", small:"SAG",aroma:"FWY"}
+
+for(let i in groups) {
+  if(groups[i].includes(aa1) && groups[i].includes(aa2)) {return true;}
+}
+return false;
 }
 
 fun.run = function(letter,opts){
 
-  return this.cons[opts.pos] > 0.8 ? "red" : "#fff"
+  if(letter == "-") {return "#fff";}
+  if (letter == this.consensus80[opts.pos]) {return "#74b";}
+  if (letter == this.consensus50[opts.pos]) {return "#08c";} 
+  if (aasimilar(letter,this.consensus80[opts.pos]) || aasimilar(letter,this.consensus50[opts.pos]) ) {return "#f09";}
+  else {return "#fff";} 
 };
 
 m.g.colorscheme.addDynScheme("fscheme", fun);
 m.g.colorscheme.set("scheme", "fscheme");
+m.render();
 // the menu is independent to the MSA container
 var menuOpts = {};
 menuOpts.el = menuDiv;
@@ -317,6 +354,14 @@ m.addView("menu", defMenu);
 
 // call render at the end to display the whole MSA
 //m.render();
+
+var gffParser = msa.io.gff;
+var xhr = msa.io.xhr;
+xhr("../seeds/"+name+".gff3", function(err, request, body) {
+  var features = gffParser.parseSeqs(body);
+  m.seqs.addFeatures(features);
+});
+
 };
 
 

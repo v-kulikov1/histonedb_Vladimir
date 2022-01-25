@@ -15470,17 +15470,18 @@
 	  },
 	
 	  initialize: function initialize(data, seqs, stat) {
+	  //	console.log(seqs);
 	    this.colors = new Colors({ seqs: seqs,
 	      conservation: function conservation() {
 	        return stat.scale(stat.conservation());
-	      } });
+	      },consensus: function consensus(){return stat.consensus();},frequency: function frequency(){return stat.frequency();} }); // Added by AKSh
 	    // the stats module sends an event every time it is refreshed
 	    return stat.on("reset", function () {
 	      // some dynamic modules might require a redraw
 	      if (this.getSelectedScheme().type === "dyn") {
 	        var ref;
 	        var dfg = this.getSelectedScheme();
-	//       if (ref = "reset", this.getSelectedScheme().ref.indexOf(ref) >= 0) {
+	//       if (ref = "reset", this.getSelectedScheme().ref.indexOf(ref) >= 0) { // Commented out by AKSh - it breaks dynamic schemes
 	 //        return this.getSelectedScheme().reset();
 	   //    }
 	      }
@@ -24407,7 +24408,8 @@
 	  this.alphabetSize = 4;
 	  this._useBackground = false;
 	  this.useGaps = false;
-	  this.ignoredChars = ["-", "*"];
+	 // this.ignoredChars = ["-", "*"]; // - removed by AKSh
+	  this.ignoredChars = ["*"];
 	  _.extend(this, opts);
 	};
 	
@@ -24441,7 +24443,7 @@
 	  this.seqs = [];
 	
 	  // support sequence models
-	  if (!seqs instanceof Array || "_byId" in seqs) {
+	  if (!seqs instanceof Array || "_byId" in seqs) { //Changed by AKSh to fix!!!
 	    this.mseqs = seqs;
 	    var mSeqsPluck = function mSeqsPluck() {
 	      var seqArr = this.mseqs.pluck("seq");
@@ -24540,6 +24542,7 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	  var ignoredChars = this.ignoredChars;
 	  if (opts !== undefined && opts.all) {
 	    ignoredChars = [];
+
 	  }
 	
 	  // count the occurrences of the chars at a position
