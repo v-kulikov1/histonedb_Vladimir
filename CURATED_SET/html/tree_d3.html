@@ -40,7 +40,7 @@ label {
 </style>
 <head>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://intbio.org/histonedb/CURATED_SET/msa.min.gz.js"></script>
+<script src="../msa.js"></script>
 
 </head>
 <body>
@@ -48,6 +48,7 @@ label {
 <h3>Click on node label to view sequence alignment. Click on node to collapse/expand branches.</h3>
 <div id="tree"></div>
 <h1>Multiple sequence alignment will appear below</h1>
+<div id="menu"></div>
 <div id="msa"></div>
 <script >
 
@@ -270,9 +271,13 @@ return d._children ? "#"+(r & 0x5).toString(16)+(g& 0x5).toString(16)+(b& 0x5).t
  });
 
 var rootDiv = document.getElementById("msa");
+var menuDiv = document.getElementById("menu");
+
+
+
 
 function upd_msa(name) {
-  msa({
+ var m = msa({
   el: rootDiv,
   importURL: "../draft_seeds/"+name+".fasta",
   vis: {
@@ -280,10 +285,28 @@ function upd_msa(name) {
     conserv: true
   },
   zoomer: {
-  labelNameLength:200,
-  alignmentHeight: 800},
-  colorscheme: {"scheme": "PID"}
-})};
+  labelNameLength:350,
+  alignmentHeight: 400},
+colorscheme: {scheme: "pid"}
+})
+
+m.g.colorscheme.addDynScheme("fscheme", function(letter,info){
+  console.log(info);
+  return info.pos % 2 == 0 ? "#00f" : "#ddd";
+}
+  );
+m.g.colorscheme.set("scheme", "fscheme");
+// the menu is independent to the MSA container
+var menuOpts = {};
+menuOpts.el = menuDiv;
+menuOpts.msa = m;
+menuOpts.menu = "small";
+var defMenu = new msa.menu.defaultmenu(menuOpts);
+m.addView("menu", defMenu);
+
+// call render at the end to display the whole MSA
+//m.render();
+};
 
 
 </script>

@@ -1,0 +1,450 @@
+>subH2B_Mus_musculus_NP_081340.1 NP_081340.1 histone: H2B variant: subH2B organism: Mus musculus
+------------------------------------------------------------
+---MAKPT---------------FKRQCYIKRHLRPLYR---------------------
+KHS-RCSSINLGHGNYSL--YINRVLKEVVPNRGISSYSVDIMNILINDIFERIATEACQ
+QMF----LRKRCTLTPGDIQQAVHLLLPKKLATLAVTFGSKAVHRFI-------------
+-HS---------
+>subH2B_Cricetulus_griseus_XP_003515979.1 XP_003515979.1 histone: H2B variant: subH2B organism: Cricetulus griseus
+------------------------------------------------------------
+---MAKSII---------------------KRYQFVKRRQR------RA-----------
+FRK-RYSSINFGQRNYSL--YISRVLKEVVPMRGLSSNTVDIMNTLINDLFERIATEACQ
+LMY----FRKRCTLTLEDIQKAVYLLVPKKLAKSAVTFGSKAVHRFI-------------
+-HS---------
+>subH2B_Macaca_mulatta_XP_001095287.1 XP_001095287.1 histone: H2B variant: subH2B organism: Macaca mulatta
+------------------------------------------------------------
+---MARSST---------------------KKHKYSKRHQS------PT-----------
+SRKKAHSSIDFVHGNYSF--FVNKVLKEVVSHRGTSSRTLDLMNTLINNFFQHISMKAYR
+LMY----FRNRCTLTPEDILKAAYLLLPQKTANYAVAFGSEVFRRYV-------------
+-HS---------
+>subH2B_Cavia_porcellus_XP_003461969.1 XP_003461969.1 histone: H2B variant: subH2B organism: Cavia porcellus
+------------------------------------------------------------
+---MVKSVI--------------KPR----RYFRGRRTSIS-------------------
+SKK-SCLSSNSGYRNYSL--YVSRVLKEVVPERAISSCTVNIMNTLIDDIFERISEEAHH
+LMC----SQKRCTLTPKDIQKAVYLLLPRKLAKYAVAFGDGAVDRYV-------------
+-HS---------
+>subH2B_Heterocephalus_glaber_XP_004885290.1 XP_004885290.1 histone: H2B variant: subH2B organism: Heterocephalus glaber
+------------------------------------------------------------
+---MVRSII---------------------KQYGYSRRHLT------PT-----------
+YRKKSYLSTSFGHRNYSL--YISRVLKEVAPQRHISSRTLDMMNALINNIFERIATEAHH
+LMC----SRNRCTLAPEDIQRAVYLLLPGKLAKYAMAFGDEAVHRYV-------------
+-HS---------
+>subH2B_Equus_caballus_XP_001504072.2 XP_001504072.2 histone: H2B variant: subH2B organism: Equus caballus
+------------------------------------------------------------
+---MARAST---------------------KKSRCSRRRQS------PA-----------
+SRKKSHASTYRGHRNYSL--YINRVLKEVVPQRGISARTLDTMNILINNIFERISTEACS
+MMY----FRNRCTLTPQDVQKAVYSLFPGKLAKYAVAFGSEAVQRYL-------------
+-HS---------
+>subH2B_Bos_taurus_NP_991343.1 NP_991343.1 histone: H2B variant: subH2B organism: Bos taurus
+------------------------------------------------------------
+---MARNVT---------------KRNKRCRGHQKAIYKKK-------------------
+SHS-SS---ESGLRNYSL--YINRVLKEVVPQKGISSRTIDIINTMINDMFERISTEACN
+LMY----YRKRCTLTPEDIEKAVYLLLPEKLAKYAVAFGKEAVQRYV-------------
+-RS---------
+>subH2B_Loxodonta_africana_XP_003407998.1 XP_003407998.1 histone: H2B variant: subH2B organism: Loxodonta africana
+------------------------------------------------------------
+---MARSII---------------KKYRYSNGHLSSISIKK-------------------
+LHS-ST---NFGHRNYSL--YVNRVLKEVVPQRGISSRTLDVMNTLINNIFKCIATEACN
+LMY----FRNRCTLTPEDIQRAVYVRLPGKLAKHAVAFGSEAVNRYV-------------
+-HS---------
+>subH2B_Sus_scrofa_XP_003134084.1 XP_003134084.1 histone: H2B variant: subH2B organism: Sus scrofa
+------------------------------------------------------------
+---MARYIT---------------------KKNRCSRGHRH------PN-----------
+SRKKTCSSTECGRRNYSL--YVNRVLKEVVPQSGISSRTLDMMNTVINDIFERISMEASN
+LMY----FRNRCTLTPEDVQKAVYLLLPRKLAKHAVAFGSDAVHRYV-------------
+-HS---------
+>subH2B_Ailuropoda_melanoleuca_XP_002921383.1 XP_002921383.1 histone: H2B variant: subH2B organism: Ailuropoda melanoleuca
+------------------------------------------------------------
+---MARSIT---------------KKNKRSRGHRSPISKKK-------------------
+SHS-ST---DFGRRNYSL--YINRVLKEVVPQRSISSRTLDVMNTLIKDIFERISVEARS
+LMC----FRNRCTLTPEDIQKAVYLLLPGKLAKYAVAFGSEAVQRYV-------------
+-QS---------
+>subH2B_Monodelphis_domestica_XP_001366286.1 XP_001366286.1 histone: H2B variant: subH2B organism: Monodelphis domestica
+------------------------------------------------------------
+---MTKAVR--------------------SNESQKLTTNQE------KK-----------
+KKKKKK---LLLSRNYSL--YTHRVLKEVIPNQGLTYKTTEIMNSMINNILERIAEEAGN
+LLC----YKRHLTLGHQDIQMAVYRLLPDELAKHAVAFGTRAVTTYN-------------
+-DSK--------
+>H2B.W_Bos_taurus_DAA13058.1 DAA13058.1 histone: H2B variant: H2B.W organism: Bos taurus
+-------MGIGGSILSETSSDSYEEDVITKETGISEIEPSEKEMAKVETSKPDPYDAE--
+---PIKVET--------------SKPDPYDAEPKKAETSKPDPYDAEPK--KAKQKTAKG
+RRR-RRHCHHDSFSSFAT--YFPRVLRQIHKGMSLSHDSVNILDSFVKDTFERIAEEAGR
+LAG----DNKRRTITTEDIEAAVRLLLPGKLGKYAVLKATKSLITYR-------------
+-TCK--------
+>canonical_H2B_Trypanosoma_brucei_brucei_TREU927_XP_823266.1 XP_823266.1 histone: H2B variant: canonical_H2B organism: Trypanosoma brucei brucei TREU927
+----------------------------------------------------MA------
+---TPKSTP---------------------AKTRKEAKKTR-------------------
+----RQ---RK--RTWNV--YVSRSLRSINSQMSMTSRTMKIVNSFVNDLFERIAAEAAT
+IVR----VNRKRTLGARELQTAVRLVLPADLAKHAMAEGTKAVSHAS-------------
+-S----------
+>H2B.Z_Toxoplasma_gondii_ME49_XP_002369740.1 XP_002369740.1 histone: H2B variant: H2B.Z organism: Toxoplasma gondii ME49
+---------------------------------------------------MSG--KG--
+---PAQKSQ---------------------AAKKTAGKSLG------PR-----------
+YRR-RK---RT--ESFAL--YIYKVLKQVHPETGVSKKSMSIMNSFINDIFDRLADEAVR
+LIR----YNKKRTLSSREIQTAVRLLLPGELSKHAVSEGTKAVTKYT-------------
+-TSGA-------
+>H2B.Z_Plasmodium_berghei_ANKA_XP_678689.1 XP_678689.1 histone: H2B variant: H2B.Z organism: Plasmodium berghei ANKA
+---------------------------------------------------MSG--KG--
+---PAQKSQ---------------------AAKKTAGKTLG------PR-----------
+HKR-KR---RT--ESFSL--YIFKVLKQVHPETGVTKKSMNIMNSFINDIFDRLVTEATR
+LIR----YNKKRTLSSREIQTAVRLLLPGELSKHAVSEGTKAVTKYT-------------
+-TSGA-------
+>H2B.Z_Plasmodium_falciparum_3D7_XP_001349046.1 XP_001349046.1 histone: H2B variant: H2B.Z organism: Plasmodium falciparum 3D7
+---------------------------------------------------MSG--KG--
+---PAQKSQ---------------------AAKKTAGKTLG------PR-----------
+HKR-KR---RT--ESFSL--YIFKVLKQVHPETGVTKKSMNIMNSFINDIFDRLVTEATR
+LIR----YNKKRTLSSREIQTAVRLLLPGELSKHAVSEGTKAVTKYT-------------
+-TSAA-------
+>canonical_H2B_Saccharomyces_cerevisiae_S288C_NP_009553.1 NP_009553.1 histone: H2B variant: canonical_H2B organism: Saccharomyces cerevisiae S288C
+-------------------------------------------------MSSAAEKK---
+---PASKAP--------------AEK----KPAAKKTSTSV-----------DGK-----
+KRS-KV---RK--ETYSS--YIYKVLKQTHPDTGISQKSMSILNSFVNDIFERIATEASK
+LAA----YNKKSTISAREIQTAVRLILPGELAKHAVSEGTRAVTKYS-------------
+-SSTQA------
+>canonical_H2B_Saccharomyces_cerevisiae_S288C_NP_010510.3 NP_010510.3 histone: H2B variant: canonical_H2B organism: Saccharomyces cerevisiae S288C
+-------------------------------------------------MSAKAEKK---
+---PASKAP--------------AEK----KPAAKKTSTST-----------DGK-----
+KRS-KA---RK--ETYSS--YIYKVLKQTHPDTGISQKSMSILNSFVNDIFERIATEASK
+LAA----YNKKSTISAREIQTAVRLILPGELAKHAVSEGTRAVTKYS-------------
+-SSTQA------
+>canonical_H2B_Arabidopsis_thaliana_Q9LZ45.3 Q9LZ45.3 histone: H2B variant: canonical_H2B organism: Arabidopsis thaliana
+---------------------------------------------------MAP------
+---KAEKKP--------------AEK----APAPKAEKKIA------KE---GGTSEIVK
+KKK-KT---KKSTETYKI--YIFKVLKQVHPDIGISGKAMGIMNSFINDIFEKLAQESSR
+LAR----YNKKPTITSREIQTAVRLVLPGELAKHAVSEGTKAVTKFT-------------
+-SS---------
+>canonical_H2B_Arabidopsis_thaliana_Q9FFC0.3 Q9FFC0.3 histone: H2B variant: canonical_H2B organism: Arabidopsis thaliana
+----------------------------------------------MAKADKKPAEKK--
+---PAEKTPA-------------AEPAAAAEKKPKAGKKLP------KEPAGAGD-----
+KKKKRS---KKNVETYKI--YIFKVLKQVHPDIGISSKAMGIMNSFINDIFEKLAGESSK
+LAR----YNKKPTITSREIQTAVRLVLPGELAKHAVSEGTKAVTKFT-------------
+-SS---------
+>canonical_H2B_Arabidopsis_thaliana_Q9LQQ4.3 Q9LQQ4.3 histone: H2B variant: canonical_H2B organism: Arabidopsis thaliana
+---------------------------------------------MAPRAEKKPAEKKTA
+AERPVEENK--------------AAEKAPAEKKPKAGKKLP------PK--EAGD-----
+KKKKRS---KKNVETYKI--YIFKVLKQVHPDIGISSKAMGIMNSFINDIFEKLAQESSK
+LAR----YNKKPTITSREIQTAVRLVLPGELAKHAVSEGTKAVTKFT-------------
+-SS---------
+>canonical_H2B_Arabidopsis_thaliana_Q9LZT0.3 Q9LZT0.3 histone: H2B variant: canonical_H2B organism: Arabidopsis thaliana
+---------------------------------------------MAPKAEKKPAEKK--
+---PVEEKS--------------KAEKAPAEKKPKAGKKLP------KEAGAGGD-----
+KKKKMK---KKSVETYKI--YIFKVLKQVHPDIGISSKAMGIMNSFINDIFEKLASESSK
+LAR----YNKKPTITSREIQTAVRLVLPGELAKHAVSEGTKAVTKFT-------------
+-SS---------
+>sperm_H2B_Psammechinus_miliaris_Q27749.3 Q27749.3 histone: H2B variant: sperm_H2B organism: Psammechinus miliaris
+----------------------------------------------------MPSQKS--
+---PTKRSPTK------------RSPQKGGKGAKRGGKAGK------RR---RGVAV---
+KRR-RR---RR--ESYGI--YIYKVLKQVHPDTGISSRAMSVMNSFVNDVFERIASEAGR
+LTT----YNRRNTVSSREVQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-TSR--------
+>sperm_H2B_Strongylocentrotus_purpuratus_NP_999706.1 NP_999706.1 histone: H2B variant: sperm_H2B organism: Strongylocentrotus purpuratus
+----------------------------------------------------MPSQRS--
+---PTKRSP---------------TKRSPQKGAGKGGKGSK------RGGKARRRGGAAV
+RRR-RR---RR--ESYGI--YIYKVLKQVHPDTGISSRGMSIMNSFVNDVFERVAAEASR
+LTK----YNRRSTVSSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-TSR--------
+>sperm_H2B_Strongylocentrotus_purpuratus_NP_999721.1 NP_999721.1 histone: H2B variant: sperm_H2B organism: Strongylocentrotus purpuratus
+----------------------------------------------------MP--RS--
+---PSKTSPRKGSPRRGSPSRKASPK----RGGKGAKRAGK-----------GGRRRNVV
+RRR-RR---RR--ESYGI--YIYKVLKQVHPDTGISSRGMSVMNSFVNDIFGRIAGEASR
+LTR----ANRRSTISSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-TSR--------
+>sperm_H2B_Parechinus_angulosus_P02291.2 P02291.2 histone: H2B variant: sperm_H2B organism: Parechinus angulosus
+----------------------------------------------------MP--RS--
+---PAKTSPRKGSPRKGSPSRKASPK----RGGKGAKRAGK-----------GGRRRRVV
+KRR-RR---RR--ESYGI--YIYKVLKQVHPDTGISSRAMSVMNSFVNDVFERIAGEASR
+LTS----ANRRSTVSSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-TSR--------
+>sperm_H2B_Psammechinus_miliaris_Q27750.3 Q27750.3 histone: H2B variant: sperm_H2B organism: Psammechinus miliaris
+----------------------------------------------------MP--KS--
+---PSKSSPRKG-----------SPR----KGSPRKGSPKRGGKGAKRA--GKGGRRNVV
+KRR-RR---RR--ESYGI--YIYKVLKQVHPDTGISSRGMSVMNSFVNDVFERIAGEASR
+LTS----ANRRSTISSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-TARR-------
+>canonical_H2B_Psammechinus_miliaris_AAA30025.1 AAA30025.1 histone: H2B variant: canonical_H2B organism: Psammechinus miliaris
+------------------------------------------------------------
+---MAPTAQ--------------VAK----KGSKKAVKAPR------PS---GGK-----
+KRN-RK---RK--ESYGI--YIYKVLKQVHPDTGISSRAMIIMNSFVNDIFERIAGESSR
+LAQ----YNKKSTISSREIQTAVRLILPGELAKHAVSEGTKAVTKYT-------------
+-TSK--------
+>canonical_H2B_Strongylocentrotus_purpuratus_NP_999710.2 NP_999710.2 histone: H2B variant: canonical_H2B organism: Strongylocentrotus purpuratus
+------------------------------------------------------------
+---MAPTAQ--------------VAK----KGSKKAVKGTK------TA--XGGK-----
+KRN-RK---RK--ESYGI--YIYKVLKQVHPDTGISSRAMVIMNSXVBDIFERIAGESSR
+LAQ----YNKKXTXSSREIQTAVRLILPGELAKHAVSEGTKAVTKYT-------------
+-TSK--------
+>canonical_H2B_Caenorhabditis_elegans_NP_505464.1 NP_505464.1 histone: H2B variant: canonical_H2B organism: Caenorhabditis elegans
+----------------------------------------------------MA------
+---PPKPSA---------------------KGAKKAAKTVS------KP--KDGK-----
+KRK-HA---RK--ESYSV--YIYRVLKQVHPDTGVSSKAMSIMNSFVNDVFERIASEASR
+LAH----YNKRSTISSREIQTAVRLILPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Drosophila_melanogaster_NP_724342.1 NP_724342.1 histone: H2B variant: canonical_H2B organism: Drosophila melanogaster
+----------------------------------------------------MP------
+---PKTSGK--------------AAK----KAGK--AQKNI------TK---TDK-----
+KKK-RK---RK--ESYAI--YIYKVLKQVHPDTGISSKAMSIMNSFVNDIFERIAAEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Xenopus_laevis_NP_001086753.1 NP_001086753.1 histone: H2B variant: canonical_H2B organism: Xenopus laevis
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKTQ------KK---DGK-----
+KRR-KS---RK--ESYAI--YVYKVLKQVHPDTGISSKAMSIMNSFVNDVFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SAK--------
+>canonical_H2B_Homo_sapiens_NP_778225.1 NP_778225.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--D---
+---PSKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RG---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIASEASR
+LAH----YNKRSTITSREVQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Gallus_gallus_NP_001073188.1 NP_001073188.1 histone: H2B variant: canonical_H2B organism: Gallus gallus
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKTQ------KK---GDK-----
+KRK-KS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003512.1 NP_003512.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PVKSAP--------------VPK----KGSKKAINKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Rattus_norvegicus_NP_072173.2 NP_072173.2 histone: H2B variant: canonical_H2B organism: Rattus norvegicus
+----------------------------------------------------MP--E---
+---PAKSRP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+ERK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGE-RR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Mus_musculus_NP_783595.1 NP_783595.1 histone: H2B variant: canonical_H2B organism: Mus musculus
+----------------------------------------------------MP--E---
+---PSKSAP--------------APK----KGSKKAISKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIASEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003510.1 NP_003510.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---LAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIASEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Monodelphis_domestica_XP_007485418.1 XP_007485418.1 histone: H2B variant: canonical_H2B organism: Monodelphis domestica
+----------------------------------------------------MP--E---
+---PGKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIASEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>H2B.S_Homo_sapiens_NP_059141.1 NP_059141.1 histone: H2B variant: H2B.S organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGR-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LPH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SAK--------
+>canonical_H2B_Homo_sapiens_NP_066406.1 NP_066406.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PSKSAP--------------APK----KGSKKAITKAQ------KK---DGK-----
+KRK-RS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Ailuropoda_melanoleuca_XP_011216221.1 XP_011216221.1 histone: H2B variant: canonical_H2B organism: Ailuropoda melanoleuca
+----------------------------------------------------MP--D---
+---PAKSAP--------------APK----KGSKKAVTKVQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_001019770.1 NP_001019770.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--D---
+---PAKSAP--------------APK----KGSKKAVTKVQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_001154806.1 NP_001154806.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--D---
+---PAKSAP--------------APK----KGSKKAVTKVQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSKLIGPILWK
+>canonical_H2B_Homo_sapiens_NP_003515.1 NP_003515.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--D---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Sus_scrofa_XP_005665716.1 XP_005665716.1 histone: H2B variant: canonical_H2B organism: Sus scrofa
+----------------------------------------------------MP--D---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_066407.1 NP_066407.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PTKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_066402.2 NP_066402.2 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SAK--------
+>canonical_H2B_Loxodonta_africana_XP_003422331.1 XP_003422331.1 histone: H2B variant: canonical_H2B organism: Loxodonta africana
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SAK--------
+>canonical_H2B_Homo_sapiens_NP_003518.2 NP_003518.2 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--D---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003511.1 NP_003511.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PSKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Equus_caballus_XP_005610255.1 XP_005610255.1 histone: H2B variant: canonical_H2B organism: Equus caballus
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003519.1 NP_003519.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSI--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Bos_taurus_NP_001032546.1 NP_001032546.1 histone: H2B variant: canonical_H2B organism: Bos taurus
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Cavia_porcellus_XP_013006892.1 XP_013006892.1 histone: H2B variant: canonical_H2B organism: Cavia porcellus
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Heterocephalus_glaber_XP_012928647.1 XP_012928647.1 histone: H2B variant: canonical_H2B organism: Heterocephalus glaber
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003509.1 NP_003509.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003513.1 NP_003513.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003514.2 NP_003514.2 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003516.1 NP_003516.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Homo_sapiens_NP_003517.2 NP_003517.2 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Macaca_nemestrina_XP_011741102.1 XP_011741102.1 histone: H2B variant: canonical_H2B organism: Macaca nemestrina
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Oryctolagus_cuniculus_XP_008246696.1 XP_008246696.1 histone: H2B variant: canonical_H2B organism: Oryctolagus cuniculus
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>canonical_H2B_Cricetulus_griseus_XP_007634673.1 XP_007634673.1 histone: H2B variant: canonical_H2B organism: Cricetulus griseus
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SAK--------
+>canonical_H2B_Homo_sapiens_NP_001299582.1 NP_001299582.1 histone: H2B variant: canonical_H2B organism: Homo sapiens
+----------------------------------------------------MP--E---
+---PAKSAP--------------APK----KGSKKAVTKAQ------KK---DGK-----
+KRK-RS---RK--ESYSV--YVYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SAK--------
+>H2B.1_Canis_lupus_familiaris_XP_005640164.1 XP_005640164.1 histone: H2B variant: H2B.1 organism: Canis lupus familiaris
+----------------------------------------------------MP--EL--
+---TSKGTT--------------ISK----KGFKRAVAKTQ------KK---EGK-----
+KRR-RC---RK--ESYSI--YIYKVLKQVHPDTGISSKAMGIMNSFVNDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>H2B.1_Homo_sapiens_NP_733759.1 NP_733759.1 histone: H2B variant: H2B.1 organism: Homo sapiens
+----------------------------------------------------MP--EV--
+---SSKGAT--------------ISK----KGFKKAVVKTQ------KK---EGK-----
+KRK-RT---RK--ESYSI--YIYKVLKQVHPDTGISSKAMSIMNSFVTDIFERIASEASR
+LAH----YSKRSTISSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>H2B.1_Mus_musculus_NP_783594.1 NP_783594.1 histone: H2B variant: H2B.1 organism: Mus musculus
+----------------------------------------------------MP--EV--
+---AVKGAT--------------ISK----KGFKKAVTKTQ------KK---EGR-----
+KRK-RC---RK--ESYSI--YIYKVLKQVHPDTGISSKAMSIMNSFVTDIFERIASEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>H2B.1_Rattus_norvegicus_NP_072169.1 NP_072169.1 histone: H2B variant: H2B.1 organism: Rattus norvegicus
+----------------------------------------------------MP--EV--
+---SAKGTT--------------ISK----KGFKKAVTKTQ------KK---EGR-----
+KRK-RC---RE--ESYSI--YIYKVLKQVHPDTGISSKAMSIMNSFVTDIFERIAGEASR
+LAH----YNKRSTITSREIQTAVRLLLPGELAKHAVSEGTKAVTKYT-------------
+-SSK--------
+>H2B.W_Macaca_mulatta_NP_001180847.1 NP_001180847.1 histone: H2B variant: H2B.W organism: Macaca mulatta
+--------------------------------MLRTQVPPLLRSTTAIVWSCRVMAAASA
+MAEPSSETT--------------SEEQLITQEPKEANSTMAQKQSKQRK---RGR-----
+RGPCRCHANCRG-DSFAT--YFRRVLKQVHQGLSLSREAVSVMDSLVHDILDRIATEAGR
+LAR----STKRQTITAWETRIAVRLLLPGEMGKLAESEGTKAVLRTSLYAVQQ-------
+-QRK--------
+>H2B.W_Homo_sapiens_NP_001002916.4 NP_001002916.4 histone: H2B variant: H2B.W organism: Homo sapiens
+----------------------------------------------------MAG-----
+---PSSETT--------------SEEQLITQEPKEANSTTS------QKQSKQRKRGRHG
+PRRCHS---NCRGDSFAT--YFRRVLKQVHQGLSLSREAVSVMDSLVHDILDRIATEAGH
+LAR----STKRQTITAWETRMAVRLLLPGQMGKLAESEGTKAVLRTSLYAIQQ-------
+-QRK--------
+>H2B.W_Homo_sapiens_Q7Z2G1.2 Q7Z2G1.2 histone: H2B variant: H2B.W organism: Homo sapiens
+------------------------MLRTEVPRLPRSTTAIVWSCHLMATASAMA--G---
+---PSSETT--------------SEEQLITQEPKEANSTTS------QK---QSKQRKRG
+RHGPRRCHSNCRGDSFAT--YFRRVLKQVHQGLSLSREAVSVMDSLVHDILDRIATEAGR
+LAR----STKRQTITAWETRMAVRLLLPGQMGKLAESEGTKAVLRTSLYAIQQ-------
+-QRK--------
+>H2B.W_Oryctolagus_cuniculus_XP_002720211.1 XP_002720211.1 histone: H2B variant: H2B.W organism: Oryctolagus cuniculus
+----------------------------------------------------MA--E---
+---PASHVA---------------SEENLSLEPKTTASSTP------KE---KQP-----
+RRR-RR---RRQGHNYSFASYFPKVLKHVHKGLSLSKEAKGVMDSIVRDVFERIAHEAAS
+LVR----YSKHSTLTSRDVQSAVRLLLPGQLHKHADVEGTKALLKFI-------------
+-THP--------
+>H2B.W_Ailuropoda_melanoleuca_XP_002925981.1 XP_002925981.1 histone: H2B variant: H2B.W organism: Ailuropoda melanoleuca
+----------------------------------------------------MA--E---
+---PGCETS--------------SEESLGTEEPSAANPKSP------KQ---KQKQPRRQ
+CRR-RC---RRCPNSFAT--YFPRVLKQVHEGLSLSKKAVSVMDSFLKDIFEHIADEAAH
+LARSTKGSNKHSTINSREIQTAVRLLLPGEIGKHTVSKATKAVIRFQ-------------
+-RCE--------
+>H2B.W_Canis_lupus_familiaris_XP_548517.2 XP_548517.2 histone: H2B variant: H2B.W organism: Canis lupus familiaris
+MIPGKPEEGKGSSEGPICDTEVACDVRKCSDYKGASAPQQPPLSVLLSCWEGEPHMAE--
+---PGCETS--------------SEECLGTKEPREAEPETP------KR---KKP-----
+RRQCHRRCRRSRSDSFAI--YFPRVLKQVDEGLSLSQKAVSIMDSFVKDIFERIADEASR
+LAR----STKRSTITSREIQTAVRLLLPGEIGKYAVSEATKALMRNQVGALEKQVKNVLS
+LGCG--------
