@@ -277,31 +277,51 @@ var menuDiv = document.getElementById("menu");
 
 
 function upd_msa(name) {
+
+// var seqs;
+
+
+// var xhr = msa.io.xhr;
+// var gffParser = msa.io.gff;
+
+// xhr("../seeds/"+name+".gff3", function(err, request, body) {
+//   var features = gffParser.parseSeqs(body);
+//   m.seqs.addFeatures(features);
+
+// xhr("../seeds/"+name+".fasta", function(err, request, body) {
+// seqs =  msa.io.fasta.parse(body);
+// m.seqs.add(seqs);
+// m.seqs.add(seq2);
+// m.render();
+// });
+
+// });
+
+
+
+
+
+//Add consensus
+
+
  var m = msa({
   el: rootDiv,
-  importURL: "../seeds/"+name+".fasta",
+ importURL: "../seeds/"+name+".fasta",
+ // seqs:seqs,
   all: true,
   vis: {
     labelId: false,
     conserv: true,
-    all: true,
-    consensus: true
   },
   zoomer: {
   labelNameLength:350,
-  alignmentHeight: 400},
+  alignmentHeight: "auto" },
    
 //colorscheme: {scheme: "pid"}
 });
 
 
-//Add consensus
-var seq = {
-          seq: "AAAAAAAA",
-          id: "0",
-          name: "Consensus",
-          label:"Consensus"
-        }
+
 //m.g.zoomer.set("alignmentHeight", 5);
 
 var fun={}
@@ -352,7 +372,11 @@ fun.run = function(letter,opts){
 
 m.g.colorscheme.addDynScheme("fscheme", fun);
 m.g.colorscheme.set("scheme", "fscheme");
-m.render();
+//m.render();
+
+
+
+
 // the menu is independent to the MSA container
 var menuOpts = {};
 menuOpts.el = menuDiv;
@@ -361,17 +385,49 @@ menuOpts.menu = "small";
 var defMenu = new msa.menu.defaultmenu(menuOpts);
 m.addView("menu", defMenu);
 
-// call render at the end to display the whole MSA
-//m.render();
-
-var gffParser = msa.io.gff;
 var xhr = msa.io.xhr;
+var gffParser = msa.io.gff;
+
+//Now we will add consensus with features
+//first we need to get features and load them.
 xhr("../seeds/"+name+".gff3", function(err, request, body) {
   var features = gffParser.parseSeqs(body);
   m.seqs.addFeatures(features);
-});
 
-};
+//Nex in this asyn call we will wait till msa has loaded all sequences and add consensus
+waitForSeqs();
+
+    });
+
+function waitForSeqs(){
+    if(m.seqs.length > 0){
+        //variable exists, do what you want
+        var seqc = {
+          seq: m.g.stats._consensus,
+          id: "10c",
+          name: "Consensus",
+          label:"Consensus"
+        }
+        m.seqs.unshift(seqc);
+ 
+  //m.render();
+  console.log(m);
+}
+    else{
+        setTimeout(waitForElement, 100);
+    }
+}
+
+// call render at the end to display the whole MSA
+//m.render();
+
+
+
+
+
+
+
+}
 
 
 </script>

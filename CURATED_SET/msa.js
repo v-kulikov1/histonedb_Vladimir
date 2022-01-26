@@ -17062,6 +17062,7 @@
 	  adjustHeight: function adjustHeight() {
 	    if (this.g.zoomer.get("alignmentHeight") === "auto") {
 	      // TODO: fix the magic 5
+
 	      return this.el.style.height = this.g.zoomer.get("rowHeight") * this.model.length + 5;
 	    } else {
 	      return this.el.style.height = this.g.zoomer.get("alignmentHeight");
@@ -17216,8 +17217,9 @@
 	      events.mousein = "_onmousein";
 	      events.mouseout = "_onmouseout";
 	    }
+	    if (this.g.zoomer.get("alignmentHeight") !=	 "auto") { //This if block wrapper added by AKSh to prevent scrolling when height is auto - this is a hack, apparently problem is somewhere else.
 	
-	    events.mousewheel = "_onmousewheel";
+	    events.mousewheel = "_onmousewheel";}
 	    events.DOMMouseScroll = "_onmousewheel";
 	    this.delegateEvents(events);
 	
@@ -17273,8 +17275,19 @@
 	  },
 	
 	  render: function render() {
-	
-	    this.el.setAttribute('height', this.g.zoomer.get("alignmentHeight") + "px");
+		
+/////This codeblock inserted by AKSh for auto height to work properly for th alignment block, and not only for labels.
+		let newheight;
+		if (this.g.zoomer.get("alignmentHeight") === "auto") {
+	      // TODO: fix the magic 5
+	     
+	      newheight = this.g.zoomer.get("rowHeight") * (this.model.length+6) + 5;
+	    } else {
+	      newheight = this.g.zoomer.get("alignmentHeight");
+	    }
+	    //this.el.setAttribute('height', this.g.zoomer.get("alignmentHeight") + "px"); // commented by AKSh
+	    this.el.setAttribute('height', newheight.toString(10) + "px"); // added by AKSh
+
 	    this.el.setAttribute('width', this.g.zoomer.getAlignmentWidth() + "px");
 	
 	    this.g.zoomer._checkScrolling(this._checkScrolling([this.g.zoomer.get('_alignmentScrollLeft'), this.g.zoomer.get('_alignmentScrollTop')]), { header: "canvasseq" });
@@ -17418,7 +17431,7 @@
 	  _onmousewheel: function _onmousewheel(e) {
 	    var delta = mouse.wheelDelta(e);
 	    this.g.zoomer.set('_alignmentScrollLeft', this.g.zoomer.get('_alignmentScrollLeft') + delta[0]);
-	    this.g.zoomer.set('_alignmentScrollTop', this.g.zoomer.get('_alignmentScrollTop') + delta[1]);
+	    this.g.zoomer.set('_alignmentScrollTop', this.g.zoomer.get('_alignmentScrollTop') + delta[1]); 
 	    return e.preventDefault();
 	  },
 	
@@ -18194,7 +18207,7 @@
 	    this.el.className = "biojs_msa_labelblock";
 	    this.el.style.display = "inline-block";
 	    this.el.style.verticalAlign = "top";
-	    this.el.style.overflowY = "auto";
+	    this.el.style.overflowY = "auto"; 
 	    this.el.style.overflowX = "hidden";
 	    this.el.style.fontSize = this.g.zoomer.get('labelFontsize') + "px";
 	    this.el.style.lineHeight = "" + this.g.zoomer.get("labelLineHeight");
@@ -18204,6 +18217,9 @@
 	
 	  _setHeight: function _setHeight() {
 	    return this.el.style.height = this.g.zoomer.get("alignmentHeight") + "px";
+	    //console.log((this.g.seqs.length*20).toString(10) + "px"); // suggested by AKSh
+	    //return this.el.style.height = (this.g.seqs.length*20).toString(10) + "px"; // suggested by AKSh
+
 	  }
 	});
 	exports.default = View;
