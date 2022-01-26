@@ -284,18 +284,27 @@ function upd_msa(name) {
   vis: {
     labelId: false,
     conserv: true,
-    all: true
+    all: true,
+    consensus: true
   },
   zoomer: {
   labelNameLength:350,
   alignmentHeight: 400},
    
 //colorscheme: {scheme: "pid"}
-})
+});
+
+
+//Add consensus
+var seq = {
+          seq: "AAAAAAAA",
+          id: "0",
+          name: "Consensus",
+          label:"Consensus"
+        }
+//m.g.zoomer.set("alignmentHeight", 5);
 
 var fun={}
-
-var myseq = 0.8;
 
 fun.init = function(){
   // you have here access to the conservation or the sequence object
