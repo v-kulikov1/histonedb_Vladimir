@@ -1,5 +1,7 @@
 # CURATED SET of histone sequences and their classification
 
+The interactive web-page with data is at [http://intbio.org/histonedb/CURATED_SET/html/tree_d3.html](http://intbio.org/histonedb/CURATED_SET/html/tree_d3.html)
+
 This directory includes:
 1. list of all curated histone sequences in csv format [histones.csv](histones.csv) - this file is manully edited and curated.
 2. [classification.json](classification.json) - this file includes all info about histone classification, types, variants, sub-variants, etc. [classification_schema.json](classification.schema.json) - defines JSON Schema.
