@@ -25177,7 +25177,7 @@ var tree = function () {
 
         var tree_div = d3.select(div)
             .append("h2")
-            .text("This phylogenetic tree is built from the core part (see annotation on MSA) of the alignment. Click on nodes to highligh sequences, collapse/expand branches.")
+            .text("This phylogenetic tree is built from the core part (see annotation on MSA) of the alignment. Click on sequence to highlight tree node. Click on nodes to highligh sequences, collapse/expand branches.")
             .append("div")
             .style("width", (conf.layout.width() +  "px"))
             .attr("class", "tnt_groupDiv");
