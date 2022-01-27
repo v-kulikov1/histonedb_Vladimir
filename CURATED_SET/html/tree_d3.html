@@ -40,7 +40,9 @@ label {
 </style>
 <head>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="../msa.js"></script>
+<script src="../js/msa.min.js"></script>
+<!--- <script src="../js/msa.js">Use this for development</script>. -->
+
 
 </head>
 <body>
@@ -77,7 +79,7 @@ for (const C of [Array, String, TypedArray]) {
 
 d3.json("https://intbio.org/histonedb/CURATED_SET/classification.json").then(function(data) {
     
-console.log(data);
+//console.log(data);
 
 var datah={"name": "root"};
 
@@ -311,12 +313,18 @@ function upd_msa(name) {
   all: true,
   vis: {
     labelId: false,
-    conserv: true,
+    conserv: false,
+    seqlogo: true
   },
   zoomer: {
   labelNameLength:350,
-  alignmentHeight: "auto" },
+  alignmentHeight:  "auto" 
+},
    
+   conf: {
+    debug: true,
+    dropImport: true
+  }
 //colorscheme: {scheme: "pid"}
 });
 
@@ -405,11 +413,15 @@ function waitForSeqs(){
         var seqc = {
           seq: m.g.stats._consensus,
           id: "10c",
+          ids: ["Consensus"], //This is important for tree not to hide it. Tree shoud have a root node named consensus.
           name: "Consensus",
           label:"Consensus"
         }
         m.seqs.unshift(seqc);
- 
+  //After that we add a tree
+ m.importURL("../seeds/"+name+".tree", function(){
+ console.log("tree loaded");
+});
   //m.render();
   console.log(m);
 }
