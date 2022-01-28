@@ -238,17 +238,20 @@ function nodes2Tree(nodes, current) {
   return root;
 }
 
-function toggleTree(node, b) {
-  if(!(node.get("virtual"))){
-    node.set("hidden", b);
-  }
-  node.set("collapsed", b);
+function toggleTree(node, b ) {
+//AKSh What we actually need to try to do here, is not to fire rerender for every collapsed node....
   var childs = node._children || node.children;
   if (childs !== undefined && childs.length > 0) {
     childs.forEach(function(child) {
-      toggleTree(child, b);
+      toggleTree(child, b, true);
     });
   }
+//AKSh moved this block after children - ideally we should not trigger many redraw events for children, let's try to do
+  if(!(node.get("virtual"))){ //Optimized by AKSh to trigger updates simultaneously for hidden and collapsed
+    node.set({"hidden":b,"collapsed":b});
+  }
+  else{
+  node.set({"collapsed":b});}
 }
 
 },{"backbone-viewj":15,"d3":46,"tnt.tree":142,"underscore":154}],4:[function(require,module,exports){
@@ -1460,6 +1463,7 @@ _.extend(Model.prototype, Events, {
     // the core primitive operation of a model, updating the data and notifying
     // anyone who needs to know about the change in state. The heart of the beast.
   set: function(key, val, options) {
+
     var attr, attrs, unset, changes, silent, changing, prev, current;
     if (key == null) return this;
 

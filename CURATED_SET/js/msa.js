@@ -24570,8 +24570,12 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	  }
 	
 	  // count the occurrences of the chars at a position
-	  _.each(this.seqs, function (el) {
-	    _.each(el, function (c, pos) {
+	 
+	  //_.each(this.seqs, function (el) {// AKSh
+	  _.each(this.mseqs.models, function (el) { // Modified by AKSh below to remove hidden sequences and Consensus during calculation
+	   if((!el.attributes.hidden) && (el.attributes.id != "Consensus")){ // AKSh
+
+	    _.each(el.attributes.seq, function (c, pos) { //AKSH el => el.attributes.seq
 	      if (ignoredChars.indexOf(c) >= 0) return;
 	      if (occs[pos] === undefined) {
 	        occs[pos] = {};
@@ -24585,7 +24589,9 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      }
 	      totalPerPos[pos]++;
 	    });
-	  });
+	  }
+	}
+	);
 	
 	  // normalize to 1
 	  _.each(occs, function (el, pos) {
@@ -24603,7 +24609,10 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	  var total = 0;
 	
 	  // count the occurences of the chars of a position
-	  _.each(this.seqs, function (el) {
+//	  _.each(this.seqs, function (el) {// AKSh
+	  _.each(this.mseqs.models, function (el) { // Modified by AKSh below to remove hidden sequences and Consensus during calculation
+	  if((!el.attributes.hidden) && (el.attributes.id != "Consensus")){ // AKSh
+
 	    _.each(el, function (c) {
 	      if (occ[c] === undefined) {
 	        occ[c] = 0;
@@ -24611,7 +24620,7 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      occ[c]++;
 	      return total++;
 	    });
-	  });
+	  }});
 	
 	  // normalize to 1
 	  occ = _.mapValues(occ, function (val) {
@@ -24731,10 +24740,13 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	// @returns consenus sequence
 	stat.prototype.consensusCalc = function consensusCal() {
 	  var occs = new Array(this.maxLength());
-	
+
 	  // count the occurrences of the chars of a position
-	  _.each(this.seqs, function (el) {
-	    _.each(el, function (c, pos) {
+	  //_.each(this.seqs, function (el) { // Modified by AKSh below to remove hidden sequences and Consensus during calculation
+	  _.each(this.mseqs.models, function (el) { // Modified by AKSh below to remove hidden sequences and Consensus during calculation
+	  if((!el.attributes.hidden) && (el.attributes.id != "Consensus")){ // AKSh
+	  //	console.log(el.attributes.hidden);
+	  	_.each(el.attributes.seq, function (c, pos) {//AKSh
 	      if (occs[pos] === undefined) {
 	        occs[pos] = {};
 	      }
@@ -24743,7 +24755,11 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      }
 	      occs[pos][c]++;
 	    });
-	  });
+	  }
+}
+
+
+	  );
 	
 	  // now pick the char with most occurrences
 	  this._consensus = _.reduce(occs, function (memo, occ) {
@@ -24753,10 +24769,17 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      return occ[key];
 	    });
 	  }, "");
-	
+
+///Added by AKSh updates consensus sequnce on the MSA render !!!
+	  if (typeof this.mseqs.models[0] !== 'undefined'){ //
+	  	if(this.mseqs.models[0].attributes.id == 'Consensus'){//
+	  this.mseqs.models[0].attributes.seq=this._consensus;//
+		}}//
+	  
 	  return this._consensus;
 	};
 	
+
 	// seqs: array of sequences (strings)
 	// consensus: calculated consensus seq
 	// calculates for each sequence
