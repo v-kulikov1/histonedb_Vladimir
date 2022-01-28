@@ -16173,7 +16173,7 @@
 	    return this.g = g;
 	  },
 	
-	  development: { "msa-tnt": "../js/msa-tnt_bundle.js", //Path has been adjusted by AKSh
+	  development: { "msa-tnt": "../js/msa-tnt_bundle.min.js", //Path has been adjusted by AKSh
 	    "biojs-io-newick": "../js/biojs-io-newick.min.js" //Path has been adjusted by AKSh
 	  },
 	
