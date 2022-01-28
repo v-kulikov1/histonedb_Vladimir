@@ -10335,6 +10335,7 @@
 	      var args = slice.call(arguments, 1);
 	      if (!eventsApi(this, 'trigger', name, args)) return this;
 	      var events = this._events[name];
+
 	      var allEvents = this._events.all;
 	      if (events) triggerEvents(events, args);
 	      if (allEvents) triggerEvents(allEvents, arguments);
@@ -19466,6 +19467,7 @@
 	    var text = "";
 	    for (var i = 0; i < seqs.length; i++) {
 	      var seq = seqs[i];
+	      if(typeof(seq.hidden) != "undefined") {if(seq.hidden){continue;}} //AKSh inserted to note output hidden sequences to FASTA!!!
 	      if (access != null) {
 	        seq = access(seq);
 	      }
@@ -24478,7 +24480,10 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	  } else {
 	    this.addSeqs(seqs);
 	    this._reset();
-	    this.trigger("reset");
+	//    this.trigger("reset"); //AKSh this is a very crude hack that allows
+	// to speed up collapsing tree nodes with many sequnces. treeToggle iterates through evey node and on every node reset is triggered here
+	// now the problem is that if we comment this line out for whatever reasone SeqLogo is not calculated on first display (but is calculated when tree nodes are collapsed)
+
 	  }
 	};
 	
@@ -24992,16 +24997,16 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	
 	    // add menu config to the global object
 	    this.msa.g.menuconfig = new _settings2.default(data.menu);
-	
-	    this.addView("10_import", new _ImportMenu2.default({ model: this.msa.seqs, g: this.msa.g, msa: this.msa }));
+
+//AKSh	  //  this.addView("10_import", new _ImportMenu2.default({ model: this.msa.seqs, g: this.msa.g, msa: this.msa }));
 	    this.addView("15_ordering", new _OrderingMenu2.default({ model: this.msa.seqs, g: this.msa.g }));
 	    this.addView("20_filter", new _FilterMenu2.default({ model: this.msa.seqs, g: this.msa.g }));
 	    this.addView("30_selection", new _SelectionMenu2.default({ model: this.msa.seqs, g: this.msa.g }));
 	    this.addView("40_vis", new _VisMenu2.default({ model: this.msa.seqs, g: this.msa.g }));
 	    this.addView("50_color", new _ColorMenu2.default({ model: this.msa.seqs, g: this.msa.g }));
-	    this.addView("70_extra", new _ExtraMenu2.default({ model: this.msa.seqs, g: this.msa.g, msa: this.msa }));
+//AKSh	    this.addView("70_extra", new _ExtraMenu2.default({ model: this.msa.seqs, g: this.msa.g, msa: this.msa }));
 	    this.addView("80_export", new _ExportMenu2.default({ model: this.msa.seqs, g: this.msa.g, msa: this.msa }));
-	    this.addView("90_help", new _HelpMenu2.default({ g: this.msa.g }));
+//AKSh	 //   this.addView("90_help", new _HelpMenu2.default({ g: this.msa.g }));
 	    if (this.msa.g.config.get("debug")) {
 	      return this.addView("95_debug", new _DebugMenu2.default({ g: this.msa.g }));
 	    }
@@ -25119,7 +25124,7 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	
 	    this.setName("Filter");
 	    this.addNode("Hide columns by threshold", function (e) {
-	      var threshold = prompt("Enter threshold (in percent)", 20);
+	      var threshold = prompt("Enter conservation threshold (in percent)", 20);
 	      threshold = threshold / 100;
 	      var maxLen = _this.model.getMaxLength();
 	      var hidden = [];
@@ -25142,7 +25147,7 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	    });
 	
 	    this.addNode("Hide columns by gaps", function () {
-	      var threshold = prompt("Enter threshold (in percent)", 20);
+	      var threshold = prompt("Enter threshold (in percent)\n Note: SeqLogo and annotation will not show correctly", 20);
 	      threshold = threshold / 100;
 	      var maxLen = _this.model.getMaxLength();
 	      var hidden = [];
@@ -25169,15 +25174,15 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      return _this.g.columns.set("hidden", hidden);
 	    });
 	
-	    this.addNode("Hide seqs by identity", function () {
-	      var threshold = prompt("Enter threshold (in percent)", 20);
-	      threshold = threshold / 100;
-	      return _this.model.each(function (el) {
-	        if (el.get('identity') < threshold) {
-	          return el.set('hidden', true);
-	        }
-	      });
-	    });
+	//AKSh    this.addNode("Hide seqs by identity", function () {
+	//AKSh      var threshold = prompt("Enter threshold (in percent)", 20);
+	//AKSh      threshold = threshold / 100;
+	//AKSh      return _this.model.each(function (el) {
+	//AKSh        if (el.get('identity') < threshold) {
+	//AKSh          return el.set('hidden', true);
+	//AKSh        }
+	//AKSh      });
+	//AKSh    });
 	
 	    this.addNode("Hide seqs by selection", function () {
 	      var hidden = _this.g.selcol.where({ type: "row" });
@@ -25192,27 +25197,27 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      });
 	    });
 	
-	    this.addNode("Hide seqs by gaps", function () {
-	      var threshold = prompt("Enter threshold (in percent)", 40);
-	      return _this.model.each(function (el, i) {
-	        var seq = el.get('seq');
-	        var gaps = seq.reduce(function (memo, c) {
-	          return c === '-' ? ++memo : undefined;
-	        }, 0);
-	        if (gaps > threshold) {
-	          return el.set('hidden', true);
-	        }
-	      });
-	    });
+	//AKSh    this.addNode("Hide seqs by gaps", function () {
+	//AKSh      var threshold = prompt("Enter threshold (in percent)", 40);
+	//AKSh      return _this.model.each(function (el, i) {
+	//AKSh        var seq = el.get('seq');
+	//AKSh        var gaps = seq.reduce(function (memo, c) {
+	//AKSh          return c === '-' ? ++memo : undefined;
+	//AKSh        }, 0);
+	//AKSh//AKSh        if (gaps > threshold) {
+	//AKSh          return el.set('hidden', true);
+	//AKSh        }
+	//AKSh      });
+	//AKSh    });
 	
-	    this.addNode("Reset", function () {
-	      _this.g.columns.set("hidden", []);
-	      return _this.model.each(function (el) {
-	        if (el.get('hidden')) {
-	          return el.set('hidden', false);
-	        }
-	      });
-	    });
+	//AKSh    this.addNode("Reset", function () {
+	//AKSh      _this.g.columns.set("hidden", []);
+	//AKSh      return _this.model.each(function (el) {
+	//AKSh        if (el.get('hidden')) {
+	//AKSh          return el.set('hidden', false);
+	//AKSh        }
+	//AKSh      });
+	//AKSh    });
 	
 	    this.el.appendChild(this.buildDOM());
 	    return this;
@@ -25318,21 +25323,21 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	    }
 	
 	    // other
-	    this.addNode("Reset", function () {
-	      _this.g.vis.set("labels", true);
-	      _this.g.vis.set("sequences", true);
-	      _this.g.vis.set("metacell", true);
-	      _this.g.vis.set("conserv", true);
-	      _this.g.vis.set("labelId", true);
-	      _this.g.vis.set("labelName", true);
-	      _this.g.vis.set("labelCheckbox", false);
-	      _this.g.vis.set("seqlogo", false);
-	      _this.g.vis.set("gapHeader", false);
-	      _this.g.vis.set("leftHeader", true);
-	      _this.g.vis.set("metaGaps", true);
-	      _this.g.vis.set("metaIdentity", true);
-	      return _this.g.vis.set("metaLinks", true);
-	    });
+//AKSh	    this.addNode("Reset", function () {
+//AKSh	      _this.g.vis.set("labels", true);
+//AKSh	      _this.g.vis.set("sequences", true);
+//AKSh	      _this.g.vis.set("metacell", true);
+//AKSh	      _this.g.vis.set("conserv", true);
+//AKSh	      _this.g.vis.set("labelId", true);
+//AKSh	      _this.g.vis.set("labelName", true);
+//AKSh	      _this.g.vis.set("labelCheckbox", false);
+//AKSh	      _this.g.vis.set("seqlogo", false);
+//AKSh	      _this.g.vis.set("gapHeader", false);
+//AKSh	      _this.g.vis.set("leftHeader", true);
+//AKSh	      _this.g.vis.set("metaGaps", true);
+//AKSh	      _this.g.vis.set("metaIdentity", true);
+//AKSh	      return _this.g.vis.set("metaLinks", true);
+//AKSh	    });
 	
 	    // TODO: make more efficient
 	    dom.removeAllChilds(this.el);
@@ -25365,18 +25370,18 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	    vis.push({ name: "residues indices", id: "markers" });
 	    vis.push({ name: "ID/Label", id: "labels" });
 	    //vis.push name: "Sequences", id: "sequences"
-	    vis.push({ name: "meta info (Gaps/Ident)", id: "metacell" });
+	   //AKSh vis.push({ name: "meta info (Gaps/Ident)", id: "metacell" });
 	    vis.push({ name: "overview panel", id: "overviewbox" });
 	    vis.push({ name: "sequence logo", id: "seqlogo" });
 	    vis.push({ name: "gap weights", id: "gapHeader" });
 	    vis.push({ name: "conservation weights", id: "conserv" });
-	    vis.push({ name: "scale slider", id: "scaleslider" });
+	//AKSh    vis.push({ name: "scale slider", id: "scaleslider" });
 	    //vis.push name: "Left header", id: "leftHeader"
 	    vis.push({ name: "Label", id: "labelName" });
-	    vis.push({ name: "ID", id: "labelId" });
+	//AKSh    vis.push({ name: "ID", id: "labelId" });
 	    //vis.push name: "Label checkbox", id: "labelCheckbox"
-	    vis.push({ name: "gaps %", id: "metaGaps" });
-	    vis.push({ name: "identity score", id: "metaIdentity" });
+	//AKSh    vis.push({ name: "gaps %", id: "metaGaps" });
+	 //AKSh   vis.push({ name: "identity score", id: "metaIdentity" });
 	    // vis.push name: "Meta links", id: "metaLinks"
 	    return vis;
 	  }
@@ -25593,12 +25598,12 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	
 	    var models = [];
 	
-	    models.push({ text: "ID " + arrowUp, comparator: "id" });
+	//AKSh    models.push({ text: "ID " + arrowUp, comparator: "id" });
 	
-	    models.push({ text: "ID " + arrowDown, comparator: function comparator(a, b) {
-	        // auto converts to string for localeCompare
-	        return -("" + a.get("id")).localeCompare("" + b.get("id"), [], { numeric: true });
-	      } });
+	//AKSh    models.push({ text: "ID " + arrowDown, comparator: function comparator(a, b) {
+	//AKSh        // auto converts to string for localeCompare
+	//AKSh        return -("" + a.get("id")).localeCompare("" + b.get("id"), [], { numeric: true });
+	//AKSh      } });
 	
 	    models.push({ text: "Label " + arrowUp, comparator: "name" });
 	
@@ -25626,55 +25631,55 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	      });
 	    };
 	
-	    models.push({ text: "Identity " + arrowUp, comparator: function comparator(a, b) {
-	        var val = _this2.ident[a.id] - _this2.ident[b.id];
-	        console.log(_this2.ident[a.id], _this2.ident[b.id]);
-	        if (val > 0) {
-	          return 1;
-	        }
-	        if (val < 0) {
-	          return -1;
-	        }
-	        return 0;
-	      }, precode: setIdent });
+	//AKSh    models.push({ text: "Identity " + arrowUp, comparator: function comparator(a, b) {
+	//AKSh        var val = _this2.ident[a.id] - _this2.ident[b.id];
+	//AKSh        console.log(_this2.ident[a.id], _this2.ident[b.id]);
+	//AKSh        if (val > 0) {
+	//AKSh          return 1;
+//AKSh	        }
+	//AKSh        if (val < 0) {
+	//AKSh          return -1;
+	//AKSh        }
+	//AKSh        return 0;
+	//AKSh      }, precode: setIdent });
 	
-	    models.push({ text: "Identity " + arrowDown, comparator: function comparator(a, b) {
-	        var val = _this2.ident[a.id] - _this2.ident[b.id];
-	        if (val > 0) {
-	          return -1;
-	        }
-	        if (val < 0) {
-	          return 1;
-	        }
-	        return 0;
-	      }, precode: setIdent });
+	//AKSh    models.push({ text: "Identity " + arrowDown, comparator: function comparator(a, b) {
+	//AKSh        var val = _this2.ident[a.id] - _this2.ident[b.id];
+	//AKSh        if (val > 0) {
+	//AKSh          return -1;
+	//AKSh        }
+	//AKSh        if (val < 0) {
+	//AKSh          return 1;
+	//AKSh        }
+	//AKSh        return 0;
+	 //AKSh     }, precode: setIdent });
 	
-	    models.push({ text: "Gaps " + arrowUp, comparator: function comparator(a, b) {
-	        var val = _this2.gaps[a.id] - _this2.gaps[b.id];
-	        if (val > 0) {
-	          return 1;
-	        }
-	        if (val < 0) {
-	          return -1;
-	        }
-	        return 0;
-	      }, precode: setGaps });
+	//AKSh    models.push({ text: "Gaps " + arrowUp, comparator: function comparator(a, b) {
+	//AKSh        var val = _this2.gaps[a.id] - _this2.gaps[b.id];
+	 //AKSh       if (val > 0) {
+	 //AKSh        return 1;
+	 //AKSh       }
+	 //AKSh       if (val < 0) {
+	  //AKSh        return -1;
+	  //AKSh      }
+	 //AKSh       return 0;
+	 //AKSh     }, precode: setGaps });
 	
-	    models.push({ text: "Gaps " + arrowDown, comparator: function comparator(a, b) {
-	        var val = _this2.gaps[a.id] - _this2.gaps[b.id];
-	        if (val < 0) {
-	          return 1;
-	        }
-	        if (val > 0) {
-	          return -1;
-	        }
-	        return 0;
-	      }, precode: setGaps });
+	 //AKSh   models.push({ text: "Gaps " + arrowDown, comparator: function comparator(a, b) {
+	 //AKSh       var val = _this2.gaps[a.id] - _this2.gaps[b.id];
+	 //AKSh       if (val < 0) {
+	 //AKSh         return 1;
+	   //AKSh     }
+	  //AKSh      if (val > 0) {
+	  //AKSh        return -1;
+	  //AKSh      }
+	  //AKSh      return 0;
+	  //AKSh    }, precode: setGaps });
 	
-	    models.push({ text: "Consensus to top", comparator: function comparator(seq) {
-	        return !seq.get("ref");
-	      }
-	    });
+	//AKSh    models.push({ text: "Consensus to top", comparator: function comparator(seq) {
+	//AKSh        return !seq.get("ref");
+	  //AKSh    }
+	 //AKSh   });
 	
 	    return models;
 	  }
@@ -25816,36 +25821,36 @@ seqs.on("add change reset ", mSeqsPluck, this);
 	
 	    this.setName("Export");
 	
-	    this.addNode("Share view (URL)" + ShareSym, function () {
-	      return _exporter2.default.shareLink(_this.msa, function (link) {
-	        return window.open(link, '_blank');
-	      });
-	    });
+	 //AKSh   this.addNode("Share view (URL)" + ShareSym, function () {
+	 //AKSh//AKSh     return _exporter2.default.shareLink(_this.msa, function (link) {
+	 //AKSh       return window.open(link, '_blank');
+	  //AKSh    });
+	//AKSh    });
 	
-	    this.addNode("View in Jalview", function () {
-	      var url = _this.g.config.get('url');
-	      if (!(typeof url !== "undefined" && url !== null)) {
-	        return alert("Sequence weren't imported via an URL");
-	      } else {
-	        if (url.indexOf("localhost" || url === "dragimport")) {
-	          return _exporter2.default.publishWeb(_this.msa, function (link) {
-	            return _exporter2.default.openInJalview(link, _this.g.colorscheme.get("scheme"));
-	          });
-	        } else {
-	          return _exporter2.default.openInJalview(url, _this.g.colorscheme.get("scheme"));
-	        }
-	      }
-	    });
+	 //AKSh   this.addNode("View in Jalview", function () {
+	//AKSh      var url = _this.g.config.get('url');
+	//AKSh      if (!(typeof url !== "undefined" && url !== null)) {
+	//AKSh        return alert("Sequence weren't imported via an URL");
+	//AKSh      } else {
+	//AKSh        if (url.indexOf("localhost" || url === "dragimport")) {
+	 //AKSh         return _exporter2.default.publishWeb(_this.msa, function (link) {
+	 //AKSh//AKSh           return _exporter2.default.openInJalview(link, _this.g.colorscheme.get("scheme"));
+	   //AKSh       });
+	 //AKSh       } else {
+	  //AKSh        return _exporter2.default.openInJalview(url, _this.g.colorscheme.get("scheme"));
+	  //AKSh      }
+	//AKSh      }
+	//AKSh    });
 	
 	    this.addNode("Export alignment (FASTA)", function () {
 	      return _exporter2.default.saveAsFile(_this.msa, "all.fasta");
 	    });
 	
-	    this.addNode("Export alignment (URL)", function () {
-	      return _exporter2.default.publishWeb(_this.msa, function (link) {
-	        return window.open(link, '_blank');
-	      });
-	    });
+	  //AKSh  this.addNode("Export alignment (URL)", function () {
+	  //AKSh    return _exporter2.default.publishWeb(_this.msa, function (link) {
+	 //AKSh       return window.open(link, '_blank');
+	 //AKSh     });
+	 //AKSh   });
 	
 	    this.addNode("Export selected sequences (FASTA)", function () {
 	      return _exporter2.default.saveSelection(_this.msa, "selection.fasta");

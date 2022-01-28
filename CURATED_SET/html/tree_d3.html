@@ -40,7 +40,7 @@ label {
 </style>
 <head>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="../js/msa.min.js"></script>
+<script src="../js/msa.js"></script>
 <!--- <script src="../js/msa.js">Use this for development</script>. -->
 
 
@@ -314,7 +314,7 @@ function upd_msa(name) {
   vis: {
     labelId: false,
     conserv: false,
-    seqlogo: true
+    seqlogo: false //should be false, we trigger it below manually.
   },
   zoomer: {
   labelNameLength:350,
@@ -322,8 +322,9 @@ function upd_msa(name) {
 },
    
    conf: {
-    debug: true,
-    dropImport: true
+    debug: false,
+    dropImport: true//,
+   // manualRendering:true
   }
 //colorscheme: {scheme: "pid"}
 });
@@ -389,7 +390,7 @@ m.g.colorscheme.set("scheme", "fscheme");
 var menuOpts = {};
 menuOpts.el = menuDiv;
 menuOpts.msa = m;
-menuOpts.menu = "small";
+//menuOpts.menu = "small";
 var defMenu = new msa.menu.defaultmenu(menuOpts);
 m.addView("menu", defMenu);
 
@@ -421,9 +422,11 @@ function waitForSeqs(){
   //After that we add a tree
  m.importURL("../seeds/"+name+".tree", function(){
  console.log("tree loaded");
+ //Trigger SeqLogo from menu, see msa.js:24482 why we need to do this hack!
+ console.log(defMenu.views["40_vis"]._nodes[3].callback());
 });
   //m.render();
-  console.log(m);
+ 
 }
     else{
         setTimeout(waitForSeqs, 100);
