@@ -4,9 +4,8 @@
 What information do we need:
 
 1. Histone type
-2. Histone variant group
-3. Histone variant
-3. Canonical isoform
+2. Histone variant (Maximally specific, histone variant group will be devised from classification JSON).
+3. Canonical isoform (This is experimental)
 4. HGNC symbol
 5. NCBI gene ID
 6. Ensembl gene ID
@@ -26,6 +25,14 @@ variant_group=>
 1. New histone gene nomenclature and paper from HGNC
 2. Look at data in RefSeq, Ensembl
 3. Original research papers
+
+## What proteins were chosen
+
+Protein coding transcripts from Ensemble release 105 that 
+1. Are in CCDS
+2. Have a TSL1, TSL2 or TSL3, unless literature data is available to support lower levels of TSL.
+3. If transcripts give rise to identical protein sequence only one record is retained.
+4. If recent literature data is available suggesting presence of currently unannotated proteins, this was added on top.
 
 #TODO
 1. add geneid to human histones
