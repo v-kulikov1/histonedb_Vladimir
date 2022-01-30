@@ -153,7 +153,7 @@ class CuratedSet(object):
                 continue
             if row['accession'] not in self.fasta_seqrec.keys():
                 self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']),
-                                                                id=(row['variant']+"_").split("(")[0][:-1]+'_'+row['organism'].replace(' ','_')+'_'+row['accession'],
+                                                                id=(row['variant']+"_").split("(")[0][:-1]+'_'+row['organism'].replace(' ','_')+('_' if len(row['hgnc_gene_name'])>0 else '')+row['hgnc_gene_name'].replace(' ','_')+'_'+row['accession'],
                                                                 description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
 
     def get_count(self): return self.data.shape[0]
@@ -355,8 +355,8 @@ class CuratedSet(object):
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
         process = subprocess.Popen([muscle]+options, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        sequences = "\n".join([s.format("fasta") for key, s in self.fasta_seqrec.items() if key in accessions])
-
+        
+        sequences = "\n".join([self.fasta_seqrec[key].format("fasta") for key in accessions])
         aln, error = process.communicate(sequences.encode('utf-8'))
         if debug:
             print(sequences)
@@ -365,7 +365,6 @@ class CuratedSet(object):
             print(error.decode('utf-8')) 
             print("Stdout:")
             print(aln.decode('utf-8')) 
-
         seqFile = io.StringIO()
         seqFile.write(aln.decode('utf-8'))
         seqFile.seek(0)
