@@ -24,6 +24,8 @@ accession, type, variant_group, variant, doublet, gi, geneid, taxonomyid, organi
 - hgnc_gene_name - optional
 - taxonomy_id - NCBI taxonomy id of the sequence.
 - organism - NCBI human readable taxonomy name.
+- phylum
+- class
 - taxonomy_group - this is usually taxonomy class if available or higher order rank if not. We adhere to NCBI current taxnomy name E.g. Mammalia, Magnoliopsida, etc.
 - info - information about this particular sequence - including its function and references to literature as [PMID].
 - references - PMIDs of papers where info about this sequence can be found.

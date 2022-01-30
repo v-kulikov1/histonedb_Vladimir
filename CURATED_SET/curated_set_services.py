@@ -78,14 +78,14 @@ def muscle_p2p_aln(msa1,msa2, options=[],debug = False):
     return msa
 
 
-# def show_msa_with_features(self, hist_type=None, variant=None, subvariant=None, taxonomyid=None, organism=None, phylum=None, taxonomy_class=None,
+# def show_msa_with_features(self, hist_type=None, variant=None, subvariant=None, taxonomy_id=None, organism=None, phylum=None, taxonomy_class=None,
 #                              shading_modes=['charge_functional'], legend=False, title='', logo=False, hideseqs=False, splitN=20, setends=[],
 #                              ruler=False, show_seq_names=True, funcgroups=None, show_seq_length=False, debug=False):
 #         df = self.data
 #         if hist_type: df = df.loc[self.data['type'] == hist_type]
 #         if variant: df = df.loc[self.data['variant'] == variant]
 #         if subvariant: df = df.loc[self.data['subvariant'] == subvariant]
-#         if taxonomyid: df = df.loc[self.data['taxonomyid'] == taxonomyid]
+#         if taxonomy_id: df = df.loc[self.data['taxonomy_id'] == taxonomy_id]
 #         if organism: df = df.loc[self.data['organism'] == organism]
 #         if phylum: df = df.loc[self.data['phylum'] == phylum]
 #         if taxonomy_class: df = df.loc[self.data['class'] == taxonomy_class]
@@ -128,8 +128,8 @@ class CuratedSet(object):
         self.create_fasta_seqrec()
 
     def read_data(self, filename):
-        df = pd.read_csv(filename, sep=',|;', engine='python').fillna('')
-        df['taxonomyid'] = df['taxonomyid'].astype(str)
+        df = pd.read_csv(filename, sep=',',quotechar='"', engine='python').fillna('')
+        df['taxonomy_id'] = df['taxonomy_id'].astype(str)
         df.index = list(df['accession'])
         return df
 
@@ -153,7 +153,7 @@ class CuratedSet(object):
                 continue
             if row['accession'] not in self.fasta_seqrec.keys():
                 self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']),
-                                                                id=row['variant']+'_'+row['organism'].replace(' ','_')+'_'+row['accession'],
+                                                                id=(row['variant']+"_").split("(")[0][:-1]+'_'+row['organism'].replace(' ','_')+'_'+row['accession'],
                                                                 description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
 
     def get_count(self): return self.data.shape[0]
@@ -169,10 +169,10 @@ class CuratedSet(object):
     def get_gi(self, accession): return self.data.loc[self.data['accession'] == accession]['gi'].iloc[0]
 
     def get_taxid_genus(self, accession):
-        if not 'taxonomyid' in self.data:
-            print('No taxonomyid loaded yet. Update update_taxids fisrt.')
+        if not 'taxonomy_id' in self.data:
+            print('No taxonomy_id loaded yet. Update update_taxids fisrt.')
             return
-        return (self.data.loc[self.data['accession'] == accession]['taxonomyid'].iloc[0],
+        return (self.data.loc[self.data['accession'] == accession]['taxonomy_id'].iloc[0],
                 self.data.loc[self.data['accession'] == accession]['organism'].iloc[0])
 
     def get_ncbi_data(self): return self.data[self.data['accession'].str.startswith(NONCBI_IDENTIFICATOR, na=False) == False]
@@ -186,8 +186,11 @@ class CuratedSet(object):
     def save(self, filename=None, processed=False):
         # compare current data with data loaded from file
         data_old = self.read_data(HISTONES_FILE)
-        for i, row in data_old.compare(self.data).iterrows():
-            print(row)
+        if(len(data_old)==len(self.data)):
+            for i, row in data_old.compare(self.data).iterrows():
+                print(row)
+        else:
+            print("Dataframe comarison currently not possible due to different number of rows")
 
         # backup file first to history
         backup_file = os.path.join(BACKUP_DIR, f'{HISTONES_FILE}-{datetime.now().strftime("%b%d%y%H%M%S")}')
@@ -229,7 +232,7 @@ class CuratedSet(object):
     def update_taxids(self, blank_data=False, accessions=None, exclude=None):
         if blank_data and (accessions or exclude): raise AssertionError(f'blank_data cannot be true when accessions list is given. Please, use only one of the options.')
         updating_data = self.get_ncbi_data()
-        if blank_data: updating_data = self.get_blank_data(['taxonomyid', 'organism', 'taxonomy_group'])
+        if blank_data: updating_data = self.get_blank_data(['taxonomy_id', 'organism', 'taxonomy_group'])
         if accessions: updating_data = self.data.loc[accessions]
         if exclude: updating_data = updating_data.drop(exclude)
 
@@ -284,7 +287,7 @@ class CuratedSet(object):
             phylum.append(lineage.get('phylum', 'None'))
             taxonomy_class.append(lineage.get('class', 'None'))
 
-        for t_new, t, g_new, g, ph_new, ph, tc_new, tc in zip(taxids, updating_data['taxonomyid'],
+        for t_new, t, g_new, g, ph_new, ph, tc_new, tc in zip(taxids, updating_data['taxonomy_id'],
                                       genus, updating_data['organism'],
                                       phylum, updating_data['phylum'],
                                       taxonomy_class, updating_data['class']):
@@ -292,7 +295,7 @@ class CuratedSet(object):
             if g != g_new: print(f'{g} changes to {g_new}')
             if ph != ph_new: print(f'{ph} changes to {ph_new}')
             if tc != tc_new: print(f'{tc} changes to {tc_new}')
-        updating_data['taxonomyid'] = taxids
+        updating_data['taxonomy_id'] = taxids
         updating_data['organism'] = genus
         updating_data['phylum'] = phylum
         updating_data['class'] = taxonomy_class
