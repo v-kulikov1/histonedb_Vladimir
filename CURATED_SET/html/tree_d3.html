@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <!-- code taken from https://observablehq.com/@d3/collapsible-tree -->
@@ -40,12 +39,14 @@ label {
 </style>
 <head>
     <script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="../msa.js"></script>
+<script src="../js/msa.min.js"></script>
+<!--- <script src="../js/msa.js">Use this for development</script>. -->
+
 
 </head>
 <body>
 <h1> Classification tree of histones and their variants used in HistoneDB 3.0</h1>
-<h3>Click on node label to view sequence alignment. Click on node to collapse/expand branches.</h3>
+<h3>Click on node to collapse/expand branches. Click on node label to view info, sequence alignment and phylogeny. </h3>
 <div id="tree"></div>
 <h1>Multiple sequence alignment will appear below</h1>
 <div id="menu"></div>
@@ -77,7 +78,7 @@ for (const C of [Array, String, TypedArray]) {
 
 d3.json("https://intbio.org/histonedb/CURATED_SET/classification.json").then(function(data) {
     
-console.log(data);
+//console.log(data);
 
 var datah={"name": "root"};
 
@@ -277,36 +278,170 @@ var menuDiv = document.getElementById("menu");
 
 
 function upd_msa(name) {
+
+// var seqs;
+
+
+// var xhr = msa.io.xhr;
+// var gffParser = msa.io.gff;
+
+// xhr("../seeds/"+name+".gff3", function(err, request, body) {
+//   var features = gffParser.parseSeqs(body);
+//   m.seqs.addFeatures(features);
+
+// xhr("../seeds/"+name+".fasta", function(err, request, body) {
+// seqs =  msa.io.fasta.parse(body);
+// m.seqs.add(seqs);
+// m.seqs.add(seq2);
+// m.render();
+// });
+
+// });
+
+
+
+
+
+//Add consensus
+
+
  var m = msa({
   el: rootDiv,
-  importURL: "../draft_seeds/"+name+".fasta",
+ importURL: "../seeds/"+name+".fasta",
+ // seqs:seqs,
+  all: true,
   vis: {
     labelId: false,
-    conserv: true
+    conserv: false,
+    seqlogo: false //should be false, we trigger it below manually.
   },
   zoomer: {
   labelNameLength:350,
-  alignmentHeight: 400},
-colorscheme: {scheme: "pid"}
-})
+  alignmentHeight:  "auto" 
+},
+   
+   conf: {
+    debug: false,
+    dropImport: true//,
+   // manualRendering:true
+  }
+//colorscheme: {scheme: "pid"}
+});
 
-m.g.colorscheme.addDynScheme("fscheme", function(letter,info){
-  console.log(info);
-  return info.pos % 2 == 0 ? "#00f" : "#ddd";
+
+
+//m.g.zoomer.set("alignmentHeight", 5);
+
+var fun={}
+
+fun.init = function(){
+  // you have here access to the conservation or the sequence object
+  this.cons = this.opt.conservation();
+  this.consensus= this.opt.consensus();
+  this.frequency= this.opt.frequency();
+  this.consensus80="";
+  this.frequency.forEach((it,i) => {
+    let aa="*";
+    for(let i2 in it) {
+     if (it[i2] >=0.8) {
+      aa=i2;}
+    }
+    this.consensus80+=aa;
+  });
+
+  this.consensus50="";
+  this.frequency.forEach((it,i) => {
+    let aa="*";
+    for(let i2 in it) {
+     if (it[i2] >=0.5) {
+      aa=i2;}
+    }
+    this.consensus50+=aa;
+  });
 }
-  );
+
+function aasimilar(aa1,aa2) {
+const groups = {pos:"KRH", neg:"ED", aliph:"VLAIM",oh:"TS", small:"SAG",aroma:"FWY"}
+
+for(let i in groups) {
+  if(groups[i].includes(aa1) && groups[i].includes(aa2)) {return true;}
+}
+return false;
+}
+
+fun.run = function(letter,opts){
+
+  if(letter == "-") {return "#fff";}
+  if (letter == this.consensus80[opts.pos]) {return "#74b";}
+  if (letter == this.consensus50[opts.pos]) {return "#08c";} 
+  if (aasimilar(letter,this.consensus80[opts.pos]) || aasimilar(letter,this.consensus50[opts.pos]) ) {return "#f09";}
+  else {return "#fff";} 
+};
+
+m.g.colorscheme.addDynScheme("fscheme", fun);
 m.g.colorscheme.set("scheme", "fscheme");
+//m.render();
+
+
+
+
 // the menu is independent to the MSA container
 var menuOpts = {};
 menuOpts.el = menuDiv;
 menuOpts.msa = m;
-menuOpts.menu = "small";
+//menuOpts.menu = "small";
 var defMenu = new msa.menu.defaultmenu(menuOpts);
 m.addView("menu", defMenu);
 
+var xhr = msa.io.xhr;
+var gffParser = msa.io.gff;
+
+//Now we will add consensus with features
+//first we need to get features and load them.
+xhr("../seeds/"+name+".gff3", function(err, request, body) {
+  var features = gffParser.parseSeqs(body);
+  m.seqs.addFeatures(features);
+
+//Nex in this asyn call we will wait till msa has loaded all sequences and add consensus
+waitForSeqs();
+
+    });
+
+function waitForSeqs(){
+    if(m.seqs.length > 0){
+        //variable exists, do what you want
+        var seqc = {
+          seq: m.g.stats._consensus,
+          id: "10c",
+          ids: ["Consensus"], //This is important for tree not to hide it. Tree shoud have a root node named consensus.
+          name: "Consensus",
+          label:"Consensus"
+        }
+        m.seqs.unshift(seqc);
+  //After that we add a tree
+ m.importURL("../seeds/"+name+".tree", function(){
+ console.log("tree loaded");
+ //Trigger SeqLogo from menu, see msa.js:24482 why we need to do this hack!
+ console.log(defMenu.views["40_vis"]._nodes[3].callback());
+});
+  //m.render();
+ 
+}
+    else{
+        setTimeout(waitForSeqs, 100);
+    }
+}
+
 // call render at the end to display the whole MSA
 //m.render();
-};
+
+
+
+
+
+
+
+}
 
 
 </script>

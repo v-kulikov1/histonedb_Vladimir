@@ -22,7 +22,7 @@
         "level":
           {
           "type":"string",
-          "enum": ["type","variant","subvariant"]
+          "enum": ["type","variant_group","variant"]
           },
       	"description":
           {
