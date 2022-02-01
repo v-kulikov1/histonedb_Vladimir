@@ -1,7 +1,7 @@
 {
         "tree": {
                 "H2A": {
-                        "cH2A": "null",
+                        "cH2A": {"null",
                         "H2A.Z": "null",
                         "H2A.B": "null",
                         "macroH2A": "null",
@@ -63,15 +63,16 @@
         "info": {
                 "H2A": {
                         "level": "type",
-                        "description": "H2A is one of the core histones. H2A forms dimers with H2B via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2A consists of histone fold domain extended by a short αC-helix and has both N- and C-terminal tails. αC-helix and C-terminal tail form \"docking domain\" that locks the H2A-H2B dimer onto the surface of H3-H4 tetramer."
+                        "description": "H2A is one of the core histone types. H2A forms dimers with H2B via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2A consists of histone fold domain extended by a short αC-helix and has both N- and C-terminal tails. αC-helix and C-terminal tail form \"docking domain\" that locks the H2A-H2B dimer onto the surface of H3-H4 tetramer [luger_crystal_1997]. [malik_phylogenomics_2003]",
+                        "publications": []
                 },
                 "cH2A": {
                         "level": "variant_group",
-                        "description": "Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail.",
+                        "description": "Clustered H2A histones (also reffered to as canonical H2A histones) Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail.",
                         "taxonomic_span": "Eukaryotes",
                         "alternate_names": [
                                 {
-                                        "name": "ca H2A"
+                                        "name": "canonical H2A"
                                 }
                         ],
                         "publications": [
