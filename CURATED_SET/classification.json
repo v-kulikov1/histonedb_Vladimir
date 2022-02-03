@@ -1,9 +1,28 @@
 {
         "tree": {
                 "H2A": {
-                        "cH2A": {
-                                ""
-                                },
+                    "cH2A": 
+                        {
+                        "cH2A_(Metazoa)":
+                            {
+                            "cH2A_(Vertebrata)":
+                                {
+                                "cH2A_(Mammalia)":
+                                    {
+                                    "cH2A_(Homo_sapiens)":
+                                        {
+                                        "cH2A.1_(Homo_sapiens)":"null"
+                                        }
+                                    }
+                                }
+                            },
+                        "cH2A_(Fungi)":"null",
+                        "cH2A_(Viridiplantae)":
+                            {
+                            "cH2A_(Embryophyta)":"null",
+                            "cH2A_(Chlorophyta)":"null"
+                            },
+                        },
                         "H2A.Z": "null",
                         "H2A.B": "null",
                         "macroH2A": "null",
@@ -71,7 +90,7 @@
                 },
                 "cH2A": {
                         "level": "variant_group",
-                        "description": "cH2A -- clustered H2A histones (previously called canonical H2A histones) are mainly replication-dependent histones. 1) expression 2) stem-loop 3) clustering 4) HLB. Difference between Metazoa and Plants??? Say something about tissue specific expression ... Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of a polyA tail.",
+                        "description": "cH2A -- clustered H2A histones (bulk ... RD introns previously called canonical H2A histones) are mainly replication-dependent histones. 1) expression 2) stem-loop 3) clustering 4) HLB. Difference between Metazoa and Plants??? Say something about tissue specific expression ... Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of a polyA tail.",
                         "taxonomic_span": "Eukaryotes",
                         "alternate_names": [
                                 {
