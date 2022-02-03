@@ -1,249 +1,165 @@
 {
-        "tree": {
-                "H2A": {
-                    "cH2A": 
+"tree": 
+    {
+    "H2A": 
+        {
+        "cH2A": 
+           {
+           "cH2A_(Metazoa)":
+                {
+                "cH2A_(Vertebrata)":
+                    {
+                    "cH2A_(Mammalia)":
                         {
-                        "cH2A_(Metazoa)":
+                        "cH2A_(Homo_sapiens)":
                             {
-                            "cH2A_(Vertebrata)":
-                                {
-                                "cH2A_(Mammalia)":
-                                    {
-                                    "cH2A_(Homo_sapiens)":
-                                        {
-                                        "cH2A.1_(Homo_sapiens)":"null"
-                                        }
-                                    }
-                                }
-                            },
-                        "cH2A_(Fungi)":"null",
-                        "cH2A_(Viridiplantae)":
-                            {
-                            "cH2A_(Embryophyta)":"null",
-                            "cH2A_(Chlorophyta)":"null"
-                            },
-                        },
-                        "H2A.Z": "null",
-                        "H2A.B": "null",
-                        "macroH2A": "null",
-                        "H2A.L": "null",
-                        "H2A.X": "null",
-                        "H2A.W": "null",
-                        "H2A.1": "null",
-                        "H2A.P": "null",
-                        "H2A.J": "null"
-                        },
-                "H2B": {
-                        "cH2B": "null",
-                        "subH2B": "null",
-                        "H2B.1": "null",
-                        "H2B.W": "null",
-                        "sperm_H2B": "null",
-                        "H2B.Z": "null",
-                        "H2B.S": "null"
-                        },
-                "H3": {
-                        "cH3_(Metazoa)": {
-                                "cH3.1_(Metazoa?)": "null",
-                                "cH3.2_(Metazoa?)": "null"
-                        },
-                        "cH3_(Plants)": "null",
-                        "cenH3_(Eukarya)": "null",
-                        "H3.3_(Eukarya)": "null",
-                        "H3.5_(Mammals?)": "null",
-                        "H3.5_(Hominids?)": "null",
-                        "H3.Y_(Primates?)": "null",
-                        "H3.P_(Moneuplotes?)": "null",
-                        "H3.V_(Trypanosomes?)": "null",
-                        "H3.B_(Giardia?)": "null",
-                        "TS_H3.4": "null",
-                        "H3_(Viruses)": "null",
-                        "H3_unclassified": "null"
+                            "cH2A.1_(Homo_sapiens)":"null",
+                            "cH2A.2_(Homo_sapiens)":"null",
+                            "cH2A.3_(Homo_sapiens)":"null",
+                            "cH2A.4_(Homo_sapiens)":"null",
+                            "cH2A.5_(Homo_sapiens)":"null",
+                            "cH2A.6_(Homo_sapiens)":"null",
+                            "cH2A.7_(Homo_sapiens)":"null",
+                            "cH2A.8_(Homo_sapiens)":"null",
+                            "cH2A.9_(Homo_sapiens)":"null",
+                            "cH2A.10_(Homo_sapiens)":"null",
+                            "cH2A.11_(Homo_sapiens)":"null"
+                            }
+                        }
+                    }
                 },
-                "H4": {
-                        "cH4": "null"
-                },
-                "H1": {
-                        "cH1": "null",
-                        "generic_H1": "null",
-                        "H1.0": "null",
-                        "H1.1": "null",
-                        "H1.2": "null",
-                        "H1.3": "null",
-                        "H1.4": "null",
-                        "H1.5": "null",
-                        "TS_H1.6": "null",
-                        "TS_H1.7": "null",
-                        "OO_H1.8": "null",
-                        "TS_H1.9": "null",
-                        "H1.10": "null",
-                        "scH1": "null"
-                },
-                "Archaeal": "null"
+                "cH2A_(Fungi)":"null",
+                "cH2A_(Viridiplantae)":
+                    {
+                    "cH2A_(Embryophyta)":"null",
+                    "cH2A_(Chlorophyta)":"null"
+                    },
         },
-        "info": {
-                "H2A": {
-                        "level": "type",
-                        "description": "H2A is one of the core histone types present in all Eukaryotes. H2A forms dimers with H2B via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2A consists of a histone fold domain extended by a short αC-helix and has both N- and C-terminal tails. αC-helix and C-terminal tail form \"docking domain\" that locks the H2A-H2B dimer onto the surface of H3-H4 tetramer [luger_crystal_1997]. It has been suggested that H2A and H2B have arisen from H3 and H4 during histone evolution [malik_phylogenomics_2003]",
-                        "taxonomic_span": "Eukaryotes",
-                        "publications": []
+        "H2A.Z": "null",
+        "H2A.B": "null",
+        "macroH2A": "null",
+        "H2A.L": "null",
+        "H2A.X": "null",
+        "H2A.W": "null",
+        "H2A.1": "null",
+        "H2A.P": "null",
+        "H2A.J": "null"
+        },
+    "H2B": 
+        {
+        "cH2B": "null",
+        "subH2B": "null",
+        "H2B.1": "null",
+        "H2B.W": "null",
+        "sperm_H2B": "null",
+        "H2B.Z": "null",
+        "H2B.S": "null"
+        },
+    "H3": 
+        {
+        "cH3_(Metazoa)": 
+            {
+            "cH3.1_(Metazoa?)": "null",
+            "cH3.2_(Metazoa?)": "null"
+            },
+        "cH3_(Plants)": "null",
+        "cenH3_(Eukarya)": "null",
+        "H3.3_(Eukarya)": "null",
+        "H3.5_(Mammals?)": "null",
+        "H3.5_(Hominids?)": "null",
+        "H3.Y_(Primates?)": "null",
+        "H3.P_(Moneuplotes?)": "null",
+        "H3.V_(Trypanosomes?)": "null",
+        "H3.B_(Giardia?)": "null",
+        "TS_H3.4": "null",
+        "H3_(Viruses)": "null",
+        "H3_unclassified": "null"
+        },
+    "H4": 
+        {
+        "cH4": "null"
+        },
+    "H1": 
+        {
+        "cH1": "null",
+        "generic_H1": "null",
+        "H1.0": "null",
+        "H1.1": "null",
+        "H1.2": "null",
+        "H1.3": "null",
+        "H1.4": "null",
+        "H1.5": "null",
+        "TS_H1.6": "null",
+        "TS_H1.7": "null",
+        "OO_H1.8": "null",
+        "TS_H1.9": "null",
+        "H1.10": "null",
+        "scH1": "null"
+        },
+    "Archaeal": "null"
+    },
+"info":
+    {
+    "H2A":      {
+        "level": "type",
+        "description": "H2A is one of the core histone types present in all Eukaryotes. H2A forms dimers with H2B via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2A consists of a histone fold domain extended by a short αC-helix and has both N- and C-terminal tails. αC-helix and C-terminal tail form \"docking domain\" that locks the H2A-H2B dimer onto the surface of H3-H4 tetramer [luger_crystal_1997]. It has been suggested that H2A and H2B have arisen from H3 and H4 during histone evolution [malik_phylogenomics_2003]",
+        "taxonomic_span": "Eukaryotes",
+        "publications": []
                 },
-                "cH2A": {
-                        "level": "variant_group",
-                        "description": "cH2A -- clustered H2A histones (bulk ... RD introns previously called canonical H2A histones) are mainly replication-dependent histones. 1) expression 2) stem-loop 3) clustering 4) HLB. Difference between Metazoa and Plants??? Say something about tissue specific expression ... Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of a polyA tail.",
-                        "taxonomic_span": "Eukaryotes",
-                        "alternate_names": [
-                                {
-                                        "name": "canonical H2A"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851"
-                        ]
+    "cH2A":     {
+        "level": "variant_group",
+        "description": "cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes, the so-called replication dependent (RD) or \"bulk\" histones. These histones even from distantly related species (e.g. plants and animals) are usually very simular in their sequence, their expression during S-phase is tightly regulated at     (bulk ... RD introns previously called canonical H2A histones) are mainly replication-dependent histones. 1) expression 2)   stem-loop 3) clustering 4) HLB. Difference between Metazoa and Plants??? Say something about tissue specific expression ... Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of a polyA tail.",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [{"name": "canonical H2A"}],
+        "publications": ["22650316","25731851"]
                 },
-                "H2A.Z": {
-                        "level": "variant_group",
-                        "description": "H2A.Z containing nucleosomes often localize near transcription start and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions.",
-                        "taxonomic_span": "Eukaryotes",
-                        "alternate_names": [
-                                {
-                                        "name": "H2A.Z-1",
-                                        "gene": 1
-                                },
-                                {
-                                        "name": "H2A.Z-2",
-                                        "gene": 2
-                                },
-                                {
-                                        "name": "H2A.Z",
-                                        "splice": 1
-                                },
-                                {
-                                        "name": "H2A.Z",
-                                        "splice": 2
-                                },
-                                {
-                                        "name": "H2A.Zc",
-                                        "splice": 3
-                                },
-                                {
-                                        "name": "Htz1p",
-                                        "taxonomy": "saccharomyces"
-                                },
-                                {
-                                        "name": "hv1",
-                                        "taxonomy": "tetrahymena"
-                                },
-                                {
-                                        "name": "H2A.V",
-                                        "taxonomy": "drosophila"
-                                },
-                                {
-                                        "name": "H2Av",
-                                        "taxonomy": "drosophila",
-                                        "notes": "sometime H2A.X"
-                                },
-                                {
-                                        "name": "H2AvD",
-                                        "taxonomy": "drosophila"
-                                },
-                                {
-                                        "name": "D2",
-                                        "taxonomy": "drosophila"
-                                },
-                                {
-                                        "name": "member Z"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851",
-                                "11101893",
-                                "18275809",
-                                "24311584",
-                                "19193230",
-                                "24969791",
-                                "22467210",
-                                "20003410",
-                                "24768041",
-                                "23301656",
-                                "20197778"
-                        ]
+    "cH2A_(Metazoa)":     {
+        "level": "variant_group",
+        "description": "cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes, the so-called replication dependent (RD) or \"bulk\" histones. These histones even from distantly related species (e.g. plants and animals) are usually very simular in their sequence, their expression during S-phase is tightly regulated at     (bulk ... RD introns previously called canonical H2A histones) are mainly replication-dependent histones. 1) expression 2) stem-loop 3) clustering 4) HLB. Difference between Metazoa and Plants??? Say something about tissue specific expression ... Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of a polyA tail.",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [{"name": "canonical H2A"}],
+        "publications": ["22650316","25731851"]
                 },
-                "H2A.X": {
-                        "level": "variant_group",
-                        "description": "H2A.X most notably is involved in DNA damage response, marking the double strand DNA breaks with its phosphorylated form ɣ-H2A.X. It is also more broadly implicated in chromatin remodeling, found at collapsed replication forks and heterochromatin. It is the only non-monophyletic variant in H2A and has the charactristic SQE/DΦ motif at C-terminus (SQAY in Drosophila), where Φ-represents a hydrophobic residue (usually Tyr in mammals), and S is phosphorylation site. Nematodes are the only known species that lack H2A.X. In yeast H2A.X function is fulfilled by conventional H2A, while in Drosophila melanogaster by H2A.Z.",
-                        "taxonomic_span": "Eukaryotes except nematode",
-                        "alternate_names": [
-                                {
-                                        "name": "member X"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851",
-                                "18095327",
-                                "23301656"
-                        ]
+    "cH2A.8_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.8_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human. It is the product of H2AC18 and H2AC19 genes. Together with cH2A.9_(Homo_sapiens) isoform (product of H2AC20 gene) this isoform has a methionine instead of leucine at position 51 relative to other cH2As in human (H2AL51M substitution). Historically the methionine containing isoforms were classified as H2A.2 histones, based on mobility differences in triton-acid urea gel electrophoresis[franklin_non-allelic_1977].",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [{"name": "canonical H2A"}],
+        "publications": ["franklin_non-allelic_1977"]
                 },
-                "macroH2A": {
-                        "level": "variant_group",
-                        "description": "macroH2A is involved in X-inactivation and transcriptional regulation; can be found in inactivated X chromosome, gene promoters, and heterochromatin. It contains a ∼30 kDa additional globular macrodomain attached to C-terminus. Its taxonomic span was thought to be restricted to vertebrates, but this is currently disputed.",
-                        "taxonomic_span": "Vertebrates(?)",
-                        "alternate_names": [
-                                {
-                                        "name": "mH2A"
-                                },
-                                {
-                                        "name": "macroH2A1",
-                                        "gene": 1
-                                },
-                                {
-                                        "name": "macroH2A2",
-                                        "gene": 2
-                                },
-                                {
-                                        "name": "macroH2A1.1",
-                                        "gene": 1,
-                                        "splice": 1
-                                },
-                                {
-                                        "name": "macroH2A1.2",
-                                        "gene": 1,
-                                        "splice": 2
-                                },
-                                {
-                                        "name": "macroH2A2.1",
-                                        "gene": 2,
-                                        "splice": 1
-                                },
-                                {
-                                        "name": "macroH2A2.2",
-                                        "gene": 2,
-                                        "splice": 2
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851",
-                                "16107708",
-                                "20543561",
-                                "16803903"
-                        ]
+    "cH2A.9_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.9_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human. It is the product of H2AC20 gene. Together with cH2A.8_(Homo_sapiens) isoform (product of H2AC18 and H2AC19 genes) this isoform has a methionine instead of leucine at position 51 relative to other cH2As in human (H2AL51M substitution). Historically the methionine containing isoforms were classified as H2A.2 histones, based on mobility differences in triton-acid urea gel electrophoresis[franklin_non-allelic_1977].",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [{"name": "canonical H2A"}],
+        "publications": ["franklin_non-allelic_1977"]
+                },        
+    "H2A.Z":    {
+        "level": "variant_group",
+        "description": "H2A.Z containing nucleosomes often localize near transcription start and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions.",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [{"name": "H2A.Z-1","gene": 1},{"name": "H2A.Z-2","gene": 2},{"name": "H2A.Z","splice": 1},{"name": "H2A.Z","splice": 2},{"name": "H2A.Zc","splice": 3},{"name": "Htz1p","taxonomy": "saccharomyces"},{"name": "hv1","taxonomy": "tetrahymena"},{"name": "H2A.V","taxonomy": "drosophila"},{"name": "H2Av","taxonomy": "drosophila","notes": "sometime H2A.X"},{"name": "H2AvD","taxonomy": "drosophila"},{"name": "D2","taxonomy": "drosophila"},{"name": "member Z"}],
+        "publications": ["22650316","25731851","11101893","18275809","24311584","19193230","24969791","22467210","20003410","24768041","23301656","20197778"]
                 },
-                "H2A.L": {
-                        "level": "variant_group",
-                        "description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
-                        "taxonomic_span": "Certain mammals",
-                        "alternate_names": [
-                                {
-                                        "name": "H2AL"
-                                },
-                                {
-                                        "name": "H2AL1",
-                                        "gene": 1
-                                },
+    "H2A.X": {
+        "level": "variant_group",
+        "description": "H2A.X most notably is involved in DNA damage response, marking the double strand DNA breaks with its phosphorylated form ɣ-H2A.X. It is also more broadly implicated in chromatin remodeling, found at collapsed replication forks and heterochromatin. It is the only non-monophyletic variant in H2A and has the charactristic SQE/DΦ motif at C-terminus (SQAY in Drosophila), where Φ-represents a hydrophobic residue (usually Tyr in mammals), and S is phosphorylation site. Nematodes are the only known species that lack H2A.X. In yeast H2A.X function is fulfilled by conventional H2A, while in Drosophila melanogaster by H2A.Z.",
+        "taxonomic_span": "Eukaryotes except nematode",
+        "alternate_names": [{"name": "member X"}],
+        "publications": ["22650316","25731851","18095327","23301656"]
+                },
+    "macroH2A": {
+        "level": "variant_group",
+        "description": "macroH2A is involved in X-inactivation and transcriptional regulation; can be found in inactivated X chromosome, gene promoters, and heterochromatin. It contains a ∼30 kDa additional globular macrodomain attached to C-terminus. Its taxonomic span was thought to be restricted to vertebrates, but this is currently disputed.",
+        "taxonomic_span": "Vertebrates(?)",
+        "alternate_names": [{"name": "mH2A"},{"name": "macroH2A1","gene": 1},{"name": "macroH2A2","gene": 2},{"name": "macroH2A1.1","gene": 1,"splice": 1},{"name": "macroH2A1.2","gene": 1,"splice": 2},{"name": "macroH2A2.1","gene": 2,"splice": 1},{"name": "macroH2A2.2","gene": 2,"splice": 2}],
+    "publications": ["22650316","25731851","16107708","20543561","16803903"]
+                },
+    "H2A.L":    {
+        "level": "variant_group",
+        "description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
+        "taxonomic_span": "Certain mammals",
+        "alternate_names": [{"name": "H2AL"},{"name": "H2AL1","gene": 1},
                                 {
                                         "name": "H2AL2",
                                         "gene": 2
