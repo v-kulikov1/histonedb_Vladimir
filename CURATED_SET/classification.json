@@ -156,14 +156,14 @@
         "level": "variant_group",
         "description": "cH2A_(Embryophyta) -- canonical replication-dependent H2A histones of land plants. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
         "taxonomic_span": "Viridiplantae",
-  //      "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": []
                 },
     "cH2A_(Chlorophyta)":     {
         "level": "variant_group",
         "description": "cH2A_(Chlorophyta) -- canonical replication-dependent H2A histones of green algae. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
         "taxonomic_span": "Viridiplantae",
-  //      "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": []
                 },
     "H2A.Z":    {
