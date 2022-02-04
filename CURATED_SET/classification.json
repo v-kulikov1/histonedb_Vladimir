@@ -121,35 +121,35 @@
         "level": "variant_group",
         "description": "cH2A_(Metazoa) -- clustered H2A histones, often called canonical, replication-dependent, \"bulk\" H2A histones are a major class of H2A histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H3, H4, H2A, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017]. Caveats: 1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2A.1 in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009].",
         "taxonomic_span": "Eukaryotes",
-      //  "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": []
                 },
     "cH2A.8_(Homo_sapiens)":     {
         "level": "variant",
         "description": "cH2A.8_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human. It is the product of H2AC18 and H2AC19 genes. Together with cH2A.9_(Homo_sapiens) isoform (product of H2AC20 gene) this isoform has a methionine instead of leucine at position 51 relative to other cH2As in human (H2AL51M substitution). Historically the methionine containing isoforms were classified as H2A.2 histones, based on mobility differences in triton-acid urea gel electrophoresis[franklin_non-allelic_1977].",
         "taxonomic_span": "Eukaryotes",
-        "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": ["franklin_non-allelic_1977"]
                 },
     "cH2A.9_(Homo_sapiens)":     {
         "level": "variant",
         "description": "cH2A.9_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human. It is the product of H2AC20 gene. Together with cH2A.8_(Homo_sapiens) isoform (product of H2AC18 and H2AC19 genes) this isoform has a methionine instead of leucine at position 51 relative to other cH2As in human (H2AL51M substitution). Historically the methionine containing isoforms were classified as H2A.2 histones, based on mobility differences in triton-acid urea gel electrophoresis[franklin_non-allelic_1977].",
         "taxonomic_span": "Eukaryotes",
-        "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": ["franklin_non-allelic_1977"]
                 },        
     "cH2A_(Fungi)":     {
         "level": "variant_group",
         "description": "cH2A_(Viridiplantae) -- canonical replication-dependent H2A histones of green plants (green algae and land plants). Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
         "taxonomic_span": "Viridiplantae",
-  //      "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": []
                 },
     "cH2A_(Viridiplantae)":     {
         "level": "variant_group",
         "description": "cH2A_(Viridiplantae) -- canonical replication-dependent H2A histones of green plants (green algae and land plants). Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
         "taxonomic_span": "Viridiplantae",
-  //      "alternate_names": [{"name": "canonical H2A"}],
+        "alternate_names": [],
         "publications": []
                 },
     "cH2A_(Embryophyta)":     {
