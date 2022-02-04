@@ -24,16 +24,20 @@
                             "cH2A.9_(Homo_sapiens)":"null",
                             "cH2A.10_(Homo_sapiens)":"null",
                             "cH2A.11_(Homo_sapiens)":"null"
+                            },
+                        "cH2A_(Mus_musculus)":
+                            {
+                            "cH2A.1_(Mus_musculus)":"null",
                             }
                         }
                     }
                 },
-                "cH2A_(Fungi)":"null",
-                "cH2A_(Viridiplantae)":
-                    {
-                    "cH2A_(Embryophyta)":"null",
-                    "cH2A_(Chlorophyta)":"null"
-                    },
+            "cH2A_(Fungi)":"null",
+            "cH2A_(Viridiplantae)":
+                {
+                "cH2A_(Embryophyta)":"null",
+                "cH2A_(Chlorophyta)":"null"
+                },
         },
         "H2A.Z": "null",
         "H2A.B": "null",
@@ -108,17 +112,17 @@
                 },
     "cH2A":     {
         "level": "variant_group",
-        "description": "cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated [marzluff_birth_2017]. These histones are often present as large multigene families. However, there are known limitations to the definition given above: Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and scpecies-specific (e.g. cH2A isoforms in human), in other cases there is a whole spectrum canonical-like proteins (e.g. plant H2As). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case.  2) ?? do we have species that do not upregulate histones at S-phase??. Due to difficulties in presicely defining cH2A calss, an alternative operational definition may rely on the definitions of its subclasses.",
+        "description": "cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and scpecies-specific (e.g. cH2A isoforms in human), in other cases there is a whole spectrum of canonical-like proteins (e.g. plant H2As). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclassed.",
         "taxonomic_span": "Eukaryotes",
         "alternate_names": [{"name": "canonical H2A"}],
-        "publications": ["22650316","25731851"]
+        "publications": []
                 },
     "cH2A_(Metazoa)":     {
         "level": "variant_group",
-        "description": "cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes, the so-called replication dependent (RD) or \"bulk\" histones. These histones even from distantly related species (e.g. plants and animals) are usually very simular in their sequence, their expression during S-phase is tightly regulated at     (bulk ... RD introns previously called canonical H2A histones) are mainly replication-dependent histones. 1) expression 2) stem-loop 3) clustering 4) HLB. Difference between Metazoa and Plants??? Say something about tissue specific expression ... Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of a polyA tail.",
+        "description": "cH2A_(Metazoa) -- clustered H2A histones, often called canonical, replication-dependent, \"bulk\" H2A histones are a major class of H2A histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H3, H4, H2A, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017]. Caveats: 1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2A.1 in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009].",
         "taxonomic_span": "Eukaryotes",
-        "alternate_names": [{"name": "canonical H2A"}],
-        "publications": ["22650316","25731851"]
+      //  "alternate_names": [{"name": "canonical H2A"}],
+        "publications": []
                 },
     "cH2A.8_(Homo_sapiens)":     {
         "level": "variant",
@@ -134,6 +138,34 @@
         "alternate_names": [{"name": "canonical H2A"}],
         "publications": ["franklin_non-allelic_1977"]
                 },        
+    "cH2A_(Fungi)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Viridiplantae) -- canonical replication-dependent H2A histones of green plants (green algae and land plants). Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
+        "taxonomic_span": "Viridiplantae",
+  //      "alternate_names": [{"name": "canonical H2A"}],
+        "publications": []
+                },
+    "cH2A_(Viridiplantae)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Viridiplantae) -- canonical replication-dependent H2A histones of green plants (green algae and land plants). Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
+        "taxonomic_span": "Viridiplantae",
+  //      "alternate_names": [{"name": "canonical H2A"}],
+        "publications": []
+                },
+    "cH2A_(Embryophyta)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Embryophyta) -- canonical replication-dependent H2A histones of land plants. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
+        "taxonomic_span": "Viridiplantae",
+  //      "alternate_names": [{"name": "canonical H2A"}],
+        "publications": []
+                },
+    "cH2A_(Chlorophyta)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Chlorophyta) -- canonical replication-dependent H2A histones of green algae. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
+        "taxonomic_span": "Viridiplantae",
+  //      "alternate_names": [{"name": "canonical H2A"}],
+        "publications": []
+                },
     "H2A.Z":    {
         "level": "variant_group",
         "description": "H2A.Z containing nucleosomes often localize near transcription start and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions.",
