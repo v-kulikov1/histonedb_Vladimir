@@ -117,10 +117,31 @@
         "alternate_names": [{"name": "canonical H2A"}],
         "publications": []
                 },
-    "cH2A_(Metazoa)":     {
+    "cH2A_(Animals)":     {
         "level": "variant_group",
-        "description": "cH2A_(Animals) -- clustered H2A histones in animals (Metazoa), often called canonical, replication-dependent, \"bulk\" H2A histones are a major class of H2A histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H3, H4, H2A, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017]. Caveats: 1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2A.1 in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009].",
-        "taxonomic_span": "Eukaryotes",
+        "description": "cH2A_(Animals) -- clustered H2A histones in animals (Metazoa), often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones are a major class of H2A histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H3, H4, H2A, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017]. Caveats: 1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2A.1 in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009]. 4) H2A.X histone variant is usually closely related to replication-dependent H2A histones in the same group of animals. In humans, H2A.X produces both polyadenylated mRNAs and mRNAs ending on a stem-loop. It is probale that it is ancestral to clustered H2A histones [talbert_histone_2021].",
+        "taxonomic_span": "Metazoa",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A_(Vertebrata)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Vertebrata) -- clustered H2A histones in vertebrates, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. This is a subclass of cH2A_(Animals) (see it for a detailed description).",
+        "taxonomic_span": "Vertebrata",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A_(Mammalia)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Mammalia) -- clustered H2A histones in mammals, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. This is a subclass of cH2A_(Vertebrata) and cH2A_(Animals) (see it for a detailed description).",
+        "taxonomic_span": "Mammalia",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A_(Homo_sapiens)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Homo_sapiens) -- clustered H2A histones in human, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. This is a subclass of cH2A_(Vertebrata) and cH2A_(Animals) (see it for a detailed description).",
+        "taxonomic_span": "Homo sapiens",
         "alternate_names": [],
         "publications": []
                 },
@@ -145,24 +166,24 @@
         "alternate_names": [],
         "publications": []
                 },
-    "cH2A_(Viridiplantae)":     {
-        "level": "variant_group",
-        "description": "cH2A_(Viridiplantae) -- canonical replication-dependent H2A histones of green plants (green algae and land plants). Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
-        "taxonomic_span": "Viridiplantae",
-        "alternate_names": [],
-        "publications": []
-                },
     "cH2A_(Embryophyta)":     {
         "level": "variant_group",
         "description": "cH2A_(Embryophyta) -- canonical replication-dependent H2A histones of land plants. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
-        "taxonomic_span": "Viridiplantae",
+        "taxonomic_span": "Embryophyta",
         "alternate_names": [],
         "publications": []
                 },
     "cH2A_(Chlorophyta)":     {
         "level": "variant_group",
         "description": "cH2A_(Chlorophyta) -- canonical replication-dependent H2A histones of green algae. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
-        "taxonomic_span": "Viridiplantae",
+        "taxonomic_span": "Chlorophyta",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A_(Fungi)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Fungi) -- canonical replication-dependent H2A histones in fungi. In known fungal species H2A.X histone plays the role of the primary H2A histone [nowrousian_5_2014]. In the current classification these histones will be classified as H2A.X, and this group remains currently empty unless non-H2A.X repliation-dependent histones will be discovered. Note: Since H2A.X are usually closely related to canonical H2As within respective taxanomic groups, an alternative approach might be to assign fungal H2A.X histones simultaneously to both H2A.X and cH2A classes.",
+        "taxonomic_span": "Fungi",
         "alternate_names": [],
         "publications": []
                 },
