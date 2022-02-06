@@ -140,7 +140,56 @@
                 },
     "cH2A_(Homo_sapiens)":     {
         "level": "variant_group",
-        "description": "cH2A_(Homo_sapiens) -- clustered H2A histones in human, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. This is a subclass of cH2A_(Vertebrata) and cH2A_(Animals) (see it for a detailed description).",
+        "description": "cH2A_(Homo_sapiens) -- clustered H2A histones in human, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. For a general description see cH2A_(Animals) class. Replication-dependent histones in humans are found in four loci: a large cluster on chromosome 6 (more than 60 genes), two clusters on chromosome 6 (10-12 genes and 4 genes) and a single H4 gene on chromosome 12. Humans have 18 H2A genes that code for replication-dependent H2A histones. The cluster on chromosome 6 encodes 13 H2A genes (H2AC1, H2AC4, H2AC6, H2AC7, H2AC8, H2AC11, H2AC12, H2AC13, H2AC14, H2AC15, H2AC16, H2AC17) and several pseudogenes. The first cluster on chromosome 1 encodes 4 genes (H2AC18, H2AC19, H2AC20, H2AC21), and the second cluster on chromosome 1 endodes one gene (H2AC25). 18 genes enconde 11 protein variants. H2A18, H2AC19, H2AC20, H2AC21 encode isoforms that have a methionine instead of leucine at position 51 conferring a mobility shift in triton-acid urea gel electrophoresis (historically, H2A.2 symbol was used to mark this difference) [franklin_non-allelic_1977]. H2AC1 gene (formely, called HIST1H2AA, TH2A) is the most divergent gene of the family, together with H2BC1 they share a common promoter and maifest tissue-specific expression (at least in testis and oocytes) [huynh_two_2016]. Caveats: 1) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 2) H2A.X histone variant is usually closely related to replication-dependent H2A histones in the same group of animals. In humans, H2A.X produces both polyadenylated mRNAs and mRNAs ending on a stem-loop. It is probale that it is ancestral to clustered H2A histones [talbert_histone_2021].",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A.1_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC1 gene (formerly, HIST1H2AA, TH2A). This is the most divergent gene of the family, its protein product has differences in several internal positions as well as in the last 6 amino acids at the C-terminus with respect to the majority of clustered H2As. Its length is also one amino acid longer than for the rest of H2As (130 amio acid residues after initiator methionine cleavage). Together with H2BC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thoought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2A.1_(Mus_musculus) -- a related histone variant encoded by H2ac1 gene which has been characterized through a number of in vivo and in vitro studies.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [{"name": "TH2A"},{"name": "TS H2A.1"}],
+        "publications": []
+                },
+    "cH2A.2_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.2_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC4, H2AC8 genes.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A.3_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.3_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC6 gene.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A.4_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.4_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC7 gene.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A.5_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.5_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC11, H2AC13, H2AC15, H2AC16, H2AC17 genes. This is an isoform represented by the most number of genes.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A.6_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.6_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC12 gene.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A.7_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.7_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC14 gene.",
         "taxonomic_span": "Homo sapiens",
         "alternate_names": [],
         "publications": []
@@ -158,8 +207,36 @@
         "taxonomic_span": "Eukaryotes",
         "alternate_names": [],
         "publications": ["franklin_non-allelic_1977"]
-                },        
-    "cH2A_(Fungi)":     {
+                }, 
+    "cH2A.10_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.10_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC21 gene.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },     
+    "cH2A.11_(Homo_sapiens)":     {
+        "level": "variant",
+        "description": "cH2A.11_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC25 gene.",
+        "taxonomic_span": "Homo sapiens",
+        "alternate_names": [],
+        "publications": []
+                },
+   "cH2A_(Mus_musculus)":     {
+        "level": "variant",
+        "description": "cH2A_(Mus_musculus) -- clustered H2A histones in mouse, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. repliation-dependent histones in mouse similar to human are found in several clusters. The largest cluster is found on chromosome 13 (more than 50 geens) and smaller clusters on chromosomes 3 and 11 [marzluff_human_2002]. There are 18 replication-dependent H2A genes currently annotated in mouse genome: 13 in cluster on chromosome 13, 4 in cluster on chromosome 3 and 1 on chromosome 11.",
+        "taxonomic_span": "Mus musculus",
+        "publications": []
+                },    
+    "cH2A.1_(Mus_musculus)":     {
+        "level": "variant",
+        "description": "cH2A.1_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2A histones in mouse endoded by H2ac1 gene (formerly, Hist1h2aa, Th2a). This is the most divergent gene of the family, its protein product has differences in the ?last 6 amino acids? at the C-terminus with respect to the majority of clustered H2As???. Together with H2bc1 gene they share a common promoter and manifest tissue-specific expression (at least in testis, oocytes and zygotes) [padavattan_structural_2015]. Disruption of Th2a and Th2b genes causes defects in spermatogenesis [shinagawa_disruption_2015]. H2ac1 and H2ab1 contribute to activation of the paternal genome after fertilization [shinagawa_histone_2014]. These variant facilitate OSKM-induced cell reprogramming [shinagawa_histone_2014].  X-ray structure of nucleosome harboring this variant have fewer histone-DNA contacts and perturbed L1-L1-loop interactions. Mutational in vivo analysis suggest histone tails and L1 loop are important for reprogramming[padavattan_structural_2015]. Differential scanning calorimetry analysis indicated that the H2ac1/H2ab1 complex was more stable than other combinations of canonical histones [shinagawa_histone_2014]. This variant is related to cH2A.1_(Homo_sapiens) encoded by H2A1C gene, is located in the same position at the largest histone gene cluster, however, their sequence differes at 18 positions. Note: Since this variant manifests similar features in mice and humans (tissue-specific expression, synteny, divergent sequnce with respect to other canonical variants in each species) likely similar variants exist in all supraprimates or in higher taxa. Once and if sufficient evidence accumulates such variants may be grouped into a separate class.",
+        "taxonomic_span": "Mus musculus",
+        "alternate_names": [{"name": "Th2a"},{"name": "TS H2A.1"}],
+        "publications": []
+                },    
+   
+    "cH2A_(Plants)":     {
         "level": "variant_group",
         "description": "cH2A_(Plants) -- canonical replication-dependent H2A histones of green plants (Viridiplantae), which include green algae and land plants. Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
         "taxonomic_span": "Viridiplantae",
@@ -191,7 +268,7 @@
         "level": "variant_group",
         "description": "H2A.Z containing nucleosomes often localize near transcription start and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions.",
         "taxonomic_span": "Eukaryotes",
-        "alternate_names": [{"name": "H2A.Z-1","gene": 1},{"name": "H2A.Z-2","gene": 2},{"name": "H2A.Z","splice": 1},{"name": "H2A.Z","splice": 2},{"name": "H2A.Zc","splice": 3},{"name": "Htz1p","taxonomy": "saccharomyces"},{"name": "hv1","taxonomy": "tetrahymena"},{"name": "H2A.V","taxonomy": "drosophila"},{"name": "H2Av","taxonomy": "drosophila","notes": "sometime H2A.X"},{"name": "H2AvD","taxonomy": "drosophila"},{"name": "D2","taxonomy": "drosophila"},{"name": "member Z"}],
+        "alternate_names": [{"name": "Htz1p","taxonomy": "saccharomyces"},{"name": "hv1","taxonomy": "tetrahymena"},{"name": "H2A.V","taxonomy": "drosophila"},{"name": "H2Av","taxonomy": "drosophila"},{"name": "H2AvD","taxonomy": "drosophila"},{"name": "D2","taxonomy": "drosophila"},{"name": "member Z"}],
         "publications": ["22650316","25731851","11101893","18275809","24311584","19193230","24969791","22467210","20003410","24768041","23301656","20197778"]
                 },
     "H2A.X": {
