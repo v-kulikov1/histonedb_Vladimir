@@ -40,7 +40,15 @@
                 },
             "cH2A_(Protists)":"null"
         },
-        "H2A.Z": "null",
+        "H2A.Z": 
+            {
+            "H2A.Z.1_(Chordates)":"null",
+            "H2A.Z.2_(Chordates)":
+                {
+                "H2A.Z.2.s1_(Primates)":"null",
+                "H2A.Z.2.s2_(Primates)":"null",
+                }
+            },
         "H2A.B": "null",
         "macroH2A": "null",
         "H2A.L": "null",
@@ -265,12 +273,47 @@
         "alternate_names": [],
         "publications": []
                 },
+    "cH2A_(Protists)":     {
+        "level": "variant_group",
+        "description": "cH2A_(Protists) -- canonical replication-dependent H2A histones in various protists.",
+        "taxonomic_span": "",
+        "alternate_names": [],
+        "publications": []
+                },
     "H2A.Z":    {
         "level": "variant_group",
-        "description": "H2A.Z -- is a replication-independent H2A histone variant strongly conserved in almost all Eukaryotes (exceptions may include some  metamonads (e.g. Giardia, Trichomonas), Amebae and parasitic fungi [dalmasso_canonical_2011]). This histone variant is essential from Tetrahymena to mammals (although its knock out is not lethal in yeast) and amount to around 5-10% of H2A histones [dalmasso_canonical_2011]. nucleosomes often localize near transcription start and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions.",
+        "description": "H2A.Z -- is a replication-independent H2A histone variant strongly conserved in almost all Eukaryotes (exceptions may include some  metamonads (e.g. Giardia, Trichomonas), Amebae and parasitic fungi [dalmasso_canonical_2011]). This histone variant is essential from Tetrahymena to mammals (although its knock out in yeast is not lethal) and amounts to around 5-10% of H2A histones [dalmasso_canonical_2011]. H2A.Z containing nucleosomes often localize near transcription start sites (+1 nucleosomes) and enhancer regions, they are thought to be involved in Pol II recruitment, transcription regulation, DNA repair, suppression of antisense RNA, heterochromatin regulation.  [giaimo_histone_2019]. H2A.Z nucleosomes have a larger acidic patch, an amino acid insertion in α1-helix and one deletion in the docking domain compared to the canonical H2A. The L1-loop region exhibits four amino acids difference between H2A.Z and canonical H2A and is likely involved in conferring stability and functional specificity of variant nucleosomes via L1-L1 interactions [shaytan_nucleosome_2015]. C-terminal region of the yeast H2A.Z protein interacts with RNA polymerase II (RNAPII), promoting its recruitment at promoters [adam_h2az_2001].",
         "taxonomic_span": "Eukaryotes",
         "alternate_names": [{"name": "Htz1p","taxonomy": "saccharomyces"},{"name": "hv1","taxonomy": "tetrahymena"},{"name": "H2A.V","taxonomy": "drosophila"},{"name": "H2Av","taxonomy": "drosophila"},{"name": "H2AvD","taxonomy": "drosophila"},{"name": "D2","taxonomy": "drosophila"},{"name": "member Z"}],
-        "publications": ["22650316","25731851","11101893","18275809","24311584","19193230","24969791","22467210","20003410","24768041","23301656","20197778"]
+        "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021","22650316","25731851","11101893","18275809","24311584","19193230","24969791","22467210","20003410","24768041","23301656","20197778"]
+                },
+    "H2A.Z.1_(Chordates)":    {
+        "level": "variant",
+        "description": "H2A.Z.1_(Chordates) -- product of one of two H2A.Z genes converved in chordates, homologous to human H2AZ1 gene [giaimo_histone_2019]. Porducts of H2AZ1 and H2AZ2 genes differ by only three amino acids, however they have acquired some degree of functional indepedence. For example, H2A.Z.1 has been shown to better interact with bromodomain-containing protein 2 (BRD2) [draker_combination_2012], H2A.Z.2  preferentially associates with H3 trimethylated at lysine 4  (H3K4me3) [dryhurst_characterization_2009].",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
+                },
+    "H2A.Z.2_(Chordates)":    {
+        "level": "variant",
+        "description": "H2A.Z.2_(Chordates) -- product of one of two H2A.Z genes converved in chordates, homologous to human H2AZ1 gene [giaimo_histone_2019]. Porducts of H2AZ1 and H2AZ2 genes differ by only three amino acids, however they have acquired some degree of functional indepedence. For example, H2A.Z.1 has been shown to better interact with bromodomain-containing protein 2 (BRD2) [draker_combination_2012], H2A.Z.2  preferentially associates with H3 trimethylated at lysine 4  (H3K4me3) [dryhurst_characterization_2009].",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
+                },
+    "H2A.Z.2.s1_(Primates)":    {
+        "level": "variant",
+        "description": "H2A.Z.2.s1_(Primates) -- this is the main full length splice isoform of H2A.Z.2 in primates as compared to an slternatively spliced H2A.Z.2.s2 isofom which has an alternative shorter C-terminus [giaimo_histone_2019].",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019"]
+                },
+    "H2A.Z.2.s2_(Primates)":    {
+        "level": "variant",
+        "description": "H2A.Z.2.s2_(Primates) -- this is an alternatively spliced isoform of H2A.Z.2 in primates which has an alternative shorter C-terminus with respect to H2A.Z.2.s1 isoform. This isoform is expressed in a wide range of tissues, including brain tissues. Nucleosome containing H2A.Z.2.s2 isoform are less stable, than nuclesomes with the main isoform. [giaimo_histone_2019].",
+        "taxonomic_span": "Eukaryotes",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019"]
                 },
     "H2A.X": {
         "level": "variant_group",
