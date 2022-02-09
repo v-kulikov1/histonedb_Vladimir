@@ -42,19 +42,32 @@
         },
         "H2A.Z": 
             {
-            "H2A.Z.1_(Chordates)":"null",
-            "H2A.Z.2_(Chordates)":
+            "H2A.Z.1_(Chordata)":
                 {
-                "H2A.Z.2.s1_(Primates)":"null",
-                "H2A.Z.2.s2_(Primates)":"null",
+                "H2A.Z.1_(Primates)":{"H2A.Z.1_(Homo_sapiens)":"null"}   
+                },
+            "H2A.Z.2_(Chordata)":
+                {
+                "H2A.Z.2_(Primates)":
+                    {
+                    "H2A.Z.2.s1_(Primates)":{"H2A.Z.2.s1_(Homo_sapiens)":"null"},
+                    "H2A.Z.2.s2_(Primates)":{"H2A.Z.2.s2_(Homo_sapiens)":"null"}
+                    }
                 }
             },
+        "macroH2A":
+            {
+            "macroH2A.1_(Mammalia)":
+                {
+                "macroH2A.1.s1_(Mammalia)":{"macroH2A.1.s1_(Homo_sapiens)":"null"},
+                "macroH2A.1.s2_(Mammalia)":{"macroH2A.1.s2_(Homo_sapiens)":"null"}
+                },
+            "macroH2A.2_(Mammalia)":{"macroH2A.1.s1_(Homo_sapiens)":"null"}
+            },
         "H2A.B": "null",
-        "macroH2A": "null",
         "H2A.L": "null",
         "H2A.X": "null",
         "H2A.W": "null",
-        "H2A.1": "null",
         "H2A.P": "null",
         "H2A.J": "null"
         },
@@ -287,48 +300,140 @@
         "alternate_names": [{"name": "Htz1p","taxonomy": "saccharomyces"},{"name": "hv1","taxonomy": "tetrahymena"},{"name": "H2A.V","taxonomy": "drosophila"},{"name": "H2Av","taxonomy": "drosophila"},{"name": "H2AvD","taxonomy": "drosophila"},{"name": "D2","taxonomy": "drosophila"},{"name": "member Z"}],
         "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021","22650316","25731851","11101893","18275809","24311584","19193230","24969791","22467210","20003410","24768041","23301656","20197778"]
                 },
-    "H2A.Z.1_(Chordates)":    {
+    "H2A.Z.1_(Chordata)":    {
         "level": "variant",
-        "description": "H2A.Z.1_(Chordates) -- product of one of two H2A.Z genes converved in chordates, homologous to human H2AZ1 gene [giaimo_histone_2019]. Porducts of H2AZ1 and H2AZ2 genes differ by only three amino acids, however they have acquired some degree of functional indepedence. For example, H2A.Z.1 has been shown to better interact with bromodomain-containing protein 2 (BRD2) [draker_combination_2012], H2A.Z.2  preferentially associates with H3 trimethylated at lysine 4  (H3K4me3) [dryhurst_characterization_2009].",
+        "description": "H2A.Z.1_(Chordata) -- product of one of two H2A.Z genes converved in chordates, homologous to human H2AZ1 gene [giaimo_histone_2019]. Porducts of H2AZ1 and H2AZ2 genes differ by only three amino acids, however they have acquired some degree of functional indepedence. For example, H2A.Z.1 has been shown to better interact with bromodomain-containing protein 2 (BRD2) [draker_combination_2012], H2A.Z.2  preferentially associates with H3 trimethylated at lysine 4  (H3K4me3) [dryhurst_characterization_2009].",
+        "taxonomic_span": "Chordata",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
+                },
+    "H2A.Z.1_(Primates)":    {
+        "level": "variant",
+        "description": "H2A.Z.1_(Primates) -- H2A.Z.1 variant in primates, see H2A.Z.1_(Chordata) variant description.",
+        "taxonomic_span": "Primates",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
+                },
+    "H2A.Z.1_(Homo_sapiens)":    {
+        "level": "variant",
+        "description": "H2A.Z.1_(Homo_sapiens) -- H2A.Z variant encoded in humans by H2A.Z.1 gene. Differes by only 3 amino acids from the product of H2A.Z.2 gene.",
         "taxonomic_span": "Eukaryotes",
         "alternate_names": [],
         "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
                 },
-    "H2A.Z.2_(Chordates)":    {
+    "H2A.Z.2_(Chordata)":    {
         "level": "variant",
-        "description": "H2A.Z.2_(Chordates) -- product of one of two H2A.Z genes converved in chordates, homologous to human H2AZ1 gene [giaimo_histone_2019]. Porducts of H2AZ1 and H2AZ2 genes differ by only three amino acids, however they have acquired some degree of functional indepedence. For example, H2A.Z.1 has been shown to better interact with bromodomain-containing protein 2 (BRD2) [draker_combination_2012], H2A.Z.2  preferentially associates with H3 trimethylated at lysine 4  (H3K4me3) [dryhurst_characterization_2009].",
-        "taxonomic_span": "Eukaryotes",
+        "description": "H2A.Z.2_(Chordata) -- product of one of two H2A.Z genes converved in chordates, homologous to human H2A.Z.2 gene [giaimo_histone_2019]. Porducts of H2A.Z.1 and H2A.Z.2 genes differ by only three amino acids, however they have acquired some degree of functional indepedence. For example, H2A.Z.1 has been shown to better interact with bromodomain-containing protein 2 (BRD2) [draker_combination_2012], H2A.Z.2  preferentially associates with H3 trimethylated at lysine 4  (H3K4me3) [dryhurst_characterization_2009].",
+        "taxonomic_span": "Chordata",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
+                },
+    "H2A.Z.2_(Primates)":    {
+        "level": "variant",
+        "description": "H2A.Z.2_(Primates) -- H2A.Z.2 variant in primates, see H2A.Z.2_(Chordata) variant description.",
+        "taxonomic_span": "Primates",
         "alternate_names": [],
         "publications": ["giaimo_histone_2019","colino-sanguino_h2az-nuclesome_2021","talbert_histone_2021"]
                 },
     "H2A.Z.2.s1_(Primates)":    {
         "level": "variant",
         "description": "H2A.Z.2.s1_(Primates) -- this is the main full length splice isoform of H2A.Z.2 in primates as compared to an slternatively spliced H2A.Z.2.s2 isofom which has an alternative shorter C-terminus [giaimo_histone_2019].",
-        "taxonomic_span": "Eukaryotes",
+        "taxonomic_span": "Primates",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019"]
+                },
+    "H2A.Z.2.s1_(Homo_sapiens)":    {
+        "level": "variant",
+        "description": "H2A.Z.2.s1_(Homo_sapiens) -- this is the main full length splice isoform of H2A.Z.2 in humans as compared to an slternatively spliced H2A.Z.2.s2 isofom which has an alternative shorter C-terminus [giaimo_histone_2019].",
+        "taxonomic_span": "Homo_sapiens",
         "alternate_names": [],
         "publications": ["giaimo_histone_2019"]
                 },
     "H2A.Z.2.s2_(Primates)":    {
         "level": "variant",
         "description": "H2A.Z.2.s2_(Primates) -- this is an alternatively spliced isoform of H2A.Z.2 in primates which has an alternative shorter C-terminus with respect to H2A.Z.2.s1 isoform. This isoform is expressed in a wide range of tissues, including brain tissues. Nucleosome containing H2A.Z.2.s2 isoform are less stable, than nuclesomes with the main isoform. [giaimo_histone_2019].",
-        "taxonomic_span": "Eukaryotes",
+        "taxonomic_span": "Primates",
+        "alternate_names": [],
+        "publications": ["giaimo_histone_2019"]
+                },
+    "H2A.Z.2.s2_(Homo_sapiens)":    {
+        "level": "variant",
+        "description": "H2A.Z.2.s2_(Homo_sapiens) -- this is an alternatively spliced isoform of H2A.Z.2 in humans which has an alternative shorter C-terminus with respect to H2A.Z.2.s1 isoform. This isoform is expressed in a wide range of tissues, including brain tissues. Nucleosome containing H2A.Z.2.s2 isoform are less stable, than nuclesomes with the main isoform. [giaimo_histone_2019].",
+        "taxonomic_span": "Homo_sapiens",
         "alternate_names": [],
         "publications": ["giaimo_histone_2019"]
                 },
     "H2A.X": {
         "level": "variant_group",
-        "description": "H2A.X most notably is involved in DNA damage response, marking the double strand DNA breaks with its phosphorylated form ɣ-H2A.X. It is also more broadly implicated in chromatin remodeling, found at collapsed replication forks and heterochromatin. It is the only non-monophyletic variant in H2A and has the charactristic SQE/DΦ motif at C-terminus (SQAY in Drosophila), where Φ-represents a hydrophobic residue (usually Tyr in mammals), and S is phosphorylation site. Nematodes are the only known species that lack H2A.X. In yeast H2A.X function is fulfilled by conventional H2A, while in Drosophila melanogaster by H2A.Z.",
-        "taxonomic_span": "Eukaryotes except nematode",
+        "description": "H2A.X --  is an H2A histone variant present in almost all Eukaryotes most notably involved in DNA damage response, marking the double strand DNA breaks with its phosphorylated form ɣ-H2A.X. It is also more broadly implicated in chromatin remodeling, found at collapsed replication forks and heterochromatin. It is a non-monophyletic (polyphyletic) variant  of H2A and has the charactristic SQE/DΦ motif at C-terminus (SQAY in Drosophila), where Φ-represents a hydrophobic residue (usually Tyr in mammals), and S is phosphorylation site. In multicellular eukaryotes H2A.X is usually closely related to  cH2As in the same group of multicellular organisms [millar_organizing_2013, talbert_histone_2021]. It seems likely that H2A.X was ancestral to cH2As due to its conserved role in DNA damage response [talbert_histone_2010]. Caveats: Nematodes are the only known species that lack H2A.X. Many fungi lack canonical H2A its role is fullfiled by H2A.X. In Drosophila melanogaster H2A.X function is fullfiled by H2A.Z histone.",
+        "taxonomic_span": "Eukaryotes",
         "alternate_names": [{"name": "member X"}],
         "publications": ["22650316","25731851","18095327","23301656"]
                 },
     "macroH2A": {
         "level": "variant_group",
-        "description": "macroH2A is involved in X-inactivation and transcriptional regulation; can be found in inactivated X chromosome, gene promoters, and heterochromatin. It contains a ∼30 kDa additional globular macrodomain attached to C-terminus. Its taxonomic span was thought to be restricted to vertebrates, but this is currently disputed.",
-        "taxonomic_span": "Vertebrates(?)",
+        "description": "macroH2A is the largest replication independent H2A histone variant characterized by an additional non-histone ~30 kDa macro domain connected to the C-end of the  histone fold via an unstructured linker. MacroH2A is conserved and widespread in vertebrates, but also found in invertebrates. MacroH2A is involved in heterochromatin formation, X-inactivation and transcriptional regulation. MacroH2A is broadly distributed across the genome, found at H3K27me3-decorated faculatative heterochromatin, constitutive heterochromatin regions, is incorporated at sites of DNA damage.  Macro domains may be capable of binding NAD+ derived metabolites, such as ADP-ribose and poly-ADP-ribose. Mammals have two macroH2A genes (macroH2A.1 and macroH2A.2 in humans) [sun_histone_2019].",
+        "taxonomic_span": "Metazoa",
         "alternate_names": [{"name": "mH2A"},{"name": "macroH2A1","gene": 1},{"name": "macroH2A2","gene": 2},{"name": "macroH2A1.1","gene": 1,"splice": 1},{"name": "macroH2A1.2","gene": 1,"splice": 2},{"name": "macroH2A2.1","gene": 2,"splice": 1},{"name": "macroH2A2.2","gene": 2,"splice": 2}],
     "publications": ["22650316","25731851","16107708","20543561","16803903"]
                 },
+    "macroH2A.1_(Mammalia)": {
+        "level": "variant",
+        "description": "macroH2A.1_(Mammalia) is a protein encoded by one of the macroH2A genes in mammals (coresponds to macroH2A.1 gene in humans). This gene further produces two splice variants macroH2A.1.s1 and macroH2A.1.s2 by inclusion of mutually exclusive exons encoding a region within the macro domain. The macro domain of macroH2A.1.s1 isoform is capable of binding NAD+ derived metabolites, such as ADP-ribose and poly-ADP-ribose, while other isoforms (including those produced by macroH2A.2 gene homologs) do not have this ability [sun_histone_2019].",
+        "taxonomic_span": "Mammalia",
+        "alternate_names": [],
+    "publications": []
+                },
+    "macroH2A.1.s1_(Mammalia)": {
+        "level": "variant",
+        "description": "macroH2A.1.s1_(Mammalia) is a splice isoform encoded by one of the macroH2A genes in mammals (coresponds to macroH2A.1 gene in humans). The macro domain of macroH2A.1.s1 isoform is capable of binding NAD+ derived metabolites, such as ADP-ribose and poly-ADP-ribose, while other isoforms (including those produced by macroH2A.2 gene homologs) do not have this ability [sun_histone_2019].",
+        "taxonomic_span": "Mammalia",
+        "alternate_names": [],
+    "publications": []
+                },
+    "macroH2A.1.s1_(Homo_sapiens)": {
+        "level": "variant",
+        "description": "macroH2A.1.s1_(Homo_sapiens) is a splice isoform encoded by macroH2A.1 gene in humans. The macro domain of macroH2A.1.s1 isoform is capable of binding NAD+ derived metabolites, such as ADP-ribose and poly-ADP-ribose, while other isoforms (including those produced by macroH2A.2 gene homologs) do not have this ability [sun_histone_2019].",
+        "taxonomic_span": "Homo_sapiens",
+        "alternate_names": [],
+    "publications": []
+                },
+    "macroH2A.1.s2_(Mammalia)": {
+        "level": "variant",
+        "description": "macroH2A.1.s2_(Mammalia) is a splice isoform encoded by one of the macroH2A genes in mammals (coresponds to macroH2A.1 gene in humans). The macro domain of macroH2A.1.s2 isoform is not capable of binding NAD+ derived metabolites, such as ADP-ribose and poly-ADP-ribose [sun_histone_2019].",
+        "taxonomic_span": "Mammalia",
+        "alternate_names": [],
+    "publications": []
+                },
+    "macroH2A.1.s2_(Homo_sapiens)": {
+        "level": "variant",
+        "description": "macroH2A.1.s2_(Homo_sapiens) is a splice isoform encoded by macroH2A.1 gene in humans. The macro domain of macroH2A.1.s2 isoform is not capable of binding NAD+ derived metabolites, such as ADP-ribose and poly-ADP-ribose [sun_histone_2019].",
+        "taxonomic_span": "Homo_sapiens",
+        "alternate_names": [],
+    "publications": []
+                },
+    "macroH2A.2_(Mammalia)": {
+        "level": "variant",
+        "description": "macroH2A.2_(Mammalia) is a protein encoded by one of the macroH2A genes in mammals (coresponds to macroH2A.2 gene in humans). The macro domain of macroH2A.2 variant is not capable of binding NAD+ derived metabolites [sun_histone_2019].",
+        "taxonomic_span": "Mammalia",
+        "alternate_names": [],
+    "publications": []
+                },
+    "macroH2A.2_(Homo_sapiens)": {
+        "level": "variant",
+        "description": "macroH2A.2_(Homo_sapiens) is a protein encoded by macroH2A.2 gene in humans. The macro domain of macroH2A.2 variant is not capable of binding NAD+ derived metabolites [sun_histone_2019].",
+        "taxonomic_span": "Homo_sapiens",
+        "alternate_names": [],
+    "publications": []
+                },
+    "H2A.B": {
+        "level": "variant_group",
+        "description": "H2A.B, also known as \"Barr body defficient\" variant, it has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [{"name": "H2A.Bbd"},{"name": "H2A.Lap1(mouse)"}],
+        "publications": ["22650316","25731851","24853749","18329190","17726088","24213378","22795134","24753410"]
+            },
+
     "H2A.L":    {
         "level": "variant_group",
         "description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
@@ -367,48 +472,8 @@
                                 "2023250"
                         ]
                 },
-                "H2A.B": {
-                        "level": "variant_group",
-                        "description": "H2A.B, also known as \"Barr body defficient\" variant, it has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
-                        "taxonomic_span": "Mammals",
-                        "alternate_names": [
-                                {
-                                        "name": "H2A.Bbd"
-                                },
-                                {
-                                        "name": "H2A.Lap1(mouse)"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851",
-                                "24853749",
-                                "18329190",
-                                "17726088",
-                                "24213378",
-                                "22795134",
-                                "24753410"
-                        ]
-                },
-                "H2A.1": {
-                        "level": "variant_group",
-                        "description": "H2A.1 is a mammalian testis, oocyte and zygote specific variant. It can preferentially dimerize with  H2B.1. So far characterized only in mouse, but a similar gene in human is available. The gene is located  at the end of the largest histone gene cluster.",
-                        "taxonomic_span": "Mammals",
-                        "alternate_names": [
-                                {
-                                        "name": "TH2A"
-                                },
-                                {
-                                        "name": "TS H2A.1"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851",
-                                "24506885",
-                                "26188507"
-                        ]
-                },
+
+
                 "H2A.P": {
                         "level": "variant_group",
                         "description": "H2A.P is a putative variant closely related to H2A.B and H2A.L, but forming a distinct clade. It is likely restricted to placental mammals.",
