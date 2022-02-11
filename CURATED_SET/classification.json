@@ -67,11 +67,29 @@
             },
         "short_H2A":
             {
-            "H2A.B": "null",
-            "H2A.L": "null",
-            "H2A.P": "null",
-            "H2A.R": "null",
+            "H2A.B": 
+                {
+                "H2A.B_(Homo_sapiens)":
+                    {
+                    "H2A.B.1_(Homo_sapiens)":"null",
+                    "H2A.B.2_(Homo_sapiens)":"null"
+                    },
+                "H2A.B_(Mus_musculus)":
+                    {
+                    "H2A.B.1_(Mus_musculus)":"null",
+                    "H2A.B.2_(Mus_musculus)":"null",
+                    "H2A.B.3_(Mus_musculus)":"null"
+                    }
+                },
+            "H2A.L": 
+                {
+                "H2A.L_(Homo_sapiens)":"null",
+                "H2A.L_(Mus_musculus)":{"H2A.L.1_(Mus_musculus)":"null","H2A.L.2_(Mus_musculus)":"null"}
+                },
+            "H2A.P": {"H2A.P_(Homo_sapiens)":"null"},
+            "H2A.Q": "null"
             },
+        "H2A.R": "null",
         "H2A.W": "null",
         "H2A.P": "null",
         "H2A.J": "null"
@@ -433,14 +451,14 @@
                 },
     "short_H2A": {
         "level": "variant_group",
-        "description": "short_H2A, also known as \"Barr body defficient\" variant, it has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
-        "taxonomic_span": "Mammals",
-        "alternate_names": [{"name": "H2A.Bbd"},{"name": "H2A.Lap1(mouse)"}],
-        "publications": ["22650316","25731851","24853749","18329190","17726088","24213378","22795134","24753410"]
+        "description": "short_H2A is a class encompassing several histone H2A variants in placental mammals with shortened C-terminus expressed mainly during mammalian male germ cell development before the nearly complete replacement of histones by protamines in sperm nuclei. The repertoires of short histone H2A variants vary extensively among eutherian mammals due to lineage-specific gains and losses. Short H2A variants include H2A.B, H2A.L, H2A.P, H2A.Q, their genes are usually located on X chromosome. Due to shortened docking domain and changes within the acidic patch nucleosomes incorporating short H2As wrap less DNA (120-130 bp) and form loosely packed chromatin [molaro_evolutionary_2018].  Abberant short H2A upregulation was reported in a broad range of cancers [chew_short_2021]. Caveats: H2A.B is also expressed in the brain [jiang_short_2020].",
+        "taxonomic_span": "Eutheria",
+        "alternate_names": [{"name": "sH2A"}],
+        "publications": []
             },
     "H2A.B": {
-        "level": "variant_group",
-        "description": "H2A.B, also known as \"Barr body defficient\" variant, it has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
+        "level": "variant",
+        "description": "H2A.B, also known as \"Barr body defficient\" variant - is a short H2A variant found in mammals. The are usually endoded on X chromosomes  It has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
         "taxonomic_span": "Mammals",
         "alternate_names": [{"name": "H2A.Bbd"},{"name": "H2A.Lap1(mouse)"}],
         "publications": ["22650316","25731851","24853749","18329190","17726088","24213378","22795134","24753410"]
