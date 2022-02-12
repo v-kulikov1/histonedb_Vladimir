@@ -76,9 +76,9 @@
                     },
                 "H2A.B_(Mus_musculus)":
                     {
-                    "H2A.B.1_(Mus_musculus)":"null",
+                    "H2A.B.1_(Mus_musculus)":"null", //H2A.B.3, H2A.Lap1
                     "H2A.B.2_(Mus_musculus)":"null",
-                    "H2A.B.3_(Mus_musculus)":"null"
+                    "H2A.B.3_(Mus_musculus)":"null" 
                     }
                 },
             "H2A.L": 
