@@ -458,12 +458,53 @@
             },
     "H2A.B": {
         "level": "variant",
-        "description": "H2A.B, also known as \"Barr body defficient\" variant - is a short H2A variant found in mammals. The are usually endoded on X chromosomes  It has been reported to be associated with transcription upregulation, splicing, DNA synthesis and spermiogenesis; it is also found in active genes at transcription start sites in testis. H2A.B is a rapildy evolving variant which is closely related to H2A.L and H2A.P. It is arginine rich, has a shortened C-terminal tail and docking domain and a smaller acidic patch. It is possible that mouse homolog of H2A.B, also called H2A.Lap1, bears modified function with respect to human H2A.B. H2A.Lap1 has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
+        "description": "H2A.B, previously known as \"Barr body defficient\" (H2A.Bbd) variant -- is a short replication independent H2A variant found in mammals implicated in spermiogenesis, transcription regulation, splicing, DNA synthesis. Genes: Common ancestor of eutherian mammals encoded two or three H2A.B genes. Genes are usually located on X chomosome (except mouse, where they relocated). Human and mouse have three genes encoding H2A.Bs [molaro_evolutionary_2018]. Evolution: H2A.B is a rapildy evolving variant which is closely related to H2A.L, H2A.P, H2A.Q [molaro_evolutionary_2018]. Knock-out: H2A.B knock-out mice are viable, subfertile and display changes in splicing events [anuar_gene_2019]. Sequence: Around 50% identity with the canonical H2A, has truncated docking domain, divergent histone fold domain, altered acidic patch, arginine rich N-terminus [molaro_evolutionary_2018]. Localization: H2A.B is expressed during mammalian male germ cell development and in the brain [molaro_evolutionary_2018,jiang_short_2020]. Originally, H2A.B  was characterized by its exclusion from the inactive X chromosome if overexpressed in female somatic cells [chadwick_novel_2001]. However, experiments in mouse testis revealed that H2A.B is in fact present on the inactive X chromosome  [soboleva_unique_2011]. Short H2A variants localize to sites of open chromatin and potentiate DNA synthesis, transcription, and splicing [molaro_evolutionary_2018]. This histone variant can bind to RNA directly in vitro and in vivo, and associates with mRNA at intron—exon boundaries [soboleva_new_2017]. Structural effects: H2A.B containing nucleosomes wrap less DNA (~120-130 bp instead of ~150 bp) [sugiyama_distinct_2014,doyen_dissection_2006], form loosely packed chromatin. Interactions: RNA processing factors, proteins involved in the piRNA pathway [jiang_short_2020]  Deposition: It was suggested that H2A.B is incorporated into DNA sites that are transiently exposed, for instance, during DNA relication [jiang_short_2020]. H2A.B-H2A dimers in nuclesomes can sontaneously be replaced by H2A-H2B dimers [hirano_histone_2021]. Disease: H2A.B is upregulated in cancer as other short H2A variants [chew_short_2021]. Caveats: Due to rapid evolution H2A.B function in different species may vary. For example, human H2A.B is retained during spermiogenesis, while is mouse it dissappers and H2A.L is retained instead [molaro_evolutionary_2018]. Mouse H2A.B has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
         "taxonomic_span": "Mammals",
-        "alternate_names": [{"name": "H2A.Bbd"},{"name": "H2A.Lap1(mouse)"}],
-        "publications": ["22650316","25731851","24853749","18329190","17726088","24213378","22795134","24753410"]
+        "alternate_names": [{"name": "H2A.Bbd"},{"name": "H2A.Lap1(mouse)"},{"name": "H2A.B.3(mouse)"}],
+        "publications": []
             },
-
+    "H2A.B_(Homo_sapiens)": {
+        "level": "variant",
+        "description": "H2A.B_(Homo_sapiens), previously known as \"Barr body defficient\" (H2A.Bbd) variant -- is a group of short replication independent H2A variants in humans encoded by H2AB1, H2AB2 and H2AB3 genes. They are involved in spermiogenesis, transcription regulation, splicing, DNA synthesis. Genes: In human H2A.B is encoded by H2AB1, H2AB2 and H2AB3 genes. Genes are intronless. H2AB2 and H2AB3 encode identical proteins. H2AB1 a protein which differes by ??one?? amino acid. Genes are located on X chromosome. Evolution: H2A.B is a rapildy evolving variant which is closely related to H2A.L, H2A.P, H2A.Q [molaro_evolutionary_2018]. Common ancestor of eutherian mammals encoded two or three H2A.B genes. Knock-out: H2A.B knock-out mice are viable, subfertile and display changes in splicing events [anuar_gene_2019]. Sequence: Around 50% identity with the canonical H2A, has truncated docking domain, divergent histone fold domain, altered acidic patch, arginine rich N-terminus [molaro_evolutionary_2018]. Localization: H2A.B is expressed during mammalian male germ cell development and in the brain [molaro_evolutionary_2018,jiang_short_2020]. Originally, H2A.B  was characterized by its exclusion from the inactive X chromosome if overexpressed in female somatic cells [chadwick_novel_2001]. However, experiments in mouse testis revealed that H2A.B is in fact present on the inactive X chromosome  [soboleva_unique_2011]. Short H2A variants localize to sites of open chromatin and potentiate DNA synthesis, transcription, and splicing [molaro_evolutionary_2018]. In mouse this histone variant was shown to bind to RNA directly in vitro and in vivo, and associate with mRNA at intron—exon boundaries [soboleva_new_2017]. Structural effects: H2A.B containing nucleosomes wrap less DNA (~120-130 bp instead of ~150 bp) [sugiyama_distinct_2014,doyen_dissection_2006], form loosely packed chromatin. Interactions: RNA processing factors, proteins involved in the piRNA pathway [jiang_short_2020]  Deposition: It was suggested that H2A.B is incorporated into DNA sites that are transiently exposed, for instance, during DNA relication [jiang_short_2020]. H2A.B-H2A dimers in nuclesomes can sontaneously be replaced by H2A-H2B dimers [hirano_histone_2021]. Disease: H2A.B is upregulated in cancer as other short H2A variants [chew_short_2021]. Caveats: Due to rapid evolution H2A.B function in different species may vary. For example, human H2A.B is retained during spermiogenesis, while is mouse it dissappers and H2A.L is retained instead [molaro_evolutionary_2018]. Mouse H2A.B has additional negative residue in acidic patch, which is thought to increase its propensity to compact nucleosomal arrays relative to human H2A.B.",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [{"name": "H2A.Bbd"}],
+        "publications": []
+            },
+    "H2A.B.1_(Homo_sapiens)": {
+        "level": "variant",
+        "description": "H2A.B.1_(Homo_sapiens) is one of the two isoform of H2A.B variant in humans encoded by H2AB1  gene. This isoform differs by ??one?? amino acid from H2A.B.2 isoform encoded by H2AB2 and H2AB3 genes. Caveats: Unfortunately there is confusion with respect to the number suffix in the literature. El Kennani et al. have used this numbering scheme that follows the numbers in the gene names [el_kennani_ms_histonedb_2017]. And the gene names are numbered from centromere to telomere. However, Molaro et al. in their evolutionary analysis have used H2A.B.1.1, H2A.B.1.2 and H2A.B.2 to reffer to H2AB3, H2AB2 and H2AB1 genes, respectively. The variant numbering used by Molaro et al. was based on the relative position of the genes on each arm of the X Chromosome from telomere to centromere [molaro_evolutionary_2018].",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [{"name": "H2A.B.2"}],
+        "publications": []
+            },
+    "H2A.B.2_(Homo_sapiens)": {
+        "level": "variant",
+        "description": "H2A.B.2_(Homo_sapiens) is one of the two isoform of H2A.B variant in humans encoded by H2AB2 and H2AB3  genes. This isoform differs by ??one?? amino acid from H2A.B.1 isoform encoded by H2AB1 gene. Caveats: Unfortunately there is confusion with respect to the number suffix in the literature. El Kennani et al. have used this numbering scheme that follows the numbers in the gene names [el_kennani_ms_histonedb_2017]. And the gene names are numbered from centromere to telomere. However, Molaro et al. in their evolutionary analysis have used H2A.B.1.1, H2A.B.1.2 and H2A.B.2 to reffer to H2AB3, H2AB2 and H2AB1 genes, respectively. The variant numbering used by Molaro et al. was based on the relative position of the genes on each arm of the X Chromosome from telomere to centromere [molaro_evolutionary_2018].",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [{"name": "H2A.B.1"},{"name": "H2A.B.1.1"},{"name": "H2A.B.1.2"}],
+        "publications": []
+            },
+    "H2A.B.1_(Mus_musculus)": {
+        "level": "variant",
+        "description": "H2A.B.1_(Mus_musculus) is one of the three isoforms of H2A.B variant in mouse encoded by H2ab3 gene. Caveats: Unfortunately there is some confusion with respect to the number suffixes in the literature and between the gene names and variant names. This variant was named initially H2A.Lap1 [soboleva_unique_2011], but renamed afterwards to H2A.B.3 [soboleva_new_2017], and this name has been used afterwards [anuar_gene_2019,jiang_short_2020]. Hence we follow the established convention.",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [],
+        "publications": []
+            },
+    "H2A.B.2_(Mus_musculus)": {
+        "level": "variant",
+        "description": "H2A.B.2_(Mus_musculus) is one of the three isoforms of H2A.B variant in mouse encoded by H2ab2 gene.",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [],
+        "publications": []
+            },
+    "H2A.B.3_(Mus_musculus)": {
+        "level": "variant",
+        "description": "H2A.B.3_(Mus_musculus) is one of the three isoforms of H2A.B variant in mouse encoded by H2ab1 gene. This gene has been characterized the most experimentally among all H2A.B. variants. Caveats: Unfortunately there is some confusion with respect to the number suffixes in the literature and between the gene names and variant names. This variant was named initially H2A.Lap1 [soboleva_unique_2011], but renamed afterwards to H2A.B.3 [soboleva_new_2017], and this name has been used afterwards [anuar_gene_2019,jiang_short_2020]. Hence we follow the established convention.",
+        "taxonomic_span": "Mammals",
+        "alternate_names": [{"name": "H2A.Lap1"}],
+        "publications": []
+            },
     "H2A.L":    {
         "level": "variant_group",
         "description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
