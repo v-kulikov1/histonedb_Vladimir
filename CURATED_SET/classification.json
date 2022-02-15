@@ -39,7 +39,7 @@
                 "cH2A_(Chlorophyta)":"null"
                 },
             "cH2A_(Protists)":"null"
-        },
+            },
         "H2A.Z": 
             {
             "H2A.Z.1_(Chordata)":
@@ -76,7 +76,7 @@
                     },
                 "H2A.B_(Mus_musculus)":
                     {
-                    "H2A.B.1_(Mus_musculus)":"null", //H2A.B.3, H2A.Lap1
+                    "H2A.B.1_(Mus_musculus)":"null", 
                     "H2A.B.2_(Mus_musculus)":"null",
                     "H2A.B.3_(Mus_musculus)":"null" 
                     }
@@ -280,7 +280,6 @@
         "alternate_names": [{"name": "Th2a"},{"name": "TS H2A.1"}],
         "publications": []
                 },    
-   
     "cH2A_(Plants)":     {
         "level": "variant_group",
         "description": "cH2A_(Plants) -- canonical replication-dependent H2A histones of green plants (Viridiplantae), which include green algae and land plants. Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]",
@@ -386,7 +385,7 @@
         "alternate_names": [],
         "publications": ["giaimo_histone_2019"]
                 },
-    "H2A.X": {
+    "H2A.X":    {
         "level": "variant_group",
         "description": "H2A.X --  is an H2A histone variant present in almost all Eukaryotes most notably involved in DNA damage response, marking the double strand DNA breaks with its phosphorylated form ɣ-H2A.X. It is also more broadly implicated in chromatin remodeling, found at collapsed replication forks and heterochromatin. It is a non-monophyletic (polyphyletic) variant  of H2A and has the charactristic SQE/DΦ motif at C-terminus (SQAY in Drosophila), where Φ-represents a hydrophobic residue (usually Tyr in mammals), and S is phosphorylation site. In multicellular eukaryotes H2A.X is usually closely related to  cH2As in the same group of multicellular organisms [millar_organizing_2013, talbert_histone_2021]. It seems likely that H2A.X was ancestral to cH2As due to its conserved role in DNA damage response [talbert_histone_2010]. Caveats: Nematodes are the only known species that lack H2A.X. Many fungi lack canonical H2A its role is fullfiled by H2A.X. In Drosophila melanogaster H2A.X function is fullfiled by H2A.Z histone.",
         "taxonomic_span": "Eukaryotes",
