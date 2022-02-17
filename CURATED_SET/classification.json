@@ -450,7 +450,7 @@
                 },
     "short_H2A": {
         "level": "variant_group",
-        "description": "short_H2A is a class encompassing several histone H2A variants in placental mammals with shortened C-terminus expressed mainly during mammalian male germ cell development before the nearly complete replacement of histones by protamines in sperm nuclei. The repertoires of short histone H2A variants vary extensively among eutherian mammals due to lineage-specific gains and losses. Short H2A variants include H2A.B, H2A.L, H2A.P, H2A.Q, their genes are usually located on X chromosome. Due to shortened docking domain and changes within the acidic patch nucleosomes incorporating short H2As wrap less DNA (120-130 bp) and form loosely packed chromatin [molaro_evolutionary_2018].  Abberant short H2A upregulation was reported in a broad range of cancers [chew_short_2021]. Caveats: H2A.B is also expressed in the brain [jiang_short_2020].",
+        "description": "short_H2A is a class encompassing several histone H2A variants in placental mammals with shortened C-terminus expressed mainly during mammalian male germ cell development before the nearly complete replacement of histones by protamines in sperm nuclei. The repertoires of short histone H2A variants vary extensively among eutherian mammals due to lineage-specific gains and losses. Short H2A variants include H2A.B, H2A.L, H2A.P, H2A.Q, their genes are usually located on X chromosome. These four clades of eutherian mammal short H2A variants emerged from a single, well-supported monophyletic clade, confirming their common ancestry [molaro_evolutionary_2018]. Due to shortened docking domain and changes within the acidic patch nucleosomes incorporating short H2As wrap less DNA (120-130 bp) and form loosely packed chromatin [molaro_evolutionary_2018].  Abberant short H2A upregulation was reported in a broad range of cancers [chew_short_2021]. Caveats: H2A.B is also expressed in the brain [jiang_short_2020].",
         "taxonomic_span": "Eutheria",
         "alternate_names": [{"name": "sH2A"}],
         "publications": []
@@ -505,8 +505,8 @@
         "publications": []
             },
     "H2A.L":    {
-        "level": "variant_group",
-        "description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
+        "level": "variant",
+        "description": "H2A.L - is a class of short H2A variants in eutherian mammals implicated in spermatogenesis and replacement of histones with protamines. Genes: Evolution: We therefore suggest that H2A.L function was lost in Old World monkeys and hominoids but retained in New World monkeys. [molaro_evolutionary_2018] Knock-out: Function: Sequence: Localization: Structural effects: Deposition: Disease: Caveats: H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.//One mouse H2a.l gene relocated to the Y chromosome while a second moved to chromosome 2 [5,22]. //H2A.L.2 were identified by Khochbin and colleagues using a proteomic approach in mice testes [23]. An important distinguishing feature of different short histone H2A variants expressed in the same species is their timing of expression during spermatogenesis. For example, in the mouse, H2A.B.3 is maximally expressed following the completion of meiosis (in round spermatids) [22], while H2A.L.2 is maximally expressed at later stages (condensing spermatids) when histones are bound by transition proteins and then replaced with protamines [20,23]",
         "taxonomic_span": "Certain mammals",
         "alternate_names": [{"name": "H2AL"},{"name": "H2AL1","gene": 1},{"name": "H2AL2","gene": 2},{"name": "H2A.Lap2"},{"name": "H2A.Lap3"}],
         "publications": ["22650316","25731851","19506029","17261847","18703863"]
@@ -525,6 +525,14 @@
         "alternate_names": [{"name": "Huntingtin-interacting protein M"},{"name": "HYPM"},{"name": "CXorf27"},{"name": "HIP17"},{"name": "H2A.Lap4"}],
         "publications": ["22025671","9700202"]
             },
+    "H2A.R": {
+        "level": "variant_group",
+        "description": "Furthermore, each of the short H2A variants, except H2A.L, is found in well-supported monophyletic clades. This indicates that these clades have diverged independently for at least 100 million years. All four eutherian short histone variants group with extremely high support with H2A.R variants, paralleling the mammalian species tree (Bininda-Emonds et al. 2007). Based on this phylogenetic analysis, we conclude that a precursor histone variant diversified to the typically sized H2A.R in monotremes and marsupials and to four classes of short histone H2A variants found only in eutherian mammals[molaro_evolutionary_2018]",
+        "taxonomic_span": "Placentalia",
+        "alternate_names": [{"name": "Huntingtin-interacting protein M"},{"name": "HYPM"},{"name": "CXorf27"},{"name": "HIP17"},{"name": "H2A.Lap4"}],
+        "publications": ["22025671","9700202"]
+            },
+             
     "H2A.J": {
         "level": "variant_group",
         "description": "H2A.J ...",
