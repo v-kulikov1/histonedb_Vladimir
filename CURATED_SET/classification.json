@@ -508,82 +508,35 @@
         "level": "variant_group",
         "description": "H2A.L is involved in pericentric chromatin organization in spermatids and spermiogenesis. It is a rapildy evolving variant and can form subnucleosmal particles with H2B.1. H2A.L has a shorter C-terminal tail and docking domain.",
         "taxonomic_span": "Certain mammals",
-        "alternate_names": [{"name": "H2AL"},{"name": "H2AL1","gene": 1},
-                                {
-                                        "name": "H2AL2",
-                                        "gene": 2
-                                },
-                                {
-                                        "name": "H2A.Lap2"
-                                },
-                                {
-                                        "name": "H2A.Lap3"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851",
-                                "19506029",
-                                "17261847",
-                                "18703863"
-                        ]
+        "alternate_names": [{"name": "H2AL"},{"name": "H2AL1","gene": 1},{"name": "H2AL2","gene": 2},{"name": "H2A.Lap2"},{"name": "H2A.Lap3"}],
+        "publications": ["22650316","25731851","19506029","17261847","18703863"]
                 },
-                "H2A.W": {
-                        "level": "variant_group",
-                        "description": "H2A.W is a plant specific variant, that has SPKK motifs at the N-terminus, which have putative minor-groove-binding activity.",
-                        "taxonomic_span": "Plants",
-                        "alternate_names": [
-                                {
-                                        "name": "H2A with SPKK motifs"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "2023250"
-                        ]
-                },
-
-
-                "H2A.P": {
-                        "level": "variant_group",
-                        "description": "H2A.P is a putative variant closely related to H2A.B and H2A.L, but forming a distinct clade. It is likely restricted to placental mammals.",
-                        "taxonomic_span": "Placentalia",
-                        "alternate_names": [
-                                {
-                                        "name": "Huntingtin-interacting protein M"
-                                },
-                                {
-                                        "name": "HYPM"
-                                },
-                                {
-                                        "name": "CXorf27"
-                                },
-                                {
-                                        "name": "HIP17"
-                                },
-                                {
-                                        "name": "H2A.Lap4"
-                                }
-                        ],
-                        "publications": [
-                                "22025671",
-                                "9700202"
-                        ]
-                },
-                "H2A.J": {
-                        "level": "variant_group",
-                        "description": "H2A.J ...",
-                        "taxonomic_span": "Homo",
-                        "alternate_names": [],
-                        "publications": [
-                                "25731851"
-                        ]
-                },
-                "H2B": {
-                        "level": "type",
-                        "description": "H2B is one of the core histones. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2B consists of histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome."
-                },
-                "cH2B": {
+    "H2A.W": {
+        "level": "variant_group",
+        "description": "H2A.W is a plant specific variant, that has SPKK motifs at the N-terminus, which have putative minor-groove-binding activity.",
+        "taxonomic_span": "Plants",
+        "alternate_names": [{"name": "H2A with SPKK motifs"}],
+        "publications": ["22650316","2023250"]
+            },
+    "H2A.P": {
+        "level": "variant_group",
+        "description": "H2A.P is a putative variant closely related to H2A.B and H2A.L, but forming a distinct clade. It is likely restricted to placental mammals.",
+        "taxonomic_span": "Placentalia",
+        "alternate_names": [{"name": "Huntingtin-interacting protein M"},{"name": "HYPM"},{"name": "CXorf27"},{"name": "HIP17"},{"name": "H2A.Lap4"}],
+        "publications": ["22025671","9700202"]
+            },
+    "H2A.J": {
+        "level": "variant_group",
+        "description": "H2A.J ...",
+        "taxonomic_span": "Homo",
+        "alternate_names": [],
+        "publications": ["25731851"]
+             },
+    "H2B": {
+        "level": "type",
+        "description": "H2B is one of the core histones. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2B consists of histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome."
+           },
+    "cH2B": {
                         "level": "variant_group",
                         "description": "Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
                         "taxonomic_span": "Eukaryotes",
