@@ -90,8 +90,8 @@
             "H2A.Q": "null"
             },
         "H2A.R": "null",
-        "H2A.W": "null",
-        "H2A.J": "null"
+        "H2A.J": "null",
+        "H2A.W": "null"
         },
     "H2B": 
         {
@@ -449,7 +449,7 @@
                 },
     "short_H2A": {
         "level": "variant_group",
-        "description": "short_H2A is a class encompassing several histone H2A variants in placental (eutherian) mammals with shortened C-terminus expressed mainly during mammalian male germ cell development before the nearly complete replacement of histones by protamines in sperm nuclei. The repertoires of short histone H2A variants vary extensively among eutherian mammals due to lineage-specific gains and losses. Short H2A variants include H2A.B, H2A.L, H2A.P, H2A.Q, their genes are usually located on X chromosome. These four clades of eutherian mammal short H2A variants emerged from a single, well-supported monophyletic clade, confirming their common ancestry [molaro_evolutionary_2018]. Due to shortened docking domain and changes within the acidic patch nucleosomes incorporating short H2As wrap less DNA (120-130 bp) and form loosely packed chromatin. There are few conserved residues in the histone fold domain of sH2As that distinguish them from each other, instead much of their specialization may stem from changes in the N- and C-terminal tails of these variatns [molaro_evolutionary_2018].  Abberant short H2A upregulation was reported in a broad range of cancers [chew_short_2021]. Caveats: H2A.B is also expressed in the brain [jiang_short_2020].",
+        "description": "short_H2A is a class encompassing several histone H2A variants in placental (eutherian) mammals with shortened C-terminus expressed mainly during mammalian male germ cell development before the nearly complete replacement of histones by protamines in sperm nuclei. The repertoires of short histone H2A variants vary extensively among eutherian mammals due to lineage-specific gains and losses. Short H2A variants include H2A.B, H2A.L, H2A.P, H2A.Q, their genes are usually located on X chromosome and are intronless. These four clades of eutherian mammal short H2A variants emerged from a single, well-supported monophyletic clade, confirming their common ancestry [molaro_evolutionary_2018]. Due to shortened docking domain and changes within the acidic patch nucleosomes incorporating short H2As wrap less DNA (120-130 bp) and form loosely packed chromatin. There are few conserved residues in the histone fold domain of sH2As that distinguish them from each other, instead much of their specialization may stem from changes in the N- and C-terminal tails of these variatns [molaro_evolutionary_2018].  Abberant short H2A upregulation was reported in a broad range of cancers [chew_short_2021]. Caveats: H2A.B is also expressed in the brain [jiang_short_2020].",
         "taxonomic_span": "Eutheria",
         "alternate_names": [{"name": "sH2A"}],
         "publications": []
@@ -584,6 +584,20 @@
         "level": "variant",
         "description": "H2A.P_(Mus_musculus) - is a H2A.P variant histone encoded in humans by H2ap gene. See H2A.P variant description for more information. Caveats: H2A.P in mice was previously name H2AL3 [govin_pericentric_2007] and H2A.Lap4 [soboleva_unique_2011].",
         "taxonomic_span": "Mus musculus",
+        "alternate_names": [],
+        "publications": []
+                },
+    "H2A.Q":    {
+        "level": "variant",
+        "description": "H2A.Q - is a short H2A variant present in many eutherian mammalian genomes at a distinct syntenic location. It is not well studied and has only been identified via bioinformatics approaches [molaro_evolutionary_2018]. Human and mouse does not have functional H2A.Q genes, there is a pseudogene in human, named H2AQ1P, Molaro et al. also lists coordinates for mouse pseudogene (mm10, chrX, 59012618-59012929). No expression of H2A.Q in primates has been also  found and evolutionary analysis cannot confirm the presence of purifying selection for the respective genes. Like other intact short H2A genes, dog and pig H2A.Q genes are transcribed in testes but are undetectable in other tissues examined, including ovary [molaro_evolutionary_2018]. While tails of H2A.B and H2A.L are similar, they differ significantly from H2A.P and H2A.Q , suggesting that short histone H2A variants do not share the same function given the importance of the N-terminal tails in regulating nucleosome function [jiang_short_2020]. H2A.Q histone variants have variable N-terminus, truncated histone fold domain of variable length and altered acidic patch [molaro_evolutionary_2018].",
+        "taxonomic_span": "Eutheria",
+        "alternate_names": [],
+        "publications": []
+                },
+    "H2A.R":    {
+        "level": "variant_group",
+        "description": "H2A.R - is a histone variant found currently in monotremes and marsupials, it is an intermediate between the eutherian short histone H2A variants and canonical H2A. Evolutionary analysis suggests that ancestor histone H2A variant branched out to H2A.R (still possessing a C-terminus) in monotremes and marsupials, and to the four classes of the short histone H2A variants in eutherian mammals. H2A.R histone variants have variable N-terminus, altered charge of the histone fold domain, divergent L1-loop, altered acidic patch and extended C-terminal tail. Platypus and opossum H2A.R variants are expressed in the testis but not in other tissues we examined, including opossum ovary. Molaro et al. concluded that expression analysis allows to infer that testis-specific expression preceded the divergence of H2A.R and eutherian short histone H2A variants and is a common feature of all these genes. It is currently unclear whether the common ancestor of H2A.R and the short H2As was autosomal or sex chromosome-linked [molaro_evolutionary_2018].",
+        "taxonomic_span": "Mammals",
         "alternate_names": [],
         "publications": []
                 },
