@@ -55,6 +55,7 @@ The classification is hierarchichal.
 - Viral_H2A, Vrial_H2B ... for viral histones.
 - Unclassified_H2A, 
 - Fields to include in variant description: name, description, taxonomic_span, alternate_names, publications, members
+- Description tries to include following sections: Genes, Evolution, Knock-out, Function, Sequence, Localization, Deposition, Structural effects, Interactions, Disease, Caveats. 
 
 ## Documetation of a library to analyze and vizualize histone sequence information
 ### Conda environment setup
