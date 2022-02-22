@@ -91,7 +91,8 @@
             },
         "H2A.R": "null",
         "H2A.J": {"H2A.J_(Homo_sapiens)":"null"},
-        "H2A.W": "null"
+        "H2A.W": "null",
+        "H2A.M": "null"
         },
     "H2B": 
         {
@@ -603,17 +604,24 @@
                 },
     "H2A.W": {
         "level": "variant_group",
-        "description": "H2A.W is a plant specific variant, that has SPKK motifs at the N-terminus, which have putative minor-groove-binding activity.",
-        "taxonomic_span": "Plants",
-        "alternate_names": [{"name": "H2A with SPKK motifs"}],
-        "publications": ["22650316","2023250"]
+        "description":
+            {"summary":"H2A.W is a plant specific variant found in angiosperms (flowering plants) having a potentially DNA minor-groove-binding KSPKK motif within its C-terminal tail, it is enriched in heterochromatin and implicated in DNA damage response.",
+            "taxonomy":"H2A.W variant is found exclusively in angiosperms [alvarez-venegas_canonical_2019].",
+            "genes": "",
+            "evolution":"H2A.W is a plant-lineage-specific variant that may have arisen early in the evolution of spermatophytes or seed plants. H2A.W lacks homologs in unicellular green algae, liverworts, mosses, and lycophytes but has distinctive homologs in early spermatophytes from the genus Ginkgo, Cycas, and Gnetum [alvarez-venegas_canonical_2019,kawashima_diversification_2015]. Instead of H2A.W homologs, Kawashima et al. identified a novel group of related H2A variants, they named H2A.M, in the genomes of liverworts, mosses, and lycophytes [kawashima_diversification_2015]. Whether H2A.M and H2A.W emerged from the same ancestor or H2A.M in early basal land plants evolved gradually to become H2A.W in seed plants remains undetermined [alvarez-venegas_canonical_2019,kawashima_diversification_2015].",
+            "knock-out:":"",
+            "function":"",
+            "sequence":"",
+            "localization":"",
+            "deposition":"",
+            "structure":"",
+            "interactions":"",
+            "disease":"",
+            "caveats":""
             },
-    "H2A.R": {
-        "level": "variant_group",
-        "description": "Furthermore, each of the short H2A variants, except H2A.L, is found in well-supported monophyletic clades. This indicates that these clades have diverged independently for at least 100 million years. All four eutherian short histone variants group with extremely high support with H2A.R variants, paralleling the mammalian species tree (Bininda-Emonds et al. 2007). Based on this phylogenetic analysis, we conclude that a precursor histone variant diversified to the typically sized H2A.R in monotremes and marsupials and to four classes of short histone H2A variants found only in eutherian mammals[molaro_evolutionary_2018]",
-        "taxonomic_span": "Placentalia",
-        "alternate_names": [{"name": "Huntingtin-interacting protein M"},{"name": "HYPM"},{"name": "CXorf27"},{"name": "HIP17"},{"name": "H2A.Lap4"}],
-        "publications": ["22025671","9700202"]
+        "taxonomic_span": "Magnoliopsida",
+        "alternate_names": [{"name": "H2A with SPKK motifs"}],
+        "publications": []
             },
     "H2A.J": {
         "level": "variant_group",
