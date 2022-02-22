@@ -612,16 +612,17 @@
     "H2A.W": {
         "level": "variant_group",
         "description":
-            {"summary":"H2A.W is a plant specific variant found in angiosperms (flowering plants) having a potentially DNA minor-groove-binding KSPKK motif within its C-terminal tail, it is enriched in heterochromatin and implicated in DNA damage response.",
+            {"summary":"H2A.W is a plant specific variant found in angiosperms (flowering plants) having a potentially DNA minor-groove-binding SPKK (sometime reffered to as KSPKKA) motif within its C-terminal tail, it is enriched in heterochromatin and implicated in gene silencing and DNA damage response.",
             "taxonomy":"H2A.W variant is found exclusively in angiosperms [alvarez-venegas_canonical_2019].",
-            "genes": "",
+            "genes": "Arabidopsis has three H2A.W genes (HTA6, HTA7, and HTA12) endoding three isoforms, rice genome has four genes (HTA701, HTA706, HTA707, and HTA710) encoding three isoforms. Isoforms endoded by different genes may have different number of SPKK motifs. A single copy of the SPKK motif seems to be true for all eudicots, whereas the monocots have been shown to possess 2 or even 3 copies of the same motif [alvarez-venegas_canonical_2019,kawashima_diversification_2015].",
             "evolution":"H2A.W is a plant-lineage-specific variant that may have arisen early in the evolution of spermatophytes or seed plants. H2A.W lacks homologs in unicellular green algae, liverworts, mosses, and lycophytes but has distinctive homologs in early spermatophytes from the genus Ginkgo, Cycas, and Gnetum [alvarez-venegas_canonical_2019,kawashima_diversification_2015]. Instead of H2A.W homologs, Kawashima et al. identified a novel group of related H2A variants, they named H2A.M, in the genomes of liverworts, mosses, and lycophytes [kawashima_diversification_2015]. Whether H2A.M and H2A.W emerged from the same ancestor or H2A.M in early basal land plants evolved gradually to become H2A.W in seed plants remains undetermined [alvarez-venegas_canonical_2019,kawashima_diversification_2015].",
-            "knock-out:":"",
-            "function":"",
+            "expression":"In Arabidopsis HTA6 and HTA7 were found to have S-phase specific expression during the cell cycle, while H2A12 did not manifest any specific cell-cycle expression peak [alvarez-venegas_canonical_2019,menges_genome-wide_2003].",
+            "knock-out:":"In Arabidopsis single mutants of H2A.W genes do not dispay any phenotype; double mutants, HtA6 HTA7 and HTA6 HTA12, and triple mutants result in growth defects that were even more severe in the triple mutant. This suggests that the three H2A.W paralogs in Arabidopsis are functionally redundant [alvarez-venegas_canonical_2019,yelagandula_histone_2014]. HTA7 knock-out in Arabidopsis results in sensitivity to genotoxic agents [lorkovic_compartmentalization_2017].",
+            "function":"H2A.W participates in heterochromatin formation, [alvarez-venegas_canonical_2019]. H2A.W.7 (HTA7 gene) in Arabidopsis was shown to be involved in DNA damage response. It contains an SQ motif within C-terminal tail, which is phosphorylated by ATM kinase upon DNA damage [lorkovic_compartmentalization_2017].",
             "sequence":"",
-            "localization":"",
+            "localization":"Genome-wide analysis showed that H2A.W variants localize with heterochromatin, transposable elements, H3K9me2-rich regions [yelagandula_histone_2014].",
             "deposition":"",
-            "structure":"",
+            "structure":"H2A.W may facilitate heterochromatin formation by promoting long-range interactions between nucleosomes, an activity that requires the long C-terminal tail domain containing a SPKK motif [alvarez-venegas_canonical_2019,yelagandula_histone_2014].",
             "interactions":"",
             "disease":"",
             "caveats":""
