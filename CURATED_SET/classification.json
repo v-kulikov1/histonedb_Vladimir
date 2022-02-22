@@ -92,7 +92,8 @@
         "H2A.R": "null",
         "H2A.J": {"H2A.J_(Homo_sapiens)":"null"},
         "H2A.W": "null",
-        "H2A.M": "null"
+        "H2A.M": "null",
+        "gH2A":  "null"
         },
     "H2B": 
         {
@@ -618,20 +619,63 @@
             "evolution":"H2A.W is a plant-lineage-specific variant that may have arisen early in the evolution of spermatophytes or seed plants. H2A.W lacks homologs in unicellular green algae, liverworts, mosses, and lycophytes but has distinctive homologs in early spermatophytes from the genus Ginkgo, Cycas, and Gnetum [alvarez-venegas_canonical_2019,kawashima_diversification_2015]. Instead of H2A.W homologs, Kawashima et al. identified a novel group of related H2A variants, they named H2A.M, in the genomes of liverworts, mosses, and lycophytes [kawashima_diversification_2015]. Whether H2A.M and H2A.W emerged from the same ancestor or H2A.M in early basal land plants evolved gradually to become H2A.W in seed plants remains undetermined [alvarez-venegas_canonical_2019,kawashima_diversification_2015].",
             "expression":"In Arabidopsis HTA6 and HTA7 were found to have S-phase specific expression during the cell cycle, while H2A12 did not manifest any specific cell-cycle expression peak [alvarez-venegas_canonical_2019,menges_genome-wide_2003].",
             "knock-out:":"In Arabidopsis single mutants of H2A.W genes do not dispay any phenotype; double mutants, HtA6 HTA7 and HTA6 HTA12, and triple mutants result in growth defects that were even more severe in the triple mutant. This suggests that the three H2A.W paralogs in Arabidopsis are functionally redundant [alvarez-venegas_canonical_2019,yelagandula_histone_2014]. HTA7 knock-out in Arabidopsis results in sensitivity to genotoxic agents [lorkovic_compartmentalization_2017].",
-            "function":"H2A.W participates in heterochromatin formation, [alvarez-venegas_canonical_2019]. H2A.W.7 (HTA7 gene) in Arabidopsis was shown to be involved in DNA damage response. It contains an SQ motif within C-terminal tail, which is phosphorylated by ATM kinase upon DNA damage [lorkovic_compartmentalization_2017].",
-            "sequence":"",
+            "function":"H2A.W participates in constitutive heterochromatin formation, particularly pericentric heterochromatin [yelagandula_histone_2014]. H2A.W.7 (HTA7 gene) in Arabidopsis was shown to be involved in DNA damage response. It contains an SQ motif within C-terminal tail, which is phosphorylated by ATM kinase upon DNA damage [lorkovic_compartmentalization_2017].",
+            "sequence":"A characteristic feature of H2A.W sequences is the presence of one or multiple SPKK motifs within its long C-terminal tail. The SPKK motif was reported to preferentially bind AT-rich DNA, which is a feature of pericentric heterochromatin occupied by H2A.W in Arabidopsis [churchill_spkk_1989]. H2A.W variants also have significant sequence alerations within L1-loop and docking domain, which influence nucleosome stability [osakabe_histone_2018]. L1-loop of flowering plants contains (RYA/SK/Q) motif [kawashima_diversification_2015].",
             "localization":"Genome-wide analysis showed that H2A.W variants localize with heterochromatin, transposable elements, H3K9me2-rich regions [yelagandula_histone_2014].",
-            "deposition":"",
-            "structure":"H2A.W may facilitate heterochromatin formation by promoting long-range interactions between nucleosomes, an activity that requires the long C-terminal tail domain containing a SPKK motif [alvarez-venegas_canonical_2019,yelagandula_histone_2014].",
-            "interactions":"",
-            "disease":"",
-            "caveats":""
+            "deposition":"Specific deposition mechanism are not known. Certain H2A.W are desposited during S-phase in a replication-dependent manner, while others manifest replication-independent deposition [alvarez-venegas_canonical_2019].",
+            "structure":"The extended C-terminal tail of H2A.W interacts with linker DNA and protects DNA from the cleavage by MNase [osakabe_histone_2018]. H2A.W may facilitate heterochromatin formation by promoting long-range interactions between nucleosomes, an activity that requires the long C-terminal tail domain containing a SPKK motif [alvarez-venegas_canonical_2019,yelagandula_histone_2014]. Replacement of H2A.W L1-loop with the corresponding sequence from H2A does not affect nucleosome stability [osakabe_histone_2018].",
+            "interactions":"It was hypothesized that C-terminal tail of H2A.W may impact H1 binding [osakabe_histone_2018].",
+            "disease":"null",
+            "caveats":"null"
             },
         "taxonomic_span": "Magnoliopsida",
         "alternate_names": [{"name": "H2A with SPKK motifs"}],
         "publications": []
             },
-  
+    "H2A.M": {
+        "level": "variant_group",
+        "description":
+            {"summary":"H2A.M is a plant specific variant related to H2A.W found in non-flowering plants such as liverworts, mosses, and lycophytes. H2A.M variants are characterized by having a long C-terminal tail domain, rich in lysine, serine and acidic residues, not present in the other H2A variants. The variant was described by Kawashima et al. [kawashima_diversification_2015].",
+            "taxonomy":"H2A.M was characterized in genomes of liverworts, mosses, and lycophytes[kawashima_diversification_2015].",
+            "genes": "null",
+            "evolution":"Certain similarities between the C-terminal tail and the L1-loop of H2A.M and H2A.W variants and the clustering of H2A.M and H2A.W proteins in the phylogeny of H2A suggest that these two variants are related. Whether H2A.M and H2A.W emerged from the same ancestor or H2A.M in early basal land plants evolved gradually to become H2A.W in seed plants remains undetermined [alvarez-venegas_canonical_2019,kawashima_diversification_2015].",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"In the L1 loop, all H2A.M variants share the motif RYAK/Q. The N-terminal tails of H2A.Ms lack a stretch of lysine and glycine residues that is present in H2A.W variants, and are therefore shorter [kawashima_diversification_2015].",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Viridiplantae",
+        "alternate_names": [],
+        "publications": []
+            },  
+    "gH2A": {
+        "level": "variant_group",
+        "description":
+            {"summary":"gH2A is a histone variant specifically expressed in male gametic cells within the pollen of lily (Lilium longiflorum) [ueda_male_2005].",
+            "taxonomy":"So far characterized only in Lilium longiflorum.",
+            "genes": "gH2A gene. The gene is interrupted by one intron.",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"This histone variant is expected to be specifically synthesized in the male gametic cells and to cause chromatin condensation or remodeling of chromatin structure [ueda_male_2005].",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Lilium longiflorum",
+        "alternate_names": [],
+        "publications": []
+            },  
     "H2B": {
         "level": "type",
         "description": "H2B is one of the core histones. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2B consists of histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome."
