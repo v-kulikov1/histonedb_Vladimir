@@ -2,23 +2,13 @@ import os, sys, subprocess
 import logging
 from tqdm import tqdm
 
-import pandas as pd
-from Bio import SearchIO
+from Bio import SearchIO, SeqIO, Entrez
 from Bio.Blast.Applications import NcbiblastpCommandline
 from Bio.Blast import NCBIXML
 
 log = logging.getLogger(__name__)
 
-class TypePredictionInfo(object):
-    def __init__(self):
-        self.accession = None
-        self.histone_type = None
-        self.score = None
-        self.best = None
-        self.description = None
-        self.hsp = None
-
-def predict_types(sequences, hmmout, hmmdb, E=10, result_file=None):
+def predict_types(sequences, hmmout, hmmdb, E=10):
     """
     This method do a search among given sequences and extracts just histone variants classified by histone types.
     All the results saves to the result_file, e.g.:
@@ -40,9 +30,9 @@ def predict_types(sequences, hmmout, hmmdb, E=10, result_file=None):
     subprocess.call(["hmmsearch", "-o", hmmout, "-E", str(E), "--notextw", hmmdb, sequences])
 
     log.info("Parsing search results...")
-    return parse_hmm_search_out(hmmout=hmmout, save_to=result_file)
+    return parse_hmm_search_out(hmmout=hmmout)
 
-def predict_variants(sequences, blastout, blastdb, result_file=None):
+def predict_variants(sequences, blastout, blastdb, E=.01):
     """
     This method do a search among given sequences and classify by histone variants.
     All the results saves to the result_file, e.g.: needs correction
@@ -60,19 +50,19 @@ def predict_variants(sequences, blastout, blastdb, result_file=None):
 
     # log.info("Predicting variants via BLAST")
     log.info("Running BLASTP for {} sequences...".format(len(sequences)))
-    make_blastp(sequences, blastdb, save_to=blastout)
-    return parse_blast_search_out(blast_file=blastout, save_to=result_file)
+    make_blastp(sequences, blastdb, blastout=blastout, E=E)
+    return parse_blast_search_out(blast_file=blastout)
     # checkH2AX()
 
 #HMM
-def parse_hmm_search_out(hmmout, save_to=None):
+def parse_hmm_search_out(hmmout):
     """Parse hmmout file and return results as dict.
       Parameters:
       ___________
       hmmout: hmmout file
-      return e.g.: [{'accession': NP_563627.1, 'histone_type': H3, 'score': 2.14, 'best': True,
+      return e.g.: [{'accession': NP_563627.1, 'type': H3, 'score': 2.14, 'best': True,
                 'description': Histone superfamily protein [Arabidopsis thaliana], 'hsp': best HSPObject},
-                {'accession': DAA13058.1, 'histone_type': H2B, 'score': 3.11, 'best': False,
+                {'accession': DAA13058.1, 'type': H2B, 'score': 3.11, 'best': False,
                 'description': [Bos taurus], 'hsp': best HSPObject},]
       """
     result = []
@@ -88,19 +78,16 @@ def parse_hmm_search_out(hmmout, save_to=None):
                 result.append(existing_best_result)
             else: best_f = False
             result.append({'accession': hit.id,  # hit.id is a first accession
-                           'histone_type': histone_query.id,
+                           'type': histone_query.id,
                            'score': best_hsp.bitscore,
                            'best': best_f,
                            'description': hit.description,
                            'hsp': best_hsp,
                            })
-    if save_to:
-        pd.DataFrame(result).fillna('').drop(columns=['hsp']).to_csv(save_to, index=False)
-        log.info("Predicted sequences saved to {}".format(save_to))
     return result
 
 # BLAST
-def make_blastp(sequences, blastdb, save_to):
+def make_blastp(sequences, blastdb, blastout, E=.01):
     # log.error('Error:: sequences {}'.format(len(sequences)))
     # log.error('Error:: hasattr {}'.format(hasattr(sequences, '__iter__')))
     if not hasattr(sequences, '__iter__'):
@@ -112,14 +99,14 @@ def make_blastp(sequences, blastdb, save_to):
         cmd=blastp,
         # db=os.path.join(settings.STATIC_ROOT_AUX, "browse", "blast", "HistoneDB_sequences.fa"),
         db=blastdb,
-        evalue=.01, outfmt=5)
+        evalue=E, outfmt=5)
     # evalue=0.004, outfmt=5)
     result, error = blastp_cline(stdin="\n".join([s.format("fasta") for s in sequences]))
 
-    with open(save_to, 'w') as f:
+    with open(blastout, 'w') as f:
         f.write(result)
 
-    log.info('Blast results saved to {}'.format(save_to))
+    log.info('Blast results saved to {}'.format(blastout))
 
 def get_best_hsp(hsps, align_longer=0):
     best_alignment_hsp = hsps[0]
@@ -137,7 +124,7 @@ def check_features_macroH2A(query_accession, hsp_hit_start, hsp_hit_end):
         return False
     return True
 
-def parse_blast_search_out(blast_file, save_to=None):
+def parse_blast_search_out(blast_file):
     """Parse blastFile file and return results as dict.
         Parameters:
         ___________
@@ -195,7 +182,14 @@ def parse_blast_search_out(blast_file, save_to=None):
                            'hsp': best_algn['best_hsp'], 'hit_accession': best_algn['hit_accession']})
 
     blast_file_handle.close()
-    if save_to:
-        pd.DataFrame(result).fillna('').drop(columns=['hsp', 'hit_accession']).to_csv(save_to, index=False)
-        log.info(f"Predicted sequences saved to {save_to}")
     return result
+
+def extract_full_sequences(accessions, sequences, output):
+    log.info(f"Indexing sequence database {sequences}")
+    log.info(" ".join(["esl-sfetch", "--index", sequences]))
+    subprocess.run(["esl-sfetch", "--index", sequences])
+    log.info("Extracting full length sequences...")
+    log.info(" ".join(["esl-sfetch", "-o", output, "-f", sequences, accessions]))
+    subprocess.run(["esl-sfetch", "-o", output, "-f", sequences, accessions])
+
+

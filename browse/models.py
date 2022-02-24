@@ -10,14 +10,16 @@ from Bio import SeqIO
 from collections import defaultdict
 import os
 
-class Variant(models.Model):
+class Class(models.Model):
     """Most variants map to
     H2A.X -> multiple species, same varaint
     H2A.10 -> one species, different varaint that are species speficific
     """
     id = models.CharField(max_length=25, primary_key=True)
-    level = models.CharField(max_length=1000)
+    # level = models.CharField(max_length=1000)
+    rank = models.IntegerField()
     taxonomic_span = models.CharField(max_length=100)  # models.ForeignKey(Taxonomy)?
+    doublet = models.BooleanField(default=False)
     description = models.CharField(max_length=1000)
     parent = models.ForeignKey('self', related_name='direct_children', null=True, on_delete=models.CASCADE)
 
@@ -33,7 +35,7 @@ class Variant(models.Model):
 
 # This is to handle other names for the same variants.like cenH3, CENPA, etc.
 class OldStyleVariant(models.Model):
-    updated_variant = models.ForeignKey(Variant, related_name="old_names", on_delete=models.CASCADE)
+    updated_variant = models.ForeignKey(Class, related_name="old_names", on_delete=models.CASCADE)
     name = models.CharField(max_length=255, primary_key=True)
     gene = models.IntegerField(null=True, validators=[MaxValueValidator(15), MinValueValidator(1)])
     splice = models.IntegerField(null=True, validators=[MaxValueValidator(15), MinValueValidator(1)])
@@ -61,7 +63,8 @@ class TemplateSequence(models.Model):
 class Sequence(models.Model):
     id = models.CharField(max_length=255, primary_key=True)  # GI, superseeded by ACCESSION
     # id           = models.CharField(max_length=255, primary_key=True,db_index=True) #GI, superseeded by ACCESSION
-    variant = models.ForeignKey(Variant, related_name="sequences", blank=True, null=True, on_delete=models.CASCADE)
+    variant = models.ForeignKey(Class, related_name="sequences", blank=True, null=True, on_delete=models.CASCADE)
+    taxonomy_correted_variant = models.ForeignKey(Class, related_name="sequences2", blank=True, null=True, on_delete=models.CASCADE)
     gene = models.IntegerField(null=True, validators=[MaxValueValidator(15), MinValueValidator(1)])
     splice = models.IntegerField(null=True, validators=[MaxValueValidator(15), MinValueValidator(1)])
     taxonomy = models.ForeignKey(Taxonomy, on_delete=models.CASCADE)
@@ -143,12 +146,12 @@ class Sequence(models.Model):
         return self.to_biopython(ungap=ungap).format(format)
 
 
-class ScoreForHistoneType(models.Model):
+class HmmScore(models.Model):
     """
     The histone type score class, assigns a bunch of score entries to the sequence. For each histone a score.
     """
     sequence = models.ForeignKey(Sequence, related_name="histone_model_scores", on_delete=models.CASCADE)
-    histone = models.ForeignKey(Variant, related_name="histone_+", on_delete=models.CASCADE)
+    histone = models.ForeignKey(Class, related_name="histone_+", on_delete=models.CASCADE)
     score = models.FloatField()
     evalue = models.FloatField()
     hmmStart = models.IntegerField()
@@ -165,7 +168,7 @@ class ScoreForHistoneType(models.Model):
         return "[Score: {}; Evalue:{}]"
 
 
-class Score(models.Model):
+class BlastScore(models.Model):
     """
     The score class for Blast, assigns a bunch of score entries to the sequence. For each variant a score.
     """
@@ -173,7 +176,7 @@ class Score(models.Model):
     # id = models.AutoField(primary_key=True)
     # sequence                = models.ForeignKey(SequenceBlast, related_name="all_model_scores")
     sequence = models.ForeignKey(Sequence, related_name="all_model_scores", on_delete=models.CASCADE)
-    variant = models.ForeignKey(Variant, related_name="b+", on_delete=models.CASCADE)
+    variant = models.ForeignKey(Class, related_name="b+", on_delete=models.CASCADE)
     score = models.FloatField()
     bitScore = models.FloatField(blank=True, null=True)
     evalue = models.FloatField()
@@ -198,28 +201,6 @@ class Score(models.Model):
     def description(self):
         return "[Score: {}; Evalue:{}]"
 
-
-class ScoreIdentity(models.Model):
-    """
-    The score class for Blast, assigns a bunch of score entries to the sequence. For each variant a score.
-    """
-    # id                      = models.IntegerField(primary_key=True)
-    # id = models.AutoField(primary_key=True)
-    # sequence                = models.ForeignKey(SequenceBlast, related_name="all_model_scores")
-    sequence = models.ForeignKey(Sequence, related_name="all_model_identities", on_delete=models.CASCADE)
-    variant = models.ForeignKey(Variant, related_name="i+", on_delete=models.CASCADE)
-    score = models.FloatField()  # Identity value is the percentage of identical matches between the two sequences over the reported aligned region (including any gaps in the length).
-    similarity = models.FloatField()  # Similarity value is the percentage of matches between the two sequences over the reported aligned region (including any gaps in the length).
-    hit_accession = models.CharField(max_length=255, default='')
-    # hit_sequence = models.ForeignKey(Sequence, related_name="aligned_scores")
-    used_for_classification = models.BooleanField(default=False)
-
-    def __str__(self):
-        return "<{} variant={}; score={}; used_for_classification={} >".format(self.sequence.id, self.variant.id,
-                                                                               self.score, self.used_for_classification)
-
-    def description(self):
-        return "[Score: {}; Evalue:{}]"
 
 class FeatureManager(models.Manager):
     def from_dict(self, template, features, save=False):
@@ -308,6 +289,6 @@ class Feature(models.Model):
 
 class Publication(models.Model):
     id = models.IntegerField(primary_key=True)  # PubmedID
-    variants = models.ManyToManyField(Variant)
+    variants = models.ManyToManyField(Class)
     cited = models.BooleanField()
 
