@@ -97,13 +97,54 @@
         },
     "H2B": 
         {
-        "cH2B": "null",
-        "subH2B": "null",
-        "H2B.1": "null",
+        "cH2B":
+        {
+        "cH2B_(Animals)":
+                {
+                "cH2B_(Vertebrata)":
+                    {
+                    "cH2B_(Mammalia)":
+                        {
+                        "cH2B_(Homo_sapiens)":
+                            {
+                            "cH2B.1_(Homo_sapiens)":"null",
+                            "cH2B.2_(Homo_sapiens)":"null",
+                            "cH2B.3_(Homo_sapiens)":"null",
+                            "cH2B.4_(Homo_sapiens)":"null",
+                            "cH2B.5_(Homo_sapiens)":"null",
+                            "cH2B.6_(Homo_sapiens)":"null",
+                            "cH2B.7_(Homo_sapiens)":"null",
+                            "cH2B.8_(Homo_sapiens)":"null",
+                            "cH2B.9_(Homo_sapiens)":"null",
+                            "cH2B.10_(Homo_sapiens)":"null",
+                            "cH2B.11_(Homo_sapiens)":"null",
+                            "cH2B.12_(Homo_sapiens)":"null",
+                            "cH2B.13_(Homo_sapiens)":"null",
+                            "cH2B.14_(Homo_sapiens)":"null"
+                            },
+                        "cH2B_(Mus_musculus)":
+                            {
+                            "cH2B.1_(Mus_musculus)":"null",
+                            "cH2B.E_(Mus_musculus)":"null"
+                            }
+                        }
+                    }
+                },
+            "cH2B_(Fungi)":"null",
+            "cH2B_(Plants)":
+                {
+                "cH2B_(Embryophyta)":"null",
+                "cH2B_(Chlorophyta)":"null"
+                },
+            "cH2B_(Protists)":"null"
+        },
+        "subH2B/H2B.L": "null",
         "H2B.W": "null",
-        "sperm_H2B": "null",
+        "H2B.K": "null",
+        "H2B.N": "null",
         "H2B.Z": "null",
-        "H2B.S": "null"
+        "H2B.S": "null",
+        "sperm_H2B": "null",
         },
     "H3": 
         {
@@ -146,7 +187,8 @@
         "H1.10": "null",
         "scH1": "null"
         },
-    "Archaeal": "null"
+    "Archaeal": "null",
+    "Viral":"null"
     },
 "info":
     {
@@ -678,7 +720,26 @@
             },  
     "H2B": {
         "level": "type",
-        "description": "H2B is one of the core histones. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2B consists of histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome."
+        "description":
+            {
+            "summary":"H2B is one of the core histones. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2B consists of histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome.",
+            "taxonomy":"So far characterized only in Lilium longiflorum.",
+            "genes": "gH2A gene. The gene is interrupted by one intron.",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"This histone variant is expected to be specifically synthesized in the male gametic cells and to cause chromatin condensation or remodeling of chromatin structure [ueda_male_2005].",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Lilium longiflorum",
+        "alternate_names": [],
+        "publications": []
            },
     "cH2B": {
                         "level": "variant_group",
