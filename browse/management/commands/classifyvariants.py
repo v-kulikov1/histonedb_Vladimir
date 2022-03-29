@@ -521,7 +521,7 @@ class Command(BaseCommand):
 
             # for best_algn in best_alignments[1:]:
                 # result.append({'accession': accession, 'histone_type': hist_type,'histone_variant': best_algn['hit_variant'],
-                #                'score': best_algn['score'], 'best': True, 'description': description,
+                #                'score': best_algn['score'], 'best': False, 'description': description,
                 #                'hsp': best_algn['best_hsp'], 'hit_accession': best_algn['hit_accession']})
 
         blastFile.close()

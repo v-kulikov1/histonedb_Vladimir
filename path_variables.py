@@ -1,5 +1,4 @@
 import os
-from django.conf import settings
 
 # Working paths
 LOG_DIRECTORY                    = os.path.join("log")
@@ -10,16 +9,20 @@ SEED_CORE_DIRECTORY              = os.path.join(DATA_DIRECTORY, "seeds_core")
 PREDICTION_DIRECTORY             = os.path.join("prediction")
 HMM_DIRECTORY                    = os.path.join(PREDICTION_DIRECTORY, "hmms")
 PREDICTION_RESULTS_DIRECTORY     = os.path.join(PREDICTION_DIRECTORY, "results")
+PREDICTION_DUMPS_DIRECTORY       = os.path.join(PREDICTION_RESULTS_DIRECTORY, "dumps")
 COMBINED_HMM_DIRECTORY           = os.path.join(HMM_DIRECTORY, "combined_hmm")
 HMM_MODEL_EVALUATION_DIRECTORY   = os.path.join(HMM_DIRECTORY, "model_evaluation")
 BLAST_DIRECTORY                  = os.path.join(PREDICTION_DIRECTORY, "blast")
 BLAST_MODEL_EVALUATION_DIRECTORY = os.path.join(BLAST_DIRECTORY, "model_evaluation")
 BLASTDBS_DIR                     = os.path.join(BLAST_DIRECTORY, 'blastdbs')
 
+HISTONES_CSV                     = os.path.join(DATA_DIRECTORY, 'histones.csv')
 VARIANTS_JSON                    = os.path.join(DATA_DIRECTORY, 'classification.json')
+FEATURES_JSON                    = os.path.join(DATA_DIRECTORY, 'features.json')
 CURATED_ALL_FASTA                = os.path.join(HMM_MODEL_EVALUATION_DIRECTORY,"curated.fasta")
 CURATED_GENERICLESS_FASTA        = os.path.join(HMM_MODEL_EVALUATION_DIRECTORY, "curated_genericless.fasta")
 CURATED_GENERIC_FASTA            = os.path.join(HMM_MODEL_EVALUATION_DIRECTORY, "curated_generic.fasta")
+DUMPS_PICKLE                     = os.path.join(PREDICTION_DUMPS_DIRECTORY, "result_dump_{}.pickle")
 
 # HISTTYPE_RESULTS_FILE            = os.path.join(PREDICTION_RESULTS_DIRECTORY, "histone_type", "search{}.out")
 # CURATED_HISTTYPE_RESULTS_FILE    = os.path.join(PREDICTION_RESULTS_DIRECTORY, "histone_type", "curated_search.out")
