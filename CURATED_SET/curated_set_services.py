@@ -4,10 +4,6 @@ from Bio.SeqRecord import SeqRecord
 from Bio.Align import MultipleSeqAlignment
 from Bio.Align.AlignInfo import SummaryInfo
 
-from pynucl.hist_features import hist_shf4seq
-from pytexshade import ipyshade
-from ete3 import Tree
-
 import pandas as pd
 import numpy as np
 import collections
@@ -154,7 +150,7 @@ class CuratedSet(object):
             if row['accession'] not in self.fasta_seqrec.keys():
                 self.fasta_seqrec[row['accession']] = SeqRecord(Seq(row['sequence']),
                                                                 id=(row['variant']+"_").split("(")[0][:-1]+'_'+row['organism'].replace(' ','_')+('_' if len(row['hgnc_gene_name'])>0 else '')+row['hgnc_gene_name'].replace(' ','_')+'_'+row['accession'],
-                                                                description=f"{row['accession']} histone: {row['type']} variant: {row['variant']} organism: {row['organism']}")
+                                                                description=f"{row['accession']} type: {row['type']}, variant: {row['variant']}, organism: {row['organism']}")
 
     def get_count(self): return self.data.shape[0]
 

@@ -170,6 +170,14 @@ class Command(BaseCommand):
             for s in SeqIO.parse(seed_aln_file, "fasta"):
                 s.seq = s.seq.ungap("-")
                 accession = s.id.split("|")[1]
+                # if accession.startswith("NOGI"):
+                #     self.log.info("NO GI detected {}".format(s.id))
+                #     taxid= easytaxonomy_from_header(s.id).id
+                # else:
+                #     #trick to make taxid retrieval faster
+                #     # taxonomy = taxonomy_from_header("", gi=gi)
+                #     taxid=1
+                #     accessions.append(accession)
                 # trick to make taxid retrieval faster
                 # taxonomy = taxonomy_from_header("", gi=gi)
                 taxid = 1

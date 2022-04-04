@@ -1,10 +1,10 @@
-import os, subprocess
-import logging, argparse
+import subprocess, json, logging, argparse
 
-# from tools.browse_service import *
+from prediction.histonedb_classifier import HistonedbVariantClassifier
+from path_variables import *
 '''
 This executable script will:
-    - download nr or other db
+    + download nr or other db
     - classify sequences using classification_model
 '''
 LOG_DIRECTORY = os.path.join("log")
@@ -51,10 +51,47 @@ def download_swissprot():
                             stdout=swissprotgz)
         subprocess.call(["gunzip", "swissprot.gz"])
 
+def db_split(sequences, procs):
+    log.info(f"Splitting database file into {procs} parts")
+    # !!!!!!!!!!!!!!!
+    os.system('rm -rf db_split')
+    os.system('mkdir db_split')
+    # This is tricky tricky to make it fast
+    size = os.path.getsize(sequences)
+    split_size = int(size / procs) + 1
+    os.system(f'split --bytes={split_size} --numeric-suffixes=1 {sequences} db_split/split')
+    # We need to heal broken fasta records
+    for i in range(1, procs + 1):
+        for k in range(1, 10000):
+            outsp = subprocess.check_output(['head', '-n', str(k), f'db_split/split{i:02d}'])
+            if (outsp.split(b'\n')[-2].decode("utf-8")[0] == '>'):
+                print(k)
+                break
+        if (k > 1):
+            os.system(f'head -n {k} db_split/split{i:02d} >>db_split/split{i-1:02d} ')
+            os.system(f'tail -n +{k} db_split/split{i:02d}> db_split/temp')
+            os.system(f'mv db_split/temp db_split/split{i:02d}')
+
 def main():
     db_file = get_db(args.db)
     print(args.db)
     print(args.procs)
+
+    db_split(args.db, args.procs)
+
+    for i in range(args.procs):
+        with open(VARIANTS_JSON) as f:
+            variant_json = json.loads(f.read())
+            classification_tree = variant_json['tree']
+        # classifier = HistonedbVariantClassifier(classification_tree=classification_tree)
+        # classifier.create_hmms(seed_directory=SEED_CORE_DIRECTORY)
+        # classifier.create_blastdbs(seed_directory=SEED_DIRECTORY)
+        classification_tree.pop('Archaeal')
+        classifier = HistonedbVariantClassifier(classification_tree=classification_tree)
+        classifier.create_hmms(seed_directory=os.path.join(DATA_DIRECTORY, "draft_seeds"))
+        classifier.create_blastdbs(seed_directory=os.path.join(DATA_DIRECTORY, "draft_seeds"))
+        res = classifier.predict(sequences=os.path.join(PREDICTION_DIRECTORY, f'db_split/split{i:02d}'))
+        classifier.dump_results(file_name=DUMPS_PICKLE.format(i))
 
 
 if __name__ == "__main__":
