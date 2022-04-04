@@ -722,13 +722,13 @@
         "level": "type",
         "description":
             {
-            "summary":"H2B is one of the core histones. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2B consists of histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome.",
-            "taxonomy":"So far characterized only in Lilium longiflorum.",
-            "genes": "gH2A gene. The gene is interrupted by one intron.",
+            "summary":"H2B is one of the core histone types present in all Eukaryotes. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. Structure of H2B consists of a histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via a four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome.",
+            "taxonomy":"Present in all Eukaryotes.",
+            "genes": "null",
             "evolution":"null",
             "expression":"null",
             "knock-out:":"null",
-            "function":"This histone variant is expected to be specifically synthesized in the male gametic cells and to cause chromatin condensation or remodeling of chromatin structure [ueda_male_2005].",
+            "function":"null",
             "sequence":"null",
             "localization":"null",
             "deposition":"null",
@@ -737,7 +737,7 @@
             "disease":"null",
             "caveats":"null"
             },
-        "taxonomic_span": "Lilium longiflorum",
+        "taxonomic_span": "Eukaryotes",
         "alternate_names": [],
         "publications": []
            },
