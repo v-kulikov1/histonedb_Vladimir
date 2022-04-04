@@ -201,8 +201,24 @@
                 },
     "cH2A":     {
         "level": "variant_group",
-        "description": "cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and scpecies-specific (e.g. cH2A isoforms in human), in other cases there is a whole spectrum of canonical-like proteins (e.g. plant H2As). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. Caveats: [dalmasso_canonical_2011].",
-        "taxonomic_span": "Eukaryotes",
+        "description": 
+            {
+            "summary":"cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. cH2A isoforms in human), in other cases there is a whole spectrum of canonical-like proteins (e.g. plant H2As). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. ",
+            "taxonomy":"Present in all Eukaryotes.",
+            "genes": "null",
+            "evolution":"Because of its conserved function in the DNA damage response, it seems probable that H2A.X is ancestral, and that the various RC H2As are derived from it [talbert_histone_2021].",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"In certain species H2A.X may perform cH2A role, hence in our classification such species will lack cH2A histones. In single-celled eukaryotes, such as yeast, H2A.X can be the primary form of H2A [talbert_histone_2021]. The same might apply to certain protozoan parasites, such as G. lamblia [dalmasso_canonical_2011]."
+            },
+        "taxonomic_span": "Eukaryota",
         "taxonomic_span_id": "2759",
         "alternate_names": [{"name": "canonical H2A"}],
         "publications": []
@@ -795,7 +811,7 @@
             "summary":"H2B is one of the core histone types present in all Eukaryotes. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. Structure of H2B consists of a histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via a four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome.",
             "taxonomy":"Present in all Eukaryotes.",
             "genes": "null",
-            "evolution":"null",
+            "evolution":"It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. The eukaryotic H3-H4 tetramer resembles the tetramer found in Archaea, and it has been suggested that H2A and H2B have arisen from H3 and H4 later on in histone evolution [henneman_structure_2018].",
             "expression":"null",
             "knock-out:":"null",
             "function":"null",
@@ -813,19 +829,28 @@
         "publications": []
            },
     "cH2B": {
-                        "level": "variant_group",
-                        "description": "Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
-                        "taxonomic_span": "Eukaryotes",
+        "level": "variant_group",
+        "description":
+            {
+            "summary":"cH2B -- canonical H2B histones. Like cH2A, this is a loosely defined group that encompasses major H2B histone proteins that are expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2B histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2Bs during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. PPPPPPPP Sometimes this diversification is very subtle and species-specific (e.g. cH2A isoforms in human), in other cases there is a whole spectrum of canonical-like proteins (e.g. plant H2As). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. Caveats: [dalmasso_canonical_2011].",
+            "taxonomy":"Present in all Eukaryotes.",
+            "genes": "null",
+            "evolution":"It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. The eukaryotic H3-H4 tetramer resembles the tetramer found in Archaea, and it has been suggested that H2A and H2B have arisen from H3 and H4 later on in histone evolution [henneman_structure_2018].",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Eukaryota",
         "taxonomic_span_id": "2759",
-                        "alternate_names": [
-                                {
-                                        "name": "ca H2B"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "25731851"
-                        ]
+        "alternate_names": [],
+        "publications": []
                 },
                 "subH2B": {
                         "level": "variant_group",
