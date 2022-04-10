@@ -435,15 +435,30 @@
         "publications": []
                 },
    "cH2A_(Mus_musculus)":     {
-        "level": "variant",
-        "description": {"summary":"cH2A_(Mus_musculus) -- clustered H2A histones in mouse, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. repliation-dependent histones in mouse similar to human are found in several clusters. The largest cluster is found on chromosome 13 (more than 50 geens) and smaller clusters on chromosomes 3 and 11 [marzluff_human_2002]. There are 18 replication-dependent H2A genes currently annotated in mouse genome: 13 in cluster on chromosome 13, 4 in cluster on chromosome 3 and 1 on chromosome 11."},
+        "level": "variant_group",
+        "description": 
+            {
+            "summary":"cH2A_(Mus_musculus) -- clustered H2A histones in mouse, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. repliation-dependent histones in mouse similar to human are found in several clusters. The largest cluster is found on chromosome 13 (more than 50 geens) and smaller clusters on chromosomes 3 and 11 [marzluff_human_2002]. There are 18 replication-dependent H2A genes currently annotated in mouse genome: 13 in cluster on chromosome 13, 4 in cluster on chromosome 3 and 1 on chromosome 11.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
         "taxonomic_span": "Mus musculus",
         "taxonomic_span_id": "10090",
         "publications": []
                 },    
     "cH2A.1_(Mus_musculus)":     {
         "level": "variant",
-        "description": {"summary":"cH2A.1_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2A histones in mouse endoded by H2ac1 gene (formerly, Hist1h2aa, Th2a). This is the most divergent gene of the family, its protein product has differences in the ?last 6 amino acids? at the C-terminus with respect to the majority of clustered H2As???. Together with H2bc1 gene they share a common promoter and manifest tissue-specific expression (at least in testis, oocytes and zygotes) [padavattan_structural_2015]. Disruption of Th2a and Th2b genes causes defects in spermatogenesis [shinagawa_disruption_2015]. H2ac1 and H2ab1 contribute to activation of the paternal genome after fertilization [shinagawa_histone_2014]. These variant facilitate OSKM-induced cell reprogramming [shinagawa_histone_2014].  X-ray structure of nucleosome harboring this variant have fewer histone-DNA contacts and perturbed L1-L1-loop interactions. Mutational in vivo analysis suggest histone tails and L1 loop are important for reprogramming[padavattan_structural_2015]. Differential scanning calorimetry analysis indicated that the H2ac1/H2ab1 complex was more stable than other combinations of canonical histones [shinagawa_histone_2014]. This variant is related to cH2A.1_(Homo_sapiens) encoded by H2A1C gene, is located in the same position at the largest histone gene cluster, however, their sequence differes at 18 positions. Note: Since this variant manifests similar features in mice and humans (tissue-specific expression, synteny, divergent sequnce with respect to other canonical variants in each species) likely similar variants exist in all supraprimates or in higher taxa. Once and if sufficient evidence accumulates such variants may be grouped into a separate class."},
+        "description": {"summary":"cH2A.1_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2A histones in mouse endoded by H2ac1 gene (formerly, Hist1h2aa, Th2a). This is the most divergent gene of the family, its protein product has differences in the ?last 6 amino acids? at the C-terminus with respect to the majority of clustered H2As???. Together with H2bc1 gene they share a common promoter and manifest tissue-specific expression (at least in testis, oocytes and zygotes) [padavattan_structural_2015]. Disruption of Th2a and Th2b genes causes defects in spermatogenesis [shinagawa_disruption_2015]. H2ac1 and H2bc1 contribute to activation of the paternal genome after fertilization [shinagawa_histone_2014]. These variant facilitate OSKM-induced cell reprogramming [shinagawa_histone_2014].  X-ray structure of nucleosome harboring this variant have fewer histone-DNA contacts and perturbed L1-L1-loop interactions. Mutational in vivo analysis suggest histone tails and L1 loop are important for reprogramming[padavattan_structural_2015]. Differential scanning calorimetry analysis indicated that the H2ac1/H2bc1 complex was more stable than other combinations of canonical histones [shinagawa_histone_2014]. This variant is related to cH2A.1_(Homo_sapiens) encoded by H2A1C gene, is located in the same position at the largest histone gene cluster, however, their sequence differs at 18 positions. Note: Since this variant manifests similar features in mice and humans (tissue-specific expression, synteny, divergent sequence with respect to other canonical variants in each species) likely similar variants exist in all supraprimates or in higher taxa. Once and if sufficient evidence accumulates such variants may be grouped into a separate class."},
         "taxonomic_span": "Mus musculus",
         "taxonomic_span_id": "10090",
         "alternate_names": [{"name": "Th2a"},{"name": "TS H2A.1"}],
@@ -1021,7 +1036,7 @@
         "level": "variant_group",
         "description": 
             {
-            "summary":"cH2B_(Homo_sapiens) -- clustered H2B histones in human, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2B histones. For a general description see cH2B_(Animals) class. Replication-dependent histones in humans are found in four loci: a large cluster on chromosome 6 (more than 60 genes), two clusters on chromosome 1 (10-12 genes and 4 genes) and a single H4 gene on chromosome 12. Humans have 19 H2B genes that code for replication-dependent H2B histones. The cluster on chromosome 6 encodes 15 H2B genes (H2BC1, H2BC3-H2BC15, H2BC17) and several pseudogenes. The first cluster on chromosome 1 encodes 2 genes (H2BC18, H2BC21) and two pseudogenes (H2BC19P, H2BC20P), and the second cluster on chromosome 1 endodes one gene (H2BC26) and one pseudogene (H2BC27P). One additional gene H2BC12L is represented by a human-specific duplication of the H2BC12 gene from the chromosome 6 onto chromosome 21, the gene appears to be expressed, its protein sequence is expected to be identical to that of H2BC12 gene. 19 cH2B genes in human enconde 14 protein variants. H2BC1 gene (formely, called HIST1H2BA, TH2B) is the most divergent gene of the family, together with H2AC1 they share a common promoter and maifest tissue-specific expression (at least in testis and oocytes) [huynh_two_2016].",
+            "summary":"cH2B_(Homo_sapiens) -- clustered H2B histones in human, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2B histones. For a general description see cH2B_(Animals) class. Replication-dependent histones in humans are found in four loci: a large cluster on chromosome 6 (more than 60 genes), two clusters on chromosome 1 (10-12 genes and 4 genes) and a single H4 gene on chromosome 12. Humans have 19 H2B genes that code for replication-dependent H2B histones. The cluster on chromosome 6 encodes 15 H2B genes (H2BC1, H2BC3-H2BC15, H2BC17) and several pseudogenes. The first cluster on chromosome 1 encodes 2 genes (H2BC18, H2BC21) and two pseudogenes (H2BC19P, H2BC20P), and the second cluster on chromosome 1 endodes one gene (H2BC26) and one pseudogene (H2BC27P). One additional gene H2BC12L is represented by a human-specific duplication of the H2BC12 gene from the chromosome 6 onto chromosome 21, the gene appears to be expressed, its protein sequence is expected to have two nonsynonymous substitutions with respect to H2BC12 gene. 19 cH2B genes in human enconde 15 protein variants. H2BC1 gene (formely, called HIST1H2BA, TH2B) is the most divergent gene of the family, together with H2AC1 they share a common promoter and maifest tissue-specific expression (at least in testis and oocytes) [huynh_two_2016].",
             "genes": "null",
             "evolution":"null",
             "expression":"null",
@@ -1060,6 +1075,372 @@
         "alternate_names": [{"name": "TH2B"},{"name": "TS H2B.1"}],
         "publications": []
         },
+    "cH2B.2_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.2_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC3 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },
+    "cH2B.3_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.3_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC4, H2BC6, H2BC7, H2BC8, H2BC10 genes.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },      
+    "cH2B.4_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.4_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC5 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },   
+    "cH2B.5_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.5_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC9 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },  
+    "cH2B.6_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.6_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC11 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },      
+    "cH2B.7_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.7_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC12 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },  
+    "cH2B.8_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.8_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC13 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },  
+    "cH2B.9_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.9_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC14 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        }, 
+    "cH2B.10_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.10_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC15 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        }, 
+    "cH2B.11_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.11_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC17 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        }, 
+    "cH2B.12_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.12_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC18 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        }, 
+    "cH2B.13_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.13_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC21 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        }, 
+    "cH2B.14_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.14_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC26 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },
+    "cH2B.15_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.15_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC12L gene. H2BC12L is represented by a human-specific duplication of the H2BC12 gene from the chromosome 6 onto chromosome 21, the gene appears to be expressed, its protein sequence is expected to have two nonsynonymous substitutions with respect to H2BC12 gene.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },
+   "cH2B_(Mus_musculus)":     {
+        "level": "variant_group",
+        "description": 
+            {
+            "summary":"cH2B_(Mus_musculus) -- clustered H2B histones in mouse, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2B histones. repliation-dependent histones in mouse similar to human are found in several clusters. The largest cluster is found on chromosome 13 (more than 50 geens) and smaller clusters on chromosomes 3 and 11 [marzluff_human_2002]. There are 18 replication-dependent H2B genes currently annotated in mouse genome: 15 in cluster on chromosome 13, 2 in cluster on chromosome 3 and 1 on chromosome 11.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Mus musculus",
+        "taxonomic_span_id": "10090",
+        "publications": []
+                }, 
+    "cH2B.1_(Mus_musculus)":     {
+        "level": "variant",
+        "description": {"summary":"cH2B.1_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2B histones in mouse endoded by H2bc1 gene (formerly, Hist1h2ba, Th2b). This is the most divergent gene of the family, its protein product has differences in INSERT HERE. Together with H2ac1 gene they share a common promoter and manifest tissue-specific expression (at least in testis, oocytes and zygotes) [padavattan_structural_2015]. Disruption of Th2a and Th2b genes causes defects in spermatogenesis [shinagawa_disruption_2015]. H2ac1 and H2bc1 contribute to activation of the paternal genome after fertilization [shinagawa_histone_2014]. These variant facilitate OSKM-induced cell reprogramming [shinagawa_histone_2014].  X-ray structure of nucleosome harboring this variant have fewer histone-DNA contacts and perturbed L1-L1-loop interactions. Mutational in vivo analysis suggest histone tails and L1 loop of cH2A.1 are important for reprogramming [padavattan_structural_2015]. Differential scanning calorimetry analysis indicated that the H2ac1/H2bc1 complex was more stable than other combinations of canonical histones [shinagawa_histone_2014]. This variant is related to cH2B.1_(Homo_sapiens) encoded by H2B1C gene, is located in the same position at the largest histone gene cluster, however, their sequence differs at INSERT HERE positions. Note: Since this variant manifests similar features in mice and humans (tissue-specific expression, synteny, divergent sequence with respect to other canonical variants in each species) likely similar variants exist in all supraprimates or in higher taxa. Once and if sufficient evidence accumulates such variants may be grouped into a separate class."},
+        "taxonomic_span": "Mus musculus",
+        "taxonomic_span_id": "10090",
+        "alternate_names": [{"name": "Th2b"},{"name": "TS H2B.1"}],
+        "publications": []
+                },       
     "subH2B": {
                         "level": "variant_group",
                         "description": "subH2B is involved in spermiogenesis and is found in subacrosomes of spermatozoa. It has a bipartite nuclear localization signal. This variant is present outside of nucleus in acrosomal space of spermatozoa, extent of its involvement in nucleosome formation is unclear",
