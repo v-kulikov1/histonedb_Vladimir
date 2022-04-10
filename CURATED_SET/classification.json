@@ -1034,7 +1034,7 @@
             "interactions":"null",
             "disease":"null",
             "caveats":"1) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. "
-            },
+            }
         },
     "cH2B.1_(Homo_sapiens)":     
         {
