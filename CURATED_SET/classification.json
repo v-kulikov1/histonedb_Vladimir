@@ -192,7 +192,8 @@
     },
 "info":
     {
-    "H2A":      {
+    "H2A":      
+        {
         "level": "type",
         "description": 
             { "summary":"H2A is one of the core histone types present in all Eukaryotes. H2A forms dimers with H2B via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. Structure of H2A consists of a histone fold domain extended by a short αC-helix and has both N- and C-terminal tails. αC-helix and C-terminal tail form \"docking domain\" that locks the H2A-H2B dimer onto the surface of H3-H4 tetramer [luger_crystal_1997]. It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. H2A histones have the most number of described functional variants."
@@ -200,8 +201,9 @@
         "taxonomic_span": "Eukaryotes",
         "taxonomic_span_id": "2759",
         "publications": []
-                },
-    "cH2A":     {
+        },
+    "cH2A":     
+        {
         "level": "variant_group",
         "description": 
             {
@@ -224,7 +226,7 @@
         "taxonomic_span_id": "2759",
         "alternate_names": [{"name": "canonical H2A"}],
         "publications": []
-                },
+        },
     "cH2A_(Animals)":     
         {
         "level": "variant_group",
@@ -275,7 +277,8 @@
         "alternate_names": [],
         "publications": []
         },
-    "cH2A_(Mammalia)":     {
+    "cH2A_(Mammalia)":     
+        {
         "level": "variant_group",
         "description":
             {
@@ -299,7 +302,8 @@
         "alternate_names": [],
         "publications": []
         },
-    "cH2A_(Homo_sapiens)":     {
+    "cH2A_(Homo_sapiens)":     
+        {
         "level": "variant_group",
         "description": 
             {
@@ -316,28 +320,48 @@
             "interactions":"null",
             "disease":"null",
             "caveats":"1) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 2) H2A.X histone variant is usually closely related to replication-dependent H2A histones in the same group of animals. In humans, H2A.X produces both polyadenylated mRNAs and mRNAs ending on a stem-loop. It is probale that it is ancestral to clustered H2A histones [talbert_histone_2021]. 3) The H2AJ gene on chromosome 12 encoding H2A.J histone variant is sequence wise very similar to other canonical H2As in human. However, it appears to produce only polyadenylated mRNA. See H2A.J variant description for details."
-        },
+            },
         "taxonomic_span": "Homo sapiens",
         "taxonomic_span_id": "9606",
         "alternate_names": [],
         "publications": []
-                },
-    "cH2A.1_(Homo_sapiens)":     {
+        },
+    "cH2A.1_(Homo_sapiens)":     
+        {
         "level": "variant",
-        "description": {"summary":"cH2A.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC1 gene (formerly, HIST1H2AA, TH2A). This is the most divergent gene of the family, its protein product has differences in several internal positions as well as in the last 6 amino acids at the C-terminus with respect to the majority of clustered H2As. Its length is also one amino acid longer than for the rest of H2As (130 amio acid residues after initiator methionine cleavage). Together with H2BC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thoought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2A.1_(Mus_musculus) -- a related histone variant encoded by H2ac1 gene which has been characterized through a number of in vivo and in vitro studies."},
+        "description": 
+            {
+            "summary":"cH2A.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC1 gene (formerly, HIST1H2AA, TH2A). This is the most divergent gene of the family, its protein product has differences in several internal positions as well as in the last 6 amino acids at the C-terminus with respect to the majority of clustered H2As. Its length is also one amino acid longer than for the rest of H2As (130 amio acid residues after initiator methionine cleavage). Together with H2BC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2A.1_(Mus_musculus) -- a related histone variant encoded by H2ac1 gene which has been characterized through a number of in vivo and in vitro studies.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
         "taxonomic_span": "Homo sapiens",
         "taxonomic_span_id": "9606",
         "alternate_names": [{"name": "TH2A"},{"name": "TS H2A.1"}],
         "publications": []
-                },
-    "cH2A.2_(Homo_sapiens)":     {
+        },
+    "cH2A.2_(Homo_sapiens)":     
+        {
         "level": "variant",
-        "description":{"summary":"cH2A.2_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC4, H2AC8 genes."},
+        "description":
+            {
+            "summary":"cH2A.2_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC4, H2AC8 genes."
+            },
         "taxonomic_span": "Homo sapiens",
         "taxonomic_span_id": "9606",
         "alternate_names": [],
         "publications": []
-                },
+        },
     "cH2A.3_(Homo_sapiens)":     {
         "level": "variant",
         "description":{"summary":"cH2A.3_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2A histones in human endoded by H2AC6 gene."},
@@ -992,7 +1016,8 @@
         "alternate_names": [],
         "publications": []
         },
-    "cH2B_(Homo_sapiens)":     {
+    "cH2B_(Homo_sapiens)":     
+        {
         "level": "variant_group",
         "description": 
             {
@@ -1009,6 +1034,31 @@
             "interactions":"null",
             "disease":"null",
             "caveats":"1) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. "
+            },
+        },
+    "cH2B.1_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC1 gene (formerly, HIST1H2BA, TH2B). PPPPPP This is the most divergent gene of the family, its protein product has differences in several internal positions as well as in the last 6 amino acids at the C-terminus with respect to the majority of clustered H2Bs. Its length is also one amino acid longer than for the rest of H2Bs (130 amio acid residues after initiator methionine cleavage). Together with H2AC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2B.1_(Mus_musculus) -- a related histone variant encoded by H2bc1 gene which has been characterized through a number of in vivo and in vitro studies.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [{"name": "TH2B"},{"name": "TS H2B.1"}],
+        "publications": []
         },
     "subH2B": {
                         "level": "variant_group",
@@ -1503,5 +1553,5 @@
                                 "8772381"
                         ]
                 }
-        }
+    }
 }
