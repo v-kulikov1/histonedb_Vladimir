@@ -32,12 +32,12 @@
                         }
                     }
                 },
-            "cH2A_(Fungi)":"null",
             "cH2A_(Plants)":
                 {
                 "cH2A_(Embryophyta)":"null",
                 "cH2A_(Chlorophyta)":"null"
                 },
+            "cH2A_(Fungi)":"null",
             "cH2A_(Protists)":"null"
             },
         "H2A.Z": 
@@ -130,12 +130,12 @@
                         }
                     }
                 },
-            "cH2B_(Fungi)":"null",
             "cH2B_(Plants)":
                 {
                 "cH2B_(Embryophyta)":"null",
                 "cH2B_(Chlorophyta)":"null"
                 },
+            "cH2B_(Fungi)":"null",
             "cH2B_(Protists)":"null"
         },
         "subH2B/H2B.L": "null",
@@ -245,7 +245,7 @@
             "structure":"null",
             "interactions":"null",
             "disease":"null",
-            "caveats":"1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2A.1 in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009]. 4) H2A.X histone variant is usually closely related to replication-dependent H2A histones in the same group of animals. In humans, H2A.X produces both polyadenylated mRNAs and mRNAs ending in a stem-loop. It is probale that it is ancestral to clustered H2A histones [talbert_histone_2021]."
+            "caveats":"1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2A.1 in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) Certain clustered histones may act as functional histone variants with replication-independent polyA-tail-regulated expression being the major/only form (e.g. cH2B.E_(Mus_musculus), or H2A.J, which is closely related to cH2As). 4) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009]. 5) H2A.X histone variant is usually closely related to replication-dependent H2A histones in the same group of animals. In humans, H2A.X produces both polyadenylated mRNAs and mRNAs ending in a stem-loop. It is probale that it is ancestral to clustered H2A histones [talbert_histone_2021]. "
             },
         "taxonomic_span": "Metazoa",
         "taxonomic_span_id": "33208",
@@ -974,7 +974,7 @@
             "structure":"null",
             "interactions":"null",
             "disease":"null",
-            "caveats":"1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2B.1 and cH2B.E in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009]."
+            "caveats":"1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Evidence exists that these differences may have functional implications (e.g. affect nucleosome stability). Some clustered genes have tissue-specific expression and play specific functional roles (e.g. cH2B.1 and cH2B.E in mice). 2) A subset of clustered histones, which are normally expressed as replication-dependent histones, are expressed as polyadenylated mRNAs in adult non-dividing tissues to replenish histone pool in differentiated tissues [lyons_subset_2016]. 3) Certain clustered histones may act as functional histone variants with replication-independent polyA-tail-regulated expression being the major/only form (e.g. cH2B.E_(Mus_musculus), or H2A.J, which is closely related to cH2As). 4) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009]. "
             },
         "taxonomic_span": "Metazoa",
         "taxonomic_span_id": "33208",
@@ -1415,7 +1415,7 @@
         "level": "variant_group",
         "description": 
             {
-            "summary":"cH2B_(Mus_musculus) -- clustered H2B histones in mouse, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2B histones. repliation-dependent histones in mouse similar to human are found in several clusters. The largest cluster is found on chromosome 13 (more than 50 geens) and smaller clusters on chromosomes 3 and 11 [marzluff_human_2002]. There are 18 replication-dependent H2B genes currently annotated in mouse genome: 15 in cluster on chromosome 13, 2 in cluster on chromosome 3 and 1 on chromosome 11.",
+            "summary":"cH2B_(Mus_musculus) -- clustered H2B histones in mouse, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2B histones. repliation-dependent histones in mouse similar to human are found in several clusters. The largest cluster is found on chromosome 13 (more than 50 genes) and smaller clusters on chromosomes 3 and 11 [marzluff_human_2002]. There are 18 replication-dependent H2B genes currently annotated in mouse genome: 15 in cluster on chromosome 13, 2 in cluster on chromosome 3 and 1 on chromosome 11.",
             "genes": "null",
             "evolution":"null",
             "expression":"null",
@@ -1440,7 +1440,39 @@
         "taxonomic_span_id": "10090",
         "alternate_names": [{"name": "Th2b"},{"name": "TS H2B.1"}],
         "publications": []
-                },       
+                },
+"cH2B.E_(Mus_musculus)":     {
+        "level": "variant",
+        "description": 
+            {
+            "summary":"cH2B.E_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2B histones in mouse endoded by H2bc21 gene (histone gene cluster on chromosome 3). It differs by four of five amino acids from other cH2Bs in mouse. It is expressed via a polyA-tail containing mRNA, typical of replication-independent variants in the main olfactory epithelium and the vomeronasal organ [santoro_activity-dependent_2012]. Santoro and Dulac showed that its expression is reduced by sensory activity and that it promotes neuronal cell death, such that inactive olfactory neurons display higher levels of the variant and shorter life spans. [santoro_activity-dependent_2012]",
+            "taxonomy":"Mus musculus (House mouse)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+        },
+        "taxonomic_span": "Mus musculus",
+        "taxonomic_span_id": "10090",
+        "alternate_names": [{"name": "H2B.21"}],
+        "publications": []
+                },        
+     "cH2B_(Plants)":     {
+        "level": "variant_group",
+        "description": {"summary":"cH2B_(Plants) -- canonical replication-dependent H2B histones of green plants (Viridiplantae), which include green algae and land plants. PPPP Organisation of canonical H2B in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2B_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2B genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
+        "taxonomic_span": "Viridiplantae",
+        "taxonomic_span_id": "33090",
+        "alternate_names": [],
+        "publications": []
+                }, 
     "subH2B": {
                         "level": "variant_group",
                         "description": "subH2B is involved in spermiogenesis and is found in subacrosomes of spermatozoa. It has a bipartite nuclear localization signal. This variant is present outside of nucleus in acrosomal space of spermatozoa, extent of its involvement in nucleosome formation is unclear",
