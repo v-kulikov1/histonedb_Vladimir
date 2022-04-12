@@ -144,7 +144,8 @@
         "H2B.N": "null",
         "H2B.Z": "null",
         "H2B.S": "null",
-        "sperm_H2B": "null"
+        "sperm_H2B": "null",
+        "gH2B":  "null"
         },
     "H3": 
         {
@@ -207,7 +208,7 @@
         "level": "variant_group",
         "description": 
             {
-            "summary":"cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. cH2A isoforms in human), in other cases there may be a spectrum of canonical-like proteins (e.g. plant canonical H2As which show higher sequence diversity than cH2Bs of animals). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. ",
+            "summary":"cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are mainly expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. cH2A isoforms in human), in other cases there may be a spectrum of canonical-like proteins (e.g. plant canonical H2As which show higher sequence diversity than cH2Bs of animals). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. ",
             "taxonomy":"Present in all Eukaryotes.",
             "genes": "null",
             "evolution":"Because of its conserved function in the DNA damage response, it seems probable that H2A.X is ancestral, and that the various RC H2As are derived from it [talbert_histone_2021].",
@@ -466,7 +467,7 @@
                 },    
     "cH2A_(Plants)":     {
         "level": "variant_group",
-        "description": {"summary":"cH2A_(Plants) -- canonical replication-dependent H2A histones of green plants (Viridiplantae), which include green algae and land plants. Organisation of canonical H2A in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
+        "description": {"summary":"cH2A_(Plants) -- canonical H2A histones of green plants (Viridiplantae), which include green algae and land plants. This is a loosely defined group of replication-dependent H2A histones in plants together with similar sequences that might have further diversified towards replication-independent tissue-specific expression but have not yet been extensively studied. Currenly not much is known about the functional specialization of various cH2As isoforms in plants [alvarez-venegas_canonical_2019]. Organisation of canonical histones in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
         "taxonomic_span": "Viridiplantae",
         "taxonomic_span_id": "33090",
         "alternate_names": [],
@@ -474,7 +475,7 @@
                 },
     "cH2A_(Embryophyta)":     {
         "level": "variant_group",
-        "description": {"summary":"cH2A_(Embryophyta) -- canonical replication-dependent H2A histones of land plants. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
+        "description": {"summary":"cH2A_(Embryophyta) -- canonical replication-dependent H2A histones of land plants and similar replication-independent histones. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2A genes may have introns. [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
         "taxonomic_span": "Embryophyta",
         "taxonomic_span_id": "3193",
         "alternate_names": [],
@@ -482,7 +483,7 @@
                 },
     "cH2A_(Chlorophyta)":     {
         "level": "variant_group",
-        "description": {"summary":"cH2A_(Chlorophyta) -- canonical replication-dependent H2A histones of green algae. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
+        "description": {"summary":"cH2A_(Chlorophyta) -- canonical replication-dependent H2A histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
         "taxonomic_span": "Chlorophyta",
         "taxonomic_span_id": "3041",
         "alternate_names": [],
@@ -889,9 +890,9 @@
     "gH2A": {
         "level": "variant_group",
         "description":
-            {"summary":"gH2A is a histone variant specifically expressed in male gametic cells within the pollen of lily (Lilium longiflorum) [ueda_male_2005].",
-            "taxonomy":"So far characterized only in Lilium longiflorum.",
-            "genes": "gH2A gene. The gene is interrupted by one intron.",
+            {"summary":"gH2A is a male-gamete-specific variant found in the genus Lilium [alvarez-venegas_canonical_2019,ueda_male_2005].",
+            "taxonomy":"Suggested to be a distinctive variant that evloved specifically in Lilium [alvarez-venegas_canonical_2019]",
+            "genes": "gH2A gene in Lilium longiflorum. The gene is interrupted by one intron.",
             "evolution":"null",
             "expression":"null",
             "knock-out:":"null",
@@ -904,8 +905,8 @@
             "disease":"null",
             "caveats":"null"
             },
-        "taxonomic_span": "Lilium longiflorum",
-        "taxonomic_span_id": "4690",
+        "taxonomic_span": "Lilium",
+        "taxonomic_span_id": "4688",
         "alternate_names": [],
         "publications": []
             },  
@@ -913,10 +914,10 @@
         "level": "type",
         "description":
             {
-            "summary":"H2B is one of the core histone types present in all Eukaryotes. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. Structure of H2B consists of a histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via a four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome.",
+            "summary":"H2B is one of the core histone types present in all Eukaryotes. H2B forms dimers with H2A via the \"hand shake\" motif. Two H2A-H2B dimers in turn associate with H3-H4 tetramer to form complete nucleosome core. It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. Structure of H2B consists of a histone fold with a long flexible N-terminal tail which protrudes between the DNA gyres. H2B interacts with H4 in the nucleosome core via a four helix bundle motif. Addtional αC-helix of H2B decorates the surface of nucleosome. Unlike, H3 and H2A histone, H2B histones have relatively modest number of characterized histone variants. Although in plants, histone H2Bs have undergone significant sequence divergence and expansion in the number of encoding genes [jiang_evolution_2020].",
             "taxonomy":"Present in all Eukaryotes.",
             "genes": "null",
-            "evolution":"It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. The eukaryotic H3-H4 tetramer resembles the tetramer found in Archaea, and it has been suggested that H2A and H2B have arisen from H3 and H4 later on in histone evolution [henneman_structure_2018].",
+            "evolution":"It has been suggested that H2A and H2B have arisen from H3 and H4 during evolution [malik_phylogenomics_2003]. The eukaryotic H3-H4 tetramer resembles the tetramer found in Archaea, and it has been suggested that H2A and H2B have arisen from H3 and H4 later on in histone evolution [henneman_structure_2018]. The histone H2B (HTB) family shows the least conservation of all core histones likely because it is less evolutionarily constrained than its counterparts [alvarez-venegas_canonical_2019].",
             "expression":"null",
             "knock-out:":"null",
             "function":"null",
@@ -1467,12 +1468,28 @@
                 },        
      "cH2B_(Plants)":     {
         "level": "variant_group",
-        "description": {"summary":"cH2B_(Plants) -- canonical replication-dependent H2B histones of green plants (Viridiplantae), which include green algae and land plants. PPPP Organisation of canonical H2B in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2B_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome, H2B genes may have introns. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]"},
+        "description": {"summary":"cH2B_(Plants) -- canonical H2B histones of green plants (Viridiplantae), which include green algae and land plants. Currently, this is a loosely defined group of replication-dependent H2B histones in plants together with similar sequences that might have further diversified towards replication-independent tissue-specific expression but have not yet been extensively studied. An example of the latter would be the HTB3 gene of Arabidopsis which has the hallmarks of a replacement histone variant enriched in mature cells [jiang_evolution_2020]. Organisation of canonical histones in green plants is variable. In land plants unlike clustered/canonical histones of animals (see cH2B_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]. Plant H2Bs vary substantially in the length and sequence of their N-terminal tails [jiang_evolution_2020,bergmuller_characterization_2007]. A study of evolution and functional divergence of H2B histones in plants by Jiang et al. concluded that amongst flowering plants, eudicots had experienced the highest degree of divergence among H2B genes [jiang_evolution_2020]. This divergence appears to have been driven by preferential expression during gametogenesis, including three genes in Arabidopsis (HTB7/8/10 genes) and at least one in tomato. While HTB8 gene in Arabidopsis belongs to a phylogenetically distinct H2B.S variant [jiang_evolution_2020], HTB7 and HTB10 are much more similar in sequence to other H2Bs for now are included as cH2B in our classification [alvarez-venegas_canonical_2019]."},
         "taxonomic_span": "Viridiplantae",
         "taxonomic_span_id": "33090",
         "alternate_names": [],
         "publications": []
                 }, 
+    "cH2B_(Embryophyta)":     {
+        "level": "variant_group",
+        "description": {"summary":"cH2B_(Embryophyta) -- canonical H2B histones of land plants. In land plants unlike clustered/canonical histones of animals (see cH2A_(Metazoa)) replication dependent histone mRNAs are polyadenilated and genes are interspersed throught the genome [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]. See description of cH2B_(Plants) variant Jiang et al. paper for further information about H2B histones in plant [jiang_evolution_2020]."},
+        "taxonomic_span": "Embryophyta",
+        "taxonomic_span_id": "3193",
+        "alternate_names": [],
+        "publications": []
+                },
+    "cH2A_(Chlorophyta)":     {
+        "level": "variant_group",
+        "description": {"summary":"cH2B_(Chlorophyta) -- canonical H2A histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]. See description of cH2B_(Plants) variant Jiang et al. paper for further information about H2B histones in plant [jiang_evolution_2020]."},
+        "taxonomic_span": "Chlorophyta",
+        "taxonomic_span_id": "3041",
+        "alternate_names": [],
+        "publications": []
+                },
     "subH2B": {
                         "level": "variant_group",
                         "description": "subH2B is involved in spermiogenesis and is found in subacrosomes of spermatozoa. It has a bipartite nuclear localization signal. This variant is present outside of nucleus in acrosomal space of spermatozoa, extent of its involvement in nucleosome formation is unclear",
