@@ -139,7 +139,7 @@
             "cH2B_(Protists)":"null"
         },
         "subH2B/H2B.L": "null",
-        "H2B.W": "null",
+        "H2B.W": {"H2B.W_(Homo_sapiens)":{"H2A.W.1_(Homo_sapiens)":"null","H2A.L.3_(Homo_sapiens)":"null"}},
         "H2B.K": "null",
         "H2B.N": "null",
         "H2B.Z": "null",
@@ -1701,9 +1701,9 @@
             "level": "variant_group",
             "description":
                 {
-                "summary": "H2B.W -- H2B.W is involved in spermiogenesis and telomere associated functions in sperm and is found in spermatogenic cells. It has an extended N-terminal tail",
+                "summary": "H2B.W -- is involved in spermiogenesis and telomere associated functions in sperm and is found in spermatogenic cells. It has an extended N-terminal tail. Spermiogenesis, telomere associated functions in sperm H2BL2 [govin_pericentric_2007]",
                 "taxonomy":"Mammals",
-                "genes": "",
+                "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3, while mouse has only one H2B.W-encoding gene (H2bw2) found in a syntenic location. Other mammals have different numbers of H2BW paralogs (between 1 and 4) but these are all located at the same conserved location of the X chromosome [Ruth et al]",
                 "evolution":"null",
                 "expression":"null",
                 "knock-out:":"null",
@@ -1713,12 +1713,12 @@
                 "deposition":"null",
                 "structure":"null",
                 "interactions":"null",
-                "disease":"null",
+                "disease":"Single nucleotide polymorphisms (SNPs) in H2B.W genes may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018].",
                 "caveats":"null"
                 },
             "taxonomic_span": "Mammalia",
             "taxonomic_span_id": "40674",
-            "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"}],
+            "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"},{"name":"H2BL2"}],
             "publications": ["11892742","22156475"]
                 },
     "sperm_H2B": {
