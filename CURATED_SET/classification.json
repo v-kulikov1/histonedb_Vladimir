@@ -139,7 +139,7 @@
             "cH2B_(Protists)":"null"
         },
         "subH2B/H2B.L": "null",
-        "H2B.W": {"H2B.W_(Homo_sapiens)":{"H2A.W.1_(Homo_sapiens)":"null","H2A.L.3_(Homo_sapiens)":"null"}},
+        "H2B.W": {"H2B.W_(Homo_sapiens)":{"H2A.W.1_(Homo_sapiens)":"null","H2A.W.2_(Homo_sapiens)":"null"}},
         "H2B.K": "null",
         "H2B.N": "null",
         "H2B.Z": "null",
@@ -1123,7 +1123,7 @@
         "level": "variant",
         "description": 
             {
-            "summary":"cH2B.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC1 gene (formerly, HIST1H2BA, TH2B). This is the most divergent gene of the family (around 85% identity with other cH2Bs). Its length is also one amino acid longer than for the rest of H2Bs (126 amio acid residues after initiator methionine cleavage). Together with H2AC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2B.1_(Mus_musculus) -- a related histone variant encoded by H2bc1 gene which has been characterized through a number of in vivo and in vitro studies.",
+            "summary":"cH2B.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC1 gene (formerly, HIST1H2BA, TH2B). This is the most divergent gene of the family (around 85% identity with other cH2Bs) [zalensky_human_2002]. Its length is also one amino acid longer than for the rest of H2Bs (126 amio acid residues after initiator methionine cleavage). Together with H2AC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2B.1_(Mus_musculus) -- a related histone variant encoded by H2bc1 gene which has been characterized through a number of in vivo and in vitro studies.",
             "genes": "null",
             "evolution":"null",
             "expression":"null",
@@ -1139,7 +1139,7 @@
             },
         "taxonomic_span": "Homo sapiens",
         "taxonomic_span_id": "9606",
-        "alternate_names": [{"name": "TH2B"},{"name": "TS H2B.1"}],
+        "alternate_names": [{"name": "TH2B"},{"name": "TS H2B.1"},{"name": "hTSH2B"}],
         "publications": []
         },
     "cH2B.2_(Homo_sapiens)":     
@@ -1701,9 +1701,9 @@
             "level": "variant_group",
             "description":
                 {
-                "summary": "H2B.W -- is involved in spermiogenesis and telomere associated functions in sperm and is found in spermatogenic cells. It has an extended N-terminal tail. Spermiogenesis, telomere associated functions in sperm H2BL2 [govin_pericentric_2007]",
+                "summary": "H2B.W -- is a testis-specific histone variant involved in spermiogenesis. It was suggested to have telomere-associated functions and participate in the telomere-binding complex in the human sperm [churikov_novel_2004, gineitis_human_2000]. It has a long extended N-terminal tail, has about 45% amino acid sequence identity and 70% similarity with both the major somatic H2Bs [churikov_novel_2004]. First, characterized in human as H2BFWT gene (now called H2BW1 gene). In mouse a paralog of H2B.W variant was initially identified by Govin et al. and named H2BL2 [govin_pericentric_2007]. In human beings, unlike other mammals including the mouse, core histones (H2A, H2B, H3 and H4) are not displaced completely during spermiogenesis and account for approximately 15% of the basic chromosomal proteins within the mature sperm [lee_functional_2009]. At least human H2B.W can replace conventional histone H2B in the nucleosome, does not affect the overall structure and stability of the nucleosome [boulard_nh2_2006]. In contrast to conventional H2B, H2B.W was unable to recruit chromosome condensation factors and to participate in the assembly of mitotic chromosomes, this fact is attibuted to its highly divergent NH2 tail [boulard_nh2_2006].",
                 "taxonomy":"Mammals",
-                "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3, while mouse has only one H2B.W-encoding gene (H2bw2) found in a syntenic location. Other mammals have different numbers of H2BW paralogs (between 1 and 4) but these are all located at the same conserved location of the X chromosome [Ruth et al]",
+                "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3, while mouse has only one H2B.W-encoding gene (H2bw2) found in a syntenic location. Other mammals have different numbers of H2BW paralogs (between 1 and 4) but these are all located at the same conserved location of the X chromosome [Ruth et al]. The H2BFWT gene contains two introns and is transcribed exclusively in testis, where the spliced polyadenylated mRNA was detected [churikov_novel_2004].",
                 "evolution":"null",
                 "expression":"null",
                 "knock-out:":"null",
@@ -1718,9 +1718,11 @@
                 },
             "taxonomic_span": "Mammalia",
             "taxonomic_span_id": "40674",
-            "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"},{"name":"H2BL2"}],
+            "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"},{"name":"H2BL2"},{"name":"spH2B"}],
             "publications": ["11892742","22156475"]
                 },
+
+
     "sperm_H2B": {
                         "level": "variant_group",
                         "description": "Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
