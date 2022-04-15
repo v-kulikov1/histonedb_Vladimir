@@ -1124,7 +1124,7 @@
         "level": "variant",
         "description": 
             {
-            "summary":"cH2B.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC1 gene (formerly, HIST1H2BA, TH2B). This is the most divergent gene of the family (around 85% identity with other cH2Bs) [zalensky_human_2002]. Its length is also one amino acid longer than for the rest of H2Bs (126 amio acid residues after initiator methionine cleavage). Together with H2AC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2B.1_(Mus_musculus) -- a related histone variant encoded by H2bc1 gene which has been characterized through a number of in vivo and in vitro studies.",
+            "summary":"cH2B.1_(Homo_sapiens) -- is an isoform (variant) of clustered (canonical) H2B histones in human endoded by H2BC1 gene (formerly, HIST1H2BA, TH2B). This is the most divergent gene of the family (around 85% identity with other cH2Bs) [zalensky_human_2002]. Its length is also one amino acid longer than for the rest of H2Bs (126 amio acid residues after initiator methionine cleavage). Together with H2AC1 they share a common promoter and manifest tissue-specific expression (at least in testis and oocytes) (see human protein atlas).  H2AC1 and H2BC1 are thought to be maternal effect factors and their expression was shown to enhance OSKM-induced cell reprogramming in human cells [huynh_two_2016]. See also description of cH2B.1_(Mus_musculus) -- a related histone variant encoded by H2bc1 gene which has been characterized through a number of in vivo and in vitro studies. Phylogenetic analysis of cH2B.1 in mammals by Raman et al. suggests that when considered together with its N-terminal tail histones form a distinct phylogenetic clade with high bootstrap support [raman_novel_2022].",
             "genes": "null",
             "evolution":"null",
             "expression":"null",
@@ -1503,7 +1503,7 @@
                 }, 
     "cH2B.1_(Mus_musculus)":     {
         "level": "variant",
-        "description": {"summary":"cH2B.1_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2B histones in mouse endoded by H2bc1 gene (formerly, Hist1h2ba, Th2b). This is the most divergent gene of the family, its protein product has differences in INSERT HERE. Together with H2ac1 gene they share a common promoter and manifest tissue-specific expression (at least in testis, oocytes and zygotes) [padavattan_structural_2015]. Disruption of Th2a and Th2b genes causes defects in spermatogenesis [shinagawa_disruption_2015]. H2ac1 and H2bc1 contribute to activation of the paternal genome after fertilization [shinagawa_histone_2014]. These variant facilitate OSKM-induced cell reprogramming [shinagawa_histone_2014].  X-ray structure of nucleosome harboring this variant have fewer histone-DNA contacts and perturbed L1-L1-loop interactions. Mutational in vivo analysis suggest histone tails and L1 loop of cH2A.1 are important for reprogramming [padavattan_structural_2015]. Differential scanning calorimetry analysis indicated that the H2ac1/H2bc1 complex was more stable than other combinations of canonical histones [shinagawa_histone_2014]. This variant is related to cH2B.1_(Homo_sapiens) encoded by H2B1C gene, is located in the same position at the largest histone gene cluster, however, their sequence differs at INSERT HERE positions. Note: Since this variant manifests similar features in mice and humans (tissue-specific expression, synteny, divergent sequence with respect to other canonical variants in each species) likely similar variants exist in all supraprimates or in higher taxa. Once and if sufficient evidence accumulates such variants may be grouped into a separate class.",
+        "description": {"summary":"cH2B.1_(Mus_musculus) -- is an isoform (variant) of clustered (canonical) H2B histones in mouse endoded by H2bc1 gene (formerly, Hist1h2ba, Th2b). This is the most divergent gene of the family, its protein product has differences in INSERT HERE. Together with H2ac1 gene they share a common promoter and manifest tissue-specific expression (at least in testis, oocytes and zygotes) [padavattan_structural_2015]. Disruption of Th2a and Th2b genes causes defects in spermatogenesis [shinagawa_disruption_2015]. H2ac1 and H2bc1 contribute to activation of the paternal genome after fertilization [shinagawa_histone_2014]. These variant facilitate OSKM-induced cell reprogramming [shinagawa_histone_2014].  X-ray structure of nucleosome harboring this variant have fewer histone-DNA contacts and perturbed L1-L1-loop interactions. Mutational in vivo analysis suggest histone tails and L1 loop of cH2A.1 are important for reprogramming [padavattan_structural_2015]. Differential scanning calorimetry analysis indicated that the H2ac1/H2bc1 complex was more stable than other combinations of canonical histones [shinagawa_histone_2014]. This variant is related to cH2B.1_(Homo_sapiens) encoded by H2B1C gene, is located in the same position at the largest histone gene cluster, however, their sequence differs at INSERT HERE positions. Structural and in vitro studies suggest that cH2B.1-containing nucleosomes are less stable than RC H2B, which may allow H2B.1 to facilitate histone-protamine exchange during spermatogenesis. More recently, H2B.1 has also been detected in mouse oocytes, where its function is not yet understood [raman_novel_2022]. Note: Since this variant manifests similar features in mice and humans (tissue-specific expression, synteny, divergent sequence with respect to other canonical variants in each species) likely similar variants exist in all supraprimates or in higher taxa. Once and if sufficient evidence accumulates such variants may be grouped into a separate class.",
             "taxonomy":"Mus musculus (House mouse)",
             "genes": "null",
             "evolution":"null",
@@ -1774,7 +1774,7 @@
             "level": "variant_group",
             "description":
                 {
-                "summary": "H2B.W.2_(Homo_sapiens) -- is a testis-specific histone variant involved in spermiogenesis encoded by H2BW2 gene (formerly H2BFM). Currenly, it is no wel characterized. See H2B.W description for more information.",
+                "summary": "H2B.W.2_(Homo_sapiens) -- is a testis-specific histone variant involved in spermiogenesis encoded by H2BW2 gene (formerly H2BFM). Currenly, it is not well characterized. See H2B.W description for more information.",
                 "taxonomy":"Mammals",
                 "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3. The H2BW2 gene is locate on X-chromosome.",
                 "evolution":"null",
@@ -1787,7 +1787,7 @@
                 "structure":"null",
                 "interactions":"null",
                 "disease":"Single nucleotide polymorphisms (SNPs) in this gene may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018]. Particularly, there was a significant association between 368A>G transition in H2BW1 and male infertility, resulting in His123Arg substitution.",
-                "caveats":"null"
+                "caveats":"H2B.M name has been used in literature to refer to this variant [raman_novel_2022]."
                 },
             "taxonomic_span": "Mammalia",
             "taxonomic_span_id": "40674",
@@ -1798,9 +1798,9 @@
             "level": "variant_group",
             "description":
                 {
-                "summary": "H2B.K -- is a germline-specific histone variant.  are predominantly expressed in oocytes [raman_novel_2022]",
+                "summary": "H2B.K -- is a variant identified so far bioinfomatically by Raman et al. as phylogenetically distinct clade.  are predominantly expressed in oocytes [raman_novel_2022]",
                 "taxonomy":"Bony vertebrates [raman_novel_2022].",
-                "genes": "In human there are transcripts overlapping H2BK1 and the upstream gene ABCF2, which, combined with the lack of mouse ortholog, this prcluded gene annotation until 2019 [mudge_discovery_2019].",
+                "genes": "An unusual feature of both H2B.K and H2B.N is that they are encoded by intron-containing genes, whereas all other H2B variants and RC H2B lack introns [raman_novel_2022].",
                 "evolution":"null",
                 "expression":"null",
                 "knock-out:":"null",
@@ -1810,7 +1810,7 @@
                 "deposition":"null",
                 "structure":"null",
                 "interactions":"null",
-                "disease":"Single nucleotide polymorphisms (SNPs) in H2B.W genes may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018].",
+                "disease":"null",
                 "caveats":"null"
                 },
             "taxonomic_span": "Mammalia",
