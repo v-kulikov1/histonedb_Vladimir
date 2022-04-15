@@ -138,12 +138,13 @@
             "cH2B_(Fungi)":"null",
             "cH2B_(Protists)":"null"
         },
-        "subH2B/H2B.L": "null",
+        "H2B.L": "null",
         "H2B.W": {"H2B.W_(Homo_sapiens)":{"H2A.W.1_(Homo_sapiens)":"null","H2A.W.2_(Homo_sapiens)":"null"}},
         "H2B.K": "null",
         "H2B.N": "null",
         "H2B.Z": "null",
         "H2B.S": "null",
+        "H2B.O": "null",
         "sperm_H2B": "null",
         "gH2B":  "null"
         },
@@ -1675,10 +1676,10 @@
         "alternate_names": [],
         "publications": []
                 },
-    "subH2B": {
+    "H2B.L": {
             "level": "variant_group",
             "description":{
-            "summary": "subH2B (also named H2B.L) -- is an unusual H2B variant found outside of the nucleus in the in the subacrosomal space of spermatozoa. First characterized as a major component of the subacrosomal layer of the perinuclear theca (SAL-PT) in bulls sperm heads (named subH2Bv) [aul_major_2001]. SAL-PT resides within in the layer of condensed cytosol between acrosome and the nucleus of the spermatid [tran_involvement_2012]. N-terminal tail of subH2Bv contains a bipartite nuclear localization signal (bNLS) [tran_involvement_2012]. A study be Tran et al. suggested that this bNLS allows subH2Bv during spermiogenesis to target proacrosomic and acrosomic vesicles to the nuclear envelope by binding to the nucleocytoplasmic receptor KPNA [tran_involvement_2012]. In mouse Govin et al. have identified a homologous protein, which was named H2BL1, which was shown to accumalate in late spermiogenesis in condensing spermatids [govin_pericentric_2007]. Although when expressed ectopically fused with EGPFP the protein enters cell nucleus, it is has not been seen developmentally within the nucleus of the spermatid [tran_involvement_2012]. Thus currently there is no evidence that subH2B participates in nucleosome formation.",
+            "summary": "H2B.L (also named subH2B) -- is an unusual H2B variant found outside of the nucleus in the in the subacrosomal space of spermatozoa. First characterized as a major component of the subacrosomal layer of the perinuclear theca (SAL-PT) in bulls sperm heads (named subH2Bv) [aul_major_2001]. SAL-PT resides within in the layer of condensed cytosol between acrosome and the nucleus of the spermatid [tran_involvement_2012]. N-terminal tail of subH2Bv contains a bipartite nuclear localization signal (bNLS) [tran_involvement_2012]. A study be Tran et al. suggested that this bNLS allows subH2Bv during spermiogenesis to target proacrosomic and acrosomic vesicles to the nuclear envelope by binding to the nucleocytoplasmic receptor KPNA [tran_involvement_2012]. In mouse Govin et al. have identified a homologous protein, which was named H2BL1, which was shown to accumalate in late spermiogenesis in condensing spermatids [govin_pericentric_2007]. Although when expressed ectopically fused with EGPFP the protein enters cell nucleus, it is has not been seen developmentally within the nucleus of the spermatid [tran_involvement_2012]. Thus currently there is no evidence that subH2B participates in nucleosome formation. The currently suggested name for this variant is H2B.L [raman_novel_2022].",
             "taxonomy":"Likely mammals, characterized mainly in bull and mouse. In human the gene is pseudogenised (H2BL1P pseudogene).",
             "genes": "H2bl1 in mouse.",
             "evolution":"null",
@@ -1694,7 +1695,7 @@
             "caveats":"null"},
             "taxonomic_span": "Mammalia",
             "taxonomic_span_id": "40674",
-            "alternate_names": [{"name": "H2BL1"},{"name": "subH2Bv"}],
+            "alternate_names": [{"name": "subH2B"},{"name": "H2BL1"},{"name": "subH2Bv"}],
             "publications": ["11892742","22156475"]
                 },
     "H2B.W": {
@@ -1721,8 +1722,102 @@
             "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"},{"name":"H2BL2"},{"name":"spH2B"}],
             "publications": ["11892742","22156475"]
                 },
-
-
+    "H2B.W_(Homo_sapiens)": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.W_(Homo_sapiens) -- is a testis-specific histone variant involved in spermiogenesis. Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 genes. See H2B.W description for more information.",
+                "taxonomy":"Mammals",
+                "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3. The H2BW1 gene contains two introns and is transcribed exclusively in testis, where the spliced polyadenylated mRNA was detected [churikov_novel_2004].",
+                "evolution":"null",
+                "expression":"null",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"Single nucleotide polymorphisms (SNPs) in H2B.W genes may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018]. Particularly, there was a significant association between 368A>G transition in H2BW1 and male infertility, resulting in His123Arg substitution.",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Mammalia",
+            "taxonomic_span_id": "40674",
+            "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"},{"name":"H2BL2"},{"name":"spH2B"}],
+            "publications": ["11892742","22156475"]
+                },
+    "H2B.W.1_(Homo_sapiens)": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.W.1_(Homo_sapiens) -- is a testis-specific histone variant involved in spermiogenesis encoded by H2BW1 gene (formerly H2BFWT). See H2B.W description for more information.",
+                "taxonomy":"Mammals",
+                "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3. The H2BW1 gene contains two introns and is transcribed exclusively in testis, where the spliced polyadenylated mRNA was detected [churikov_novel_2004].",
+                "evolution":"null",
+                "expression":"null",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"Single nucleotide polymorphisms (SNPs) in this gene may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018]. Particularly, there was a significant association between 368A>G transition in H2BW1 and male infertility, resulting in His123Arg substitution.",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Mammalia",
+            "taxonomic_span_id": "40674",
+            "alternate_names": [{"name": "H2BFWT"},{"name": "member W"},{"name": "type W-T"},{"name":"H2BL2"},{"name":"spH2B"}],
+            "publications": ["11892742","22156475"]
+                },
+    "H2B.W.2_(Homo_sapiens)": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.W.2_(Homo_sapiens) -- is a testis-specific histone variant involved in spermiogenesis encoded by H2BW2 gene (formerly H2BFM). Currenly, it is no wel characterized. See H2B.W description for more information.",
+                "taxonomy":"Mammals",
+                "genes": "Human has two H2B.W-encoding paralogs which are now named as H2BW1 and H2BW2 and two pseudogenes (H2BW3P and H2BW4P) all located on the X chromosome between RAB9B and SLC25A3. The H2BW2 gene is locate on X-chromosome.",
+                "evolution":"null",
+                "expression":"null",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"Single nucleotide polymorphisms (SNPs) in this gene may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018]. Particularly, there was a significant association between 368A>G transition in H2BW1 and male infertility, resulting in His123Arg substitution.",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Mammalia",
+            "taxonomic_span_id": "40674",
+            "alternate_names": [{"name": "H2BFM"}],
+            "publications": ["11892742","22156475"]
+                },
+    "H2B.K": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.K -- is a germline-specific histone variant.  are predominantly expressed in oocytes [raman_novel_2022]",
+                "taxonomy":"Bony vertebrates [raman_novel_2022].",
+                "genes": "In human there are transcripts overlapping H2BK1 and the upstream gene ABCF2, which, combined with the lack of mouse ortholog, this prcluded gene annotation until 2019 [mudge_discovery_2019].",
+                "evolution":"null",
+                "expression":"null",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"Single nucleotide polymorphisms (SNPs) in H2B.W genes may result in male infertility. See meta-analysis of several studies by Teimouri et al. [teimouri_association_2018].",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Mammalia",
+            "taxonomic_span_id": "40674",
+            "alternate_names": [],
+            "publications": []
+                },
     "sperm_H2B": {
                         "level": "variant_group",
                         "description": "Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
