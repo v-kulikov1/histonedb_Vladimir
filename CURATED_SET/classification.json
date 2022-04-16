@@ -146,6 +146,7 @@
         "H2B.S": "null",
         "gH2B":  "null",
         "H2B.Z": "null",
+        "H2B.V": "null",
         "CS_H2B": "null",
         },
     "H3": 
@@ -1938,6 +1939,52 @@
             "alternate_names": [],
             "publications": []
                 },   
+    "gH2B": {
+        "level": "variant_group",
+        "description":
+            {"summary":"gH2B is a group of plant H2B variants found in Lilium that are highly divergent from the canonical H2B and are expressed in the generative cell of the bicellular pollen where it may be necessary for chromatin remodeling of the male germline [alvarez-venegas_canonical_2019,yang_proteomic_2016,ueda_unusual_2000]. The subvariants so far identified are named gH2B in Lilium longiflorum, mgH2B in Lilium davidii, and mgH2B.in in Lilium davidii. These subvariants are rather different and are grouped due to lack of further information. Some phylogenetic reconstructions cluster these variant together with H2B.S [alvarez-venegas_canonical_2019], however, this may be likely to long branch attraction, and the exact phylogeny remains to be studied [jiang_evolution_2020].",
+            "taxonomy":"null",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Lilium",
+        "taxonomic_span_id": "4688",
+        "alternate_names": [],
+        "publications": []
+            },  
+    "H2B.Z": {
+        "level": "variant_group",
+        "description":
+            {"summary":"H2B.Z in an apicomplexan specific variant that is known to interact with H2A.Z [miao_malaria_2006].",
+            "taxonomy":"null",
+            "genes": "null",
+            "evolution":"null",
+            "expression":" H2B.Z expression was relatively constitutive, showing only slight decrease in early and mid-trophozoites [miao_malaria_2006].",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"Former name for this histone H2Bv from Plasmodium can be confused with H2BV from Trypanosoma, though the two variants are not closely related."
+            },
+        "taxonomic_span": "Apicomplexa",
+        "taxonomic_span_id": "5794",
+        "alternate_names": [{"name":"H2Bv"}],
+        "publications": []
+            }, 
     "sperm_H2B": {
                         "level": "variant_group",
                         "description": "Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
