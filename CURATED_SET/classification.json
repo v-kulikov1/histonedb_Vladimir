@@ -1965,11 +1965,11 @@
     "H2B.Z": {
         "level": "variant_group",
         "description":
-            {"summary":"H2B.Z in an apicomplexan specific variant that is known to interact with H2A.Z [miao_malaria_2006].",
+            {"summary":"H2B.Z is an apicomplexan specific variant. Different studies performed in Toxoplasma have shown a nucleosome composition in which H2A.Z, but not H2A.X, dimerizes with H2B.Z, while H2A.X dimerizes with canonical H2B (H2Ba in T. gondii), but never with H2B.Z. This fact is also seen in P. falciparum, although this parasite lacks H2A.X variant and has driven the hypothesis of a new double variant nucleosome exclusive of parasites with particular characteristics [logie_apicomplexa_2020].",
             "taxonomy":"null",
             "genes": "null",
             "evolution":"null",
-            "expression":" H2B.Z expression was relatively constitutive, showing only slight decrease in early and mid-trophozoites [miao_malaria_2006].",
+            "expression":" H2B.Z expression was found to be relatively constitutive, showing only slight decrease in early and mid-trophozoites [miao_malaria_2006].",
             "knock-out:":"null",
             "function":"null",
             "sequence":"null",
@@ -1978,53 +1978,59 @@
             "structure":"null",
             "interactions":"null",
             "disease":"null",
-            "caveats":"Former name for this histone H2Bv from Plasmodium can be confused with H2BV from Trypanosoma, though the two variants are not closely related."
+            "caveats":"Former name for this histone variant H2Bv from Plasmodium can be confused with H2BV from Trypanosoma, though the two variants are not closely related."
             },
         "taxonomic_span": "Apicomplexa",
         "taxonomic_span_id": "5794",
         "alternate_names": [{"name":"H2Bv"}],
         "publications": []
             }, 
-    "sperm_H2B": {
-                        "level": "variant_group",
-                        "description": "Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
-                        "taxonomic_span": "Echinoidea(?)",
-                        "taxonomic_span_id": "7625",
-                        "alternate_names": [
-                                {
-                                        "name": "early H2B"
-                                },
-                                {
-                                        "name": "cleavage H2B"
-                                }
-                        ],
-                        "publications": [
-                                "22650316",
-                                "710402"
-                        ]
-                },
-    "H2B.Z": {
-                        "level": "variant_group",
-                        "description": "H2B.Z in an apicomplexan specific variant that is known to interact with H2A.Z.",
-                        "taxonomic_span": "Apicomplexa",
-                        "taxonomic_span_id": "5794",
-                        "alternate_names": [
-                                {
-                                        "name": "H2Bv"
-                                }
-                        ],
-                        "publications": [
-                                "22650316"
-                        ]
-                },
-    "H2B.S": {
-                        "level": "variant_group",
-                        "description": "H2B.S ...",
-                        "taxonomic_span": "Homo",
-                        "taxonomic_span_id": "9605",
-                        "alternate_names": [],
-                        "publications": []
-                },
+    "H2B.V": {
+        "level": "variant_group",
+        "description":
+            {"summary":"H2B.V is a histone variant characterized so far in Trypanosoma brucei. It shares ~38% sequence identity with major H2B. H2B.V is essential for viability. H2A.Z and H2B.V colocalize throughout the cell cycle and exhibit nearly identical genomic distribution. Data strongly suggest that H2A.Z and H2B.V function together within a single nucleosome [lowell_histone_2005].",
+            "taxonomy":"Trypanosoma",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Trypanosoma",
+        "taxonomic_span_id": "5690",
+        "alternate_names": [{"name":"H2BV"}],
+        "publications": []
+            },
+    "CS_H2B": {
+        "level": "variant_group",
+        "description":
+            {"summary":"CS_H2B PPPPP Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
+            "taxonomy":"Echinoidea(?)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Echinoidea",
+        "taxonomic_span_id": "7625",
+        "alternate_names": [{"name":"cleavage H2B"},{"name":"early H2B"}],
+        "publications": []
+            }, 
     "H3": {
                         "level": "type",
                         "description": "H3 is one of the core histones. Two H3 and two H4 histones form H3-H4 tetramer via \"hand shake\" and \"four helix bundle\" motifs. Two H2A-H2B dimers then associate with H3-H4 tetramer to form complete nucleosome core. Structurally H3 has a histone fold domain, αN-helix and a long N-terminal tail with many important post-translational modification sites. The αN-helix organizes the terminal segment of core nucleosomal DNA."
