@@ -140,13 +140,13 @@
         },
         "H2B.L": "null",
         "H2B.W": {"H2B.W_(Homo_sapiens)":{"H2A.W.1_(Homo_sapiens)":"null","H2A.W.2_(Homo_sapiens)":"null"}},
-        "H2B.K": "null",
-        "H2B.N": "null",
-        "H2B.Z": "null",
-        "H2B.S": "null",
+        "H2B.K": {"H2B.K_(Homo_sapiens)"},
+        "H2B.N": {"H2B.N_(Homo_sapiens)"},
         "H2B.O": "null",
-        "sperm_H2B": "null",
-        "gH2B":  "null"
+        "H2B.S": "null",
+        "gH2B":  "null",
+        "H2B.Z": "null",
+        "CS_H2B": "null",
         },
     "H3": 
         {
@@ -1680,9 +1680,9 @@
             "level": "variant_group",
             "description":{
             "summary": "H2B.L (also named subH2B) -- is an unusual H2B variant found outside of the nucleus in the in the subacrosomal space of spermatozoa. First characterized as a major component of the subacrosomal layer of the perinuclear theca (SAL-PT) in bulls sperm heads (named subH2Bv) [aul_major_2001]. SAL-PT resides within in the layer of condensed cytosol between acrosome and the nucleus of the spermatid [tran_involvement_2012]. N-terminal tail of subH2Bv contains a bipartite nuclear localization signal (bNLS) [tran_involvement_2012]. A study be Tran et al. suggested that this bNLS allows subH2Bv during spermiogenesis to target proacrosomic and acrosomic vesicles to the nuclear envelope by binding to the nucleocytoplasmic receptor KPNA [tran_involvement_2012]. In mouse Govin et al. have identified a homologous protein, which was named H2BL1, which was shown to accumalate in late spermiogenesis in condensing spermatids [govin_pericentric_2007]. Although when expressed ectopically fused with EGPFP the protein enters cell nucleus, it is has not been seen developmentally within the nucleus of the spermatid [tran_involvement_2012]. Thus currently there is no evidence that subH2B participates in nucleosome formation. The currently suggested name for this variant is H2B.L [raman_novel_2022].",
-            "taxonomy":"Likely mammals, characterized mainly in bull and mouse. In human the gene is pseudogenised (H2BL1P pseudogene).",
+            "taxonomy":"Likely mammals, characterized mainly in bull and mouse. In Homininae the gene is pseudogenised (H2BL1P pseudogene in human). Gene is pseudogenised also in many primates [raman_novel_2022].",
             "genes": "H2bl1 in mouse.",
-            "evolution":"null",
+            "evolution":"Human genome appears to encode a H2B.L pseudogene, which is a single mutation away from encoding an intact ORF. Frameshifting mutation (and subsequent early stop codon) found in humans is also present in chimpanzee, bonobo, and gorilla, suggesting that a true pseudogenization event occurred around 9 Ma in Homininae [raman_novel_2022].",
             "expression":"null",
             "knock-out:":"null",
             "function":"null",
@@ -1798,11 +1798,59 @@
             "level": "variant_group",
             "description":
                 {
-                "summary": "H2B.K -- is a variant identified so far bioinfomatically by Raman et al. as phylogenetically distinct clade.  are predominantly expressed in oocytes [raman_novel_2022]",
+                "summary": "H2B.K -- is a variant identified so far bioinfomatically by Raman et al. as phylogenetically distinct clade of H2B variants in bony vertebrates [raman_novel_2022]. Newly identified histones H2B.N and H2B.K are primarily expressed in ovaries and early embryos, where they may play key roles in female fertility and early development like the cleavage stage histones of sea urchins. Certain changes that distinguish H2B.K from canonical H2B occur around the second DNA binding loop that could affect DNA binding or specificity. H2B.K’s N-terminal tail differs dramatically from canonical H2B [raman_novel_2022]. N-terminal tail is missing key lysine residues that are posttranslationally modified in canonical H2B. Atypically for H2B proteins, H2B.K also has a variable-length polyglutamine tract in its N-terminal tail that could facilitate protein–protein interactions. H2B.K is a newly identified histone variant, its biochemical properties remain uncharacterized [raman_novel_2022].",
                 "taxonomy":"Bony vertebrates [raman_novel_2022].",
-                "genes": "An unusual feature of both H2B.K and H2B.N is that they are encoded by intron-containing genes, whereas all other H2B variants and RC H2B lack introns [raman_novel_2022].",
+                "genes": "An unusual feature of both H2B.K and H2B.N is that they are encoded by intron-containing genes, whereas all other H2B variants and canonical H2B lack introns [raman_novel_2022].",
+                "evolution":"H2B.K may have a common ancestor with H2B.N. H2B.K is the only H2B variant for which Raman et al. could identify an ortholog in the shared syntenic location in chicken, a nonmammalian outgroup. They found H2B.K orthologs at least as far back as bony fishes in shared syntenic locations. H2B.K orthologs from vertebrates also group with the previously identified cleavage-stage dependent histones in sea urchin. Both H2B.K and H2B.N were pseudogenized in rodents. Both H2B.K and H2B.N were pseudogenized in rodents. [raman_novel_2022].",
+                "expression":"H2B.K is expressed in ovaries of opossum, dog, and humans, chicken, whereas H2B.K is expressed in both testes and ovaries in pig. Ovarian expression of H2B.K likely predates the divergence of birds and mammals. Analyses of human oogenesis revealed robust expression of H2B.K and H2B.N in oocytes, with levels increasing across oogenesis. Neither H2B.K nor H2B.N were detected in granulosa cells, which are the somatic cells of the female germline, suggesting again that expression is restricted to the germline. pol(A) signal is detected in the 3-prime-UTR of most H2B.K genes [raman_novel_2022].",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"null",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Euteleostomi",
+            "taxonomic_span_id": "117571",
+            "alternate_names": [],
+            "publications": []
+                },
+    "H2B.K_(Homo_sapiens)": {
+            "level": "variant",
+            "description":
+                {
+                "summary": "H2B.K_(Homo_sapiens) -- is mainly oocyte specific H2B.K variant in human encoded by H2BK1 gene (formerly H2BE1). See H2B.K description for more information.",
+                "taxonomy":"Human",
+                "genes": "H2BK1 gene",
                 "evolution":"null",
                 "expression":"null",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"null",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Homo sapiens",
+            "taxonomic_span_id": "9606",
+            "alternate_names": [],
+            "publications": []
+                },     
+   "H2B.N": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.N -- is a variant identified so far bioinfomatically by Raman et al. as phylogenetically distinct clade of H2B variants in mammals [raman_novel_2022]. Newly identified histones H2B.N and H2B.K are primarily expressed in ovaries and early embryos, where they may play key roles in female fertility and early development like the cleavage stage histones of sea urchins. H2B.N shares less then 50% identity with canonical H2Bs in the histone fold domain. Although H2A-, H4-interacting residues, and residues in L2 are largely conserved between H2B.N orthologs, they are highly divergent from cH2Bs. H2B.N orthologs are significantly truncated in their C-terminus. Removing the alpha-C domain eliminates the important nucleosome acidic patch that mediates many other chromatin interactions. This suggests that the unusual H2B.N could endow nucleosomes with unique properties, or that H2B.N might have evolved nonnucleosomal functions, like H2B.L [raman_novel_2022]. H2B.N is a newly identified histone variant, its biochemical properties remain uncharacterized [raman_novel_2022].",
+                "taxonomy":"Mammals [raman_novel_2022].",
+                "genes": " An unusual feature of both H2B.K and H2B.N is that they are encoded by intron-containing genes, whereas all other H2B variants and canonical H2B lack introns. Like most mammals, H2B.K and H2B.N are present in single copy in all primates, whereas H2B.1 and H2B.W are present in mul- tiple copies [raman_novel_2022].",
+                "evolution":"H2B.K may have a common ancestor with H2B.N. Analysis by Raman et al found that H2B.L and H2B.N contain marsupial and platypus (but not chicken) sequences, and therefore arose in the last common ancestor of all mammals. Both H2B.K and H2B.N were pseudogenized in rodents.  [raman_novel_2022].",
+                "expression":"H2B.N was found to be expressed in ovaries of opossum, dog, and humans. Analyses of human oogenesis revealed robust expression of H2B.K and H2B.N in oocytes, with levels increasing across oogenesis. Neither H2B.K nor H2B.N were detected in granulosa cells, which are the somatic cells of the female germline, suggesting again that expression is restricted to the germline. pol(A) signal is detected in the 3-prime-UTR of most H2B.N genes [raman_novel_2022].",
                 "knock-out:":"null",
                 "function":"null",
                 "sequence":"",
@@ -1817,7 +1865,79 @@
             "taxonomic_span_id": "40674",
             "alternate_names": [],
             "publications": []
+                },   
+   "H2B.N_(Homo_sapiens)": {
+            "level": "variant",
+            "description":
+                {
+                "summary": "H2B.N_(Homo_sapiens) -- is mainly oocyte specific H2B.K variant in human encoded by H2BN1 gene. See H2B.N description for more information.",
+                "taxonomy":"Human",
+                "genes": "null",
+                "evolution":"null",
+                "expression":"null",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"null",
+                "caveats":"null"
                 },
+            "taxonomic_span": "Homo sapiens",
+            "taxonomic_span_id": "9606",
+            "alternate_names": [],
+            "publications": []
+                },          
+   "H2B.O": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.O -- is a class of H2B sequences identified exclusively in platypus genome that group together in phylogenetic analysis. H2B.O expression appears to be enriched in platypus’ germline tissues (testes or ovaries) albeit at low levels [raman_novel_2022].",
+                "taxonomy":"Platypus [raman_novel_2022].",
+                "genes": "null",
+                "evolution":"null",
+                "expression":"H2B.O expression appears to be enriched in platypus’ germline tissues (testes or ovaries) albeit at low levels [raman_novel_2022].",
+                "knock-out:":"null",
+                "function":"null",
+                "sequence":"",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"null",
+                "interactions":"null",
+                "disease":"null",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Ornithorhynchus anatinus",
+            "taxonomic_span_id": "9258",
+            "alternate_names": [],
+            "publications": []
+                },   
+   "H2B.S": {
+            "level": "variant_group",
+            "description":
+                {
+                "summary": "H2B.S -- is a class a new class of highly divergent H2B variants identified by Jiang et al. that specifically accumulate during chromatin compaction of dry seed embryos in multiple species of flowering plants [jiang_evolution_2020].",
+                "taxonomy":"Flowering plants (angiosperms) [jiang_evolution_2020]",
+                "genes": "HTB8 gene in Arabidopsis, Solyc06g074750.1 in tomato, LOC_Os09g39730 in rice.",
+                "evolution":"Despite forming a distinct angiosperm-specific clade, H2B.S variants show a high degree of variation, even amongst closely related genera. Other highly divergent sequences from Streptophyte algae and gymnosperms form a grade basal to H2B.S variants, suggesting a deeper evolutionary origin, which cannot be currently analyzed due to the lack of conserved substitutions and similar sequences in bryophytes, lycophytes and ferns [jiang_evolution_2020].",
+                "expression":"Arabidopsis HTB8 is specifically expressed in sperm and mature embryos. Unlike Arabidopsis HTB8, expression in anthers, pollen or sperm cells was not evident neither in rice nor maize [jiang_evolution_2020].",
+                "knock-out:":"null",
+                "function":"For Arabidopsis an adaptive function in cell types that become desiccated, quiescent or show higher degrees of chromatin compaction has been suggested [jiang_evolution_2020].",
+                "sequence":"The angiosperm-specific clade of Arabidopsis HTB8 orthologs were characterized by conserved substitutions in the histone core, slightly extended C-terminal tails and greatly expanded N-terminal tails with a KVVXETV motif [jiang_evolution_2020].",
+                "localization":"null",
+                "deposition":"null",
+                "structure":"Two HTB8 residues, Arg152 and Met179, were highly conserved among HTB8 orthologs  and were positioned in such a way that they might contribute to stronger interactions with DNA and histone H2A, respectively. These and other observations suggest that sequence divergence in HTB8 impact intra-nucleosomal interactions to potentially alter nucleosome structure and/or stability [jiang_evolution_2020].",
+                "interactions":"null",
+                "disease":"null",
+                "caveats":"null"
+                },
+            "taxonomic_span": "Magnoliopsida",
+            "taxonomic_span_id": "3398",
+            "alternate_names": [],
+            "publications": []
+                },   
     "sperm_H2B": {
                         "level": "variant_group",
                         "description": "Putative histone variant class containing sperm H2B histones from sea and sand urchins.",
