@@ -154,12 +154,24 @@
         },
     "H3": 
         {
-        "cH3_(Metazoa)": 
+        "cH3":
             {
-            "cH3.1_(Metazoa?)": "null",
-            "cH3.2_(Metazoa?)": "null"
+            "cH3_(Animals)":
+                {
+                "cH3_(Mammals)": 
+                    {
+                    "cH3.1_(Mammals)": "null",
+                    "cH3.2_(Mammals)": "null"
+                    }
+                },
+            "cH3_(Plants)":
+                {
+                "cH3_(Embryophyta)":"null",
+                "cH3_(Chlorophyta)":"null"
+                },
+            "cH3_(Fungi)":"null",
+            "cH3_(Protists)":"null"
             },
-        "cH3_(Plants)": "null",
         "cenH3_(Eukarya)": "null",
         "H3.3_(Eukarya)": "null",
         "H3.5_(Mammals?)": "null",
@@ -213,7 +225,7 @@
         "level": "variant_group",
         "description": 
             {
-            "summary":"cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are mainly expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD) or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of cH2As during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. These histones are often present as large multigene families. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. cH2A isoforms in human), in other cases there may be a spectrum of canonical-like proteins (e.g. plant canonical H2As which show higher sequence diversity than cH2Bs of animals). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. ",
+            "summary":"cH2A -- canonical H2A histones. This is a loosely defined group that encompasses major H2A histone proteins that are mainly expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD), replication coupled (RC), clustered or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H2A histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003], although a similar H2A.X variant might have been also ancestral [talbert_histone_2021]. Expression of canonical histones during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. Canonical histone genes are often present as large mulrigene families clustered together in certain locations of the genome. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. cH2A isoforms in human), in other cases there may be a spectrum of canonical-like proteins (e.g. plant canonical H2As which show higher sequence diversity than cH2Bs of animals). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Within the current hierarchical classification system, additional information about the cH2A class may be gained by looking at the description of its subclasses. ",
             "taxonomy":"Present in all Eukaryotes.",
             "genes": "null",
             "evolution":"Because of its conserved function in the DNA damage response, it seems probable that H2A.X is ancestral, and that the various RC H2As are derived from it [talbert_histone_2021].",
@@ -2107,12 +2119,51 @@
         {
         "level": "type",
         "description": 
-            { "summary":"H3 is one of the core histone types present in all Eukaryotes. Two H3 and two H4 histones form H3-H4 tetramer via \"hand shake\" and \"four helix bundle\" motifs. Two H2A-H2B dimers then associate with H3-H4 tetramer to form complete nucleosome core. Structurally H3 has a histone fold domain, αN-helix and a long N-terminal tail with many important post-translational modification sites. The αN-helix organizes the terminal segment of core nucleosomal DNA."
+            { "summary":"H3 is one of the core histone types present in all Eukaryotes. Two H3 and two H4 histones form H3-H4 tetramer via \"hand shake\" and \"four helix bundle\" motifs. Two H2A-H2B dimers then associate with H3-H4 tetramer to form complete nucleosome core. Structurally H3 has a histone fold domain, αN-helix and a long N-terminal tail with many important post-translational modification sites. The αN-helix organizes the terminal segment of core nucleosomal DNA. H3 histone class has evolved to encomass a large number of functionally important H3 histone variants. At least two H3 variants are found in most eukaryotic lineages [malik_phylogenomics_2003].",
+            "taxonomy":"Eukaryotes",
+            "genes": "null",
+            "evolution":"The H3–H4 tetramer represents a direct structural and perhaps evolutionary link to the archaeal histone tetramer. Distinct variants of H3 have been usurped for special roles in transcription and even chromosome segregation, whereas H4’s role has remained constant throughout eukaryotic evolution [malik_phylogenomics_2003]. H3 and H4 are more similar to archaeal histones than H2A and H2B, supporting this hypothesis [henneman_structure_2018]. The fact that eukaryotic cells undergo mitosis, in which chromosomes are highly compacted, together with the abundance of gene-poor regions may have favored a histone conformation that wraps DNA twice (eukaryotic octamer) instead of once (archaeal tetramer) and that via its N-terminal tails has the ability to compact DNA at ahigher order [henneman_structure_2018].",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"The two-fold symmetry of the eukaryotic nucleosome is organized along the dimerization interface of the two H3 molecules using their C-terminal ends, an example of a four-helix bundle motif. Apart from its heterodimerization with H4, H3 also makes contacts with H2A and has at least two segments of specific contact with the nucleosomal DNA: just upstream of the alpha-N helix where the H3 tail enters the nucleosome between the DNA gyres, and in the loop 1 region [malik_phylogenomics_2003].",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
             },
         "taxonomic_span": "Eukaryotes",
         "taxonomic_span_id": "2759",
         "publications": []
         },
+    "cH3":     
+        {
+        "level": "variant_group",
+        "description": 
+            {
+            "summary":"cH3 -- canonical H3 histones. This is a loosely defined group that encompasses major H3 histone proteins that are mainly expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD), replication coupled (RC), clustered or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H3 histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of canonical histones during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. Canonical histone genes are often present as large mulrigene families clustered together in certain locations of the genome. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. ????), in other cases there may be a spectrum of canonical-like proteins (e.g. plant ?????). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Another complication with defining cH3 class is that . Within the current hierarchical classification system, additional information about the cH3 class may be gained by looking at the description of its subclasses. ",
+            "taxonomy":"Present in all Eukaryotes.",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":""
+            },
+        "taxonomic_span": "Eukaryota",
+        "taxonomic_span_id": "2759",
+        "alternate_names": [{"name": "canonical H3"},{"name": "RC H3"},{"name": "RD H3"}],
+        "publications": []
+        },
+
     "cH3_(Metazoa)": {
                         "level": "variant_group",
                         "description": "Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
