@@ -158,10 +158,13 @@
             {
             "cH3_(Animals)":
                 {
-                "cH3_(Mammals)": 
+                "cH3_(Vertebrata)":
                     {
-                    "cH3.1_(Mammals)": "null",
-                    "cH3.2_(Mammals)": "null"
+                    "cH3_(Mammals)": 
+                        {
+                        "cH3.1_(Mammals)": "null",
+                        "cH3.2_(Mammals)": "null"
+                        }
                     }
                 },
             "cH3_(Plants)":
@@ -172,8 +175,9 @@
             "cH3_(Fungi)":"null",
             "cH3_(Protists)":"null"
             },
-        "cenH3_(Eukarya)": "null",
-        "H3.3_(Eukarya)": "null",
+        "H3.3_(Animals)": "null",
+        "H3.3_(Plants)": "null",
+        "H3.3_(Protists)": "null",
         "H3.5_(Mammals?)": "null",
         "H3.5_(Hominids?)": "null",
         "H3.Y_(Primates?)": "null",
@@ -181,6 +185,7 @@
         "H3.V_(Trypanosomes?)": "null",
         "H3.B_(Giardia?)": "null",
         "TS_H3.4": "null",
+        "cenH3_(Eukarya)": "null",
         "H3_(Viruses)": "null",
         "H3_unclassified": "null"
         },
@@ -250,7 +255,7 @@
         "level": "variant_group",
         "description":
             {
-            "summary": "cH2A_(Animals) -- clustered H2A histones in animals (Metazoa), often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones are a major class of H2A histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H3, H4, H2A, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017].",
+            "summary": "cH2A_(Animals) -- clustered H2A histones in animals (Metazoa), often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones are a major class of H2A histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H3, H4, H2B, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017].",
             "taxonomy":"Animals (Metazoa)",
             "genes": "null",
             "evolution":"H2A.X histone variant is usually closely related to replication-dependent H2A histones in the same group of animals. In humans, H2A.X produces both polyadenylated mRNAs and mRNAs ending in a stem-loop. It is probale that it is ancestral to clustered H2A histones [talbert_histone_2021].",
@@ -2143,8 +2148,8 @@
         "level": "variant_group",
         "description": 
             {
-            "summary":"cH3 -- canonical H3 histones. This is a loosely defined group that encompasses major H3 histone proteins that are mainly expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD), replication coupled (RC), clustered or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H3 histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of canonical histones during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. Canonical histone genes are often present as large mulrigene families clustered together in certain locations of the genome. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in many species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. Sometimes this diversification is very subtle and species-specific (e.g. ????), in other cases there may be a spectrum of canonical-like proteins (e.g. plant ?????). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Another complication with defining cH3 class is that . Within the current hierarchical classification system, additional information about the cH3 class may be gained by looking at the description of its subclasses. ",
-            "taxonomy":"Present in all Eukaryotes.",
+            "summary":"cH3 -- canonical H3 histones. This is a loosely defined group that encompasses major H3 histone proteins that are mainly expressed during S-phase of the cell cycle in eukaryotes and are highly conserved even between distantly related species. Such proteins are often called replication dependent (RD), replication coupled (RC), clustered or \"bulk\" histones [marzluff_metabolism_2008,talbert_histone_2021]. They are likely similar to the original H3 histones of the last common ancestor of eukaryotes [malik_phylogenomics_2003]. Expression of canonical histones during S-phase is often tightly regulated, but mechanisms may differ among kindoms [marzluff_birth_2017,pontarotti_long-term_2009]. Canonical histone genes are often present as large mulrigene families clustered together in certain locations of the genome. However, there are known limitations to the definition given above. Functional diversification of paralogous genes is a common process in evolution -- in some species multiple copies of canonical histone genes have undergone diversification in terms of sequence variation, cell-cycle or tissue-specific expression patterns. However, such diversification for cH3s (unlike for cH2As and cH2Bs) is rather limited (e.g. in humans there are only two very similar cH3 isoforms both expressed in S-phase, in plants, although some cH3s show variable expression patterns [alvarez-venegas_canonical_2019]). Hence, whether a particular gene should be regarded as a canonical, a bona fide variant or a canonical subvariant/isoform may be a matter of debate and definition in each particular case. Another complication with defining cH3 class is that major H3 variants, such as H3.3, may only have 3-4 amino acid deference with the canonical H3 histone. They may have arisen multiple times during evolution and hence their functional classification does not match the phylogenetic classificstion. Ascomycetes are thought to have lost cH3 genes and generally have only a single form which is H3.3-like, it is usually referred to simply as H3 [talbert_unified_2012, malik_phylogenomics_2003]. Within the current hierarchical classification system, additional information about the cH3 class may be gained by looking at the description of its subclasses. ",
+            "taxonomy":"Eukaryotes, although lost in ascomycetes.",
             "genes": "null",
             "evolution":"null",
             "expression":"null",
@@ -2163,33 +2168,106 @@
         "alternate_names": [{"name": "canonical H3"},{"name": "RC H3"},{"name": "RD H3"}],
         "publications": []
         },
-
-    "cH3_(Metazoa)": {
-                        "level": "variant_group",
-                        "description": "Canonical histones are replication-dependent while histone variants are replication-independent, constitutively expressed during cell cycle. Genes encoding canonical histones are typically located within multigene clusters and use specific type of regulation at the RNA level with a stem loop structure instead of polyA tail",
-                        "taxonomic_span": "Eukaryotes",
-        "taxonomic_span_id": "2759",
-                        "alternate_names": [
-                                {
-                                        "name": "ca H3"
-                                }
-                        ],
-                        "publications": [
-                                "22650316"
-                        ]
-                },
-    "cH3.1_(Metazoa?)": {
-                        "level": "variant",
-                        "description": "null",
-                        "taxonomic_span": "Eukaryotes",
-        "taxonomic_span_id": "2759",
-                        "alternate_names": [
-                                {
-                                        "name": "ca H3"
-                                }
-                        ],
-                        "publications": []
-                },
+    "cH3_(Animals)": 
+            {
+        "level": "variant_group",
+        "description": 
+            {
+            "summary":"cH3_(Animals) -- clustered H3 histones in animals (Metazoa), often called canonical, replication-dependent, replication-coupled or \"bulk\" H3 histones are a major class of H3 histones in animals with high sequence similarity across all animal species. Histone genes encodig these proteins have several particular features. 1) These genes lack introns and are found in multiple similar copies clustered along the genome togerther with other core histone genes (H4, H3, H2B, and optionally H1). The exact organisation may vary from tandemly repeated quintets of H3, H4, H2A, H2B, H1 genes transcribed from the same strand to  non-tandem jumbled arrays of genes transcribed from divergent promoters [pontarotti_long-term_2009]. 2) These genes are mainly expressed during S-phase of the cell cycle in a coordinated fashion (hence the name \"replication dendent\") and produce mRNAs that are not polyadenylated but rather end in a conserved stem-loop, which is further bound by the stem-loop binding protein (SLBP). mRNAs are rapidly degraded after the S-phase. 3) These genes are present in a specialized nuclear domain, the histone locus body (HLB), which concetrates factors for histone mRNA transcription and processing (in humans these include NPAT, U7 snRNP, FLASH) [marzluff_birth_2017].",
+            "taxonomy":"Animals (Metazoa)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"1) Clustered histones may still exhibit some level of sequence variation between the multiple gene copies in certain species. Although for cH3 this variation is very limited (only two isoforms in humans: H3.1 and H3.2. 2) In C. elegans an alternative mechanism of mRNA 3'-end processing evolved resulting in loss of HLB and histone clusters [marzluff_birth_2017, pontarotti_long-term_2009]."
+            },
+        "taxonomic_span": "Metazoa",
+        "taxonomic_span_id": "33208",
+        "alternate_names": [],
+        "publications": []
+        },
+    "cH3_(Vertebrata)":     
+        {
+        "level": "variant_group",
+        "description": 
+            {
+            "summary":"cH2A_(Vertebrata) -- clustered H3 histones in vertebrates, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. This is a subclass of cH3_(Animals) (see it for a detailed description).",
+            "taxonomy":"Vertebrates (Vertebrata)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Vertebrata",
+        "taxonomic_span_id": "7742",
+        "alternate_names": [],
+        "publications": []
+        },
+    "cH3_(Mammalia)":     
+        {
+        "level": "variant_group",
+        "description":
+            {
+            "summary":"cH3_(Mammalia) -- clustered H3 histones in mammals, often called canonical, replication-dependent, replication-coupled or \"bulk\" H3 histones. This is a subclass of cH3_(Vertebrata) and cH3_(Animals) (see it for a detailed description).",
+            "taxonomy":"Vertebrates (Vertebrata)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Mammalia",
+        "taxonomic_span_id": "40674",
+        "alternate_names": [],
+        "publications": []
+        },
+    "cH3_(Mammalia)":     
+        {
+        "level": "variant_group",
+        "description":
+            {
+            "summary":"cH3_(Mammalia) -- clustered H3 histones in mammals, often called canonical, replication-dependent, replication-coupled or \"bulk\" H3 histones. This is a subclass of cH3_(Vertebrata) and cH3_(Animals) (see it for a detailed description). Mammalian cH3s have the primary cH3.2 isoform and a mammal-specific cH3.1 paralog [talbert_histone_2021].",
+            "taxonomy":"Vertebrates (Vertebrata)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Mammalia",
+        "taxonomic_span_id": "40674",
+        "alternate_names": [],
+        "publications": []
+        },
     "cH3.2_(Metazoa?)": {
                         "level": "variant",
                         "description": "null",
