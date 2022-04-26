@@ -160,10 +160,10 @@
                 {
                 "cH3_(Vertebrata)":
                     {
-                    "cH3_(Mammals)": 
+                    "cH3_(Mammalia)": 
                         {
-                        "cH3.1_(Mammals)": "null",
-                        "cH3.2_(Mammals)": "null"
+                        "cH3.1_(Mammalia)": "null",
+                        "cH3.2_(Mammalia)": "null"
                         }
                     }
                 },
@@ -2198,7 +2198,7 @@
         "level": "variant_group",
         "description": 
             {
-            "summary":"cH2A_(Vertebrata) -- clustered H3 histones in vertebrates, often called canonical, replication-dependent, replication-coupled or \"bulk\" H2A histones. This is a subclass of cH3_(Animals) (see it for a detailed description).",
+            "summary":"cH3_(Vertebrata) -- clustered H3 histones in vertebrates, often called canonical, replication-dependent, replication-coupled or \"bulk\" H3 histones. This is a subclass of cH3_(Animals) (see it for a detailed description).",
             "taxonomy":"Vertebrates (Vertebrata)",
             "genes": "null",
             "evolution":"null",
@@ -2215,31 +2215,6 @@
             },
         "taxonomic_span": "Vertebrata",
         "taxonomic_span_id": "7742",
-        "alternate_names": [],
-        "publications": []
-        },
-    "cH3_(Mammalia)":     
-        {
-        "level": "variant_group",
-        "description":
-            {
-            "summary":"cH3_(Mammalia) -- clustered H3 histones in mammals, often called canonical, replication-dependent, replication-coupled or \"bulk\" H3 histones. This is a subclass of cH3_(Vertebrata) and cH3_(Animals) (see it for a detailed description).",
-            "taxonomy":"Vertebrates (Vertebrata)",
-            "genes": "null",
-            "evolution":"null",
-            "expression":"null",
-            "knock-out:":"null",
-            "function":"null",
-            "sequence":"null",
-            "localization":"null",
-            "deposition":"null",
-            "structure":"null",
-            "interactions":"null",
-            "disease":"null",
-            "caveats":"null"
-            },
-        "taxonomic_span": "Mammalia",
-        "taxonomic_span_id": "40674",
         "alternate_names": [],
         "publications": []
         },
@@ -2268,18 +2243,57 @@
         "alternate_names": [],
         "publications": []
         },
-    "cH3.2_(Metazoa?)": {
-                        "level": "variant",
-                        "description": "null",
-                        "taxonomic_span": "Eukaryotes",
-        "taxonomic_span_id": "2759",
-                        "alternate_names": [
-                                {
-                                        "name": "ca H3"
-                                }
-                        ],
-                        "publications": []
-                },
+   "cH3.1_(Mammalia)":     
+        {
+        "level": "variant_group",
+        "description":
+            {
+            "summary":"cH3.1_(Mammalia) -- a mamal specific subvariant of cH3 histone in mammals. Mammalian cH3s have the primary cH3.2 isoform and a mammal-specific cH3.1 paralog [talbert_histone_2021]. cH3.2 is the most common replicative histone in eukaryotes, cH3.1 differs from it by only one residue at position 96 [ray-gallet_histone_2021].",
+            "taxonomy":"Mammals (Mammalia)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Mammalia",
+        "taxonomic_span_id": "40674",
+        "alternate_names": [],
+        "publications": []
+        },
+   "cH3.2_(Mammalia)":     
+        {
+        "level": "variant_group",
+        "description":
+            {
+            "summary":"cH3.2_(Mammalia) -- is a subvariant of cH3 histone in mammals, which corresponds to the most common replicative histone in eukaryotes, cH3.2 differs from cH3.2 by only one residue at position 96 [ray-gallet_histone_2021].",
+            "taxonomy":"Mammals (Mammalia)",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Mammalia",
+        "taxonomic_span_id": "40674",
+        "alternate_names": [],
+        "publications": []
+        },
+        
     "cenH3_(Plants)": {
                         "level": "variant_group",
                         "description": "cenH3 is a centromere-specific histone variant, which replaces canonical H3 in centromeric nucleosomes. It is required for kinetochore formation, mitotic progression and chromosome segregation. cenH3 has an extended L1-loop and its N-terminal tail is very different from other H3 variants. cenH3s have an extended L1-loop and usually replace Phe84 in canonical H3 with Trp, and Thr 107 with Ala, Cys, or Ser. cenH3s ususally lack a conserved glutamine in the alpha1 helix of the histone fold. cenH3s typically have only about 50-60% amino acid identity to canonical H3 in the histone fold domain and no conservation of the N-terminus.",
