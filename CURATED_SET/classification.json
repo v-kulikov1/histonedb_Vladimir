@@ -162,8 +162,8 @@
                     {
                     "cH3_(Mammalia)": 
                         {
-                        "cH3.1_(Mammalia)": "null",
-                        "cH3.2_(Mammalia)": "null"
+                        "cH3.1_(Mammalia)": {"cH3.1_(Homo_sapiens)":"null"},
+                        "cH3.2_(Mammalia)": {"cH3.2_(Homo_sapiens)":"null"}
                         }
                     }
                 },
@@ -177,23 +177,22 @@
             },
         "H3.3":
             {
-            "H3.3_(Animals)": "null",
+            "H3.3_(Animals)": {"H3.3_(Homo_sapiens)":"null"},
             "H3.3_(Plants)": "null",
             "H3.3_(Fungi)": {"H3.3_(Ascomycota)"},
             "H3.3_(Protists)": "null"
             },
+        "TS_H3.4": "null",
         "H3.5_(Mammals?)": "null",
         "H3.5_(Hominids?)": "null",
         "H3.Y_(Primates?)": "null",
         "H3.P_(Moneuplotes?)": "null",
         "H3.V_(Trypanosomes?)": "null",
         "H3.B_(Giardia?)": "null",
-        "TS_H3.4": "null",
         "cenH3_(Eukarya)": "null",
         "H3_(Viruses)": "null",
         "H3-like_(Plants)":"null",
-        "H3_(Lilly???)":"null",
-        "H3_unclassified": "null"
+        "H3_(Lilly???)":"null"
         },
     "H4": 
         {
@@ -2274,6 +2273,31 @@
         "alternate_names": [],
         "publications": []
         },
+   "cH3.1_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description":
+            {
+            "summary":"cH3.1_(Homo_sapiens) -- a mammal-specific cH3.1 paralog of canonical H3 histone in human encoded by the following 10 genes on chromosome 6: H3C1-H3C4, H3C6-H3C8, H3C10-H3C12. cH3.2 is the most common replicative histone in eukaryotes, cH3.1 differs from it by only one residue at position 96 [ray-gallet_histone_2021].",
+            "taxonomy":"Homo sapiens",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },
    "cH3.2_(Mammalia)":     
         {
         "level": "variant_group",
@@ -2296,6 +2320,31 @@
             },
         "taxonomic_span": "Mammalia",
         "taxonomic_span_id": "40674",
+        "alternate_names": [],
+        "publications": []
+        },
+   "cH3.2_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description":
+            {
+            "summary":"cH3.2_(Homo_sapiens) -- cH3.2 cH3 histone isoform in human, encoded by the following 3 genes on chromosome 1: H3C13, H3C14, H3C15. cH3.2 is the most common replicative histone in eukaryotes, cH3.1 differs from it by only one residue at position 96 [ray-gallet_histone_2021].",
+            "taxonomy":"Homo sapiens",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
         "alternate_names": [],
         "publications": []
         },
@@ -2432,14 +2481,14 @@
         "description":{
             "summary": "H3.3_(Animals) -- is a class of replication-independent (also called replacement) variants of the H3 histone in animals. H3.3 is characterized by changes at four positions with respect to cH3s, one in the N-terminal tail and three in the alpha-2-helix of the histone fold domain (positions 31,86,89,90). The sequence differences within the alpha-2-helix alow H3.3 to interact specifically with its own chaperones (HIRA, ATRX, DAXX). At position 31 H3.3s instead of alanine have serine or threonine which can be phosphorilated. There are multiple studies showing that phosphorylation of this site is functionally important [talbert_unified_2012]. Particularly, H3.3S31ph is associated with H3.3K27 acetylation which helps gene activation and was shown to be essential for gastrulation in Xenopus [sitbon_histone_2020]. The metazoan histone H3.3 has been most closely associated with active transcription, replacing cH3s at active genes and promoters, implicated in diverse biological processes, including development, transcriptional memory and transcriptional reprogramming. However, genetic studies highlighted also its imortance in maintaining heterochromatin at telomeres, centromeres, and pericentromeric regions [jang_histone_2015], as well as revealed essential functions of H3.3 in the germline and early embryonic development [elsaesser_new_2010,yuen_histone_2014,jang_histone_2015].",
             "taxonomy":"Animals (Metazoa)",
-            "genes": "In human H3.3 is encoded by H3-3A and H3-3B genes (formerly, H3F3A and H3F3B), located in chromosome 1 (1q42.12) and 17 (17q25), respectively. In mouse by H3f3a and H3f3b genes.",
+            "genes": "In human H3.3 is encoded by H3-3A and H3-3B genes (formerly, H3F3A and H3F3B), located in chromosome 1 (1q42.12) and 17 (17q25), respectively. In mouse by H3f3a and H3f3b genes. Genes have introns.",
             "evolution":"null",
             "expression":"H3.3 mRNAs are polyadenilated. Expressed independent of DNA synthesis through the cell cycle.",
             "knock-out:":"In mice complete depletion of H3.3 leads to developmental retardation and early embryonic lethality. At the cellular level, H3.3 loss triggers cell cycle suppression and cell death. Surprisingly, H3.3 depletion does not dramatically disrupt gene regulation in the developing embryo. Instead, H3.3 depletion causes dysfunction of heterochromatin structures at telomeres, centromeres, and pericentromeric regions of chromosomes, leading to mitotic defects [jang_histone_2015]. In C. elegans Despite these specific expression patterns, we find that neither loss of individual H3.3 homologs nor the knockout of all five H3.3-coding genes causes sterility or lethality. However, we demonstrate an essential role for the conserved histone chaperone HIRA in the nucleosomal loading of all H3.3 variants. This requirement can be bypassed by mutation of the H3.3-specific residues to those found in H3. While even removal of all H3.3 homologs does not result in lethality, it leads to reduced fertility and viability in response to high-temperature stress [delaney_differential_2018]. Flies that lack both H3.3 genes have reduced viability and individuals that survive to adulthood are completely sterile in both sexes [sakai_transcriptional_2009]. Targeted disruption of one gene (H3f3b) results in a number of phenotypic abnormalities, including a reduction in H3.3 histone levels, leading to male infertility, as well as abnormal sperm and testes morphology. Additionally, null germ cell populations at specific stages in spermatogenesis, in particular spermatocytes and spermatogonia, exhibited increased rates of apoptosis. Disruption of H3f3b also altered histone post-translational modifications and gene expression in the testes, with the most prominent changes occurring at genes involved in spermatogenesis. Finally, H3f3b null testes also exhibited abnormal germ cell chromatin reorganization and reduced protamine incorporation [yuen_histone_2014].",
             "function":"H3.3 has been implicated in a variety of biological processes: it is important for embryonic stem cell differentiation, epigenetic reprogramming following somatic cell nuclear transfer, neuron plasticity, the DNA damage response and centromere maintenance. H3.3 is also essential for germ line development in mammals, where it is required for the remodeling of both maternal and paternal gametes [delaney_differential_2018]. Its role in histone replacement at active genes and promoters is highly conserved and has been proposed to participate in the epigenetic transmission of active chromatin states [szenker_double_2011]. Its accumulation at silent loci in pericentric heterochromatin and telomeres, raising questions concerning the actual function of H3.3",
             "sequence":"null",
             "localization":"null",
-            "deposition":"In humans specialized chaperone HIRA places H3.3 at sites of histone turnover where it replaces canonical H3s. Such sites include active genes, promoters, enhancers, transcription termination sites. Chaperones ATRX and DAXX deposit H3.3 in telomeres, imprinted genes and other heterochromatic loci, where it is modified with the trimethlyated lysine 9 heterochromatic mark (denoted H3K9me3) to maintain heterochromatin at these locations [talbert_histone_2021]. While the majority of nucleosomes are replaced by protamines during mammalian spermatogenesis, some H3.3 nucleosomes are retained and may transmit epigenetic information to the zygote [delaney_differential_2018].",
+            "deposition":"In humans and other animals specialized chaperone HIRA places H3.3 at sites of histone turnover where it replaces canonical H3s. Such sites include active genes, promoters, enhancers, transcription termination sites. Chaperones ATRX and DAXX deposit H3.3 in telomeres, imprinted genes and other heterochromatic loci, where it is modified with the trimethlyated lysine 9 heterochromatic mark (denoted H3K9me3) to maintain heterochromatin at these locations [talbert_histone_2021]. While the majority of nucleosomes are replaced by protamines during mammalian spermatogenesis, some H3.3 nucleosomes are retained and may transmit epigenetic information to the zygote [delaney_differential_2018]. In embryonic stem cells for example, HIRA chaperones H3.3 to both active and repressed genes, including also bivalent promoters normally repressed in embryonic stem cells. This highlights a role of HIRA in establishing chromatin landscapes not always related to active chromatin but key to allow proper differentiation [otero_histone_2014].",
             "structure":"null",
             "interactions":"null",
             "disease":"Mutations in histone genes can affect sites of PTMs causing changes in local and global DNA methylation status. These effects are directly linked to neoplastic transformation by altered gene expression. Recurrent H3.3 histone mutations are increasingly identified in several malignancies and developmental disorders in human [kumar_genes_2021]. Well characterized oncomutations in H3.3 genes include K27M, G34W/L in pediatric high-grade gliomas and K36M and G34V/R in bone tumors [xiong_histone_2016]. Competing models have suggested that H3K27M oncohistones sequester or poison  PRC2 complex which deposits H3K27me3 marks. However, Sarthy et al. demonstrated that the K27M epitope only inhibits H3K27 trimethylation on chromatin in vivo, supporting the idea that these oncohistones inhibit chromatin-bound PRC2 complexes. A possible mechanism comes from recent reports [lee_automethylation_2019,wang_regulation_2019] showing that EZH2 (key component of PRC2) methylates  itself, and that this automethylation is required for full catalytic activity. These studies also showed that H3K27M blocks EZH2 automethylation, and might contribute to the dominant effect of H3K27M mutations [sarthy_histone_2020].",
@@ -2449,31 +2498,121 @@
         "alternate_names": [],
         "publications": []
                 },      
+   "H3.3_(Homo_sapiens)":     
+        {
+        "level": "variant",
+        "description":
+            {
+            "summary":"H3.3_(Homo_sapiens) -- is a class of replication-independent (also called replacement) variants of the H3 histone in human encoded by H3-3A and H3-3B genes. Both genes code for an identical protein. See H3.3_(Animals) for details description of this variant.",
+            "taxonomy":"Homo sapiens",
+            "genes": "null",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"
+            },
+        "taxonomic_span": "Homo sapiens",
+        "taxonomic_span_id": "9606",
+        "alternate_names": [],
+        "publications": []
+        },                
     "H3.3_(Plants)":     {
         "level": "variant_group",
         "description":{
-            "summary": "H3.3_(Plants) -- is a class of replication-independent (also called replacement) variants of the H3 histone in animals. H3.3 is characterized by changes at four positions with respect to cH3s, one in the N-terminal tail and three in the alpha-2-helix of the histone fold domain (positions 31,86,89,90). At position 31 H3.3s instead of alanine have serine or threonine which can be phosphorilated [talbert_unified_2012]. The metazoan histone H3.3 has been most closely associated with active transcription, replacing cH3s at active genes and promoters, implicated in diverse biological processes, including development, transcriptional memory and transcriptional reprogramming. However, genetic studies in flies have challenged its importance as a mark of active chromatin, and revealed unexpected insights into essential functions of H3.3 in the germline [elsaesser_new_2010,yuen_histone_2014].",
-            "taxonomy":"Animals (Metazoa)",
-            "genes": "In human H3.3 is encoded by H3-3A and H3-3B genes (formerly, H3F3A and H3F3B), located in chromosome 1 (1q42.12) and 17 (17q25), respectively. In mouse by H3f3a and H3f3b genes.",
+            "summary": "H3.3_(Plants) -- is a class of replication-independent (also called replacement) variants of the H3 histone in green plants (Viridiplantae), which include green algae and land plants. Despite having the same name as H3.3 of animals, similar functions and key amino acids differences with repective canonical H3s, plant H3.3 has evolved independently. However, this strongly suggests that a similar constraint has led to these repeated origins of distinguishable H3 and H3.3 types [malik_phylogenomics_2003]. H3.3  in plants is characterized by changes at four positions with respect to cH3s, two in the N-terminal tail and two in the alpha-2-helix of the histone fold domain (positions 31, 41, 87, 90, compare with positions 31,87,89,90 in animals). At position 31 H3.3s  in plants instead of alanine usially have threonine which can be phosphorilated [talbert_unified_2012]. H3.3 is likely involved in transcriptional regulation, is enriched in the body of actively transcribed genes, promoters and downstream of transcription termination sites in some genes [alvarez-venegas_canonical_2019]. Certain mechanisms of H3.3 action have been reported. Jacob et al. have shown that SET domain of the histone H3 lysine-27 (H3K27) methyltransferase ATXR5 have a bipartite catalytic domain that specifically reads alanine-31 of H3.1. Thus variation at position 31 between H3.1 and replication-independent H3.3 is responsible for inhibiting the activity of ATXR5 and its paralog, ATXR6 [jacob_selective_2014]. Wollmann et al. proposed that H3.3 prevents recruitment of H1, inhibiting H1’s promotion of chromatin folding that restricts access to DNA methyltransferases responsible for gene body methylation. Thus, gene body methylation is likely shaped by H3.3 dynamics in conjunction with transcriptional activity [wollmann_histone_2017].",
+            "taxonomy":"Green plants (Viridiplantae)",
+            "genes": "In contrast to intronless cH3s, H3.3 in plants have introns. In Arabidopsis H3.3 is represented by HTR4, HTR5, and HTR8 genes [alvarez-venegas_canonical_2019].",
             "evolution":"null",
-            "expression":"H3.3 mRNAs are polyadenilated.",
+            "expression":"In Arabidopsis, H3.3 genes do not show replication-dependent expression and are rather expressed throughout the cell cycle. In addition, expression of Arabidopsis genes encoding histone H3.3 occurs not only in young, undifferentiated, but also in mature tissues suggesting that the expression of these genes continues after cell division ceases [alvarez-venegas_canonical_2019].",
             "knock-out:":"In Arabidopsis, removal of three H3.3 genes (HTR4, HTR5,and HTR8) causes defects in male gametogenesis and results in embryonic lethality [wollmann_histone_2017].",
-            "function":"H3.3 has been implicated in a variety of biological processes: it is important for embryonic stem cell differentiation, epigenetic reprogramming following somatic cell nuclear transfer, neuron plasticity, the DNA damage response and centromere maintenance. H3.3 is also essential for germ line development in mammals, where it is required for the remodeling of both maternal and paternal gametes [delaney_differential_2018]. Its role in histone replacement at active genes and promoters is highly conserved and has been proposed to participate in the epigenetic transmission of active chromatin states [szenker_double_2011]. Its accumulation at silent loci in pericentric heterochromatin and telomeres, raising questions concerning the actual function of H3.3",
-            "sequence":"null",
+            "function":"null",
+            "sequence":"Characteristic changes between cH3 and H3.3 in plants are A31T, F41Y, S87H, and A90L [alvarez-venegas_canonical_2019].",
             "localization":"null",
-            "deposition":"In humans specialized chaperone HIRA places H3.3 at sites of histone turnover where it replaces canonical H3s. Such sites include active genes, promoters, enhancers, transcription termination sites. Chaperones ATRX and DAXX deposit H3.3 in telomeres, imprinted genes and other heterochromatic loci, where it is modified with the trimethlyated lysine 9 heterochromatic mark (denoted H3K9me3) to maintain heterochromatin at these locations [talbert_histone_2021]. While the majority of nucleosomes are replaced by protamines during mammalian spermatogenesis, some H3.3 nucleosomes are retained and may transmit epigenetic information to the zygote [delaney_differential_2018].",
+            "deposition":"Similar to animals, plants have a specialized chaperone HIRA that places H3.3 at sites of histone turnover where it replaces canonical H3s [otero_histone_2014] Such sites include active genes, promoters, enhancers, transcription termination sites. In animals chaperones ATRX and DAXX deposit H3.3 in telomeres, imprinted genes and other heterochromatic loci [talbert_histone_2021]. A DAXX homolog has not been found in plants so far, but there is 1 gene coding for a homolog of ATRX. There are also several genes distantly related to animal DEK, which was shown to have histone chaperone activity. The structural and functional characterization of these chaperones in plants awaits future studies [otero_histone_2014].",
             "structure":"null",
             "interactions":"null",
-            "disease":"Mutations in histone genes can affect sites of PTMs causing changes in local and global DNA methylation status. These effects are directly linked to neoplastic transformation by altered gene expression. Recurrent H3.3 histone mutations are increasingly identified in several malignancies and developmental disorders in human [kumar_genes_2021].",
+            "disease":"null",
             "caveats":"null"},
-        "taxonomic_span": "Metazoa",
-        "taxonomic_span_id": "33208",
+        "taxonomic_span": "Viridiplantae",
+        "taxonomic_span_id": "33090",
         "alternate_names": [],
         "publications": []
-                },      
-In Arabidopsis, removal of three H3.3 genes (HTR4, HTR5,and HTR8) causes defects in male gametogenesis and results in embryonic lethality
+                },  
+    "H3.3_(Fungi)":     {
+        "level": "variant_group",
+        "description":{
+            "summary": "H3.3_(Fungi) -- is a class of H3 histone variants in Fungi which share similarity to H3.3 in other kingdoms (characteristic amino acids at the four key positions). It is, however, the main form of histone H3 in Ascomycetes, where canonical H3 was lost during evolution [malik_phylogenomics_2003]. While H3.3 in Ascomycetes is the only form of H3 histone it is mainly reffered to as H3 rather than H3.3. In the current classification we will refer to such histones as H3.3_(Ascomycota) to retain its proper placement within our classification. Basidiomycetes have both canonical H3 and H3.3 histones. Fungi H3.3 along with plant and animal H3.3s have evolved independently, but share similar sequence difference with respective canonical H3s. It is likely that they have evolved under similar contraints. Since H3.3 as a separate variant is available only in Basidiomycetes the H3.3/cH3 functional difference in Fungi remains poorly studied. Anju et al. have charaterized two H3 genes in basidiomycete Ustilago maydis U1 and U2. The U1 gene was shown to posses replication-independent expression and sequence characteristic of H3.3 replacement histones, while U2 gene manifested replication-coupled expression typical for canonical H3 [anju_identification_2011].",
+            "taxonomy":"Fungi",
+            "genes": "In S. cerevisiae H3 histone is encoded by HHT1 and HHT2 genes. U1 gene in Ustilago maydis.",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"},
+        "taxonomic_span": "Fungi",
+        "taxonomic_span_id": "4751",
+        "alternate_names": [],
+        "publications": []
+                },        
+    "H3.3_(Ascomycota)":     {
+        "level": "variant_group",
+        "description":{
+            "summary": "H3.3_(Ascomycota) -- is the main form of  H3 histone in Ascomycetes.",
+            "taxonomy":"Fungi",
+            "genes": "In S. cerevisiae H3 histone is encoded by HHT1 and HHT2 genes",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"},
+        "taxonomic_span": "Ascomycota",
+        "taxonomic_span_id": "4890",
+        "alternate_names": [],
+        "publications": []
+                },     
+    "H3.3_(Protists)":     {
+        "level": "variant_group",
+        "description":{
+            "summary": "H3.3_(Protists) -- is a class of H3.3-like replication-independent (also called replacement) variants of the H3 histone in Protists. hv2 H3 histone variant in Tetrahymena thermophila is among the few from this group that have been characterized [yu_constitutive_1997]. Sequence analysis suggests that other protists such as Porphyra, Thalassiosira, Dictyostelium have H3 histones with characteristic differences at positions 31 and 85-89, which may suggest the presence of H3.3-like histones in their genomes [talbert_unified_2012].",
+            "taxonomy":"Fungi",
+            "genes": "HHT3 Tetrahymena thermophila",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"},
+        "taxonomic_span": "SAR,Metamonada,Discoba,Amoebozoa",
+        "taxonomic_span_id": "2698737,2611341,2611352,554915",
+        "alternate_names": [{"name":"hv2"}],
+        "publications": []
+                },  
 
-
+                PPPPPPP
     "cenH3_(Plants)": {
                         "level": "variant_group",
                         "description": "cenH3 is a centromere-specific histone variant, which replaces canonical H3 in centromeric nucleosomes. It is required for kinetochore formation, mitotic progression and chromosome segregation. cenH3 has an extended L1-loop and its N-terminal tail is very different from other H3 variants. cenH3s have an extended L1-loop and usually replace Phe84 in canonical H3 with Trp, and Thr 107 with Ala, Cys, or Ser. cenH3s ususally lack a conserved glutamine in the alpha1 helix of the histone fold. cenH3s typically have only about 50-60% amino acid identity to canonical H3 in the histone fold domain and no conservation of the N-terminus.",
