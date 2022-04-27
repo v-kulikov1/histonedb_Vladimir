@@ -182,7 +182,7 @@
             "H3.3_(Fungi)": {"H3.3_(Ascomycota)"},
             "H3.3_(Protists)": "null"
             },
-        "TS_H3.4": "null",
+        "H3.4_(Mammalia)": "null",
         "H3.5_(Mammals?)": "null",
         "H3.5_(Hominids?)": "null",
         "H3.Y_(Primates?)": "null",
@@ -2611,7 +2611,28 @@
         "alternate_names": [{"name":"hv2"}],
         "publications": []
                 },  
-
+    "H3.4_(Mammalia)":     {
+        "level": "variant",
+        "description":{
+            "summary": "H3.4_(Mammalia) -- is a class of H3.3-like replication-independent (also called replacement) variants of the H3 histone in Protists. hv2 H3 histone variant in Tetrahymena thermophila is among the few from this group that have been characterized [yu_constitutive_1997]. Sequence analysis suggests that other protists such as Porphyra, Thalassiosira, Dictyostelium have H3 histones with characteristic differences at positions 31 and 85-89, which may suggest the presence of H3.3-like histones in their genomes [talbert_unified_2012].",
+            "taxonomy":"Fungi",
+            "genes": "Mammals",
+            "evolution":"null",
+            "expression":"null",
+            "knock-out:":"null",
+            "function":"null",
+            "sequence":"null",
+            "localization":"null",
+            "deposition":"null",
+            "structure":"null",
+            "interactions":"null",
+            "disease":"null",
+            "caveats":"null"},
+        "taxonomic_span": "Mammalia",
+        "taxonomic_span_id": "40674",
+        "alternate_names": [{"name":"H3T"}],
+        "publications": []
+                },  
                 PPPPPPP
     "cenH3_(Plants)": {
                         "level": "variant_group",
