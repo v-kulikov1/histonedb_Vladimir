@@ -11,7 +11,7 @@ from Bio.Blast import NCBIXML
 from Bio import Alphabet
 from Bio.Alphabet import IUPAC
 
-from browse.models import Histone, Variant, Sequence
+from browse.models import Variant, Sequence
 from djangophylocore.models import Taxonomy
 from django.conf import settings
 

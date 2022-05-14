@@ -1,6 +1,6 @@
 import unittest, json
 from Bio import SeqIO
-from path_variables import *
+from prediction_app.prediction.path_variables import *
 
 class TestHistonedbTypeClassifier(unittest.TestCase):
     def setUp(self):

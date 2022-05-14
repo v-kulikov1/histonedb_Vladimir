@@ -55,7 +55,7 @@ SESSION_COOKIE_HTTPONLY = True
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("NCBI_database_info_DEBUG", "True") == "True"
-#DEBUG = True
+# DEBUG = True
 if not DEBUG:
     #X_FRAME_OPTIONS = "DENY"
     #CSRF_COOKIE_HTTPONLY = True

@@ -3,7 +3,7 @@
 mysqldatadir=/var/lib/mysql/
 #/usr/bin/mysqld_safe
 echo "Running mysql in the background"
-mysqld_safe --datadir=$mysqldatadir --port=13307 &
+mysqld_safe --datadir=$mysqldatadir --port=13306 &
 
 
 cd /var/www/histonedb

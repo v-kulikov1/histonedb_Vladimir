@@ -31,7 +31,8 @@ from Bio import Medline
 from Bio import Entrez
 Entrez.email = "HistoneDB_user@ncbi.nlm.nih.gov"
 
-from django.db.models import Min, Max, Count
+from django.db.models import Min, Max, Count, Q
+from django.db.models.functions import Coalesce
 
 #Set2 Brewer, used in variant colors
 colors7 = [
@@ -83,12 +84,20 @@ def browse_variants(request, histone_type):
     except:
         return "404"
 
-    variants = hist_type.variants.annotate(num_sequences=Count('sequences')).order_by("id").all().values_list("id", "num_sequences", "taxonomic_span")
+    variants = hist_type.variants.filter(parent_id=None).annotate(num_sequences=Count('sequences')).order_by("id").all().values_list("id", "num_sequences", "taxonomic_span")
+    curated_variants = hist_type.variants.filter(parent_id=None).filter(Q(sequences__reviewed=True) | Q(sequences__reviewed__isnull=True)).annotate(num_sequences=Count('sequences')).order_by("id").all().values_list("num_sequences", flat=True)
+    # curated_variants = hist_type.variants.filter(parent_id=None).filter(sequences__reviewed=True).annotate(num_sequences=Coalesce(Count('sequences'), 0)).order_by("id").all().values_list("num_sequences", flat=True)
+    variants = [{'id': id, 'num_curated': num_curated, 'num_all': num_all,
+                 'alternate_names': ", ".join(Variant.objects.get(id=id).old_names.values_list("name", flat=True)),
+                 'tax_span': tax_span, 'color': color,
+                 'children': get_variants_children(id)} \
+                for (id, num_all, tax_span), num_curated, color in zip(variants, curated_variants, colors)]
+    children = Variant.objects.get(id=variants[0]['id']).direct_children.annotate(num_sequences=Count('sequences')).order_by(
+        "id").all().values_list("id", "num_sequences", "taxonomic_span")
+    curated_children = Variant.objects.get(id=variants[0]['id']).direct_children.filter(Q(sequences__reviewed=True) | Q(sequences__reviewed__isnull=True)).annotate(
+        num_sequences=Count('sequences')).order_by("id").all().values_list("num_sequences", flat=True)
+    # assert False
 
-    curated_variants = hist_type.variants.filter(sequences__reviewed=True).annotate(num_sequences=Count('sequences')).order_by("id").all().values_list("num_sequences", flat=True)
-
-    variants = [(id, num_curated, num_all, ", ".join(Variant.objects.get(id=id).old_names.values_list("name", flat=True)), tax_span, color) \
-        for (id, num_all, tax_span), num_curated, color in zip(variants, curated_variants, colors)]
 
     data = {
         "histone_type": histone_type,
@@ -431,6 +440,7 @@ def get_sequence_table_data(request):
         return "false"
 
     result = results.get_dict()
+    # assert(len(result['rows'])>0)
     result["parameters"] = results.parameters
     result["method"] = request.method
 
@@ -939,3 +949,15 @@ def get_type_by_variant(variant):
         'H4' in variant: 'H4',
     }
     return bool_dict[True]
+
+def get_variants_children(variant_id):
+    children_qset = Variant.objects.get(id=variant_id).direct_children
+    children = children_qset.annotate(num_sequences=Count('sequences')).order_by(
+        "id").all().values_list("id", "num_sequences", "taxonomic_span")
+    curated_children = children_qset.filter(Q(sequences__reviewed=True) | Q(sequences__reviewed__isnull=True)).annotate(
+        num_sequences=Count('sequences')).order_by("id").all().values_list("num_sequences", flat=True)
+    return [{'id': id, 'num_curated': num_curated, 'num_all': num_all,
+             'alternate_names': ", ".join(Variant.objects.get(id=id).old_names.values_list("name", flat=True)),
+             'tax_span': tax_span, 'color': color,
+             'children': get_variants_children(id)} \
+            for (id, num_all, tax_span), num_curated, color in zip(children, curated_children, colors)]

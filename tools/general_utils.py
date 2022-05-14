@@ -1,4 +1,4 @@
-from path_variables import *
+from prediction_app.prediction.path_variables import *
 
 # Seeds
 def get_seeds(seeds_name='seeds',combined_alignments=False, generic=False):

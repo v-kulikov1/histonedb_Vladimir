@@ -1,60 +1,47 @@
-import os
-import logging
+import os, logging, configparser, json
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
-from browse.models import Variant, OldStyleVariant, Histone, Publication, TemplateSequence, Feature
-from djangophylocore.models import Taxonomy
-import json
-from Bio import SeqIO
 from itertools import groupby
 
+from Bio import SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
-from tools.browse_service import *
+from browse.models import TemplateSequence, Feature
+from djangophylocore.models import Taxonomy
+
+config = configparser.ConfigParser()
+config.read('./histonedb.ini')
 
 class Command(BaseCommand):
     help = 'Reset sequence features'
 
     # Logging info
-    logging.basicConfig(filename=os.path.join(LOG_DIRECTORY, "buildvariantinfo.log"),
+    logging.basicConfig(filename=os.path.join(config['LOG']['database_log'], "buildfeatures.log"),
                         format='%(asctime)s %(name)s %(levelname)-8s %(message)s',
                         level=logging.INFO,
                         datefmt='%Y-%m-%d %H:%M:%S')
     log = logging.getLogger(__name__)
 
     def add_arguments(self, parser):
-         parser.add_argument(
-            "-f", 
-            "--force", 
-            default=False, 
-            action="store_true", 
-            help="Force the creation of PDFs, GFFs even if the files exist")
+        parser.add_argument(
+            "--profile",
+            default=False,
+            action="store_true",
+            help="Profile the command")
         
-    def handle(self, *args, **options):
+    def _handle(self, *args, **options):
         self.log.info('=======================================================')
-        self.log.info('===             buildvariantinfo START              ===')
+        self.log.info('===              buildfeatures START                ===')
         self.log.info('=======================================================')
-        Publication.objects.all().delete()
 
-        with open(VARIANTS_JSON, encoding='utf-8') as variant_info_file:
-            variant_classification = json.load(variant_info_file)
-        variant_info = variant_classification['info']
-
-        for name, info in variant_info.items():
-            if info['level'] == 'type':
-                self.add_type_info(name, info)
-            else:
-                self.add_variant_info(name, info)
-
-        feature_info_path = os.path.join(settings.STATIC_ROOT_AUX, "browse", "info", "features.json")
-        with open(feature_info_path, encoding='utf-8') as feature_info_file:
-            feature_info = json.load(feature_info_file)
-        
         Feature.objects.all().delete()
+
+        with open(config['DATA']['features'], encoding='utf-8') as feature_info_file:
+            feature_info = json.load(feature_info_file)
+
         for type_name, variants in feature_info.items():
             self.log.info("Making features for {}".format(type_name))
-            hist_type = Histone.objects.get(id=type_name)
+            # hist_type = Histone.objects.get(id=type_name)
             for variant, info in variants.items():
                 self.log.info("Making features for {}".format(variant))
                 # if variant.startswith("General"):
@@ -98,41 +85,15 @@ class Command(BaseCommand):
                                 used_features[name] = 1
 
         self.log.info('=======================================================')
-        self.log.info('===     buildvariantinfo SUCCESSFULLY finished      ===')
+        self.log.info('===      buildfeatures SUCCESSFULLY finished        ===')
         self.log.info('=======================================================')
 
-    def add_variant_info(self, variant_name, info):
-        self.log.info(variant_name)
-        variant = Variant.objects.get(id=variant_name)
-        variant.description = info["description"]
-        variant.taxonomic_span = info["taxonomic_span"]
-        variant.save()
+    def handle(self, *args, **options):
+        if options['profile']:
+            from cProfile import Profile
+            profiler = Profile()
+            profiler.runcall(self._handle, *args, **options)
+            profiler.print_stats()
+        else:
+            self._handle(*args, **options)
 
-        for alternate_name in info["alternate_names"]:
-            tax_name = alternate_name.get("taxonomy", "eukaryota")
-            self.log.info(tax_name)
-            # tax_eu = Taxonomy.objects.get(name='eucaryotes')
-            # print('===================== {}'.format(tax_eu))
-            alt_variant = OldStyleVariant(
-                updated_variant=variant,
-                name=alternate_name["name"],
-                gene=alternate_name.get("gene"),
-                splice=alternate_name.get("splice"),
-                taxonomy=Taxonomy.objects.get(name=tax_name)
-            )
-            try:
-                alt_variant.save()
-            except:
-                from django.db import connection
-                cursor = connection.cursor()
-                cursor.execute("ALTER TABLE browse_feature CONVERT TO CHARACTER SET utf8 COLLATE     utf8_general_ci;")
-                alt_variant.save()
-
-        for publication_id in info["publications"]:
-            publication, created = Publication.objects.get_or_create(id=publication_id, cited=False)
-            publication.variants.add(variant)
-
-    def add_type_info(self, type_name, info):
-        hist_type = Histone.objects.get(id=type_name)
-        hist_type.description = info["description"]
-        hist_type.save()

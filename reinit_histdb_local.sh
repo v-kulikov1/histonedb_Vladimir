@@ -21,8 +21,9 @@ python manage.py buildtaxonomytoc
 # gunzip nr_5march2020.gz
 # python manage.py buildvariants_parallel -f --db nr_5march2020
 
-python manage.py buildvarianttypes
-python manage.py buildvariantinfo -f
+python manage.py buildhistoneclasses #python manage.py buildvarianttypes
+python manage.py buildfeatures #python manage.py buildvariantinfo -f
+python manage.py loadcurated
 
 python manage.py buildhmms
 

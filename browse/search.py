@@ -1,5 +1,5 @@
 from django.db.models import Max, Min, Count, Sum
-from browse.models import Histone, Variant, OldStyleVariant, Sequence, Score
+from browse.models import Histone, Variant, OldStyleVariant, Sequence, BlastScore
 import browse
 from djangophylocore.models import Taxonomy
 from django.db.models import Q
@@ -228,11 +228,14 @@ class HistoneSearch(object):
         #The initial query set that is refined later by create_queryset
         self.query_set = Sequence.objects.filter(
                 all_model_scores__used_for_classification=True #Used to make sure we are only annotation the score used for classification
-           ).annotate(
-                num_scores=Count("all_model_scores"),
-                score=Max("all_model_scores__score"),
-                evalue=Min("all_model_scores__evalue")
-            )
+           )
+        if len(self.query_set) < 1: self.query_set = Sequence.objects.all()
+        self.query_set = self.query_set.annotate(
+            num_scores=Count("all_model_scores"),
+            score=Max("all_model_scores__score"),
+            evalue=Min("all_model_scores__evalue")
+        )
+        # assert (len(self.query_set) > 0)
 
         if "search" in self.parameters:
             self.simple_search(self.parameters["search"])
@@ -278,6 +281,11 @@ class HistoneSearch(object):
         if self.query.has_errors():
             return
 
+        current_query = self.query.current_query
+        multiple = self.query.multiple
+        errors = self.query.errors
+        query = self.query
+        query_set = self.query_set
         self.query_set = self.query_set.filter(**self.query)
         
         if self.unique:
@@ -360,10 +368,11 @@ class HistoneSearch(object):
             "splice":r.splice, 
             "taxonomy":r.taxonomy.name.capitalize(), 
             "taxid":str(r.taxonomy.id),
-            "score":r.score, 
-            "evalue":r.evalue, 
+            "score":r.score,
+            "evalue":r.evalue,
             "header":r.header.replace(r.taxonomy.name.capitalize(), "").replace("[]", "")[:80]
             } for r in sequences]
+
         return {"total":self.count, "rows":result}
 
     def get_sunburst(self):
