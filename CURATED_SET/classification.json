@@ -179,7 +179,7 @@
             {
             "H3.3_(Animals)": {"H3.3_(Homo_sapiens)":"null"},
             "H3.3_(Plants)": "null",
-            "H3.3_(Fungi)": {"H3.3_(Ascomycota)"},
+            "H3.3_(Fungi)": {"H3.3_(Ascomycota)":"null"},
             "H3.3_(Protists)": "null"
             },
         "H3.4_(Mammalia)": "null",
