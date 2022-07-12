@@ -1543,7 +1543,7 @@
             "interactions":"Govin et al. investigated the stability of nucleosomes incorporating cH2B.1/H2A.L.2 histone dimer (H2A.L.2 encoded by H2al2a gene in mouse was used) and concluded that they were less stable than nucleosomes containing somatic histones [govin_pericentric_2007].",
             "disease":"null",
             "caveats":"null"
-        },},
+        },
         "taxonomic_span": "Mus musculus",
         "taxonomic_span_id": "10090",
         "alternate_names": [{"name": "Th2b"},{"name": "TS H2B.1"}],
