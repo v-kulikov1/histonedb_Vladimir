@@ -2633,7 +2633,6 @@
         "alternate_names": [{"name":"H3T"}],
         "publications": []
                 },  
-                PPPPPPP
     "cenH3_(Plants)": {
                         "level": "variant_group",
                         "description": "cenH3 is a centromere-specific histone variant, which replaces canonical H3 in centromeric nucleosomes. It is required for kinetochore formation, mitotic progression and chromosome segregation. cenH3 has an extended L1-loop and its N-terminal tail is very different from other H3 variants. cenH3s have an extended L1-loop and usually replace Phe84 in canonical H3 with Trp, and Thr 107 with Ala, Cys, or Ser. cenH3s ususally lack a conserved glutamine in the alpha1 helix of the histone fold. cenH3s typically have only about 50-60% amino acid identity to canonical H3 in the histone fold domain and no conservation of the N-terminus.",
