@@ -12,6 +12,7 @@ from datetime import datetime
 
 HISTONES_FILE = 'histones.csv'
 HISTONES_PROCESSED_FILE = 'histones_processed.csv'
+CLASSIFICATION_FILE = 'classification.json'
 FEATURES_FILE = 'features.json'
 BACKUP_DIR = 'backups'
 
@@ -116,18 +117,35 @@ def muscle_p2p_aln(msa1,msa2, options=[],debug = False):
 #Main class    
 
 class CuratedSet(object):
-    def __init__(self):
-        self.data = self.read_data(HISTONES_FILE)
+    def __init__(self, histones_file=None, classification_file=None):
+        # self.histones_file = histones_file
+        # self.classification_file = classification_file
+        if not histones_file: histones_file = HISTONES_FILE
+        if not classification_file: classification_file = CLASSIFICATION_FILE
+        self.data = self.read_data(histones_file)
+        with open(classification_file, encoding='utf-8') as f:
+            self.variants_tree = json.load(f)['tree']
+        self.sort_data()
+
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
         self.create_fasta_seqrec()
 
-    def read_data(self, filename):
-        df = pd.read_csv(filename, sep=',',quotechar='"', engine='python').fillna('')
+    def read_data(self, histones_file):
+        df = pd.read_csv(histones_file, sep=',',quotechar='"', engine='python').fillna('')
         df['taxonomy_id'] = df['taxonomy_id'].astype(str)
         df.index = list(df['accession'])
         return df
+    
+    def sort_data(self):
+        def get_leaves(d):
+            if list(d.values())[0] == 'null': return d.keys()
+            return [dj for di in d for dj in get_leaves(di)]
+        df['type'] = pd.Categorical(df['type'], self.variants_tree.keys())
+        df['variant_group'] = pd.Categorical(df['variant_group'], [vg for t in self.variants_tree.keys() for vg in self.variants_tree[t].keys()])
+        df['variant'] = pd.Categorical(df['variant'], [v for v in get_leaves(self.variants_tree)])
+        df.sort_values("variant")
 
     def has_duplicates(self):
         '''
@@ -180,6 +198,9 @@ class CuratedSet(object):
         return data.iloc[list(np.where(data[columns]=='')[0])]
 
     def save(self, filename=None, processed=False):
+        # sorting data
+        self.sort_data()
+
         # compare current data with data loaded from file
         data_old = self.read_data(HISTONES_FILE)
         if(len(data_old)==len(self.data)):
