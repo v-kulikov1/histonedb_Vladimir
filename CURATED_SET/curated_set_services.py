@@ -7,15 +7,16 @@ from Bio.Align.AlignInfo import SummaryInfo
 import pandas as pd
 import numpy as np
 import collections
-import sys, os, re, subprocess, io
+import sys, os, re, subprocess, io, json
 from datetime import datetime
 
 HISTONES_FILE = 'histones.csv'
 HISTONES_PROCESSED_FILE = 'histones_processed.csv'
+CLASSIFICATION_FILE = 'classification.json'
 FEATURES_FILE = 'features.json'
 BACKUP_DIR = 'backups'
 
-NONCBI_IDENTIFICATOR = 'NONCBI'
+NONCBI_IDENTIFICATOR = 'HISTDB'
 
 #Auxillary functions
 
@@ -116,18 +117,51 @@ def muscle_p2p_aln(msa1,msa2, options=[],debug = False):
 #Main class    
 
 class CuratedSet(object):
-    def __init__(self):
-        self.data = self.read_data(HISTONES_FILE)
+    def __init__(self, histones_file=None, classification_file=None):
+        # self.histones_file = histones_file
+        # self.classification_file = classification_file
+        if not histones_file: histones_file = HISTONES_FILE
+        if not classification_file: classification_file = CLASSIFICATION_FILE
+        self.data = self.read_data(histones_file)
+        with open(classification_file, encoding='utf-8') as f:
+            self.variants_tree = json.load(f)['tree']
+        self.sort_data()
+
         self.fasta_seqrec = {} # keys - accession, values SeqRec Object
         self.msa_variant = {} # keys - variant, values MultipleSeqAlignment Object
         self.msa_type = {} # keys - type, values MultipleSeqAlignment Object
-        self.create_fasta_seqrec()
+#         self.create_fasta_seqrec()
 
-    def read_data(self, filename):
-        df = pd.read_csv(filename, sep=',',quotechar='"', engine='python').fillna('')
-        df['taxonomy_id'] = df['taxonomy_id'].astype(str)
+    def read_data(self, histones_file):
+        df = pd.read_csv(histones_file, sep=',',quotechar='"', engine='python', dtype={'taxonomy_id': str}).fillna('')
         df.index = list(df['accession'])
         return df
+    
+    def sort_data(self):
+        def get_leaves(key, value):
+            if value == 'null': return [key]
+            res = [key]
+            for k, v in value.items():
+                res += get_leaves(k, v)
+            return res
+        df = self.data.copy()
+        df['type'] = pd.Categorical(df['type'], self.variants_tree.keys())
+#         df['variant_group'] = pd.Categorical(df['variant_group'], [vg for t in self.variants_tree.keys() for vg in self.variants_tree[t].keys()]+[''])
+        variant_categories = [v for t, tv in self.variants_tree.items() for v in get_leaves(t, tv)]
+#         df['variant'] = pd.Categorical(df['variant'], variant_categories)
+        df['variant'] = pd.Categorical(df['variant'], variant_categories+[f'{iv.split("__???")[0]}__???' for iv in list(set(self.data['variant'])-set(variant_categories))])
+        df = df.sort_values(['type', "variant"])
+        for i, row in df.iterrows():
+            if pd.isna(row['variant']):
+                try:
+                    df.at[i, 'variant'] = self.data.loc[i]['variant'].split("__???")[0]+'__???'
+                except ValueError:
+                    print(','.join(df['variant']))
+                    print(df.loc[i, 'variant'])
+                    print(self.data.loc[i]['variant'].split("__???")[0]+'__???')
+                    print(self.data.loc[i]['variant'].split("__???")[0]+'__???' in df['variant'])
+                    raise
+        self.data = df
 
     def has_duplicates(self):
         '''
@@ -182,11 +216,22 @@ class CuratedSet(object):
     def save(self, filename=None, processed=False):
         # compare current data with data loaded from file
         data_old = self.read_data(HISTONES_FILE)
-        if(len(data_old)==len(self.data)):
-            for i, row in data_old.compare(self.data).iterrows():
-                print(row)
-        else:
-            print("Dataframe comarison currently not possible due to different number of rows")
+#         data_old['variant'] = pd.Categorical(data_old['variant'], variant_categories+[f'{iv}__???' for iv in list(set(self.data['variant'])-set(variant_categories))])
+        index_order = set(self.data.index).intersection(set(data_old.index))
+        data_old = data_old.loc[index_order]
+        # print(data_old.head())
+        for i, row in data_old.compare(self.data.loc[index_order]).iterrows():
+            print(row)
+        for newacc in set(self.data.index).difference(set(data_old.index)):
+            print(f"Added sequence with accession {newacc}")
+        # if(len(data_old)==len(self.data)):
+        #     for i, row in data_old.compare(self.data).iterrows():
+        #         print(row)
+        # else:
+        #     print("Dataframe comarison currently not possible due to different number of rows")
+        
+        # sorting data
+        self.sort_data()
 
         # backup file first to history
         backup_file = os.path.join(BACKUP_DIR, f'{HISTONES_FILE}-{datetime.now().strftime("%b%d%y%H%M%S")}')

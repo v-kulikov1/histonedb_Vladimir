@@ -63,7 +63,7 @@
                 "macroH2A.1.s1_(Mammalia)":{"macroH2A.1.s1_(Homo_sapiens)":"null"},
                 "macroH2A.1.s2_(Mammalia)":{"macroH2A.1.s2_(Homo_sapiens)":"null"}
                 },
-            "macroH2A.2_(Mammalia)":{"macroH2A.1.s1_(Homo_sapiens)":"null"}
+            "macroH2A.2_(Mammalia)":{"macroH2A.2.s1_(Homo_sapiens)":"null"}
             },
         "short_H2A":
             {
@@ -140,8 +140,8 @@
         },
         "H2B.L": "null",
         "H2B.W": {"H2B.W_(Homo_sapiens)":{"H2A.W.1_(Homo_sapiens)":"null","H2A.W.2_(Homo_sapiens)":"null"}},
-        "H2B.K": {"H2B.K_(Homo_sapiens)"},
-        "H2B.N": {"H2B.N_(Homo_sapiens)"},
+        "H2B.K": {"H2B.K_(Homo_sapiens)": "null"},
+        "H2B.N": {"H2B.N_(Homo_sapiens)": "null"},
         "H2B.O": "null",
         "H2B.S": "null",
         "gH2B":  "null",
@@ -179,7 +179,7 @@
             {
             "H3.3_(Animals)": {"H3.3_(Homo_sapiens)":"null"},
             "H3.3_(Plants)": "null",
-            "H3.3_(Fungi)": {"H3.3_(Ascomycota)"},
+            "H3.3_(Fungi)": {"H3.3_(Ascomycota)":"null"},
             "H3.3_(Protists)": "null"
             },
         "H3.4_(Mammalia)": "null",
@@ -1543,7 +1543,7 @@
             "interactions":"Govin et al. investigated the stability of nucleosomes incorporating cH2B.1/H2A.L.2 histone dimer (H2A.L.2 encoded by H2al2a gene in mouse was used) and concluded that they were less stable than nucleosomes containing somatic histones [govin_pericentric_2007].",
             "disease":"null",
             "caveats":"null"
-        },},
+        },
         "taxonomic_span": "Mus musculus",
         "taxonomic_span_id": "10090",
         "alternate_names": [{"name": "Th2b"},{"name": "TS H2B.1"}],
@@ -2632,8 +2632,7 @@
         "taxonomic_span_id": "40674",
         "alternate_names": [{"name":"H3T"}],
         "publications": []
-                },  
-                PPPPPPP
+                }, 
     "cenH3_(Plants)": {
                         "level": "variant_group",
                         "description": "cenH3 is a centromere-specific histone variant, which replaces canonical H3 in centromeric nucleosomes. It is required for kinetochore formation, mitotic progression and chromosome segregation. cenH3 has an extended L1-loop and its N-terminal tail is very different from other H3 variants. cenH3s have an extended L1-loop and usually replace Phe84 in canonical H3 with Trp, and Thr 107 with Ala, Cys, or Ser. cenH3s ususally lack a conserved glutamine in the alpha1 helix of the histone fold. cenH3s typically have only about 50-60% amino acid identity to canonical H3 in the histone fold domain and no conservation of the N-terminus.",
