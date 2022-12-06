@@ -214,6 +214,9 @@ class CuratedSet(object):
         return data.iloc[list(np.where(data[columns]=='')[0])]
 
     def save(self, filename=None, processed=False):
+        # sorting data
+        self.sort_data()
+
         # compare current data with data loaded from file
         data_old = self.read_data(HISTONES_FILE)
 #         data_old['variant'] = pd.Categorical(data_old['variant'], variant_categories+[f'{iv}__???' for iv in list(set(self.data['variant'])-set(variant_categories))])
