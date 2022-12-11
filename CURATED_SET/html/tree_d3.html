@@ -50,6 +50,7 @@ label {
 <div id="tree"></div>
 <h1>Multiple sequence alignment will appear below</h1>
 <div id="menu"></div>
+<div id="summary" style="padding-bottom: 30px;"></div>
 <div id="msa"></div>
 <script >
 
@@ -93,7 +94,6 @@ if (typeof d[ind]  === "object") {
 dict2tree(tree["children"].at(-1),d[ind])}
 }
 }
-
 dict2tree(datah,data['tree']);
 
 const margin = { top: 10, right: 120, bottom: 10, left: 40 };
@@ -135,11 +135,11 @@ const gNode = svg
   .attr("cursor", "pointer")
   .attr("pointer-events", "all");
 
-update(root);
+update(root, data['info']);
 
 document.querySelector("#tree").appendChild(svg.node());
 
-function update(source) {
+function update(source, dataInfo) {
   const duration = d3.event && d3.event.altKey ? 2500 : 250;
    //const duration = 10000;
   const nodes = root.descendants().reverse();
@@ -271,13 +271,14 @@ return d._children ? "#"+(r & 0x5).toString(16)+(g& 0x5).toString(16)+(b& 0x5).t
 }
  });
 
+var descDiv = document.getElementById('summary');
 var rootDiv = document.getElementById("msa");
 var menuDiv = document.getElementById("menu");
 
 
 
 
-function upd_msa(name) {
+function upd_msa(name, summary) {
 
 // var seqs;
 
@@ -298,12 +299,16 @@ function upd_msa(name) {
 
 // });
 
+fetch('https://intbio.org/histonedb/CURATED_SET/classification.json')
+    .then((response) => response.json())
+    .then((json) => descDiv.replaceChildren(document.createTextNode(json['info'][name]['description']['summary'])));
+// descDiv.appendChild(document.createTextNode(summary));
 
-
-
+// function addDesc(data, name) {
+//   descDiv.appendChild(document.createTextNode(data['info'][name]['description']['summary']));
+// };
 
 //Add consensus
-
 
  var m = msa({
   el: rootDiv,
