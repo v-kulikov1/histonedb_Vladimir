@@ -299,14 +299,11 @@ function upd_msa(name, summary) {
 
 // });
 
+// Add summary
 fetch('https://intbio.org/histonedb/CURATED_SET/classification.json')
     .then((response) => response.json())
     .then((json) => descDiv.replaceChildren(document.createTextNode(json['info'][name]['description']['summary'])));
-// descDiv.appendChild(document.createTextNode(summary));
 
-// function addDesc(data, name) {
-//   descDiv.appendChild(document.createTextNode(data['info'][name]['description']['summary']));
-// };
 
 //Add consensus
 
