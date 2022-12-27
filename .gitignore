@@ -53,3 +53,7 @@ nr
 nr_small_352mb
 human_hist/migrations
 human_hist/migrations/*
+browse/migrations
+browse/migrations/*
+djangophylocore/migrations
+djangophylocore/migrations/*
