@@ -324,10 +324,19 @@ class CuratedSet(object):
             except:
                 print("!!!!!!Unable to get TAXID for \n {} setting it to 1".format(s))
                 taxids.append(1)  # unable to identify
-            handle = Entrez.efetch(id=taxids[-1], db="taxonomy", retmode="xml")
-            tax_data = Entrez.read(handle)
-            lineage = {d['Rank']: d['ScientificName'] for d in
-                       tax_data[0]['LineageEx'] if d['Rank'] in ['class', 'phylum']}
+            lineage = dict()
+            for i in range(10):
+                try:
+                    handle = Entrez.efetch(id=taxids[-1], db="taxonomy", retmode="xml")
+                    tax_data = Entrez.read(handle)
+                    lineage = {d['Rank']: d['ScientificName'] for d in
+                               tax_data[0]['LineageEx'] if d['Rank'] in ['class', 'phylum']}
+                    break
+                except:
+                    print("Unexpected error: {}, Retrying, attempt {}".format(sys.exc_info()[0], i))
+                    if i == 9:
+                        print(f"FATAL ERROR could not get class and phylum from NCBI after 10 attempts for taxid:{taxids[-1]}. Will add None for class and phylum!")
+                    else: continue
             phylum.append(lineage.get('phylum', 'None'))
             taxonomy_class.append(lineage.get('class', 'None'))
 
