@@ -168,6 +168,7 @@ class CuratedSet(object):
         This method allows us to check that our curated set does not have identifiers that are assigned different variants.
         :return: None (if no such identifiers) or iterator of accessions (that are assigned different variants)
         '''
+        acc_dict = {acc.split('.')[0]: acc for acc in self.get_accessions_list()}
         acc_list = [acc.split('.')[0] for acc in self.get_accessions_list()] #retrieving accessions without version
         if len(set(acc_list)) == self.get_count(): return
         c = collections.Counter()
@@ -175,7 +176,7 @@ class CuratedSet(object):
             c[acc] += 1
         for acc_count in c.most_common():
             if acc_count[1] == 1: continue
-            else: yield acc_count[0]
+            else: yield acc_dict[acc_count[0]]
 
     def create_fasta_seqrec(self):
         for i, row in self.data.iterrows():
@@ -276,7 +277,7 @@ class CuratedSet(object):
     def update_taxids(self, blank_data=False, accessions=None, exclude=None):
         if blank_data and (accessions or exclude): raise AssertionError(f'blank_data cannot be true when accessions list is given. Please, use only one of the options.')
         updating_data = self.get_ncbi_data()
-        if blank_data: updating_data = self.get_blank_data(['taxonomy_id', 'organism', 'taxonomy_group'])
+        if blank_data: updating_data = self.get_blank_data(['taxonomy_id', 'organism', 'phylum', 'class']) # add 'taxonomy_group'
         if accessions: updating_data = self.data.loc[accessions]
         if exclude: updating_data = updating_data.drop(exclude)
 
