@@ -149,7 +149,11 @@ class CuratedSet(object):
 #         df['variant_group'] = pd.Categorical(df['variant_group'], [vg for t in self.variants_tree.keys() for vg in self.variants_tree[t].keys()]+[''])
         variant_categories = [v for t, tv in self.variants_tree.items() for v in get_leaves(t, tv)]
 #         df['variant'] = pd.Categorical(df['variant'], variant_categories)
-        df['variant'] = pd.Categorical(df['variant'], variant_categories+[f'{iv.split("__???")[0]}__???' for iv in list(set(self.data['variant'])-set(variant_categories))])
+        try:
+            df['variant'] = pd.Categorical(df['variant'], variant_categories+[f'{iv.split("__???")[0]}__???' for iv in list(set(self.data['variant'])-set(variant_categories))])
+        except ValueError:
+            print(collections.Counter(variant_categories+[f'{iv.split("__???")[0]}__???' for iv in list(set(self.data['variant'])-set(variant_categories))]))
+            raise
         df = df.sort_values(['type', "variant"])
         for i, row in df.iterrows():
             if pd.isna(row['variant']):

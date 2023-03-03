@@ -48,7 +48,19 @@
                     }
                 }
             },
-            "H2A.X": "null",
+            "H2A.X": {
+                "H2A.X_(Animals)": {
+                    "H2A.X_(Vertebrata)": {
+                        "H2A.X_(Mammalia)": {
+                            "H2A.X_(Homo_sapiens)": "null",
+                            "H2A.X_(Mus_musculus)": "null"
+                        }
+                    }
+                },
+                "H2A.X_(Plants)": "null",
+                "H2A.X_(Fungi)": "null",
+                "H2A.X_(Protists)": "null"
+            },
             "macroH2A": {
                 "macroH2A.1_(Mammalia)": {
                     "macroH2A.1.s1_(Mammalia)": {
@@ -59,7 +71,7 @@
                     }
                 },
                 "macroH2A.2_(Mammalia)": {
-                    "macroH2A.2.s1_(Mammalia)": "null"
+                    "macroH2A.2_(Homo_sapiens)": "null"
                 }
             },
             "short_H2A": {
