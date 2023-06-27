@@ -149,8 +149,8 @@
             "H2B.L": "null",
             "H2B.W": {
                 "H2B.W_(Homo_sapiens)": {
-                    "H2A.W.1_(Homo_sapiens)": "null",
-                    "H2A.W.2_(Homo_sapiens)": "null"
+                    "H2B.W.1_(Homo_sapiens)": "null",
+                    "H2B.W.2_(Homo_sapiens)": "null"
                 }
             },
             "H2B.K": {
