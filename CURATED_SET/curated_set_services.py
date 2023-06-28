@@ -26,7 +26,7 @@ def show_msa_jl(msa):
     """
     This requires jupyterlab-fasta extenstion and works only in jupyterlab
     """
-    data=msa.format('fasta')
+    data=format(msa, 'fasta')
     bundle = {}
     bundle['application/vnd.fasta.fasta'] = data
     bundle['text/plain'] = data
@@ -409,7 +409,9 @@ class CuratedSet(object):
         :return: MultipleSeqAlignment object
         """
         self.create_fasta_seqrec()
-        if not set(accessions).issubset(self.fasta_seqrec.keys()): self.update_sequence()
+        if not set(accessions).issubset(self.fasta_seqrec.keys()):
+            self.update_sequence()
+            self.create_fasta_seqrec()
 
         muscle = os.path.join(os.path.dirname(sys.executable), "muscle")
         process = subprocess.Popen([muscle]+options, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
