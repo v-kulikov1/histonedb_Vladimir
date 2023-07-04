@@ -216,7 +216,7 @@ class CuratedSet(object):
 
     def get_blank_data(self, columns):
         data = self.get_ncbi_data()
-        return data.iloc[list(np.where(data[columns]=='')[0])]
+        return data[(data[columns]=='').any(axis=1)]
 
     def save(self, filename=None, processed=False):
         # sorting data
@@ -309,7 +309,7 @@ class CuratedSet(object):
                 handle = Entrez.efetch(db="protein", id=",".join(accessions), rettype="gb", retmode="text")
                 sequences = list(SeqIO.parse(handle, "gb"))
                 if (len(accessions) == len(sequences)): break
-            except:
+            except Exception as e:
                 print("Unexpected error: {}, Retrying, attempt {}".format(sys.exc_info()[0], i))
                 if i == 9:
                     print("FATAL ERROR could not get seqs from NCBI after 10 attempts for %s. Will return empty list!" % (",".join(accessions)))
