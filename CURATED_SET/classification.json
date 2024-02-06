@@ -612,7 +612,7 @@
         "cH2A_(Chlorophyta)": {
             "level": "variant_group",
             "description": {
-                "summary": "cH2B_(Chlorophyta) -- canonical H2A histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019].",
+                "summary": "cH2A_(Chlorophyta) -- canonical H2A histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019].",
                 "taxonomy": "Chlorophyta",
                 "genes": "null",
                 "evolution": "null",
