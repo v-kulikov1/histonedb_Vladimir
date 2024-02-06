@@ -612,7 +612,7 @@
         "cH2A_(Chlorophyta)": {
             "level": "variant_group",
             "description": {
-                "summary": "cH2B_(Chlorophyta) -- canonical H2A histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]. See description of cH2B_(Plants) variant Jiang et al. paper for further information about H2B histones in plant [jiang_evolution_2020].",
+                "summary": "cH2A_(Chlorophyta) -- canonical H2A histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019].",
                 "taxonomy": "Chlorophyta",
                 "genes": "null",
                 "evolution": "null",
@@ -2101,6 +2101,33 @@
             },
             "taxonomic_span": "Embryophyta",
             "taxonomic_span_id": "3193",
+            "alternate_names": [],
+            "publications": [
+                "marzluff_metabolism_2008",
+                " alvarez-venegas_canonical_2019",
+                "jiang_evolution_2020"
+            ]
+        },
+        "cH2B_(Chlorophyta)": {
+            "level": "variant_group",
+            "description": {
+                "summary": "cH2B_(Chlorophyta) -- canonical H2B histones of green algae and similar replication-independent histones. In chlorophyte green algae, such as Chlamydomonas, genes are grouped in clusteres and mRNAs end in 3'-stem loop similar to those of histone genes in animals [marzluff_metabolism_2008, alvarez-venegas_canonical_2019]. See description of cH2B_(Plants) variant Jiang et al. paper for further information about H2B histones in plant [jiang_evolution_2020].",
+                "taxonomy": "Chlorophyta",
+                "genes": "null",
+                "evolution": "null",
+                "expression": "null",
+                "knock-out:": "null",
+                "function": "null",
+                "sequence": "null",
+                "localization": "null",
+                "deposition": "null",
+                "structure": "null",
+                "interactions": "null",
+                "disease": "null",
+                "caveats": "null"
+            },
+            "taxonomic_span": "Chlorophyta",
+            "taxonomic_span_id": "3041",
             "alternate_names": [],
             "publications": [
                 "marzluff_metabolism_2008",
