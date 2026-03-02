@@ -267,7 +267,10 @@
                     }
                 },
                 "cH4_(Fungi)": "null",
-                "cH4_(Plants)": "null",
+                "cH4_(Plants)": {
+                    "cH4_(Chlorophyta)": "null",
+                    "cH4_(Embryophyta)": "null"
+                },
                 "cH4_(Protists)": "null"
             },
             "H4.G_(Hominidae)": "null",
@@ -3307,6 +3310,54 @@
             },
             "taxonomic_span": "Metazoa",
             "taxonomic_span_id": "33208",
+            "alternate_names": [],
+            "publications": []
+        },
+        "cH4_(Chlorophyta)": {
+            "level": "variant",
+            "description": {
+                "summary": "null",
+                "taxonomy": "null",
+                "genes": "null",
+                "evolution": "null",
+                "expression": "null",
+                "knock-out": "null",
+                "function": "null",
+                "sequence": "null",
+                "localization": "null",
+                "deposition": "null",
+                "structure": "null",
+                "interactions": "null",
+                "disease": "null",
+                "caveats": "null",
+                "relations": "null"
+            },
+            "taxonomic_span": "Chlorophyta",
+            "taxonomic_span_id": "3041",
+            "alternate_names": [],
+            "publications": []
+        },
+        "cH4_(Embryophyta)": {
+            "level": "variant",
+            "description": {
+                "summary": "null",
+                "taxonomy": "null",
+                "genes": "null",
+                "evolution": "null",
+                "expression": "null",
+                "knock-out": "null",
+                "function": "null",
+                "sequence": "null",
+                "localization": "null",
+                "deposition": "null",
+                "structure": "null",
+                "interactions": "null",
+                "disease": "null",
+                "caveats": "null",
+                "relations": "null"
+            },
+            "taxonomic_span": "Embryophyta",
+            "taxonomic_span_id": "3193",
             "alternate_names": [],
             "publications": []
         },
