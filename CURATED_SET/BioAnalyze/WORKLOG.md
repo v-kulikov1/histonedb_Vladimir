@@ -118,6 +118,17 @@ Current Expression Artifacts
 - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc.svg
   Canonical human H2A heatmap (Ensembl rows, HGNC gene labels).
 
+Expression Split (2026-03-11)
+- Rule: canonical == "clustered H2A" in v3 `variant` column (Homo sapiens rows).
+- Script:
+  - CURATED_SET/BioAnalyze/scripts/expression/build_bgee_h2a_heatmaps_split_clustered_variants.py
+- Outputs:
+  - CURATED_SET/BioAnalyze/data/processed/h2a_hs_canonical_variant_map.tsv
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_clustered.svg
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_clustered.png
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_variants.svg
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_variants.png
+
 Legacy / Variant Expression Artifacts
 - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_gene_name.png
 - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_gene_name.svg
