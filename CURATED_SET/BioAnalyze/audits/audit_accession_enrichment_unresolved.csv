@@ -1,0 +1,21 @@
+accession,organism,taxonomy id,source,ncbi_id,ensembl_gene_id,reason
+XP_011215280.1,Ailuropoda melanoleuca,9646,ncbi,,,protein_not_found
+XP_008992112.1,Callithrix jacchus,9483,ncbi,,,protein_not_found
+XP_007634672.1,Cricetulus griseus,10029,ncbi,,,protein_not_found
+XP_003422330.1,Loxodonta africana,9785,ncbi,,,protein_not_found
+XP_004088806.1,Nomascus leucogenys,61853,ncbi,,,protein_not_found
+XP_009448979.1,Pan troglodytes,9598,ncbi,,,protein_not_found
+XP_002763866.2,Callithrix jacchus,9483,ncbi,,,protein_not_found
+EHB05905.1,Heterocephalus glaber,10181,ncbi,,,gene_link_not_found
+XP_001145032.1,Pan troglodytes,9598,ncbi,,,protein_not_found
+XP_003135571.1,Sus scrofa,9823,ncbi,,,protein_not_found
+Q9D4U4,Mus musculus,10090,ncbi,,,protein_not_found
+XP_875023.2,Bos taurus,9913,ncbi,,,protein_not_found
+EHB04253.1,Heterocephalus glaber,10181,ncbi,,,gene_link_not_found
+EHB17227.1,Heterocephalus glaber,10181,ncbi,,,gene_link_not_found
+EHB10562.1,Heterocephalus glaber,10181,ncbi,,,gene_link_not_found
+HISTDB_H2A_Q_2,Ammotragus lervia,9899,ncbi,,,protein_not_found
+XP_010950849.1,Camelus bactrianus,9837,ncbi,,,protein_not_found
+HISTDB_H2A_Q_7,Giraffa camelopardalis tippelskirchi,439328,ncbi,,,protein_not_found
+HISTDB_H2A_Q_9,Okapia johnstoni,86973,ncbi,,,protein_not_found
+ELK02218.1,Pteropus alecto,9402,ncbi,,,gene_link_not_found

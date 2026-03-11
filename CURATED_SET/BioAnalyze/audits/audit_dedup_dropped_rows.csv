@@ -1,0 +1,275 @@
+reason,accession,type,variant,isoform,protein_len,taxonomy id,organism,vgnc_id,hgnc_id,ncbi_id,ensembl_gene_id,species_name,order
+exact_duplicate,XP_023108679.1,H2A,H2A.Z.1,,128,9685,Cat,VGNC:109893,,101087401,ENSFCAG00000039458,Felis catus,Carnivora
+exact_duplicate,XP_023105894.1,H2A,H2A.Z.2,,90,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105894.1,H2A,H2A.Z.2,,90,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105894.1,H2A,H2A.Z.2,,90,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105894.1,H2A,H2A.Z.2,,90,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105893.1,H2A,H2A.Z.2,,128,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105893.1,H2A,H2A.Z.2,,128,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105893.1,H2A,H2A.Z.2,,128,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_023105893.1,H2A,H2A.Z.2,,128,9685,Cat,VGNC:109894,,101099622,ENSFCAG00000010271,Felis catus,Carnivora
+exact_duplicate,XP_044915091.1,H2A,macroH2A.1,,377,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915091.1,H2A,macroH2A.1,,377,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915089.1,H2A,macroH2A.1,,378,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915089.1,H2A,macroH2A.1,,378,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915085.1,H2A,macroH2A.1,,380,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915085.1,H2A,macroH2A.1,,380,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915084.1,H2A,macroH2A.1,,381,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_044915084.1,H2A,macroH2A.1,,381,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111205.1,H2A,macroH2A.1,,368,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111205.1,H2A,macroH2A.1,,368,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111201.1,H2A,macroH2A.1,,369,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111201.1,H2A,macroH2A.1,,369,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111196.1,H2A,macroH2A.1,,371,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111196.1,H2A,macroH2A.1,,371,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111195.1,H2A,macroH2A.1,,372,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,XP_023111195.1,H2A,macroH2A.1,,372,9685,Cat,VGNC:81624,,101080257,ENSFCAG00000013924,Felis catus,Carnivora
+exact_duplicate,NP_777234.1,H2A,H2A.Z.1,,128,9913,Cattle,VGNC:83610,,287016,ENSBTAG00000004428,Bos taurus,Artiodactyla
+exact_duplicate,NP_001033286.1,H2A,H2A.Z.2,,128,9913,Cattle,VGNC:83607,,613618,ENSBTAG00000016975,Bos taurus,Artiodactyla
+exact_duplicate,NP_001033286.1,H2A,H2A.Z.2,,128,9913,Cattle,VGNC:83607,,613618,ENSBTAG00000016975,Bos taurus,Artiodactyla
+exact_duplicate,NP_001033286.1,H2A,H2A.Z.2,,128,9913,Cattle,VGNC:83607,,613618,ENSBTAG00000016975,Bos taurus,Artiodactyla
+exact_duplicate,NP_001033286.1,H2A,H2A.Z.2,,128,9913,Cattle,VGNC:83607,,613618,ENSBTAG00000016975,Bos taurus,Artiodactyla
+exact_duplicate,XP_024850110.1,H2A,macroH2A.1,,339,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_024850110.1,H2A,macroH2A.1,,339,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_024850109.1,H2A,macroH2A.1,,371,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_024850109.1,H2A,macroH2A.1,,371,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209436.1,H2A,macroH2A.1,,368,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209436.1,H2A,macroH2A.1,,368,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209435.1,H2A,macroH2A.1,,369,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209435.1,H2A,macroH2A.1,,369,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209434.1,H2A,macroH2A.1,,372,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209434.1,H2A,macroH2A.1,,372,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209433.1,H2A,macroH2A.1,,372,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_005209433.1,H2A,macroH2A.1,,372,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,NP_001039805.1,H2A,macroH2A.1,,371,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,NP_001039805.1,H2A,macroH2A.1,,371,9913,Cattle,VGNC:83608,,532990,ENSBTAG00000016105,Bos taurus,Artiodactyla
+exact_duplicate,XP_517363.3,H2A,H2A.Z.1,,128,9598,Chimpanzee,VGNC:83681,,461400.0,ENSPTRG00000016312,Pan troglodytes,Primates
+exact_duplicate,XP_016800800.1,H2A,H2A.Z.2,,66,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800800.1,H2A,H2A.Z.2,,66,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800800.1,H2A,H2A.Z.2,,66,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800800.1,H2A,H2A.Z.2,,66,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800799.1,H2A,H2A.Z.2,,90,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800799.1,H2A,H2A.Z.2,,90,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800799.1,H2A,H2A.Z.2,,90,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800799.1,H2A,H2A.Z.2,,90,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800798.1,H2A,H2A.Z.2,,102,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800798.1,H2A,H2A.Z.2,,102,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800798.1,H2A,H2A.Z.2,,102,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800798.1,H2A,H2A.Z.2,,102,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800797.1,H2A,H2A.Z.2,,114,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800797.1,H2A,H2A.Z.2,,114,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800797.1,H2A,H2A.Z.2,,114,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800797.1,H2A,H2A.Z.2,,114,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800796.1,H2A,H2A.Z.2,,128,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800796.1,H2A,H2A.Z.2,,128,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800796.1,H2A,H2A.Z.2,,128,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,XP_016800796.1,H2A,H2A.Z.2,,128,9598,Chimpanzee,VGNC:14019,,453664.0,ENSPTRG00000019153,Pan troglodytes,Primates
+exact_duplicate,NP_001229351.1,H2A,macroH2A.1,,372,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,NP_001229351.1,H2A,macroH2A.1,,372,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666194.1,H2A,macroH2A.1,,357,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666194.1,H2A,macroH2A.1,,357,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666193.1,H2A,macroH2A.1,,358,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666193.1,H2A,macroH2A.1,,358,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666192.1,H2A,macroH2A.1,,360,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666192.1,H2A,macroH2A.1,,360,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666191.1,H2A,macroH2A.1,,361,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_063666191.1,H2A,macroH2A.1,,361,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_009447783.1,H2A,macroH2A.1,,368,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_009447783.1,H2A,macroH2A.1,,368,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_009447782.1,H2A,macroH2A.1,,369,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_009447782.1,H2A,macroH2A.1,,369,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_009447781.1,H2A,macroH2A.1,,371,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,XP_009447781.1,H2A,macroH2A.1,,371,9598,Chimpanzee,VGNC:4025,,462076.0,ENSPTRG00000017256,Pan troglodytes,Primates
+exact_duplicate,NP_001274021.1,H2A,H2A.Z.1,,128.0,9615,Dog,VGNC:83696,,478493,ENSCAFG00000010615,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038299721.1,H2A,H2A.Z.1,,102.0,9615,Dog,VGNC:83696,,478493,ENSCAFG00000010615,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545201.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545201.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545201.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545201.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545200.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545200.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545200.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545200.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545199.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545199.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545199.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545199.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545198.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545198.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545198.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038545198.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967514.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967514.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967514.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967514.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967513.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967513.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967513.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967513.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967512.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967512.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967512.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967512.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967511.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967511.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967511.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_013967511.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415467.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415467.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415467.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415467.1,H2A,H2A.Z.2,,90.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415466.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415466.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415466.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415466.1,H2A,H2A.Z.2,,128.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415465.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415465.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415465.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415465.1,H2A,H2A.Z.2,,146.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415464.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415464.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415464.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038415464.1,H2A,H2A.Z.2,,184.0,9615,Dog,VGNC:83697,,475501,ENSCAFG00000032723,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537506.1,H2A,macroH2A.1,,198.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537506.1,H2A,macroH2A.1,,198.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537505.1,H2A,macroH2A.1,,199.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537505.1,H2A,macroH2A.1,,199.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537504.1,H2A,macroH2A.1,,228.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537504.1,H2A,macroH2A.1,,228.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537503.1,H2A,macroH2A.1,,229.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537503.1,H2A,macroH2A.1,,229.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537502.1,H2A,macroH2A.1,,234.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537502.1,H2A,macroH2A.1,,234.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537501.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537501.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537500.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537500.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537499.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537499.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537498.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038537498.1,H2A,macroH2A.1,,235.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518113.1,H2A,macroH2A.1,,368.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518113.1,H2A,macroH2A.1,,368.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518106.1,H2A,macroH2A.1,,369.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518106.1,H2A,macroH2A.1,,369.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518097.1,H2A,macroH2A.1,,371.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518097.1,H2A,macroH2A.1,,371.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518078.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518078.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518069.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518069.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518060.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038518060.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_538635.3,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_538635.3,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408147.1,H2A,macroH2A.1,,368.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408147.1,H2A,macroH2A.1,,368.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408146.1,H2A,macroH2A.1,,369.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408146.1,H2A,macroH2A.1,,369.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408145.1,H2A,macroH2A.1,,371.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408145.1,H2A,macroH2A.1,,371.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408144.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408144.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408143.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408143.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408142.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408142.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408141.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_038408141.1,H2A,macroH2A.1,,372.0,9615,Dog,VGNC:81622,,481514,ENSCAFG00000001076,Canis lupus familiaris,Carnivora
+exact_duplicate,XP_023493427.1,H2A,H2A.Z.1,,128,9796,Horse,VGNC:83808,,100146489,ENSECAG00000023732,Equus caballus,Perissodactyla
+exact_duplicate,XP_023494789.1,H2A,H2A.Z.2,,128,9796,Horse,VGNC:83809,,100629965,ENSECAG00000016692,Equus caballus,Perissodactyla
+exact_duplicate,XP_023494789.1,H2A,H2A.Z.2,,128,9796,Horse,VGNC:83809,,100629965,ENSECAG00000016692,Equus caballus,Perissodactyla
+exact_duplicate,XP_023494789.1,H2A,H2A.Z.2,,128,9796,Horse,VGNC:83809,,100629965,ENSECAG00000016692,Equus caballus,Perissodactyla
+exact_duplicate,XP_023494789.1,H2A,H2A.Z.2,,128,9796,Horse,VGNC:83809,,100629965,ENSECAG00000016692,Equus caballus,Perissodactyla
+exact_duplicate,XP_070090384.1,H2A,macroH2A.1,,368,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_070090384.1,H2A,macroH2A.1,,368,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_070090383.1,H2A,macroH2A.1,,371,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_070090383.1,H2A,macroH2A.1,,371,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473436.1,H2A,macroH2A.1,,368,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473436.1,H2A,macroH2A.1,,368,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473435.1,H2A,macroH2A.1,,369,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473435.1,H2A,macroH2A.1,,369,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473434.1,H2A,macroH2A.1,,371,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473434.1,H2A,macroH2A.1,,371,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473432.1,H2A,macroH2A.1,,372,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473432.1,H2A,macroH2A.1,,372,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473431.1,H2A,macroH2A.1,,372,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,XP_023473431.1,H2A,macroH2A.1,,372,9796,Horse,VGNC:81621,,100062747,ENSECAG00000010224,Equus caballus,Perissodactyla
+exact_duplicate,NP_001180479.1,H2A,H2A.Z.1,,128,9544,Macaque,VGNC:109696,,709326.0,ENSMMUG00000038454,Macaca mulatta,Primates
+exact_duplicate,NP_001247938.1,H2A,H2A.Z.2,,90,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,NP_001247938.1,H2A,H2A.Z.2,,90,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,NP_001247938.1,H2A,H2A.Z.2,,90,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,NP_001247938.1,H2A,H2A.Z.2,,90,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989036.1,H2A,H2A.Z.2,,66,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989036.1,H2A,H2A.Z.2,,66,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989036.1,H2A,H2A.Z.2,,66,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989036.1,H2A,H2A.Z.2,,66,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989035.1,H2A,H2A.Z.2,,114,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989035.1,H2A,H2A.Z.2,,114,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989035.1,H2A,H2A.Z.2,,114,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989035.1,H2A,H2A.Z.2,,114,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989034.1,H2A,H2A.Z.2,,128,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989034.1,H2A,H2A.Z.2,,128,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989034.1,H2A,H2A.Z.2,,128,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,XP_014989034.1,H2A,H2A.Z.2,,128,9544,Macaque,VGNC:81324,,705636.0,ENSMMUG00000000962,Macaca mulatta,Primates
+exact_duplicate,NP_001248669.1,H2A,macroH2A.1,,371,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,NP_001248669.1,H2A,macroH2A.1,,371,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,XP_014996354.1,H2A,macroH2A.1,,368,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,XP_014996354.1,H2A,macroH2A.1,,368,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,XP_014996353.1,H2A,macroH2A.1,,369,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,XP_014996353.1,H2A,macroH2A.1,,369,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,XP_014996351.1,H2A,macroH2A.1,,372,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,XP_014996351.1,H2A,macroH2A.1,,372,9544,Macaque,VGNC:109697,,711836.0,ENSMMUG00000014465,Macaca mulatta,Primates
+exact_duplicate,NP_001116594.1,H2A,H2A.Z.1,,128,9823,Pig,VGNC:109805,,100141311,ENSSSCG00000009178,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934317.1,H2A,H2A.Z.2,,128,9823,Pig,VGNC:109806,,100512448,ENSSSCG00000016738,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934317.1,H2A,H2A.Z.2,,128,9823,Pig,VGNC:109806,,100512448,ENSSSCG00000016738,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934317.1,H2A,H2A.Z.2,,128,9823,Pig,VGNC:109806,,100512448,ENSSSCG00000016738,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934317.1,H2A,H2A.Z.2,,128,9823,Pig,VGNC:109806,,100512448,ENSSSCG00000016738,Sus scrofa,Artiodactyla
+exact_duplicate,NP_001231492.1,H2A,macroH2A.1,,368,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,NP_001231492.1,H2A,macroH2A.1,,368,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,NP_001231491.1,H2A,macroH2A.1,,371,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,NP_001231491.1,H2A,macroH2A.1,,371,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934043.1,H2A,macroH2A.1,,368,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934043.1,H2A,macroH2A.1,,368,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934034.1,H2A,macroH2A.1,,368,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934034.1,H2A,macroH2A.1,,368,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934024.1,H2A,macroH2A.1,,369,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934024.1,H2A,macroH2A.1,,369,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934017.1,H2A,macroH2A.1,,371,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934017.1,H2A,macroH2A.1,,371,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934013.1,H2A,macroH2A.1,,371,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934013.1,H2A,macroH2A.1,,371,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934004.1,H2A,macroH2A.1,,372,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020934004.1,H2A,macroH2A.1,,372,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020933993.1,H2A,macroH2A.1,,372,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020933993.1,H2A,macroH2A.1,,372,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020933987.1,H2A,macroH2A.1,,372,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+exact_duplicate,XP_020933987.1,H2A,macroH2A.1,,372,9823,Pig,VGNC:109808,,100512769,ENSSSCG00000014307,Sus scrofa,Artiodactyla
+empty_accession,,H2A,clustered H2A,isoform_10,127,9685,Cat,VGNC:109880,,,ENSFCAG00000041371,Felis catus,Carnivora
+empty_accession,,H2A,clustered H2A,isoform_5,167,9685,Cat,VGNC:109877,,,ENSFCAG00000052149,Felis catus,Carnivora
+empty_accession,,H2A,H2A.B,,,9913,Cattle,VGNC:83621,,788364,,Bos taurus,Artiodactyla
+empty_accession,,H2A,,,,9913,Cattle,VGNC:83544,,112443841,,Bos taurus,Artiodactyla
+empty_accession,,H2A,,,,9913,Cattle,VGNC:83554,,104968510,ENSBTAG00000007286,Bos taurus,Artiodactyla
+empty_accession,,H2A,,,,9598,Chimpanzee,VGNC:109584,,112209430.0,,Pan troglodytes,Primates
+empty_accession,,H2A,,,,9598,Chimpanzee,VGNC:109585,,471871.0,,Pan troglodytes,Primates
+empty_accession,,H2A,,,,9598,Chimpanzee,VGNC:83631,,750911.0,,Pan troglodytes,Primates
+empty_accession,,H2A,,,,9598,Chimpanzee,VGNC:95366,,116435292.0,,Pan troglodytes,Primates
+empty_accession,,H2A,H2A.B,,180.0,9615,Dog,VGNC:95381,,102152481,ENSCAFG00000031844,Canis lupus familiaris,Carnivora
+empty_accession,,H2A,clustered H2A,isoform_9,130.0,9615,Dog,VGNC:83775,,,ENSCAFG00000029260,Canis lupus familiaris,Carnivora
+empty_accession,,H2A,clustered H2A,isoform_11,128,9796,Horse,VGNC:83795,,100147394,ENSECAG00000029021,Equus caballus,Perissodactyla
+empty_accession,,H2A,,,,9544,Macaque,VGNC:109671,,106997822.0,,Macaca mulatta,Primates
+empty_accession,,H2A,,,,9544,Macaque,VGNC:109673,,106997823.0,,Macaca mulatta,Primates
+empty_accession,,H2A,,,,9544,Macaque,VGNC:109674,,114677755.0,ENSMMUG00000061046,Macaca mulatta,Primates
+empty_accession,,H2A,clustered H2A,isoform_8(?),175,9823,Pig,VGNC:109795,,,ENSSSCG00000041146,Sus scrofa,Artiodactyla
+empty_accession,,H2A,clustered H2A,isoform_2,121,9823,Pig,VGNC:109783,,102157416,ENSSSCG00000001105,Sus scrofa,Artiodactyla
+empty_accession,,H2A,,,,9823,Pig,VGNC:109785,,110261481,,Sus scrofa,Artiodactyla
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:18720,387319,ENSG00000216436,Homo sapiens,Primates
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:18804,85303,ENSG00000242387,Homo sapiens,Primates
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:4728,10341,ENSG000002348167,Homo sapiens,Primates
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:18805,387323,ENSG00000218281,Homo sapiens,Primates
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:4732,8333,ENSG00000218690,Homo sapiens,Primates
+empty_accession,,H2A,H2A.Z.1,,127,9606,Homo sapiens,,HGNC:4741,3015,ENSG00000164032,Homo sapiens,Primates
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:53962,115482715,ENSG00000285989,Homo sapiens,Primates
+empty_accession,,H2A,,,,9606,Homo sapiens,,HGNC:53961,115482687,ENSG00000285944,Homo sapiens,Primates
+dedup_key_dropped,HISTDB_H2A_L_0,H2A,H2A.L.1_(Homo_sapiens),,199,9606,Homo sapiens,,HGNC:53959,115482714,,Homo sapiens,Primates
+dedup_key_dropped,HISTDB_H2A_L_1,H2A,H2A.L.3_(Homo_sapiens),,148,9606,Homo sapiens,,HGNC:53960,115482686,,Homo sapiens,Primates

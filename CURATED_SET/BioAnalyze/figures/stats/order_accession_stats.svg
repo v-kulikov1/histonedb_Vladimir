@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="120" y="40" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">H2A Sequences by Mammalian Order</text>
+<text x="120" y="64" font-size="15" font-family="Segoe UI, Arial, sans-serif" fill="#4b5563">Total accessions and unique accessions per order</text>
+<line x1="120" y1="80" x2="120" y2="580" stroke="#374151" stroke-width="2"/>
+<line x1="120" y1="580" x2="1160" y2="580" stroke="#374151" stroke-width="2"/>
+<line x1="120" y1="580.0" x2="1160" y2="580.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="108" y="585.0" text-anchor="end" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#6b7280">0</text>
+<line x1="120" y1="480.0" x2="1160" y2="480.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="108" y="485.0" text-anchor="end" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#6b7280">60</text>
+<line x1="120" y1="380.0" x2="1160" y2="380.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="108" y="385.0" text-anchor="end" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#6b7280">120</text>
+<line x1="120" y1="280.0" x2="1160" y2="280.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="108" y="285.0" text-anchor="end" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#6b7280">180</text>
+<line x1="120" y1="180.0" x2="1160" y2="180.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="108" y="185.0" text-anchor="end" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#6b7280">240</text>
+<line x1="120" y1="80.0" x2="1160" y2="80.0" stroke="#e5e7eb" stroke-width="1"/>
+<text x="108" y="85.0" text-anchor="end" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#6b7280">300</text>
+<rect x="194.0" y="381.7" width="50.0" height="198.3" fill="#2563eb" rx="4"/>
+<text x="219.0" y="373.7" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">119</text>
+<rect x="256.0" y="455.0" width="50.0" height="125.0" fill="#10b981" rx="4"/>
+<text x="281.0" y="447.0" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">75</text>
+<text x="250.0" y="608" text-anchor="middle" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#111827">Artiodactyla</text>
+<rect x="454.0" y="138.3" width="50.0" height="441.7" fill="#2563eb" rx="4"/>
+<text x="479.0" y="130.3" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">265</text>
+<rect x="516.0" y="340.0" width="50.0" height="240.0" fill="#10b981" rx="4"/>
+<text x="541.0" y="332.0" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">144</text>
+<text x="510.0" y="608" text-anchor="middle" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#111827">Carnivora</text>
+<rect x="714.0" y="493.3" width="50.0" height="86.7" fill="#2563eb" rx="4"/>
+<text x="739.0" y="485.3" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">52</text>
+<rect x="776.0" y="525.0" width="50.0" height="55.0" fill="#10b981" rx="4"/>
+<text x="801.0" y="517.0" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">33</text>
+<text x="770.0" y="608" text-anchor="middle" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#111827">Perissodactyla</text>
+<rect x="974.0" y="291.7" width="50.0" height="288.3" fill="#2563eb" rx="4"/>
+<text x="999.0" y="283.7" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">173</text>
+<rect x="1036.0" y="400.0" width="50.0" height="180.0" fill="#10b981" rx="4"/>
+<text x="1061.0" y="392.0" text-anchor="middle" font-size="12" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">108</text>
+<text x="1030.0" y="608" text-anchor="middle" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#111827">Primates</text>
+<rect x="900" y="90" width="16" height="16" fill="#2563eb" rx="3"/>
+<text x="924" y="103" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#111827">Total accession rows</text>
+<rect x="900" y="116" width="16" height="16" fill="#10b981" rx="3"/>
+<text x="924" y="129" font-size="13" font-family="Segoe UI, Arial, sans-serif" fill="#111827">Unique accession values</text>
+</svg>

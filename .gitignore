@@ -59,3 +59,8 @@ djangophylocore/migrations
 djangophylocore/migrations/*
 CURATED_SET/curated_service/curatedDB/db_curated_server_info.txt
 .venv/
+
+# BioAnalyze raw data (stored externally)
+CURATED_SET/BioAnalyze/data/raw/*
+!CURATED_SET/BioAnalyze/data/raw/README.md
+
