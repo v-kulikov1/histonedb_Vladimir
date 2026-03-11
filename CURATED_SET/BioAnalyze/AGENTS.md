@@ -22,12 +22,23 @@ Structure:
 
 Rules:
 - All pipeline scripts must live under CURATED_SET/BioAnalyze/scripts (no scripts in data/ or elsewhere).
+- All work performed must be recorded in CURATED_SET/BioAnalyze/WORKLOG.md.
 
 Canonical output:
 - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv
 
 Worklog:
 - CURATED_SET/BioAnalyze/WORKLOG.md (detailed, chronological record of pipeline decisions and artifacts)
+
+Recent Outputs (2026-03-11)
+- CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_expr_advanced_H2A_present_gold.tsv
+- CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_all.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_clustered.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_clustered.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_variants.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_variants.svg
 
 Archive:
 - Root: CURATED_SET/BioAnalyze/archive

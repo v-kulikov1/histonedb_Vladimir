@@ -129,6 +129,43 @@ Expression Split (2026-03-11)
   - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_variants.svg
   - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_variants.png
 
+Multi-Species Heatmaps (2026-03-11)
+- New script for any species (separate file to keep prior work intact):
+  - CURATED_SET/BioAnalyze/scripts/expression/build_bgee_h2a_heatmaps_any_species.py
+- Inputs:
+  - Bgee advanced TSV for target species (all conditions)
+  - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv
+- Processing:
+  - Filter to H2A Ensembl IDs for the species
+  - Expression == present and Call quality == gold quality
+  - Build labels as GeneName:HGNC for Homo sapiens, otherwise GeneName:VGNC
+    (fallback GeneName:ENSG if ID missing)
+  - canonical == variant "clustered H2A", variants == everything else
+- Outputs (species slugged, in figures/heatmaps and data/processed):
+  - h2a_{species}_all.(svg|png)
+  - h2a_{species}_clustered.(svg|png)
+  - h2a_{species}_variants.(svg|png)
+  - {species}_expr_advanced_H2A_present_gold.tsv
+  - {species}_h2a_canonical_variant_map.tsv
+
+Pan troglodytes Heatmaps (2026-03-11)
+- Inputs:
+  - External Bgee advanced TSV:
+    C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\Pan_troglodytes_expr_advanced_all_conditions.tsv
+  - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv
+- Processing:
+  - Filtered to H2A + present + gold.
+  - Labels use GeneName:VGNC (auto ID selection for non-human species).
+- Outputs:
+  - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_expr_advanced_H2A_present_gold.tsv
+  - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_h2a_canonical_variant_map.tsv
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_all.(svg|png)
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_clustered.(svg|png)
+  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_variants.(svg|png)
+- Summary stats (from script run):
+  - Rows after filter: 746
+  - Heatmap matrix sizes: all=14x26, clustered=7x26, variants=7x26
+
 Legacy / Variant Expression Artifacts
 - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_gene_name.png
 - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_gene_name.svg

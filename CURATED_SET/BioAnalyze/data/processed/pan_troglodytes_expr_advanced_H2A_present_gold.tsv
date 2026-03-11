@@ -1,0 +1,747 @@
+Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
+ENSPTRG00000002581	MACROH2A2	fibroblast	present	gold quality	42.3
+ENSPTRG00000002581	MACROH2A2	fibroblast	present	gold quality	56.59
+ENSPTRG00000002581	MACROH2A2	pituitary gland	present	gold quality	54.01
+ENSPTRG00000002581	MACROH2A2	adult mammalian kidney	present	gold quality	61.37
+ENSPTRG00000002581	MACROH2A2	adult mammalian kidney	present	gold quality	43.33
+ENSPTRG00000002581	MACROH2A2	adult mammalian kidney	present	gold quality	61.44
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	65.27
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	70.02
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	60.76
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	64.58
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	65.11
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	64.06
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	65.58
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	68.55
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	72.32
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	72.96
+ENSPTRG00000002581	MACROH2A2	prefrontal cortex	present	gold quality	60.5
+ENSPTRG00000002581	MACROH2A2	multicellular organism	present	gold quality	63.17
+ENSPTRG00000002581	MACROH2A2	multicellular organism	present	gold quality	59.59
+ENSPTRG00000002581	MACROH2A2	testis	present	gold quality	71.52
+ENSPTRG00000002581	MACROH2A2	testis	present	gold quality	70.42
+ENSPTRG00000002581	MACROH2A2	heart	present	gold quality	68.76
+ENSPTRG00000002581	MACROH2A2	heart	present	gold quality	71.49
+ENSPTRG00000002581	MACROH2A2	heart	present	gold quality	51.89
+ENSPTRG00000002581	MACROH2A2	heart	present	gold quality	71.59
+ENSPTRG00000002581	MACROH2A2	heart	present	gold quality	70.29
+ENSPTRG00000002581	MACROH2A2	cerebral cortex	present	gold quality	65.82
+ENSPTRG00000002581	MACROH2A2	skeletal muscle tissue	present	gold quality	51.91
+ENSPTRG00000002581	MACROH2A2	colon	present	gold quality	52.83
+ENSPTRG00000002581	MACROH2A2	cortex of kidney	present	gold quality	61.48
+ENSPTRG00000002581	MACROH2A2	cortex of kidney	present	gold quality	59.72
+ENSPTRG00000002581	MACROH2A2	frontal cortex	present	gold quality	64.29
+ENSPTRG00000002581	MACROH2A2	frontal cortex	present	gold quality	72.12
+ENSPTRG00000002581	MACROH2A2	temporal lobe	present	gold quality	46.6
+ENSPTRG00000002581	MACROH2A2	cerebellum	present	gold quality	69.39
+ENSPTRG00000002581	MACROH2A2	cerebellum	present	gold quality	72.87
+ENSPTRG00000002581	MACROH2A2	cerebellum	present	gold quality	55.69
+ENSPTRG00000002581	MACROH2A2	cerebellum	present	gold quality	77.92
+ENSPTRG00000002581	MACROH2A2	liver	present	gold quality	58.33
+ENSPTRG00000002581	MACROH2A2	liver	present	gold quality	54.63
+ENSPTRG00000002581	MACROH2A2	liver	present	gold quality	61.73
+ENSPTRG00000002581	MACROH2A2	liver	present	gold quality	57.23
+ENSPTRG00000002581	MACROH2A2	liver	present	gold quality	50.84
+ENSPTRG00000002581	MACROH2A2	liver	present	gold quality	53.74
+ENSPTRG00000002581	MACROH2A2	cerebellar cortex	present	gold quality	72.9
+ENSPTRG00000002581	MACROH2A2	cerebellar cortex	present	gold quality	67.5
+ENSPTRG00000002581	MACROH2A2	cerebellar cortex	present	gold quality	68.94
+ENSPTRG00000002581	MACROH2A2	cerebellar cortex	present	gold quality	86.68
+ENSPTRG00000002581	MACROH2A2	cerebellar cortex	present	gold quality	71.58
+ENSPTRG00000002581	MACROH2A2	primary visual cortex	present	gold quality	64.57
+ENSPTRG00000002581	MACROH2A2	primary visual cortex	present	gold quality	63.39
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	69.06
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	68.22
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	64.2
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	67.52
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	66.95
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	66.99
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	78.04
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	77.83
+ENSPTRG00000002581	MACROH2A2	superior frontal gyrus	present	gold quality	76.67
+ENSPTRG00000002581	MACROH2A2	hindlimb stylopod muscle	present	gold quality	59.14
+ENSPTRG00000002581	MACROH2A2	hindlimb stylopod muscle	present	gold quality	61.41
+ENSPTRG00000002581	MACROH2A2	dorsolateral prefrontal cortex	present	gold quality	64.47
+ENSPTRG00000002581	MACROH2A2	dorsolateral prefrontal cortex	present	gold quality	63.84
+ENSPTRG00000002581	MACROH2A2	Brodmann (1909) area 10	present	gold quality	55.76
+ENSPTRG00000004369	H2AX	fibroblast	present	gold quality	88.33
+ENSPTRG00000004369	H2AX	fibroblast	present	gold quality	90.13
+ENSPTRG00000004369	H2AX	pituitary gland	present	gold quality	57.13
+ENSPTRG00000004369	H2AX	lymph node	present	gold quality	86.26
+ENSPTRG00000004369	H2AX	adult mammalian kidney	present	gold quality	76.38
+ENSPTRG00000004369	H2AX	adult mammalian kidney	present	gold quality	63.75
+ENSPTRG00000004369	H2AX	adult mammalian kidney	present	gold quality	76.82
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	85.21
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	84.09
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	79.67
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	86.55
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	85.39
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	85.36
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	85.48
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	86.43
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	83.02
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	80.42
+ENSPTRG00000004369	H2AX	prefrontal cortex	present	gold quality	86.33
+ENSPTRG00000004369	H2AX	multicellular organism	present	gold quality	83.95
+ENSPTRG00000004369	H2AX	multicellular organism	present	gold quality	81.92
+ENSPTRG00000004369	H2AX	testis	present	gold quality	73.09
+ENSPTRG00000004369	H2AX	testis	present	gold quality	80.86
+ENSPTRG00000004369	H2AX	heart	present	gold quality	79.27
+ENSPTRG00000004369	H2AX	heart	present	gold quality	69.8
+ENSPTRG00000004369	H2AX	heart	present	gold quality	76.91
+ENSPTRG00000004369	H2AX	heart	present	gold quality	65.58
+ENSPTRG00000004369	H2AX	heart	present	gold quality	70.23
+ENSPTRG00000004369	H2AX	cerebral cortex	present	gold quality	85.84
+ENSPTRG00000004369	H2AX	skeletal muscle tissue	present	gold quality	74.37
+ENSPTRG00000004369	H2AX	colon	present	gold quality	61.1
+ENSPTRG00000004369	H2AX	cortex of kidney	present	gold quality	82.93
+ENSPTRG00000004369	H2AX	cortex of kidney	present	gold quality	82.76
+ENSPTRG00000004369	H2AX	frontal cortex	present	gold quality	85.48
+ENSPTRG00000004369	H2AX	frontal cortex	present	gold quality	83.01
+ENSPTRG00000004369	H2AX	temporal lobe	present	gold quality	77.08
+ENSPTRG00000004369	H2AX	cerebellum	present	gold quality	85.09
+ENSPTRG00000004369	H2AX	cerebellum	present	gold quality	79.27
+ENSPTRG00000004369	H2AX	cerebellum	present	gold quality	76.85
+ENSPTRG00000004369	H2AX	cerebellum	present	gold quality	87.69
+ENSPTRG00000004369	H2AX	lung	present	gold quality	83.84
+ENSPTRG00000004369	H2AX	spleen	present	gold quality	86.53
+ENSPTRG00000004369	H2AX	liver	present	gold quality	70.61
+ENSPTRG00000004369	H2AX	liver	present	gold quality	77.17
+ENSPTRG00000004369	H2AX	liver	present	gold quality	78.01
+ENSPTRG00000004369	H2AX	liver	present	gold quality	73.27
+ENSPTRG00000004369	H2AX	liver	present	gold quality	87.39
+ENSPTRG00000004369	H2AX	liver	present	gold quality	80.81
+ENSPTRG00000004369	H2AX	cerebellar cortex	present	gold quality	87.66
+ENSPTRG00000004369	H2AX	cerebellar cortex	present	gold quality	89.45
+ENSPTRG00000004369	H2AX	cerebellar cortex	present	gold quality	89.18
+ENSPTRG00000004369	H2AX	cerebellar cortex	present	gold quality	86.81
+ENSPTRG00000004369	H2AX	cerebellar cortex	present	gold quality	84.16
+ENSPTRG00000004369	H2AX	thymus	present	gold quality	97.81
+ENSPTRG00000004369	H2AX	bone marrow	present	gold quality	97.47
+ENSPTRG00000004369	H2AX	primary visual cortex	present	gold quality	90.53
+ENSPTRG00000004369	H2AX	primary visual cortex	present	gold quality	89.72
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	88.4
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	86.39
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	84.74
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	86.37
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	87.94
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	86.36
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	89.37
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	85.82
+ENSPTRG00000004369	H2AX	superior frontal gyrus	present	gold quality	84.23
+ENSPTRG00000004369	H2AX	hindlimb stylopod muscle	present	gold quality	84.41
+ENSPTRG00000004369	H2AX	hindlimb stylopod muscle	present	gold quality	84.3
+ENSPTRG00000004369	H2AX	dorsolateral prefrontal cortex	present	gold quality	79.3
+ENSPTRG00000004369	H2AX	dorsolateral prefrontal cortex	present	gold quality	91.75
+ENSPTRG00000004369	H2AX	Brodmann (1909) area 10	present	gold quality	77.23
+ENSPTRG00000004723	H2AJ	fibroblast	present	gold quality	98.2
+ENSPTRG00000004723	H2AJ	fibroblast	present	gold quality	97.78
+ENSPTRG00000004723	H2AJ	pituitary gland	present	gold quality	56.72
+ENSPTRG00000004723	H2AJ	lymph node	present	gold quality	91.65
+ENSPTRG00000004723	H2AJ	adult mammalian kidney	present	gold quality	98.18
+ENSPTRG00000004723	H2AJ	adult mammalian kidney	present	gold quality	92.15
+ENSPTRG00000004723	H2AJ	adult mammalian kidney	present	gold quality	95.39
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	78.15
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	69.68
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	81.91
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	79.88
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	79.49
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	73.75
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	81.58
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	73.94
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	66.72
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	64.18
+ENSPTRG00000004723	H2AJ	prefrontal cortex	present	gold quality	73.66
+ENSPTRG00000004723	H2AJ	multicellular organism	present	gold quality	81.48
+ENSPTRG00000004723	H2AJ	multicellular organism	present	gold quality	81.16
+ENSPTRG00000004723	H2AJ	testis	present	gold quality	99.9
+ENSPTRG00000004723	H2AJ	testis	present	gold quality	99.73
+ENSPTRG00000004723	H2AJ	heart	present	gold quality	91.55
+ENSPTRG00000004723	H2AJ	heart	present	gold quality	97.22
+ENSPTRG00000004723	H2AJ	heart	present	gold quality	91.09
+ENSPTRG00000004723	H2AJ	heart	present	gold quality	92.16
+ENSPTRG00000004723	H2AJ	heart	present	gold quality	96.57
+ENSPTRG00000004723	H2AJ	cerebral cortex	present	gold quality	77.23
+ENSPTRG00000004723	H2AJ	skeletal muscle tissue	present	gold quality	87.0
+ENSPTRG00000004723	H2AJ	colon	present	gold quality	87.67
+ENSPTRG00000004723	H2AJ	cortex of kidney	present	gold quality	96.76
+ENSPTRG00000004723	H2AJ	cortex of kidney	present	gold quality	97.05
+ENSPTRG00000004723	H2AJ	frontal cortex	present	gold quality	74.9
+ENSPTRG00000004723	H2AJ	frontal cortex	present	gold quality	75.46
+ENSPTRG00000004723	H2AJ	temporal lobe	present	gold quality	59.33
+ENSPTRG00000004723	H2AJ	cerebellum	present	gold quality	74.34
+ENSPTRG00000004723	H2AJ	cerebellum	present	gold quality	86.43
+ENSPTRG00000004723	H2AJ	cerebellum	present	gold quality	63.29
+ENSPTRG00000004723	H2AJ	cerebellum	present	gold quality	72.78
+ENSPTRG00000004723	H2AJ	lung	present	gold quality	90.1
+ENSPTRG00000004723	H2AJ	spleen	present	gold quality	91.67
+ENSPTRG00000004723	H2AJ	liver	present	gold quality	95.69
+ENSPTRG00000004723	H2AJ	liver	present	gold quality	95.52
+ENSPTRG00000004723	H2AJ	liver	present	gold quality	98.64
+ENSPTRG00000004723	H2AJ	liver	present	gold quality	95.3
+ENSPTRG00000004723	H2AJ	liver	present	gold quality	97.71
+ENSPTRG00000004723	H2AJ	liver	present	gold quality	98.04
+ENSPTRG00000004723	H2AJ	cerebellar cortex	present	gold quality	77.4
+ENSPTRG00000004723	H2AJ	cerebellar cortex	present	gold quality	77.05
+ENSPTRG00000004723	H2AJ	cerebellar cortex	present	gold quality	73.9
+ENSPTRG00000004723	H2AJ	cerebellar cortex	present	gold quality	79.81
+ENSPTRG00000004723	H2AJ	cerebellar cortex	present	gold quality	80.63
+ENSPTRG00000004723	H2AJ	thymus	present	gold quality	92.38
+ENSPTRG00000004723	H2AJ	bone marrow	present	gold quality	94.99
+ENSPTRG00000004723	H2AJ	primary visual cortex	present	gold quality	79.02
+ENSPTRG00000004723	H2AJ	primary visual cortex	present	gold quality	72.66
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	77.94
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	76.71
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	77.47
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	83.27
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	80.59
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	75.9
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	72.66
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	80.85
+ENSPTRG00000004723	H2AJ	superior frontal gyrus	present	gold quality	86.44
+ENSPTRG00000004723	H2AJ	hindlimb stylopod muscle	present	gold quality	92.05
+ENSPTRG00000004723	H2AJ	hindlimb stylopod muscle	present	gold quality	88.98
+ENSPTRG00000004723	H2AJ	dorsolateral prefrontal cortex	present	gold quality	72.36
+ENSPTRG00000004723	H2AJ	dorsolateral prefrontal cortex	present	gold quality	76.98
+ENSPTRG00000004723	H2AJ	Brodmann (1909) area 10	present	gold quality	50.04
+ENSPTRG00000016312	H2AZ1	fibroblast	present	gold quality	99.0
+ENSPTRG00000016312	H2AZ1	fibroblast	present	gold quality	99.08
+ENSPTRG00000016312	H2AZ1	pituitary gland	present	gold quality	95.66
+ENSPTRG00000016312	H2AZ1	lymph node	present	gold quality	95.48
+ENSPTRG00000016312	H2AZ1	adult mammalian kidney	present	gold quality	95.53
+ENSPTRG00000016312	H2AZ1	adult mammalian kidney	present	gold quality	94.94
+ENSPTRG00000016312	H2AZ1	adult mammalian kidney	present	gold quality	96.41
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.73
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.33
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.21
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	96.92
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.89
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.89
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.89
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.63
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	96.93
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.22
+ENSPTRG00000016312	H2AZ1	prefrontal cortex	present	gold quality	97.75
+ENSPTRG00000016312	H2AZ1	multicellular organism	present	gold quality	96.86
+ENSPTRG00000016312	H2AZ1	multicellular organism	present	gold quality	96.43
+ENSPTRG00000016312	H2AZ1	testis	present	gold quality	98.64
+ENSPTRG00000016312	H2AZ1	testis	present	gold quality	98.64
+ENSPTRG00000016312	H2AZ1	heart	present	gold quality	94.9
+ENSPTRG00000016312	H2AZ1	heart	present	gold quality	93.28
+ENSPTRG00000016312	H2AZ1	heart	present	gold quality	93.52
+ENSPTRG00000016312	H2AZ1	heart	present	gold quality	92.38
+ENSPTRG00000016312	H2AZ1	heart	present	gold quality	95.58
+ENSPTRG00000016312	H2AZ1	cerebral cortex	present	gold quality	97.76
+ENSPTRG00000016312	H2AZ1	skeletal muscle tissue	present	gold quality	92.47
+ENSPTRG00000016312	H2AZ1	colon	present	gold quality	94.07
+ENSPTRG00000016312	H2AZ1	cortex of kidney	present	gold quality	94.32
+ENSPTRG00000016312	H2AZ1	cortex of kidney	present	gold quality	94.62
+ENSPTRG00000016312	H2AZ1	frontal cortex	present	gold quality	97.92
+ENSPTRG00000016312	H2AZ1	frontal cortex	present	gold quality	97.47
+ENSPTRG00000016312	H2AZ1	temporal lobe	present	gold quality	96.17
+ENSPTRG00000016312	H2AZ1	cerebellum	present	gold quality	97.37
+ENSPTRG00000016312	H2AZ1	cerebellum	present	gold quality	96.73
+ENSPTRG00000016312	H2AZ1	cerebellum	present	gold quality	96.07
+ENSPTRG00000016312	H2AZ1	cerebellum	present	gold quality	97.53
+ENSPTRG00000016312	H2AZ1	lung	present	gold quality	94.87
+ENSPTRG00000016312	H2AZ1	spleen	present	gold quality	96.86
+ENSPTRG00000016312	H2AZ1	liver	present	gold quality	92.49
+ENSPTRG00000016312	H2AZ1	liver	present	gold quality	93.07
+ENSPTRG00000016312	H2AZ1	liver	present	gold quality	96.99
+ENSPTRG00000016312	H2AZ1	liver	present	gold quality	91.28
+ENSPTRG00000016312	H2AZ1	liver	present	gold quality	92.17
+ENSPTRG00000016312	H2AZ1	liver	present	gold quality	95.52
+ENSPTRG00000016312	H2AZ1	cerebellar cortex	present	gold quality	97.79
+ENSPTRG00000016312	H2AZ1	cerebellar cortex	present	gold quality	97.26
+ENSPTRG00000016312	H2AZ1	cerebellar cortex	present	gold quality	97.67
+ENSPTRG00000016312	H2AZ1	cerebellar cortex	present	gold quality	98.8
+ENSPTRG00000016312	H2AZ1	cerebellar cortex	present	gold quality	97.71
+ENSPTRG00000016312	H2AZ1	thymus	present	gold quality	98.34
+ENSPTRG00000016312	H2AZ1	bone marrow	present	gold quality	97.68
+ENSPTRG00000016312	H2AZ1	primary visual cortex	present	gold quality	97.36
+ENSPTRG00000016312	H2AZ1	primary visual cortex	present	gold quality	97.42
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	97.95
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	97.95
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	98.1
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	98.18
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	98.17
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	98.2
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	98.22
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	97.82
+ENSPTRG00000016312	H2AZ1	superior frontal gyrus	present	gold quality	97.79
+ENSPTRG00000016312	H2AZ1	hindlimb stylopod muscle	present	gold quality	93.78
+ENSPTRG00000016312	H2AZ1	hindlimb stylopod muscle	present	gold quality	93.3
+ENSPTRG00000016312	H2AZ1	dorsolateral prefrontal cortex	present	gold quality	97.42
+ENSPTRG00000016312	H2AZ1	dorsolateral prefrontal cortex	present	gold quality	97.18
+ENSPTRG00000016312	H2AZ1	Brodmann (1909) area 10	present	gold quality	98.75
+ENSPTRG00000017256	MACROH2A1	fibroblast	present	gold quality	92.84
+ENSPTRG00000017256	MACROH2A1	fibroblast	present	gold quality	92.58
+ENSPTRG00000017256	MACROH2A1	pituitary gland	present	gold quality	94.07
+ENSPTRG00000017256	MACROH2A1	lymph node	present	gold quality	88.06
+ENSPTRG00000017256	MACROH2A1	adult mammalian kidney	present	gold quality	92.8
+ENSPTRG00000017256	MACROH2A1	adult mammalian kidney	present	gold quality	84.59
+ENSPTRG00000017256	MACROH2A1	adult mammalian kidney	present	gold quality	92.52
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.64
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	94.55
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.65
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.45
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.62
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.16
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.78
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.75
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	94.76
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	96.78
+ENSPTRG00000017256	MACROH2A1	prefrontal cortex	present	gold quality	93.17
+ENSPTRG00000017256	MACROH2A1	multicellular organism	present	gold quality	92.67
+ENSPTRG00000017256	MACROH2A1	multicellular organism	present	gold quality	92.1
+ENSPTRG00000017256	MACROH2A1	testis	present	gold quality	83.42
+ENSPTRG00000017256	MACROH2A1	testis	present	gold quality	86.35
+ENSPTRG00000017256	MACROH2A1	heart	present	gold quality	91.8
+ENSPTRG00000017256	MACROH2A1	heart	present	gold quality	94.05
+ENSPTRG00000017256	MACROH2A1	heart	present	gold quality	90.05
+ENSPTRG00000017256	MACROH2A1	heart	present	gold quality	93.07
+ENSPTRG00000017256	MACROH2A1	heart	present	gold quality	91.75
+ENSPTRG00000017256	MACROH2A1	cerebral cortex	present	gold quality	93.49
+ENSPTRG00000017256	MACROH2A1	skeletal muscle tissue	present	gold quality	89.71
+ENSPTRG00000017256	MACROH2A1	colon	present	gold quality	85.28
+ENSPTRG00000017256	MACROH2A1	cortex of kidney	present	gold quality	92.09
+ENSPTRG00000017256	MACROH2A1	cortex of kidney	present	gold quality	91.95
+ENSPTRG00000017256	MACROH2A1	frontal cortex	present	gold quality	92.98
+ENSPTRG00000017256	MACROH2A1	frontal cortex	present	gold quality	93.99
+ENSPTRG00000017256	MACROH2A1	temporal lobe	present	gold quality	86.72
+ENSPTRG00000017256	MACROH2A1	cerebellum	present	gold quality	94.88
+ENSPTRG00000017256	MACROH2A1	cerebellum	present	gold quality	96.73
+ENSPTRG00000017256	MACROH2A1	cerebellum	present	gold quality	92.09
+ENSPTRG00000017256	MACROH2A1	cerebellum	present	gold quality	96.89
+ENSPTRG00000017256	MACROH2A1	lung	present	gold quality	90.09
+ENSPTRG00000017256	MACROH2A1	spleen	present	gold quality	85.24
+ENSPTRG00000017256	MACROH2A1	liver	present	gold quality	89.93
+ENSPTRG00000017256	MACROH2A1	liver	present	gold quality	90.79
+ENSPTRG00000017256	MACROH2A1	liver	present	gold quality	93.93
+ENSPTRG00000017256	MACROH2A1	liver	present	gold quality	81.97
+ENSPTRG00000017256	MACROH2A1	liver	present	gold quality	91.4
+ENSPTRG00000017256	MACROH2A1	liver	present	gold quality	88.82
+ENSPTRG00000017256	MACROH2A1	cerebellar cortex	present	gold quality	95.2
+ENSPTRG00000017256	MACROH2A1	cerebellar cortex	present	gold quality	94.19
+ENSPTRG00000017256	MACROH2A1	cerebellar cortex	present	gold quality	95.04
+ENSPTRG00000017256	MACROH2A1	cerebellar cortex	present	gold quality	96.62
+ENSPTRG00000017256	MACROH2A1	cerebellar cortex	present	gold quality	95.55
+ENSPTRG00000017256	MACROH2A1	thymus	present	gold quality	94.07
+ENSPTRG00000017256	MACROH2A1	bone marrow	present	gold quality	94.62
+ENSPTRG00000017256	MACROH2A1	primary visual cortex	present	gold quality	93.01
+ENSPTRG00000017256	MACROH2A1	primary visual cortex	present	gold quality	93.02
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	93.74
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	93.56
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	93.46
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	94.22
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	93.48
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	93.5
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	95.38
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	94.27
+ENSPTRG00000017256	MACROH2A1	superior frontal gyrus	present	gold quality	94.99
+ENSPTRG00000017256	MACROH2A1	hindlimb stylopod muscle	present	gold quality	92.9
+ENSPTRG00000017256	MACROH2A1	hindlimb stylopod muscle	present	gold quality	91.92
+ENSPTRG00000017256	MACROH2A1	dorsolateral prefrontal cortex	present	gold quality	92.82
+ENSPTRG00000017256	MACROH2A1	dorsolateral prefrontal cortex	present	gold quality	92.4
+ENSPTRG00000017256	MACROH2A1	Brodmann (1909) area 10	present	gold quality	92.33
+ENSPTRG00000017789	H2AC1	adult mammalian kidney	present	gold quality	41.98
+ENSPTRG00000017789	H2AC1	multicellular organism	present	gold quality	20.67
+ENSPTRG00000017789	H2AC1	testis	present	gold quality	87.03
+ENSPTRG00000017789	H2AC1	testis	present	gold quality	76.86
+ENSPTRG00000017789	H2AC1	cortex of kidney	present	gold quality	26.08
+ENSPTRG00000019153	H2AZ2	fibroblast	present	gold quality	88.9
+ENSPTRG00000019153	H2AZ2	fibroblast	present	gold quality	89.15
+ENSPTRG00000019153	H2AZ2	pituitary gland	present	gold quality	79.95
+ENSPTRG00000019153	H2AZ2	lymph node	present	gold quality	82.34
+ENSPTRG00000019153	H2AZ2	adult mammalian kidney	present	gold quality	89.25
+ENSPTRG00000019153	H2AZ2	adult mammalian kidney	present	gold quality	85.42
+ENSPTRG00000019153	H2AZ2	adult mammalian kidney	present	gold quality	92.78
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	87.17
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	84.78
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	89.09
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	87.72
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	87.39
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	86.58
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	87.69
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	83.26
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	83.74
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	94.77
+ENSPTRG00000019153	H2AZ2	prefrontal cortex	present	gold quality	86.92
+ENSPTRG00000019153	H2AZ2	multicellular organism	present	gold quality	87.57
+ENSPTRG00000019153	H2AZ2	multicellular organism	present	gold quality	87.58
+ENSPTRG00000019153	H2AZ2	testis	present	gold quality	92.2
+ENSPTRG00000019153	H2AZ2	testis	present	gold quality	87.48
+ENSPTRG00000019153	H2AZ2	heart	present	gold quality	91.86
+ENSPTRG00000019153	H2AZ2	heart	present	gold quality	96.21
+ENSPTRG00000019153	H2AZ2	heart	present	gold quality	92.0
+ENSPTRG00000019153	H2AZ2	heart	present	gold quality	96.64
+ENSPTRG00000019153	H2AZ2	heart	present	gold quality	92.29
+ENSPTRG00000019153	H2AZ2	cerebral cortex	present	gold quality	86.95
+ENSPTRG00000019153	H2AZ2	skeletal muscle tissue	present	gold quality	91.66
+ENSPTRG00000019153	H2AZ2	colon	present	gold quality	95.51
+ENSPTRG00000019153	H2AZ2	cortex of kidney	present	gold quality	86.31
+ENSPTRG00000019153	H2AZ2	cortex of kidney	present	gold quality	86.08
+ENSPTRG00000019153	H2AZ2	frontal cortex	present	gold quality	86.27
+ENSPTRG00000019153	H2AZ2	frontal cortex	present	gold quality	85.59
+ENSPTRG00000019153	H2AZ2	temporal lobe	present	gold quality	88.16
+ENSPTRG00000019153	H2AZ2	cerebellum	present	gold quality	92.7
+ENSPTRG00000019153	H2AZ2	cerebellum	present	gold quality	93.6
+ENSPTRG00000019153	H2AZ2	cerebellum	present	gold quality	93.53
+ENSPTRG00000019153	H2AZ2	cerebellum	present	gold quality	93.69
+ENSPTRG00000019153	H2AZ2	lung	present	gold quality	87.18
+ENSPTRG00000019153	H2AZ2	spleen	present	gold quality	84.4
+ENSPTRG00000019153	H2AZ2	liver	present	gold quality	85.55
+ENSPTRG00000019153	H2AZ2	liver	present	gold quality	87.72
+ENSPTRG00000019153	H2AZ2	liver	present	gold quality	88.24
+ENSPTRG00000019153	H2AZ2	liver	present	gold quality	82.77
+ENSPTRG00000019153	H2AZ2	liver	present	gold quality	90.92
+ENSPTRG00000019153	H2AZ2	liver	present	gold quality	83.64
+ENSPTRG00000019153	H2AZ2	cerebellar cortex	present	gold quality	92.18
+ENSPTRG00000019153	H2AZ2	cerebellar cortex	present	gold quality	92.95
+ENSPTRG00000019153	H2AZ2	cerebellar cortex	present	gold quality	93.36
+ENSPTRG00000019153	H2AZ2	cerebellar cortex	present	gold quality	92.93
+ENSPTRG00000019153	H2AZ2	cerebellar cortex	present	gold quality	88.68
+ENSPTRG00000019153	H2AZ2	thymus	present	gold quality	93.12
+ENSPTRG00000019153	H2AZ2	bone marrow	present	gold quality	92.87
+ENSPTRG00000019153	H2AZ2	primary visual cortex	present	gold quality	88.6
+ENSPTRG00000019153	H2AZ2	primary visual cortex	present	gold quality	87.62
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	86.17
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	85.93
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	85.21
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	86.03
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	85.38
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	85.19
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	86.15
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	86.78
+ENSPTRG00000019153	H2AZ2	superior frontal gyrus	present	gold quality	90.8
+ENSPTRG00000019153	H2AZ2	hindlimb stylopod muscle	present	gold quality	90.52
+ENSPTRG00000019153	H2AZ2	hindlimb stylopod muscle	present	gold quality	89.78
+ENSPTRG00000019153	H2AZ2	dorsolateral prefrontal cortex	present	gold quality	91.08
+ENSPTRG00000019153	H2AZ2	dorsolateral prefrontal cortex	present	gold quality	88.38
+ENSPTRG00000019153	H2AZ2	Brodmann (1909) area 10	present	gold quality	91.81
+ENSPTRG00000021794	H2AP	multicellular organism	present	gold quality	20.3
+ENSPTRG00000021794	H2AP	testis	present	gold quality	95.44
+ENSPTRG00000021794	H2AP	testis	present	gold quality	98.28
+ENSPTRG00000021794	H2AP	heart	present	gold quality	24.98
+ENSPTRG00000021794	H2AP	heart	present	gold quality	52.86
+ENSPTRG00000043682	H2AC6	fibroblast	present	gold quality	96.52
+ENSPTRG00000043682	H2AC6	fibroblast	present	gold quality	95.31
+ENSPTRG00000043682	H2AC6	pituitary gland	present	gold quality	96.55
+ENSPTRG00000043682	H2AC6	lymph node	present	gold quality	96.78
+ENSPTRG00000043682	H2AC6	adult mammalian kidney	present	gold quality	79.84
+ENSPTRG00000043682	H2AC6	adult mammalian kidney	present	gold quality	97.47
+ENSPTRG00000043682	H2AC6	adult mammalian kidney	present	gold quality	95.49
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	81.03
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	64.92
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	61.43
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	80.03
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	84.23
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	81.24
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	85.38
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	76.66
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	54.82
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	80.38
+ENSPTRG00000043682	H2AC6	prefrontal cortex	present	gold quality	66.32
+ENSPTRG00000043682	H2AC6	multicellular organism	present	gold quality	82.43
+ENSPTRG00000043682	H2AC6	multicellular organism	present	gold quality	84.15
+ENSPTRG00000043682	H2AC6	testis	present	gold quality	52.16
+ENSPTRG00000043682	H2AC6	testis	present	gold quality	62.69
+ENSPTRG00000043682	H2AC6	heart	present	gold quality	90.77
+ENSPTRG00000043682	H2AC6	heart	present	gold quality	90.68
+ENSPTRG00000043682	H2AC6	heart	present	gold quality	93.58
+ENSPTRG00000043682	H2AC6	heart	present	gold quality	88.52
+ENSPTRG00000043682	H2AC6	heart	present	gold quality	86.31
+ENSPTRG00000043682	H2AC6	cerebral cortex	present	gold quality	79.31
+ENSPTRG00000043682	H2AC6	skeletal muscle tissue	present	gold quality	95.24
+ENSPTRG00000043682	H2AC6	colon	present	gold quality	96.37
+ENSPTRG00000043682	H2AC6	cortex of kidney	present	gold quality	93.37
+ENSPTRG00000043682	H2AC6	cortex of kidney	present	gold quality	95.83
+ENSPTRG00000043682	H2AC6	frontal cortex	present	gold quality	79.6
+ENSPTRG00000043682	H2AC6	frontal cortex	present	gold quality	62.4
+ENSPTRG00000043682	H2AC6	temporal lobe	present	gold quality	93.15
+ENSPTRG00000043682	H2AC6	cerebellum	present	gold quality	79.17
+ENSPTRG00000043682	H2AC6	cerebellum	present	gold quality	63.89
+ENSPTRG00000043682	H2AC6	cerebellum	present	gold quality	76.01
+ENSPTRG00000043682	H2AC6	cerebellum	present	gold quality	89.54
+ENSPTRG00000043682	H2AC6	lung	present	gold quality	95.96
+ENSPTRG00000043682	H2AC6	spleen	present	gold quality	96.45
+ENSPTRG00000043682	H2AC6	liver	present	gold quality	88.41
+ENSPTRG00000043682	H2AC6	liver	present	gold quality	87.23
+ENSPTRG00000043682	H2AC6	liver	present	gold quality	88.93
+ENSPTRG00000043682	H2AC6	liver	present	gold quality	94.2
+ENSPTRG00000043682	H2AC6	liver	present	gold quality	92.81
+ENSPTRG00000043682	H2AC6	liver	present	gold quality	88.75
+ENSPTRG00000043682	H2AC6	cerebellar cortex	present	gold quality	80.49
+ENSPTRG00000043682	H2AC6	cerebellar cortex	present	gold quality	88.69
+ENSPTRG00000043682	H2AC6	cerebellar cortex	present	gold quality	73.22
+ENSPTRG00000043682	H2AC6	cerebellar cortex	present	gold quality	78.17
+ENSPTRG00000043682	H2AC6	cerebellar cortex	present	gold quality	81.86
+ENSPTRG00000043682	H2AC6	thymus	present	gold quality	99.61
+ENSPTRG00000043682	H2AC6	bone marrow	present	gold quality	99.25
+ENSPTRG00000043682	H2AC6	primary visual cortex	present	gold quality	83.8
+ENSPTRG00000043682	H2AC6	primary visual cortex	present	gold quality	78.34
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	76.79
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	74.19
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	67.85
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	78.8
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	74.25
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	76.41
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	77.76
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	64.11
+ENSPTRG00000043682	H2AC6	superior frontal gyrus	present	gold quality	80.9
+ENSPTRG00000043682	H2AC6	hindlimb stylopod muscle	present	gold quality	88.03
+ENSPTRG00000043682	H2AC6	hindlimb stylopod muscle	present	gold quality	91.17
+ENSPTRG00000043682	H2AC6	dorsolateral prefrontal cortex	present	gold quality	72.57
+ENSPTRG00000043682	H2AC6	dorsolateral prefrontal cortex	present	gold quality	85.74
+ENSPTRG00000043682	H2AC6	Brodmann (1909) area 10	present	gold quality	63.22
+ENSPTRG00000045582	H2AC8	fibroblast	present	gold quality	63.76
+ENSPTRG00000045582	H2AC8	fibroblast	present	gold quality	63.11
+ENSPTRG00000045582	H2AC8	pituitary gland	present	gold quality	68.83
+ENSPTRG00000045582	H2AC8	lymph node	present	gold quality	81.6
+ENSPTRG00000045582	H2AC8	adult mammalian kidney	present	gold quality	48.33
+ENSPTRG00000045582	H2AC8	adult mammalian kidney	present	gold quality	58.88
+ENSPTRG00000045582	H2AC8	adult mammalian kidney	present	gold quality	56.2
+ENSPTRG00000045582	H2AC8	prefrontal cortex	present	gold quality	46.39
+ENSPTRG00000045582	H2AC8	prefrontal cortex	present	gold quality	39.03
+ENSPTRG00000045582	H2AC8	prefrontal cortex	present	gold quality	47.74
+ENSPTRG00000045582	H2AC8	prefrontal cortex	present	gold quality	45.33
+ENSPTRG00000045582	H2AC8	prefrontal cortex	present	gold quality	48.68
+ENSPTRG00000045582	H2AC8	prefrontal cortex	present	gold quality	45.65
+ENSPTRG00000045582	H2AC8	multicellular organism	present	gold quality	49.27
+ENSPTRG00000045582	H2AC8	multicellular organism	present	gold quality	51.97
+ENSPTRG00000045582	H2AC8	testis	present	gold quality	67.57
+ENSPTRG00000045582	H2AC8	testis	present	gold quality	74.3
+ENSPTRG00000045582	H2AC8	heart	present	gold quality	68.04
+ENSPTRG00000045582	H2AC8	heart	present	gold quality	64.02
+ENSPTRG00000045582	H2AC8	heart	present	gold quality	69.83
+ENSPTRG00000045582	H2AC8	heart	present	gold quality	57.13
+ENSPTRG00000045582	H2AC8	heart	present	gold quality	63.33
+ENSPTRG00000045582	H2AC8	cerebral cortex	present	gold quality	45.23
+ENSPTRG00000045582	H2AC8	skeletal muscle tissue	present	gold quality	65.06
+ENSPTRG00000045582	H2AC8	colon	present	gold quality	74.28
+ENSPTRG00000045582	H2AC8	cortex of kidney	present	gold quality	56.82
+ENSPTRG00000045582	H2AC8	cortex of kidney	present	gold quality	57.29
+ENSPTRG00000045582	H2AC8	frontal cortex	present	gold quality	47.76
+ENSPTRG00000045582	H2AC8	frontal cortex	present	gold quality	45.82
+ENSPTRG00000045582	H2AC8	temporal lobe	present	gold quality	91.64
+ENSPTRG00000045582	H2AC8	cerebellum	present	gold quality	50.71
+ENSPTRG00000045582	H2AC8	cerebellum	present	gold quality	55.26
+ENSPTRG00000045582	H2AC8	lung	present	gold quality	68.72
+ENSPTRG00000045582	H2AC8	spleen	present	gold quality	76.18
+ENSPTRG00000045582	H2AC8	liver	present	gold quality	39.07
+ENSPTRG00000045582	H2AC8	liver	present	gold quality	44.0
+ENSPTRG00000045582	H2AC8	liver	present	gold quality	56.2
+ENSPTRG00000045582	H2AC8	liver	present	gold quality	50.05
+ENSPTRG00000045582	H2AC8	liver	present	gold quality	51.27
+ENSPTRG00000045582	H2AC8	cerebellar cortex	present	gold quality	51.82
+ENSPTRG00000045582	H2AC8	cerebellar cortex	present	gold quality	58.39
+ENSPTRG00000045582	H2AC8	cerebellar cortex	present	gold quality	55.54
+ENSPTRG00000045582	H2AC8	cerebellar cortex	present	gold quality	48.46
+ENSPTRG00000045582	H2AC8	cerebellar cortex	present	gold quality	39.77
+ENSPTRG00000045582	H2AC8	thymus	present	gold quality	99.55
+ENSPTRG00000045582	H2AC8	bone marrow	present	gold quality	99.38
+ENSPTRG00000045582	H2AC8	primary visual cortex	present	gold quality	57.04
+ENSPTRG00000045582	H2AC8	primary visual cortex	present	gold quality	53.57
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	40.6
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	41.22
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	46.37
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	44.95
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	46.98
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	34.74
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	52.12
+ENSPTRG00000045582	H2AC8	superior frontal gyrus	present	gold quality	47.96
+ENSPTRG00000045582	H2AC8	hindlimb stylopod muscle	present	gold quality	50.81
+ENSPTRG00000045582	H2AC8	hindlimb stylopod muscle	present	gold quality	40.05
+ENSPTRG00000045582	H2AC8	dorsolateral prefrontal cortex	present	gold quality	32.79
+ENSPTRG00000045582	H2AC8	dorsolateral prefrontal cortex	present	gold quality	41.73
+ENSPTRG00000045582	H2AC8	Brodmann (1909) area 10	present	gold quality	42.41
+ENSPTRG00000045889	H2AC14	fibroblast	present	gold quality	60.93
+ENSPTRG00000045889	H2AC14	fibroblast	present	gold quality	58.24
+ENSPTRG00000045889	H2AC14	lymph node	present	gold quality	75.25
+ENSPTRG00000045889	H2AC14	prefrontal cortex	present	gold quality	25.55
+ENSPTRG00000045889	H2AC14	prefrontal cortex	present	gold quality	26.95
+ENSPTRG00000045889	H2AC14	prefrontal cortex	present	gold quality	25.59
+ENSPTRG00000045889	H2AC14	prefrontal cortex	present	gold quality	27.75
+ENSPTRG00000045889	H2AC14	multicellular organism	present	gold quality	27.88
+ENSPTRG00000045889	H2AC14	multicellular organism	present	gold quality	29.72
+ENSPTRG00000045889	H2AC14	heart	present	gold quality	44.61
+ENSPTRG00000045889	H2AC14	cerebral cortex	present	gold quality	25.39
+ENSPTRG00000045889	H2AC14	skeletal muscle tissue	present	gold quality	45.68
+ENSPTRG00000045889	H2AC14	cortex of kidney	present	gold quality	33.14
+ENSPTRG00000045889	H2AC14	frontal cortex	present	gold quality	25.37
+ENSPTRG00000045889	H2AC14	spleen	present	gold quality	64.72
+ENSPTRG00000045889	H2AC14	liver	present	gold quality	49.67
+ENSPTRG00000045889	H2AC14	liver	present	gold quality	27.65
+ENSPTRG00000045889	H2AC14	thymus	present	gold quality	99.15
+ENSPTRG00000045889	H2AC14	bone marrow	present	gold quality	99.63
+ENSPTRG00000045889	H2AC14	superior frontal gyrus	present	gold quality	22.52
+ENSPTRG00000045889	H2AC14	superior frontal gyrus	present	gold quality	27.95
+ENSPTRG00000045889	H2AC14	superior frontal gyrus	present	gold quality	25.04
+ENSPTRG00000045889	H2AC14	dorsolateral prefrontal cortex	present	gold quality	30.5
+ENSPTRG00000046303	H2AC19	fibroblast	present	gold quality	88.53
+ENSPTRG00000046303	H2AC19	fibroblast	present	gold quality	82.89
+ENSPTRG00000046303	H2AC19	pituitary gland	present	gold quality	83.89
+ENSPTRG00000046303	H2AC19	lymph node	present	gold quality	97.49
+ENSPTRG00000046303	H2AC19	adult mammalian kidney	present	gold quality	89.84
+ENSPTRG00000046303	H2AC19	adult mammalian kidney	present	gold quality	94.24
+ENSPTRG00000046303	H2AC19	adult mammalian kidney	present	gold quality	93.75
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	77.54
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	71.19
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	71.22
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	70.04
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	78.72
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	69.33
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	82.01
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	74.62
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	68.64
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	73.59
+ENSPTRG00000046303	H2AC19	prefrontal cortex	present	gold quality	71.1
+ENSPTRG00000046303	H2AC19	multicellular organism	present	gold quality	79.09
+ENSPTRG00000046303	H2AC19	multicellular organism	present	gold quality	79.59
+ENSPTRG00000046303	H2AC19	testis	present	gold quality	92.68
+ENSPTRG00000046303	H2AC19	testis	present	gold quality	98.96
+ENSPTRG00000046303	H2AC19	heart	present	gold quality	56.2
+ENSPTRG00000046303	H2AC19	heart	present	gold quality	78.79
+ENSPTRG00000046303	H2AC19	heart	present	gold quality	92.72
+ENSPTRG00000046303	H2AC19	heart	present	gold quality	73.85
+ENSPTRG00000046303	H2AC19	heart	present	gold quality	88.34
+ENSPTRG00000046303	H2AC19	cerebral cortex	present	gold quality	76.2
+ENSPTRG00000046303	H2AC19	skeletal muscle tissue	present	gold quality	87.17
+ENSPTRG00000046303	H2AC19	colon	present	gold quality	91.71
+ENSPTRG00000046303	H2AC19	cortex of kidney	present	gold quality	95.94
+ENSPTRG00000046303	H2AC19	cortex of kidney	present	gold quality	95.75
+ENSPTRG00000046303	H2AC19	frontal cortex	present	gold quality	72.4
+ENSPTRG00000046303	H2AC19	frontal cortex	present	gold quality	75.49
+ENSPTRG00000046303	H2AC19	temporal lobe	present	gold quality	83.65
+ENSPTRG00000046303	H2AC19	cerebellum	present	gold quality	81.04
+ENSPTRG00000046303	H2AC19	cerebellum	present	gold quality	74.57
+ENSPTRG00000046303	H2AC19	cerebellum	present	gold quality	68.03
+ENSPTRG00000046303	H2AC19	cerebellum	present	gold quality	81.36
+ENSPTRG00000046303	H2AC19	lung	present	gold quality	95.34
+ENSPTRG00000046303	H2AC19	spleen	present	gold quality	97.32
+ENSPTRG00000046303	H2AC19	liver	present	gold quality	83.52
+ENSPTRG00000046303	H2AC19	liver	present	gold quality	90.55
+ENSPTRG00000046303	H2AC19	liver	present	gold quality	92.38
+ENSPTRG00000046303	H2AC19	liver	present	gold quality	90.29
+ENSPTRG00000046303	H2AC19	liver	present	gold quality	90.11
+ENSPTRG00000046303	H2AC19	liver	present	gold quality	90.9
+ENSPTRG00000046303	H2AC19	cerebellar cortex	present	gold quality	87.98
+ENSPTRG00000046303	H2AC19	cerebellar cortex	present	gold quality	88.81
+ENSPTRG00000046303	H2AC19	cerebellar cortex	present	gold quality	86.5
+ENSPTRG00000046303	H2AC19	cerebellar cortex	present	gold quality	90.6
+ENSPTRG00000046303	H2AC19	cerebellar cortex	present	gold quality	86.65
+ENSPTRG00000046303	H2AC19	thymus	present	gold quality	99.76
+ENSPTRG00000046303	H2AC19	bone marrow	present	gold quality	99.75
+ENSPTRG00000046303	H2AC19	primary visual cortex	present	gold quality	79.15
+ENSPTRG00000046303	H2AC19	primary visual cortex	present	gold quality	73.02
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	76.44
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	75.92
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	73.91
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	75.23
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	78.06
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	75.67
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	73.04
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	78.98
+ENSPTRG00000046303	H2AC19	superior frontal gyrus	present	gold quality	82.35
+ENSPTRG00000046303	H2AC19	hindlimb stylopod muscle	present	gold quality	72.89
+ENSPTRG00000046303	H2AC19	hindlimb stylopod muscle	present	gold quality	78.33
+ENSPTRG00000046303	H2AC19	dorsolateral prefrontal cortex	present	gold quality	66.48
+ENSPTRG00000046303	H2AC19	dorsolateral prefrontal cortex	present	gold quality	71.5
+ENSPTRG00000046303	H2AC19	Brodmann (1909) area 10	present	gold quality	32.56
+ENSPTRG00000047219	H2AC21	pituitary gland	present	gold quality	65.27
+ENSPTRG00000047219	H2AC21	lymph node	present	gold quality	80.35
+ENSPTRG00000047219	H2AC21	adult mammalian kidney	present	gold quality	74.35
+ENSPTRG00000047219	H2AC21	prefrontal cortex	present	gold quality	26.68
+ENSPTRG00000047219	H2AC21	prefrontal cortex	present	gold quality	26.52
+ENSPTRG00000047219	H2AC21	prefrontal cortex	present	gold quality	26.67
+ENSPTRG00000047219	H2AC21	multicellular organism	present	gold quality	32.36
+ENSPTRG00000047219	H2AC21	multicellular organism	present	gold quality	38.28
+ENSPTRG00000047219	H2AC21	heart	present	gold quality	34.26
+ENSPTRG00000047219	H2AC21	heart	present	gold quality	57.31
+ENSPTRG00000047219	H2AC21	cerebral cortex	present	gold quality	27.24
+ENSPTRG00000047219	H2AC21	skeletal muscle tissue	present	gold quality	62.41
+ENSPTRG00000047219	H2AC21	colon	present	gold quality	61.73
+ENSPTRG00000047219	H2AC21	cortex of kidney	present	gold quality	36.66
+ENSPTRG00000047219	H2AC21	frontal cortex	present	gold quality	27.5
+ENSPTRG00000047219	H2AC21	frontal cortex	present	gold quality	29.5
+ENSPTRG00000047219	H2AC21	temporal lobe	present	gold quality	66.89
+ENSPTRG00000047219	H2AC21	cerebellum	present	gold quality	40.32
+ENSPTRG00000047219	H2AC21	cerebellum	present	gold quality	40.12
+ENSPTRG00000047219	H2AC21	lung	present	gold quality	64.92
+ENSPTRG00000047219	H2AC21	spleen	present	gold quality	79.02
+ENSPTRG00000047219	H2AC21	liver	present	gold quality	40.86
+ENSPTRG00000047219	H2AC21	liver	present	gold quality	30.45
+ENSPTRG00000047219	H2AC21	liver	present	gold quality	65.28
+ENSPTRG00000047219	H2AC21	liver	present	gold quality	61.6
+ENSPTRG00000047219	H2AC21	liver	present	gold quality	31.19
+ENSPTRG00000047219	H2AC21	cerebellar cortex	present	gold quality	44.82
+ENSPTRG00000047219	H2AC21	cerebellar cortex	present	gold quality	47.29
+ENSPTRG00000047219	H2AC21	cerebellar cortex	present	gold quality	64.03
+ENSPTRG00000047219	H2AC21	thymus	present	gold quality	98.99
+ENSPTRG00000047219	H2AC21	bone marrow	present	gold quality	98.71
+ENSPTRG00000047219	H2AC21	superior frontal gyrus	present	gold quality	25.68
+ENSPTRG00000047219	H2AC21	superior frontal gyrus	present	gold quality	31.07
+ENSPTRG00000047219	H2AC21	hindlimb stylopod muscle	present	gold quality	50.85
+ENSPTRG00000047640	H2AW	fibroblast	present	gold quality	85.62
+ENSPTRG00000047640	H2AW	fibroblast	present	gold quality	77.49
+ENSPTRG00000047640	H2AW	pituitary gland	present	gold quality	58.67
+ENSPTRG00000047640	H2AW	lymph node	present	gold quality	52.75
+ENSPTRG00000047640	H2AW	adult mammalian kidney	present	gold quality	74.2
+ENSPTRG00000047640	H2AW	adult mammalian kidney	present	gold quality	75.95
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	79.69
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	84.76
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	71.04
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	78.14
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	79.53
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	79.84
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	79.25
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	83.84
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	82.75
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	93.43
+ENSPTRG00000047640	H2AW	prefrontal cortex	present	gold quality	82.52
+ENSPTRG00000047640	H2AW	multicellular organism	present	gold quality	75.22
+ENSPTRG00000047640	H2AW	multicellular organism	present	gold quality	70.66
+ENSPTRG00000047640	H2AW	testis	present	gold quality	75.19
+ENSPTRG00000047640	H2AW	testis	present	gold quality	66.06
+ENSPTRG00000047640	H2AW	heart	present	gold quality	82.9
+ENSPTRG00000047640	H2AW	heart	present	gold quality	81.96
+ENSPTRG00000047640	H2AW	heart	present	gold quality	65.92
+ENSPTRG00000047640	H2AW	heart	present	gold quality	76.78
+ENSPTRG00000047640	H2AW	heart	present	gold quality	75.87
+ENSPTRG00000047640	H2AW	cerebral cortex	present	gold quality	80.33
+ENSPTRG00000047640	H2AW	cortex of kidney	present	gold quality	53.23
+ENSPTRG00000047640	H2AW	cortex of kidney	present	gold quality	65.16
+ENSPTRG00000047640	H2AW	frontal cortex	present	gold quality	79.47
+ENSPTRG00000047640	H2AW	frontal cortex	present	gold quality	82.85
+ENSPTRG00000047640	H2AW	temporal lobe	present	gold quality	60.98
+ENSPTRG00000047640	H2AW	cerebellum	present	gold quality	91.6
+ENSPTRG00000047640	H2AW	cerebellum	present	gold quality	92.66
+ENSPTRG00000047640	H2AW	cerebellum	present	gold quality	76.47
+ENSPTRG00000047640	H2AW	cerebellum	present	gold quality	95.43
+ENSPTRG00000047640	H2AW	spleen	present	gold quality	68.39
+ENSPTRG00000047640	H2AW	liver	present	gold quality	46.83
+ENSPTRG00000047640	H2AW	liver	present	gold quality	49.62
+ENSPTRG00000047640	H2AW	liver	present	gold quality	56.94
+ENSPTRG00000047640	H2AW	cerebellar cortex	present	gold quality	95.7
+ENSPTRG00000047640	H2AW	cerebellar cortex	present	gold quality	95.38
+ENSPTRG00000047640	H2AW	cerebellar cortex	present	gold quality	95.95
+ENSPTRG00000047640	H2AW	cerebellar cortex	present	gold quality	96.38
+ENSPTRG00000047640	H2AW	cerebellar cortex	present	gold quality	95.22
+ENSPTRG00000047640	H2AW	thymus	present	gold quality	94.11
+ENSPTRG00000047640	H2AW	bone marrow	present	gold quality	69.23
+ENSPTRG00000047640	H2AW	primary visual cortex	present	gold quality	83.74
+ENSPTRG00000047640	H2AW	primary visual cortex	present	gold quality	82.69
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	83.3
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	82.17
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	80.1
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	80.79
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	81.3
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	82.75
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	88.61
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	87.62
+ENSPTRG00000047640	H2AW	superior frontal gyrus	present	gold quality	89.29
+ENSPTRG00000047640	H2AW	hindlimb stylopod muscle	present	gold quality	56.19
+ENSPTRG00000047640	H2AW	hindlimb stylopod muscle	present	gold quality	55.85
+ENSPTRG00000047640	H2AW	dorsolateral prefrontal cortex	present	gold quality	68.61
+ENSPTRG00000047640	H2AW	dorsolateral prefrontal cortex	present	gold quality	81.76
+ENSPTRG00000047640	H2AW	Brodmann (1909) area 10	present	gold quality	71.56
