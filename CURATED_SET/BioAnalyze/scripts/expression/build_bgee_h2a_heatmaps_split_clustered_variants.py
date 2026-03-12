@@ -34,7 +34,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--out-dir",
-        default=r"CURATED_SET/BioAnalyze/figures/heatmaps",
+        default=r"CURATED_SET/BioAnalyze/figures/heatmaps/human",
         help="Output directory for heatmap images.",
     )
     p.add_argument(

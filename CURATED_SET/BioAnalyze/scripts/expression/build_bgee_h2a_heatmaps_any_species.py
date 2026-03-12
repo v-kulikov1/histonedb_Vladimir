@@ -39,7 +39,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--out-dir",
         default=r"CURATED_SET/BioAnalyze/figures/heatmaps",
-        help="Output directory for heatmaps.",
+        help="Base output directory for heatmaps (species subfolder is appended).",
     )
     p.add_argument(
         "--out-processed-dir",
@@ -60,6 +60,29 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=200000,
         help="Chunk size for streaming Bgee TSV.",
+    )
+    p.add_argument(
+        "--square-cells",
+        action="store_true",
+        help="Use square-like cells by sizing figure from rows/cols.",
+    )
+    p.add_argument(
+        "--cell-size",
+        type=float,
+        default=0.7,
+        help="Cell size (inches) when --square-cells is set.",
+    )
+    p.add_argument(
+        "--min-width",
+        type=float,
+        default=12.0,
+        help="Minimum figure width (inches) when --square-cells is set.",
+    )
+    p.add_argument(
+        "--min-height",
+        type=float,
+        default=8.0,
+        help="Minimum figure height (inches) when --square-cells is set.",
     )
     return p.parse_args()
 
@@ -122,6 +145,10 @@ def heatmap(
     out_png: Path,
     out_svg: Path,
     id_label: str,
+    square_cells: bool,
+    cell_size: float,
+    min_width: float,
+    min_height: float,
 ) -> Tuple[int, int]:
     df = df.copy()
     df["Gene row label"] = df["Gene ID"].map(label_map)
@@ -143,8 +170,12 @@ def heatmap(
     mat_log = np.log10(mat + 1)
 
     sns.set(style="whitegrid")
-    fig_w = max(48, mat_log.shape[1] * 0.25)
-    fig_h = max(10, mat_log.shape[0] * 0.5)
+    if square_cells:
+        fig_w = max(min_width, mat_log.shape[1] * cell_size)
+        fig_h = max(min_height, mat_log.shape[0] * cell_size)
+    else:
+        fig_w = max(48, mat_log.shape[1] * 0.25)
+        fig_h = max(10, mat_log.shape[0] * 0.5)
 
     plt.figure(figsize=(fig_w, fig_h))
     ax = sns.heatmap(
@@ -301,6 +332,7 @@ def main() -> None:
     if variants.empty:
         raise RuntimeError("No variant rows after filtering.")
 
+    out_dir = out_dir if out_dir.name == slug else out_dir / slug
     out_dir.mkdir(parents=True, exist_ok=True)
     all_png = out_dir / f"h2a_{slug}_all.png"
     all_svg = out_dir / f"h2a_{slug}_all.svg"
@@ -316,6 +348,10 @@ def main() -> None:
         all_png,
         all_svg,
         "HGNC" if id_col == "hgnc_id" else "VGNC",
+        args.square_cells,
+        args.cell_size,
+        args.min_width,
+        args.min_height,
     )
     can_rows, can_cols = heatmap(
         canonical,
@@ -324,6 +360,10 @@ def main() -> None:
         can_png,
         can_svg,
         "HGNC" if id_col == "hgnc_id" else "VGNC",
+        args.square_cells,
+        args.cell_size,
+        args.min_width,
+        args.min_height,
     )
     var_rows, var_cols = heatmap(
         variants,
@@ -332,6 +372,10 @@ def main() -> None:
         var_png,
         var_svg,
         "HGNC" if id_col == "hgnc_id" else "VGNC",
+        args.square_cells,
+        args.cell_size,
+        args.min_width,
+        args.min_height,
     )
 
     print(f"SPECIES={species}")

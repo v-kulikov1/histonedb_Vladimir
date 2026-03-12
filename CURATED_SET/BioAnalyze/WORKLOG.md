@@ -1,10 +1,10 @@
 # BioAnalyze H2A Merge Worklog
 
-Last updated: 2026-03-11
+Last updated: 2026-03-12
 
 Goal
 - Build a single H2A dataset for mammalia + human with consistent taxonomy fields and gene identifiers.
-- Make the pipeline reproducible and keep legacy outputs archived.
+- Make the pipeline reproducible and keep outputs organized.
 
 Canonical Output (current)
 - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv
@@ -58,21 +58,6 @@ Audits (v3)
 - audit_unresolved_hgnc_symbols.csv
 - audit_unresolved_vgnc_ensembl.csv
 
-Archive Actions (2026-03-11)
-Moved legacy outputs and audits into archive:
-- Legacy merged CSVs moved to:
-  CURATED_SET/BioAnalyze/archive/merged_legacy/
-    mammalia_H2A_merged.csv
-    mammalia_H2A_merged_with_taxonomy.csv
-    mammalia_H2A_merged_with_taxonomy_v2.csv
-- Audit CSVs moved to:
-  CURATED_SET/BioAnalyze/archive/audits/
-    audit_accession_enrichment_resolved.csv
-    audit_accession_enrichment_unresolved.csv
-    audit_dedup_dropped_rows.csv
-    audit_unresolved_hgnc_symbols.csv
-    audit_unresolved_vgnc_ensembl.csv
-
 Current Snapshot (from v3 file timestamp 2026-03-03 12:09:57)
 - Total rows: 464
 - Filled IDs:
@@ -83,14 +68,6 @@ Current Snapshot (from v3 file timestamp 2026-03-03 12:09:57)
 - Taxonomy coverage:
   species_name: 464
   order: 464
-- Accession enrichment audit (archived):
-  resolved: 48
-  unresolved: 20
-- Other audits (archived):
-  dedup dropped rows: 274
-  unresolved hgnc symbols: 0
-  unresolved vgnc -> ensembl: 64
-
 Downstream Analyses
 - Built order-level statistics based on the v3 dataset (unique genes vs unique proteins/accessions),
   using the "order" taxonomy field as the grouping key.
@@ -115,8 +92,6 @@ Current Expression Artifacts
   H2A-only slice from advanced Bgee (all conditions).
 - CURATED_SET/BioAnalyze/data/processed/Homo_sapiens_expr_advanced_H2A_present_gold.tsv
   H2A-only + present + gold quality subset used for plotting.
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc.svg
-  Canonical human H2A heatmap (Ensembl rows, HGNC gene labels).
 
 Expression Split (2026-03-11)
 - Rule: canonical == "clustered H2A" in v3 `variant` column (Homo sapiens rows).
@@ -124,10 +99,10 @@ Expression Split (2026-03-11)
   - CURATED_SET/BioAnalyze/scripts/expression/build_bgee_h2a_heatmaps_split_clustered_variants.py
 - Outputs:
   - CURATED_SET/BioAnalyze/data/processed/h2a_hs_canonical_variant_map.tsv
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_clustered.svg
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_clustered.png
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_variants.svg
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_variants.png
+  - CURATED_SET/BioAnalyze/figures/heatmaps/human/h2a_clustered.svg
+  - CURATED_SET/BioAnalyze/figures/heatmaps/human/h2a_clustered.png
+  - CURATED_SET/BioAnalyze/figures/heatmaps/human/h2a_variants.svg
+  - CURATED_SET/BioAnalyze/figures/heatmaps/human/h2a_variants.png
 
 Multi-Species Heatmaps (2026-03-11)
 - New script for any species (separate file to keep prior work intact):
@@ -159,26 +134,33 @@ Pan troglodytes Heatmaps (2026-03-11)
 - Outputs:
   - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_expr_advanced_H2A_present_gold.tsv
   - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_h2a_canonical_variant_map.tsv
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_all.(svg|png)
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_clustered.(svg|png)
-  - CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_variants.(svg|png)
+  - CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_all.(svg|png)
+  - CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_clustered.(svg|png)
+  - CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_variants.(svg|png)
 - Summary stats (from script run):
   - Rows after filter: 746
   - Heatmap matrix sizes: all=14x26, clustered=7x26, variants=7x26
+2026-03-12 update:
+- Rebuilt Pan troglodytes heatmaps with square-cell sizing for easier comparison:
+  - Used build_bgee_h2a_heatmaps_any_species.py with --square-cells and cell-size/min-size args.
 
-Legacy / Variant Expression Artifacts
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_gene_name.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_gene_name.svg
-  Gene name from Bgee on the X-axis (more collapsed labels).
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap.svg
-  Earlier heatmap variant using gene labels (HGNC-based) instead of Bgee Gene name.
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc_sorted.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc_sorted.svg
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc_sorted_all_xticks.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_hs_bgee_advanced_present_gold_heatmap_ensembl_rows_gene_hgnc_sorted_all_xticks.svg
-  Iterative variants (sorting and tick-density experiments). Kept for reference.
+Human -> Chimp Intersection Heatmaps (2026-03-12)
+- Goal: build heatmaps for the dataset with more rows, keeping only exact intersections between human and chimp:
+  - X axis: Anatomical entity name (exact match).
+  - Y axis: Gene name (exact match).
+- Rule: no normalization applied; `multicellular organism` is kept if it exists in both.
+- Primary dataset is selected automatically by larger present+gold row count.
+- Inputs:
+  - CURATED_SET/BioAnalyze/data/processed/Homo_sapiens_expr_advanced_H2A_present_gold.tsv
+  - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_expr_advanced_H2A_present_gold.tsv
+- Intersection heatmaps script (universal):
+  - CURATED_SET/BioAnalyze/scripts/expression/build_hs_pan_troglodytes_aligned_heatmaps.py
+  - Output TSV:
+    - CURATED_SET/BioAnalyze/data/processed/homo_sapiens_expr_advanced_H2A_present_gold_intersection.tsv
+  - Heatmaps:
+    - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_all.(svg|png)
+    - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_clustered.(svg|png)
+    - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_variants.(svg|png)
 
 How To Regenerate v3
 1) Ensure inputs exist:

@@ -8,7 +8,6 @@ Description:
 BioAnalyze is a local data-processing pipeline for histone H2A datasets. It standardizes raw inputs, merges taxonomy, produces audits, and renders summary figures and stats used by the HistoneDB curation workflow.
 
 Structure:
-- archive/ (archived or legacy outputs and audits)
 - audits/ (pipeline QA and validation tables)
 - data/raw (placeholder; raw files are stored externally)
 - data/processed (intermediate normalized tables)
@@ -30,21 +29,22 @@ Canonical output:
 Worklog:
 - CURATED_SET/BioAnalyze/WORKLOG.md (detailed, chronological record of pipeline decisions and artifacts)
 
-Recent Outputs (2026-03-11)
+Recent Outputs (2026-03-12)
 - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_expr_advanced_H2A_present_gold.tsv
 - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_h2a_canonical_variant_map.tsv
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_all.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_all.svg
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_clustered.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_clustered.svg
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_variants.png
-- CURATED_SET/BioAnalyze/figures/heatmaps/h2a_pan_troglodytes_variants.svg
-
-Archive:
-- Root: CURATED_SET/BioAnalyze/archive
-- Legacy merged CSVs: CURATED_SET/BioAnalyze/archive/merged_legacy/
-- Audit CSVs: CURATED_SET/BioAnalyze/archive/audits/
-- Full process log: CURATED_SET/BioAnalyze/WORKLOG.md
+- CURATED_SET/BioAnalyze/data/processed/homo_sapiens_expr_advanced_H2A_present_gold_intersection.tsv
+- CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_all.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_clustered.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_clustered.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_variants.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_variants.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_all.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_clustered.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_clustered.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_variants.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_variants.svg
 
 External raw data:
 - stored at C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw
