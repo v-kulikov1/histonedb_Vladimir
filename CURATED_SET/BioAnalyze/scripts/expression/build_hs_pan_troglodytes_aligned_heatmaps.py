@@ -23,17 +23,17 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description=(
             "Build heatmaps for the larger of two present+gold datasets, "
-            "keeping only tissue and gene-name intersections."
+            "keeping only tissue and merged gene_name intersections."
         )
     )
     p.add_argument(
         "--a-present-gold",
-        default=r"CURATED_SET/BioAnalyze/data/processed/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+        default=r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
         help="Present+gold TSV for dataset A.",
     )
     p.add_argument(
         "--b-present-gold",
-        default=r"CURATED_SET/BioAnalyze/data/processed/pan_troglodytes_expr_advanced_H2A_present_gold.tsv",
+        default=r"CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv",
         help="Present+gold TSV for dataset B.",
     )
     p.add_argument(
@@ -48,8 +48,8 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--merged",
-        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv",
-        help="Merged v3 dataset with variant + IDs.",
+        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv",
+        help="Merged v4 dataset with gene_name, variant, and IDs.",
     )
     p.add_argument(
         "--out-dir",
@@ -58,7 +58,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--out-processed-dir",
-        default=r"CURATED_SET/BioAnalyze/data/processed",
+        default=r"CURATED_SET/BioAnalyze/data/processed/intersections",
         help="Output directory for processed TSVs.",
     )
     p.add_argument(
@@ -93,11 +93,11 @@ def build_label_maps(
     expr_df: pd.DataFrame, h2a_df: pd.DataFrame, id_col: str
 ) -> Tuple[Dict[str, str], Dict[str, str]]:
     name_map = (
-        expr_df[["Gene ID", "Gene name"]]
-        .assign(_len=lambda x: x["Gene name"].str.len())
-        .sort_values(["Gene ID", "_len"], ascending=[True, False])
-        .drop_duplicates("Gene ID", keep="first")
-        .set_index("Gene ID")["Gene name"]
+        h2a_df[["ensembl_gene_id", "gene_name"]]
+        .assign(_len=lambda x: x["gene_name"].str.len())
+        .sort_values(["ensembl_gene_id", "_len"], ascending=[True, False])
+        .drop_duplicates("ensembl_gene_id", keep="first")
+        .set_index("ensembl_gene_id")["gene_name"]
         .to_dict()
     )
     id_map = (
@@ -132,6 +132,7 @@ def heatmap(
     title: str,
     out_png: Path,
     out_svg: Path,
+    id_label: str,
 ) -> Tuple[int, int]:
     df = df.copy()
     df["Gene row label"] = df["Gene ID"].map(label_map)
@@ -168,7 +169,7 @@ def heatmap(
     )
     ax.set_title(title)
     ax.set_xlabel("Anatomical entity name (intersection)")
-    ax.set_ylabel("GeneName:ID (one row per Ensembl ID)")
+    ax.set_ylabel(f"GeneName:{id_label} (one row per Ensembl ID)")
     plt.xticks(rotation=90, fontsize=6)
     plt.yticks(rotation=0, fontsize=8)
     plt.tight_layout()
@@ -224,28 +225,64 @@ def main() -> None:
         primary_df, secondary_df = b_df, a_df
         primary_species, secondary_species = args.b_species, args.a_species
 
+    h2a = pd.read_csv(merged_path, dtype=str)
+    required_h2a_cols = {
+        "species_name",
+        "ensembl_gene_id",
+        "gene_name",
+        "variant",
+        "hgnc_id",
+        "vgnc_id",
+    }
+    missing = required_h2a_cols - set(h2a.columns)
+    if missing:
+        raise RuntimeError(f"Missing columns in merged v4: {missing}")
+
+    for col in ["species_name", "ensembl_gene_id", "gene_name", "variant", "hgnc_id", "vgnc_id"]:
+        h2a[col] = h2a[col].fillna("").astype(str).str.strip()
+
+    def attach_merged_gene_name(df: pd.DataFrame, species: str) -> pd.DataFrame:
+        name_map_df = (
+            h2a[h2a["species_name"].eq(species)][["ensembl_gene_id", "gene_name"]]
+            .assign(_len=lambda x: x["gene_name"].str.len())
+            .sort_values(["ensembl_gene_id", "_len"], ascending=[True, False])
+            .drop_duplicates("ensembl_gene_id", keep="first")
+            .drop(columns=["_len"])
+        )
+        out = df.merge(
+            name_map_df,
+            left_on="Gene ID",
+            right_on="ensembl_gene_id",
+            how="left",
+        )
+        out = out.rename(columns={"gene_name": "merged_gene_name"})
+        out["merged_gene_name"] = (
+            out["merged_gene_name"].fillna("").astype(str).str.strip()
+        )
+        return out.drop(columns=["ensembl_gene_id"])
+
+    primary_df = attach_merged_gene_name(primary_df, primary_species)
+    secondary_df = attach_merged_gene_name(secondary_df, secondary_species)
+
     tissues = sorted(
         set(primary_df["Anatomical entity name"]) & set(secondary_df["Anatomical entity name"])
     )
-    genes = set(primary_df["Gene name"]) & set(secondary_df["Gene name"])
+    genes = set(primary_df["merged_gene_name"]) & set(secondary_df["merged_gene_name"])
+    genes.discard("")
+
     primary_df = primary_df[
         primary_df["Anatomical entity name"].isin(tissues)
-        & primary_df["Gene name"].isin(genes)
+        & primary_df["merged_gene_name"].isin(genes)
     ].copy()
 
     primary_df["Expression score"] = pd.to_numeric(
         primary_df["Expression score"], errors="coerce"
     )
     primary_df = primary_df[primary_df["Expression score"].notna()].copy()
-    if primary_df.empty or not tissues:
-        raise RuntimeError("No overlapping tissues/genes after intersection.")
+    if primary_df.empty or not tissues or not genes:
+        raise RuntimeError("No overlapping tissues/merged gene_name values after intersection.")
 
-    h2a = pd.read_csv(merged_path, dtype=str)
     h2a_sp = h2a[h2a["species_name"].eq(primary_species)].copy()
-    h2a_sp["ensembl_gene_id"] = h2a_sp["ensembl_gene_id"].fillna("").astype(str).str.strip()
-    h2a_sp["variant"] = h2a_sp["variant"].fillna("").astype(str).str.strip()
-    h2a_sp["hgnc_id"] = h2a_sp["hgnc_id"].fillna("").astype(str).str.strip()
-    h2a_sp["vgnc_id"] = h2a_sp["vgnc_id"].fillna("").astype(str).str.strip()
     h2a_sp = h2a_sp[h2a_sp["ensembl_gene_id"] != ""].copy()
 
     id_col = args.id_col
@@ -287,6 +324,7 @@ def main() -> None:
         f"H2A Expression (present + gold) - {primary_species} (intersection with {secondary_species})",
         all_png,
         all_svg,
+        "HGNC" if id_col == "hgnc_id" else "VGNC",
     )
     can_rows, can_cols = heatmap(
         canonical,
@@ -295,6 +333,7 @@ def main() -> None:
         f"H2A Expression (present + gold) - {primary_species} (intersection, clustered H2A)",
         can_png,
         can_svg,
+        "HGNC" if id_col == "hgnc_id" else "VGNC",
     )
     var_rows, var_cols = heatmap(
         variants,
@@ -303,6 +342,7 @@ def main() -> None:
         f"H2A Expression (present + gold) - {primary_species} (intersection, variants)",
         var_png,
         var_svg,
+        "HGNC" if id_col == "hgnc_id" else "VGNC",
     )
 
     print(f"PRIMARY_SPECIES={primary_species}")

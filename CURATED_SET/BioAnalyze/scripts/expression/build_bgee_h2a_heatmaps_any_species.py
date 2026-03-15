@@ -18,7 +18,8 @@ def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description=(
             "Build H2A expression heatmaps for a given species from Bgee advanced TSV. "
-            "Filters to present+gold, rows=Ensembl ID, labels=GeneName:<ID> (fallback ENSG)."
+            "Filters to present+gold, rows=Ensembl ID, labels=merged gene_name:<ID> "
+            "(fallback merged gene_name:Ensembl ID)."
         )
     )
     p.add_argument(
@@ -33,8 +34,8 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--merged",
-        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv",
-        help="Merged v3 H2A dataset with taxonomy, HGNC IDs, and variant.",
+        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv",
+        help="Merged v4 H2A dataset with taxonomy, gene_name, HGNC/VGNC IDs, and variant.",
     )
     p.add_argument(
         "--out-dir",
@@ -104,12 +105,12 @@ def classify_ensg(h2a_hs: pd.DataFrame) -> Dict[str, str]:
 def build_label_maps(
     expr_df: pd.DataFrame, h2a_df: pd.DataFrame, id_col: str
 ) -> Tuple[Dict[str, str], Dict[str, str]]:
-    name_map = (
-        expr_df[["Gene ID", "Gene name"]]
-        .assign(_len=lambda x: x["Gene name"].str.len())
-        .sort_values(["Gene ID", "_len"], ascending=[True, False])
-        .drop_duplicates("Gene ID", keep="first")
-        .set_index("Gene ID")["Gene name"]
+    merged_name_map = (
+        h2a_df[["ensembl_gene_id", "gene_name"]]
+        .assign(_len=lambda x: x["gene_name"].str.len())
+        .sort_values(["ensembl_gene_id", "_len"], ascending=[True, False])
+        .drop_duplicates("ensembl_gene_id", keep="first")
+        .set_index("ensembl_gene_id")["gene_name"]
         .to_dict()
     )
     id_map = (
@@ -121,8 +122,14 @@ def build_label_maps(
     )
 
     label_map: Dict[str, str] = {}
-    for gid in sorted(expr_df["Gene ID"].unique()):
-        gname = (name_map.get(gid, "") or "").strip() or gid
+    for gid in sorted(
+        {
+            gid.strip()
+            for gid in h2a_df["ensembl_gene_id"].dropna().astype(str).tolist()
+            if gid.strip()
+        }
+    ):
+        gname = (merged_name_map.get(gid, "") or "").strip() or gid
         id_val = (id_map.get(gid, "") or "").strip()
         label_map[gid] = f"{gname}:{id_val}" if id_val else f"{gname}:{gid}"
 
@@ -135,7 +142,7 @@ def build_label_maps(
         else:
             seen[lab] = 1
 
-    return label_map, name_map
+    return label_map, merged_name_map
 
 
 def heatmap(
@@ -219,13 +226,21 @@ def main() -> None:
         raise FileNotFoundError(merged_path)
 
     h2a = pd.read_csv(merged_path, dtype=str)
-    required_cols = {"species_name", "ensembl_gene_id", "hgnc_id", "vgnc_id", "variant"}
+    required_cols = {
+        "species_name",
+        "ensembl_gene_id",
+        "gene_name",
+        "hgnc_id",
+        "vgnc_id",
+        "variant",
+    }
     missing = required_cols - set(h2a.columns)
     if missing:
-        raise RuntimeError(f"Missing columns in merged v3: {missing}")
+        raise RuntimeError(f"Missing columns in merged v4: {missing}")
 
     h2a_sp = h2a[h2a["species_name"].eq(species)].copy()
     h2a_sp["ensembl_gene_id"] = h2a_sp["ensembl_gene_id"].fillna("").astype(str).str.strip()
+    h2a_sp["gene_name"] = h2a_sp["gene_name"].fillna("").astype(str).str.strip()
     h2a_sp["hgnc_id"] = h2a_sp["hgnc_id"].fillna("").astype(str).str.strip()
     h2a_sp["vgnc_id"] = h2a_sp["vgnc_id"].fillna("").astype(str).str.strip()
     h2a_sp["variant"] = h2a_sp["variant"].fillna("").astype(str).str.strip()
@@ -272,12 +287,13 @@ def main() -> None:
         raise RuntimeError("All Expression score are NaN after conversion.")
 
     slug = slugify_species(species)
+    out_processed_dir = out_processed_dir if out_processed_dir.name == slug else out_processed_dir / slug
     out_processed_dir.mkdir(parents=True, exist_ok=True)
     processed_tsv = out_processed_dir / f"{slug}_expr_advanced_H2A_present_gold.tsv"
     expr.to_csv(processed_tsv, sep="\t", index=False)
 
     cls_map = classify_ensg(h2a_sp)
-    label_map, name_map = build_label_maps(expr, h2a_sp, id_col)
+    label_map, merged_name_map = build_label_maps(expr, h2a_sp, id_col)
 
     # Mapping table for reproducibility
     map_rows = []
@@ -295,7 +311,7 @@ def main() -> None:
             {
                 "species_name": species,
                 "ensembl_gene_id": gid,
-                "gene_name": name_map.get(gid, ""),
+                "gene_name": merged_name_map.get(gid, ""),
                 "hgnc_id": (
                     h2a_sp.loc[h2a_sp["ensembl_gene_id"] == gid, "hgnc_id"]
                     .dropna()

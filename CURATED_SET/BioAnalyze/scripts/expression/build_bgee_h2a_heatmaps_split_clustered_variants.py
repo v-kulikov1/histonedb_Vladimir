@@ -19,18 +19,18 @@ def parse_args() -> argparse.Namespace:
         description=(
             "Build two heatmaps from Bgee advanced H2A data: "
             "clustered (canonical) vs variants. "
-            "Rows are unique Ensembl IDs; labels are GeneName:HGNC."
+            "Rows are unique Ensembl IDs; labels are merged gene_name:HGNC."
         )
     )
     p.add_argument(
         "--expr",
-        default=r"CURATED_SET/BioAnalyze/data/processed/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+        default=r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
         help="H2A-only Bgee advanced TSV (preferably present+gold filtered).",
     )
     p.add_argument(
         "--h2a-merged",
-        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v3.csv",
-        help="Merged v3 H2A dataset with taxonomy and HGNC IDs.",
+        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv",
+        help="Merged v4 H2A dataset with taxonomy, gene_name, and HGNC IDs.",
     )
     p.add_argument(
         "--out-dir",
@@ -39,7 +39,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--out-map",
-        default=r"CURATED_SET/BioAnalyze/data/processed/h2a_hs_canonical_variant_map.tsv",
+        default=r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
         help="Output TSV for ENSG->label/class mapping.",
     )
     p.add_argument(
@@ -53,13 +53,13 @@ def parse_args() -> argparse.Namespace:
 def build_label_maps(
     expr_df: pd.DataFrame, h2a_df: pd.DataFrame
 ) -> Tuple[Dict[str, str], Dict[str, str]]:
-    # Gene name from Bgee (stable per ENSG: longest non-empty name)
+    # Canonical gene_name from merged v4 (stable per ENSG: longest non-empty name)
     name_map = (
-        expr_df[["Gene ID", "Gene name"]]
-        .assign(_len=lambda x: x["Gene name"].str.len())
-        .sort_values(["Gene ID", "_len"], ascending=[True, False])
-        .drop_duplicates("Gene ID", keep="first")
-        .set_index("Gene ID")["Gene name"]
+        h2a_df[["ensembl_gene_id", "gene_name"]]
+        .assign(_len=lambda x: x["gene_name"].str.len())
+        .sort_values(["ensembl_gene_id", "_len"], ascending=[True, False])
+        .drop_duplicates("ensembl_gene_id", keep="first")
+        .set_index("ensembl_gene_id")["gene_name"]
         .to_dict()
     )
 
@@ -73,7 +73,13 @@ def build_label_maps(
     )
 
     label_map: Dict[str, str] = {}
-    for gid in sorted(expr_df["Gene ID"].unique()):
+    for gid in sorted(
+        {
+            gid.strip()
+            for gid in h2a_df["ensembl_gene_id"].dropna().astype(str).tolist()
+            if gid.strip()
+        }
+    ):
         gname = (name_map.get(gid, "") or "").strip() or gid
         hgnc = (hgnc_map.get(gid, "") or "").strip()
         label_map[gid] = f"{gname}:{hgnc}" if hgnc else f"{gname}:{gid}"
@@ -197,12 +203,14 @@ def main() -> None:
 
     h2a = pd.read_csv(h2a_path, dtype=str)
     required_h2a_cols = {"species_name", "ensembl_gene_id", "hgnc_id", "variant"}
+    required_h2a_cols.add("gene_name")
     missing = required_h2a_cols - set(h2a.columns)
     if missing:
         raise RuntimeError(f"Missing columns in h2a merged: {missing}")
 
     h2a_hs = h2a[h2a["species_name"].eq("Homo sapiens")].copy()
     h2a_hs["ensembl_gene_id"] = h2a_hs["ensembl_gene_id"].fillna("").astype(str).str.strip()
+    h2a_hs["gene_name"] = h2a_hs["gene_name"].fillna("").astype(str).str.strip()
     h2a_hs["hgnc_id"] = h2a_hs["hgnc_id"].fillna("").astype(str).str.strip()
     h2a_hs["variant"] = h2a_hs["variant"].fillna("").astype(str).str.strip()
     h2a_hs = h2a_hs[h2a_hs["ensembl_gene_id"] != ""].copy()
