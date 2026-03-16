@@ -1,6 +1,6 @@
 # BioAnalyze H2A Merge Worklog
 
-Last updated: 2026-03-15
+Last updated: 2026-03-16
 
 Goal
 - Build a single H2A dataset for mammalia + human with consistent taxonomy fields, gene identifiers, and symbol-style gene names.
@@ -258,3 +258,79 @@ Heatmap Label Refresh (2026-03-15)
   - Pan labels now include `H2AC25:VGNC:83685`.
   - Bos fallback still works for missing VGNC, e.g.
     `LOC528006:ENSBTAG00070035097`.
+
+Remaining Species Batch Heatmaps (2026-03-16)
+- Goal:
+  - Extend the any-species H2A expression pipeline so the remaining species can
+    be processed reproducibly from merged `v4`, while allowing partial outputs
+    for species that do not have both split classes after the Bgee join.
+- Script updates:
+  - Refactored:
+    `CURATED_SET/BioAnalyze/scripts/expression/build_bgee_h2a_heatmaps_any_species.py`
+  - New batch runner:
+    `CURATED_SET/BioAnalyze/scripts/expression/build_bgee_h2a_heatmaps_remaining_species_batch.py`
+- Behavior changes in the refactored any-species script:
+  - Added `--canonical-rule` with:
+    - `legacy`: canonical only when `variant == clustered H2A`
+    - `canonical_like`: canonical when `variant == clustered H2A` or starts
+      with `cH2A`
+  - Added `--allow-partial-splits`:
+    - writes `all` plus whichever split is available
+    - returns `skipped` for species with no Ensembl IDs in merged `v4`
+    - returns `skipped` for species with zero `present+gold` rows after join
+  - The core logic now returns structured per-species status metadata, which is
+    reused by the batch runner.
+- Batch inputs:
+  - merged labels:
+    `CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv`
+  - raw Bgee TSVs:
+    `C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\*_expr_advanced_all_conditions.tsv`
+  - batch audit:
+    `CURATED_SET/BioAnalyze/audits/audit_h2a_remaining_species_batch_v4.tsv`
+- Batch run settings:
+  - canonical rule: `canonical_like`
+  - partial outputs allowed
+  - square-cell sizing enabled
+- Batch outcome summary:
+  - `success`: 7 species
+    - `Canis lupus familiaris`: rows_after_filter=1509, all=23x58,
+      clustered=15x58, variants=8x58
+    - `Cavia porcellus`: rows_after_filter=29, all=2x15, clustered=1x15,
+      variants=1x1
+    - `Equus caballus`: rows_after_filter=950, all=21x26, clustered=14x26,
+      variants=7x26
+    - `Felis catus`: rows_after_filter=264, all=23x12, clustered=13x12,
+      variants=10x12
+    - `Macaca mulatta`: rows_after_filter=839, all=20x28, clustered=12x28,
+      variants=8x28
+    - `Mus musculus`: rows_after_filter=2263, all=9x323, clustered=2x65,
+      variants=7x323
+    - `Sus scrofa`: rows_after_filter=1242, all=12x54, clustered=6x54,
+      variants=6x54
+  - `partial`: 2 species
+    - `Heterocephalus glaber`: reason=`missing_variants_split`,
+      rows_after_filter=2, outputs=`all` + `clustered`
+    - `Oryctolagus cuniculus`: reason=`missing_clustered_split`,
+      rows_after_filter=13, outputs=`all` + `variants`
+  - `skipped`: 2 species
+    - `Callithrix jacchus`: reason=`no_ensembl_ids_in_merged_v4`
+    - `Rattus norvegicus`: reason=`no_present_gold_rows_after_join`
+- Generated processed outputs:
+  - New species folders under `CURATED_SET/BioAnalyze/data/processed/`:
+    `canis_lupus_familiaris`, `cavia_porcellus`, `equus_caballus`,
+    `felis_catus`, `heterocephalus_glaber`, `macaca_mulatta`,
+    `mus_musculus`, `oryctolagus_cuniculus`, `sus_scrofa`
+  - Each non-skipped species writes:
+    - `{species}_expr_advanced_H2A_present_gold.tsv`
+    - `{species}_h2a_canonical_variant_map.tsv`
+- Generated heatmaps:
+  - New species folders under `CURATED_SET/BioAnalyze/figures/heatmaps/` for
+    each non-skipped species listed above
+  - Full-output species write `all`, `clustered`, and `variants`
+  - Partial-output species write `all` plus the available split only
+- Verification notes:
+  - Legacy regression check passed for `Bos taurus` with unchanged output shape:
+    rows_after_filter=4644, all=23x127, clustered=16x127, variants=7x127
+  - Canonical-like normalization is reflected in map TSVs; for example,
+    `CURATED_SET/BioAnalyze/data/processed/mus_musculus/mus_musculus_h2a_canonical_variant_map.tsv`
+    now classifies `H2ac1` / `H2ac13` (`cH2A*`) as `clustered`.

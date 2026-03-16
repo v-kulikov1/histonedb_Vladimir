@@ -1,0 +1,951 @@
+Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
+ENSECAG00000010224	MACROH2A1	leukocyte	present	gold quality	94.93
+ENSECAG00000010224	MACROH2A1	zone of skin	present	gold quality	94.81
+ENSECAG00000010224	MACROH2A1	zone of skin	present	gold quality	95.22
+ENSECAG00000010224	MACROH2A1	adult mammalian kidney	present	gold quality	92.47
+ENSECAG00000010224	MACROH2A1	inner cell mass	present	gold quality	73.43
+ENSECAG00000010224	MACROH2A1	inner cell mass	present	gold quality	75.1
+ENSECAG00000010224	MACROH2A1	trophoblast	present	gold quality	95.74
+ENSECAG00000010224	MACROH2A1	trophoblast	present	gold quality	95.54
+ENSECAG00000010224	MACROH2A1	trophoblast	present	gold quality	95.82
+ENSECAG00000010224	MACROH2A1	blood	present	gold quality	96.69
+ENSECAG00000010224	MACROH2A1	blood	present	gold quality	96.49
+ENSECAG00000010224	MACROH2A1	blood	present	gold quality	94.77
+ENSECAG00000010224	MACROH2A1	blood	present	gold quality	92.2
+ENSECAG00000010224	MACROH2A1	blood	present	gold quality	95.64
+ENSECAG00000010224	MACROH2A1	blood	present	gold quality	91.52
+ENSECAG00000010224	MACROH2A1	prefrontal cortex	present	gold quality	92.87
+ENSECAG00000010224	MACROH2A1	multicellular organism	present	gold quality	91.56
+ENSECAG00000010224	MACROH2A1	testis	present	gold quality	79.81
+ENSECAG00000010224	MACROH2A1	testis	present	gold quality	89.46
+ENSECAG00000010224	MACROH2A1	testis	present	gold quality	70.8
+ENSECAG00000010224	MACROH2A1	testis	present	gold quality	80.33
+ENSECAG00000010224	MACROH2A1	embryo	present	gold quality	97.21
+ENSECAG00000010224	MACROH2A1	retina	present	gold quality	94.84
+ENSECAG00000010224	MACROH2A1	endometrium	present	gold quality	95.95
+ENSECAG00000010224	MACROH2A1	gluteus medius	present	gold quality	89.61
+ENSECAG00000010224	MACROH2A1	gluteus medius	present	gold quality	91.15
+ENSECAG00000010224	MACROH2A1	gluteus medius	present	gold quality	89.97
+ENSECAG00000010224	MACROH2A1	gluteus medius	present	gold quality	90.43
+ENSECAG00000010224	MACROH2A1	triceps brachii	present	gold quality	87.02
+ENSECAG00000010224	MACROH2A1	triceps brachii	present	gold quality	86.65
+ENSECAG00000010224	MACROH2A1	synovial membrane of synovial joint	present	gold quality	94.69
+ENSECAG00000010224	MACROH2A1	epithelium of bronchus	present	gold quality	96.03
+ENSECAG00000010224	MACROH2A1	epithelium of bronchus	present	gold quality	95.86
+ENSECAG00000010224	MACROH2A1	cerebellum	present	gold quality	96.55
+ENSECAG00000010224	MACROH2A1	cerebellum	present	gold quality	94.98
+ENSECAG00000010224	MACROH2A1	cerebellum	present	gold quality	93.19
+ENSECAG00000010224	MACROH2A1	cerebellum	present	gold quality	90.62
+ENSECAG00000010224	MACROH2A1	cerebellum	present	gold quality	94.6
+ENSECAG00000010224	MACROH2A1	liver	present	gold quality	90.44
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	93.2
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	88.74
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	89.46
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	89.52
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	90.2
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	93.5
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	90.58
+ENSECAG00000010224	MACROH2A1	spinal cord	present	gold quality	91.69
+ENSECAG00000010224	MACROH2A1	brainstem	present	gold quality	85.54
+ENSECAG00000010224	MACROH2A1	brainstem	present	gold quality	84.41
+ENSECAG00000010224	MACROH2A1	bone marrow	present	gold quality	96.15
+ENSECAG00000010224	MACROH2A1	muscle tissue	present	gold quality	87.6
+ENSECAG00000010224	MACROH2A1	muscle tissue	present	gold quality	88.91
+ENSECAG00000010224	MACROH2A1	muscle tissue	present	gold quality	88.21
+ENSECAG00000010224	MACROH2A1	muscle tissue	present	gold quality	88.63
+ENSECAG00000010224	MACROH2A1	muscle tissue	present	gold quality	89.05
+ENSECAG00000010224	MACROH2A1	trophectoderm	present	gold quality	82.72
+ENSECAG00000010224	MACROH2A1	trophectoderm	present	gold quality	82.59
+ENSECAG00000010224	MACROH2A1	oviduct epithelium	present	gold quality	96.58
+ENSECAG00000010224	MACROH2A1	chorionic villus	present	gold quality	94.48
+ENSECAG00000010224	MACROH2A1	articular cartilage of joint	present	gold quality	90.52
+ENSECAG00000016692	H2AZ2	leukocyte	present	gold quality	99.03
+ENSECAG00000016692	H2AZ2	zone of skin	present	gold quality	98.21
+ENSECAG00000016692	H2AZ2	zone of skin	present	gold quality	98.33
+ENSECAG00000016692	H2AZ2	adult mammalian kidney	present	gold quality	97.0
+ENSECAG00000016692	H2AZ2	inner cell mass	present	gold quality	98.85
+ENSECAG00000016692	H2AZ2	inner cell mass	present	gold quality	98.68
+ENSECAG00000016692	H2AZ2	trophoblast	present	gold quality	98.31
+ENSECAG00000016692	H2AZ2	trophoblast	present	gold quality	98.19
+ENSECAG00000016692	H2AZ2	trophoblast	present	gold quality	99.07
+ENSECAG00000016692	H2AZ2	blood	present	gold quality	98.96
+ENSECAG00000016692	H2AZ2	blood	present	gold quality	98.87
+ENSECAG00000016692	H2AZ2	blood	present	gold quality	98.76
+ENSECAG00000016692	H2AZ2	blood	present	gold quality	99.58
+ENSECAG00000016692	H2AZ2	blood	present	gold quality	98.77
+ENSECAG00000016692	H2AZ2	blood	present	gold quality	99.6
+ENSECAG00000016692	H2AZ2	prefrontal cortex	present	gold quality	95.04
+ENSECAG00000016692	H2AZ2	multicellular organism	present	gold quality	98.82
+ENSECAG00000016692	H2AZ2	testis	present	gold quality	99.01
+ENSECAG00000016692	H2AZ2	testis	present	gold quality	98.48
+ENSECAG00000016692	H2AZ2	testis	present	gold quality	99.14
+ENSECAG00000016692	H2AZ2	testis	present	gold quality	99.33
+ENSECAG00000016692	H2AZ2	embryo	present	gold quality	99.05
+ENSECAG00000016692	H2AZ2	retina	present	gold quality	97.66
+ENSECAG00000016692	H2AZ2	endometrium	present	gold quality	98.3
+ENSECAG00000016692	H2AZ2	gluteus medius	present	gold quality	96.62
+ENSECAG00000016692	H2AZ2	gluteus medius	present	gold quality	96.27
+ENSECAG00000016692	H2AZ2	gluteus medius	present	gold quality	96.28
+ENSECAG00000016692	H2AZ2	gluteus medius	present	gold quality	96.21
+ENSECAG00000016692	H2AZ2	triceps brachii	present	gold quality	98.88
+ENSECAG00000016692	H2AZ2	triceps brachii	present	gold quality	98.84
+ENSECAG00000016692	H2AZ2	synovial membrane of synovial joint	present	gold quality	98.1
+ENSECAG00000016692	H2AZ2	epithelium of bronchus	present	gold quality	98.38
+ENSECAG00000016692	H2AZ2	epithelium of bronchus	present	gold quality	98.35
+ENSECAG00000016692	H2AZ2	cerebellum	present	gold quality	96.68
+ENSECAG00000016692	H2AZ2	cerebellum	present	gold quality	98.63
+ENSECAG00000016692	H2AZ2	cerebellum	present	gold quality	98.0
+ENSECAG00000016692	H2AZ2	cerebellum	present	gold quality	98.31
+ENSECAG00000016692	H2AZ2	cerebellum	present	gold quality	97.29
+ENSECAG00000016692	H2AZ2	liver	present	gold quality	96.56
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	97.34
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	97.78
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	97.16
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	96.74
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	95.98
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	95.85
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	96.3
+ENSECAG00000016692	H2AZ2	spinal cord	present	gold quality	96.57
+ENSECAG00000016692	H2AZ2	brainstem	present	gold quality	89.12
+ENSECAG00000016692	H2AZ2	brainstem	present	gold quality	81.83
+ENSECAG00000016692	H2AZ2	bone marrow	present	gold quality	99.15
+ENSECAG00000016692	H2AZ2	muscle tissue	present	gold quality	97.91
+ENSECAG00000016692	H2AZ2	muscle tissue	present	gold quality	97.47
+ENSECAG00000016692	H2AZ2	muscle tissue	present	gold quality	97.93
+ENSECAG00000016692	H2AZ2	muscle tissue	present	gold quality	97.73
+ENSECAG00000016692	H2AZ2	muscle tissue	present	gold quality	97.73
+ENSECAG00000016692	H2AZ2	trophectoderm	present	gold quality	98.69
+ENSECAG00000016692	H2AZ2	trophectoderm	present	gold quality	98.44
+ENSECAG00000016692	H2AZ2	oviduct epithelium	present	gold quality	97.19
+ENSECAG00000016692	H2AZ2	chorionic villus	present	gold quality	97.58
+ENSECAG00000016692	H2AZ2	articular cartilage of joint	present	gold quality	96.31
+ENSECAG00000019223	MACROH2A2	zone of skin	present	gold quality	65.75
+ENSECAG00000019223	MACROH2A2	zone of skin	present	gold quality	65.73
+ENSECAG00000019223	MACROH2A2	adult mammalian kidney	present	gold quality	53.74
+ENSECAG00000019223	MACROH2A2	inner cell mass	present	gold quality	64.38
+ENSECAG00000019223	MACROH2A2	inner cell mass	present	gold quality	62.29
+ENSECAG00000019223	MACROH2A2	trophoblast	present	gold quality	70.11
+ENSECAG00000019223	MACROH2A2	trophoblast	present	gold quality	70.55
+ENSECAG00000019223	MACROH2A2	trophoblast	present	gold quality	70.24
+ENSECAG00000019223	MACROH2A2	blood	present	gold quality	47.34
+ENSECAG00000019223	MACROH2A2	blood	present	gold quality	34.79
+ENSECAG00000019223	MACROH2A2	blood	present	gold quality	35.18
+ENSECAG00000019223	MACROH2A2	blood	present	gold quality	43.8
+ENSECAG00000019223	MACROH2A2	prefrontal cortex	present	gold quality	63.0
+ENSECAG00000019223	MACROH2A2	multicellular organism	present	gold quality	54.82
+ENSECAG00000019223	MACROH2A2	testis	present	gold quality	48.34
+ENSECAG00000019223	MACROH2A2	testis	present	gold quality	70.82
+ENSECAG00000019223	MACROH2A2	testis	present	gold quality	30.02
+ENSECAG00000019223	MACROH2A2	testis	present	gold quality	45.78
+ENSECAG00000019223	MACROH2A2	embryo	present	gold quality	97.31
+ENSECAG00000019223	MACROH2A2	retina	present	gold quality	68.08
+ENSECAG00000019223	MACROH2A2	endometrium	present	gold quality	71.65
+ENSECAG00000019223	MACROH2A2	gluteus medius	present	gold quality	50.36
+ENSECAG00000019223	MACROH2A2	gluteus medius	present	gold quality	57.52
+ENSECAG00000019223	MACROH2A2	gluteus medius	present	gold quality	53.38
+ENSECAG00000019223	MACROH2A2	gluteus medius	present	gold quality	54.36
+ENSECAG00000019223	MACROH2A2	triceps brachii	present	gold quality	45.92
+ENSECAG00000019223	MACROH2A2	triceps brachii	present	gold quality	44.44
+ENSECAG00000019223	MACROH2A2	synovial membrane of synovial joint	present	gold quality	64.47
+ENSECAG00000019223	MACROH2A2	epithelium of bronchus	present	gold quality	55.16
+ENSECAG00000019223	MACROH2A2	epithelium of bronchus	present	gold quality	53.62
+ENSECAG00000019223	MACROH2A2	cerebellum	present	gold quality	86.44
+ENSECAG00000019223	MACROH2A2	cerebellum	present	gold quality	82.18
+ENSECAG00000019223	MACROH2A2	cerebellum	present	gold quality	69.41
+ENSECAG00000019223	MACROH2A2	cerebellum	present	gold quality	77.28
+ENSECAG00000019223	MACROH2A2	cerebellum	present	gold quality	78.06
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	59.15
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	63.21
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	60.36
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	59.92
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	62.14
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	54.94
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	58.26
+ENSECAG00000019223	MACROH2A2	spinal cord	present	gold quality	53.48
+ENSECAG00000019223	MACROH2A2	brainstem	present	gold quality	60.29
+ENSECAG00000019223	MACROH2A2	brainstem	present	gold quality	62.99
+ENSECAG00000019223	MACROH2A2	bone marrow	present	gold quality	55.45
+ENSECAG00000019223	MACROH2A2	muscle tissue	present	gold quality	41.05
+ENSECAG00000019223	MACROH2A2	muscle tissue	present	gold quality	44.55
+ENSECAG00000019223	MACROH2A2	muscle tissue	present	gold quality	41.2
+ENSECAG00000019223	MACROH2A2	muscle tissue	present	gold quality	47.06
+ENSECAG00000019223	MACROH2A2	muscle tissue	present	gold quality	50.01
+ENSECAG00000019223	MACROH2A2	trophectoderm	present	gold quality	57.19
+ENSECAG00000019223	MACROH2A2	trophectoderm	present	gold quality	60.24
+ENSECAG00000019223	MACROH2A2	oviduct epithelium	present	gold quality	49.16
+ENSECAG00000019223	MACROH2A2	chorionic villus	present	gold quality	52.05
+ENSECAG00000019223	MACROH2A2	articular cartilage of joint	present	gold quality	68.32
+ENSECAG00000023732	H2AZ1	leukocyte	present	gold quality	96.02
+ENSECAG00000023732	H2AZ1	zone of skin	present	gold quality	97.52
+ENSECAG00000023732	H2AZ1	zone of skin	present	gold quality	96.96
+ENSECAG00000023732	H2AZ1	adult mammalian kidney	present	gold quality	93.17
+ENSECAG00000023732	H2AZ1	inner cell mass	present	gold quality	99.47
+ENSECAG00000023732	H2AZ1	inner cell mass	present	gold quality	99.53
+ENSECAG00000023732	H2AZ1	trophoblast	present	gold quality	97.43
+ENSECAG00000023732	H2AZ1	trophoblast	present	gold quality	97.11
+ENSECAG00000023732	H2AZ1	trophoblast	present	gold quality	97.68
+ENSECAG00000023732	H2AZ1	blood	present	gold quality	97.9
+ENSECAG00000023732	H2AZ1	blood	present	gold quality	97.75
+ENSECAG00000023732	H2AZ1	blood	present	gold quality	97.41
+ENSECAG00000023732	H2AZ1	blood	present	gold quality	93.24
+ENSECAG00000023732	H2AZ1	blood	present	gold quality	97.52
+ENSECAG00000023732	H2AZ1	blood	present	gold quality	90.36
+ENSECAG00000023732	H2AZ1	prefrontal cortex	present	gold quality	93.91
+ENSECAG00000023732	H2AZ1	multicellular organism	present	gold quality	93.64
+ENSECAG00000023732	H2AZ1	testis	present	gold quality	98.26
+ENSECAG00000023732	H2AZ1	testis	present	gold quality	96.92
+ENSECAG00000023732	H2AZ1	testis	present	gold quality	98.88
+ENSECAG00000023732	H2AZ1	testis	present	gold quality	98.93
+ENSECAG00000023732	H2AZ1	embryo	present	gold quality	98.13
+ENSECAG00000023732	H2AZ1	retina	present	gold quality	94.4
+ENSECAG00000023732	H2AZ1	endometrium	present	gold quality	94.42
+ENSECAG00000023732	H2AZ1	gluteus medius	present	gold quality	96.12
+ENSECAG00000023732	H2AZ1	gluteus medius	present	gold quality	96.57
+ENSECAG00000023732	H2AZ1	gluteus medius	present	gold quality	96.01
+ENSECAG00000023732	H2AZ1	gluteus medius	present	gold quality	96.33
+ENSECAG00000023732	H2AZ1	triceps brachii	present	gold quality	95.22
+ENSECAG00000023732	H2AZ1	triceps brachii	present	gold quality	94.53
+ENSECAG00000023732	H2AZ1	synovial membrane of synovial joint	present	gold quality	93.75
+ENSECAG00000023732	H2AZ1	epithelium of bronchus	present	gold quality	93.84
+ENSECAG00000023732	H2AZ1	epithelium of bronchus	present	gold quality	93.69
+ENSECAG00000023732	H2AZ1	cerebellum	present	gold quality	95.88
+ENSECAG00000023732	H2AZ1	cerebellum	present	gold quality	88.73
+ENSECAG00000023732	H2AZ1	cerebellum	present	gold quality	86.28
+ENSECAG00000023732	H2AZ1	cerebellum	present	gold quality	77.98
+ENSECAG00000023732	H2AZ1	cerebellum	present	gold quality	80.73
+ENSECAG00000023732	H2AZ1	liver	present	gold quality	87.92
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	76.24
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	75.39
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	73.94
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	72.39
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	78.47
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	71.91
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	75.53
+ENSECAG00000023732	H2AZ1	spinal cord	present	gold quality	71.28
+ENSECAG00000023732	H2AZ1	brainstem	present	gold quality	60.55
+ENSECAG00000023732	H2AZ1	brainstem	present	gold quality	64.47
+ENSECAG00000023732	H2AZ1	bone marrow	present	gold quality	99.08
+ENSECAG00000023732	H2AZ1	muscle tissue	present	gold quality	94.98
+ENSECAG00000023732	H2AZ1	muscle tissue	present	gold quality	92.79
+ENSECAG00000023732	H2AZ1	muscle tissue	present	gold quality	95.08
+ENSECAG00000023732	H2AZ1	muscle tissue	present	gold quality	93.95
+ENSECAG00000023732	H2AZ1	muscle tissue	present	gold quality	92.51
+ENSECAG00000023732	H2AZ1	trophectoderm	present	gold quality	99.5
+ENSECAG00000023732	H2AZ1	trophectoderm	present	gold quality	99.58
+ENSECAG00000023732	H2AZ1	oviduct epithelium	present	gold quality	79.27
+ENSECAG00000023732	H2AZ1	chorionic villus	present	gold quality	94.0
+ENSECAG00000023732	H2AZ1	articular cartilage of joint	present	gold quality	83.77
+ENSECAG00000029766	H2AX	leukocyte	present	gold quality	90.6
+ENSECAG00000029766	H2AX	zone of skin	present	gold quality	79.45
+ENSECAG00000029766	H2AX	zone of skin	present	gold quality	83.08
+ENSECAG00000029766	H2AX	adult mammalian kidney	present	gold quality	72.55
+ENSECAG00000029766	H2AX	inner cell mass	present	gold quality	68.96
+ENSECAG00000029766	H2AX	inner cell mass	present	gold quality	65.9
+ENSECAG00000029766	H2AX	trophoblast	present	gold quality	91.12
+ENSECAG00000029766	H2AX	trophoblast	present	gold quality	91.24
+ENSECAG00000029766	H2AX	trophoblast	present	gold quality	98.56
+ENSECAG00000029766	H2AX	blood	present	gold quality	73.8
+ENSECAG00000029766	H2AX	blood	present	gold quality	73.26
+ENSECAG00000029766	H2AX	blood	present	gold quality	70.2
+ENSECAG00000029766	H2AX	blood	present	gold quality	83.43
+ENSECAG00000029766	H2AX	blood	present	gold quality	69.29
+ENSECAG00000029766	H2AX	blood	present	gold quality	83.21
+ENSECAG00000029766	H2AX	prefrontal cortex	present	gold quality	76.56
+ENSECAG00000029766	H2AX	multicellular organism	present	gold quality	81.18
+ENSECAG00000029766	H2AX	testis	present	gold quality	90.88
+ENSECAG00000029766	H2AX	testis	present	gold quality	93.72
+ENSECAG00000029766	H2AX	testis	present	gold quality	91.84
+ENSECAG00000029766	H2AX	testis	present	gold quality	83.41
+ENSECAG00000029766	H2AX	embryo	present	gold quality	90.23
+ENSECAG00000029766	H2AX	retina	present	gold quality	76.68
+ENSECAG00000029766	H2AX	endometrium	present	gold quality	85.07
+ENSECAG00000029766	H2AX	gluteus medius	present	gold quality	58.73
+ENSECAG00000029766	H2AX	gluteus medius	present	gold quality	43.64
+ENSECAG00000029766	H2AX	gluteus medius	present	gold quality	47.99
+ENSECAG00000029766	H2AX	gluteus medius	present	gold quality	54.66
+ENSECAG00000029766	H2AX	triceps brachii	present	gold quality	73.72
+ENSECAG00000029766	H2AX	triceps brachii	present	gold quality	71.9
+ENSECAG00000029766	H2AX	synovial membrane of synovial joint	present	gold quality	70.35
+ENSECAG00000029766	H2AX	epithelium of bronchus	present	gold quality	85.54
+ENSECAG00000029766	H2AX	epithelium of bronchus	present	gold quality	86.69
+ENSECAG00000029766	H2AX	cerebellum	present	gold quality	61.5
+ENSECAG00000029766	H2AX	cerebellum	present	gold quality	84.26
+ENSECAG00000029766	H2AX	cerebellum	present	gold quality	82.05
+ENSECAG00000029766	H2AX	cerebellum	present	gold quality	93.43
+ENSECAG00000029766	H2AX	cerebellum	present	gold quality	92.5
+ENSECAG00000029766	H2AX	liver	present	gold quality	74.28
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	82.96
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	87.48
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	82.77
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	72.91
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	75.27
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	84.14
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	76.44
+ENSECAG00000029766	H2AX	spinal cord	present	gold quality	76.56
+ENSECAG00000029766	H2AX	brainstem	present	gold quality	77.78
+ENSECAG00000029766	H2AX	brainstem	present	gold quality	67.07
+ENSECAG00000029766	H2AX	bone marrow	present	gold quality	97.23
+ENSECAG00000029766	H2AX	muscle tissue	present	gold quality	67.26
+ENSECAG00000029766	H2AX	muscle tissue	present	gold quality	67.27
+ENSECAG00000029766	H2AX	muscle tissue	present	gold quality	63.18
+ENSECAG00000029766	H2AX	muscle tissue	present	gold quality	63.26
+ENSECAG00000029766	H2AX	muscle tissue	present	gold quality	63.99
+ENSECAG00000029766	H2AX	trophectoderm	present	gold quality	73.49
+ENSECAG00000029766	H2AX	trophectoderm	present	gold quality	69.84
+ENSECAG00000029766	H2AX	oviduct epithelium	present	gold quality	80.95
+ENSECAG00000029766	H2AX	chorionic villus	present	gold quality	66.87
+ENSECAG00000029766	H2AX	articular cartilage of joint	present	gold quality	59.4
+ENSECAG00000029871	H2AB3	prefrontal cortex	present	gold quality	38.93
+ENSECAG00000029871	H2AB3	multicellular organism	present	gold quality	20.71
+ENSECAG00000029871	H2AB3	testis	present	gold quality	79.33
+ENSECAG00000029871	H2AB3	testis	present	gold quality	77.45
+ENSECAG00000029871	H2AB3	testis	present	gold quality	94.9
+ENSECAG00000029871	H2AB3	testis	present	gold quality	50.08
+ENSECAG00000029871	H2AB3	cerebellum	present	gold quality	33.3
+ENSECAG00000029871	H2AB3	liver	present	gold quality	38.97
+ENSECAG00000029871	H2AB3	muscle tissue	present	gold quality	29.6
+ENSECAG00000031036	H2AC9	leukocyte	present	gold quality	70.3
+ENSECAG00000031036	H2AC9	zone of skin	present	gold quality	54.71
+ENSECAG00000031036	H2AC9	zone of skin	present	gold quality	52.84
+ENSECAG00000031036	H2AC9	adult mammalian kidney	present	gold quality	84.86
+ENSECAG00000031036	H2AC9	inner cell mass	present	gold quality	42.91
+ENSECAG00000031036	H2AC9	trophoblast	present	gold quality	84.79
+ENSECAG00000031036	H2AC9	trophoblast	present	gold quality	84.74
+ENSECAG00000031036	H2AC9	trophoblast	present	gold quality	97.94
+ENSECAG00000031036	H2AC9	blood	present	gold quality	55.03
+ENSECAG00000031036	H2AC9	blood	present	gold quality	47.22
+ENSECAG00000031036	H2AC9	blood	present	gold quality	53.87
+ENSECAG00000031036	H2AC9	blood	present	gold quality	72.48
+ENSECAG00000031036	H2AC9	blood	present	gold quality	52.14
+ENSECAG00000031036	H2AC9	blood	present	gold quality	75.0
+ENSECAG00000031036	H2AC9	prefrontal cortex	present	gold quality	58.75
+ENSECAG00000031036	H2AC9	multicellular organism	present	gold quality	69.46
+ENSECAG00000031036	H2AC9	testis	present	gold quality	36.5
+ENSECAG00000031036	H2AC9	testis	present	gold quality	47.02
+ENSECAG00000031036	H2AC9	testis	present	gold quality	30.5
+ENSECAG00000031036	H2AC9	testis	present	gold quality	33.53
+ENSECAG00000031036	H2AC9	embryo	present	gold quality	66.1
+ENSECAG00000031036	H2AC9	retina	present	gold quality	69.24
+ENSECAG00000031036	H2AC9	endometrium	present	gold quality	80.37
+ENSECAG00000031036	H2AC9	gluteus medius	present	gold quality	77.7
+ENSECAG00000031036	H2AC9	gluteus medius	present	gold quality	61.03
+ENSECAG00000031036	H2AC9	gluteus medius	present	gold quality	69.46
+ENSECAG00000031036	H2AC9	gluteus medius	present	gold quality	71.63
+ENSECAG00000031036	H2AC9	triceps brachii	present	gold quality	88.1
+ENSECAG00000031036	H2AC9	triceps brachii	present	gold quality	87.85
+ENSECAG00000031036	H2AC9	synovial membrane of synovial joint	present	gold quality	59.6
+ENSECAG00000031036	H2AC9	epithelium of bronchus	present	gold quality	57.54
+ENSECAG00000031036	H2AC9	epithelium of bronchus	present	gold quality	57.26
+ENSECAG00000031036	H2AC9	cerebellum	present	gold quality	40.88
+ENSECAG00000031036	H2AC9	cerebellum	present	gold quality	69.23
+ENSECAG00000031036	H2AC9	cerebellum	present	gold quality	44.82
+ENSECAG00000031036	H2AC9	cerebellum	present	gold quality	72.68
+ENSECAG00000031036	H2AC9	cerebellum	present	gold quality	50.32
+ENSECAG00000031036	H2AC9	liver	present	gold quality	71.81
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	52.85
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	59.38
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	63.27
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	65.46
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	74.38
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	68.01
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	62.2
+ENSECAG00000031036	H2AC9	spinal cord	present	gold quality	61.51
+ENSECAG00000031036	H2AC9	brainstem	present	gold quality	52.46
+ENSECAG00000031036	H2AC9	bone marrow	present	gold quality	61.15
+ENSECAG00000031036	H2AC9	muscle tissue	present	gold quality	85.41
+ENSECAG00000031036	H2AC9	muscle tissue	present	gold quality	86.89
+ENSECAG00000031036	H2AC9	muscle tissue	present	gold quality	87.04
+ENSECAG00000031036	H2AC9	muscle tissue	present	gold quality	86.79
+ENSECAG00000031036	H2AC9	muscle tissue	present	gold quality	84.72
+ENSECAG00000031036	H2AC9	trophectoderm	present	gold quality	63.18
+ENSECAG00000031036	H2AC9	trophectoderm	present	gold quality	46.65
+ENSECAG00000031036	H2AC9	oviduct epithelium	present	gold quality	89.88
+ENSECAG00000031036	H2AC9	chorionic villus	present	gold quality	64.8
+ENSECAG00000031036	H2AC9	articular cartilage of joint	present	gold quality	54.65
+ENSECAG00000033031	H2AC7	inner cell mass	present	gold quality	72.61
+ENSECAG00000033031	H2AC7	inner cell mass	present	gold quality	71.36
+ENSECAG00000033031	H2AC7	trophoblast	present	gold quality	33.11
+ENSECAG00000033031	H2AC7	trophoblast	present	gold quality	29.98
+ENSECAG00000033031	H2AC7	trophoblast	present	gold quality	51.15
+ENSECAG00000033031	H2AC7	multicellular organism	present	gold quality	38.92
+ENSECAG00000033031	H2AC7	testis	present	gold quality	36.25
+ENSECAG00000033031	H2AC7	testis	present	gold quality	49.33
+ENSECAG00000033031	H2AC7	testis	present	gold quality	34.68
+ENSECAG00000033031	H2AC7	gluteus medius	present	gold quality	26.08
+ENSECAG00000033031	H2AC7	triceps brachii	present	gold quality	29.68
+ENSECAG00000033031	H2AC7	triceps brachii	present	gold quality	24.28
+ENSECAG00000033031	H2AC7	cerebellum	present	gold quality	83.94
+ENSECAG00000033031	H2AC7	cerebellum	present	gold quality	60.95
+ENSECAG00000033031	H2AC7	cerebellum	present	gold quality	90.48
+ENSECAG00000033031	H2AC7	cerebellum	present	gold quality	85.8
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	58.85
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	56.12
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	44.97
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	48.48
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	61.1
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	53.11
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	49.99
+ENSECAG00000033031	H2AC7	spinal cord	present	gold quality	50.61
+ENSECAG00000033031	H2AC7	brainstem	present	gold quality	56.63
+ENSECAG00000033031	H2AC7	brainstem	present	gold quality	58.79
+ENSECAG00000033031	H2AC7	bone marrow	present	gold quality	88.72
+ENSECAG00000033031	H2AC7	muscle tissue	present	gold quality	39.67
+ENSECAG00000033031	H2AC7	muscle tissue	present	gold quality	24.51
+ENSECAG00000033031	H2AC7	trophectoderm	present	gold quality	80.82
+ENSECAG00000033031	H2AC7	trophectoderm	present	gold quality	77.32
+ENSECAG00000033031	H2AC7	oviduct epithelium	present	gold quality	76.8
+ENSECAG00000034818	H2AJ	leukocyte	present	gold quality	92.44
+ENSECAG00000034818	H2AJ	zone of skin	present	gold quality	96.68
+ENSECAG00000034818	H2AJ	zone of skin	present	gold quality	97.16
+ENSECAG00000034818	H2AJ	adult mammalian kidney	present	gold quality	92.75
+ENSECAG00000034818	H2AJ	inner cell mass	present	gold quality	61.04
+ENSECAG00000034818	H2AJ	inner cell mass	present	gold quality	62.89
+ENSECAG00000034818	H2AJ	trophoblast	present	gold quality	91.42
+ENSECAG00000034818	H2AJ	trophoblast	present	gold quality	90.98
+ENSECAG00000034818	H2AJ	trophoblast	present	gold quality	97.34
+ENSECAG00000034818	H2AJ	blood	present	gold quality	83.92
+ENSECAG00000034818	H2AJ	blood	present	gold quality	89.31
+ENSECAG00000034818	H2AJ	blood	present	gold quality	91.36
+ENSECAG00000034818	H2AJ	blood	present	gold quality	91.41
+ENSECAG00000034818	H2AJ	blood	present	gold quality	91.06
+ENSECAG00000034818	H2AJ	blood	present	gold quality	89.48
+ENSECAG00000034818	H2AJ	prefrontal cortex	present	gold quality	72.45
+ENSECAG00000034818	H2AJ	multicellular organism	present	gold quality	89.16
+ENSECAG00000034818	H2AJ	testis	present	gold quality	96.35
+ENSECAG00000034818	H2AJ	testis	present	gold quality	93.13
+ENSECAG00000034818	H2AJ	testis	present	gold quality	98.4
+ENSECAG00000034818	H2AJ	testis	present	gold quality	97.43
+ENSECAG00000034818	H2AJ	embryo	present	gold quality	77.18
+ENSECAG00000034818	H2AJ	retina	present	gold quality	94.43
+ENSECAG00000034818	H2AJ	endometrium	present	gold quality	96.57
+ENSECAG00000034818	H2AJ	gluteus medius	present	gold quality	68.24
+ENSECAG00000034818	H2AJ	gluteus medius	present	gold quality	79.41
+ENSECAG00000034818	H2AJ	gluteus medius	present	gold quality	68.97
+ENSECAG00000034818	H2AJ	gluteus medius	present	gold quality	68.02
+ENSECAG00000034818	H2AJ	triceps brachii	present	gold quality	83.2
+ENSECAG00000034818	H2AJ	triceps brachii	present	gold quality	79.53
+ENSECAG00000034818	H2AJ	synovial membrane of synovial joint	present	gold quality	96.03
+ENSECAG00000034818	H2AJ	epithelium of bronchus	present	gold quality	98.15
+ENSECAG00000034818	H2AJ	epithelium of bronchus	present	gold quality	98.29
+ENSECAG00000034818	H2AJ	cerebellum	present	gold quality	73.93
+ENSECAG00000034818	H2AJ	cerebellum	present	gold quality	93.73
+ENSECAG00000034818	H2AJ	cerebellum	present	gold quality	81.75
+ENSECAG00000034818	H2AJ	cerebellum	present	gold quality	93.88
+ENSECAG00000034818	H2AJ	cerebellum	present	gold quality	93.12
+ENSECAG00000034818	H2AJ	liver	present	gold quality	72.72
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	82.95
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	85.03
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	72.92
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	79.24
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	86.81
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	81.11
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	76.78
+ENSECAG00000034818	H2AJ	spinal cord	present	gold quality	83.42
+ENSECAG00000034818	H2AJ	brainstem	present	gold quality	63.07
+ENSECAG00000034818	H2AJ	brainstem	present	gold quality	65.95
+ENSECAG00000034818	H2AJ	bone marrow	present	gold quality	95.66
+ENSECAG00000034818	H2AJ	muscle tissue	present	gold quality	75.57
+ENSECAG00000034818	H2AJ	muscle tissue	present	gold quality	73.98
+ENSECAG00000034818	H2AJ	muscle tissue	present	gold quality	79.2
+ENSECAG00000034818	H2AJ	muscle tissue	present	gold quality	72.34
+ENSECAG00000034818	H2AJ	muscle tissue	present	gold quality	67.89
+ENSECAG00000034818	H2AJ	trophectoderm	present	gold quality	55.35
+ENSECAG00000034818	H2AJ	oviduct epithelium	present	gold quality	95.77
+ENSECAG00000034818	H2AJ	chorionic villus	present	gold quality	97.26
+ENSECAG00000034818	H2AJ	articular cartilage of joint	present	gold quality	88.98
+ENSECAG00000036162	H2AC17	leukocyte	present	gold quality	33.28
+ENSECAG00000036162	H2AC17	zone of skin	present	gold quality	23.71
+ENSECAG00000036162	H2AC17	zone of skin	present	gold quality	24.75
+ENSECAG00000036162	H2AC17	inner cell mass	present	gold quality	89.68
+ENSECAG00000036162	H2AC17	inner cell mass	present	gold quality	87.49
+ENSECAG00000036162	H2AC17	trophoblast	present	gold quality	40.33
+ENSECAG00000036162	H2AC17	trophoblast	present	gold quality	33.68
+ENSECAG00000036162	H2AC17	trophoblast	present	gold quality	78.19
+ENSECAG00000036162	H2AC17	blood	present	gold quality	28.2
+ENSECAG00000036162	H2AC17	blood	present	gold quality	39.26
+ENSECAG00000036162	H2AC17	blood	present	gold quality	30.95
+ENSECAG00000036162	H2AC17	blood	present	gold quality	28.8
+ENSECAG00000036162	H2AC17	multicellular organism	present	gold quality	34.58
+ENSECAG00000036162	H2AC17	embryo	present	gold quality	37.52
+ENSECAG00000036162	H2AC17	retina	present	gold quality	49.0
+ENSECAG00000036162	H2AC17	endometrium	present	gold quality	30.99
+ENSECAG00000036162	H2AC17	gluteus medius	present	gold quality	33.89
+ENSECAG00000036162	H2AC17	gluteus medius	present	gold quality	25.74
+ENSECAG00000036162	H2AC17	triceps brachii	present	gold quality	20.36
+ENSECAG00000036162	H2AC17	cerebellum	present	gold quality	59.18
+ENSECAG00000036162	H2AC17	cerebellum	present	gold quality	48.15
+ENSECAG00000036162	H2AC17	cerebellum	present	gold quality	60.9
+ENSECAG00000036162	H2AC17	cerebellum	present	gold quality	64.26
+ENSECAG00000036162	H2AC17	spinal cord	present	gold quality	38.44
+ENSECAG00000036162	H2AC17	spinal cord	present	gold quality	39.26
+ENSECAG00000036162	H2AC17	spinal cord	present	gold quality	45.91
+ENSECAG00000036162	H2AC17	bone marrow	present	gold quality	89.39
+ENSECAG00000036162	H2AC17	trophectoderm	present	gold quality	89.38
+ENSECAG00000036162	H2AC17	trophectoderm	present	gold quality	86.46
+ENSECAG00000036162	H2AC17	oviduct epithelium	present	gold quality	79.26
+ENSECAG00000036162	H2AC17	chorionic villus	present	gold quality	39.05
+ENSECAG00000037338	H2AC6	leukocyte	present	gold quality	63.59
+ENSECAG00000037338	H2AC6	zone of skin	present	gold quality	41.23
+ENSECAG00000037338	H2AC6	zone of skin	present	gold quality	34.55
+ENSECAG00000037338	H2AC6	adult mammalian kidney	present	gold quality	45.89
+ENSECAG00000037338	H2AC6	inner cell mass	present	gold quality	80.83
+ENSECAG00000037338	H2AC6	inner cell mass	present	gold quality	80.56
+ENSECAG00000037338	H2AC6	trophoblast	present	gold quality	46.89
+ENSECAG00000037338	H2AC6	trophoblast	present	gold quality	42.45
+ENSECAG00000037338	H2AC6	trophoblast	present	gold quality	66.53
+ENSECAG00000037338	H2AC6	blood	present	gold quality	48.52
+ENSECAG00000037338	H2AC6	blood	present	gold quality	51.25
+ENSECAG00000037338	H2AC6	blood	present	gold quality	52.84
+ENSECAG00000037338	H2AC6	blood	present	gold quality	74.99
+ENSECAG00000037338	H2AC6	blood	present	gold quality	54.48
+ENSECAG00000037338	H2AC6	blood	present	gold quality	77.63
+ENSECAG00000037338	H2AC6	multicellular organism	present	gold quality	56.54
+ENSECAG00000037338	H2AC6	testis	present	gold quality	32.75
+ENSECAG00000037338	H2AC6	testis	present	gold quality	32.74
+ENSECAG00000037338	H2AC6	testis	present	gold quality	29.56
+ENSECAG00000037338	H2AC6	testis	present	gold quality	40.27
+ENSECAG00000037338	H2AC6	embryo	present	gold quality	33.09
+ENSECAG00000037338	H2AC6	retina	present	gold quality	61.66
+ENSECAG00000037338	H2AC6	endometrium	present	gold quality	33.88
+ENSECAG00000037338	H2AC6	gluteus medius	present	gold quality	31.72
+ENSECAG00000037338	H2AC6	gluteus medius	present	gold quality	32.49
+ENSECAG00000037338	H2AC6	gluteus medius	present	gold quality	24.77
+ENSECAG00000037338	H2AC6	triceps brachii	present	gold quality	46.61
+ENSECAG00000037338	H2AC6	triceps brachii	present	gold quality	44.22
+ENSECAG00000037338	H2AC6	epithelium of bronchus	present	gold quality	32.59
+ENSECAG00000037338	H2AC6	cerebellum	present	gold quality	97.71
+ENSECAG00000037338	H2AC6	cerebellum	present	gold quality	95.74
+ENSECAG00000037338	H2AC6	cerebellum	present	gold quality	99.43
+ENSECAG00000037338	H2AC6	cerebellum	present	gold quality	98.35
+ENSECAG00000037338	H2AC6	liver	present	gold quality	46.72
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	96.38
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	96.44
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	96.7
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	95.75
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	96.67
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	95.81
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	94.41
+ENSECAG00000037338	H2AC6	spinal cord	present	gold quality	96.03
+ENSECAG00000037338	H2AC6	brainstem	present	gold quality	78.04
+ENSECAG00000037338	H2AC6	brainstem	present	gold quality	84.0
+ENSECAG00000037338	H2AC6	bone marrow	present	gold quality	86.04
+ENSECAG00000037338	H2AC6	muscle tissue	present	gold quality	40.78
+ENSECAG00000037338	H2AC6	muscle tissue	present	gold quality	23.5
+ENSECAG00000037338	H2AC6	muscle tissue	present	gold quality	28.66
+ENSECAG00000037338	H2AC6	trophectoderm	present	gold quality	90.2
+ENSECAG00000037338	H2AC6	trophectoderm	present	gold quality	84.9
+ENSECAG00000037338	H2AC6	oviduct epithelium	present	gold quality	98.72
+ENSECAG00000037338	H2AC6	chorionic villus	present	gold quality	49.02
+ENSECAG00000037839	H2AC4	leukocyte	present	gold quality	47.45
+ENSECAG00000037839	H2AC4	inner cell mass	present	gold quality	90.33
+ENSECAG00000037839	H2AC4	inner cell mass	present	gold quality	91.01
+ENSECAG00000037839	H2AC4	trophoblast	present	gold quality	45.33
+ENSECAG00000037839	H2AC4	trophoblast	present	gold quality	41.12
+ENSECAG00000037839	H2AC4	trophoblast	present	gold quality	57.12
+ENSECAG00000037839	H2AC4	blood	present	gold quality	29.49
+ENSECAG00000037839	H2AC4	blood	present	gold quality	39.96
+ENSECAG00000037839	H2AC4	blood	present	gold quality	52.0
+ENSECAG00000037839	H2AC4	blood	present	gold quality	42.02
+ENSECAG00000037839	H2AC4	blood	present	gold quality	65.22
+ENSECAG00000037839	H2AC4	multicellular organism	present	gold quality	45.58
+ENSECAG00000037839	H2AC4	testis	present	gold quality	40.17
+ENSECAG00000037839	H2AC4	testis	present	gold quality	25.41
+ENSECAG00000037839	H2AC4	testis	present	gold quality	53.63
+ENSECAG00000037839	H2AC4	testis	present	gold quality	41.5
+ENSECAG00000037839	H2AC4	embryo	present	gold quality	32.11
+ENSECAG00000037839	H2AC4	endometrium	present	gold quality	19.45
+ENSECAG00000037839	H2AC4	gluteus medius	present	gold quality	29.3
+ENSECAG00000037839	H2AC4	gluteus medius	present	gold quality	33.36
+ENSECAG00000037839	H2AC4	gluteus medius	present	gold quality	29.65
+ENSECAG00000037839	H2AC4	triceps brachii	present	gold quality	20.1
+ENSECAG00000037839	H2AC4	epithelium of bronchus	present	gold quality	29.52
+ENSECAG00000037839	H2AC4	epithelium of bronchus	present	gold quality	32.79
+ENSECAG00000037839	H2AC4	cerebellum	present	gold quality	80.43
+ENSECAG00000037839	H2AC4	cerebellum	present	gold quality	62.21
+ENSECAG00000037839	H2AC4	cerebellum	present	gold quality	91.63
+ENSECAG00000037839	H2AC4	cerebellum	present	gold quality	80.98
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	64.67
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	54.65
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	59.37
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	52.64
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	43.02
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	57.56
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	42.27
+ENSECAG00000037839	H2AC4	spinal cord	present	gold quality	56.28
+ENSECAG00000037839	H2AC4	bone marrow	present	gold quality	94.4
+ENSECAG00000037839	H2AC4	trophectoderm	present	gold quality	91.88
+ENSECAG00000037839	H2AC4	trophectoderm	present	gold quality	91.25
+ENSECAG00000037839	H2AC4	oviduct epithelium	present	gold quality	91.34
+ENSECAG00000038416	H2AC5	zone of skin	present	gold quality	22.7
+ENSECAG00000038416	H2AC5	zone of skin	present	gold quality	24.36
+ENSECAG00000038416	H2AC5	inner cell mass	present	gold quality	81.24
+ENSECAG00000038416	H2AC5	inner cell mass	present	gold quality	77.1
+ENSECAG00000038416	H2AC5	trophoblast	present	gold quality	33.2
+ENSECAG00000038416	H2AC5	trophoblast	present	gold quality	56.52
+ENSECAG00000038416	H2AC5	multicellular organism	present	gold quality	37.26
+ENSECAG00000038416	H2AC5	testis	present	gold quality	31.13
+ENSECAG00000038416	H2AC5	testis	present	gold quality	24.18
+ENSECAG00000038416	H2AC5	testis	present	gold quality	35.33
+ENSECAG00000038416	H2AC5	testis	present	gold quality	37.02
+ENSECAG00000038416	H2AC5	cerebellum	present	gold quality	95.41
+ENSECAG00000038416	H2AC5	cerebellum	present	gold quality	88.94
+ENSECAG00000038416	H2AC5	cerebellum	present	gold quality	97.54
+ENSECAG00000038416	H2AC5	cerebellum	present	gold quality	96.36
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	72.19
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	59.89
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	65.5
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	62.52
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	65.54
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	64.04
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	58.67
+ENSECAG00000038416	H2AC5	spinal cord	present	gold quality	72.02
+ENSECAG00000038416	H2AC5	brainstem	present	gold quality	56.57
+ENSECAG00000038416	H2AC5	brainstem	present	gold quality	47.56
+ENSECAG00000038416	H2AC5	bone marrow	present	gold quality	78.98
+ENSECAG00000038416	H2AC5	trophectoderm	present	gold quality	84.52
+ENSECAG00000038416	H2AC5	trophectoderm	present	gold quality	79.68
+ENSECAG00000038416	H2AC5	oviduct epithelium	present	gold quality	76.51
+ENSECAG00000038416	H2AC5	chorionic villus	present	gold quality	36.76
+ENSECAG00000039905	H2AC8	zone of skin	present	gold quality	19.3
+ENSECAG00000039905	H2AC8	zone of skin	present	gold quality	24.35
+ENSECAG00000039905	H2AC8	inner cell mass	present	gold quality	58.05
+ENSECAG00000039905	H2AC8	trophoblast	present	gold quality	42.41
+ENSECAG00000039905	H2AC8	trophoblast	present	gold quality	36.89
+ENSECAG00000039905	H2AC8	trophoblast	present	gold quality	67.5
+ENSECAG00000039905	H2AC8	blood	present	gold quality	43.47
+ENSECAG00000039905	H2AC8	blood	present	gold quality	46.96
+ENSECAG00000039905	H2AC8	multicellular organism	present	gold quality	39.95
+ENSECAG00000039905	H2AC8	testis	present	gold quality	31.84
+ENSECAG00000039905	H2AC8	testis	present	gold quality	36.99
+ENSECAG00000039905	H2AC8	testis	present	gold quality	42.73
+ENSECAG00000039905	H2AC8	retina	present	gold quality	52.45
+ENSECAG00000039905	H2AC8	triceps brachii	present	gold quality	24.74
+ENSECAG00000039905	H2AC8	triceps brachii	present	gold quality	24.32
+ENSECAG00000039905	H2AC8	cerebellum	present	gold quality	96.93
+ENSECAG00000039905	H2AC8	cerebellum	present	gold quality	88.79
+ENSECAG00000039905	H2AC8	cerebellum	present	gold quality	98.64
+ENSECAG00000039905	H2AC8	cerebellum	present	gold quality	95.46
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	75.37
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	66.47
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	71.22
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	65.51
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	70.81
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	72.21
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	66.95
+ENSECAG00000039905	H2AC8	spinal cord	present	gold quality	68.01
+ENSECAG00000039905	H2AC8	brainstem	present	gold quality	58.08
+ENSECAG00000039905	H2AC8	brainstem	present	gold quality	69.95
+ENSECAG00000039905	H2AC8	bone marrow	present	gold quality	85.07
+ENSECAG00000039905	H2AC8	trophectoderm	present	gold quality	64.09
+ENSECAG00000039905	H2AC8	trophectoderm	present	gold quality	63.49
+ENSECAG00000039905	H2AC8	oviduct epithelium	present	gold quality	89.57
+ENSECAG00000039905	H2AC8	chorionic villus	present	gold quality	36.44
+ENSECAG00000040706	H2AC21	leukocyte	present	gold quality	60.83
+ENSECAG00000040706	H2AC21	zone of skin	present	gold quality	36.82
+ENSECAG00000040706	H2AC21	zone of skin	present	gold quality	39.48
+ENSECAG00000040706	H2AC21	adult mammalian kidney	present	gold quality	37.71
+ENSECAG00000040706	H2AC21	inner cell mass	present	gold quality	94.03
+ENSECAG00000040706	H2AC21	inner cell mass	present	gold quality	87.85
+ENSECAG00000040706	H2AC21	trophoblast	present	gold quality	35.36
+ENSECAG00000040706	H2AC21	trophoblast	present	gold quality	29.91
+ENSECAG00000040706	H2AC21	blood	present	gold quality	39.22
+ENSECAG00000040706	H2AC21	blood	present	gold quality	56.28
+ENSECAG00000040706	H2AC21	blood	present	gold quality	36.14
+ENSECAG00000040706	H2AC21	blood	present	gold quality	60.64
+ENSECAG00000040706	H2AC21	prefrontal cortex	present	gold quality	35.99
+ENSECAG00000040706	H2AC21	multicellular organism	present	gold quality	51.79
+ENSECAG00000040706	H2AC21	testis	present	gold quality	31.21
+ENSECAG00000040706	H2AC21	testis	present	gold quality	39.43
+ENSECAG00000040706	H2AC21	testis	present	gold quality	30.42
+ENSECAG00000040706	H2AC21	embryo	present	gold quality	37.98
+ENSECAG00000040706	H2AC21	endometrium	present	gold quality	46.29
+ENSECAG00000040706	H2AC21	triceps brachii	present	gold quality	58.35
+ENSECAG00000040706	H2AC21	triceps brachii	present	gold quality	55.85
+ENSECAG00000040706	H2AC21	synovial membrane of synovial joint	present	gold quality	31.34
+ENSECAG00000040706	H2AC21	epithelium of bronchus	present	gold quality	36.22
+ENSECAG00000040706	H2AC21	epithelium of bronchus	present	gold quality	37.54
+ENSECAG00000040706	H2AC21	cerebellum	present	gold quality	93.41
+ENSECAG00000040706	H2AC21	cerebellum	present	gold quality	87.77
+ENSECAG00000040706	H2AC21	cerebellum	present	gold quality	96.74
+ENSECAG00000040706	H2AC21	cerebellum	present	gold quality	95.94
+ENSECAG00000040706	H2AC21	liver	present	gold quality	42.44
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	69.17
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	75.66
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	69.78
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	71.41
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	65.68
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	68.95
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	70.96
+ENSECAG00000040706	H2AC21	spinal cord	present	gold quality	74.15
+ENSECAG00000040706	H2AC21	brainstem	present	gold quality	60.22
+ENSECAG00000040706	H2AC21	brainstem	present	gold quality	61.6
+ENSECAG00000040706	H2AC21	bone marrow	present	gold quality	73.68
+ENSECAG00000040706	H2AC21	muscle tissue	present	gold quality	51.16
+ENSECAG00000040706	H2AC21	muscle tissue	present	gold quality	50.24
+ENSECAG00000040706	H2AC21	muscle tissue	present	gold quality	39.92
+ENSECAG00000040706	H2AC21	muscle tissue	present	gold quality	47.22
+ENSECAG00000040706	H2AC21	muscle tissue	present	gold quality	44.96
+ENSECAG00000040706	H2AC21	trophectoderm	present	gold quality	96.78
+ENSECAG00000040706	H2AC21	trophectoderm	present	gold quality	94.49
+ENSECAG00000040706	H2AC21	oviduct epithelium	present	gold quality	81.32
+ENSECAG00000040706	H2AC21	chorionic villus	present	gold quality	38.17
+ENSECAG00000040706	H2AC21	articular cartilage of joint	present	gold quality	31.17
+ENSECAG00000040805	H2AC16	leukocyte	present	gold quality	47.57
+ENSECAG00000040805	H2AC16	zone of skin	present	gold quality	29.16
+ENSECAG00000040805	H2AC16	zone of skin	present	gold quality	38.68
+ENSECAG00000040805	H2AC16	inner cell mass	present	gold quality	69.48
+ENSECAG00000040805	H2AC16	inner cell mass	present	gold quality	74.95
+ENSECAG00000040805	H2AC16	trophoblast	present	gold quality	50.04
+ENSECAG00000040805	H2AC16	trophoblast	present	gold quality	43.85
+ENSECAG00000040805	H2AC16	trophoblast	present	gold quality	66.31
+ENSECAG00000040805	H2AC16	blood	present	gold quality	50.92
+ENSECAG00000040805	H2AC16	blood	present	gold quality	36.8
+ENSECAG00000040805	H2AC16	blood	present	gold quality	42.83
+ENSECAG00000040805	H2AC16	blood	present	gold quality	42.18
+ENSECAG00000040805	H2AC16	prefrontal cortex	present	gold quality	31.51
+ENSECAG00000040805	H2AC16	multicellular organism	present	gold quality	33.18
+ENSECAG00000040805	H2AC16	testis	present	gold quality	23.54
+ENSECAG00000040805	H2AC16	testis	present	gold quality	43.21
+ENSECAG00000040805	H2AC16	embryo	present	gold quality	49.97
+ENSECAG00000040805	H2AC16	endometrium	present	gold quality	57.18
+ENSECAG00000040805	H2AC16	gluteus medius	present	gold quality	45.95
+ENSECAG00000040805	H2AC16	gluteus medius	present	gold quality	41.26
+ENSECAG00000040805	H2AC16	gluteus medius	present	gold quality	34.21
+ENSECAG00000040805	H2AC16	synovial membrane of synovial joint	present	gold quality	40.61
+ENSECAG00000040805	H2AC16	cerebellum	present	gold quality	51.43
+ENSECAG00000040805	H2AC16	cerebellum	present	gold quality	47.66
+ENSECAG00000040805	H2AC16	cerebellum	present	gold quality	46.17
+ENSECAG00000040805	H2AC16	spinal cord	present	gold quality	37.04
+ENSECAG00000040805	H2AC16	spinal cord	present	gold quality	35.59
+ENSECAG00000040805	H2AC16	bone marrow	present	gold quality	66.21
+ENSECAG00000040805	H2AC16	trophectoderm	present	gold quality	71.89
+ENSECAG00000040805	H2AC16	trophectoderm	present	gold quality	78.45
+ENSECAG00000040805	H2AC16	oviduct epithelium	present	gold quality	48.92
+ENSECAG00000040805	H2AC16	chorionic villus	present	gold quality	40.23
+ENSECAG00000041373	H2AC11	leukocyte	present	gold quality	50.13
+ENSECAG00000041373	H2AC11	zone of skin	present	gold quality	30.93
+ENSECAG00000041373	H2AC11	zone of skin	present	gold quality	26.77
+ENSECAG00000041373	H2AC11	inner cell mass	present	gold quality	96.69
+ENSECAG00000041373	H2AC11	inner cell mass	present	gold quality	96.62
+ENSECAG00000041373	H2AC11	trophoblast	present	gold quality	64.96
+ENSECAG00000041373	H2AC11	trophoblast	present	gold quality	59.89
+ENSECAG00000041373	H2AC11	trophoblast	present	gold quality	91.87
+ENSECAG00000041373	H2AC11	blood	present	gold quality	43.95
+ENSECAG00000041373	H2AC11	blood	present	gold quality	37.29
+ENSECAG00000041373	H2AC11	blood	present	gold quality	62.13
+ENSECAG00000041373	H2AC11	blood	present	gold quality	38.99
+ENSECAG00000041373	H2AC11	blood	present	gold quality	62.46
+ENSECAG00000041373	H2AC11	multicellular organism	present	gold quality	52.01
+ENSECAG00000041373	H2AC11	testis	present	gold quality	45.91
+ENSECAG00000041373	H2AC11	testis	present	gold quality	29.44
+ENSECAG00000041373	H2AC11	testis	present	gold quality	54.89
+ENSECAG00000041373	H2AC11	testis	present	gold quality	51.45
+ENSECAG00000041373	H2AC11	embryo	present	gold quality	52.06
+ENSECAG00000041373	H2AC11	endometrium	present	gold quality	29.63
+ENSECAG00000041373	H2AC11	gluteus medius	present	gold quality	33.46
+ENSECAG00000041373	H2AC11	gluteus medius	present	gold quality	25.28
+ENSECAG00000041373	H2AC11	gluteus medius	present	gold quality	33.75
+ENSECAG00000041373	H2AC11	triceps brachii	present	gold quality	37.04
+ENSECAG00000041373	H2AC11	triceps brachii	present	gold quality	36.97
+ENSECAG00000041373	H2AC11	epithelium of bronchus	present	gold quality	43.47
+ENSECAG00000041373	H2AC11	epithelium of bronchus	present	gold quality	41.84
+ENSECAG00000041373	H2AC11	cerebellum	present	gold quality	79.23
+ENSECAG00000041373	H2AC11	cerebellum	present	gold quality	63.66
+ENSECAG00000041373	H2AC11	cerebellum	present	gold quality	90.9
+ENSECAG00000041373	H2AC11	cerebellum	present	gold quality	85.93
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	66.47
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	73.71
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	42.1
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	67.56
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	63.95
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	63.9
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	58.88
+ENSECAG00000041373	H2AC11	spinal cord	present	gold quality	60.93
+ENSECAG00000041373	H2AC11	brainstem	present	gold quality	58.28
+ENSECAG00000041373	H2AC11	brainstem	present	gold quality	59.7
+ENSECAG00000041373	H2AC11	bone marrow	present	gold quality	94.42
+ENSECAG00000041373	H2AC11	muscle tissue	present	gold quality	46.07
+ENSECAG00000041373	H2AC11	muscle tissue	present	gold quality	50.05
+ENSECAG00000041373	H2AC11	muscle tissue	present	gold quality	32.21
+ENSECAG00000041373	H2AC11	muscle tissue	present	gold quality	31.14
+ENSECAG00000041373	H2AC11	trophectoderm	present	gold quality	97.7
+ENSECAG00000041373	H2AC11	trophectoderm	present	gold quality	97.82
+ENSECAG00000041373	H2AC11	oviduct epithelium	present	gold quality	94.09
+ENSECAG00000041373	H2AC11	articular cartilage of joint	present	gold quality	33.56
+ENSECAG00000042371	H2AC12	inner cell mass	present	gold quality	58.95
+ENSECAG00000042371	H2AC12	trophoblast	present	gold quality	24.76
+ENSECAG00000042371	H2AC12	trophoblast	present	gold quality	74.14
+ENSECAG00000042371	H2AC12	blood	present	gold quality	23.67
+ENSECAG00000042371	H2AC12	multicellular organism	present	gold quality	23.53
+ENSECAG00000042371	H2AC12	testis	present	gold quality	31.42
+ENSECAG00000042371	H2AC12	testis	present	gold quality	35.76
+ENSECAG00000042371	H2AC12	testis	present	gold quality	26.22
+ENSECAG00000042371	H2AC12	testis	present	gold quality	38.84
+ENSECAG00000042371	H2AC12	endometrium	present	gold quality	19.43
+ENSECAG00000042371	H2AC12	epithelium of bronchus	present	gold quality	24.52
+ENSECAG00000042371	H2AC12	epithelium of bronchus	present	gold quality	32.85
+ENSECAG00000042371	H2AC12	cerebellum	present	gold quality	37.4
+ENSECAG00000042371	H2AC12	cerebellum	present	gold quality	48.62
+ENSECAG00000042371	H2AC12	cerebellum	present	gold quality	50.53
+ENSECAG00000042371	H2AC12	cerebellum	present	gold quality	45.85
+ENSECAG00000042371	H2AC12	spinal cord	present	gold quality	40.59
+ENSECAG00000042371	H2AC12	spinal cord	present	gold quality	45.6
+ENSECAG00000042371	H2AC12	spinal cord	present	gold quality	28.12
+ENSECAG00000042371	H2AC12	spinal cord	present	gold quality	43.67
+ENSECAG00000042371	H2AC12	brainstem	present	gold quality	30.73
+ENSECAG00000042371	H2AC12	bone marrow	present	gold quality	61.6
+ENSECAG00000042371	H2AC12	muscle tissue	present	gold quality	23.39
+ENSECAG00000042371	H2AC12	trophectoderm	present	gold quality	60.97
+ENSECAG00000042371	H2AC12	trophectoderm	present	gold quality	60.16
+ENSECAG00000042371	H2AC12	oviduct epithelium	present	gold quality	35.56
+ENSECAG00000042371	H2AC12	articular cartilage of joint	present	gold quality	32.66
+ENSECAG00000042897	H2AC20	leukocyte	present	gold quality	56.72
+ENSECAG00000042897	H2AC20	zone of skin	present	gold quality	55.69
+ENSECAG00000042897	H2AC20	zone of skin	present	gold quality	60.22
+ENSECAG00000042897	H2AC20	adult mammalian kidney	present	gold quality	38.28
+ENSECAG00000042897	H2AC20	inner cell mass	present	gold quality	91.73
+ENSECAG00000042897	H2AC20	inner cell mass	present	gold quality	91.19
+ENSECAG00000042897	H2AC20	trophoblast	present	gold quality	64.84
+ENSECAG00000042897	H2AC20	trophoblast	present	gold quality	67.54
+ENSECAG00000042897	H2AC20	trophoblast	present	gold quality	68.53
+ENSECAG00000042897	H2AC20	blood	present	gold quality	63.94
+ENSECAG00000042897	H2AC20	blood	present	gold quality	63.34
+ENSECAG00000042897	H2AC20	blood	present	gold quality	70.56
+ENSECAG00000042897	H2AC20	blood	present	gold quality	75.21
+ENSECAG00000042897	H2AC20	blood	present	gold quality	66.13
+ENSECAG00000042897	H2AC20	blood	present	gold quality	72.54
+ENSECAG00000042897	H2AC20	prefrontal cortex	present	gold quality	36.42
+ENSECAG00000042897	H2AC20	multicellular organism	present	gold quality	65.32
+ENSECAG00000042897	H2AC20	testis	present	gold quality	37.67
+ENSECAG00000042897	H2AC20	testis	present	gold quality	47.44
+ENSECAG00000042897	H2AC20	testis	present	gold quality	41.5
+ENSECAG00000042897	H2AC20	embryo	present	gold quality	51.99
+ENSECAG00000042897	H2AC20	retina	present	gold quality	48.12
+ENSECAG00000042897	H2AC20	endometrium	present	gold quality	47.16
+ENSECAG00000042897	H2AC20	gluteus medius	present	gold quality	63.76
+ENSECAG00000042897	H2AC20	gluteus medius	present	gold quality	58.97
+ENSECAG00000042897	H2AC20	gluteus medius	present	gold quality	51.64
+ENSECAG00000042897	H2AC20	gluteus medius	present	gold quality	61.7
+ENSECAG00000042897	H2AC20	triceps brachii	present	gold quality	71.54
+ENSECAG00000042897	H2AC20	triceps brachii	present	gold quality	67.96
+ENSECAG00000042897	H2AC20	synovial membrane of synovial joint	present	gold quality	50.53
+ENSECAG00000042897	H2AC20	epithelium of bronchus	present	gold quality	39.65
+ENSECAG00000042897	H2AC20	epithelium of bronchus	present	gold quality	44.72
+ENSECAG00000042897	H2AC20	cerebellum	present	gold quality	28.49
+ENSECAG00000042897	H2AC20	cerebellum	present	gold quality	95.8
+ENSECAG00000042897	H2AC20	cerebellum	present	gold quality	92.98
+ENSECAG00000042897	H2AC20	cerebellum	present	gold quality	98.2
+ENSECAG00000042897	H2AC20	cerebellum	present	gold quality	97.07
+ENSECAG00000042897	H2AC20	liver	present	gold quality	42.92
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	94.83
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	96.14
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	95.1
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	93.64
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	95.1
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	91.06
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	93.2
+ENSECAG00000042897	H2AC20	spinal cord	present	gold quality	92.44
+ENSECAG00000042897	H2AC20	brainstem	present	gold quality	89.13
+ENSECAG00000042897	H2AC20	brainstem	present	gold quality	92.98
+ENSECAG00000042897	H2AC20	bone marrow	present	gold quality	81.49
+ENSECAG00000042897	H2AC20	muscle tissue	present	gold quality	46.45
+ENSECAG00000042897	H2AC20	muscle tissue	present	gold quality	48.77
+ENSECAG00000042897	H2AC20	muscle tissue	present	gold quality	28.64
+ENSECAG00000042897	H2AC20	muscle tissue	present	gold quality	28.64
+ENSECAG00000042897	H2AC20	trophectoderm	present	gold quality	92.15
+ENSECAG00000042897	H2AC20	trophectoderm	present	gold quality	91.21
+ENSECAG00000042897	H2AC20	oviduct epithelium	present	gold quality	96.7
+ENSECAG00000042897	H2AC20	chorionic villus	present	gold quality	67.68
+ENSECAG00000042897	H2AC20	articular cartilage of joint	present	gold quality	57.67
+ENSECAG00000043631	H2AC19	leukocyte	present	gold quality	34.16
+ENSECAG00000043631	H2AC19	zone of skin	present	gold quality	43.18
+ENSECAG00000043631	H2AC19	zone of skin	present	gold quality	36.03
+ENSECAG00000043631	H2AC19	inner cell mass	present	gold quality	59.91
+ENSECAG00000043631	H2AC19	inner cell mass	present	gold quality	76.98
+ENSECAG00000043631	H2AC19	trophoblast	present	gold quality	46.49
+ENSECAG00000043631	H2AC19	trophoblast	present	gold quality	27.09
+ENSECAG00000043631	H2AC19	trophoblast	present	gold quality	96.88
+ENSECAG00000043631	H2AC19	blood	present	gold quality	78.91
+ENSECAG00000043631	H2AC19	blood	present	gold quality	49.56
+ENSECAG00000043631	H2AC19	blood	present	gold quality	79.68
+ENSECAG00000043631	H2AC19	blood	present	gold quality	39.38
+ENSECAG00000043631	H2AC19	blood	present	gold quality	60.78
+ENSECAG00000043631	H2AC19	blood	present	gold quality	58.39
+ENSECAG00000043631	H2AC19	multicellular organism	present	gold quality	40.61
+ENSECAG00000043631	H2AC19	testis	present	gold quality	79.05
+ENSECAG00000043631	H2AC19	testis	present	gold quality	59.8
+ENSECAG00000043631	H2AC19	testis	present	gold quality	94.91
+ENSECAG00000043631	H2AC19	testis	present	gold quality	76.36
+ENSECAG00000043631	H2AC19	embryo	present	gold quality	36.12
+ENSECAG00000043631	H2AC19	endometrium	present	gold quality	58.39
+ENSECAG00000043631	H2AC19	gluteus medius	present	gold quality	33.11
+ENSECAG00000043631	H2AC19	gluteus medius	present	gold quality	49.61
+ENSECAG00000043631	H2AC19	gluteus medius	present	gold quality	51.96
+ENSECAG00000043631	H2AC19	triceps brachii	present	gold quality	44.05
+ENSECAG00000043631	H2AC19	triceps brachii	present	gold quality	49.95
+ENSECAG00000043631	H2AC19	cerebellum	present	gold quality	95.86
+ENSECAG00000043631	H2AC19	cerebellum	present	gold quality	80.25
+ENSECAG00000043631	H2AC19	cerebellum	present	gold quality	90.33
+ENSECAG00000043631	H2AC19	cerebellum	present	gold quality	22.17
+ENSECAG00000043631	H2AC19	liver	present	gold quality	49.41
+ENSECAG00000043631	H2AC19	spinal cord	present	gold quality	70.34
+ENSECAG00000043631	H2AC19	spinal cord	present	gold quality	71.45
+ENSECAG00000043631	H2AC19	spinal cord	present	gold quality	52.29
+ENSECAG00000043631	H2AC19	spinal cord	present	gold quality	83.82
+ENSECAG00000043631	H2AC19	brainstem	present	gold quality	66.53
+ENSECAG00000043631	H2AC19	brainstem	present	gold quality	50.75
+ENSECAG00000043631	H2AC19	bone marrow	present	gold quality	31.75
+ENSECAG00000043631	H2AC19	muscle tissue	present	gold quality	75.08
+ENSECAG00000043631	H2AC19	muscle tissue	present	gold quality	53.97
+ENSECAG00000043631	H2AC19	muscle tissue	present	gold quality	82.07
+ENSECAG00000043631	H2AC19	trophectoderm	present	gold quality	71.49
+ENSECAG00000043631	H2AC19	trophectoderm	present	gold quality	76.75
+ENSECAG00000043631	H2AC19	oviduct epithelium	present	gold quality	70.4
+ENSECAG00000043631	H2AC19	chorionic villus	present	gold quality	85.62
+ENSECAG00000043631	H2AC19	articular cartilage of joint	present	gold quality	45.93
+ENSECAG00000043633	H2AC13	leukocyte	present	gold quality	36.3
+ENSECAG00000043633	H2AC13	zone of skin	present	gold quality	35.3
+ENSECAG00000043633	H2AC13	zone of skin	present	gold quality	42.93
+ENSECAG00000043633	H2AC13	inner cell mass	present	gold quality	82.47
+ENSECAG00000043633	H2AC13	inner cell mass	present	gold quality	77.21
+ENSECAG00000043633	H2AC13	trophoblast	present	gold quality	41.51
+ENSECAG00000043633	H2AC13	trophoblast	present	gold quality	28.77
+ENSECAG00000043633	H2AC13	trophoblast	present	gold quality	88.75
+ENSECAG00000043633	H2AC13	blood	present	gold quality	51.14
+ENSECAG00000043633	H2AC13	blood	present	gold quality	36.19
+ENSECAG00000043633	H2AC13	blood	present	gold quality	53.62
+ENSECAG00000043633	H2AC13	blood	present	gold quality	31.27
+ENSECAG00000043633	H2AC13	blood	present	gold quality	40.28
+ENSECAG00000043633	H2AC13	multicellular organism	present	gold quality	40.31
+ENSECAG00000043633	H2AC13	testis	present	gold quality	26.3
+ENSECAG00000043633	H2AC13	testis	present	gold quality	38.56
+ENSECAG00000043633	H2AC13	testis	present	gold quality	33.96
+ENSECAG00000043633	H2AC13	endometrium	present	gold quality	27.85
+ENSECAG00000043633	H2AC13	gluteus medius	present	gold quality	46.49
+ENSECAG00000043633	H2AC13	gluteus medius	present	gold quality	28.03
+ENSECAG00000043633	H2AC13	gluteus medius	present	gold quality	28.41
+ENSECAG00000043633	H2AC13	triceps brachii	present	gold quality	32.92
+ENSECAG00000043633	H2AC13	triceps brachii	present	gold quality	25.82
+ENSECAG00000043633	H2AC13	synovial membrane of synovial joint	present	gold quality	28.35
+ENSECAG00000043633	H2AC13	epithelium of bronchus	present	gold quality	37.01
+ENSECAG00000043633	H2AC13	epithelium of bronchus	present	gold quality	27.39
+ENSECAG00000043633	H2AC13	cerebellum	present	gold quality	83.17
+ENSECAG00000043633	H2AC13	cerebellum	present	gold quality	59.36
+ENSECAG00000043633	H2AC13	cerebellum	present	gold quality	93.52
+ENSECAG00000043633	H2AC13	cerebellum	present	gold quality	83.54
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	66.52
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	72.44
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	45.26
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	44.38
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	54.6
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	35.63
+ENSECAG00000043633	H2AC13	spinal cord	present	gold quality	58.77
+ENSECAG00000043633	H2AC13	bone marrow	present	gold quality	93.62
+ENSECAG00000043633	H2AC13	muscle tissue	present	gold quality	48.22
+ENSECAG00000043633	H2AC13	muscle tissue	present	gold quality	23.86
+ENSECAG00000043633	H2AC13	muscle tissue	present	gold quality	47.64
+ENSECAG00000043633	H2AC13	trophectoderm	present	gold quality	91.14
+ENSECAG00000043633	H2AC13	trophectoderm	present	gold quality	87.57
+ENSECAG00000043633	H2AC13	oviduct epithelium	present	gold quality	91.98
+ENSECAG00000043633	H2AC13	chorionic villus	present	gold quality	27.67
+ENSECAG00000043633	H2AC13	articular cartilage of joint	present	gold quality	33.68

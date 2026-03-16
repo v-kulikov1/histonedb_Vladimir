@@ -1,0 +1,3 @@
+species_name	ensembl_gene_id	gene_name	hgnc_id	vgnc_id	id_type	id_value	class	label
+Oryctolagus cuniculus	ENSOCUG00000031664	LOC100357425			vgnc_id		variant	LOC100357425:ENSOCUG00000031664
+Oryctolagus cuniculus	ENSOCUG00000035605	LOC100338182			vgnc_id		variant	LOC100338182:ENSOCUG00000035605

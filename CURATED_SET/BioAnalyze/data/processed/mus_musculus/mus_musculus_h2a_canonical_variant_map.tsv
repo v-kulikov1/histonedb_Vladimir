@@ -1,0 +1,10 @@
+species_name	ensembl_gene_id	gene_name	hgnc_id	vgnc_id	id_type	id_value	class	label
+Mus musculus	ENSMUSG00000040456	H2ap			vgnc_id		variant	H2ap:ENSMUSG00000040456
+Mus musculus	ENSMUSG00000049932	H2ax			vgnc_id		variant	H2ax:ENSMUSG00000049932
+Mus musculus	ENSMUSG00000060081	H2ac1			vgnc_id		clustered	H2ac1:ENSMUSG00000060081
+Mus musculus	ENSMUSG00000062651	H2al2a			vgnc_id		variant	H2al2a:ENSMUSG00000062651
+Mus musculus	ENSMUSG00000067441	H2ab1			vgnc_id		variant	H2ab1:ENSMUSG00000067441
+Mus musculus	ENSMUSG00000071516	H2ac13			vgnc_id		clustered	H2ac13:ENSMUSG00000071516
+Mus musculus	ENSMUSG00000082482	H2ab2			vgnc_id		variant	H2ab2:ENSMUSG00000082482
+Mus musculus	ENSMUSG00000083616	H2ab3			vgnc_id		variant	H2ab3:ENSMUSG00000083616
+Mus musculus	ENSMUSG00000100200	H2al1m			vgnc_id		variant	H2al1m:ENSMUSG00000100200

@@ -1,0 +1,2264 @@
+Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
+ENSMUSG00000040456	H2ap	spermatocyte	present	gold quality	79.78
+ENSMUSG00000040456	H2ap	spermatid	present	gold quality	95.98
+ENSMUSG00000040456	H2ap	islet of Langerhans	present	gold quality	44.71
+ENSMUSG00000040456	H2ap	islet of Langerhans	present	gold quality	61.4
+ENSMUSG00000040456	H2ap	multicellular organism	present	gold quality	37.31
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.1
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.71
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.55
+ENSMUSG00000040456	H2ap	testis	present	gold quality	89.18
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.62
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.86
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.52
+ENSMUSG00000040456	H2ap	testis	present	gold quality	96.64
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.83
+ENSMUSG00000040456	H2ap	testis	present	gold quality	99.03
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.69
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.33
+ENSMUSG00000040456	H2ap	testis	present	gold quality	96.95
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.54
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.57
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.44
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.19
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.25
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.16
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.64
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.93
+ENSMUSG00000040456	H2ap	testis	present	gold quality	71.53
+ENSMUSG00000040456	H2ap	testis	present	gold quality	96.53
+ENSMUSG00000040456	H2ap	testis	present	gold quality	89.36
+ENSMUSG00000040456	H2ap	testis	present	gold quality	99.03
+ENSMUSG00000040456	H2ap	testis	present	gold quality	96.94
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.44
+ENSMUSG00000040456	H2ap	testis	present	gold quality	96.4
+ENSMUSG00000040456	H2ap	testis	present	gold quality	95.1
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.12
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.13
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.14
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.26
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.59
+ENSMUSG00000040456	H2ap	testis	present	gold quality	97.84
+ENSMUSG00000040456	H2ap	testis	present	gold quality	89.33
+ENSMUSG00000040456	H2ap	testis	present	gold quality	98.6
+ENSMUSG00000040456	H2ap	testis	present	gold quality	94.42
+ENSMUSG00000040456	H2ap	testis	present	gold quality	64.14
+ENSMUSG00000040456	H2ap	uterus	present	gold quality	55.53
+ENSMUSG00000040456	H2ap	seminiferous tubule of testis	present	gold quality	98.75
+ENSMUSG00000049932	H2ax	spermatocyte	present	gold quality	98.36
+ENSMUSG00000049932	H2ax	spermatid	present	gold quality	93.47
+ENSMUSG00000049932	H2ax	oocyte	present	gold quality	92.36
+ENSMUSG00000049932	H2ax	granulocyte	present	gold quality	91.18
+ENSMUSG00000049932	H2ax	mesodermal cell in embryo	present	gold quality	97.18
+ENSMUSG00000049932	H2ax	mesodermal cell in embryo	present	gold quality	96.88
+ENSMUSG00000049932	H2ax	mesodermal cell in embryo	present	gold quality	96.97
+ENSMUSG00000049932	H2ax	epiblast cell in embryo	present	gold quality	97.5
+ENSMUSG00000049932	H2ax	blastoderm cell in morula	present	gold quality	83.36
+ENSMUSG00000049932	H2ax	animal zygote	present	gold quality	83.4
+ENSMUSG00000049932	H2ax	animal zygote	present	gold quality	90.99
+ENSMUSG00000049932	H2ax	paneth cell	present	gold quality	78.46
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	95.35
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	91.21
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	95.06
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	92.62
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	94.17
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	89.21
+ENSMUSG00000049932	H2ax	primary oocyte	present	gold quality	96.01
+ENSMUSG00000049932	H2ax	secondary oocyte	present	gold quality	87.15
+ENSMUSG00000049932	H2ax	secondary oocyte	present	gold quality	76.57
+ENSMUSG00000049932	H2ax	secondary oocyte	present	gold quality	89.07
+ENSMUSG00000049932	H2ax	cumulus cell	present	gold quality	86.84
+ENSMUSG00000049932	H2ax	cumulus cell	present	gold quality	86.88
+ENSMUSG00000049932	H2ax	endothelial cell of lymphatic vessel	present	gold quality	91.65
+ENSMUSG00000049932	H2ax	embryonic cell in blastocyst	present	gold quality	84.95
+ENSMUSG00000049932	H2ax	fetal liver hematopoietic progenitor cell	present	gold quality	98.24
+ENSMUSG00000049932	H2ax	migratory enteric neural crest cell	present	gold quality	93.84
+ENSMUSG00000049932	H2ax	dentate gyrus of hippocampal formation granule cell	present	gold quality	77.44
+ENSMUSG00000049932	H2ax	uterine cervix	present	gold quality	83.44
+ENSMUSG00000049932	H2ax	uterine cervix	present	gold quality	86.53
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	83.77
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	81.5
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	82.78
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	77.82
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	90.94
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	84.56
+ENSMUSG00000049932	H2ax	islet of Langerhans	present	gold quality	83.96
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	85.9
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	81.67
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	80.66
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	80.04
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	82.74
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	80.72
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	81.28
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	67.92
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	65.0
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	77.73
+ENSMUSG00000049932	H2ax	pituitary gland	present	gold quality	86.32
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	83.28
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	96.98
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	78.56
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	80.63
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	78.97
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	96.73
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	94.5
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	92.6
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	69.93
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	74.84
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	88.66
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	77.86
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	95.72
+ENSMUSG00000049932	H2ax	zone of skin	present	gold quality	74.22
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	68.04
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	93.51
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	73.01
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	77.7
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	79.38
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	83.39
+ENSMUSG00000049932	H2ax	camera-type eye	present	gold quality	67.44
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	92.95
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	89.3
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	92.11
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	90.91
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	92.32
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	86.73
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	87.85
+ENSMUSG00000049932	H2ax	lymph node	present	gold quality	88.79
+ENSMUSG00000049932	H2ax	head	present	gold quality	97.58
+ENSMUSG00000049932	H2ax	dorsal root ganglion	present	gold quality	81.79
+ENSMUSG00000049932	H2ax	dorsal root ganglion	present	gold quality	95.1
+ENSMUSG00000049932	H2ax	dorsal root ganglion	present	gold quality	80.23
+ENSMUSG00000049932	H2ax	ureter	present	gold quality	93.84
+ENSMUSG00000049932	H2ax	large intestine	present	gold quality	87.85
+ENSMUSG00000049932	H2ax	large intestine	present	gold quality	85.28
+ENSMUSG00000049932	H2ax	male reproductive system	present	gold quality	97.89
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	96.73
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	97.51
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	97.45
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	94.99
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	99.0
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	94.79
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	89.95
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	85.83
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	89.51
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	86.99
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	88.82
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	81.31
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	88.4
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	81.26
+ENSMUSG00000049932	H2ax	metanephros	present	gold quality	94.09
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	76.94
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	73.42
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	93.55
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	69.26
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	78.32
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	79.55
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	80.2
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	84.83
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	73.35
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	79.9
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	81.61
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	79.9
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	73.57
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	69.6
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	75.61
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.24
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	72.4
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.12
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.82
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.83
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	75.68
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.02
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	75.43
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	76.75
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	77.14
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.29
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	73.83
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	76.53
+ENSMUSG00000049932	H2ax	adult mammalian kidney	present	gold quality	74.8
+ENSMUSG00000049932	H2ax	morula	present	gold quality	96.21
+ENSMUSG00000049932	H2ax	facial nucleus	present	gold quality	80.23
+ENSMUSG00000049932	H2ax	intestine	present	gold quality	98.41
+ENSMUSG00000049932	H2ax	intestine	present	gold quality	98.52
+ENSMUSG00000049932	H2ax	intestine	present	gold quality	98.08
+ENSMUSG00000049932	H2ax	intestine	present	gold quality	97.83
+ENSMUSG00000049932	H2ax	intestine	present	gold quality	88.32
+ENSMUSG00000049932	H2ax	intestine	present	gold quality	92.42
+ENSMUSG00000049932	H2ax	blood	present	gold quality	96.88
+ENSMUSG00000049932	H2ax	blood	present	gold quality	86.73
+ENSMUSG00000049932	H2ax	blood	present	gold quality	69.78
+ENSMUSG00000049932	H2ax	blood	present	gold quality	74.14
+ENSMUSG00000049932	H2ax	late embryo	present	gold quality	98.4
+ENSMUSG00000049932	H2ax	blastocyst	present	gold quality	82.4
+ENSMUSG00000049932	H2ax	blastocyst	present	gold quality	96.04
+ENSMUSG00000049932	H2ax	blastocyst	present	gold quality	87.44
+ENSMUSG00000049932	H2ax	blastocyst	present	gold quality	85.54
+ENSMUSG00000049932	H2ax	urothelium	present	gold quality	87.71
+ENSMUSG00000049932	H2ax	visual cortex	present	gold quality	79.09
+ENSMUSG00000049932	H2ax	visual cortex	present	gold quality	79.54
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	83.64
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	86.43
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.49
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.59
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.44
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.71
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.51
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	83.93
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.17
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.11
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	86.24
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.8
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.23
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.85
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.53
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.9
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	86.78
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.94
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	83.06
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	86.49
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.43
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.77
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.4
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.81
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.35
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.69
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.07
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	86.27
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.74
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.6
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	80.94
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	80.36
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	79.17
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	79.3
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	85.0
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	79.2
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	91.46
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	79.69
+ENSMUSG00000049932	H2ax	prefrontal cortex	present	gold quality	84.77
+ENSMUSG00000049932	H2ax	multicellular organism	present	gold quality	86.25
+ENSMUSG00000049932	H2ax	testis	present	gold quality	99.15
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.99
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.85
+ENSMUSG00000049932	H2ax	testis	present	gold quality	99.19
+ENSMUSG00000049932	H2ax	testis	present	gold quality	98.51
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.18
+ENSMUSG00000049932	H2ax	testis	present	gold quality	98.85
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.84
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.1
+ENSMUSG00000049932	H2ax	testis	present	gold quality	98.75
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.89
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.56
+ENSMUSG00000049932	H2ax	testis	present	gold quality	98.73
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.0
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.77
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.11
+ENSMUSG00000049932	H2ax	testis	present	gold quality	93.94
+ENSMUSG00000049932	H2ax	testis	present	gold quality	95.9
+ENSMUSG00000049932	H2ax	testis	present	gold quality	85.53
+ENSMUSG00000049932	H2ax	testis	present	gold quality	86.97
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.5
+ENSMUSG00000049932	H2ax	testis	present	gold quality	95.84
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.84
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.61
+ENSMUSG00000049932	H2ax	testis	present	gold quality	95.65
+ENSMUSG00000049932	H2ax	testis	present	gold quality	95.8
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.67
+ENSMUSG00000049932	H2ax	testis	present	gold quality	93.11
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.29
+ENSMUSG00000049932	H2ax	testis	present	gold quality	93.33
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.98
+ENSMUSG00000049932	H2ax	testis	present	gold quality	95.46
+ENSMUSG00000049932	H2ax	testis	present	gold quality	89.86
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.52
+ENSMUSG00000049932	H2ax	testis	present	gold quality	94.35
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.79
+ENSMUSG00000049932	H2ax	testis	present	gold quality	94.79
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.09
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.87
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.96
+ENSMUSG00000049932	H2ax	testis	present	gold quality	94.81
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.58
+ENSMUSG00000049932	H2ax	testis	present	gold quality	86.1
+ENSMUSG00000049932	H2ax	testis	present	gold quality	86.95
+ENSMUSG00000049932	H2ax	testis	present	gold quality	87.32
+ENSMUSG00000049932	H2ax	testis	present	gold quality	87.46
+ENSMUSG00000049932	H2ax	testis	present	gold quality	87.43
+ENSMUSG00000049932	H2ax	testis	present	gold quality	86.04
+ENSMUSG00000049932	H2ax	testis	present	gold quality	85.78
+ENSMUSG00000049932	H2ax	testis	present	gold quality	85.67
+ENSMUSG00000049932	H2ax	testis	present	gold quality	86.01
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.43
+ENSMUSG00000049932	H2ax	testis	present	gold quality	85.59
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.79
+ENSMUSG00000049932	H2ax	testis	present	gold quality	89.87
+ENSMUSG00000049932	H2ax	testis	present	gold quality	78.45
+ENSMUSG00000049932	H2ax	testis	present	gold quality	89.83
+ENSMUSG00000049932	H2ax	testis	present	gold quality	87.85
+ENSMUSG00000049932	H2ax	testis	present	gold quality	89.62
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.05
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.14
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.62
+ENSMUSG00000049932	H2ax	testis	present	gold quality	97.5
+ENSMUSG00000049932	H2ax	testis	present	gold quality	85.45
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.22
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.43
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.01
+ENSMUSG00000049932	H2ax	testis	present	gold quality	92.06
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.18
+ENSMUSG00000049932	H2ax	testis	present	gold quality	90.75
+ENSMUSG00000049932	H2ax	testis	present	gold quality	93.36
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.29
+ENSMUSG00000049932	H2ax	testis	present	gold quality	96.49
+ENSMUSG00000049932	H2ax	testis	present	gold quality	86.09
+ENSMUSG00000049932	H2ax	testis	present	gold quality	91.67
+ENSMUSG00000049932	H2ax	testis	present	gold quality	93.88
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	79.31
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	94.71
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.05
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	97.23
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	97.33
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	99.12
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	99.09
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.36
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	99.07
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.85
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	99.0
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	96.22
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	96.92
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.2
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	97.38
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.71
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	96.25
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.95
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.78
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	97.19
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	97.66
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	95.57
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.1
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	94.5
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	79.15
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	91.25
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	96.8
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	92.67
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	94.64
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	88.19
+ENSMUSG00000049932	H2ax	embryo	present	gold quality	98.55
+ENSMUSG00000049932	H2ax	cranial nerve II	present	gold quality	89.47
+ENSMUSG00000049932	H2ax	cranial nerve II	present	gold quality	83.45
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	97.85
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	97.43
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	85.05
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	73.37
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	88.31
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	88.31
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	89.87
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	85.78
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	77.69
+ENSMUSG00000049932	H2ax	stomach	present	gold quality	81.1
+ENSMUSG00000049932	H2ax	aorta	present	gold quality	66.71
+ENSMUSG00000049932	H2ax	aorta	present	gold quality	63.93
+ENSMUSG00000049932	H2ax	aorta	present	gold quality	69.32
+ENSMUSG00000049932	H2ax	aorta	present	gold quality	66.01
+ENSMUSG00000049932	H2ax	heart	present	gold quality	96.64
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.85
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.67
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.55
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.44
+ENSMUSG00000049932	H2ax	heart	present	gold quality	96.46
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.53
+ENSMUSG00000049932	H2ax	heart	present	gold quality	93.63
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.32
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.13
+ENSMUSG00000049932	H2ax	heart	present	gold quality	80.27
+ENSMUSG00000049932	H2ax	heart	present	gold quality	73.74
+ENSMUSG00000049932	H2ax	heart	present	gold quality	77.73
+ENSMUSG00000049932	H2ax	heart	present	gold quality	77.65
+ENSMUSG00000049932	H2ax	heart	present	gold quality	82.98
+ENSMUSG00000049932	H2ax	heart	present	gold quality	77.85
+ENSMUSG00000049932	H2ax	heart	present	gold quality	72.84
+ENSMUSG00000049932	H2ax	heart	present	gold quality	79.96
+ENSMUSG00000049932	H2ax	heart	present	gold quality	78.38
+ENSMUSG00000049932	H2ax	heart	present	gold quality	91.08
+ENSMUSG00000049932	H2ax	heart	present	gold quality	81.0
+ENSMUSG00000049932	H2ax	heart	present	gold quality	84.21
+ENSMUSG00000049932	H2ax	heart	present	gold quality	83.28
+ENSMUSG00000049932	H2ax	heart	present	gold quality	88.04
+ENSMUSG00000049932	H2ax	heart	present	gold quality	81.87
+ENSMUSG00000049932	H2ax	heart	present	gold quality	76.35
+ENSMUSG00000049932	H2ax	heart	present	gold quality	74.12
+ENSMUSG00000049932	H2ax	heart	present	gold quality	76.62
+ENSMUSG00000049932	H2ax	heart	present	gold quality	72.22
+ENSMUSG00000049932	H2ax	heart	present	gold quality	72.92
+ENSMUSG00000049932	H2ax	heart	present	gold quality	74.8
+ENSMUSG00000049932	H2ax	heart	present	gold quality	73.93
+ENSMUSG00000049932	H2ax	heart	present	gold quality	76.71
+ENSMUSG00000049932	H2ax	heart	present	gold quality	75.83
+ENSMUSG00000049932	H2ax	heart	present	gold quality	98.47
+ENSMUSG00000049932	H2ax	heart	present	gold quality	74.74
+ENSMUSG00000049932	H2ax	heart	present	gold quality	76.2
+ENSMUSG00000049932	H2ax	heart	present	gold quality	97.63
+ENSMUSG00000049932	H2ax	heart	present	gold quality	77.56
+ENSMUSG00000049932	H2ax	heart	present	gold quality	77.12
+ENSMUSG00000049932	H2ax	heart	present	gold quality	75.4
+ENSMUSG00000049932	H2ax	heart	present	gold quality	76.79
+ENSMUSG00000049932	H2ax	heart	present	gold quality	76.38
+ENSMUSG00000049932	H2ax	heart	present	gold quality	73.81
+ENSMUSG00000049932	H2ax	brain	present	gold quality	98.33
+ENSMUSG00000049932	H2ax	brain	present	gold quality	98.91
+ENSMUSG00000049932	H2ax	brain	present	gold quality	98.35
+ENSMUSG00000049932	H2ax	brain	present	gold quality	97.42
+ENSMUSG00000049932	H2ax	brain	present	gold quality	97.07
+ENSMUSG00000049932	H2ax	brain	present	gold quality	94.92
+ENSMUSG00000049932	H2ax	brain	present	gold quality	98.13
+ENSMUSG00000049932	H2ax	brain	present	gold quality	93.27
+ENSMUSG00000049932	H2ax	brain	present	gold quality	92.3
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.2
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.76
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.02
+ENSMUSG00000049932	H2ax	brain	present	gold quality	81.85
+ENSMUSG00000049932	H2ax	brain	present	gold quality	87.25
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.99
+ENSMUSG00000049932	H2ax	brain	present	gold quality	76.79
+ENSMUSG00000049932	H2ax	brain	present	gold quality	86.39
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.74
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.71
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.13
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.14
+ENSMUSG00000049932	H2ax	brain	present	gold quality	90.29
+ENSMUSG00000049932	H2ax	brain	present	gold quality	91.14
+ENSMUSG00000049932	H2ax	brain	present	gold quality	86.13
+ENSMUSG00000049932	H2ax	brain	present	gold quality	88.95
+ENSMUSG00000049932	H2ax	brain	present	gold quality	90.75
+ENSMUSG00000049932	H2ax	brain	present	gold quality	89.03
+ENSMUSG00000049932	H2ax	brain	present	gold quality	70.88
+ENSMUSG00000049932	H2ax	brain	present	gold quality	79.85
+ENSMUSG00000049932	H2ax	brain	present	gold quality	91.81
+ENSMUSG00000049932	H2ax	brain	present	gold quality	87.68
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.71
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.74
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.8
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.13
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.94
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.47
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.45
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.42
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.94
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.66
+ENSMUSG00000049932	H2ax	brain	present	gold quality	86.32
+ENSMUSG00000049932	H2ax	brain	present	gold quality	88.26
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.07
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.7
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.02
+ENSMUSG00000049932	H2ax	brain	present	gold quality	95.92
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.76
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.63
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.83
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.65
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.69
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.02
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.83
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.79
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.3
+ENSMUSG00000049932	H2ax	brain	present	gold quality	79.47
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.53
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.77
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.32
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.6
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.94
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.22
+ENSMUSG00000049932	H2ax	brain	present	gold quality	94.39
+ENSMUSG00000049932	H2ax	brain	present	gold quality	94.81
+ENSMUSG00000049932	H2ax	brain	present	gold quality	89.39
+ENSMUSG00000049932	H2ax	brain	present	gold quality	88.52
+ENSMUSG00000049932	H2ax	brain	present	gold quality	89.22
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.87
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.7
+ENSMUSG00000049932	H2ax	brain	present	gold quality	85.24
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.52
+ENSMUSG00000049932	H2ax	brain	present	gold quality	86.81
+ENSMUSG00000049932	H2ax	brain	present	gold quality	79.9
+ENSMUSG00000049932	H2ax	brain	present	gold quality	85.27
+ENSMUSG00000049932	H2ax	brain	present	gold quality	83.56
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.17
+ENSMUSG00000049932	H2ax	brain	present	gold quality	84.89
+ENSMUSG00000049932	H2ax	brain	present	gold quality	82.9
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	99.51
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	96.79
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	82.77
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	82.54
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.52
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	82.61
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.72
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.6
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	80.72
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.96
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.28
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.86
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.42
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.09
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.94
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.32
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.5
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	80.36
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.5
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.72
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.37
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.92
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.85
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	86.19
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.66
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.91
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.95
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.98
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.94
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.27
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.42
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.25
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.65
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.28
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.49
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	81.63
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	82.27
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	90.08
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	90.35
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	74.57
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.02
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	88.81
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.68
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	85.35
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.43
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	80.71
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.73
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.61
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.69
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.04
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.72
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	83.9
+ENSMUSG00000049932	H2ax	cerebral cortex	present	gold quality	84.03
+ENSMUSG00000049932	H2ax	cornea	present	gold quality	92.0
+ENSMUSG00000049932	H2ax	cornea	present	gold quality	88.84
+ENSMUSG00000049932	H2ax	cornea	present	gold quality	89.8
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	96.4
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	96.24
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	87.35
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	81.48
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	96.63
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	90.61
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	76.96
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	69.84
+ENSMUSG00000049932	H2ax	lens of camera-type eye	present	gold quality	86.52
+ENSMUSG00000049932	H2ax	retina	present	gold quality	79.6
+ENSMUSG00000049932	H2ax	retina	present	gold quality	74.73
+ENSMUSG00000049932	H2ax	retina	present	gold quality	76.66
+ENSMUSG00000049932	H2ax	retina	present	gold quality	94.17
+ENSMUSG00000049932	H2ax	retina	present	gold quality	90.37
+ENSMUSG00000049932	H2ax	retina	present	gold quality	90.18
+ENSMUSG00000049932	H2ax	retina	present	gold quality	80.32
+ENSMUSG00000049932	H2ax	retina	present	gold quality	85.3
+ENSMUSG00000049932	H2ax	retina	present	gold quality	80.34
+ENSMUSG00000049932	H2ax	retina	present	gold quality	83.5
+ENSMUSG00000049932	H2ax	retina	present	gold quality	87.11
+ENSMUSG00000049932	H2ax	retina	present	gold quality	88.02
+ENSMUSG00000049932	H2ax	retina	present	gold quality	84.99
+ENSMUSG00000049932	H2ax	retina	present	gold quality	88.58
+ENSMUSG00000049932	H2ax	retina	present	gold quality	85.66
+ENSMUSG00000049932	H2ax	retina	present	gold quality	98.69
+ENSMUSG00000049932	H2ax	retina	present	gold quality	99.04
+ENSMUSG00000049932	H2ax	retina	present	gold quality	84.67
+ENSMUSG00000049932	H2ax	retina	present	gold quality	76.68
+ENSMUSG00000049932	H2ax	femur	present	gold quality	95.92
+ENSMUSG00000049932	H2ax	pons	present	gold quality	84.1
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	97.61
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	97.56
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	97.62
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	95.49
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	91.44
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	93.97
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	95.44
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	91.02
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	93.63
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	92.61
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	89.95
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	90.02
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	84.35
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	88.3
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	75.77
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	80.73
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	89.26
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	91.8
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	90.16
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	85.85
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	89.05
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	89.99
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	77.29
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	86.83
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	85.8
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	90.71
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	87.42
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	87.21
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	90.52
+ENSMUSG00000049932	H2ax	ovary	present	gold quality	95.09
+ENSMUSG00000049932	H2ax	uterus	present	gold quality	88.11
+ENSMUSG00000049932	H2ax	uterus	present	gold quality	86.58
+ENSMUSG00000049932	H2ax	uterus	present	gold quality	89.83
+ENSMUSG00000049932	H2ax	uterus	present	gold quality	85.34
+ENSMUSG00000049932	H2ax	seminal vesicle	present	gold quality	84.74
+ENSMUSG00000049932	H2ax	vas deferens	present	gold quality	98.16
+ENSMUSG00000049932	H2ax	vas deferens	present	gold quality	98.56
+ENSMUSG00000049932	H2ax	vas deferens	present	gold quality	97.99
+ENSMUSG00000049932	H2ax	skin epidermis	present	gold quality	95.64
+ENSMUSG00000049932	H2ax	skin epidermis	present	gold quality	76.63
+ENSMUSG00000049932	H2ax	skin epidermis	present	gold quality	98.18
+ENSMUSG00000049932	H2ax	adipose tissue	present	gold quality	77.32
+ENSMUSG00000049932	H2ax	adipose tissue	present	gold quality	76.07
+ENSMUSG00000049932	H2ax	central nervous system	present	gold quality	95.27
+ENSMUSG00000049932	H2ax	central nervous system	present	gold quality	83.32
+ENSMUSG00000049932	H2ax	central nervous system	present	gold quality	84.87
+ENSMUSG00000049932	H2ax	yolk sac	present	gold quality	97.98
+ENSMUSG00000049932	H2ax	yolk sac	present	gold quality	97.96
+ENSMUSG00000049932	H2ax	esophagus	present	gold quality	81.39
+ENSMUSG00000049932	H2ax	esophagus	present	gold quality	82.81
+ENSMUSG00000049932	H2ax	neural tube	present	gold quality	98.61
+ENSMUSG00000049932	H2ax	neural tube	present	gold quality	95.37
+ENSMUSG00000049932	H2ax	neural tube	present	gold quality	94.99
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	69.44
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	97.16
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	96.92
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	73.48
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	83.49
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	93.29
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	97.59
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	83.18
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	90.36
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	92.21
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	93.35
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	86.18
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	84.03
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	71.47
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	72.29
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	73.56
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	71.56
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	77.12
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	88.99
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	74.62
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	88.86
+ENSMUSG00000049932	H2ax	skin of back	present	gold quality	88.53
+ENSMUSG00000049932	H2ax	external carotid artery	present	gold quality	97.75
+ENSMUSG00000049932	H2ax	myocardium of ventricle	present	gold quality	71.66
+ENSMUSG00000049932	H2ax	diaphragm	present	gold quality	84.86
+ENSMUSG00000049932	H2ax	diaphragm	present	gold quality	79.13
+ENSMUSG00000049932	H2ax	diaphragm	present	gold quality	75.04
+ENSMUSG00000049932	H2ax	diaphragm	present	gold quality	78.98
+ENSMUSG00000049932	H2ax	diaphragm	present	gold quality	70.99
+ENSMUSG00000049932	H2ax	left lobe of liver	present	gold quality	81.8
+ENSMUSG00000049932	H2ax	sternocleidomastoid	present	gold quality	81.98
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	92.44
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	80.55
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	77.77
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	87.74
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	78.58
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	83.88
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	75.3
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	84.69
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	85.53
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	77.46
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	79.02
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	72.26
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	75.03
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	76.47
+ENSMUSG00000049932	H2ax	skeletal muscle tissue	present	gold quality	76.25
+ENSMUSG00000049932	H2ax	colon	present	gold quality	87.26
+ENSMUSG00000049932	H2ax	colon	present	gold quality	86.34
+ENSMUSG00000049932	H2ax	colon	present	gold quality	89.96
+ENSMUSG00000049932	H2ax	colon	present	gold quality	59.82
+ENSMUSG00000049932	H2ax	colon	present	gold quality	88.07
+ENSMUSG00000049932	H2ax	colon	present	gold quality	89.03
+ENSMUSG00000049932	H2ax	colon	present	gold quality	87.86
+ENSMUSG00000049932	H2ax	colon	present	gold quality	82.58
+ENSMUSG00000049932	H2ax	colon	present	gold quality	86.82
+ENSMUSG00000049932	H2ax	colon	present	gold quality	89.86
+ENSMUSG00000049932	H2ax	colon	present	gold quality	87.89
+ENSMUSG00000049932	H2ax	colon	present	gold quality	89.7
+ENSMUSG00000049932	H2ax	pyloric antrum	present	gold quality	79.87
+ENSMUSG00000049932	H2ax	cortex of kidney	present	gold quality	77.13
+ENSMUSG00000049932	H2ax	cortex of kidney	present	gold quality	80.67
+ENSMUSG00000049932	H2ax	renal corpuscle	present	gold quality	92.33
+ENSMUSG00000049932	H2ax	crypt of Lieberkuhn of small intestine	present	gold quality	91.37
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	76.53
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	75.24
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	75.0
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	81.94
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	83.58
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	84.77
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	80.71
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	85.93
+ENSMUSG00000049932	H2ax	urinary bladder	present	gold quality	85.29
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	87.0
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	94.58
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	85.67
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	93.43
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	89.85
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	90.54
+ENSMUSG00000049932	H2ax	pancreas	present	gold quality	79.44
+ENSMUSG00000049932	H2ax	epithelium of stomach	present	gold quality	89.32
+ENSMUSG00000049932	H2ax	epididymis	present	gold quality	96.16
+ENSMUSG00000049932	H2ax	epididymis	present	gold quality	92.74
+ENSMUSG00000049932	H2ax	sciatic nerve	present	gold quality	79.9
+ENSMUSG00000049932	H2ax	seminiferous tubule of testis	present	gold quality	90.62
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	85.63
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	81.5
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	76.68
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	74.69
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	77.82
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	80.64
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	72.87
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	78.33
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	84.66
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	84.88
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	78.18
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	82.91
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	84.68
+ENSMUSG00000049932	H2ax	white adipose tissue	present	gold quality	72.85
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	71.88
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	70.5
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	69.98
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	73.66
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	81.33
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	74.53
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	81.14
+ENSMUSG00000049932	H2ax	brown adipose tissue	present	gold quality	72.35
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	78.12
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	69.62
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	78.41
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	85.46
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	69.6
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	77.24
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	75.1
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	79.59
+ENSMUSG00000049932	H2ax	quadriceps femoris	present	gold quality	76.0
+ENSMUSG00000049932	H2ax	vastus lateralis	present	gold quality	81.97
+ENSMUSG00000049932	H2ax	muscle of leg	present	gold quality	81.33
+ENSMUSG00000049932	H2ax	muscle of leg	present	gold quality	82.41
+ENSMUSG00000049932	H2ax	muscle of leg	present	gold quality	78.47
+ENSMUSG00000049932	H2ax	muscle of leg	present	gold quality	81.92
+ENSMUSG00000049932	H2ax	muscle of leg	present	gold quality	75.89
+ENSMUSG00000049932	H2ax	muscle of leg	present	gold quality	92.77
+ENSMUSG00000049932	H2ax	primary motor cortex	present	gold quality	90.16
+ENSMUSG00000049932	H2ax	primary motor cortex	present	gold quality	81.88
+ENSMUSG00000049932	H2ax	tibialis anterior	present	gold quality	80.38
+ENSMUSG00000049932	H2ax	tibialis anterior	present	gold quality	82.63
+ENSMUSG00000049932	H2ax	tibialis anterior	present	gold quality	80.06
+ENSMUSG00000049932	H2ax	tibialis anterior	present	gold quality	84.87
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	73.16
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	76.71
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	86.51
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	74.94
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	67.93
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	79.56
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	68.06
+ENSMUSG00000049932	H2ax	gastrocnemius	present	gold quality	74.55
+ENSMUSG00000049932	H2ax	soleus muscle	present	gold quality	74.99
+ENSMUSG00000049932	H2ax	soleus muscle	present	gold quality	74.96
+ENSMUSG00000049932	H2ax	soleus muscle	present	gold quality	77.63
+ENSMUSG00000049932	H2ax	skin of abdomen	present	gold quality	96.53
+ENSMUSG00000049932	H2ax	skin of abdomen	present	gold quality	91.93
+ENSMUSG00000049932	H2ax	skin of abdomen	present	gold quality	85.15
+ENSMUSG00000049932	H2ax	skin of external ear	present	gold quality	79.62
+ENSMUSG00000049932	H2ax	bone element	present	gold quality	98.78
+ENSMUSG00000049932	H2ax	bone element	present	gold quality	79.99
+ENSMUSG00000049932	H2ax	knee joint	present	gold quality	73.57
+ENSMUSG00000049932	H2ax	ankle joint	present	gold quality	85.87
+ENSMUSG00000049932	H2ax	ankle joint	present	gold quality	83.09
+ENSMUSG00000049932	H2ax	ascending aorta	present	gold quality	81.45
+ENSMUSG00000049932	H2ax	muscle of arm	present	gold quality	74.98
+ENSMUSG00000049932	H2ax	triceps brachii	present	gold quality	83.95
+ENSMUSG00000049932	H2ax	internal carotid artery	present	gold quality	98.15
+ENSMUSG00000049932	H2ax	digastric muscle group	present	gold quality	77.32
+ENSMUSG00000049932	H2ax	temporalis muscle	present	gold quality	79.59
+ENSMUSG00000049932	H2ax	extra-ocular muscle	present	gold quality	77.21
+ENSMUSG00000049932	H2ax	extra-ocular muscle	present	gold quality	79.85
+ENSMUSG00000049932	H2ax	extra-ocular muscle	present	gold quality	74.09
+ENSMUSG00000049932	H2ax	carotid body	present	gold quality	56.87
+ENSMUSG00000049932	H2ax	carotid body	present	gold quality	59.7
+ENSMUSG00000049932	H2ax	carotid body	present	gold quality	76.49
+ENSMUSG00000049932	H2ax	triceps surae	present	gold quality	85.28
+ENSMUSG00000049932	H2ax	triceps surae	present	gold quality	76.96
+ENSMUSG00000049932	H2ax	triceps surae	present	gold quality	80.34
+ENSMUSG00000049932	H2ax	ear	present	gold quality	88.86
+ENSMUSG00000049932	H2ax	ear	present	gold quality	78.51
+ENSMUSG00000049932	H2ax	ear	present	gold quality	83.61
+ENSMUSG00000049932	H2ax	ear	present	gold quality	84.47
+ENSMUSG00000049932	H2ax	medial vestibular nucleus	present	gold quality	79.88
+ENSMUSG00000049932	H2ax	submandibular gland	present	gold quality	77.44
+ENSMUSG00000049932	H2ax	submandibular gland	present	gold quality	80.63
+ENSMUSG00000049932	H2ax	substantia propria of cornea	present	gold quality	88.35
+ENSMUSG00000049932	H2ax	substantia propria of cornea	present	gold quality	85.5
+ENSMUSG00000049932	H2ax	layer of retina	present	gold quality	69.99
+ENSMUSG00000049932	H2ax	outer nuclear layer of retina	present	gold quality	62.5
+ENSMUSG00000049932	H2ax	outer nuclear layer of retina	present	gold quality	69.99
+ENSMUSG00000049932	H2ax	epithelium of lens	present	gold quality	82.01
+ENSMUSG00000049932	H2ax	lacrimal gland	present	gold quality	79.9
+ENSMUSG00000049932	H2ax	parotid gland	present	gold quality	71.42
+ENSMUSG00000049932	H2ax	lip	present	gold quality	88.6
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	87.22
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	87.58
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	86.99
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	85.27
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	86.1
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	82.38
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	79.21
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	95.16
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	87.76
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	73.06
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	90.72
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	76.96
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	78.17
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	65.47
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	71.58
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	72.36
+ENSMUSG00000049932	H2ax	cochlea	present	gold quality	88.18
+ENSMUSG00000049932	H2ax	membranous labyrinth	present	gold quality	82.38
+ENSMUSG00000049932	H2ax	membranous labyrinth	present	gold quality	84.72
+ENSMUSG00000049932	H2ax	membranous labyrinth	present	gold quality	79.57
+ENSMUSG00000049932	H2ax	membranous labyrinth	present	gold quality	76.66
+ENSMUSG00000049932	H2ax	utricle of membranous labyrinth	present	gold quality	71.83
+ENSMUSG00000049932	H2ax	saccule of membranous labyrinth	present	gold quality	83.96
+ENSMUSG00000049932	H2ax	saccule of membranous labyrinth	present	gold quality	84.92
+ENSMUSG00000049932	H2ax	saccule of membranous labyrinth	present	gold quality	78.97
+ENSMUSG00000049932	H2ax	saccule of membranous labyrinth	present	gold quality	75.76
+ENSMUSG00000049932	H2ax	cerebral hemisphere	present	gold quality	87.42
+ENSMUSG00000049932	H2ax	cerebral hemisphere	present	gold quality	86.28
+ENSMUSG00000049932	H2ax	cerebral hemisphere	present	gold quality	84.18
+ENSMUSG00000049932	H2ax	cerebral hemisphere	present	gold quality	86.22
+ENSMUSG00000049932	H2ax	frontal cortex	present	gold quality	77.81
+ENSMUSG00000049932	H2ax	frontal cortex	present	gold quality	80.99
+ENSMUSG00000049932	H2ax	frontal cortex	present	gold quality	83.45
+ENSMUSG00000049932	H2ax	temporal lobe	present	gold quality	84.83
+ENSMUSG00000049932	H2ax	temporal lobe	present	gold quality	85.65
+ENSMUSG00000049932	H2ax	globus pallidus	present	gold quality	79.57
+ENSMUSG00000049932	H2ax	amygdala	present	gold quality	86.88
+ENSMUSG00000049932	H2ax	amygdala	present	gold quality	82.09
+ENSMUSG00000049932	H2ax	amygdala	present	gold quality	83.12
+ENSMUSG00000049932	H2ax	bed nucleus of stria terminalis	present	gold quality	81.78
+ENSMUSG00000049932	H2ax	bed nucleus of stria terminalis	present	gold quality	80.63
+ENSMUSG00000049932	H2ax	bed nucleus of stria terminalis	present	gold quality	81.71
+ENSMUSG00000049932	H2ax	bed nucleus of stria terminalis	present	gold quality	82.98
+ENSMUSG00000049932	H2ax	bed nucleus of stria terminalis	present	gold quality	82.65
+ENSMUSG00000049932	H2ax	bed nucleus of stria terminalis	present	gold quality	79.82
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.34
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	87.63
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	87.19
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	83.37
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	89.44
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	87.49
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.84
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	86.31
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	87.85
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	86.61
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	86.51
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.67
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.43
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.96
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	87.64
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.49
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	86.19
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	87.53
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	84.68
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	84.99
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.61
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	84.79
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	86.07
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.55
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.3
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	83.59
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.93
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	85.92
+ENSMUSG00000049932	H2ax	nucleus accumbens	present	gold quality	80.73
+ENSMUSG00000049932	H2ax	olfactory tubercle	present	gold quality	83.6
+ENSMUSG00000049932	H2ax	dentate gyrus of hippocampal formation	present	gold quality	82.69
+ENSMUSG00000049932	H2ax	dentate gyrus of hippocampal formation	present	gold quality	88.52
+ENSMUSG00000049932	H2ax	dentate gyrus of hippocampal formation	present	gold quality	84.88
+ENSMUSG00000049932	H2ax	dentate gyrus of hippocampal formation	present	gold quality	81.23
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.28
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.3
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	99.13
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.96
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.82
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	99.44
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	96.75
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.74
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	97.3
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.09
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.62
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.29
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	98.7
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	97.39
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	94.86
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	95.65
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	93.12
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	96.07
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	97.65
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.95
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	97.64
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.09
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	96.56
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	96.97
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.67
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	95.81
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	90.9
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	93.8
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.47
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	94.15
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.15
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	92.64
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	87.82
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	93.62
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	86.95
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	93.56
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	83.49
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	83.71
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	72.32
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	84.92
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.9
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	85.47
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	83.81
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	92.67
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	87.94
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	91.32
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.4
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	89.6
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	91.24
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	75.99
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	86.92
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	84.93
+ENSMUSG00000049932	H2ax	forebrain	present	gold quality	83.95
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	99.01
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	96.94
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	98.51
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	97.08
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	94.97
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	94.51
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	94.6
+ENSMUSG00000049932	H2ax	midbrain	present	gold quality	92.89
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	99.26
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	83.37
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	85.72
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	90.61
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	87.83
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	83.1
+ENSMUSG00000049932	H2ax	telencephalon	present	gold quality	92.3
+ENSMUSG00000049932	H2ax	medulla oblongata	present	gold quality	83.73
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	82.11
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	82.67
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	84.37
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	86.53
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	85.16
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	81.66
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	79.92
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	80.09
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	83.32
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	81.17
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	80.73
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	72.84
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	77.11
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	81.42
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	80.72
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	92.1
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	78.27
+ENSMUSG00000049932	H2ax	hypothalamus	present	gold quality	78.72
+ENSMUSG00000049932	H2ax	epithelium of small intestine	present	gold quality	91.25
+ENSMUSG00000049932	H2ax	habenula	present	gold quality	74.56
+ENSMUSG00000049932	H2ax	pineal body	present	gold quality	76.42
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	84.22
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	72.1
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	71.39
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	69.01
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	72.69
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	81.08
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	76.12
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	74.48
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	82.68
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	82.12
+ENSMUSG00000049932	H2ax	mammary gland	present	gold quality	76.8
+ENSMUSG00000049932	H2ax	lateral geniculate body	present	gold quality	79.55
+ENSMUSG00000049932	H2ax	medial geniculate body	present	gold quality	78.76
+ENSMUSG00000049932	H2ax	supraoptic nucleus	present	gold quality	77.43
+ENSMUSG00000049932	H2ax	supraoptic nucleus	present	gold quality	75.45
+ENSMUSG00000049932	H2ax	paraventricular nucleus of hypothalamus	present	gold quality	78.56
+ENSMUSG00000049932	H2ax	arcuate nucleus of hypothalamus	present	gold quality	82.18
+ENSMUSG00000049932	H2ax	dorsomedial nucleus of hypothalamus	present	gold quality	78.26
+ENSMUSG00000049932	H2ax	ventromedial nucleus of hypothalamus	present	gold quality	82.01
+ENSMUSG00000049932	H2ax	superior colliculus	present	gold quality	83.93
+ENSMUSG00000049932	H2ax	superior colliculus	present	gold quality	78.77
+ENSMUSG00000049932	H2ax	inferior colliculus	present	gold quality	82.92
+ENSMUSG00000049932	H2ax	inferior colliculus	present	gold quality	76.99
+ENSMUSG00000049932	H2ax	neocortex	present	gold quality	99.59
+ENSMUSG00000049932	H2ax	neocortex	present	gold quality	82.14
+ENSMUSG00000049932	H2ax	neocortex	present	gold quality	77.06
+ENSMUSG00000049932	H2ax	neocortex	present	gold quality	77.08
+ENSMUSG00000049932	H2ax	neocortex	present	gold quality	82.88
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	85.01
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.65
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	85.67
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	81.56
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.13
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	81.23
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.64
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	81.83
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	77.41
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	80.1
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	79.87
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	82.92
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	79.5
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	78.94
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	78.66
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	79.29
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	76.08
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	89.81
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	85.25
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	88.87
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	76.21
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	87.15
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	85.09
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.63
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	86.31
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.59
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	77.35
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	82.86
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	81.81
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	81.1
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.17
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	76.53
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.66
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	80.93
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	79.41
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	89.8
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	82.8
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.7
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.64
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.97
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.0
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	81.96
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	86.79
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	91.13
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.47
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	85.39
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.31
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.6
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.25
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	83.37
+ENSMUSG00000049932	H2ax	Ammon's horn	present	gold quality	84.37
+ENSMUSG00000049932	H2ax	blood vessel	present	gold quality	66.65
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	86.39
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	96.27
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	83.59
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	90.82
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	94.99
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	91.81
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	91.41
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	91.34
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	93.45
+ENSMUSG00000049932	H2ax	placenta	present	gold quality	91.33
+ENSMUSG00000049932	H2ax	superior cervical ganglion	present	gold quality	82.09
+ENSMUSG00000049932	H2ax	olfactory epithelium	present	gold quality	79.88
+ENSMUSG00000049932	H2ax	olfactory epithelium	present	gold quality	83.29
+ENSMUSG00000049932	H2ax	olfactory epithelium	present	gold quality	69.99
+ENSMUSG00000049932	H2ax	hindbrain	present	gold quality	99.05
+ENSMUSG00000049932	H2ax	hindbrain	present	gold quality	98.36
+ENSMUSG00000049932	H2ax	hindbrain	present	gold quality	95.8
+ENSMUSG00000049932	H2ax	hindbrain	present	gold quality	95.65
+ENSMUSG00000049932	H2ax	hindbrain	present	gold quality	94.84
+ENSMUSG00000049932	H2ax	hindbrain	present	gold quality	98.39
+ENSMUSG00000049932	H2ax	suprachiasmatic nucleus	present	gold quality	76.01
+ENSMUSG00000049932	H2ax	suprachiasmatic nucleus	present	gold quality	76.28
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	79.27
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	79.06
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	84.47
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	85.02
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	77.81
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	87.6
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	74.43
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	78.05
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	77.35
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	76.8
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	86.87
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	75.8
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	77.26
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	81.49
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	81.24
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	76.52
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	76.41
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	76.91
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	84.9
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	93.3
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	97.36
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	94.58
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	67.52
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	75.56
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	82.32
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	90.54
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	80.79
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	80.43
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	84.05
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	73.47
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	79.17
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	85.71
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	78.92
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	76.92
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	77.44
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	79.45
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	78.67
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	75.63
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	80.15
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	83.93
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	82.65
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	78.97
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	82.15
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	77.4
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	82.91
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	81.14
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	88.34
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	91.07
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	84.38
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	84.61
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	83.0
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	80.42
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	82.35
+ENSMUSG00000049932	H2ax	cerebellum	present	gold quality	80.67
+ENSMUSG00000049932	H2ax	substantia nigra	present	gold quality	77.41
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.44
+ENSMUSG00000049932	H2ax	lung	present	gold quality	99.42
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.66
+ENSMUSG00000049932	H2ax	lung	present	gold quality	97.75
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.47
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.67
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.59
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.12
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.5
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.48
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.72
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.12
+ENSMUSG00000049932	H2ax	lung	present	gold quality	97.38
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.39
+ENSMUSG00000049932	H2ax	lung	present	gold quality	98.54
+ENSMUSG00000049932	H2ax	lung	present	gold quality	91.46
+ENSMUSG00000049932	H2ax	lung	present	gold quality	88.9
+ENSMUSG00000049932	H2ax	lung	present	gold quality	91.63
+ENSMUSG00000049932	H2ax	lung	present	gold quality	92.02
+ENSMUSG00000049932	H2ax	lung	present	gold quality	95.99
+ENSMUSG00000049932	H2ax	lung	present	gold quality	85.16
+ENSMUSG00000049932	H2ax	lung	present	gold quality	96.61
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.19
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.44
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.3
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.77
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.47
+ENSMUSG00000049932	H2ax	lung	present	gold quality	72.81
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.47
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.47
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.86
+ENSMUSG00000049932	H2ax	lung	present	gold quality	80.71
+ENSMUSG00000049932	H2ax	lung	present	gold quality	73.96
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.95
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.67
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.58
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.61
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.76
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.81
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.77
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.88
+ENSMUSG00000049932	H2ax	lung	present	gold quality	72.07
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.67
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.49
+ENSMUSG00000049932	H2ax	lung	present	gold quality	93.27
+ENSMUSG00000049932	H2ax	lung	present	gold quality	95.1
+ENSMUSG00000049932	H2ax	lung	present	gold quality	94.49
+ENSMUSG00000049932	H2ax	lung	present	gold quality	87.73
+ENSMUSG00000049932	H2ax	lung	present	gold quality	90.68
+ENSMUSG00000049932	H2ax	lung	present	gold quality	87.73
+ENSMUSG00000049932	H2ax	lung	present	gold quality	84.89
+ENSMUSG00000049932	H2ax	lung	present	gold quality	81.12
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.04
+ENSMUSG00000049932	H2ax	lung	present	gold quality	81.19
+ENSMUSG00000049932	H2ax	lung	present	gold quality	79.65
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.12
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.76
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.84
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.06
+ENSMUSG00000049932	H2ax	lung	present	gold quality	73.67
+ENSMUSG00000049932	H2ax	lung	present	gold quality	69.42
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.54
+ENSMUSG00000049932	H2ax	lung	present	gold quality	81.76
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.89
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.48
+ENSMUSG00000049932	H2ax	lung	present	gold quality	83.0
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.99
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.7
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.34
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.3
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.06
+ENSMUSG00000049932	H2ax	lung	present	gold quality	72.32
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.64
+ENSMUSG00000049932	H2ax	lung	present	gold quality	84.12
+ENSMUSG00000049932	H2ax	lung	present	gold quality	69.97
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.05
+ENSMUSG00000049932	H2ax	lung	present	gold quality	70.29
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.01
+ENSMUSG00000049932	H2ax	lung	present	gold quality	73.33
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.71
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.13
+ENSMUSG00000049932	H2ax	lung	present	gold quality	71.26
+ENSMUSG00000049932	H2ax	lung	present	gold quality	82.34
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.37
+ENSMUSG00000049932	H2ax	lung	present	gold quality	80.57
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.23
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.34
+ENSMUSG00000049932	H2ax	lung	present	gold quality	87.28
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.89
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.81
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.63
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.97
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.14
+ENSMUSG00000049932	H2ax	lung	present	gold quality	84.16
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.46
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.27
+ENSMUSG00000049932	H2ax	lung	present	gold quality	79.59
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.17
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.56
+ENSMUSG00000049932	H2ax	lung	present	gold quality	85.11
+ENSMUSG00000049932	H2ax	lung	present	gold quality	79.59
+ENSMUSG00000049932	H2ax	lung	present	gold quality	72.2
+ENSMUSG00000049932	H2ax	lung	present	gold quality	80.31
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.07
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.89
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.32
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.76
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.98
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.5
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.85
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.73
+ENSMUSG00000049932	H2ax	lung	present	gold quality	79.44
+ENSMUSG00000049932	H2ax	lung	present	gold quality	81.3
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.96
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.85
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.26
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.51
+ENSMUSG00000049932	H2ax	lung	present	gold quality	79.42
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.87
+ENSMUSG00000049932	H2ax	lung	present	gold quality	81.28
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.36
+ENSMUSG00000049932	H2ax	lung	present	gold quality	86.39
+ENSMUSG00000049932	H2ax	lung	present	gold quality	81.1
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.86
+ENSMUSG00000049932	H2ax	lung	present	gold quality	83.2
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.83
+ENSMUSG00000049932	H2ax	lung	present	gold quality	80.41
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.47
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.21
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.09
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.96
+ENSMUSG00000049932	H2ax	lung	present	gold quality	80.89
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.03
+ENSMUSG00000049932	H2ax	lung	present	gold quality	85.51
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.19
+ENSMUSG00000049932	H2ax	lung	present	gold quality	87.59
+ENSMUSG00000049932	H2ax	lung	present	gold quality	89.65
+ENSMUSG00000049932	H2ax	lung	present	gold quality	87.4
+ENSMUSG00000049932	H2ax	lung	present	gold quality	85.55
+ENSMUSG00000049932	H2ax	lung	present	gold quality	78.12
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.1
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.07
+ENSMUSG00000049932	H2ax	lung	present	gold quality	73.46
+ENSMUSG00000049932	H2ax	lung	present	gold quality	74.51
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.75
+ENSMUSG00000049932	H2ax	lung	present	gold quality	75.67
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.46
+ENSMUSG00000049932	H2ax	lung	present	gold quality	77.71
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.53
+ENSMUSG00000049932	H2ax	lung	present	gold quality	76.16
+ENSMUSG00000049932	H2ax	lung	present	gold quality	89.15
+ENSMUSG00000049932	H2ax	endocardial cushion	present	gold quality	95.13
+ENSMUSG00000049932	H2ax	dermis	present	gold quality	97.57
+ENSMUSG00000049932	H2ax	hair follicle	present	gold quality	95.71
+ENSMUSG00000049932	H2ax	hair follicle	present	gold quality	96.14
+ENSMUSG00000049932	H2ax	hair follicle	present	gold quality	96.17
+ENSMUSG00000049932	H2ax	heart right ventricle	present	gold quality	74.98
+ENSMUSG00000049932	H2ax	cardiac atrium	present	gold quality	97.17
+ENSMUSG00000049932	H2ax	cardiac atrium	present	gold quality	95.88
+ENSMUSG00000049932	H2ax	cardiac atrium	present	gold quality	96.47
+ENSMUSG00000049932	H2ax	cardiac atrium	present	gold quality	95.48
+ENSMUSG00000049932	H2ax	cardiac atrium	present	gold quality	94.92
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	97.05
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	87.65
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	96.89
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	96.8
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	96.29
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	71.82
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	95.48
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	81.93
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	71.82
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	69.94
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	80.09
+ENSMUSG00000049932	H2ax	cardiac ventricle	present	gold quality	70.85
+ENSMUSG00000049932	H2ax	heart left ventricle	present	gold quality	95.94
+ENSMUSG00000049932	H2ax	limb	present	gold quality	99.01
+ENSMUSG00000049932	H2ax	limb	present	gold quality	98.97
+ENSMUSG00000049932	H2ax	limb	present	gold quality	98.6
+ENSMUSG00000049932	H2ax	limb	present	gold quality	97.86
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.86
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	91.36
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	95.89
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.84
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	94.94
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	93.91
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	96.64
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.05
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	96.15
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.52
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	99.0
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	97.98
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	98.37
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.81
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	96.54
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	86.17
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	89.37
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	96.88
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	95.64
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	93.66
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.94
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	94.01
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	96.2
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	95.33
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	97.71
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	97.59
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	93.24
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	93.88
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.11
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	93.81
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	97.62
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	94.39
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	92.52
+ENSMUSG00000049932	H2ax	spleen	present	gold quality	94.04
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.3
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.36
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.59
+ENSMUSG00000049932	H2ax	liver	present	gold quality	96.2
+ENSMUSG00000049932	H2ax	liver	present	gold quality	96.57
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.14
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.49
+ENSMUSG00000049932	H2ax	liver	present	gold quality	96.87
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.78
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.41
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.84
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.09
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.63
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.45
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.45
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.45
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.36
+ENSMUSG00000049932	H2ax	liver	present	gold quality	93.86
+ENSMUSG00000049932	H2ax	liver	present	gold quality	96.58
+ENSMUSG00000049932	H2ax	liver	present	gold quality	95.84
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.63
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.23
+ENSMUSG00000049932	H2ax	liver	present	gold quality	73.56
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.09
+ENSMUSG00000049932	H2ax	liver	present	gold quality	84.88
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.35
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.92
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.28
+ENSMUSG00000049932	H2ax	liver	present	gold quality	87.42
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.08
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.17
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.89
+ENSMUSG00000049932	H2ax	liver	present	gold quality	80.8
+ENSMUSG00000049932	H2ax	liver	present	gold quality	73.95
+ENSMUSG00000049932	H2ax	liver	present	gold quality	69.68
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.47
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.12
+ENSMUSG00000049932	H2ax	liver	present	gold quality	77.26
+ENSMUSG00000049932	H2ax	liver	present	gold quality	93.18
+ENSMUSG00000049932	H2ax	liver	present	gold quality	94.18
+ENSMUSG00000049932	H2ax	liver	present	gold quality	93.65
+ENSMUSG00000049932	H2ax	liver	present	gold quality	93.48
+ENSMUSG00000049932	H2ax	liver	present	gold quality	91.61
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.46
+ENSMUSG00000049932	H2ax	liver	present	gold quality	87.92
+ENSMUSG00000049932	H2ax	liver	present	gold quality	87.08
+ENSMUSG00000049932	H2ax	liver	present	gold quality	77.61
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.7
+ENSMUSG00000049932	H2ax	liver	present	gold quality	84.57
+ENSMUSG00000049932	H2ax	liver	present	gold quality	75.25
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.0
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.42
+ENSMUSG00000049932	H2ax	liver	present	gold quality	70.17
+ENSMUSG00000049932	H2ax	liver	present	gold quality	69.65
+ENSMUSG00000049932	H2ax	liver	present	gold quality	73.59
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.91
+ENSMUSG00000049932	H2ax	liver	present	gold quality	70.25
+ENSMUSG00000049932	H2ax	liver	present	gold quality	67.02
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.8
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.81
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.89
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.2
+ENSMUSG00000049932	H2ax	liver	present	gold quality	80.69
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.48
+ENSMUSG00000049932	H2ax	liver	present	gold quality	75.79
+ENSMUSG00000049932	H2ax	liver	present	gold quality	80.08
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.54
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.19
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.73
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.53
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.47
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.09
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.3
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.53
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.13
+ENSMUSG00000049932	H2ax	liver	present	gold quality	77.88
+ENSMUSG00000049932	H2ax	liver	present	gold quality	87.17
+ENSMUSG00000049932	H2ax	liver	present	gold quality	87.32
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.49
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.43
+ENSMUSG00000049932	H2ax	liver	present	gold quality	86.03
+ENSMUSG00000049932	H2ax	liver	present	gold quality	80.97
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.07
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.26
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.83
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.51
+ENSMUSG00000049932	H2ax	liver	present	gold quality	82.49
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.4
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.48
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.61
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.6
+ENSMUSG00000049932	H2ax	liver	present	gold quality	74.38
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.06
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.9
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.2
+ENSMUSG00000049932	H2ax	liver	present	gold quality	74.15
+ENSMUSG00000049932	H2ax	liver	present	gold quality	74.23
+ENSMUSG00000049932	H2ax	liver	present	gold quality	83.09
+ENSMUSG00000049932	H2ax	liver	present	gold quality	75.94
+ENSMUSG00000049932	H2ax	liver	present	gold quality	96.59
+ENSMUSG00000049932	H2ax	liver	present	gold quality	95.72
+ENSMUSG00000049932	H2ax	liver	present	gold quality	98.91
+ENSMUSG00000049932	H2ax	liver	present	gold quality	95.87
+ENSMUSG00000049932	H2ax	liver	present	gold quality	95.89
+ENSMUSG00000049932	H2ax	liver	present	gold quality	96.15
+ENSMUSG00000049932	H2ax	liver	present	gold quality	97.59
+ENSMUSG00000049932	H2ax	liver	present	gold quality	94.34
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.73
+ENSMUSG00000049932	H2ax	liver	present	gold quality	75.25
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.07
+ENSMUSG00000049932	H2ax	liver	present	gold quality	80.79
+ENSMUSG00000049932	H2ax	liver	present	gold quality	75.97
+ENSMUSG00000049932	H2ax	liver	present	gold quality	77.39
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.06
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.87
+ENSMUSG00000049932	H2ax	liver	present	gold quality	86.0
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.39
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.58
+ENSMUSG00000049932	H2ax	liver	present	gold quality	76.3
+ENSMUSG00000049932	H2ax	liver	present	gold quality	75.66
+ENSMUSG00000049932	H2ax	liver	present	gold quality	72.14
+ENSMUSG00000049932	H2ax	liver	present	gold quality	77.5
+ENSMUSG00000049932	H2ax	liver	present	gold quality	74.88
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.61
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.94
+ENSMUSG00000049932	H2ax	liver	present	gold quality	78.71
+ENSMUSG00000049932	H2ax	liver	present	gold quality	80.36
+ENSMUSG00000049932	H2ax	liver	present	gold quality	71.26
+ENSMUSG00000049932	H2ax	liver	present	gold quality	81.4
+ENSMUSG00000049932	H2ax	liver	present	gold quality	72.15
+ENSMUSG00000049932	H2ax	liver	present	gold quality	79.38
+ENSMUSG00000049932	H2ax	liver	present	gold quality	74.92
+ENSMUSG00000049932	H2ax	liver	present	gold quality	87.12
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	94.1
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	93.35
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	93.25
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	89.72
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	87.5
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	86.71
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	86.06
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	86.25
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	89.01
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	87.41
+ENSMUSG00000049932	H2ax	small intestine	present	gold quality	89.62
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	98.65
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	98.58
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	78.04
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	75.83
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	75.56
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	76.19
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	79.5
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	75.72
+ENSMUSG00000049932	H2ax	kidney	present	gold quality	77.52
+ENSMUSG00000049932	H2ax	duodenum	present	gold quality	86.61
+ENSMUSG00000049932	H2ax	duodenum	present	gold quality	88.66
+ENSMUSG00000049932	H2ax	duodenum	present	gold quality	90.72
+ENSMUSG00000049932	H2ax	duodenum	present	gold quality	89.46
+ENSMUSG00000049932	H2ax	duodenum	present	gold quality	87.04
+ENSMUSG00000049932	H2ax	jejunum	present	gold quality	86.78
+ENSMUSG00000049932	H2ax	jejunum	present	gold quality	88.4
+ENSMUSG00000049932	H2ax	jejunum	present	gold quality	68.73
+ENSMUSG00000049932	H2ax	jejunum	present	gold quality	87.51
+ENSMUSG00000049932	H2ax	jejunum	present	gold quality	89.83
+ENSMUSG00000049932	H2ax	jejunum	present	gold quality	87.18
+ENSMUSG00000049932	H2ax	ileum	present	gold quality	93.12
+ENSMUSG00000049932	H2ax	ileum	present	gold quality	92.16
+ENSMUSG00000049932	H2ax	ileum	present	gold quality	95.49
+ENSMUSG00000049932	H2ax	ileum	present	gold quality	90.77
+ENSMUSG00000049932	H2ax	ileum	present	gold quality	92.33
+ENSMUSG00000049932	H2ax	ileum	present	gold quality	95.78
+ENSMUSG00000049932	H2ax	cerebellar cortex	present	gold quality	84.06
+ENSMUSG00000049932	H2ax	cerebellar cortex	present	gold quality	84.41
+ENSMUSG00000049932	H2ax	cerebellar nuclear complex	present	gold quality	79.73
+ENSMUSG00000049932	H2ax	atrioventricular valve	present	gold quality	86.94
+ENSMUSG00000049932	H2ax	aortic valve	present	gold quality	80.05
+ENSMUSG00000049932	H2ax	dorsal tegmental nucleus	present	gold quality	78.95
+ENSMUSG00000049932	H2ax	pontine nuclear group	present	gold quality	79.57
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	76.55
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	77.26
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	78.27
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	78.38
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	75.36
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	74.75
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	74.33
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	77.09
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	73.83
+ENSMUSG00000049932	H2ax	right lung	present	gold quality	71.97
+ENSMUSG00000049932	H2ax	left lung	present	gold quality	75.97
+ENSMUSG00000049932	H2ax	subcutaneous adipose tissue	present	gold quality	82.37
+ENSMUSG00000049932	H2ax	subcutaneous adipose tissue	present	gold quality	74.73
+ENSMUSG00000049932	H2ax	subiculum	present	gold quality	80.08
+ENSMUSG00000049932	H2ax	median eminence of neurohypophysis	present	gold quality	77.81
+ENSMUSG00000049932	H2ax	mammillary body	present	gold quality	78.01
+ENSMUSG00000049932	H2ax	spinal cord	present	gold quality	85.89
+ENSMUSG00000049932	H2ax	spinal cord	present	gold quality	84.02
+ENSMUSG00000049932	H2ax	spinal cord	present	gold quality	87.87
+ENSMUSG00000049932	H2ax	spinal cord	present	gold quality	85.32
+ENSMUSG00000049932	H2ax	spinal cord	present	gold quality	79.1
+ENSMUSG00000049932	H2ax	ventral horn of spinal cord	present	gold quality	82.86
+ENSMUSG00000049932	H2ax	ventral horn of spinal cord	present	gold quality	81.65
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	95.88
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	95.85
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	95.1
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	93.44
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	92.03
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	91.91
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	90.44
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	88.84
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	86.21
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	85.58
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	79.63
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	81.75
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	89.06
+ENSMUSG00000049932	H2ax	olfactory bulb	present	gold quality	78.19
+ENSMUSG00000049932	H2ax	vestibular membrane of cochlear duct	present	gold quality	66.67
+ENSMUSG00000049932	H2ax	stria vascularis of cochlear duct	present	gold quality	77.61
+ENSMUSG00000049932	H2ax	stria vascularis of cochlear duct	present	gold quality	54.34
+ENSMUSG00000049932	H2ax	stria vascularis of cochlear duct	present	gold quality	65.82
+ENSMUSG00000049932	H2ax	stria vascularis of cochlear duct	present	gold quality	86.65
+ENSMUSG00000049932	H2ax	choroid plexus of fourth ventricle	present	gold quality	74.57
+ENSMUSG00000049932	H2ax	choroid plexus of fourth ventricle	present	gold quality	84.79
+ENSMUSG00000049932	H2ax	brainstem	present	gold quality	79.15
+ENSMUSG00000049932	H2ax	brainstem	present	gold quality	78.83
+ENSMUSG00000049932	H2ax	brainstem	present	gold quality	82.52
+ENSMUSG00000049932	H2ax	brainstem	present	gold quality	81.92
+ENSMUSG00000049932	H2ax	brainstem	present	gold quality	85.83
+ENSMUSG00000049932	H2ax	nucleus of brain	present	gold quality	79.24
+ENSMUSG00000049932	H2ax	somite	present	gold quality	98.51
+ENSMUSG00000049932	H2ax	umbilical cord	present	gold quality	91.32
+ENSMUSG00000049932	H2ax	prostate gland	present	gold quality	75.87
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	77.55
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	84.48
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	94.1
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	76.8
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	83.56
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	81.56
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	84.61
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	81.5
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	82.84
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	87.8
+ENSMUSG00000049932	H2ax	adrenal gland	present	gold quality	80.62
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	98.73
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	98.97
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	96.2
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	99.58
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	99.24
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	98.9
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	99.61
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	98.61
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	98.1
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	96.89
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	97.46
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	97.37
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	97.71
+ENSMUSG00000049932	H2ax	thymus	present	gold quality	98.38
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	99.19
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	93.98
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	99.47
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	99.0
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	93.11
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	98.0
+ENSMUSG00000049932	H2ax	bone marrow	present	gold quality	98.42
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	76.16
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	78.36
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	78.73
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	79.48
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	88.34
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	82.3
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	76.23
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	78.05
+ENSMUSG00000049932	H2ax	muscle tissue	present	gold quality	76.93
+ENSMUSG00000049932	H2ax	pes	present	gold quality	97.31
+ENSMUSG00000049932	H2ax	manus	present	gold quality	97.97
+ENSMUSG00000049932	H2ax	manus	present	gold quality	98.78
+ENSMUSG00000049932	H2ax	lateral hypothalamic area	present	gold quality	81.01
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	87.12
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	88.27
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	87.24
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	84.23
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	83.44
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	82.75
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	76.19
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	87.08
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	89.43
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	88.81
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	83.3
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	85.0
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	85.01
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	83.29
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	85.04
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	89.67
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	85.36
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	86.63
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	84.98
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	88.42
+ENSMUSG00000049932	H2ax	striatum	present	gold quality	87.82
+ENSMUSG00000049932	H2ax	primary visual cortex	present	gold quality	86.18
+ENSMUSG00000049932	H2ax	primary visual cortex	present	gold quality	85.9
+ENSMUSG00000049932	H2ax	primary visual cortex	present	gold quality	90.7
+ENSMUSG00000049932	H2ax	decidua	present	gold quality	87.38
+ENSMUSG00000049932	H2ax	mesenteric lymph node	present	gold quality	92.68
+ENSMUSG00000049932	H2ax	epiblast (generic)	present	gold quality	98.35
+ENSMUSG00000049932	H2ax	epiblast (generic)	present	gold quality	98.77
+ENSMUSG00000049932	H2ax	superior frontal gyrus	present	gold quality	86.92
+ENSMUSG00000049932	H2ax	superior frontal gyrus	present	gold quality	86.68
+ENSMUSG00000049932	H2ax	lateral septal nucleus	present	gold quality	81.08
+ENSMUSG00000049932	H2ax	ventral tegmental area	present	gold quality	75.43
+ENSMUSG00000049932	H2ax	entorhinal cortex	present	gold quality	85.96
+ENSMUSG00000049932	H2ax	entorhinal cortex	present	gold quality	90.11
+ENSMUSG00000049932	H2ax	medial dorsal nucleus of thalamus	present	gold quality	79.12
+ENSMUSG00000049932	H2ax	lumbar dorsal root ganglion	present	gold quality	53.05
+ENSMUSG00000049932	H2ax	anterior amygdaloid area	present	gold quality	81.05
+ENSMUSG00000049932	H2ax	cingulate cortex	present	gold quality	81.08
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	82.26
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	81.16
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	80.06
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	83.8
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	81.48
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	80.56
+ENSMUSG00000049932	H2ax	central gray substance of midbrain	present	gold quality	78.84
+ENSMUSG00000049932	H2ax	ear vesicle	present	gold quality	88.57
+ENSMUSG00000049932	H2ax	ear vesicle	present	gold quality	98.07
+ENSMUSG00000049932	H2ax	ear vesicle	present	gold quality	88.02
+ENSMUSG00000049932	H2ax	ear vesicle	present	gold quality	89.19
+ENSMUSG00000049932	H2ax	ear vesicle	present	gold quality	87.88
+ENSMUSG00000049932	H2ax	ventricular zone	present	gold quality	98.5
+ENSMUSG00000049932	H2ax	presomitic mesoderm	present	gold quality	96.61
+ENSMUSG00000049932	H2ax	pharyngeal arch 2	present	gold quality	97.59
+ENSMUSG00000049932	H2ax	otic placode	present	gold quality	89.58
+ENSMUSG00000049932	H2ax	trachea	present	gold quality	98.7
+ENSMUSG00000049932	H2ax	trachea	present	gold quality	69.64
+ENSMUSG00000049932	H2ax	metanephric mesenchyme	present	gold quality	96.13
+ENSMUSG00000049932	H2ax	epithelium of cochlear duct	present	gold quality	84.05
+ENSMUSG00000049932	H2ax	endoderm of midgut	present	gold quality	98.49
+ENSMUSG00000049932	H2ax	floor plate of midbrain	present	gold quality	97.52
+ENSMUSG00000049932	H2ax	gonadal fat pad	present	gold quality	69.91
+ENSMUSG00000049932	H2ax	small intestine Peyer's patch	present	gold quality	92.79
+ENSMUSG00000049932	H2ax	brain blood vessel	present	gold quality	92.52
+ENSMUSG00000049932	H2ax	brain blood vessel	present	gold quality	70.89
+ENSMUSG00000049932	H2ax	brain blood vessel	present	gold quality	88.58
+ENSMUSG00000049932	H2ax	tail skin	present	gold quality	84.74
+ENSMUSG00000049932	H2ax	hindlimb long bone	present	gold quality	97.44
+ENSMUSG00000049932	H2ax	molar tooth	present	gold quality	91.47
+ENSMUSG00000049932	H2ax	abdominal wall	present	gold quality	99.06
+ENSMUSG00000049932	H2ax	hippocampal field	present	gold quality	79.62
+ENSMUSG00000049932	H2ax	CA1 field of hippocampus	present	gold quality	83.58
+ENSMUSG00000049932	H2ax	CA1 field of hippocampus	present	gold quality	87.09
+ENSMUSG00000049932	H2ax	CA1 field of hippocampus	present	gold quality	89.32
+ENSMUSG00000049932	H2ax	CA1 field of hippocampus	present	gold quality	80.66
+ENSMUSG00000049932	H2ax	CA3 field of hippocampus	present	gold quality	80.59
+ENSMUSG00000049932	H2ax	CA3 field of hippocampus	present	gold quality	86.73
+ENSMUSG00000049932	H2ax	CA3 field of hippocampus	present	gold quality	89.23
+ENSMUSG00000049932	H2ax	retinal neural layer	present	gold quality	77.78
+ENSMUSG00000049932	H2ax	retinal neural layer	present	gold quality	68.75
+ENSMUSG00000049932	H2ax	retinal neural layer	present	gold quality	77.11
+ENSMUSG00000049932	H2ax	choroid plexus epithelium	present	gold quality	71.49
+ENSMUSG00000049932	H2ax	placenta labyrinth	present	gold quality	89.56
+ENSMUSG00000049932	H2ax	peripheral lymph node	present	gold quality	86.74
+ENSMUSG00000049932	H2ax	ganglionic eminence	present	gold quality	95.24
+ENSMUSG00000049932	H2ax	ganglionic eminence	present	gold quality	96.32
+ENSMUSG00000049932	H2ax	medial ganglionic eminence	present	gold quality	99.18
+ENSMUSG00000049932	H2ax	frontonasal prominence	present	gold quality	98.46
+ENSMUSG00000049932	H2ax	frontonasal prominence	present	gold quality	98.8
+ENSMUSG00000049932	H2ax	frontonasal prominence	present	gold quality	99.1
+ENSMUSG00000049932	H2ax	frontonasal prominence	present	gold quality	98.91
+ENSMUSG00000049932	H2ax	proximal tubule	present	gold quality	81.07
+ENSMUSG00000049932	H2ax	proximal tubule	present	gold quality	81.78
+ENSMUSG00000049932	H2ax	outflow tract	present	gold quality	98.44
+ENSMUSG00000049932	H2ax	hindlimb stylopod muscle	present	gold quality	78.17
+ENSMUSG00000049932	H2ax	hindlimb stylopod muscle	present	gold quality	81.85
+ENSMUSG00000049932	H2ax	vault of skull	present	gold quality	90.68
+ENSMUSG00000049932	H2ax	primitive streak	present	gold quality	96.72
+ENSMUSG00000049932	H2ax	limb bud	present	gold quality	98.84
+ENSMUSG00000049932	H2ax	pharyngeal arch 1	present	gold quality	99.33
+ENSMUSG00000049932	H2ax	pharyngeal arch 1	present	gold quality	98.55
+ENSMUSG00000049932	H2ax	pharyngeal arch 1	present	gold quality	98.28
+ENSMUSG00000049932	H2ax	ectoplacental cone	present	gold quality	92.71
+ENSMUSG00000049932	H2ax	tarsal region	present	gold quality	81.2
+ENSMUSG00000049932	H2ax	right kidney	present	gold quality	78.52
+ENSMUSG00000049932	H2ax	urinary bladder urothelium	present	gold quality	79.43
+ENSMUSG00000049932	H2ax	urinary bladder urothelium	present	gold quality	80.22
+ENSMUSG00000049932	H2ax	urinary bladder urothelium	present	gold quality	80.35
+ENSMUSG00000049932	H2ax	urinary bladder urothelium	present	gold quality	77.89
+ENSMUSG00000049932	H2ax	bone fossa	present	gold quality	82.01
+ENSMUSG00000049932	H2ax	cerebellar vermis	present	gold quality	77.73
+ENSMUSG00000049932	H2ax	piriform cortex	present	gold quality	80.86
+ENSMUSG00000049932	H2ax	gastrula	present	gold quality	92.43
+ENSMUSG00000049932	H2ax	metanephric collecting duct	present	gold quality	82.54
+ENSMUSG00000049932	H2ax	urogenital fold	present	gold quality	96.04
+ENSMUSG00000049932	H2ax	metanephric ureteric bud	present	gold quality	97.27
+ENSMUSG00000049932	H2ax	metanephric cortical collecting duct	present	gold quality	88.73
+ENSMUSG00000049932	H2ax	metanephric loop of Henle	present	gold quality	95.77
+ENSMUSG00000049932	H2ax	metanephric renal vesicle	present	gold quality	96.48
+ENSMUSG00000049932	H2ax	metanephric renal vesicle	present	gold quality	89.45
+ENSMUSG00000049932	H2ax	metanephric S-shaped body	present	gold quality	83.34
+ENSMUSG00000049932	H2ax	metanephric S-shaped body	present	gold quality	96.65
+ENSMUSG00000049932	H2ax	metanephric proximal tubule	present	gold quality	88.63
+ENSMUSG00000049932	H2ax	renal medulla collecting duct	present	gold quality	93.3
+ENSMUSG00000049932	H2ax	thoracic mammary gland	present	gold quality	88.98
+ENSMUSG00000049932	H2ax	renal medulla interstitium	present	gold quality	92.74
+ENSMUSG00000049932	H2ax	cerebellum lobe	present	gold quality	77.08
+ENSMUSG00000049932	H2ax	gonadal ridge	present	gold quality	97.4
+ENSMUSG00000049932	H2ax	gonadal ridge	present	gold quality	96.77
+ENSMUSG00000049932	H2ax	gonadal ridge	present	gold quality	95.64
+ENSMUSG00000049932	H2ax	mammary bud	present	gold quality	97.3
+ENSMUSG00000049932	H2ax	cortical plate	present	gold quality	88.63
+ENSMUSG00000049932	H2ax	dorsal striatum	present	gold quality	88.01
+ENSMUSG00000049932	H2ax	dorsal striatum	present	gold quality	83.18
+ENSMUSG00000049932	H2ax	caudate-putamen	present	gold quality	86.1
+ENSMUSG00000049932	H2ax	optic fissure	present	gold quality	87.46
+ENSMUSG00000049932	H2ax	optic fissure	present	gold quality	83.48
+ENSMUSG00000049932	H2ax	forelimb bud	present	gold quality	95.72
+ENSMUSG00000049932	H2ax	forelimb bud	present	gold quality	97.84
+ENSMUSG00000049932	H2ax	forelimb bud	present	gold quality	98.5
+ENSMUSG00000049932	H2ax	forelimb bud	present	gold quality	98.62
+ENSMUSG00000049932	H2ax	forelimb bud	present	gold quality	98.4
+ENSMUSG00000049932	H2ax	forelimb bud	present	gold quality	98.39
+ENSMUSG00000049932	H2ax	hindlimb bud	present	gold quality	99.34
+ENSMUSG00000049932	H2ax	hindlimb bud	present	gold quality	96.83
+ENSMUSG00000049932	H2ax	hindlimb bud	present	gold quality	98.11
+ENSMUSG00000049932	H2ax	hindlimb bud	present	gold quality	98.48
+ENSMUSG00000049932	H2ax	hindlimb bud	present	gold quality	98.84
+ENSMUSG00000049932	H2ax	hindlimb bud	present	gold quality	98.33
+ENSMUSG00000049932	H2ax	rhombomere 4	present	gold quality	98.62
+ENSMUSG00000049932	H2ax	telencephalon lateral wall	present	gold quality	71.21
+ENSMUSG00000049932	H2ax	secondary palatal shelf	present	gold quality	96.53
+ENSMUSG00000049932	H2ax	semi-lunar valve	present	gold quality	84.76
+ENSMUSG00000049932	H2ax	mandibular prominence	present	gold quality	98.41
+ENSMUSG00000049932	H2ax	mandibular prominence	present	gold quality	98.73
+ENSMUSG00000049932	H2ax	mandibular prominence	present	gold quality	99.1
+ENSMUSG00000049932	H2ax	mandibular prominence	present	gold quality	99.05
+ENSMUSG00000049932	H2ax	mandibular prominence	present	gold quality	98.76
+ENSMUSG00000049932	H2ax	maxillary prominence	present	gold quality	98.72
+ENSMUSG00000049932	H2ax	maxillary prominence	present	gold quality	98.8
+ENSMUSG00000049932	H2ax	maxillary prominence	present	gold quality	99.07
+ENSMUSG00000049932	H2ax	maxillary prominence	present	gold quality	98.76
+ENSMUSG00000049932	H2ax	undifferentiated genital tubercle	present	gold quality	98.92
+ENSMUSG00000049932	H2ax	undifferentiated genital tubercle	present	gold quality	98.25
+ENSMUSG00000049932	H2ax	perirhinal cortex	present	gold quality	87.29
+ENSMUSG00000049932	H2ax	perirhinal cortex	present	gold quality	90.47
+ENSMUSG00000049932	H2ax	humerus cartilage element	present	gold quality	94.74
+ENSMUSG00000049932	H2ax	ureteric bud tip	present	gold quality	95.64
+ENSMUSG00000049932	H2ax	right lung lobe	present	gold quality	77.22
+ENSMUSG00000049932	H2ax	vestibular organ	present	gold quality	88.33
+ENSMUSG00000049932	H2ax	vestibular organ	present	gold quality	87.8
+ENSMUSG00000049932	H2ax	vestibular organ	present	gold quality	87.86
+ENSMUSG00000049932	H2ax	vestibular organ	present	gold quality	83.88
+ENSMUSG00000049932	H2ax	diaphysis of femur	present	gold quality	90.21
+ENSMUSG00000049932	H2ax	diaphysis of femur	present	gold quality	90.82
+ENSMUSG00000049932	H2ax	vestibular epithelium	present	gold quality	84.2
+ENSMUSG00000049932	H2ax	efferent duct	present	gold quality	98.12
+ENSMUSG00000049932	H2ax	efferent duct	present	gold quality	97.84
+ENSMUSG00000049932	H2ax	efferent duct	present	gold quality	96.83
+ENSMUSG00000049932	H2ax	cleaving embryo	present	gold quality	84.85
+ENSMUSG00000049932	H2ax	cleaving embryo	present	gold quality	89.41
+ENSMUSG00000049932	H2ax	cleaving embryo	present	gold quality	93.61
+ENSMUSG00000049932	H2ax	cleaving embryo	present	gold quality	93.24
+ENSMUSG00000049932	H2ax	cleaving embryo	present	gold quality	91.95
+ENSMUSG00000049932	H2ax	sexually immature organism	present	gold quality	85.97
+ENSMUSG00000049932	H2ax	sexually immature organism	present	gold quality	89.24
+ENSMUSG00000049932	H2ax	sexually immature organism	present	gold quality	82.88
+ENSMUSG00000049932	H2ax	embryonic post-anal tail	present	gold quality	98.62
+ENSMUSG00000049932	H2ax	stroma of bone marrow	present	gold quality	74.21
+ENSMUSG00000049932	H2ax	tracheobronchial tree	present	gold quality	99.19
+ENSMUSG00000049932	H2ax	1st arch mandibular component	present	gold quality	99.11
+ENSMUSG00000049932	H2ax	1st arch maxillary component	present	gold quality	98.94
+ENSMUSG00000049932	H2ax	subparaventricular zone	present	gold quality	77.51
+ENSMUSG00000049932	H2ax	lumbar subsegment of spinal cord	present	gold quality	53.33
+ENSMUSG00000049932	H2ax	lumbar subsegment of spinal cord	present	gold quality	79.85
+ENSMUSG00000049932	H2ax	medial preoptic region	present	gold quality	80.86
+ENSMUSG00000049932	H2ax	ileal epithelium	present	gold quality	95.08
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	74.98
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	68.69
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	72.5
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	72.25
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	73.67
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	75.23
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	80.34
+ENSMUSG00000049932	H2ax	inguinal mammary gland	present	gold quality	71.2
+ENSMUSG00000049932	H2ax	cerebellum external granule cell layer	present	gold quality	71.42
+ENSMUSG00000049932	H2ax	respiratory primordium	present	gold quality	86.6
+ENSMUSG00000049932	H2ax	respiratory primordium	present	gold quality	90.29
+ENSMUSG00000049932	H2ax	left lung lobe	present	gold quality	89.76
+ENSMUSG00000049932	H2ax	left colon	present	gold quality	84.59
+ENSMUSG00000049932	H2ax	left colon	present	gold quality	81.75
+ENSMUSG00000049932	H2ax	left colon	present	gold quality	87.99
+ENSMUSG00000049932	H2ax	right colon	present	gold quality	75.92
+ENSMUSG00000049932	H2ax	femorotibial joint	present	gold quality	98.58
+ENSMUSG00000049932	H2ax	indifferent gonad	present	gold quality	96.63
+ENSMUSG00000049932	H2ax	indifferent gonad	present	gold quality	96.91
+ENSMUSG00000049932	H2ax	associated mesenchyme of midgut	present	gold quality	98.36
+ENSMUSG00000049932	H2ax	dorsal pancreas	present	gold quality	97.57
+ENSMUSG00000049932	H2ax	dorsal pancreas	present	gold quality	97.34
+ENSMUSG00000049932	H2ax	dorsal pancreas	present	gold quality	97.89
+ENSMUSG00000049932	H2ax	dorsal pancreas	present	gold quality	97.39
+ENSMUSG00000049932	H2ax	dorsal pancreas	present	gold quality	93.37
+ENSMUSG00000049932	H2ax	ureter smooth muscle	present	gold quality	89.52
+ENSMUSG00000049932	H2ax	condyle	present	gold quality	84.58
+ENSMUSG00000049932	H2ax	eyeball of camera-type eye	present	gold quality	80.03
+ENSMUSG00000049932	H2ax	conjunctival fornix	present	gold quality	85.62
+ENSMUSG00000049932	H2ax	conjunctival fornix	present	gold quality	80.38
+ENSMUSG00000049932	H2ax	epididymal fat pad	present	gold quality	83.54
+ENSMUSG00000049932	H2ax	epididymal fat pad	present	gold quality	73.86
+ENSMUSG00000049932	H2ax	epididymal fat pad	present	gold quality	79.86
+ENSMUSG00000049932	H2ax	epididymal fat pad	present	gold quality	68.45
+ENSMUSG00000049932	H2ax	gastrocnemius medialis	present	gold quality	79.7
+ENSMUSG00000049932	H2ax	gastrocnemius medialis	present	gold quality	81.2
+ENSMUSG00000049932	H2ax	gastrocnemius medialis	present	gold quality	82.61
+ENSMUSG00000049932	H2ax	embryonic facial prominence	present	gold quality	99.13
+ENSMUSG00000049932	H2ax	embryonic facial prominence	present	gold quality	98.7
+ENSMUSG00000049932	H2ax	embryonic facial prominence	present	gold quality	98.51
+ENSMUSG00000049932	H2ax	embryonic facial prominence	present	gold quality	98.23
+ENSMUSG00000049932	H2ax	retrosplenial region	present	gold quality	80.73
+ENSMUSG00000049932	H2ax	cerebral cortex subventricular zone	present	gold quality	69.99
+ENSMUSG00000049932	H2ax	embryonic brain	present	gold quality	92.32
+ENSMUSG00000049932	H2ax	embryonic brain	present	gold quality	91.78
+ENSMUSG00000060081	H2ac1	spermatocyte	present	gold quality	96.45
+ENSMUSG00000060081	H2ac1	spermatid	present	gold quality	93.44
+ENSMUSG00000060081	H2ac1	mesodermal cell in embryo	present	gold quality	72.18
+ENSMUSG00000060081	H2ac1	blastoderm cell in morula	present	gold quality	72.47
+ENSMUSG00000060081	H2ac1	animal zygote	present	gold quality	99.43
+ENSMUSG00000060081	H2ac1	primary oocyte	present	gold quality	99.71
+ENSMUSG00000060081	H2ac1	secondary oocyte	present	gold quality	99.61
+ENSMUSG00000060081	H2ac1	embryonic cell in blastocyst	present	gold quality	64.88
+ENSMUSG00000060081	H2ac1	zone of skin	present	gold quality	60.91
+ENSMUSG00000060081	H2ac1	adult mammalian kidney	present	gold quality	66.53
+ENSMUSG00000060081	H2ac1	adult mammalian kidney	present	gold quality	56.45
+ENSMUSG00000060081	H2ac1	adult mammalian kidney	present	gold quality	61.14
+ENSMUSG00000060081	H2ac1	adult mammalian kidney	present	gold quality	30.42
+ENSMUSG00000060081	H2ac1	intestine	present	gold quality	56.04
+ENSMUSG00000060081	H2ac1	intestine	present	gold quality	46.09
+ENSMUSG00000060081	H2ac1	multicellular organism	present	gold quality	46.95
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	66.62
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	74.86
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	76.31
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	75.33
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	67.98
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	70.68
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	67.35
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	72.18
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	70.45
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	62.5
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	65.93
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	59.96
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	64.65
+ENSMUSG00000060081	H2ac1	testis	present	gold quality	55.87
+ENSMUSG00000060081	H2ac1	stomach	present	gold quality	54.59
+ENSMUSG00000060081	H2ac1	stomach	present	gold quality	46.9
+ENSMUSG00000060081	H2ac1	stomach	present	gold quality	65.38
+ENSMUSG00000060081	H2ac1	stomach	present	gold quality	59.51
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	48.25
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	33.18
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	31.92
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	38.12
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	55.3
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	54.74
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	40.83
+ENSMUSG00000060081	H2ac1	heart	present	gold quality	53.93
+ENSMUSG00000060081	H2ac1	brain	present	gold quality	25.56
+ENSMUSG00000060081	H2ac1	yolk sac	present	gold quality	55.63
+ENSMUSG00000060081	H2ac1	yolk sac	present	gold quality	59.8
+ENSMUSG00000060081	H2ac1	neural tube	present	gold quality	50.48
+ENSMUSG00000060081	H2ac1	colon	present	gold quality	58.16
+ENSMUSG00000060081	H2ac1	cortex of kidney	present	gold quality	47.43
+ENSMUSG00000060081	H2ac1	urinary bladder	present	gold quality	56.82
+ENSMUSG00000060081	H2ac1	urinary bladder	present	gold quality	60.57
+ENSMUSG00000060081	H2ac1	white adipose tissue	present	gold quality	56.3
+ENSMUSG00000060081	H2ac1	white adipose tissue	present	gold quality	60.15
+ENSMUSG00000060081	H2ac1	forebrain	present	gold quality	51.07
+ENSMUSG00000060081	H2ac1	forebrain	present	gold quality	53.98
+ENSMUSG00000060081	H2ac1	midbrain	present	gold quality	54.35
+ENSMUSG00000060081	H2ac1	midbrain	present	gold quality	55.33
+ENSMUSG00000060081	H2ac1	placenta	present	gold quality	60.77
+ENSMUSG00000060081	H2ac1	placenta	present	gold quality	44.1
+ENSMUSG00000060081	H2ac1	hindbrain	present	gold quality	53.92
+ENSMUSG00000060081	H2ac1	cerebellum	present	gold quality	37.78
+ENSMUSG00000060081	H2ac1	lung	present	gold quality	52.78
+ENSMUSG00000060081	H2ac1	lung	present	gold quality	39.25
+ENSMUSG00000060081	H2ac1	lung	present	gold quality	53.84
+ENSMUSG00000060081	H2ac1	lung	present	gold quality	53.86
+ENSMUSG00000060081	H2ac1	limb	present	gold quality	56.65
+ENSMUSG00000060081	H2ac1	limb	present	gold quality	55.15
+ENSMUSG00000060081	H2ac1	limb	present	gold quality	54.66
+ENSMUSG00000060081	H2ac1	limb	present	gold quality	45.03
+ENSMUSG00000060081	H2ac1	spleen	present	gold quality	65.84
+ENSMUSG00000060081	H2ac1	spleen	present	gold quality	64.74
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	66.0
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	65.48
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	51.54
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	55.26
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	65.79
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	60.5
+ENSMUSG00000060081	H2ac1	liver	present	gold quality	61.56
+ENSMUSG00000060081	H2ac1	kidney	present	gold quality	48.67
+ENSMUSG00000060081	H2ac1	kidney	present	gold quality	53.33
+ENSMUSG00000060081	H2ac1	cerebellar cortex	present	gold quality	44.94
+ENSMUSG00000060081	H2ac1	adrenal gland	present	gold quality	58.84
+ENSMUSG00000060081	H2ac1	adrenal gland	present	gold quality	58.51
+ENSMUSG00000060081	H2ac1	thymus	present	gold quality	48.97
+ENSMUSG00000060081	H2ac1	bone marrow	present	gold quality	64.63
+ENSMUSG00000060081	H2ac1	striatum	present	gold quality	52.19
+ENSMUSG00000060081	H2ac1	primary visual cortex	present	gold quality	32.05
+ENSMUSG00000060081	H2ac1	primary visual cortex	present	gold quality	42.94
+ENSMUSG00000060081	H2ac1	epiblast (generic)	present	gold quality	78.58
+ENSMUSG00000060081	H2ac1	superior frontal gyrus	present	gold quality	59.86
+ENSMUSG00000060081	H2ac1	hindlimb stylopod muscle	present	gold quality	48.52
+ENSMUSG00000060081	H2ac1	forelimb bud	present	gold quality	61.33
+ENSMUSG00000060081	H2ac1	forelimb bud	present	gold quality	59.47
+ENSMUSG00000060081	H2ac1	hindlimb bud	present	gold quality	56.26
+ENSMUSG00000060081	H2ac1	hindlimb bud	present	gold quality	49.23
+ENSMUSG00000060081	H2ac1	embryonic facial prominence	present	gold quality	58.25
+ENSMUSG00000060081	H2ac1	embryonic facial prominence	present	gold quality	56.32
+ENSMUSG00000060081	H2ac1	embryonic brain	present	gold quality	38.12
+ENSMUSG00000062651	H2al2a	spermatocyte	present	gold quality	82.16
+ENSMUSG00000062651	H2al2a	spermatid	present	gold quality	96.42
+ENSMUSG00000062651	H2al2a	embryonic cell in blastocyst	present	gold quality	68.67
+ENSMUSG00000062651	H2al2a	islet of Langerhans	present	gold quality	44.35
+ENSMUSG00000062651	H2al2a	islet of Langerhans	present	gold quality	60.84
+ENSMUSG00000062651	H2al2a	zone of skin	present	gold quality	36.27
+ENSMUSG00000062651	H2al2a	adult mammalian kidney	present	gold quality	63.19
+ENSMUSG00000062651	H2al2a	multicellular organism	present	gold quality	24.8
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.82
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	99.13
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	99.42
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	99.05
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.86
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.89
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.91
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.69
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	99.07
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	97.54
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.61
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.4
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	97.34
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	98.83
+ENSMUSG00000062651	H2al2a	testis	present	gold quality	95.43
+ENSMUSG00000062651	H2al2a	lens of camera-type eye	present	gold quality	38.78
+ENSMUSG00000062651	H2al2a	skeletal muscle tissue	present	gold quality	51.35
+ENSMUSG00000062651	H2al2a	liver	present	gold quality	27.38
+ENSMUSG00000062651	H2al2a	liver	present	gold quality	27.97
+ENSMUSG00000062651	H2al2a	liver	present	gold quality	27.63
+ENSMUSG00000062651	H2al2a	retinal neural layer	present	gold quality	60.54
+ENSMUSG00000067441	H2ab1	spermatid	present	gold quality	64.36
+ENSMUSG00000067441	H2ab1	animal zygote	present	gold quality	48.07
+ENSMUSG00000067441	H2ab1	primary oocyte	present	gold quality	52.76
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	54.02
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	66.84
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	59.07
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	57.19
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	62.77
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	53.8
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	53.49
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	60.62
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	60.17
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	55.99
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	55.02
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	51.92
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	62.22
+ENSMUSG00000067441	H2ab1	testis	present	gold quality	47.37
+ENSMUSG00000067441	H2ab1	spleen	present	gold quality	30.34
+ENSMUSG00000067441	H2ab1	thymus	present	gold quality	24.69
+ENSMUSG00000067441	H2ab1	striatum	present	gold quality	53.5
+ENSMUSG00000071516	H2ac13	spermatocyte	present	gold quality	74.64
+ENSMUSG00000071516	H2ac13	spermatid	present	gold quality	91.69
+ENSMUSG00000071516	H2ac13	granulocyte	present	gold quality	68.65
+ENSMUSG00000071516	H2ac13	mesodermal cell in embryo	present	gold quality	83.82
+ENSMUSG00000071516	H2ac13	mesodermal cell in embryo	present	gold quality	82.98
+ENSMUSG00000071516	H2ac13	mesodermal cell in embryo	present	gold quality	83.28
+ENSMUSG00000071516	H2ac13	epiblast cell in embryo	present	gold quality	85.65
+ENSMUSG00000071516	H2ac13	blastoderm cell in morula	present	gold quality	73.84
+ENSMUSG00000071516	H2ac13	animal zygote	present	gold quality	67.74
+ENSMUSG00000071516	H2ac13	secondary oocyte	present	gold quality	55.99
+ENSMUSG00000071516	H2ac13	embryonic cell in blastocyst	present	gold quality	68.3
+ENSMUSG00000071516	H2ac13	islet of Langerhans	present	gold quality	41.19
+ENSMUSG00000071516	H2ac13	islet of Langerhans	present	gold quality	57.89
+ENSMUSG00000071516	H2ac13	zone of skin	present	gold quality	23.56
+ENSMUSG00000071516	H2ac13	adult mammalian kidney	present	gold quality	56.59
+ENSMUSG00000071516	H2ac13	adult mammalian kidney	present	gold quality	27.13
+ENSMUSG00000071516	H2ac13	adult mammalian kidney	present	gold quality	29.37
+ENSMUSG00000071516	H2ac13	adult mammalian kidney	present	gold quality	24.65
+ENSMUSG00000071516	H2ac13	adult mammalian kidney	present	gold quality	33.46
+ENSMUSG00000071516	H2ac13	adult mammalian kidney	present	gold quality	27.2
+ENSMUSG00000071516	H2ac13	intestine	present	gold quality	78.03
+ENSMUSG00000071516	H2ac13	intestine	present	gold quality	82.66
+ENSMUSG00000071516	H2ac13	intestine	present	gold quality	82.41
+ENSMUSG00000071516	H2ac13	intestine	present	gold quality	79.53
+ENSMUSG00000071516	H2ac13	multicellular organism	present	gold quality	60.04
+ENSMUSG00000071516	H2ac13	testis	present	gold quality	52.32
+ENSMUSG00000071516	H2ac13	testis	present	gold quality	51.05
+ENSMUSG00000071516	H2ac13	testis	present	gold quality	27.02
+ENSMUSG00000071516	H2ac13	testis	present	gold quality	60.58
+ENSMUSG00000071516	H2ac13	stomach	present	gold quality	83.19
+ENSMUSG00000071516	H2ac13	stomach	present	gold quality	78.21
+ENSMUSG00000071516	H2ac13	stomach	present	gold quality	73.94
+ENSMUSG00000071516	H2ac13	stomach	present	gold quality	82.51
+ENSMUSG00000071516	H2ac13	stomach	present	gold quality	34.84
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	76.19
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	72.51
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	79.32
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	78.49
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	78.72
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	31.67
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	51.74
+ENSMUSG00000071516	H2ac13	heart	present	gold quality	99.85
+ENSMUSG00000071516	H2ac13	brain	present	gold quality	38.81
+ENSMUSG00000071516	H2ac13	brain	present	gold quality	30.83
+ENSMUSG00000071516	H2ac13	brain	present	gold quality	20.5
+ENSMUSG00000071516	H2ac13	lens of camera-type eye	present	gold quality	78.44
+ENSMUSG00000071516	H2ac13	lens of camera-type eye	present	gold quality	68.36
+ENSMUSG00000071516	H2ac13	lens of camera-type eye	present	gold quality	62.57
+ENSMUSG00000071516	H2ac13	lens of camera-type eye	present	gold quality	41.79
+ENSMUSG00000071516	H2ac13	lens of camera-type eye	present	gold quality	55.83
+ENSMUSG00000071516	H2ac13	uterus	present	gold quality	99.18
+ENSMUSG00000071516	H2ac13	yolk sac	present	gold quality	88.79
+ENSMUSG00000071516	H2ac13	yolk sac	present	gold quality	88.06
+ENSMUSG00000071516	H2ac13	esophagus	present	gold quality	32.62
+ENSMUSG00000071516	H2ac13	neural tube	present	gold quality	82.07
+ENSMUSG00000071516	H2ac13	neural tube	present	gold quality	77.83
+ENSMUSG00000071516	H2ac13	neural tube	present	gold quality	72.29
+ENSMUSG00000071516	H2ac13	skeletal muscle tissue	present	gold quality	59.31
+ENSMUSG00000071516	H2ac13	skeletal muscle tissue	present	gold quality	39.39
+ENSMUSG00000071516	H2ac13	colon	present	gold quality	56.73
+ENSMUSG00000071516	H2ac13	colon	present	gold quality	61.75
+ENSMUSG00000071516	H2ac13	urinary bladder	present	gold quality	55.43
+ENSMUSG00000071516	H2ac13	white adipose tissue	present	gold quality	54.23
+ENSMUSG00000071516	H2ac13	white adipose tissue	present	gold quality	62.71
+ENSMUSG00000071516	H2ac13	lip	present	gold quality	54.58
+ENSMUSG00000071516	H2ac13	forebrain	present	gold quality	80.24
+ENSMUSG00000071516	H2ac13	forebrain	present	gold quality	82.51
+ENSMUSG00000071516	H2ac13	forebrain	present	gold quality	88.02
+ENSMUSG00000071516	H2ac13	forebrain	present	gold quality	81.24
+ENSMUSG00000071516	H2ac13	forebrain	present	gold quality	79.15
+ENSMUSG00000071516	H2ac13	forebrain	present	gold quality	99.71
+ENSMUSG00000071516	H2ac13	midbrain	present	gold quality	82.63
+ENSMUSG00000071516	H2ac13	midbrain	present	gold quality	84.86
+ENSMUSG00000071516	H2ac13	midbrain	present	gold quality	83.07
+ENSMUSG00000071516	H2ac13	midbrain	present	gold quality	74.26
+ENSMUSG00000071516	H2ac13	midbrain	present	gold quality	73.15
+ENSMUSG00000071516	H2ac13	midbrain	present	gold quality	99.62
+ENSMUSG00000071516	H2ac13	Ammon's horn	present	gold quality	31.11
+ENSMUSG00000071516	H2ac13	Ammon's horn	present	gold quality	24.52
+ENSMUSG00000071516	H2ac13	Ammon's horn	present	gold quality	52.57
+ENSMUSG00000071516	H2ac13	placenta	present	gold quality	84.97
+ENSMUSG00000071516	H2ac13	placenta	present	gold quality	93.15
+ENSMUSG00000071516	H2ac13	hindbrain	present	gold quality	83.65
+ENSMUSG00000071516	H2ac13	hindbrain	present	gold quality	83.78
+ENSMUSG00000071516	H2ac13	hindbrain	present	gold quality	75.7
+ENSMUSG00000071516	H2ac13	hindbrain	present	gold quality	72.62
+ENSMUSG00000071516	H2ac13	hindbrain	present	gold quality	69.6
+ENSMUSG00000071516	H2ac13	hindbrain	present	gold quality	99.92
+ENSMUSG00000071516	H2ac13	cerebellum	present	gold quality	51.17
+ENSMUSG00000071516	H2ac13	cerebellum	present	gold quality	55.85
+ENSMUSG00000071516	H2ac13	cerebellum	present	gold quality	44.85
+ENSMUSG00000071516	H2ac13	lung	present	gold quality	88.18
+ENSMUSG00000071516	H2ac13	lung	present	gold quality	86.95
+ENSMUSG00000071516	H2ac13	lung	present	gold quality	22.78
+ENSMUSG00000071516	H2ac13	lung	present	gold quality	61.92
+ENSMUSG00000071516	H2ac13	lung	present	gold quality	54.61
+ENSMUSG00000071516	H2ac13	lung	present	gold quality	51.36
+ENSMUSG00000071516	H2ac13	limb	present	gold quality	83.94
+ENSMUSG00000071516	H2ac13	limb	present	gold quality	83.25
+ENSMUSG00000071516	H2ac13	limb	present	gold quality	90.74
+ENSMUSG00000071516	H2ac13	limb	present	gold quality	83.53
+ENSMUSG00000071516	H2ac13	spleen	present	gold quality	57.65
+ENSMUSG00000071516	H2ac13	spleen	present	gold quality	79.87
+ENSMUSG00000071516	H2ac13	spleen	present	gold quality	77.33
+ENSMUSG00000071516	H2ac13	spleen	present	gold quality	68.35
+ENSMUSG00000071516	H2ac13	spleen	present	gold quality	73.05
+ENSMUSG00000071516	H2ac13	spleen	present	gold quality	67.64
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	80.8
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	89.2
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	87.88
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	89.83
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	31.7
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	57.0
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	29.07
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	28.79
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	29.2
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	28.92
+ENSMUSG00000071516	H2ac13	liver	present	gold quality	28.66
+ENSMUSG00000071516	H2ac13	kidney	present	gold quality	85.68
+ENSMUSG00000071516	H2ac13	kidney	present	gold quality	82.87
+ENSMUSG00000071516	H2ac13	duodenum	present	gold quality	59.23
+ENSMUSG00000071516	H2ac13	duodenum	present	gold quality	54.05
+ENSMUSG00000071516	H2ac13	jejunum	present	gold quality	47.7
+ENSMUSG00000071516	H2ac13	ileum	present	gold quality	62.97
+ENSMUSG00000071516	H2ac13	cerebellar cortex	present	gold quality	48.09
+ENSMUSG00000071516	H2ac13	olfactory bulb	present	gold quality	32.64
+ENSMUSG00000071516	H2ac13	olfactory bulb	present	gold quality	35.8
+ENSMUSG00000071516	H2ac13	adrenal gland	present	gold quality	69.42
+ENSMUSG00000071516	H2ac13	thymus	present	gold quality	79.7
+ENSMUSG00000071516	H2ac13	thymus	present	gold quality	74.76
+ENSMUSG00000071516	H2ac13	thymus	present	gold quality	91.95
+ENSMUSG00000071516	H2ac13	thymus	present	gold quality	66.08
+ENSMUSG00000071516	H2ac13	bone marrow	present	gold quality	84.81
+ENSMUSG00000071516	H2ac13	bone marrow	present	gold quality	85.19
+ENSMUSG00000071516	H2ac13	muscle tissue	present	gold quality	42.44
+ENSMUSG00000071516	H2ac13	primary visual cortex	present	gold quality	32.41
+ENSMUSG00000071516	H2ac13	epiblast (generic)	present	gold quality	48.31
+ENSMUSG00000071516	H2ac13	ventricular zone	present	gold quality	56.27
+ENSMUSG00000071516	H2ac13	ganglionic eminence	present	gold quality	37.66
+ENSMUSG00000071516	H2ac13	ectoplacental cone	present	gold quality	33.71
+ENSMUSG00000071516	H2ac13	cortical plate	present	gold quality	37.02
+ENSMUSG00000071516	H2ac13	forelimb bud	present	gold quality	56.49
+ENSMUSG00000071516	H2ac13	forelimb bud	present	gold quality	83.93
+ENSMUSG00000071516	H2ac13	forelimb bud	present	gold quality	77.85
+ENSMUSG00000071516	H2ac13	hindlimb bud	present	gold quality	96.11
+ENSMUSG00000071516	H2ac13	hindlimb bud	present	gold quality	45.21
+ENSMUSG00000071516	H2ac13	hindlimb bud	present	gold quality	75.93
+ENSMUSG00000071516	H2ac13	hindlimb bud	present	gold quality	93.34
+ENSMUSG00000071516	H2ac13	hindlimb bud	present	gold quality	74.23
+ENSMUSG00000071516	H2ac13	undifferentiated genital tubercle	present	gold quality	85.68
+ENSMUSG00000071516	H2ac13	undifferentiated genital tubercle	present	gold quality	82.96
+ENSMUSG00000071516	H2ac13	embryonic post-anal tail	present	gold quality	69.79
+ENSMUSG00000071516	H2ac13	embryonic facial prominence	present	gold quality	82.88
+ENSMUSG00000071516	H2ac13	embryonic facial prominence	present	gold quality	86.65
+ENSMUSG00000071516	H2ac13	embryonic facial prominence	present	gold quality	86.91
+ENSMUSG00000071516	H2ac13	embryonic facial prominence	present	gold quality	76.05
+ENSMUSG00000071516	H2ac13	embryonic brain	present	gold quality	58.46
+ENSMUSG00000071516	H2ac13	embryonic brain	present	gold quality	61.19
+ENSMUSG00000082482	H2ab2	multicellular organism	present	gold quality	18.97
+ENSMUSG00000082482	H2ab2	lung	present	gold quality	32.8
+ENSMUSG00000082482	H2ab2	spleen	present	gold quality	78.1
+ENSMUSG00000082482	H2ab2	thymus	present	gold quality	60.08
+ENSMUSG00000083616	H2ab3	spermatid	present	gold quality	67.77
+ENSMUSG00000083616	H2ab3	multicellular organism	present	gold quality	25.15
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	65.3
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	89.41
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	89.68
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	78.52
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	80.51
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	80.12
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	78.22
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	78.15
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	78.47
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	70.38
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	81.84
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	67.99
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	76.58
+ENSMUSG00000083616	H2ab3	testis	present	gold quality	54.98
+ENSMUSG00000083616	H2ab3	heart	present	gold quality	33.72
+ENSMUSG00000083616	H2ab3	brain	present	gold quality	40.78
+ENSMUSG00000083616	H2ab3	midbrain	present	gold quality	59.77
+ENSMUSG00000083616	H2ab3	Ammon's horn	present	gold quality	26.28
+ENSMUSG00000083616	H2ab3	hindbrain	present	gold quality	38.43
+ENSMUSG00000083616	H2ab3	cerebellum	present	gold quality	60.75
+ENSMUSG00000083616	H2ab3	cerebellum	present	gold quality	38.8
+ENSMUSG00000083616	H2ab3	spleen	present	gold quality	28.52
+ENSMUSG00000083616	H2ab3	liver	present	gold quality	57.8
+ENSMUSG00000083616	H2ab3	striatum	present	gold quality	53.5
+ENSMUSG00000083616	H2ab3	striatum	present	gold quality	61.95
+ENSMUSG00000100200	H2al1m	spermatocyte	present	gold quality	64.13
+ENSMUSG00000100200	H2al1m	spermatid	present	gold quality	84.95
+ENSMUSG00000100200	H2al1m	granulocyte	present	gold quality	72.19
+ENSMUSG00000100200	H2al1m	mesodermal cell in embryo	present	gold quality	77.89
+ENSMUSG00000100200	H2al1m	epiblast cell in embryo	present	gold quality	73.96
+ENSMUSG00000100200	H2al1m	blastoderm cell in morula	present	gold quality	88.82
+ENSMUSG00000100200	H2al1m	islet of Langerhans	present	gold quality	59.53
+ENSMUSG00000100200	H2al1m	multicellular organism	present	gold quality	34.92
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	90.81
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	94.27
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	97.61
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	76.68
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	89.3
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	89.07
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	89.15
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	91.7
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	91.92
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	89.56
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	93.03
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	88.76
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	86.72
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	92.91
+ENSMUSG00000100200	H2al1m	testis	present	gold quality	72.2
+ENSMUSG00000100200	H2al1m	stomach	present	gold quality	54.5
+ENSMUSG00000100200	H2al1m	stomach	present	gold quality	44.26
+ENSMUSG00000100200	H2al1m	heart	present	gold quality	35.05
+ENSMUSG00000100200	H2al1m	heart	present	gold quality	52.09
+ENSMUSG00000100200	H2al1m	heart	present	gold quality	55.79
+ENSMUSG00000100200	H2al1m	heart	present	gold quality	36.79
+ENSMUSG00000100200	H2al1m	heart	present	gold quality	55.53
+ENSMUSG00000100200	H2al1m	skeletal muscle tissue	present	gold quality	58.21
+ENSMUSG00000100200	H2al1m	skeletal muscle tissue	present	gold quality	54.86
+ENSMUSG00000100200	H2al1m	colon	present	gold quality	50.17
+ENSMUSG00000100200	H2al1m	colon	present	gold quality	58.46
+ENSMUSG00000100200	H2al1m	colon	present	gold quality	45.77
+ENSMUSG00000100200	H2al1m	urinary bladder	present	gold quality	62.74
+ENSMUSG00000100200	H2al1m	urinary bladder	present	gold quality	61.88
+ENSMUSG00000100200	H2al1m	Ammon's horn	present	gold quality	36.72
+ENSMUSG00000100200	H2al1m	placenta	present	gold quality	51.75
+ENSMUSG00000100200	H2al1m	hindbrain	present	gold quality	55.5
+ENSMUSG00000100200	H2al1m	lung	present	gold quality	33.36
+ENSMUSG00000100200	H2al1m	spleen	present	gold quality	51.76
+ENSMUSG00000100200	H2al1m	spleen	present	gold quality	54.24
+ENSMUSG00000100200	H2al1m	spleen	present	gold quality	60.85
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	50.64
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	67.03
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	69.77
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	69.76
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	43.5
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	72.29
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	64.72
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	64.55
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	58.97
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	62.67
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	46.47
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	62.84
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	64.16
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	45.22
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	45.06
+ENSMUSG00000100200	H2al1m	liver	present	gold quality	60.06
+ENSMUSG00000100200	H2al1m	duodenum	present	gold quality	59.26
+ENSMUSG00000100200	H2al1m	duodenum	present	gold quality	61.55
+ENSMUSG00000100200	H2al1m	duodenum	present	gold quality	54.52
+ENSMUSG00000100200	H2al1m	jejunum	present	gold quality	49.81
+ENSMUSG00000100200	H2al1m	ileum	present	gold quality	47.54
+ENSMUSG00000100200	H2al1m	thymus	present	gold quality	49.5
+ENSMUSG00000100200	H2al1m	thymus	present	gold quality	57.96
+ENSMUSG00000100200	H2al1m	thymus	present	gold quality	56.73
+ENSMUSG00000100200	H2al1m	bone marrow	present	gold quality	82.83
+ENSMUSG00000100200	H2al1m	muscle tissue	present	gold quality	43.94
+ENSMUSG00000100200	H2al1m	forelimb bud	present	gold quality	36.12
+ENSMUSG00000100200	H2al1m	forelimb bud	present	gold quality	51.04
+ENSMUSG00000100200	H2al1m	hindlimb bud	present	gold quality	39.96

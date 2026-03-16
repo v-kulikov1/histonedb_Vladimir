@@ -29,11 +29,21 @@ Canonical output:
 Worklog:
 - CURATED_SET/BioAnalyze/WORKLOG.md (detailed, chronological record of pipeline decisions and artifacts)
 
-Recent Outputs (2026-03-15)
+Recent Outputs (2026-03-16)
 - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv
+- CURATED_SET/BioAnalyze/audits/audit_h2a_remaining_species_batch_v4.tsv
 - CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv
 - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_h2a_canonical_variant_map.tsv
 - CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/cavia_porcellus/cavia_porcellus_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/heterocephalus_glaber/heterocephalus_glaber_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/mus_musculus/mus_musculus_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/oryctolagus_cuniculus/oryctolagus_cuniculus_h2a_canonical_variant_map.tsv
+- CURATED_SET/BioAnalyze/data/processed/sus_scrofa/sus_scrofa_h2a_canonical_variant_map.tsv
 - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv
 - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_h2a_canonical_variant_map.tsv
 - CURATED_SET/BioAnalyze/data/processed/intersections/homo_sapiens_expr_advanced_H2A_present_gold_intersection.tsv
@@ -53,6 +63,15 @@ Recent Outputs (2026-03-15)
 - CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_clustered.svg
 - CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_variants.png
 - CURATED_SET/BioAnalyze/figures/heatmaps/pan_troglodytes/h2a_pan_troglodytes_variants.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/canis_lupus_familiaris/h2a_canis_lupus_familiaris_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/cavia_porcellus/h2a_cavia_porcellus_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/equus_caballus/h2a_equus_caballus_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/felis_catus/h2a_felis_catus_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/heterocephalus_glaber/h2a_heterocephalus_glaber_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/macaca_mulatta/h2a_macaca_mulatta_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/mus_musculus/h2a_mus_musculus_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/oryctolagus_cuniculus/h2a_oryctolagus_cuniculus_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/sus_scrofa/h2a_sus_scrofa_all.svg
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_all.png
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_all.svg
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_clustered.png
