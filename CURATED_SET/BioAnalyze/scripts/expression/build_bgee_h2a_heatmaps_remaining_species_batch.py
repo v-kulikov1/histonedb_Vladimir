@@ -14,7 +14,7 @@ from build_bgee_h2a_heatmaps_any_species import BuildResult, build_species_heatm
 
 DEFAULT_RAW_DIR = Path(r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw")
 DEFAULT_MERGED = Path(r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv")
-DEFAULT_OUT_DIR = Path(r"CURATED_SET/BioAnalyze/figures/heatmaps")
+DEFAULT_OUT_DIR = Path(r"CURATED_SET/BioAnalyze/figures/heatmaps/species")
 DEFAULT_OUT_PROCESSED_DIR = Path(r"CURATED_SET/BioAnalyze/data/processed")
 DEFAULT_AUDIT_OUT = Path(r"CURATED_SET/BioAnalyze/audits/audit_h2a_remaining_species_batch_v4.tsv")
 

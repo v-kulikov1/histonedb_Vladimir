@@ -1,0 +1,73 @@
+{
+  "gene_name": "H2AC20",
+  "tissue_mode": "union",
+  "aggregate": "mean",
+  "include_absent_species": false,
+  "detail_index_path": "CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv",
+  "species_count": 5,
+  "tissue_count": 163,
+  "species_order": [
+    "bos_taurus",
+    "equus_caballus",
+    "felis_catus",
+    "human",
+    "macaca_mulatta"
+  ],
+  "species": [
+    {
+      "species_dir": "bos_taurus",
+      "species_name": "Bos taurus",
+      "ensembl_gene_ids": [
+        "ENSBTAG00000040098"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_h2a_canonical_variant_map.tsv",
+      "row_count": 22,
+      "tissue_count": 17
+    },
+    {
+      "species_dir": "equus_caballus",
+      "species_name": "Equus caballus",
+      "ensembl_gene_ids": [
+        "ENSECAG00000042897"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_h2a_canonical_variant_map.tsv",
+      "row_count": 58,
+      "tissue_count": 26
+    },
+    {
+      "species_dir": "felis_catus",
+      "species_name": "Felis catus",
+      "ensembl_gene_ids": [
+        "ENSFCAG00000040278"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_h2a_canonical_variant_map.tsv",
+      "row_count": 17,
+      "tissue_count": 12
+    },
+    {
+      "species_dir": "human",
+      "species_name": "Homo sapiens",
+      "ensembl_gene_ids": [
+        "ENSG00000184260"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
+      "row_count": 732,
+      "tissue_count": 131
+    },
+    {
+      "species_dir": "macaca_mulatta",
+      "species_name": "Macaca mulatta",
+      "ensembl_gene_ids": [
+        "ENSMMUG00000037540"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_h2a_canonical_variant_map.tsv",
+      "row_count": 60,
+      "tissue_count": 27
+    }
+  ]
+}

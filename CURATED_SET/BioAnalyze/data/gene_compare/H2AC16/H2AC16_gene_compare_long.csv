@@ -1,0 +1,375 @@
+gene_name,species_dir,species_name,ensembl_gene_id,tissue,expression_score,map_label,class,agg_expression_score
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,head,27.57,H2AC16:VGNC:83727,clustered,27.57
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,large intestine,69.51,H2AC16:VGNC:83727,clustered,69.51
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,renal medulla,37.09,H2AC16:VGNC:83727,clustered,37.09
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,heart,19.64,H2AC16:VGNC:83727,clustered,19.64
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,brain,16.02,H2AC16:VGNC:83727,clustered,16.02
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,ovary,32.27,H2AC16:VGNC:83727,clustered,32.27
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,skeletal muscle tissue,34.63,H2AC16:VGNC:83727,clustered,34.63
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,smooth muscle tissue,47.16,H2AC16:VGNC:83727,clustered,47.16
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,pancreas,57.87,H2AC16:VGNC:83727,clustered,57.87
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,temporal lobe,32.3,H2AC16:VGNC:83727,clustered,32.3
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,placenta,53.24,H2AC16:VGNC:83727,clustered,53.24
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,thyroid gland,41.33,H2AC16:VGNC:83727,clustered,41.33
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,lung,21.21,H2AC16:VGNC:83727,clustered,30.12
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,lung,39.03,H2AC16:VGNC:83727,clustered,30.12
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,heart right ventricle,46.64,H2AC16:VGNC:83727,clustered,46.64
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,heart left ventricle,58.59,H2AC16:VGNC:83727,clustered,58.59
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,spleen,46.14,H2AC16:VGNC:83727,clustered,46.14
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,liver,22.87,H2AC16:VGNC:83727,clustered,22.87
+H2AC16,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000047415,mitral valve,37.21,H2AC16:VGNC:83727,clustered,37.21
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,leukocyte,47.57,H2AC16:VGNC:83794,clustered,47.57
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,zone of skin,29.16,H2AC16:VGNC:83794,clustered,33.92
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,zone of skin,38.68,H2AC16:VGNC:83794,clustered,33.92
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,inner cell mass,69.48,H2AC16:VGNC:83794,clustered,72.215
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,inner cell mass,74.95,H2AC16:VGNC:83794,clustered,72.215
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,trophoblast,50.04,H2AC16:VGNC:83794,clustered,53.4
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,trophoblast,43.85,H2AC16:VGNC:83794,clustered,53.4
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,trophoblast,66.31,H2AC16:VGNC:83794,clustered,53.4
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,blood,50.92,H2AC16:VGNC:83794,clustered,43.1825
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,blood,36.8,H2AC16:VGNC:83794,clustered,43.1825
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,blood,42.83,H2AC16:VGNC:83794,clustered,43.1825
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,blood,42.18,H2AC16:VGNC:83794,clustered,43.1825
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,prefrontal cortex,31.51,H2AC16:VGNC:83794,clustered,31.51
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,multicellular organism,33.18,H2AC16:VGNC:83794,clustered,33.18
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,testis,23.54,H2AC16:VGNC:83794,clustered,33.375
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,testis,43.21,H2AC16:VGNC:83794,clustered,33.375
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,embryo,49.97,H2AC16:VGNC:83794,clustered,49.97
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,endometrium,57.18,H2AC16:VGNC:83794,clustered,57.18
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,gluteus medius,45.95,H2AC16:VGNC:83794,clustered,40.473333333333336
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,gluteus medius,41.26,H2AC16:VGNC:83794,clustered,40.473333333333336
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,gluteus medius,34.21,H2AC16:VGNC:83794,clustered,40.473333333333336
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,synovial membrane of synovial joint,40.61,H2AC16:VGNC:83794,clustered,40.61
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,cerebellum,51.43,H2AC16:VGNC:83794,clustered,48.419999999999995
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,cerebellum,47.66,H2AC16:VGNC:83794,clustered,48.419999999999995
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,cerebellum,46.17,H2AC16:VGNC:83794,clustered,48.419999999999995
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,spinal cord,37.04,H2AC16:VGNC:83794,clustered,36.315
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,spinal cord,35.59,H2AC16:VGNC:83794,clustered,36.315
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,bone marrow,66.21,H2AC16:VGNC:83794,clustered,66.21
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,trophectoderm,71.89,H2AC16:VGNC:83794,clustered,75.17
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,trophectoderm,78.45,H2AC16:VGNC:83794,clustered,75.17
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,oviduct epithelium,48.92,H2AC16:VGNC:83794,clustered,48.92
+H2AC16,equus_caballus,Equus caballus,ENSECAG00000040805,chorionic villus,40.23,H2AC16:VGNC:83794,clustered,40.23
+H2AC16,human,Homo sapiens,ENSG00000276903,granulocyte,58.21,H2AC16:HGNC:4730,clustered,58.21
+H2AC16,human,Homo sapiens,ENSG00000276903,monocyte,58.27,H2AC16:HGNC:4730,clustered,58.27
+H2AC16,human,Homo sapiens,ENSG00000276903,primordial germ cell in gonad,86.33,H2AC16:HGNC:4730,clustered,86.33
+H2AC16,human,Homo sapiens,ENSG00000276903,bone marrow cell,98.29,H2AC16:HGNC:4730,clustered,98.29
+H2AC16,human,Homo sapiens,ENSG00000276903,uterine cervix,35.52,H2AC16:HGNC:4730,clustered,35.52
+H2AC16,human,Homo sapiens,ENSG00000276903,islet of Langerhans,31.41,H2AC16:HGNC:4730,clustered,30.0
+H2AC16,human,Homo sapiens,ENSG00000276903,islet of Langerhans,28.59,H2AC16:HGNC:4730,clustered,30.0
+H2AC16,human,Homo sapiens,ENSG00000276903,zone of skin,28.73,H2AC16:HGNC:4730,clustered,28.43
+H2AC16,human,Homo sapiens,ENSG00000276903,zone of skin,28.13,H2AC16:HGNC:4730,clustered,28.43
+H2AC16,human,Homo sapiens,ENSG00000276903,lymph node,40.64,H2AC16:HGNC:4730,clustered,40.64
+H2AC16,human,Homo sapiens,ENSG00000276903,adult mammalian kidney,64.15,H2AC16:HGNC:4730,clustered,46.96
+H2AC16,human,Homo sapiens,ENSG00000276903,adult mammalian kidney,29.77,H2AC16:HGNC:4730,clustered,46.96
+H2AC16,human,Homo sapiens,ENSG00000276903,intestine,88.45,H2AC16:HGNC:4730,clustered,76.5075
+H2AC16,human,Homo sapiens,ENSG00000276903,intestine,89.22,H2AC16:HGNC:4730,clustered,76.5075
+H2AC16,human,Homo sapiens,ENSG00000276903,intestine,93.25,H2AC16:HGNC:4730,clustered,76.5075
+H2AC16,human,Homo sapiens,ENSG00000276903,intestine,35.11,H2AC16:HGNC:4730,clustered,76.5075
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,57.79,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,61.72,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,71.11,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,62.43,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,57.07,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,63.28,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,59.8,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,62.47,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,63.88,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,68.24,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,59.6,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,72.92,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,67.53,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,62.26,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,61.23,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,60.9,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,63.06,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,blood,61.43,H2AC16:HGNC:4730,clustered,63.15111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colonic epithelium,71.58,H2AC16:HGNC:4730,clustered,71.58
+H2AC16,human,Homo sapiens,ENSG00000276903,prefrontal cortex,34.04,H2AC16:HGNC:4730,clustered,34.04
+H2AC16,human,Homo sapiens,ENSG00000276903,multicellular organism,32.68,H2AC16:HGNC:4730,clustered,32.68
+H2AC16,human,Homo sapiens,ENSG00000276903,testis,25.64,H2AC16:HGNC:4730,clustered,28.0
+H2AC16,human,Homo sapiens,ENSG00000276903,testis,26.11,H2AC16:HGNC:4730,clustered,28.0
+H2AC16,human,Homo sapiens,ENSG00000276903,testis,25.75,H2AC16:HGNC:4730,clustered,28.0
+H2AC16,human,Homo sapiens,ENSG00000276903,testis,34.5,H2AC16:HGNC:4730,clustered,28.0
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,95.37,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,97.56,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,95.96,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,96.54,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,29.91,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,57.91,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,35.59,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,29.81,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,38.43,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,32.39,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,35.44,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,stomach,97.73,H2AC16:HGNC:4730,clustered,61.88666666666666
+H2AC16,human,Homo sapiens,ENSG00000276903,heart,91.8,H2AC16:HGNC:4730,clustered,61.928
+H2AC16,human,Homo sapiens,ENSG00000276903,heart,91.62,H2AC16:HGNC:4730,clustered,61.928
+H2AC16,human,Homo sapiens,ENSG00000276903,heart,70.92,H2AC16:HGNC:4730,clustered,61.928
+H2AC16,human,Homo sapiens,ENSG00000276903,heart,28.69,H2AC16:HGNC:4730,clustered,61.928
+H2AC16,human,Homo sapiens,ENSG00000276903,heart,26.61,H2AC16:HGNC:4730,clustered,61.928
+H2AC16,human,Homo sapiens,ENSG00000276903,brain,26.44,H2AC16:HGNC:4730,clustered,32.307500000000005
+H2AC16,human,Homo sapiens,ENSG00000276903,brain,25.68,H2AC16:HGNC:4730,clustered,32.307500000000005
+H2AC16,human,Homo sapiens,ENSG00000276903,brain,24.91,H2AC16:HGNC:4730,clustered,32.307500000000005
+H2AC16,human,Homo sapiens,ENSG00000276903,brain,52.2,H2AC16:HGNC:4730,clustered,32.307500000000005
+H2AC16,human,Homo sapiens,ENSG00000276903,cerebral cortex,27.79,H2AC16:HGNC:4730,clustered,27.595
+H2AC16,human,Homo sapiens,ENSG00000276903,cerebral cortex,27.4,H2AC16:HGNC:4730,clustered,27.595
+H2AC16,human,Homo sapiens,ENSG00000276903,uterus,28.68,H2AC16:HGNC:4730,clustered,28.68
+H2AC16,human,Homo sapiens,ENSG00000276903,vagina,36.9,H2AC16:HGNC:4730,clustered,34.388
+H2AC16,human,Homo sapiens,ENSG00000276903,vagina,41.03,H2AC16:HGNC:4730,clustered,34.388
+H2AC16,human,Homo sapiens,ENSG00000276903,vagina,32.41,H2AC16:HGNC:4730,clustered,34.388
+H2AC16,human,Homo sapiens,ENSG00000276903,vagina,33.51,H2AC16:HGNC:4730,clustered,34.388
+H2AC16,human,Homo sapiens,ENSG00000276903,vagina,28.09,H2AC16:HGNC:4730,clustered,34.388
+H2AC16,human,Homo sapiens,ENSG00000276903,adipose tissue,29.71,H2AC16:HGNC:4730,clustered,29.055
+H2AC16,human,Homo sapiens,ENSG00000276903,adipose tissue,28.4,H2AC16:HGNC:4730,clustered,29.055
+H2AC16,human,Homo sapiens,ENSG00000276903,central nervous system,27.07,H2AC16:HGNC:4730,clustered,27.07
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus,32.76,H2AC16:HGNC:4730,clustered,32.76
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus,32.91,H2AC16:HGNC:4730,clustered,32.76
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus,33.22,H2AC16:HGNC:4730,clustered,32.76
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus,32.15,H2AC16:HGNC:4730,clustered,32.76
+H2AC16,human,Homo sapiens,ENSG00000276903,saliva-secreting gland,32.46,H2AC16:HGNC:4730,clustered,32.385000000000005
+H2AC16,human,Homo sapiens,ENSG00000276903,saliva-secreting gland,32.31,H2AC16:HGNC:4730,clustered,32.385000000000005
+H2AC16,human,Homo sapiens,ENSG00000276903,right lobe of liver,62.99,H2AC16:HGNC:4730,clustered,44.85999999999999
+H2AC16,human,Homo sapiens,ENSG00000276903,right lobe of liver,35.41,H2AC16:HGNC:4730,clustered,44.85999999999999
+H2AC16,human,Homo sapiens,ENSG00000276903,right lobe of liver,36.18,H2AC16:HGNC:4730,clustered,44.85999999999999
+H2AC16,human,Homo sapiens,ENSG00000276903,left lobe of thyroid gland,29.15,H2AC16:HGNC:4730,clustered,29.604999999999997
+H2AC16,human,Homo sapiens,ENSG00000276903,left lobe of thyroid gland,30.06,H2AC16:HGNC:4730,clustered,29.604999999999997
+H2AC16,human,Homo sapiens,ENSG00000276903,vermiform appendix,35.08,H2AC16:HGNC:4730,clustered,35.08
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,97.97,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,95.75,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,33.88,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,96.79,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,33.91,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,33.29,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,31.68,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,31.44,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,colon,31.75,H2AC16:HGNC:4730,clustered,54.05111111111111
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,41.56,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,34.06,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,35.69,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,37.29,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,38.49,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,38.47,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,transverse colon,33.14,H2AC16:HGNC:4730,clustered,36.957142857142856
+H2AC16,human,Homo sapiens,ENSG00000276903,sigmoid colon,37.0,H2AC16:HGNC:4730,clustered,32.7
+H2AC16,human,Homo sapiens,ENSG00000276903,sigmoid colon,28.4,H2AC16:HGNC:4730,clustered,32.7
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,38.49,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,50.53,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,32.65,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,32.89,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,32.35,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,32.17,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,28.64,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,32.05,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,body of stomach,27.51,H2AC16:HGNC:4730,clustered,34.14222222222222
+H2AC16,human,Homo sapiens,ENSG00000276903,right adrenal gland,46.68,H2AC16:HGNC:4730,clustered,37.77333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,right adrenal gland,36.31,H2AC16:HGNC:4730,clustered,37.77333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,right adrenal gland,30.33,H2AC16:HGNC:4730,clustered,37.77333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland,47.31,H2AC16:HGNC:4730,clustered,41.6075
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland,43.12,H2AC16:HGNC:4730,clustered,41.6075
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland,40.7,H2AC16:HGNC:4730,clustered,41.6075
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland,35.3,H2AC16:HGNC:4730,clustered,41.6075
+H2AC16,human,Homo sapiens,ENSG00000276903,urinary bladder,44.67,H2AC16:HGNC:4730,clustered,44.67
+H2AC16,human,Homo sapiens,ENSG00000276903,endometrium,32.4,H2AC16:HGNC:4730,clustered,32.4
+H2AC16,human,Homo sapiens,ENSG00000276903,myometrium,36.68,H2AC16:HGNC:4730,clustered,31.240000000000002
+H2AC16,human,Homo sapiens,ENSG00000276903,myometrium,25.8,H2AC16:HGNC:4730,clustered,31.240000000000002
+H2AC16,human,Homo sapiens,ENSG00000276903,tibial nerve,26.25,H2AC16:HGNC:4730,clustered,27.95
+H2AC16,human,Homo sapiens,ENSG00000276903,tibial nerve,29.65,H2AC16:HGNC:4730,clustered,27.95
+H2AC16,human,Homo sapiens,ENSG00000276903,muscle of leg,34.73,H2AC16:HGNC:4730,clustered,34.73
+H2AC16,human,Homo sapiens,ENSG00000276903,gastrocnemius,26.17,H2AC16:HGNC:4730,clustered,26.17
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,30.06,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,37.99,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,33.32,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,29.03,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,23.73,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,30.84,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of abdomen,30.14,H2AC16:HGNC:4730,clustered,30.73
+H2AC16,human,Homo sapiens,ENSG00000276903,ascending aorta,35.81,H2AC16:HGNC:4730,clustered,33.12666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,ascending aorta,31.19,H2AC16:HGNC:4730,clustered,33.12666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,ascending aorta,32.38,H2AC16:HGNC:4730,clustered,33.12666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of leg,30.47,H2AC16:HGNC:4730,clustered,27.706666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of leg,27.34,H2AC16:HGNC:4730,clustered,27.706666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,skin of leg,25.31,H2AC16:HGNC:4730,clustered,27.706666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,thoracic aorta,30.88,H2AC16:HGNC:4730,clustered,30.915
+H2AC16,human,Homo sapiens,ENSG00000276903,thoracic aorta,30.95,H2AC16:HGNC:4730,clustered,30.915
+H2AC16,human,Homo sapiens,ENSG00000276903,left coronary artery,54.63,H2AC16:HGNC:4730,clustered,41.945
+H2AC16,human,Homo sapiens,ENSG00000276903,left coronary artery,29.26,H2AC16:HGNC:4730,clustered,41.945
+H2AC16,human,Homo sapiens,ENSG00000276903,minor salivary gland,48.6,H2AC16:HGNC:4730,clustered,41.465
+H2AC16,human,Homo sapiens,ENSG00000276903,minor salivary gland,34.33,H2AC16:HGNC:4730,clustered,41.465
+H2AC16,human,Homo sapiens,ENSG00000276903,caudate nucleus,32.39,H2AC16:HGNC:4730,clustered,31.473333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,caudate nucleus,33.68,H2AC16:HGNC:4730,clustered,31.473333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,caudate nucleus,28.35,H2AC16:HGNC:4730,clustered,31.473333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,amygdala,22.3,H2AC16:HGNC:4730,clustered,24.564999999999998
+H2AC16,human,Homo sapiens,ENSG00000276903,amygdala,26.83,H2AC16:HGNC:4730,clustered,24.564999999999998
+H2AC16,human,Homo sapiens,ENSG00000276903,nucleus accumbens,55.17,H2AC16:HGNC:4730,clustered,55.17
+H2AC16,human,Homo sapiens,ENSG00000276903,hypothalamus,36.24,H2AC16:HGNC:4730,clustered,37.285
+H2AC16,human,Homo sapiens,ENSG00000276903,hypothalamus,38.33,H2AC16:HGNC:4730,clustered,37.285
+H2AC16,human,Homo sapiens,ENSG00000276903,Ammon's horn,26.57,H2AC16:HGNC:4730,clustered,37.489999999999995
+H2AC16,human,Homo sapiens,ENSG00000276903,Ammon's horn,48.41,H2AC16:HGNC:4730,clustered,37.489999999999995
+H2AC16,human,Homo sapiens,ENSG00000276903,placenta,35.36,H2AC16:HGNC:4730,clustered,35.36
+H2AC16,human,Homo sapiens,ENSG00000276903,epithelium of bronchus,88.4,H2AC16:HGNC:4730,clustered,88.4
+H2AC16,human,Homo sapiens,ENSG00000276903,cerebellum,28.92,H2AC16:HGNC:4730,clustered,28.92
+H2AC16,human,Homo sapiens,ENSG00000276903,substantia nigra,44.87,H2AC16:HGNC:4730,clustered,39.067499999999995
+H2AC16,human,Homo sapiens,ENSG00000276903,substantia nigra,52.3,H2AC16:HGNC:4730,clustered,39.067499999999995
+H2AC16,human,Homo sapiens,ENSG00000276903,substantia nigra,26.11,H2AC16:HGNC:4730,clustered,39.067499999999995
+H2AC16,human,Homo sapiens,ENSG00000276903,substantia nigra,32.99,H2AC16:HGNC:4730,clustered,39.067499999999995
+H2AC16,human,Homo sapiens,ENSG00000276903,thyroid gland,29.03,H2AC16:HGNC:4730,clustered,27.75
+H2AC16,human,Homo sapiens,ENSG00000276903,thyroid gland,27.77,H2AC16:HGNC:4730,clustered,27.75
+H2AC16,human,Homo sapiens,ENSG00000276903,thyroid gland,27.54,H2AC16:HGNC:4730,clustered,27.75
+H2AC16,human,Homo sapiens,ENSG00000276903,thyroid gland,26.66,H2AC16:HGNC:4730,clustered,27.75
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,96.54,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,93.86,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,46.63,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,49.03,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,53.66,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,43.74,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,lung,36.33,H2AC16:HGNC:4730,clustered,59.970000000000006
+H2AC16,human,Homo sapiens,ENSG00000276903,heart left ventricle,53.45,H2AC16:HGNC:4730,clustered,32.938
+H2AC16,human,Homo sapiens,ENSG00000276903,heart left ventricle,27.76,H2AC16:HGNC:4730,clustered,32.938
+H2AC16,human,Homo sapiens,ENSG00000276903,heart left ventricle,29.18,H2AC16:HGNC:4730,clustered,32.938
+H2AC16,human,Homo sapiens,ENSG00000276903,heart left ventricle,26.55,H2AC16:HGNC:4730,clustered,32.938
+H2AC16,human,Homo sapiens,ENSG00000276903,heart left ventricle,27.75,H2AC16:HGNC:4730,clustered,32.938
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,56.43,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,60.35,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,43.06,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,54.14,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,47.99,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,50.96,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,46.03,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,40.07,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,39.1,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,46.8,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,spleen,46.56,H2AC16:HGNC:4730,clustered,48.31727272727273
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,47.07,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,36.68,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,41.94,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,37.8,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,40.9,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,39.3,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,93.65,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,liver,39.48,H2AC16:HGNC:4730,clustered,47.1025
+H2AC16,human,Homo sapiens,ENSG00000276903,small intestine,34.69,H2AC16:HGNC:4730,clustered,33.81
+H2AC16,human,Homo sapiens,ENSG00000276903,small intestine,32.93,H2AC16:HGNC:4730,clustered,33.81
+H2AC16,human,Homo sapiens,ENSG00000276903,gall bladder,34.66,H2AC16:HGNC:4730,clustered,34.66
+H2AC16,human,Homo sapiens,ENSG00000276903,kidney,90.71,H2AC16:HGNC:4730,clustered,79.455
+H2AC16,human,Homo sapiens,ENSG00000276903,kidney,93.12,H2AC16:HGNC:4730,clustered,79.455
+H2AC16,human,Homo sapiens,ENSG00000276903,kidney,95.38,H2AC16:HGNC:4730,clustered,79.455
+H2AC16,human,Homo sapiens,ENSG00000276903,kidney,38.61,H2AC16:HGNC:4730,clustered,79.455
+H2AC16,human,Homo sapiens,ENSG00000276903,duodenum,36.32,H2AC16:HGNC:4730,clustered,36.32
+H2AC16,human,Homo sapiens,ENSG00000276903,right ovary,38.82,H2AC16:HGNC:4730,clustered,38.82
+H2AC16,human,Homo sapiens,ENSG00000276903,cerebellar cortex,25.56,H2AC16:HGNC:4730,clustered,25.56
+H2AC16,human,Homo sapiens,ENSG00000276903,right lung,59.22,H2AC16:HGNC:4730,clustered,59.22
+H2AC16,human,Homo sapiens,ENSG00000276903,subcutaneous adipose tissue,29.54,H2AC16:HGNC:4730,clustered,28.073333333333334
+H2AC16,human,Homo sapiens,ENSG00000276903,subcutaneous adipose tissue,26.76,H2AC16:HGNC:4730,clustered,28.073333333333334
+H2AC16,human,Homo sapiens,ENSG00000276903,subcutaneous adipose tissue,27.92,H2AC16:HGNC:4730,clustered,28.073333333333334
+H2AC16,human,Homo sapiens,ENSG00000276903,spinal cord,42.49,H2AC16:HGNC:4730,clustered,42.49
+H2AC16,human,Homo sapiens,ENSG00000276903,cerebellar hemisphere,29.1,H2AC16:HGNC:4730,clustered,29.1
+H2AC16,human,Homo sapiens,ENSG00000276903,corpus callosum,51.66,H2AC16:HGNC:4730,clustered,54.935
+H2AC16,human,Homo sapiens,ENSG00000276903,corpus callosum,59.9,H2AC16:HGNC:4730,clustered,54.935
+H2AC16,human,Homo sapiens,ENSG00000276903,corpus callosum,54.61,H2AC16:HGNC:4730,clustered,54.935
+H2AC16,human,Homo sapiens,ENSG00000276903,corpus callosum,53.57,H2AC16:HGNC:4730,clustered,54.935
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,93.43,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,89.96,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,22.5,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,88.59,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,90.64,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,89.86,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,25.16,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,94.28,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,25.35,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,prostate gland,92.52,H2AC16:HGNC:4730,clustered,71.229
+H2AC16,human,Homo sapiens,ENSG00000276903,adrenal gland,41.2,H2AC16:HGNC:4730,clustered,39.07
+H2AC16,human,Homo sapiens,ENSG00000276903,adrenal gland,36.94,H2AC16:HGNC:4730,clustered,39.07
+H2AC16,human,Homo sapiens,ENSG00000276903,bone marrow,86.95,H2AC16:HGNC:4730,clustered,80.67500000000001
+H2AC16,human,Homo sapiens,ENSG00000276903,bone marrow,74.4,H2AC16:HGNC:4730,clustered,80.67500000000001
+H2AC16,human,Homo sapiens,ENSG00000276903,tonsil,62.72,H2AC16:HGNC:4730,clustered,56.53333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,tonsil,58.43,H2AC16:HGNC:4730,clustered,56.53333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,tonsil,48.45,H2AC16:HGNC:4730,clustered,56.53333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,44.24,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,38.12,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,45.29,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,39.26,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,42.37,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,41.15,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,43.0,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,40.06,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,39.78,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagus mucosa,55.67,H2AC16:HGNC:4730,clustered,42.894
+H2AC16,human,Homo sapiens,ENSG00000276903,ventricular zone,56.54,H2AC16:HGNC:4730,clustered,62.565
+H2AC16,human,Homo sapiens,ENSG00000276903,ventricular zone,68.59,H2AC16:HGNC:4730,clustered,62.565
+H2AC16,human,Homo sapiens,ENSG00000276903,small intestine Peyer's patch,38.51,H2AC16:HGNC:4730,clustered,34.4575
+H2AC16,human,Homo sapiens,ENSG00000276903,small intestine Peyer's patch,37.45,H2AC16:HGNC:4730,clustered,34.4575
+H2AC16,human,Homo sapiens,ENSG00000276903,small intestine Peyer's patch,33.89,H2AC16:HGNC:4730,clustered,34.4575
+H2AC16,human,Homo sapiens,ENSG00000276903,small intestine Peyer's patch,27.98,H2AC16:HGNC:4730,clustered,34.4575
+H2AC16,human,Homo sapiens,ENSG00000276903,calcaneal tendon,71.21,H2AC16:HGNC:4730,clustered,66.438
+H2AC16,human,Homo sapiens,ENSG00000276903,calcaneal tendon,57.18,H2AC16:HGNC:4730,clustered,66.438
+H2AC16,human,Homo sapiens,ENSG00000276903,calcaneal tendon,62.57,H2AC16:HGNC:4730,clustered,66.438
+H2AC16,human,Homo sapiens,ENSG00000276903,calcaneal tendon,59.55,H2AC16:HGNC:4730,clustered,66.438
+H2AC16,human,Homo sapiens,ENSG00000276903,calcaneal tendon,81.68,H2AC16:HGNC:4730,clustered,66.438
+H2AC16,human,Homo sapiens,ENSG00000276903,ganglionic eminence,50.08,H2AC16:HGNC:4730,clustered,50.83
+H2AC16,human,Homo sapiens,ENSG00000276903,ganglionic eminence,51.58,H2AC16:HGNC:4730,clustered,50.83
+H2AC16,human,Homo sapiens,ENSG00000276903,left testis,26.02,H2AC16:HGNC:4730,clustered,25.3925
+H2AC16,human,Homo sapiens,ENSG00000276903,left testis,26.32,H2AC16:HGNC:4730,clustered,25.3925
+H2AC16,human,Homo sapiens,ENSG00000276903,left testis,24.83,H2AC16:HGNC:4730,clustered,25.3925
+H2AC16,human,Homo sapiens,ENSG00000276903,left testis,24.4,H2AC16:HGNC:4730,clustered,25.3925
+H2AC16,human,Homo sapiens,ENSG00000276903,right testis,34.24,H2AC16:HGNC:4730,clustered,34.24
+H2AC16,human,Homo sapiens,ENSG00000276903,endometrium epithelium,91.16,H2AC16:HGNC:4730,clustered,91.16
+H2AC16,human,Homo sapiens,ENSG00000276903,mucosa of transverse colon,55.49,H2AC16:HGNC:4730,clustered,55.49
+H2AC16,human,Homo sapiens,ENSG00000276903,thoracic mammary gland,38.0,H2AC16:HGNC:4730,clustered,34.105000000000004
+H2AC16,human,Homo sapiens,ENSG00000276903,thoracic mammary gland,40.03,H2AC16:HGNC:4730,clustered,34.105000000000004
+H2AC16,human,Homo sapiens,ENSG00000276903,thoracic mammary gland,27.27,H2AC16:HGNC:4730,clustered,34.105000000000004
+H2AC16,human,Homo sapiens,ENSG00000276903,thoracic mammary gland,31.12,H2AC16:HGNC:4730,clustered,34.105000000000004
+H2AC16,human,Homo sapiens,ENSG00000276903,cortical plate,48.79,H2AC16:HGNC:4730,clustered,48.79
+H2AC16,human,Homo sapiens,ENSG00000276903,olfactory segment of nasal mucosa,52.21,H2AC16:HGNC:4730,clustered,52.21
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,47.88,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,34.8,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,48.8,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,40.4,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,41.76,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,41.75,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,39.68,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,C1 segment of cervical spinal cord,75.73,H2AC16:HGNC:4730,clustered,46.35
+H2AC16,human,Homo sapiens,ENSG00000276903,right atrium auricular region,26.67,H2AC16:HGNC:4730,clustered,26.67
+H2AC16,human,Homo sapiens,ENSG00000276903,upper lobe of left lung,49.76,H2AC16:HGNC:4730,clustered,37.4675
+H2AC16,human,Homo sapiens,ENSG00000276903,upper lobe of left lung,28.12,H2AC16:HGNC:4730,clustered,37.4675
+H2AC16,human,Homo sapiens,ENSG00000276903,upper lobe of left lung,29.75,H2AC16:HGNC:4730,clustered,37.4675
+H2AC16,human,Homo sapiens,ENSG00000276903,upper lobe of left lung,42.24,H2AC16:HGNC:4730,clustered,37.4675
+H2AC16,human,Homo sapiens,ENSG00000276903,dorsolateral prefrontal cortex,25.21,H2AC16:HGNC:4730,clustered,25.21
+H2AC16,human,Homo sapiens,ENSG00000276903,anterior cingulate cortex,28.05,H2AC16:HGNC:4730,clustered,25.19666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,anterior cingulate cortex,23.5,H2AC16:HGNC:4730,clustered,25.19666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,anterior cingulate cortex,24.04,H2AC16:HGNC:4730,clustered,25.19666666666667
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,30.6,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,27.59,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,26.6,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,33.32,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,34.79,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,35.52,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,omental fat pad,48.36,H2AC16:HGNC:4730,clustered,33.825714285714284
+H2AC16,human,Homo sapiens,ENSG00000276903,ectocervix,50.13,H2AC16:HGNC:4730,clustered,50.1
+H2AC16,human,Homo sapiens,ENSG00000276903,ectocervix,50.07,H2AC16:HGNC:4730,clustered,50.1
+H2AC16,human,Homo sapiens,ENSG00000276903,Brodmann (1909) area 9,24.27,H2AC16:HGNC:4730,clustered,24.27
+H2AC16,human,Homo sapiens,ENSG00000276903,adrenal tissue,88.04,H2AC16:HGNC:4730,clustered,88.45333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,adrenal tissue,90.61,H2AC16:HGNC:4730,clustered,88.45333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,adrenal tissue,86.71,H2AC16:HGNC:4730,clustered,88.45333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,muscle layer of sigmoid colon,35.02,H2AC16:HGNC:4730,clustered,31.613333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,muscle layer of sigmoid colon,31.84,H2AC16:HGNC:4730,clustered,31.613333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,muscle layer of sigmoid colon,27.98,H2AC16:HGNC:4730,clustered,31.613333333333333
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland cortex,52.4,H2AC16:HGNC:4730,clustered,47.53
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland cortex,45.08,H2AC16:HGNC:4730,clustered,47.53
+H2AC16,human,Homo sapiens,ENSG00000276903,left adrenal gland cortex,45.11,H2AC16:HGNC:4730,clustered,47.53
+H2AC16,human,Homo sapiens,ENSG00000276903,right adrenal gland cortex,35.72,H2AC16:HGNC:4730,clustered,35.72
+H2AC16,human,Homo sapiens,ENSG00000276903,lower esophagus muscularis layer,22.16,H2AC16:HGNC:4730,clustered,22.16
+H2AC16,human,Homo sapiens,ENSG00000276903,lower esophagus mucosa,48.79,H2AC16:HGNC:4730,clustered,48.79
+H2AC16,human,Homo sapiens,ENSG00000276903,esophagogastric junction muscularis propria,20.57,H2AC16:HGNC:4730,clustered,20.57
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,fibroblast,45.37,H2AC16:VGNC:109684,clustered,45.37
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,multicellular organism,34.19,H2AC16:VGNC:109684,clustered,30.563333333333333
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,multicellular organism,28.91,H2AC16:VGNC:109684,clustered,30.563333333333333
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,multicellular organism,28.59,H2AC16:VGNC:109684,clustered,30.563333333333333
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,colon,42.2,H2AC16:VGNC:109684,clustered,42.2
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,liver,41.24,H2AC16:VGNC:109684,clustered,49.99666666666667
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,liver,36.28,H2AC16:VGNC:109684,clustered,49.99666666666667
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,liver,47.36,H2AC16:VGNC:109684,clustered,49.99666666666667
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,liver,54.41,H2AC16:VGNC:109684,clustered,49.99666666666667
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,liver,52.23,H2AC16:VGNC:109684,clustered,49.99666666666667
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,liver,68.46,H2AC16:VGNC:109684,clustered,49.99666666666667
+H2AC16,macaca_mulatta,Macaca mulatta,ENSMMUG00000062046,olfactory segment of nasal mucosa,52.59,H2AC16:VGNC:109684,clustered,52.59

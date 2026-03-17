@@ -1,0 +1,73 @@
+{
+  "gene_name": "H2AC7",
+  "tissue_mode": "union",
+  "aggregate": "mean",
+  "include_absent_species": false,
+  "detail_index_path": "CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv",
+  "species_count": 5,
+  "tissue_count": 195,
+  "species_order": [
+    "bos_taurus",
+    "canis_lupus_familiaris",
+    "equus_caballus",
+    "felis_catus",
+    "human"
+  ],
+  "species": [
+    {
+      "species_dir": "bos_taurus",
+      "species_name": "Bos taurus",
+      "ensembl_gene_ids": [
+        "ENSBTAG00000053792"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_h2a_canonical_variant_map.tsv",
+      "row_count": 234,
+      "tissue_count": 96
+    },
+    {
+      "species_dir": "canis_lupus_familiaris",
+      "species_name": "Canis lupus familiaris",
+      "ensembl_gene_ids": [
+        "ENSCAFG00000043442"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_h2a_canonical_variant_map.tsv",
+      "row_count": 30,
+      "tissue_count": 23
+    },
+    {
+      "species_dir": "equus_caballus",
+      "species_name": "Equus caballus",
+      "ensembl_gene_ids": [
+        "ENSECAG00000033031"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_h2a_canonical_variant_map.tsv",
+      "row_count": 32,
+      "tissue_count": 13
+    },
+    {
+      "species_dir": "felis_catus",
+      "species_name": "Felis catus",
+      "ensembl_gene_ids": [
+        "ENSFCAG00000041358"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_h2a_canonical_variant_map.tsv",
+      "row_count": 9,
+      "tissue_count": 7
+    },
+    {
+      "species_dir": "human",
+      "species_name": "Homo sapiens",
+      "ensembl_gene_ids": [
+        "ENSG00000196866"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
+      "row_count": 499,
+      "tissue_count": 119
+    }
+  ]
+}

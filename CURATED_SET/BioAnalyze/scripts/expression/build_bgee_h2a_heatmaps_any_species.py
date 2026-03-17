@@ -16,7 +16,7 @@ import seaborn as sns
 
 
 DEFAULT_MERGED = r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv"
-DEFAULT_OUT_DIR = r"CURATED_SET/BioAnalyze/figures/heatmaps"
+DEFAULT_OUT_DIR = r"CURATED_SET/BioAnalyze/figures/heatmaps/species"
 DEFAULT_OUT_PROCESSED_DIR = r"CURATED_SET/BioAnalyze/data/processed"
 CANONICAL_RULES = ("legacy", "canonical_like")
 

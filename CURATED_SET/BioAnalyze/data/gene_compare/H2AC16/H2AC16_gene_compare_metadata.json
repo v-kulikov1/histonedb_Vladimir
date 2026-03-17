@@ -1,0 +1,61 @@
+{
+  "gene_name": "H2AC16",
+  "tissue_mode": "union",
+  "aggregate": "mean",
+  "include_absent_species": false,
+  "detail_index_path": "CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv",
+  "species_count": 4,
+  "tissue_count": 122,
+  "species_order": [
+    "canis_lupus_familiaris",
+    "equus_caballus",
+    "human",
+    "macaca_mulatta"
+  ],
+  "species": [
+    {
+      "species_dir": "canis_lupus_familiaris",
+      "species_name": "Canis lupus familiaris",
+      "ensembl_gene_ids": [
+        "ENSCAFG00000047415"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_h2a_canonical_variant_map.tsv",
+      "row_count": 19,
+      "tissue_count": 18
+    },
+    {
+      "species_dir": "equus_caballus",
+      "species_name": "Equus caballus",
+      "ensembl_gene_ids": [
+        "ENSECAG00000040805"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_h2a_canonical_variant_map.tsv",
+      "row_count": 32,
+      "tissue_count": 18
+    },
+    {
+      "species_dir": "human",
+      "species_name": "Homo sapiens",
+      "ensembl_gene_ids": [
+        "ENSG00000276903"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
+      "row_count": 311,
+      "tissue_count": 102
+    },
+    {
+      "species_dir": "macaca_mulatta",
+      "species_name": "Macaca mulatta",
+      "ensembl_gene_ids": [
+        "ENSMMUG00000062046"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_h2a_canonical_variant_map.tsv",
+      "row_count": 12,
+      "tissue_count": 5
+    }
+  ]
+}

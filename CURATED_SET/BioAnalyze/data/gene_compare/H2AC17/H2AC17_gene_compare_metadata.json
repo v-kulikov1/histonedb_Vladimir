@@ -1,0 +1,85 @@
+{
+  "gene_name": "H2AC17",
+  "tissue_mode": "union",
+  "aggregate": "mean",
+  "include_absent_species": false,
+  "detail_index_path": "CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv",
+  "species_count": 6,
+  "tissue_count": 166,
+  "species_order": [
+    "canis_lupus_familiaris",
+    "equus_caballus",
+    "felis_catus",
+    "human",
+    "macaca_mulatta",
+    "sus_scrofa"
+  ],
+  "species": [
+    {
+      "species_dir": "canis_lupus_familiaris",
+      "species_name": "Canis lupus familiaris",
+      "ensembl_gene_ids": [
+        "ENSCAFG00000028830"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_h2a_canonical_variant_map.tsv",
+      "row_count": 96,
+      "tissue_count": 52
+    },
+    {
+      "species_dir": "equus_caballus",
+      "species_name": "Equus caballus",
+      "ensembl_gene_ids": [
+        "ENSECAG00000036162"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_h2a_canonical_variant_map.tsv",
+      "row_count": 31,
+      "tissue_count": 17
+    },
+    {
+      "species_dir": "felis_catus",
+      "species_name": "Felis catus",
+      "ensembl_gene_ids": [
+        "ENSFCAG00000044591"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_h2a_canonical_variant_map.tsv",
+      "row_count": 14,
+      "tissue_count": 10
+    },
+    {
+      "species_dir": "human",
+      "species_name": "Homo sapiens",
+      "ensembl_gene_ids": [
+        "ENSG00000278677"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
+      "row_count": 493,
+      "tissue_count": 115
+    },
+    {
+      "species_dir": "macaca_mulatta",
+      "species_name": "Macaca mulatta",
+      "ensembl_gene_ids": [
+        "ENSMMUG00000049519"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/macaca_mulatta/macaca_mulatta_h2a_canonical_variant_map.tsv",
+      "row_count": 14,
+      "tissue_count": 7
+    },
+    {
+      "species_dir": "sus_scrofa",
+      "species_name": "Sus scrofa",
+      "ensembl_gene_ids": [
+        "ENSSSCG00000046222"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/sus_scrofa/sus_scrofa_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/sus_scrofa/sus_scrofa_h2a_canonical_variant_map.tsv",
+      "row_count": 63,
+      "tissue_count": 34
+    }
+  ]
+}

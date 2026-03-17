@@ -1,0 +1,85 @@
+{
+  "gene_name": "H2AC25",
+  "tissue_mode": "union",
+  "aggregate": "mean",
+  "include_absent_species": false,
+  "detail_index_path": "CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv",
+  "species_count": 6,
+  "tissue_count": 235,
+  "species_order": [
+    "bos_taurus",
+    "canis_lupus_familiaris",
+    "felis_catus",
+    "human",
+    "pan_troglodytes",
+    "sus_scrofa"
+  ],
+  "species": [
+    {
+      "species_dir": "bos_taurus",
+      "species_name": "Bos taurus",
+      "ensembl_gene_ids": [
+        "ENSBTAG00000037964"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_h2a_canonical_variant_map.tsv",
+      "row_count": 261,
+      "tissue_count": 113
+    },
+    {
+      "species_dir": "canis_lupus_familiaris",
+      "species_name": "Canis lupus familiaris",
+      "ensembl_gene_ids": [
+        "ENSCAFG00000024329"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/canis_lupus_familiaris/canis_lupus_familiaris_h2a_canonical_variant_map.tsv",
+      "row_count": 75,
+      "tissue_count": 43
+    },
+    {
+      "species_dir": "felis_catus",
+      "species_name": "Felis catus",
+      "ensembl_gene_ids": [
+        "ENSFCAG00000024530"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/felis_catus/felis_catus_h2a_canonical_variant_map.tsv",
+      "row_count": 14,
+      "tissue_count": 10
+    },
+    {
+      "species_dir": "human",
+      "species_name": "Homo sapiens",
+      "ensembl_gene_ids": [
+        "ENSG00000181218"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
+      "row_count": 745,
+      "tissue_count": 132
+    },
+    {
+      "species_dir": "pan_troglodytes",
+      "species_name": "Pan troglodytes",
+      "ensembl_gene_ids": [
+        "ENSPTRG00000047640"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_h2a_canonical_variant_map.tsv",
+      "row_count": 63,
+      "tissue_count": 23
+    },
+    {
+      "species_dir": "sus_scrofa",
+      "species_name": "Sus scrofa",
+      "ensembl_gene_ids": [
+        "ENSSSCG00000047900"
+      ],
+      "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/sus_scrofa/sus_scrofa_expr_advanced_H2A_present_gold.tsv",
+      "map_path": "CURATED_SET/BioAnalyze/data/processed/sus_scrofa/sus_scrofa_h2a_canonical_variant_map.tsv",
+      "row_count": 131,
+      "tissue_count": 52
+    }
+  ]
+}

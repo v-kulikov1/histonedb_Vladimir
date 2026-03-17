@@ -259,6 +259,78 @@ Heatmap Label Refresh (2026-03-15)
   - Bos fallback still works for missing VGNC, e.g.
     `LOC528006:ENSBTAG00070035097`.
 
+Cross-Species Gene*Tissue Comparison (2026-03-17)
+- Goal:
+  - Move from manual heatmap inspection to a reproducible comparison layer that
+    ranks strong cross-species expression differences at the `gene × tissue`
+    level.
+- Shared helper layer:
+  - Added `CURATED_SET/BioAnalyze/scripts/expression/gene_compare_common.py`
+    to centralize:
+    - shared-gene index loading
+    - present+gold loading
+    - per-gene long-table construction
+    - matrix assembly
+    - canonical output layout constants
+- Cross-species comparison scripts:
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_gene_compare_heatmap.py`
+    refactored to use the shared helper without changing CLI behavior.
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_gene_compare_heatmaps_batch.py`
+    added to batch-build per-gene cross-species heatmaps.
+  - `CURATED_SET/BioAnalyze/scripts/expression/rank_cross_species_h2a_differences.py`
+    added to compute:
+    - `gene_tissue_summary.csv`
+    - `conservative_candidates.csv` (global p90)
+    - `high_confidence_candidates.csv` (global p95)
+    - `pairwise_contrasts.csv`
+    - `manuscript_shortlist.md`
+  - `CURATED_SET/BioAnalyze/scripts/expression/plot_cross_species_candidate_panels.py`
+    added to build:
+    - focused candidate panels
+    - candidate overview scatter
+    - class-specific p95 pages for `clustered` and `variant`
+- Comparison rules:
+  - exact string match on `Anatomical entity name`
+  - aggregation by mean expression score per `(gene, species, tissue)`
+  - conservative candidate filter uses `species_n >= 4`
+  - generic tissues removed:
+    - `material anatomical entity`
+    - `anatomical system`
+    - `multicellular organism`
+- Observed summary:
+  - Global p95 candidates are dominated by clustered genes.
+  - Variant genes do not enter global p95, but become informative when ranked
+    within the variant class.
+  - `H2AZ1` and `H2AZ2` remain among the most conserved variant genes by median
+    cross-species range.
+
+Stats Layout Reorganization (2026-03-17)
+- Reorganized `CURATED_SET/BioAnalyze/stats/` into subfolders:
+  - `shared_genes/`
+  - `ranking/tables/`
+  - `ranking/reports/`
+  - `ranking/plots/`
+  - `accession_stats/`
+- Updated output defaults in dependent scripts so new runs write into this
+  layout automatically.
+
+Heatmap Layout Reorganization (2026-03-17)
+- Problem:
+  - `gene_compare/` and per-species heatmap folders were previously mixed at
+    the same level under `figures/heatmaps/`.
+- Change:
+  - moved all per-species heatmaps into:
+    `CURATED_SET/BioAnalyze/figures/heatmaps/species/`
+  - kept:
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/`
+    at the top level as separate comparison outputs
+- Updated defaults in:
+  - `build_bgee_h2a_heatmaps_any_species.py`
+  - `build_bgee_h2a_heatmaps_remaining_species_batch.py`
+  - `build_bgee_h2a_heatmaps_split_clustered_variants.py`
+  - shared `DEFAULT_HEATMAP_DIR` in `gene_compare_common.py`
+
 Remaining Species Batch Heatmaps (2026-03-16)
 - Goal:
   - Extend the any-species H2A expression pipeline so the remaining species can

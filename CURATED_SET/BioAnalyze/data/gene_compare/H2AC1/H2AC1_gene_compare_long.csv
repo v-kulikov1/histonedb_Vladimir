@@ -1,0 +1,192 @@
+gene_name,species_dir,species_name,ensembl_gene_id,tissue,expression_score,map_label,class,agg_expression_score
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,adult mammalian kidney,44.17,H2AC1:VGNC:83545,clustered,44.17
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,testis,56.13,H2AC1:VGNC:83545,clustered,58.906666666666666
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,testis,69.43,H2AC1:VGNC:83545,clustered,58.906666666666666
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,testis,51.16,H2AC1:VGNC:83545,clustered,58.906666666666666
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,cortex of kidney,45.1,H2AC1:VGNC:83545,clustered,45.1
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,semen,80.95,H2AC1:VGNC:83545,clustered,80.95
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,liver,40.3,H2AC1:VGNC:83545,clustered,36.2125
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,liver,37.96,H2AC1:VGNC:83545,clustered,36.2125
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,liver,33.42,H2AC1:VGNC:83545,clustered,36.2125
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,liver,33.17,H2AC1:VGNC:83545,clustered,36.2125
+H2AC1,bos_taurus,Bos taurus,ENSBTAG00000046992,metanephros cortex,45.03,H2AC1:VGNC:83545,clustered,45.03
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,head,27.49,H2AC1:VGNC:83710,clustered,27.49
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,adult mammalian kidney,35.35,H2AC1:VGNC:83710,clustered,35.35
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,testis,23.59,H2AC1:VGNC:83710,clustered,23.59
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,heart,16.9,H2AC1:VGNC:83710,clustered,16.9
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,left cardiac atrium,47.84,H2AC1:VGNC:83710,clustered,47.84
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,liver,30.51,H2AC1:VGNC:83710,clustered,30.51
+H2AC1,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000024315,kidney,22.31,H2AC1:VGNC:83710,clustered,22.31
+H2AC1,felis_catus,Felis catus,ENSFCAG00000027552,prefrontal cortex,15.91,H2AC1:VGNC:109870,clustered,15.91
+H2AC1,felis_catus,Felis catus,ENSFCAG00000027552,testis,47.8,H2AC1:VGNC:109870,clustered,35.96333333333333
+H2AC1,felis_catus,Felis catus,ENSFCAG00000027552,testis,37.53,H2AC1:VGNC:109870,clustered,35.96333333333333
+H2AC1,felis_catus,Felis catus,ENSFCAG00000027552,testis,22.56,H2AC1:VGNC:109870,clustered,35.96333333333333
+H2AC1,felis_catus,Felis catus,ENSFCAG00000027552,liver,20.21,H2AC1:VGNC:109870,clustered,20.21
+H2AC1,felis_catus,Felis catus,ENSFCAG00000027552,eyeball of camera-type eye,32.03,H2AC1:VGNC:109870,clustered,32.03
+H2AC1,human,Homo sapiens,ENSG00000164508,male germ line stem cell (sensu Vertebrata) in testis,92.96,H2AC1:HGNC:18729,clustered,92.96
+H2AC1,human,Homo sapiens,ENSG00000164508,primordial germ cell in gonad,81.3,H2AC1:HGNC:18729,clustered,81.3
+H2AC1,human,Homo sapiens,ENSG00000164508,adult mammalian kidney,55.09,H2AC1:HGNC:18729,clustered,46.895
+H2AC1,human,Homo sapiens,ENSG00000164508,adult mammalian kidney,46.42,H2AC1:HGNC:18729,clustered,46.895
+H2AC1,human,Homo sapiens,ENSG00000164508,adult mammalian kidney,34.29,H2AC1:HGNC:18729,clustered,46.895
+H2AC1,human,Homo sapiens,ENSG00000164508,adult mammalian kidney,49.21,H2AC1:HGNC:18729,clustered,46.895
+H2AC1,human,Homo sapiens,ENSG00000164508,adult mammalian kidney,58.25,H2AC1:HGNC:18729,clustered,46.895
+H2AC1,human,Homo sapiens,ENSG00000164508,adult mammalian kidney,38.11,H2AC1:HGNC:18729,clustered,46.895
+H2AC1,human,Homo sapiens,ENSG00000164508,material anatomical entity,23.16,H2AC1:HGNC:18729,clustered,23.16
+H2AC1,human,Homo sapiens,ENSG00000164508,multicellular organism,23.16,H2AC1:HGNC:18729,clustered,23.16
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,70.04,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,70.75,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,82.91,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,80.64,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,78.95,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,72.58,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,70.42,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,testis,68.75,H2AC1:HGNC:18729,clustered,74.38
+H2AC1,human,Homo sapiens,ENSG00000164508,right lobe of liver,52.17,H2AC1:HGNC:18729,clustered,44.495
+H2AC1,human,Homo sapiens,ENSG00000164508,right lobe of liver,42.29,H2AC1:HGNC:18729,clustered,44.495
+H2AC1,human,Homo sapiens,ENSG00000164508,right lobe of liver,44.73,H2AC1:HGNC:18729,clustered,44.495
+H2AC1,human,Homo sapiens,ENSG00000164508,right lobe of liver,38.79,H2AC1:HGNC:18729,clustered,44.495
+H2AC1,human,Homo sapiens,ENSG00000164508,body of pancreas,33.29,H2AC1:HGNC:18729,clustered,33.29
+H2AC1,human,Homo sapiens,ENSG00000164508,cortex of kidney,30.56,H2AC1:HGNC:18729,clustered,30.56
+H2AC1,human,Homo sapiens,ENSG00000164508,pancreas,31.61,H2AC1:HGNC:18729,clustered,31.475
+H2AC1,human,Homo sapiens,ENSG00000164508,pancreas,31.34,H2AC1:HGNC:18729,clustered,31.475
+H2AC1,human,Homo sapiens,ENSG00000164508,lung,31.87,H2AC1:HGNC:18729,clustered,24.643333333333334
+H2AC1,human,Homo sapiens,ENSG00000164508,lung,21.37,H2AC1:HGNC:18729,clustered,24.643333333333334
+H2AC1,human,Homo sapiens,ENSG00000164508,lung,20.69,H2AC1:HGNC:18729,clustered,24.643333333333334
+H2AC1,human,Homo sapiens,ENSG00000164508,heart left ventricle,22.92,H2AC1:HGNC:18729,clustered,22.92
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,33.19,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,53.51,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,40.84,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,38.94,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,40.05,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,37.42,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,liver,39.7,H2AC1:HGNC:18729,clustered,40.521428571428565
+H2AC1,human,Homo sapiens,ENSG00000164508,kidney,35.42,H2AC1:HGNC:18729,clustered,35.42
+H2AC1,human,Homo sapiens,ENSG00000164508,left testis,70.07,H2AC1:HGNC:18729,clustered,70.285
+H2AC1,human,Homo sapiens,ENSG00000164508,left testis,69.27,H2AC1:HGNC:18729,clustered,70.285
+H2AC1,human,Homo sapiens,ENSG00000164508,left testis,71.32,H2AC1:HGNC:18729,clustered,70.285
+H2AC1,human,Homo sapiens,ENSG00000164508,left testis,70.4,H2AC1:HGNC:18729,clustered,70.285
+H2AC1,human,Homo sapiens,ENSG00000164508,left testis,69.47,H2AC1:HGNC:18729,clustered,70.285
+H2AC1,human,Homo sapiens,ENSG00000164508,left testis,71.18,H2AC1:HGNC:18729,clustered,70.285
+H2AC1,human,Homo sapiens,ENSG00000164508,right testis,68.87,H2AC1:HGNC:18729,clustered,68.348
+H2AC1,human,Homo sapiens,ENSG00000164508,right testis,66.4,H2AC1:HGNC:18729,clustered,68.348
+H2AC1,human,Homo sapiens,ENSG00000164508,right testis,68.91,H2AC1:HGNC:18729,clustered,68.348
+H2AC1,human,Homo sapiens,ENSG00000164508,right testis,72.14,H2AC1:HGNC:18729,clustered,68.348
+H2AC1,human,Homo sapiens,ENSG00000164508,right testis,65.42,H2AC1:HGNC:18729,clustered,68.348
+H2AC1,human,Homo sapiens,ENSG00000164508,metanephros cortex,35.54,H2AC1:HGNC:18729,clustered,35.54
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,spermatocyte,88.12,H2AC1:VGNC:109672,clustered,88.12
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,spermatid,68.8,H2AC1:VGNC:109672,clustered,68.8
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,adult mammalian kidney,40.54,H2AC1:VGNC:109672,clustered,47.31
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,adult mammalian kidney,54.08,H2AC1:VGNC:109672,clustered,47.31
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,multicellular organism,32.85,H2AC1:VGNC:109672,clustered,32.71666666666667
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,multicellular organism,37.56,H2AC1:VGNC:109672,clustered,32.71666666666667
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,multicellular organism,27.74,H2AC1:VGNC:109672,clustered,32.71666666666667
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,testis,68.98,H2AC1:VGNC:109672,clustered,59.330000000000005
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,testis,56.1,H2AC1:VGNC:109672,clustered,59.330000000000005
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,testis,52.91,H2AC1:VGNC:109672,clustered,59.330000000000005
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,cortex of kidney,37.52,H2AC1:VGNC:109672,clustered,37.52
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,liver,46.26,H2AC1:VGNC:109672,clustered,41.730000000000004
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,liver,37.2,H2AC1:VGNC:109672,clustered,41.730000000000004
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,kidney,39.58,H2AC1:VGNC:109672,clustered,38.7
+H2AC1,macaca_mulatta,Macaca mulatta,ENSMMUG00000039988,kidney,37.82,H2AC1:VGNC:109672,clustered,38.7
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,spermatocyte,96.45,H2ac1:ENSMUSG00000060081,clustered,96.45
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,spermatid,93.44,H2ac1:ENSMUSG00000060081,clustered,93.44
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,mesodermal cell in embryo,72.18,H2ac1:ENSMUSG00000060081,clustered,72.18
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,blastoderm cell in morula,72.47,H2ac1:ENSMUSG00000060081,clustered,72.47
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,animal zygote,99.43,H2ac1:ENSMUSG00000060081,clustered,99.43
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,primary oocyte,99.71,H2ac1:ENSMUSG00000060081,clustered,99.71
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,secondary oocyte,99.61,H2ac1:ENSMUSG00000060081,clustered,99.61
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,embryonic cell in blastocyst,64.88,H2ac1:ENSMUSG00000060081,clustered,64.88
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,zone of skin,60.91,H2ac1:ENSMUSG00000060081,clustered,60.91
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,adult mammalian kidney,66.53,H2ac1:ENSMUSG00000060081,clustered,53.635000000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,adult mammalian kidney,56.45,H2ac1:ENSMUSG00000060081,clustered,53.635000000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,adult mammalian kidney,61.14,H2ac1:ENSMUSG00000060081,clustered,53.635000000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,adult mammalian kidney,30.42,H2ac1:ENSMUSG00000060081,clustered,53.635000000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,intestine,56.04,H2ac1:ENSMUSG00000060081,clustered,51.065
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,intestine,46.09,H2ac1:ENSMUSG00000060081,clustered,51.065
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,multicellular organism,46.95,H2ac1:ENSMUSG00000060081,clustered,46.95
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,66.62,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,74.86,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,76.31,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,75.33,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,67.98,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,70.68,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,67.35,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,72.18,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,70.45,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,62.5,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,65.93,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,59.96,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,64.65,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,testis,55.87,H2ac1:ENSMUSG00000060081,clustered,67.905
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,stomach,54.59,H2ac1:ENSMUSG00000060081,clustered,56.595
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,stomach,46.9,H2ac1:ENSMUSG00000060081,clustered,56.595
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,stomach,65.38,H2ac1:ENSMUSG00000060081,clustered,56.595
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,stomach,59.51,H2ac1:ENSMUSG00000060081,clustered,56.595
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,48.25,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,33.18,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,31.92,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,38.12,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,55.3,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,54.74,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,40.83,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,heart,53.93,H2ac1:ENSMUSG00000060081,clustered,44.53375
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,brain,25.56,H2ac1:ENSMUSG00000060081,clustered,25.56
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,yolk sac,55.63,H2ac1:ENSMUSG00000060081,clustered,57.715
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,yolk sac,59.8,H2ac1:ENSMUSG00000060081,clustered,57.715
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,neural tube,50.48,H2ac1:ENSMUSG00000060081,clustered,50.48
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,colon,58.16,H2ac1:ENSMUSG00000060081,clustered,58.16
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,cortex of kidney,47.43,H2ac1:ENSMUSG00000060081,clustered,47.43
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,urinary bladder,56.82,H2ac1:ENSMUSG00000060081,clustered,58.695
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,urinary bladder,60.57,H2ac1:ENSMUSG00000060081,clustered,58.695
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,white adipose tissue,56.3,H2ac1:ENSMUSG00000060081,clustered,58.224999999999994
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,white adipose tissue,60.15,H2ac1:ENSMUSG00000060081,clustered,58.224999999999994
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,forebrain,51.07,H2ac1:ENSMUSG00000060081,clustered,52.525
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,forebrain,53.98,H2ac1:ENSMUSG00000060081,clustered,52.525
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,midbrain,54.35,H2ac1:ENSMUSG00000060081,clustered,54.84
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,midbrain,55.33,H2ac1:ENSMUSG00000060081,clustered,54.84
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,placenta,60.77,H2ac1:ENSMUSG00000060081,clustered,52.435
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,placenta,44.1,H2ac1:ENSMUSG00000060081,clustered,52.435
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,hindbrain,53.92,H2ac1:ENSMUSG00000060081,clustered,53.92
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,cerebellum,37.78,H2ac1:ENSMUSG00000060081,clustered,37.78
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,lung,52.78,H2ac1:ENSMUSG00000060081,clustered,49.932500000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,lung,39.25,H2ac1:ENSMUSG00000060081,clustered,49.932500000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,lung,53.84,H2ac1:ENSMUSG00000060081,clustered,49.932500000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,lung,53.86,H2ac1:ENSMUSG00000060081,clustered,49.932500000000005
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,limb,56.65,H2ac1:ENSMUSG00000060081,clustered,52.8725
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,limb,55.15,H2ac1:ENSMUSG00000060081,clustered,52.8725
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,limb,54.66,H2ac1:ENSMUSG00000060081,clustered,52.8725
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,limb,45.03,H2ac1:ENSMUSG00000060081,clustered,52.8725
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,spleen,65.84,H2ac1:ENSMUSG00000060081,clustered,65.28999999999999
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,spleen,64.74,H2ac1:ENSMUSG00000060081,clustered,65.28999999999999
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,66.0,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,65.48,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,51.54,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,55.26,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,65.79,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,60.5,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,liver,61.56,H2ac1:ENSMUSG00000060081,clustered,60.87571428571429
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,kidney,48.67,H2ac1:ENSMUSG00000060081,clustered,51.0
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,kidney,53.33,H2ac1:ENSMUSG00000060081,clustered,51.0
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,cerebellar cortex,44.94,H2ac1:ENSMUSG00000060081,clustered,44.94
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,adrenal gland,58.84,H2ac1:ENSMUSG00000060081,clustered,58.675
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,adrenal gland,58.51,H2ac1:ENSMUSG00000060081,clustered,58.675
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,thymus,48.97,H2ac1:ENSMUSG00000060081,clustered,48.97
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,bone marrow,64.63,H2ac1:ENSMUSG00000060081,clustered,64.63
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,striatum,52.19,H2ac1:ENSMUSG00000060081,clustered,52.19
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,primary visual cortex,32.05,H2ac1:ENSMUSG00000060081,clustered,37.495
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,primary visual cortex,42.94,H2ac1:ENSMUSG00000060081,clustered,37.495
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,epiblast (generic),78.58,H2ac1:ENSMUSG00000060081,clustered,78.58
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,superior frontal gyrus,59.86,H2ac1:ENSMUSG00000060081,clustered,59.86
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,hindlimb stylopod muscle,48.52,H2ac1:ENSMUSG00000060081,clustered,48.52
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,forelimb bud,61.33,H2ac1:ENSMUSG00000060081,clustered,60.4
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,forelimb bud,59.47,H2ac1:ENSMUSG00000060081,clustered,60.4
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,hindlimb bud,56.26,H2ac1:ENSMUSG00000060081,clustered,52.745
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,hindlimb bud,49.23,H2ac1:ENSMUSG00000060081,clustered,52.745
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,embryonic facial prominence,58.25,H2ac1:ENSMUSG00000060081,clustered,57.285
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,embryonic facial prominence,56.32,H2ac1:ENSMUSG00000060081,clustered,57.285
+H2AC1,mus_musculus,Mus musculus,ENSMUSG00000060081,embryonic brain,38.12,H2ac1:ENSMUSG00000060081,clustered,38.12
+H2AC1,pan_troglodytes,Pan troglodytes,ENSPTRG00000017789,adult mammalian kidney,41.98,H2AC1:VGNC:14358,clustered,41.98
+H2AC1,pan_troglodytes,Pan troglodytes,ENSPTRG00000017789,multicellular organism,20.67,H2AC1:VGNC:14358,clustered,20.67
+H2AC1,pan_troglodytes,Pan troglodytes,ENSPTRG00000017789,testis,87.03,H2AC1:VGNC:14358,clustered,81.945
+H2AC1,pan_troglodytes,Pan troglodytes,ENSPTRG00000017789,testis,76.86,H2AC1:VGNC:14358,clustered,81.945
+H2AC1,pan_troglodytes,Pan troglodytes,ENSPTRG00000017789,cortex of kidney,26.08,H2AC1:VGNC:14358,clustered,26.08
