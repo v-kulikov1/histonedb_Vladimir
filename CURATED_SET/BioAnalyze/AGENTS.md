@@ -11,11 +11,14 @@ Structure:
 - audits/ (pipeline QA and validation tables)
 - data/raw (placeholder; raw files are stored externally)
 - data/processed (intermediate normalized tables)
+- data/gene_compare (gene-level comparison indexes and per-gene exported tables)
 - data/merged (final merged outputs)
 - figures/heatmaps (heatmap graphics)
+- figures/heatmaps/gene_compare (cross-species per-gene heatmaps)
 - figures/stats (summary stats graphics)
 - scripts/annotate (annotation utilities)
 - scripts/merge_taxonomy (taxonomy merge pipeline)
+- scripts/expression (expression, summary, and heatmap builders)
 - stats (summary tables)
 - WORKLOG.md (chronological process log and decisions)
 
@@ -29,9 +32,13 @@ Canonical output:
 Worklog:
 - CURATED_SET/BioAnalyze/WORKLOG.md (detailed, chronological record of pipeline decisions and artifacts)
 
-Recent Outputs (2026-03-16)
+Recent Outputs (2026-03-17)
 - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv
 - CURATED_SET/BioAnalyze/audits/audit_h2a_remaining_species_batch_v4.tsv
+- CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv
+- CURATED_SET/BioAnalyze/data/gene_compare/H2AJ/H2AJ_gene_compare_long.csv
+- CURATED_SET/BioAnalyze/data/gene_compare/H2AJ/H2AJ_gene_compare_matrix.csv
+- CURATED_SET/BioAnalyze/data/gene_compare/H2AJ/H2AJ_gene_compare_metadata.json
 - CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv
 - CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_h2a_canonical_variant_map.tsv
 - CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_h2a_canonical_variant_map.tsv
@@ -78,6 +85,24 @@ Recent Outputs (2026-03-16)
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_clustered.svg
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_variants.png
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_variants.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AJ/H2AJ_gene_compare_heatmap.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AJ/H2AJ_gene_compare_heatmap.svg
+- CURATED_SET/BioAnalyze/stats/shared_h2a_gene_names_across_species.csv
+- CURATED_SET/BioAnalyze/stats/shared_h2a_gene_names_across_species.png
+- CURATED_SET/BioAnalyze/stats/shared_h2a_gene_names_across_species.svg
+
+Recent Script Additions (2026-03-17)
+- CURATED_SET/BioAnalyze/scripts/expression/summarize_shared_h2a_gene_names_across_species.py
+  Rebuilds the shared-gene summary in `stats/` and writes a reusable long-form
+  gene lookup index to `data/gene_compare/index/`.
+- CURATED_SET/BioAnalyze/scripts/expression/build_gene_compare_heatmap.py
+  Builds a cross-species per-gene heatmap from canonical map labels and
+  `*_present_gold.tsv` inputs, with:
+  - X axis = species
+  - Y axis = tissues
+  - default `union` tissue mode
+  - mean aggregation per `(species, tissue)`
+  - masked missing values
 
 External raw data:
 - stored at C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw

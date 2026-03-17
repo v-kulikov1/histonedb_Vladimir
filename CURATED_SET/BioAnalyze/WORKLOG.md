@@ -1,6 +1,6 @@
 # BioAnalyze H2A Merge Worklog
 
-Last updated: 2026-03-16
+Last updated: 2026-03-17
 
 Goal
 - Build a single H2A dataset for mammalia + human with consistent taxonomy fields, gene identifiers, and symbol-style gene names.
@@ -334,3 +334,84 @@ Remaining Species Batch Heatmaps (2026-03-16)
   - Canonical-like normalization is reflected in map TSVs; for example,
     `CURATED_SET/BioAnalyze/data/processed/mus_musculus/mus_musculus_h2a_canonical_variant_map.tsv`
     now classifies `H2ac1` / `H2ac13` (`cH2A*`) as `clustered`.
+
+Shared Gene Summary + Gene Compare (2026-03-17)
+- Goal:
+  - Build a reusable cross-species summary of canonical H2A `gene_name` usage
+    across the species heatmaps and use it as a fast lookup source for
+    per-gene comparison heatmaps.
+- Summary/index script:
+  - `CURATED_SET/BioAnalyze/scripts/expression/summarize_shared_h2a_gene_names_across_species.py`
+- Behavior:
+  - Source species are discovered from `CURATED_SET/BioAnalyze/figures/heatmaps/`
+    while skipping non-species folders such as `alligned_human_pan` and
+    `gene_compare`.
+  - Presence is determined from each species `*_expr_advanced_H2A_present_gold.tsv`
+    by `Gene ID`.
+  - Canonical display name is taken from the corresponding
+    `*_canonical_variant_map.tsv` by `ensembl_gene_id -> gene_name`.
+  - The script now writes both:
+    - summary stats in `CURATED_SET/BioAnalyze/stats/`
+    - a reusable long-form detail index in
+      `CURATED_SET/BioAnalyze/data/gene_compare/index/`
+- Summary outputs:
+  - `CURATED_SET/BioAnalyze/stats/shared_h2a_gene_names_across_species.csv`
+  - `CURATED_SET/BioAnalyze/stats/shared_h2a_gene_names_across_species.png`
+  - `CURATED_SET/BioAnalyze/stats/shared_h2a_gene_names_across_species.svg`
+- Detail index output:
+  - `CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv`
+- Summary CSV columns now include:
+  - `canonical_gene_name`
+  - `species_with_gene`
+  - `species_ensembl_ids`
+  - `detail_index_path`
+- Current summary snapshot:
+  - detail index rows: 179
+  - shared genes (`species_count > 1`): 33
+  - top shared genes include `H2AJ`, `H2AZ1`, `H2AZ2`, `MACROH2A1`,
+    `MACROH2A2` with 8 species each
+
+Gene Compare Heatmaps (2026-03-17)
+- Goal:
+  - Build a universal cross-species heatmap for any canonical `gene_name`,
+    with:
+    - X axis = species
+    - Y axis = tissues (`Anatomical entity name`)
+    - union of tissues across matching species
+- New universal script:
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_gene_compare_heatmap.py`
+- CLI defaults:
+  - `--heatmap-dir` -> `CURATED_SET/BioAnalyze/figures/heatmaps`
+  - `--processed-dir` -> `CURATED_SET/BioAnalyze/data/processed`
+  - `--out-fig-root` -> `CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare`
+  - `--out-data-root` -> `CURATED_SET/BioAnalyze/data/gene_compare`
+  - `--detail-index` -> `CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv`
+  - `--tissue-mode` -> `union`
+  - `--aggregate` -> `mean`
+- Heatmap behavior:
+  - Species are selected from the detail index by canonical `gene_name`.
+  - Values are aggregated as mean `Expression score` per `(species, tissue)`.
+  - Plot values are transformed as `log10(Expression score + 1)`.
+  - Tissues are ordered by the number of species where they are present, then
+    alphabetically.
+  - Missing values remain masked in the heatmap.
+- First built example:
+  - target gene: `H2AJ`
+  - species included:
+    `bos_taurus`, `canis_lupus_familiaris`, `equus_caballus`, `felis_catus`,
+    `human`, `macaca_mulatta`, `pan_troglodytes`, `sus_scrofa`
+  - union tissues: 346
+- H2AJ outputs:
+  - figures:
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AJ/H2AJ_gene_compare_heatmap.png`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AJ/H2AJ_gene_compare_heatmap.svg`
+  - data:
+    - `CURATED_SET/BioAnalyze/data/gene_compare/H2AJ/H2AJ_gene_compare_long.csv`
+    - `CURATED_SET/BioAnalyze/data/gene_compare/H2AJ/H2AJ_gene_compare_matrix.csv`
+    - `CURATED_SET/BioAnalyze/data/gene_compare/H2AJ/H2AJ_gene_compare_metadata.json`
+- Verification:
+  - `H2AJ` matrix was generated with 8 species columns and 346 tissues.
+  - Unknown `gene_name` produces a clear runtime error.
+  - Multi-Ensembl aggregation was validated synthetically:
+    multiple Ensembl IDs for the same `(species, tissue)` collapse to one mean
+    value in the matrix.
