@@ -487,3 +487,74 @@ Gene Compare Heatmaps (2026-03-17)
   - Multi-Ensembl aggregation was validated synthetically:
     multiple Ensembl IDs for the same `(species, tissue)` collapse to one mean
     value in the matrix.
+
+Detailed Gene*Tissue Report + Low-Tail Panels (2026-03-18)
+- Goal:
+  - Extend the cross-species `gene*tissue` workflow from shortlist-style output
+    to a full report layer with reproducible summary tables, low-variability
+    candidate extraction, species-level tendencies, and direct links to the
+    supporting heatmaps/panel pages.
+- Ranking/report script updates:
+  - `CURATED_SET/BioAnalyze/scripts/expression/rank_cross_species_h2a_differences.py`
+    now writes, in addition to the existing shortlist outputs:
+    - `gene_variability_summary.csv`
+    - `gene_expression_overall_summary.csv`
+    - `class_variability_summary.csv`
+    - `species_extrema_summary.csv`
+    - `species_pair_summary.csv`
+    - `low_variability_candidates_p05.csv`
+    - `low_variability_candidates_p10.csv`
+    - `class_low_variability_candidates.csv`
+    - detailed markdown report
+      `stats/ranking/reports/cross_species_expression_report_ru.md`
+- Report content:
+  - The new report includes:
+    - overview thresholds (`p05/p10/p90/p95`)
+    - class-level comparison (`clustered` vs `variant`)
+    - most variable genes
+    - most conserved genes
+    - most variable `gene*tissue` combinations
+    - most conserved `gene*tissue` combinations
+    - species-level tendency summaries
+    - interpretation-ready findings for manuscript drafting
+    - direct links to per-gene heatmaps and panel pages where available
+  - For each key `gene*tissue` case, the report now includes:
+    - `min_species` / `max_species`
+    - `min_score` / `max_score`
+    - `range`
+    - tissue-level mean and median across species
+    - links to `gene_compare` heatmaps
+    - links to ranking panels via `panel_membership.csv`
+- Plotting updates:
+  - `CURATED_SET/BioAnalyze/scripts/expression/plot_cross_species_candidate_panels.py`
+    now supports:
+    - class-specific high-tail pages for both `p90` and `p95`
+    - global low-tail pages for `p05` and `p10`
+    - class-specific low-tail pages for `p05` and `p10`
+    - `panel_membership.csv` index for report linking
+- New plots written to `CURATED_SET/BioAnalyze/stats/ranking/plots/`:
+  - high-tail:
+    - `clustered_p90_panels_page*.png/.svg`
+    - `variant_p90_panels_page*.png/.svg`
+    - refreshed `clustered_p95_panels_page*.png/.svg`
+    - refreshed `variant_p95_panels_page*.png/.svg`
+  - low-tail:
+    - `global_p05_low_panels_page*.png/.svg`
+    - `global_p10_low_panels_page*.png/.svg`
+    - `clustered_p05_low_panels_page*.png/.svg`
+    - `clustered_p10_low_panels_page*.png/.svg`
+    - `variant_p05_low_panels_page*.png/.svg`
+    - `variant_p10_low_panels_page*.png/.svg`
+  - index:
+    - `panel_membership.csv`
+- Current data-level findings captured by the new summaries:
+  - `clustered` genes remain much more variable than `variant` genes in the
+    conservative `species_n >= 4` set:
+    - clustered median range `36.63`, p95 `62.03`
+    - variant median range `10.01`, p95 `37.50`
+  - `H2AC14` is currently the top gene by observed max range (`81.27`).
+  - The most conserved genes by median range remain `H2AZ1`, `H2AZ2`,
+    and `MACROH2A1`.
+  - Global low-tail (`p05/p10`) is strongly enriched for variant genes, while
+    class-specific low-tail extraction is needed to surface comparatively stable
+    clustered cases.

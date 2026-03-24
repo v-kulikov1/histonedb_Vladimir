@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-"""Plot overview and focused panels for strong cross-species H2A candidates."""
+"""Plot overview and paginated panels for cross-species H2A candidates."""
 
 from __future__ import annotations
 
 import argparse
 from pathlib import Path
-from typing import List, Tuple
+from typing import List, Sequence, Tuple
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -23,6 +23,8 @@ DEFAULT_TOP_OVERALL = 2
 DEFAULT_TOP_VARIANT = 4
 DEFAULT_MIN_SPECIES = 4
 DEFAULT_QUANTILE = 0.95
+DEFAULT_HIGH_QUANTILES = [0.90, 0.95]
+DEFAULT_LOW_QUANTILES = [0.05, 0.10]
 DEFAULT_PANELS_PER_PAGE = 6
 DEFAULT_PREFERRED_VARIANTS = [
     ("H2AX", "adipose tissue"),
@@ -35,8 +37,8 @@ DEFAULT_PREFERRED_VARIANTS = [
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Create an overview scatter plot and focused species-level panels "
-            "for strong cross-species H2A candidates."
+            "Create overview plots and paginated species-level panels for "
+            "cross-species H2A candidates."
         )
     )
     parser.add_argument(
@@ -73,27 +75,59 @@ def parse_args() -> argparse.Namespace:
         help="Optional explicit candidates in GENE::tissue format.",
     )
     parser.add_argument(
+        "--include-class-high-panels",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Build class-specific high-tail panel pages for each high quantile.",
+    )
+    parser.add_argument(
         "--include-class-p95",
         action="store_true",
-        help="Also build paginated class-specific p95 panels for clustered and variant genes.",
+        help="Backward-compatible alias for class-specific high-tail panel pages.",
+    )
+    parser.add_argument(
+        "--include-global-low-panels",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Build global low-tail panel pages for each low quantile.",
+    )
+    parser.add_argument(
+        "--include-class-low-panels",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+        help="Build class-specific low-tail panel pages for each low quantile.",
     )
     parser.add_argument(
         "--min-species",
         default=DEFAULT_MIN_SPECIES,
         type=int,
-        help="Minimum species_n for candidate selection in overview and class-specific p95 panels.",
+        help="Minimum species_n for candidate selection in overview and paginated panels.",
     )
     parser.add_argument(
         "--quantile",
         default=DEFAULT_QUANTILE,
         type=float,
-        help="Quantile threshold for class-specific candidate pages when --include-class-p95 is used.",
+        help="Backward-compatible high quantile for --include-class-p95.",
+    )
+    parser.add_argument(
+        "--high-quantiles",
+        nargs="*",
+        type=float,
+        default=DEFAULT_HIGH_QUANTILES,
+        help="High-tail quantiles for class-specific candidate pages.",
+    )
+    parser.add_argument(
+        "--low-quantiles",
+        nargs="*",
+        type=float,
+        default=DEFAULT_LOW_QUANTILES,
+        help="Low-tail quantiles for global/class-specific candidate pages.",
     )
     parser.add_argument(
         "--panels-per-page",
         default=DEFAULT_PANELS_PER_PAGE,
         type=int,
-        help="Maximum number of candidate panels per page for class-specific outputs.",
+        help="Maximum number of candidate panels per page for paginated outputs.",
     )
     return parser.parse_args()
 
@@ -110,6 +144,22 @@ def parse_candidate_values(values: List[str]) -> List[Tuple[str, str]]:
             raise ValueError(f"Invalid candidate format: {value}. Use GENE::tissue")
         pairs.append((gene_name, tissue))
     return pairs
+
+
+def normalize_quantiles(values: Sequence[float], *, low_tail: bool) -> List[float]:
+    cleaned: List[float] = []
+    for value in values:
+        if not 0 < float(value) < 1:
+            raise ValueError("All quantiles must be between 0 and 1")
+        if low_tail and float(value) >= 0.5:
+            raise ValueError("Low-tail quantiles must be below 0.5")
+        cleaned.append(float(value))
+    order = cleaned if low_tail else sorted(cleaned, reverse=False)
+    return sorted(set(order))
+
+
+def quantile_label(value: float) -> str:
+    return f"p{int(round(value * 100)):02d}"
 
 
 def choose_default_candidates(
@@ -139,35 +189,52 @@ def choose_default_candidates(
             preferred_frames.append(preferred.head(1))
     preferred_df = pd.concat(preferred_frames, ignore_index=True) if preferred_frames else pd.DataFrame()
 
-    ranked_variant_df = variant_df.copy()
-    chosen_variant_df = pd.concat(
-        [preferred_df, ranked_variant_df],
-        ignore_index=True,
-    ).drop_duplicates(subset=["gene_name", "tissue"], keep="first")
-    chosen_variant_df = chosen_variant_df.head(top_variant)
+    chosen_variant_df = pd.concat([preferred_df, variant_df], ignore_index=True)
+    chosen_variant_df = chosen_variant_df.drop_duplicates(
+        subset=["gene_name", "tissue"], keep="first"
+    ).head(top_variant)
 
     chosen_df = pd.concat([overall_df, chosen_variant_df], ignore_index=True)
     chosen_df = chosen_df.drop_duplicates(subset=["gene_name", "tissue"], keep="first")
     return chosen_df.reset_index(drop=True)
 
 
-def select_class_quantile_candidates(
+def select_quantile_candidates(
     summary_df: pd.DataFrame,
-    gene_class: str,
+    *,
     min_species: int,
     quantile: float,
-) -> pd.DataFrame:
-    class_df = summary_df[
-        (summary_df["gene_class"] == gene_class) & (summary_df["species_n"] >= int(min_species))
-    ].copy()
-    if class_df.empty:
-        return class_df
-    threshold = float(class_df["range"].quantile(quantile))
-    class_df = class_df[class_df["range"] >= threshold].copy()
-    return class_df.sort_values(
-        by=["range", "species_n", "gene_name", "tissue"],
-        ascending=[False, False, True, True],
-    ).reset_index(drop=True)
+    direction: str,
+    gene_class: str | None = None,
+) -> tuple[pd.DataFrame, float]:
+    candidate_df = summary_df[summary_df["species_n"] >= int(min_species)].copy()
+    if gene_class is not None:
+        candidate_df = candidate_df[candidate_df["gene_class"].eq(gene_class)].copy()
+    if candidate_df.empty:
+        return candidate_df, float("nan")
+
+    threshold = float(candidate_df["range"].quantile(quantile))
+    if direction == "high":
+        candidate_df = candidate_df[candidate_df["range"] >= threshold].copy()
+        candidate_df = candidate_df.sort_values(
+            by=["range", "species_n", "gene_name", "tissue"],
+            ascending=[False, False, True, True],
+        )
+    elif direction == "low":
+        candidate_df = candidate_df[candidate_df["range"] <= threshold].copy()
+        candidate_df = candidate_df.sort_values(
+            by=["range", "species_n", "gene_name", "tissue"],
+            ascending=[True, False, True, True],
+        )
+    else:
+        raise ValueError(f"Unsupported direction: {direction}")
+
+    candidate_df = candidate_df.reset_index(drop=True)
+    candidate_df["panel_direction"] = direction
+    candidate_df["panel_quantile"] = float(quantile)
+    candidate_df["panel_threshold"] = threshold
+    candidate_df["panel_scope"] = gene_class or "global"
+    return candidate_df, threshold
 
 
 def load_candidate_scores(
@@ -249,6 +316,18 @@ def plot_overview(
     plt.close(fig)
 
 
+def panel_title(row: dict) -> str:
+    subtitle = f'range {row["range"]:.2f}, {int(row["species_n"])} species'
+    if "panel_direction" in row and "panel_quantile" in row:
+        direction = str(row.get("panel_direction", ""))
+        quantile = quantile_label(float(row.get("panel_quantile", 0.0)))
+        if direction == "low":
+            subtitle = f"{quantile} low-tail | {subtitle}"
+        elif direction == "high":
+            subtitle = f"{quantile} high-tail | {subtitle}"
+    return f'{row["gene_name"]} | {row["tissue"]}\n{subtitle}'
+
+
 def plot_candidate_panels(
     candidate_df: pd.DataFrame,
     gene_compare_data_root: Path,
@@ -277,10 +356,7 @@ def plot_candidate_panels(
             color=color_map.get(row["gene_class"], "#888888"),
             alpha=0.9,
         )
-        ax.set_title(
-            f'{row["gene_name"]} | {row["tissue"]}\n'
-            f'range {row["range"]:.2f}, {int(row["species_n"])} species'
-        )
+        ax.set_title(panel_title(row))
         ax.set_xlabel("Expression score")
         ax.set_ylabel("")
         ax.set_xlim(0, max(100, float(plot_df["expression_score"].max()) + 5))
@@ -304,17 +380,52 @@ def plot_candidate_panels(
     plt.close(fig)
 
 
+def build_panel_rows(
+    page_df: pd.DataFrame,
+    out_png: Path,
+    out_svg: Path,
+    stem_prefix: str,
+    panel_scope: str,
+    panel_direction: str,
+    quantile: float,
+    page_idx: int,
+) -> List[dict]:
+    rows: List[dict] = []
+    for row in page_df.to_dict(orient="records"):
+        rows.append(
+            {
+                "gene_name": row["gene_name"],
+                "tissue": row["tissue"],
+                "gene_class": row.get("gene_class", ""),
+                "panel_family": stem_prefix,
+                "panel_label": stem_prefix.replace("_", " "),
+                "panel_scope": panel_scope,
+                "panel_direction": panel_direction,
+                "panel_quantile": float(quantile),
+                "page": page_idx,
+                "file_png": out_png.as_posix(),
+                "file_svg": out_svg.as_posix(),
+            }
+        )
+    return rows
+
+
 def write_paginated_panels(
     candidate_df: pd.DataFrame,
     gene_compare_data_root: Path,
     out_dir: Path,
     stem_prefix: str,
     panels_per_page: int,
-) -> List[Path]:
+    *,
+    panel_scope: str,
+    panel_direction: str,
+    quantile: float,
+) -> tuple[List[Path], List[dict]]:
     if candidate_df.empty:
-        return []
+        return [], []
 
     written_paths: List[Path] = []
+    panel_rows: List[dict] = []
     total = len(candidate_df)
     for page_start in range(0, total, panels_per_page):
         page_idx = page_start // panels_per_page + 1
@@ -323,16 +434,84 @@ def write_paginated_panels(
         out_svg = out_dir / f"{stem_prefix}_page{page_idx}.svg"
         plot_candidate_panels(page_df, gene_compare_data_root, out_png, out_svg)
         written_paths.extend([out_png, out_svg])
-    return written_paths
+        panel_rows.extend(
+            build_panel_rows(
+                page_df,
+                out_png,
+                out_svg,
+                stem_prefix=stem_prefix,
+                panel_scope=panel_scope,
+                panel_direction=panel_direction,
+                quantile=quantile,
+                page_idx=page_idx,
+            )
+        )
+    return written_paths, panel_rows
+
+
+def append_focus_panel_rows(
+    panel_rows: List[dict],
+    candidate_df: pd.DataFrame,
+    out_png: Path,
+    out_svg: Path,
+) -> None:
+    for row in candidate_df.to_dict(orient="records"):
+        panel_rows.append(
+            {
+                "gene_name": row["gene_name"],
+                "tissue": row["tissue"],
+                "gene_class": row.get("gene_class", ""),
+                "panel_family": "candidate_focus_panels",
+                "panel_label": "candidate focus panels",
+                "panel_scope": "focus",
+                "panel_direction": "mixed",
+                "panel_quantile": float("nan"),
+                "page": 1,
+                "file_png": out_png.as_posix(),
+                "file_svg": out_svg.as_posix(),
+            }
+        )
+
+
+def write_panel_index(panel_rows: List[dict], out_csv: Path) -> None:
+    if not panel_rows:
+        pd.DataFrame(
+            columns=[
+                "gene_name",
+                "tissue",
+                "gene_class",
+                "panel_family",
+                "panel_label",
+                "panel_scope",
+                "panel_direction",
+                "panel_quantile",
+                "page",
+                "file_png",
+                "file_svg",
+            ]
+        ).to_csv(out_csv, index=False, encoding="utf-8")
+        return
+
+    panel_df = pd.DataFrame(panel_rows).drop_duplicates(
+        subset=["gene_name", "tissue", "panel_family", "page"], keep="first"
+    )
+    panel_df = panel_df.sort_values(
+        by=["panel_direction", "panel_quantile", "panel_scope", "gene_name", "tissue", "page"],
+        ascending=[True, True, True, True, True, True],
+    ).reset_index(drop=True)
+    panel_df.to_csv(out_csv, index=False, encoding="utf-8")
 
 
 def main() -> None:
     args = parse_args()
 
-    if not 0 < args.quantile < 1:
-        raise ValueError("--quantile must be between 0 and 1")
     if args.panels_per_page < 1:
         raise ValueError("--panels-per-page must be >= 1")
+
+    high_quantiles = normalize_quantiles(args.high_quantiles, low_tail=False)
+    if args.include_class_p95 and args.quantile not in high_quantiles:
+        high_quantiles = sorted(set(high_quantiles + [float(args.quantile)]))
+    low_quantiles = normalize_quantiles(args.low_quantiles, low_tail=True)
 
     ranking_dir = Path(args.ranking_dir)
     gene_compare_data_root = Path(args.gene_compare_data_root)
@@ -366,10 +545,12 @@ def main() -> None:
             top_variant=args.top_variant,
         )
 
+    out_dir.mkdir(parents=True, exist_ok=True)
     out_overview_png = out_dir / "candidate_range_overview.png"
     out_overview_svg = out_dir / "candidate_range_overview.svg"
     out_panels_png = out_dir / "candidate_focus_panels.png"
     out_panels_svg = out_dir / "candidate_focus_panels.svg"
+    panel_index_csv = out_dir / "panel_membership.csv"
 
     plot_overview(
         summary_df,
@@ -385,28 +566,109 @@ def main() -> None:
     print(f"Saved candidate panels to {out_panels_png}")
     print(f"Saved candidate panels to {out_panels_svg}")
 
-    if args.include_class_p95:
-        for gene_class in ["clustered", "variant"]:
-            class_df = select_class_quantile_candidates(
+    panel_rows: List[dict] = []
+    append_focus_panel_rows(panel_rows, candidate_df, out_panels_png, out_panels_svg)
+
+    if args.include_class_high_panels or args.include_class_p95:
+        for quantile in high_quantiles:
+            for gene_class in ["clustered", "variant"]:
+                class_df, threshold = select_quantile_candidates(
+                    summary_df,
+                    min_species=args.min_species,
+                    quantile=quantile,
+                    direction="high",
+                    gene_class=gene_class,
+                )
+                stem_prefix = f"{gene_class}_{quantile_label(quantile)}_panels"
+                written, rows = write_paginated_panels(
+                    class_df,
+                    gene_compare_data_root=gene_compare_data_root,
+                    out_dir=out_dir,
+                    stem_prefix=stem_prefix,
+                    panels_per_page=args.panels_per_page,
+                    panel_scope=gene_class,
+                    panel_direction="high",
+                    quantile=quantile,
+                )
+                panel_rows.extend(rows)
+                if written:
+                    print(
+                        f"Saved {len(class_df)} {gene_class} candidate panel(s) across "
+                        f"{len(written) // 2} page(s) for {quantile_label(quantile)} "
+                        f"(threshold {threshold:.2f})."
+                    )
+                else:
+                    print(
+                        f"No {gene_class} candidates met the class-specific "
+                        f"{quantile_label(quantile)} threshold."
+                    )
+
+    if args.include_global_low_panels:
+        for quantile in low_quantiles:
+            low_df, threshold = select_quantile_candidates(
                 summary_df,
-                gene_class=gene_class,
                 min_species=args.min_species,
-                quantile=args.quantile,
+                quantile=quantile,
+                direction="low",
+                gene_class=None,
             )
-            written = write_paginated_panels(
-                class_df,
+            stem_prefix = f"global_{quantile_label(quantile)}_low_panels"
+            written, rows = write_paginated_panels(
+                low_df,
                 gene_compare_data_root=gene_compare_data_root,
                 out_dir=out_dir,
-                stem_prefix=f"{gene_class}_p{int(args.quantile * 100):02d}_panels",
+                stem_prefix=stem_prefix,
                 panels_per_page=args.panels_per_page,
+                panel_scope="global",
+                panel_direction="low",
+                quantile=quantile,
             )
+            panel_rows.extend(rows)
             if written:
                 print(
-                    f"Saved {len(class_df)} {gene_class} candidate panel(s) across "
-                    f"{len(written) // 2} page(s) for p{int(args.quantile * 100):02d}."
+                    f"Saved {len(low_df)} global low-tail panel(s) across "
+                    f"{len(written) // 2} page(s) for {quantile_label(quantile)} "
+                    f"(threshold {threshold:.2f})."
                 )
             else:
-                print(f"No {gene_class} candidates met the class-specific p{int(args.quantile * 100):02d} threshold.")
+                print(f"No global candidates met the {quantile_label(quantile)} low-tail threshold.")
+
+    if args.include_class_low_panels:
+        for quantile in low_quantiles:
+            for gene_class in ["clustered", "variant"]:
+                class_df, threshold = select_quantile_candidates(
+                    summary_df,
+                    min_species=args.min_species,
+                    quantile=quantile,
+                    direction="low",
+                    gene_class=gene_class,
+                )
+                stem_prefix = f"{gene_class}_{quantile_label(quantile)}_low_panels"
+                written, rows = write_paginated_panels(
+                    class_df,
+                    gene_compare_data_root=gene_compare_data_root,
+                    out_dir=out_dir,
+                    stem_prefix=stem_prefix,
+                    panels_per_page=args.panels_per_page,
+                    panel_scope=gene_class,
+                    panel_direction="low",
+                    quantile=quantile,
+                )
+                panel_rows.extend(rows)
+                if written:
+                    print(
+                        f"Saved {len(class_df)} {gene_class} low-tail panel(s) across "
+                        f"{len(written) // 2} page(s) for {quantile_label(quantile)} "
+                        f"(threshold {threshold:.2f})."
+                    )
+                else:
+                    print(
+                        f"No {gene_class} candidates met the class-specific "
+                        f"{quantile_label(quantile)} low-tail threshold."
+                    )
+
+    write_panel_index(panel_rows, panel_index_csv)
+    print(f"Saved panel membership index to {panel_index_csv}")
 
 
 if __name__ == "__main__":
