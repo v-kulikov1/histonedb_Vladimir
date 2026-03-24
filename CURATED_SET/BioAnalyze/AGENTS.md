@@ -86,6 +86,19 @@ Recent Outputs (2026-03-17)
 - CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan/hs_aligned_variants.svg
 - CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AJ/H2AJ_gene_compare_heatmap.png
 - CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AJ/H2AJ_gene_compare_heatmap.svg
+Recent Outputs (2026-03-24)
+- CURATED_SET/BioAnalyze/scripts/h2aj_synteny/build_h2aj_synteny_plot.py
+- CURATED_SET/BioAnalyze/figures/h2aj_synteny/h2aj_synteny.png
+- CURATED_SET/BioAnalyze/figures/h2aj_synteny/h2aj_synteny.svg
+- CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps.py
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_without_short_codon_entropy_annotated.png
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_without_short_codon_entropy_annotated.svg
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_codon_entropy_annotated.png
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_codon_entropy_annotated.svg
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_order_legend.png
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_order_legend.svg
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.png
+- CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.svg
 Recent Script Additions (2026-03-17)
 - CURATED_SET/BioAnalyze/scripts/expression/summarize_shared_h2a_gene_names_across_species.py
   Rebuilds the shared-gene summary in `stats/shared_genes/` and writes a reusable long-form
@@ -116,6 +129,14 @@ Recent Script Additions (2026-03-17)
   - focused candidate panels
   - overview scatter
   - class-specific `p95` panel pages for clustered vs variant genes
+Recent Script Additions (2026-03-24)
+- CURATED_SET/BioAnalyze/scripts/h2aj_synteny/build_h2aj_synteny_plot.py
+  Builds the presentation-oriented H2A.J synteny panel from external TSV inputs
+  and writes PNG/SVG outputs under `figures/h2aj_synteny/`.
+- CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps.py
+  Rebuilds SQK codon entropy heatmaps from external FASTA pairs, writes the
+  `without-short` and `full` heatmaps, and exports standalone order/Shannon
+  support graphics for the `full` presentation layout.
 
 External raw data:
 - stored at C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw

@@ -558,3 +558,121 @@ Detailed Gene*Tissue Report + Low-Tail Panels (2026-03-18)
   - Global low-tail (`p05/p10`) is strongly enriched for variant genes, while
     class-specific low-tail extraction is needed to surface comparatively stable
     clustered cases.
+
+H2A.J Synteny Plot Integration (2026-03-24)
+- Goal:
+  - Move the ad hoc H2A.J synteny notebook workflow into the standard
+    `BioAnalyze` layout so it can be rebuilt from CLI without a notebook.
+- Structure changes:
+  - Added reproducible builder script:
+    - `CURATED_SET/BioAnalyze/scripts/h2aj_synteny/build_h2aj_synteny_plot.py`
+  - Canonical figure outputs now live in:
+    - `CURATED_SET/BioAnalyze/figures/h2aj_synteny/h2aj_synteny.png`
+    - `CURATED_SET/BioAnalyze/figures/h2aj_synteny/h2aj_synteny.svg`
+  - The repo-local placeholder folder `CURATED_SET/BioAnalyze/synteny` was
+    retired in favor of the standard `scripts/` + `figures/` layout.
+- Inputs:
+  - External raw synteny TSV files remain at:
+    - `C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\synteny`
+  - The script uses the current notebook species set and phylogenetic order:
+    - Homo sapiens
+    - Pan troglodytes
+    - Mus musculus
+    - Oryctolagus cuniculus
+    - Erinaceus europaeus
+    - Eptesicus fuscus
+    - Canis lupus
+    - Sus scrofa
+    - Equus caballus
+    - Manis pentadactyla
+    - Loxodonta africana
+    - Choloepus didactylus
+    - Dasypus novemcinctus
+- Behavior:
+  - Preserves the latest notebook data-prep logic:
+    - detect H2A.J from `Name`, with fallback to `Symbol`
+    - operate within the H2A.J chromosome only
+    - normalize minus-strand rows into a single rightward H2A.J layout
+    - filter neighboring genes by cross-species recurrence
+  - Presentation-focused styling changes:
+    - large right-side legend for neighboring genes
+    - no `bp` distance labels
+    - no repeated per-row `H2A.J` labels
+    - single `H2A.J` label under the bottom central arrow
+    - species labels remain bold and black
+    - order labels are placed under species names with color coding
+    - extra left margin is reserved so label blocks do not overlap the arrows
+    - widened rectangular canvas and enlarged arrows for slide readability
+    - presentation-enlarged variant increases left label fonts, legend text, and
+      bottom `H2A.J` annotation substantially for slide use
+- Verification:
+  - Builder script is intended for direct CLI execution and writes both PNG and
+    SVG outputs for presentation use.
+
+Codon Heatmap Integration (2026-03-24)
+- Goal:
+  - Move the SQK codon notebook workflow into the standard `BioAnalyze`
+    layout so codon heatmaps can be rebuilt from CLI and raw FASTA inputs can
+    live in external storage instead of an ad hoc local folder.
+- Structure changes:
+  - Added reproducible builder script:
+    - `CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps.py`
+  - Canonical figure outputs now live in:
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_without_short_codon_entropy_annotated.png`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_without_short_codon_entropy_annotated.svg`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_codon_entropy_annotated.png`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_codon_entropy_annotated.svg`
+- Inputs:
+  - Raw SQK FASTA files were copied to external storage:
+    - `C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons`
+  - The current builder expects these four files:
+    - `protein_from_SQK_nuc(without short).fasta`
+    - `SQK_nuc(without short).fasta`
+    - `protein_from_SQK_nuc.fasta`
+    - `SQK_nuc.fasta`
+- Behavior:
+  - Preserves the final notebook plotting workflow:
+    - normalized Shannon entropy by protein position and mammalian order
+    - order filtering to `count > 3`
+    - non-synonymous overlays marked with `*`
+    - left-side structural region annotations
+    - highlighted reference positions with color-coded amino-acid labels
+    - top order-color strip and separate legend export
+- Notebook usability:
+  - The repo `.venv` was extended with `ipykernel` and `notebook` so the codon
+    notebook can be opened from the IDE on the project environment instead of
+    relying on transient Colab-only setup.
+
+SQK Full Codon Figure Simplification (2026-03-24)
+- Goal:
+  - Make the `full` codon heatmap easier to assemble on slides by enlarging and
+    shortening the left structural labels and exporting the supporting legends
+    as standalone files.
+- Output changes:
+  - Refined main figure:
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_codon_entropy_annotated.png`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_codon_entropy_annotated.svg`
+  - New standalone support figures:
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_order_legend.png`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_order_legend.svg`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.png`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.svg`
+- Behavior:
+  - The `full` heatmap now uses large shortened region labels:
+    - `α1e`, `α1`, `L1`, `α2`, `L2`, `α3`, `β3`
+  - After presentation tuning, the left region brackets and labels were moved
+    back closer to the heatmap body while keeping the larger slide-friendly
+    font size.
+  - The main `full` heatmap keeps the top order-color strip but removes the
+    embedded Shannon colorbar.
+  - A standalone legend now maps the top-strip colors to mammalian orders, and
+    a separate vertical Shannon scale is exported with a large caption below
+    the bar.
+  - The entropy calculation, order filtering, highlighted positions, and
+    non-synonymous `*` overlay remain unchanged.
+  - Data review showed that the `full` Chiroptera signal is driven almost
+    entirely by one added entry absent from `without-short`:
+    - `Myotis-lucifugus|XM_006084274`
+    - length `128 aa` versus the reference `129 aa`
+    - removing this one record returns Chiroptera from `69` nonsynonymous
+      positions in `full` back to `2`, matching `without-short`
