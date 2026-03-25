@@ -1,840 +1,550 @@
-Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
-ENSMMUG00000000962	H2AZ2	spermatocyte	present	gold quality	97.04
-ENSMMUG00000000962	H2AZ2	spermatid	present	gold quality	97.18
-ENSMMUG00000000962	H2AZ2	fibroblast	present	gold quality	93.34
-ENSMMUG00000000962	H2AZ2	adult mammalian kidney	present	gold quality	95.65
-ENSMMUG00000000962	H2AZ2	adult mammalian kidney	present	gold quality	97.26
-ENSMMUG00000000962	H2AZ2	adult mammalian kidney	present	gold quality	96.12
-ENSMMUG00000000962	H2AZ2	prefrontal cortex	present	gold quality	93.96
-ENSMMUG00000000962	H2AZ2	prefrontal cortex	present	gold quality	96.73
-ENSMMUG00000000962	H2AZ2	prefrontal cortex	present	gold quality	94.07
-ENSMMUG00000000962	H2AZ2	prefrontal cortex	present	gold quality	94.03
-ENSMMUG00000000962	H2AZ2	multicellular organism	present	gold quality	96.56
-ENSMMUG00000000962	H2AZ2	multicellular organism	present	gold quality	96.94
-ENSMMUG00000000962	H2AZ2	multicellular organism	present	gold quality	94.55
-ENSMMUG00000000962	H2AZ2	testis	present	gold quality	96.41
-ENSMMUG00000000962	H2AZ2	testis	present	gold quality	96.91
-ENSMMUG00000000962	H2AZ2	testis	present	gold quality	98.26
-ENSMMUG00000000962	H2AZ2	heart	present	gold quality	95.77
-ENSMMUG00000000962	H2AZ2	heart	present	gold quality	95.62
-ENSMMUG00000000962	H2AZ2	heart	present	gold quality	97.23
-ENSMMUG00000000962	H2AZ2	heart	present	gold quality	97.16
-ENSMMUG00000000962	H2AZ2	heart	present	gold quality	97.27
-ENSMMUG00000000962	H2AZ2	brain	present	gold quality	94.18
-ENSMMUG00000000962	H2AZ2	brain	present	gold quality	94.06
-ENSMMUG00000000962	H2AZ2	brain	present	gold quality	96.29
-ENSMMUG00000000962	H2AZ2	brain	present	gold quality	93.85
-ENSMMUG00000000962	H2AZ2	cerebral cortex	present	gold quality	94.89
-ENSMMUG00000000962	H2AZ2	adipose tissue	present	gold quality	86.4
-ENSMMUG00000000962	H2AZ2	skeletal muscle tissue	present	gold quality	93.36
-ENSMMUG00000000962	H2AZ2	skeletal muscle tissue	present	gold quality	96.21
-ENSMMUG00000000962	H2AZ2	colon	present	gold quality	97.73
-ENSMMUG00000000962	H2AZ2	cortex of kidney	present	gold quality	95.39
-ENSMMUG00000000962	H2AZ2	frontal cortex	present	gold quality	92.55
-ENSMMUG00000000962	H2AZ2	Ammon's horn	present	gold quality	91.12
-ENSMMUG00000000962	H2AZ2	cerebellum	present	gold quality	97.14
-ENSMMUG00000000962	H2AZ2	cerebellum	present	gold quality	96.83
-ENSMMUG00000000962	H2AZ2	cerebellum	present	gold quality	96.05
-ENSMMUG00000000962	H2AZ2	cerebellum	present	gold quality	97.64
-ENSMMUG00000000962	H2AZ2	cerebellum	present	gold quality	97.29
-ENSMMUG00000000962	H2AZ2	lung	present	gold quality	91.24
-ENSMMUG00000000962	H2AZ2	lung	present	gold quality	96.03
-ENSMMUG00000000962	H2AZ2	spleen	present	gold quality	93.49
-ENSMMUG00000000962	H2AZ2	spleen	present	gold quality	96.84
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	87.67
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	93.15
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	94.59
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	92.43
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	92.61
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	93.54
-ENSMMUG00000000962	H2AZ2	liver	present	gold quality	92.08
-ENSMMUG00000000962	H2AZ2	kidney	present	gold quality	94.8
-ENSMMUG00000000962	H2AZ2	kidney	present	gold quality	94.59
-ENSMMUG00000000962	H2AZ2	ileum	present	gold quality	91.02
-ENSMMUG00000000962	H2AZ2	cerebellar cortex	present	gold quality	96.2
-ENSMMUG00000000962	H2AZ2	cerebellar cortex	present	gold quality	98.83
-ENSMMUG00000000962	H2AZ2	cerebellar cortex	present	gold quality	97.65
-ENSMMUG00000000962	H2AZ2	primary visual cortex	present	gold quality	93.36
-ENSMMUG00000000962	H2AZ2	superior frontal gyrus	present	gold quality	92.86
-ENSMMUG00000000962	H2AZ2	hindlimb stylopod muscle	present	gold quality	96.5
-ENSMMUG00000000962	H2AZ2	olfactory segment of nasal mucosa	present	gold quality	96.0
-ENSMMUG00000000962	H2AZ2	dorsolateral prefrontal cortex	present	gold quality	96.52
-ENSMMUG00000000962	H2AZ2	dorsolateral prefrontal cortex	present	gold quality	95.42
-ENSMMUG00000006395	H2AFY2	spermatocyte	present	gold quality	47.92
-ENSMMUG00000006395	H2AFY2	spermatid	present	gold quality	46.83
-ENSMMUG00000006395	H2AFY2	adult mammalian kidney	present	gold quality	62.91
-ENSMMUG00000006395	H2AFY2	adult mammalian kidney	present	gold quality	64.55
-ENSMMUG00000006395	H2AFY2	adult mammalian kidney	present	gold quality	66.59
-ENSMMUG00000006395	H2AFY2	prefrontal cortex	present	gold quality	70.45
-ENSMMUG00000006395	H2AFY2	prefrontal cortex	present	gold quality	78.9
-ENSMMUG00000006395	H2AFY2	prefrontal cortex	present	gold quality	70.43
-ENSMMUG00000006395	H2AFY2	prefrontal cortex	present	gold quality	70.48
-ENSMMUG00000006395	H2AFY2	multicellular organism	present	gold quality	52.59
-ENSMMUG00000006395	H2AFY2	multicellular organism	present	gold quality	54.0
-ENSMMUG00000006395	H2AFY2	multicellular organism	present	gold quality	61.19
-ENSMMUG00000006395	H2AFY2	testis	present	gold quality	52.78
-ENSMMUG00000006395	H2AFY2	testis	present	gold quality	57.62
-ENSMMUG00000006395	H2AFY2	testis	present	gold quality	55.75
-ENSMMUG00000006395	H2AFY2	heart	present	gold quality	64.06
-ENSMMUG00000006395	H2AFY2	heart	present	gold quality	66.74
-ENSMMUG00000006395	H2AFY2	heart	present	gold quality	61.05
-ENSMMUG00000006395	H2AFY2	heart	present	gold quality	68.2
-ENSMMUG00000006395	H2AFY2	heart	present	gold quality	67.98
-ENSMMUG00000006395	H2AFY2	brain	present	gold quality	69.45
-ENSMMUG00000006395	H2AFY2	brain	present	gold quality	68.92
-ENSMMUG00000006395	H2AFY2	brain	present	gold quality	70.25
-ENSMMUG00000006395	H2AFY2	brain	present	gold quality	68.87
-ENSMMUG00000006395	H2AFY2	cerebral cortex	present	gold quality	65.47
-ENSMMUG00000006395	H2AFY2	adipose tissue	present	gold quality	51.86
-ENSMMUG00000006395	H2AFY2	skeletal muscle tissue	present	gold quality	60.66
-ENSMMUG00000006395	H2AFY2	colon	present	gold quality	54.61
-ENSMMUG00000006395	H2AFY2	cortex of kidney	present	gold quality	60.86
-ENSMMUG00000006395	H2AFY2	frontal cortex	present	gold quality	53.02
-ENSMMUG00000006395	H2AFY2	Ammon's horn	present	gold quality	51.52
-ENSMMUG00000006395	H2AFY2	cerebellum	present	gold quality	69.71
-ENSMMUG00000006395	H2AFY2	cerebellum	present	gold quality	75.03
-ENSMMUG00000006395	H2AFY2	cerebellum	present	gold quality	73.64
-ENSMMUG00000006395	H2AFY2	cerebellum	present	gold quality	73.65
-ENSMMUG00000006395	H2AFY2	cerebellum	present	gold quality	76.52
-ENSMMUG00000006395	H2AFY2	lung	present	gold quality	41.2
-ENSMMUG00000006395	H2AFY2	kidney	present	gold quality	61.57
-ENSMMUG00000006395	H2AFY2	kidney	present	gold quality	61.02
-ENSMMUG00000006395	H2AFY2	cerebellar cortex	present	gold quality	73.7
-ENSMMUG00000006395	H2AFY2	cerebellar cortex	present	gold quality	86.9
-ENSMMUG00000006395	H2AFY2	cerebellar cortex	present	gold quality	71.45
-ENSMMUG00000006395	H2AFY2	primary visual cortex	present	gold quality	69.78
-ENSMMUG00000006395	H2AFY2	superior frontal gyrus	present	gold quality	68.37
-ENSMMUG00000006395	H2AFY2	hindlimb stylopod muscle	present	gold quality	56.24
-ENSMMUG00000006395	H2AFY2	olfactory segment of nasal mucosa	present	gold quality	64.8
-ENSMMUG00000006395	H2AFY2	dorsolateral prefrontal cortex	present	gold quality	67.69
-ENSMMUG00000006395	H2AFY2	dorsolateral prefrontal cortex	present	gold quality	68.71
-ENSMMUG00000014465	H2AFY	spermatocyte	present	gold quality	77.13
-ENSMMUG00000014465	H2AFY	spermatid	present	gold quality	66.81
-ENSMMUG00000014465	H2AFY	fibroblast	present	gold quality	94.96
-ENSMMUG00000014465	H2AFY	adult mammalian kidney	present	gold quality	95.88
-ENSMMUG00000014465	H2AFY	adult mammalian kidney	present	gold quality	96.09
-ENSMMUG00000014465	H2AFY	adult mammalian kidney	present	gold quality	96.58
-ENSMMUG00000014465	H2AFY	prefrontal cortex	present	gold quality	96.25
-ENSMMUG00000014465	H2AFY	prefrontal cortex	present	gold quality	96.38
-ENSMMUG00000014465	H2AFY	prefrontal cortex	present	gold quality	96.24
-ENSMMUG00000014465	H2AFY	prefrontal cortex	present	gold quality	96.26
-ENSMMUG00000014465	H2AFY	multicellular organism	present	gold quality	96.38
-ENSMMUG00000014465	H2AFY	multicellular organism	present	gold quality	96.3
-ENSMMUG00000014465	H2AFY	multicellular organism	present	gold quality	95.02
-ENSMMUG00000014465	H2AFY	testis	present	gold quality	76.31
-ENSMMUG00000014465	H2AFY	testis	present	gold quality	82.14
-ENSMMUG00000014465	H2AFY	testis	present	gold quality	82.64
-ENSMMUG00000014465	H2AFY	heart	present	gold quality	94.59
-ENSMMUG00000014465	H2AFY	heart	present	gold quality	94.56
-ENSMMUG00000014465	H2AFY	heart	present	gold quality	95.2
-ENSMMUG00000014465	H2AFY	heart	present	gold quality	95.69
-ENSMMUG00000014465	H2AFY	heart	present	gold quality	93.92
-ENSMMUG00000014465	H2AFY	brain	present	gold quality	95.91
-ENSMMUG00000014465	H2AFY	brain	present	gold quality	95.98
-ENSMMUG00000014465	H2AFY	brain	present	gold quality	95.67
-ENSMMUG00000014465	H2AFY	brain	present	gold quality	96.0
-ENSMMUG00000014465	H2AFY	cerebral cortex	present	gold quality	93.26
-ENSMMUG00000014465	H2AFY	adipose tissue	present	gold quality	95.55
-ENSMMUG00000014465	H2AFY	skeletal muscle tissue	present	gold quality	96.19
-ENSMMUG00000014465	H2AFY	skeletal muscle tissue	present	gold quality	96.21
-ENSMMUG00000014465	H2AFY	colon	present	gold quality	97.38
-ENSMMUG00000014465	H2AFY	cortex of kidney	present	gold quality	96.07
-ENSMMUG00000014465	H2AFY	frontal cortex	present	gold quality	94.42
-ENSMMUG00000014465	H2AFY	Ammon's horn	present	gold quality	93.38
-ENSMMUG00000014465	H2AFY	cerebellum	present	gold quality	95.54
-ENSMMUG00000014465	H2AFY	cerebellum	present	gold quality	96.84
-ENSMMUG00000014465	H2AFY	cerebellum	present	gold quality	96.66
-ENSMMUG00000014465	H2AFY	cerebellum	present	gold quality	97.09
-ENSMMUG00000014465	H2AFY	cerebellum	present	gold quality	96.45
-ENSMMUG00000014465	H2AFY	lung	present	gold quality	96.88
-ENSMMUG00000014465	H2AFY	lung	present	gold quality	95.9
-ENSMMUG00000014465	H2AFY	spleen	present	gold quality	97.93
-ENSMMUG00000014465	H2AFY	spleen	present	gold quality	97.7
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	91.29
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	92.18
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	92.9
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	91.97
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	91.64
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	92.3
-ENSMMUG00000014465	H2AFY	liver	present	gold quality	91.01
-ENSMMUG00000014465	H2AFY	kidney	present	gold quality	95.57
-ENSMMUG00000014465	H2AFY	kidney	present	gold quality	96.17
-ENSMMUG00000014465	H2AFY	ileum	present	gold quality	91.22
-ENSMMUG00000014465	H2AFY	cerebellar cortex	present	gold quality	96.93
-ENSMMUG00000014465	H2AFY	cerebellar cortex	present	gold quality	97.43
-ENSMMUG00000014465	H2AFY	cerebellar cortex	present	gold quality	96.85
-ENSMMUG00000014465	H2AFY	primary visual cortex	present	gold quality	95.65
-ENSMMUG00000014465	H2AFY	superior frontal gyrus	present	gold quality	95.04
-ENSMMUG00000014465	H2AFY	hindlimb stylopod muscle	present	gold quality	95.85
-ENSMMUG00000014465	H2AFY	olfactory segment of nasal mucosa	present	gold quality	96.99
-ENSMMUG00000014465	H2AFY	dorsolateral prefrontal cortex	present	gold quality	95.0
-ENSMMUG00000014465	H2AFY	dorsolateral prefrontal cortex	present	gold quality	95.47
-ENSMMUG00000018013	H2AJ	spermatocyte	present	gold quality	94.55
-ENSMMUG00000018013	H2AJ	spermatid	present	gold quality	94.21
-ENSMMUG00000018013	H2AJ	fibroblast	present	gold quality	95.16
-ENSMMUG00000018013	H2AJ	adult mammalian kidney	present	gold quality	93.79
-ENSMMUG00000018013	H2AJ	adult mammalian kidney	present	gold quality	97.47
-ENSMMUG00000018013	H2AJ	adult mammalian kidney	present	gold quality	95.98
-ENSMMUG00000018013	H2AJ	prefrontal cortex	present	gold quality	78.34
-ENSMMUG00000018013	H2AJ	prefrontal cortex	present	gold quality	70.14
-ENSMMUG00000018013	H2AJ	prefrontal cortex	present	gold quality	78.18
-ENSMMUG00000018013	H2AJ	prefrontal cortex	present	gold quality	78.32
-ENSMMUG00000018013	H2AJ	multicellular organism	present	gold quality	86.61
-ENSMMUG00000018013	H2AJ	multicellular organism	present	gold quality	87.03
-ENSMMUG00000018013	H2AJ	multicellular organism	present	gold quality	84.1
-ENSMMUG00000018013	H2AJ	testis	present	gold quality	99.58
-ENSMMUG00000018013	H2AJ	testis	present	gold quality	99.45
-ENSMMUG00000018013	H2AJ	testis	present	gold quality	99.57
-ENSMMUG00000018013	H2AJ	heart	present	gold quality	96.08
-ENSMMUG00000018013	H2AJ	heart	present	gold quality	96.11
-ENSMMUG00000018013	H2AJ	heart	present	gold quality	89.8
-ENSMMUG00000018013	H2AJ	heart	present	gold quality	95.06
-ENSMMUG00000018013	H2AJ	heart	present	gold quality	97.38
-ENSMMUG00000018013	H2AJ	brain	present	gold quality	76.68
-ENSMMUG00000018013	H2AJ	brain	present	gold quality	76.33
-ENSMMUG00000018013	H2AJ	brain	present	gold quality	73.76
-ENSMMUG00000018013	H2AJ	brain	present	gold quality	76.91
-ENSMMUG00000018013	H2AJ	cerebral cortex	present	gold quality	67.2
-ENSMMUG00000018013	H2AJ	adipose tissue	present	gold quality	98.51
-ENSMMUG00000018013	H2AJ	skeletal muscle tissue	present	gold quality	88.61
-ENSMMUG00000018013	H2AJ	skeletal muscle tissue	present	gold quality	88.2
-ENSMMUG00000018013	H2AJ	colon	present	gold quality	92.38
-ENSMMUG00000018013	H2AJ	cortex of kidney	present	gold quality	95.73
-ENSMMUG00000018013	H2AJ	frontal cortex	present	gold quality	74.02
-ENSMMUG00000018013	H2AJ	Ammon's horn	present	gold quality	62.8
-ENSMMUG00000018013	H2AJ	cerebellum	present	gold quality	71.85
-ENSMMUG00000018013	H2AJ	cerebellum	present	gold quality	78.8
-ENSMMUG00000018013	H2AJ	cerebellum	present	gold quality	81.18
-ENSMMUG00000018013	H2AJ	cerebellum	present	gold quality	69.64
-ENSMMUG00000018013	H2AJ	cerebellum	present	gold quality	81.01
-ENSMMUG00000018013	H2AJ	lung	present	gold quality	94.59
-ENSMMUG00000018013	H2AJ	lung	present	gold quality	85.48
-ENSMMUG00000018013	H2AJ	spleen	present	gold quality	94.32
-ENSMMUG00000018013	H2AJ	spleen	present	gold quality	85.87
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	97.0
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	95.94
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	95.66
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	96.28
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	95.8
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	96.0
-ENSMMUG00000018013	H2AJ	liver	present	gold quality	96.31
-ENSMMUG00000018013	H2AJ	kidney	present	gold quality	95.22
-ENSMMUG00000018013	H2AJ	kidney	present	gold quality	95.89
-ENSMMUG00000018013	H2AJ	ileum	present	gold quality	81.75
-ENSMMUG00000018013	H2AJ	cerebellar cortex	present	gold quality	83.76
-ENSMMUG00000018013	H2AJ	cerebellar cortex	present	gold quality	80.21
-ENSMMUG00000018013	H2AJ	cerebellar cortex	present	gold quality	74.89
-ENSMMUG00000018013	H2AJ	primary visual cortex	present	gold quality	76.44
-ENSMMUG00000018013	H2AJ	superior frontal gyrus	present	gold quality	81.13
-ENSMMUG00000018013	H2AJ	hindlimb stylopod muscle	present	gold quality	89.31
-ENSMMUG00000018013	H2AJ	olfactory segment of nasal mucosa	present	gold quality	98.76
-ENSMMUG00000018013	H2AJ	dorsolateral prefrontal cortex	present	gold quality	75.22
-ENSMMUG00000018013	H2AJ	dorsolateral prefrontal cortex	present	gold quality	73.57
-ENSMMUG00000037540	H2AC20	spermatocyte	present	gold quality	96.66
-ENSMMUG00000037540	H2AC20	spermatid	present	gold quality	98.68
-ENSMMUG00000037540	H2AC20	fibroblast	present	gold quality	91.56
-ENSMMUG00000037540	H2AC20	adult mammalian kidney	present	gold quality	81.4
-ENSMMUG00000037540	H2AC20	adult mammalian kidney	present	gold quality	93.71
-ENSMMUG00000037540	H2AC20	adult mammalian kidney	present	gold quality	83.0
-ENSMMUG00000037540	H2AC20	prefrontal cortex	present	gold quality	68.7
-ENSMMUG00000037540	H2AC20	prefrontal cortex	present	gold quality	70.2
-ENSMMUG00000037540	H2AC20	prefrontal cortex	present	gold quality	68.48
-ENSMMUG00000037540	H2AC20	prefrontal cortex	present	gold quality	68.51
-ENSMMUG00000037540	H2AC20	multicellular organism	present	gold quality	79.14
-ENSMMUG00000037540	H2AC20	multicellular organism	present	gold quality	80.75
-ENSMMUG00000037540	H2AC20	multicellular organism	present	gold quality	76.93
-ENSMMUG00000037540	H2AC20	testis	present	gold quality	99.27
-ENSMMUG00000037540	H2AC20	testis	present	gold quality	96.26
-ENSMMUG00000037540	H2AC20	testis	present	gold quality	95.59
-ENSMMUG00000037540	H2AC20	heart	present	gold quality	82.82
-ENSMMUG00000037540	H2AC20	heart	present	gold quality	86.48
-ENSMMUG00000037540	H2AC20	heart	present	gold quality	76.82
-ENSMMUG00000037540	H2AC20	heart	present	gold quality	78.02
-ENSMMUG00000037540	H2AC20	heart	present	gold quality	83.61
-ENSMMUG00000037540	H2AC20	brain	present	gold quality	68.89
-ENSMMUG00000037540	H2AC20	brain	present	gold quality	67.88
-ENSMMUG00000037540	H2AC20	brain	present	gold quality	65.0
-ENSMMUG00000037540	H2AC20	brain	present	gold quality	68.2
-ENSMMUG00000037540	H2AC20	cerebral cortex	present	gold quality	62.15
-ENSMMUG00000037540	H2AC20	adipose tissue	present	gold quality	96.39
-ENSMMUG00000037540	H2AC20	skeletal muscle tissue	present	gold quality	90.91
-ENSMMUG00000037540	H2AC20	skeletal muscle tissue	present	gold quality	76.6
-ENSMMUG00000037540	H2AC20	colon	present	gold quality	67.84
-ENSMMUG00000037540	H2AC20	cortex of kidney	present	gold quality	89.32
-ENSMMUG00000037540	H2AC20	frontal cortex	present	gold quality	70.24
-ENSMMUG00000037540	H2AC20	cerebellum	present	gold quality	65.55
-ENSMMUG00000037540	H2AC20	cerebellum	present	gold quality	71.49
-ENSMMUG00000037540	H2AC20	cerebellum	present	gold quality	71.58
-ENSMMUG00000037540	H2AC20	cerebellum	present	gold quality	62.38
-ENSMMUG00000037540	H2AC20	cerebellum	present	gold quality	63.74
-ENSMMUG00000037540	H2AC20	lung	present	gold quality	91.5
-ENSMMUG00000037540	H2AC20	lung	present	gold quality	66.95
-ENSMMUG00000037540	H2AC20	spleen	present	gold quality	92.4
-ENSMMUG00000037540	H2AC20	spleen	present	gold quality	69.58
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	92.29
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	89.09
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	86.92
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	93.03
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	90.85
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	94.28
-ENSMMUG00000037540	H2AC20	liver	present	gold quality	96.18
-ENSMMUG00000037540	H2AC20	kidney	present	gold quality	86.43
-ENSMMUG00000037540	H2AC20	kidney	present	gold quality	89.4
-ENSMMUG00000037540	H2AC20	ileum	present	gold quality	87.0
-ENSMMUG00000037540	H2AC20	cerebellar cortex	present	gold quality	72.95
-ENSMMUG00000037540	H2AC20	cerebellar cortex	present	gold quality	74.98
-ENSMMUG00000037540	H2AC20	cerebellar cortex	present	gold quality	73.32
-ENSMMUG00000037540	H2AC20	primary visual cortex	present	gold quality	72.97
-ENSMMUG00000037540	H2AC20	superior frontal gyrus	present	gold quality	74.67
-ENSMMUG00000037540	H2AC20	hindlimb stylopod muscle	present	gold quality	84.37
-ENSMMUG00000037540	H2AC20	olfactory segment of nasal mucosa	present	gold quality	95.84
-ENSMMUG00000037540	H2AC20	dorsolateral prefrontal cortex	present	gold quality	67.35
-ENSMMUG00000037540	H2AC20	dorsolateral prefrontal cortex	present	gold quality	59.64
-ENSMMUG00000038454	H2AFZ	spermatocyte	present	gold quality	99.69
-ENSMMUG00000038454	H2AFZ	spermatid	present	gold quality	98.9
-ENSMMUG00000038454	H2AFZ	fibroblast	present	gold quality	97.46
-ENSMMUG00000038454	H2AFZ	adult mammalian kidney	present	gold quality	95.27
-ENSMMUG00000038454	H2AFZ	adult mammalian kidney	present	gold quality	96.28
-ENSMMUG00000038454	H2AFZ	adult mammalian kidney	present	gold quality	90.84
-ENSMMUG00000038454	H2AFZ	prefrontal cortex	present	gold quality	98.46
-ENSMMUG00000038454	H2AFZ	prefrontal cortex	present	gold quality	97.93
-ENSMMUG00000038454	H2AFZ	prefrontal cortex	present	gold quality	98.46
-ENSMMUG00000038454	H2AFZ	prefrontal cortex	present	gold quality	98.46
-ENSMMUG00000038454	H2AFZ	multicellular organism	present	gold quality	98.62
-ENSMMUG00000038454	H2AFZ	multicellular organism	present	gold quality	98.6
-ENSMMUG00000038454	H2AFZ	multicellular organism	present	gold quality	97.27
-ENSMMUG00000038454	H2AFZ	testis	present	gold quality	98.99
-ENSMMUG00000038454	H2AFZ	testis	present	gold quality	98.49
-ENSMMUG00000038454	H2AFZ	testis	present	gold quality	98.43
-ENSMMUG00000038454	H2AFZ	heart	present	gold quality	94.56
-ENSMMUG00000038454	H2AFZ	heart	present	gold quality	94.52
-ENSMMUG00000038454	H2AFZ	heart	present	gold quality	93.21
-ENSMMUG00000038454	H2AFZ	heart	present	gold quality	91.96
-ENSMMUG00000038454	H2AFZ	heart	present	gold quality	94.28
-ENSMMUG00000038454	H2AFZ	brain	present	gold quality	98.33
-ENSMMUG00000038454	H2AFZ	brain	present	gold quality	98.34
-ENSMMUG00000038454	H2AFZ	brain	present	gold quality	97.63
-ENSMMUG00000038454	H2AFZ	brain	present	gold quality	98.37
-ENSMMUG00000038454	H2AFZ	cerebral cortex	present	gold quality	99.1
-ENSMMUG00000038454	H2AFZ	adipose tissue	present	gold quality	94.66
-ENSMMUG00000038454	H2AFZ	skeletal muscle tissue	present	gold quality	97.85
-ENSMMUG00000038454	H2AFZ	skeletal muscle tissue	present	gold quality	93.49
-ENSMMUG00000038454	H2AFZ	colon	present	gold quality	98.56
-ENSMMUG00000038454	H2AFZ	cortex of kidney	present	gold quality	96.09
-ENSMMUG00000038454	H2AFZ	frontal cortex	present	gold quality	97.2
-ENSMMUG00000038454	H2AFZ	Ammon's horn	present	gold quality	97.74
-ENSMMUG00000038454	H2AFZ	cerebellum	present	gold quality	99.44
-ENSMMUG00000038454	H2AFZ	cerebellum	present	gold quality	98.47
-ENSMMUG00000038454	H2AFZ	cerebellum	present	gold quality	98.51
-ENSMMUG00000038454	H2AFZ	cerebellum	present	gold quality	98.23
-ENSMMUG00000038454	H2AFZ	cerebellum	present	gold quality	98.08
-ENSMMUG00000038454	H2AFZ	lung	present	gold quality	97.1
-ENSMMUG00000038454	H2AFZ	lung	present	gold quality	96.57
-ENSMMUG00000038454	H2AFZ	spleen	present	gold quality	98.49
-ENSMMUG00000038454	H2AFZ	spleen	present	gold quality	97.34
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	93.65
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	92.12
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	91.15
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	92.02
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	93.13
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	93.52
-ENSMMUG00000038454	H2AFZ	liver	present	gold quality	92.97
-ENSMMUG00000038454	H2AFZ	kidney	present	gold quality	95.87
-ENSMMUG00000038454	H2AFZ	kidney	present	gold quality	95.35
-ENSMMUG00000038454	H2AFZ	ileum	present	gold quality	99.38
-ENSMMUG00000038454	H2AFZ	cerebellar cortex	present	gold quality	98.4
-ENSMMUG00000038454	H2AFZ	cerebellar cortex	present	gold quality	98.59
-ENSMMUG00000038454	H2AFZ	cerebellar cortex	present	gold quality	98.46
-ENSMMUG00000038454	H2AFZ	primary visual cortex	present	gold quality	98.37
-ENSMMUG00000038454	H2AFZ	superior frontal gyrus	present	gold quality	97.7
-ENSMMUG00000038454	H2AFZ	hindlimb stylopod muscle	present	gold quality	96.61
-ENSMMUG00000038454	H2AFZ	olfactory segment of nasal mucosa	present	gold quality	98.52
-ENSMMUG00000038454	H2AFZ	dorsolateral prefrontal cortex	present	gold quality	97.64
-ENSMMUG00000038454	H2AFZ	dorsolateral prefrontal cortex	present	gold quality	97.66
-ENSMMUG00000039988	HIST1H2AA	spermatocyte	present	gold quality	88.12
-ENSMMUG00000039988	HIST1H2AA	spermatid	present	gold quality	68.8
-ENSMMUG00000039988	HIST1H2AA	adult mammalian kidney	present	gold quality	40.54
-ENSMMUG00000039988	HIST1H2AA	adult mammalian kidney	present	gold quality	54.08
-ENSMMUG00000039988	HIST1H2AA	multicellular organism	present	gold quality	32.85
-ENSMMUG00000039988	HIST1H2AA	multicellular organism	present	gold quality	37.56
-ENSMMUG00000039988	HIST1H2AA	multicellular organism	present	gold quality	27.74
-ENSMMUG00000039988	HIST1H2AA	testis	present	gold quality	68.98
-ENSMMUG00000039988	HIST1H2AA	testis	present	gold quality	56.1
-ENSMMUG00000039988	HIST1H2AA	testis	present	gold quality	52.91
-ENSMMUG00000039988	HIST1H2AA	cortex of kidney	present	gold quality	37.52
-ENSMMUG00000039988	HIST1H2AA	liver	present	gold quality	46.26
-ENSMMUG00000039988	HIST1H2AA	liver	present	gold quality	37.2
-ENSMMUG00000039988	HIST1H2AA	kidney	present	gold quality	39.58
-ENSMMUG00000039988	HIST1H2AA	kidney	present	gold quality	37.82
-ENSMMUG00000042665	HIST1H2AK	fibroblast	present	gold quality	43.73
-ENSMMUG00000042665	HIST1H2AK	adult mammalian kidney	present	gold quality	47.72
-ENSMMUG00000042665	HIST1H2AK	prefrontal cortex	present	gold quality	42.64
-ENSMMUG00000042665	HIST1H2AK	prefrontal cortex	present	gold quality	42.59
-ENSMMUG00000042665	HIST1H2AK	prefrontal cortex	present	gold quality	42.81
-ENSMMUG00000042665	HIST1H2AK	multicellular organism	present	gold quality	34.49
-ENSMMUG00000042665	HIST1H2AK	multicellular organism	present	gold quality	35.38
-ENSMMUG00000042665	HIST1H2AK	multicellular organism	present	gold quality	39.42
-ENSMMUG00000042665	HIST1H2AK	testis	present	gold quality	34.74
-ENSMMUG00000042665	HIST1H2AK	heart	present	gold quality	39.05
-ENSMMUG00000042665	HIST1H2AK	brain	present	gold quality	41.23
-ENSMMUG00000042665	HIST1H2AK	brain	present	gold quality	41.18
-ENSMMUG00000042665	HIST1H2AK	brain	present	gold quality	46.22
-ENSMMUG00000042665	HIST1H2AK	brain	present	gold quality	41.33
-ENSMMUG00000042665	HIST1H2AK	cerebral cortex	present	gold quality	47.36
-ENSMMUG00000042665	HIST1H2AK	skeletal muscle tissue	present	gold quality	44.8
-ENSMMUG00000042665	HIST1H2AK	cerebellum	present	gold quality	54.59
-ENSMMUG00000042665	HIST1H2AK	cerebellum	present	gold quality	48.6
-ENSMMUG00000042665	HIST1H2AK	cerebellum	present	gold quality	49.04
-ENSMMUG00000042665	HIST1H2AK	cerebellum	present	gold quality	46.85
-ENSMMUG00000042665	HIST1H2AK	cerebellum	present	gold quality	47.84
-ENSMMUG00000042665	HIST1H2AK	liver	present	gold quality	38.62
-ENSMMUG00000042665	HIST1H2AK	liver	present	gold quality	33.3
-ENSMMUG00000042665	HIST1H2AK	liver	present	gold quality	44.25
-ENSMMUG00000042665	HIST1H2AK	liver	present	gold quality	41.91
-ENSMMUG00000042665	HIST1H2AK	liver	present	gold quality	41.54
-ENSMMUG00000042665	HIST1H2AK	liver	present	gold quality	49.43
-ENSMMUG00000042665	HIST1H2AK	cerebellar cortex	present	gold quality	47.84
-ENSMMUG00000042665	HIST1H2AK	cerebellar cortex	present	gold quality	47.34
-ENSMMUG00000042665	HIST1H2AK	cerebellar cortex	present	gold quality	49.22
-ENSMMUG00000042665	HIST1H2AK	primary visual cortex	present	gold quality	34.38
-ENSMMUG00000042665	HIST1H2AK	superior frontal gyrus	present	gold quality	38.1
-ENSMMUG00000042665	HIST1H2AK	hindlimb stylopod muscle	present	gold quality	53.41
-ENSMMUG00000042665	HIST1H2AK	olfactory segment of nasal mucosa	present	gold quality	33.65
-ENSMMUG00000042665	HIST1H2AK	dorsolateral prefrontal cortex	present	gold quality	48.84
-ENSMMUG00000044496	H2AFX	spermatocyte	present	gold quality	94.45
-ENSMMUG00000044496	H2AFX	spermatid	present	gold quality	90.29
-ENSMMUG00000044496	H2AFX	fibroblast	present	gold quality	88.48
-ENSMMUG00000044496	H2AFX	adult mammalian kidney	present	gold quality	67.64
-ENSMMUG00000044496	H2AFX	adult mammalian kidney	present	gold quality	80.47
-ENSMMUG00000044496	H2AFX	adult mammalian kidney	present	gold quality	67.04
-ENSMMUG00000044496	H2AFX	prefrontal cortex	present	gold quality	67.41
-ENSMMUG00000044496	H2AFX	prefrontal cortex	present	gold quality	78.08
-ENSMMUG00000044496	H2AFX	prefrontal cortex	present	gold quality	67.59
-ENSMMUG00000044496	H2AFX	prefrontal cortex	present	gold quality	67.22
-ENSMMUG00000044496	H2AFX	multicellular organism	present	gold quality	72.17
-ENSMMUG00000044496	H2AFX	multicellular organism	present	gold quality	71.02
-ENSMMUG00000044496	H2AFX	multicellular organism	present	gold quality	74.62
-ENSMMUG00000044496	H2AFX	testis	present	gold quality	80.26
-ENSMMUG00000044496	H2AFX	testis	present	gold quality	83.25
-ENSMMUG00000044496	H2AFX	testis	present	gold quality	84.34
-ENSMMUG00000044496	H2AFX	heart	present	gold quality	66.12
-ENSMMUG00000044496	H2AFX	heart	present	gold quality	72.7
-ENSMMUG00000044496	H2AFX	heart	present	gold quality	69.66
-ENSMMUG00000044496	H2AFX	heart	present	gold quality	72.32
-ENSMMUG00000044496	H2AFX	heart	present	gold quality	80.97
-ENSMMUG00000044496	H2AFX	brain	present	gold quality	73.63
-ENSMMUG00000044496	H2AFX	brain	present	gold quality	70.21
-ENSMMUG00000044496	H2AFX	brain	present	gold quality	84.1
-ENSMMUG00000044496	H2AFX	brain	present	gold quality	68.99
-ENSMMUG00000044496	H2AFX	cerebral cortex	present	gold quality	82.53
-ENSMMUG00000044496	H2AFX	adipose tissue	present	gold quality	70.81
-ENSMMUG00000044496	H2AFX	skeletal muscle tissue	present	gold quality	76.92
-ENSMMUG00000044496	H2AFX	skeletal muscle tissue	present	gold quality	68.06
-ENSMMUG00000044496	H2AFX	colon	present	gold quality	85.44
-ENSMMUG00000044496	H2AFX	cortex of kidney	present	gold quality	80.38
-ENSMMUG00000044496	H2AFX	frontal cortex	present	gold quality	82.9
-ENSMMUG00000044496	H2AFX	Ammon's horn	present	gold quality	79.66
-ENSMMUG00000044496	H2AFX	cerebellum	present	gold quality	84.85
-ENSMMUG00000044496	H2AFX	cerebellum	present	gold quality	85.42
-ENSMMUG00000044496	H2AFX	cerebellum	present	gold quality	87.28
-ENSMMUG00000044496	H2AFX	cerebellum	present	gold quality	78.33
-ENSMMUG00000044496	H2AFX	cerebellum	present	gold quality	88.77
-ENSMMUG00000044496	H2AFX	lung	present	gold quality	72.74
-ENSMMUG00000044496	H2AFX	lung	present	gold quality	61.94
-ENSMMUG00000044496	H2AFX	spleen	present	gold quality	85.6
-ENSMMUG00000044496	H2AFX	spleen	present	gold quality	74.21
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	63.75
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	68.84
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	67.56
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	71.6
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	69.49
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	71.46
-ENSMMUG00000044496	H2AFX	liver	present	gold quality	72.64
-ENSMMUG00000044496	H2AFX	kidney	present	gold quality	74.45
-ENSMMUG00000044496	H2AFX	kidney	present	gold quality	77.31
-ENSMMUG00000044496	H2AFX	cerebellar cortex	present	gold quality	88.59
-ENSMMUG00000044496	H2AFX	cerebellar cortex	present	gold quality	85.42
-ENSMMUG00000044496	H2AFX	cerebellar cortex	present	gold quality	82.79
-ENSMMUG00000044496	H2AFX	primary visual cortex	present	gold quality	88.28
-ENSMMUG00000044496	H2AFX	superior frontal gyrus	present	gold quality	89.56
-ENSMMUG00000044496	H2AFX	hindlimb stylopod muscle	present	gold quality	79.47
-ENSMMUG00000044496	H2AFX	olfactory segment of nasal mucosa	present	gold quality	87.91
-ENSMMUG00000044496	H2AFX	dorsolateral prefrontal cortex	present	gold quality	85.59
-ENSMMUG00000044496	H2AFX	dorsolateral prefrontal cortex	present	gold quality	83.86
-ENSMMUG00000049519	H2AC17	spermatocyte	present	gold quality	40.01
-ENSMMUG00000049519	H2AC17	fibroblast	present	gold quality	54.97
-ENSMMUG00000049519	H2AC17	multicellular organism	present	gold quality	31.62
-ENSMMUG00000049519	H2AC17	multicellular organism	present	gold quality	32.87
-ENSMMUG00000049519	H2AC17	multicellular organism	present	gold quality	29.5
-ENSMMUG00000049519	H2AC17	colon	present	gold quality	45.96
-ENSMMUG00000049519	H2AC17	liver	present	gold quality	45.87
-ENSMMUG00000049519	H2AC17	liver	present	gold quality	42.91
-ENSMMUG00000049519	H2AC17	liver	present	gold quality	50.14
-ENSMMUG00000049519	H2AC17	liver	present	gold quality	55.8
-ENSMMUG00000049519	H2AC17	liver	present	gold quality	56.15
-ENSMMUG00000049519	H2AC17	liver	present	gold quality	65.26
-ENSMMUG00000049519	H2AC17	hindlimb stylopod muscle	present	gold quality	32.67
-ENSMMUG00000049519	H2AC17	olfactory segment of nasal mucosa	present	gold quality	37.74
-ENSMMUG00000052150	HIST1H2AJ	spermatocyte	present	gold quality	56.52
-ENSMMUG00000052150	HIST1H2AJ	spermatid	present	gold quality	60.38
-ENSMMUG00000052150	HIST1H2AJ	fibroblast	present	gold quality	36.21
-ENSMMUG00000052150	HIST1H2AJ	adult mammalian kidney	present	gold quality	30.28
-ENSMMUG00000052150	HIST1H2AJ	adult mammalian kidney	present	gold quality	51.45
-ENSMMUG00000052150	HIST1H2AJ	prefrontal cortex	present	gold quality	35.0
-ENSMMUG00000052150	HIST1H2AJ	prefrontal cortex	present	gold quality	37.43
-ENSMMUG00000052150	HIST1H2AJ	prefrontal cortex	present	gold quality	34.47
-ENSMMUG00000052150	HIST1H2AJ	prefrontal cortex	present	gold quality	34.91
-ENSMMUG00000052150	HIST1H2AJ	multicellular organism	present	gold quality	28.65
-ENSMMUG00000052150	HIST1H2AJ	multicellular organism	present	gold quality	37.07
-ENSMMUG00000052150	HIST1H2AJ	multicellular organism	present	gold quality	33.61
-ENSMMUG00000052150	HIST1H2AJ	testis	present	gold quality	56.08
-ENSMMUG00000052150	HIST1H2AJ	testis	present	gold quality	62.93
-ENSMMUG00000052150	HIST1H2AJ	testis	present	gold quality	62.75
-ENSMMUG00000052150	HIST1H2AJ	brain	present	gold quality	32.46
-ENSMMUG00000052150	HIST1H2AJ	brain	present	gold quality	33.29
-ENSMMUG00000052150	HIST1H2AJ	brain	present	gold quality	29.72
-ENSMMUG00000052150	HIST1H2AJ	brain	present	gold quality	34.61
-ENSMMUG00000052150	HIST1H2AJ	colon	present	gold quality	42.62
-ENSMMUG00000052150	HIST1H2AJ	liver	present	gold quality	38.49
-ENSMMUG00000052150	HIST1H2AJ	liver	present	gold quality	39.71
-ENSMMUG00000052150	HIST1H2AJ	liver	present	gold quality	41.78
-ENSMMUG00000052150	HIST1H2AJ	liver	present	gold quality	44.13
-ENSMMUG00000052150	HIST1H2AJ	liver	present	gold quality	44.21
-ENSMMUG00000052150	HIST1H2AJ	liver	present	gold quality	55.1
-ENSMMUG00000052150	HIST1H2AJ	hindlimb stylopod muscle	present	gold quality	41.9
-ENSMMUG00000052414	HIST1H2AK	spermatocyte	present	gold quality	57.65
-ENSMMUG00000052414	HIST1H2AK	spermatid	present	gold quality	65.82
-ENSMMUG00000052414	HIST1H2AK	fibroblast	present	gold quality	58.75
-ENSMMUG00000052414	HIST1H2AK	prefrontal cortex	present	gold quality	32.35
-ENSMMUG00000052414	HIST1H2AK	prefrontal cortex	present	gold quality	32.4
-ENSMMUG00000052414	HIST1H2AK	prefrontal cortex	present	gold quality	32.39
-ENSMMUG00000052414	HIST1H2AK	multicellular organism	present	gold quality	43.44
-ENSMMUG00000052414	HIST1H2AK	multicellular organism	present	gold quality	46.98
-ENSMMUG00000052414	HIST1H2AK	multicellular organism	present	gold quality	36.48
-ENSMMUG00000052414	HIST1H2AK	testis	present	gold quality	68.6
-ENSMMUG00000052414	HIST1H2AK	testis	present	gold quality	61.9
-ENSMMUG00000052414	HIST1H2AK	testis	present	gold quality	59.48
-ENSMMUG00000052414	HIST1H2AK	heart	present	gold quality	42.89
-ENSMMUG00000052414	HIST1H2AK	heart	present	gold quality	48.0
-ENSMMUG00000052414	HIST1H2AK	heart	present	gold quality	48.5
-ENSMMUG00000052414	HIST1H2AK	heart	present	gold quality	46.22
-ENSMMUG00000052414	HIST1H2AK	brain	present	gold quality	31.61
-ENSMMUG00000052414	HIST1H2AK	brain	present	gold quality	32.13
-ENSMMUG00000052414	HIST1H2AK	brain	present	gold quality	42.56
-ENSMMUG00000052414	HIST1H2AK	brain	present	gold quality	32.16
-ENSMMUG00000052414	HIST1H2AK	cerebral cortex	present	gold quality	45.7
-ENSMMUG00000052414	HIST1H2AK	adipose tissue	present	gold quality	47.58
-ENSMMUG00000052414	HIST1H2AK	colon	present	gold quality	45.92
-ENSMMUG00000052414	HIST1H2AK	spleen	present	gold quality	46.03
-ENSMMUG00000052414	HIST1H2AK	spleen	present	gold quality	41.6
-ENSMMUG00000052414	HIST1H2AK	liver	present	gold quality	41.66
-ENSMMUG00000052414	HIST1H2AK	liver	present	gold quality	40.07
-ENSMMUG00000052414	HIST1H2AK	liver	present	gold quality	45.73
-ENSMMUG00000052414	HIST1H2AK	liver	present	gold quality	54.94
-ENSMMUG00000052414	HIST1H2AK	liver	present	gold quality	65.85
-ENSMMUG00000052414	HIST1H2AK	liver	present	gold quality	64.2
-ENSMMUG00000052414	HIST1H2AK	hindlimb stylopod muscle	present	gold quality	32.63
-ENSMMUG00000052414	HIST1H2AK	olfactory segment of nasal mucosa	present	gold quality	35.03
-ENSMMUG00000052414	HIST1H2AK	dorsolateral prefrontal cortex	present	gold quality	54.46
-ENSMMUG00000055745	LOC106995531	spermatocyte	present	gold quality	66.66
-ENSMMUG00000055745	LOC106995531	spermatid	present	gold quality	79.42
-ENSMMUG00000055745	LOC106995531	prefrontal cortex	present	gold quality	47.75
-ENSMMUG00000055745	LOC106995531	prefrontal cortex	present	gold quality	46.48
-ENSMMUG00000055745	LOC106995531	prefrontal cortex	present	gold quality	47.6
-ENSMMUG00000055745	LOC106995531	prefrontal cortex	present	gold quality	47.64
-ENSMMUG00000055745	LOC106995531	multicellular organism	present	gold quality	33.06
-ENSMMUG00000055745	LOC106995531	multicellular organism	present	gold quality	36.31
-ENSMMUG00000055745	LOC106995531	multicellular organism	present	gold quality	44.07
-ENSMMUG00000055745	LOC106995531	testis	present	gold quality	81.29
-ENSMMUG00000055745	LOC106995531	testis	present	gold quality	71.72
-ENSMMUG00000055745	LOC106995531	testis	present	gold quality	74.18
-ENSMMUG00000055745	LOC106995531	heart	present	gold quality	40.35
-ENSMMUG00000055745	LOC106995531	heart	present	gold quality	43.97
-ENSMMUG00000055745	LOC106995531	heart	present	gold quality	44.09
-ENSMMUG00000055745	LOC106995531	heart	present	gold quality	58.63
-ENSMMUG00000055745	LOC106995531	brain	present	gold quality	47.99
-ENSMMUG00000055745	LOC106995531	brain	present	gold quality	48.15
-ENSMMUG00000055745	LOC106995531	brain	present	gold quality	56.97
-ENSMMUG00000055745	LOC106995531	brain	present	gold quality	47.92
-ENSMMUG00000055745	LOC106995531	cerebral cortex	present	gold quality	49.99
-ENSMMUG00000055745	LOC106995531	adipose tissue	present	gold quality	46.73
-ENSMMUG00000055745	LOC106995531	skeletal muscle tissue	present	gold quality	50.27
-ENSMMUG00000055745	LOC106995531	cortex of kidney	present	gold quality	39.81
-ENSMMUG00000055745	LOC106995531	cerebellum	present	gold quality	47.47
-ENSMMUG00000055745	LOC106995531	cerebellum	present	gold quality	47.54
-ENSMMUG00000055745	LOC106995531	cerebellum	present	gold quality	48.65
-ENSMMUG00000055745	LOC106995531	cerebellum	present	gold quality	52.22
-ENSMMUG00000055745	LOC106995531	cerebellum	present	gold quality	54.5
-ENSMMUG00000055745	LOC106995531	spleen	present	gold quality	42.9
-ENSMMUG00000055745	LOC106995531	liver	present	gold quality	45.0
-ENSMMUG00000055745	LOC106995531	kidney	present	gold quality	39.5
-ENSMMUG00000055745	LOC106995531	cerebellar cortex	present	gold quality	47.94
-ENSMMUG00000055745	LOC106995531	cerebellar cortex	present	gold quality	41.53
-ENSMMUG00000055745	LOC106995531	cerebellar cortex	present	gold quality	47.78
-ENSMMUG00000055745	LOC106995531	primary visual cortex	present	gold quality	52.46
-ENSMMUG00000055745	LOC106995531	superior frontal gyrus	present	gold quality	47.6
-ENSMMUG00000055745	LOC106995531	hindlimb stylopod muscle	present	gold quality	55.05
-ENSMMUG00000055745	LOC106995531	dorsolateral prefrontal cortex	present	gold quality	60.37
-ENSMMUG00000055745	LOC106995531	dorsolateral prefrontal cortex	present	gold quality	51.12
-ENSMMUG00000055788	HIST1H2AK	spermatocyte	present	gold quality	78.16
-ENSMMUG00000055788	HIST1H2AK	spermatid	present	gold quality	78.61
-ENSMMUG00000055788	HIST1H2AK	fibroblast	present	gold quality	64.38
-ENSMMUG00000055788	HIST1H2AK	prefrontal cortex	present	gold quality	38.69
-ENSMMUG00000055788	HIST1H2AK	prefrontal cortex	present	gold quality	38.51
-ENSMMUG00000055788	HIST1H2AK	prefrontal cortex	present	gold quality	38.74
-ENSMMUG00000055788	HIST1H2AK	multicellular organism	present	gold quality	42.26
-ENSMMUG00000055788	HIST1H2AK	multicellular organism	present	gold quality	42.78
-ENSMMUG00000055788	HIST1H2AK	multicellular organism	present	gold quality	37.67
-ENSMMUG00000055788	HIST1H2AK	testis	present	gold quality	56.86
-ENSMMUG00000055788	HIST1H2AK	testis	present	gold quality	47.04
-ENSMMUG00000055788	HIST1H2AK	testis	present	gold quality	48.53
-ENSMMUG00000055788	HIST1H2AK	heart	present	gold quality	45.33
-ENSMMUG00000055788	HIST1H2AK	brain	present	gold quality	36.61
-ENSMMUG00000055788	HIST1H2AK	brain	present	gold quality	38.34
-ENSMMUG00000055788	HIST1H2AK	brain	present	gold quality	40.71
-ENSMMUG00000055788	HIST1H2AK	brain	present	gold quality	38.7
-ENSMMUG00000055788	HIST1H2AK	cerebral cortex	present	gold quality	50.89
-ENSMMUG00000055788	HIST1H2AK	colon	present	gold quality	48.48
-ENSMMUG00000055788	HIST1H2AK	liver	present	gold quality	36.13
-ENSMMUG00000055788	HIST1H2AK	liver	present	gold quality	36.01
-ENSMMUG00000055788	HIST1H2AK	liver	present	gold quality	39.49
-ENSMMUG00000055788	HIST1H2AK	liver	present	gold quality	38.36
-ENSMMUG00000055788	HIST1H2AK	liver	present	gold quality	43.05
-ENSMMUG00000055788	HIST1H2AK	liver	present	gold quality	45.07
-ENSMMUG00000055788	HIST1H2AK	superior frontal gyrus	present	gold quality	34.03
-ENSMMUG00000055788	HIST1H2AK	olfactory segment of nasal mucosa	present	gold quality	29.91
-ENSMMUG00000055788	HIST1H2AK	dorsolateral prefrontal cortex	present	gold quality	48.11
-ENSMMUG00000055788	HIST1H2AK	dorsolateral prefrontal cortex	present	gold quality	47.76
-ENSMMUG00000059127	H2AFB3	spermatocyte	present	gold quality	66.66
-ENSMMUG00000059127	H2AFB3	spermatid	present	gold quality	79.42
-ENSMMUG00000059127	H2AFB3	prefrontal cortex	present	gold quality	47.75
-ENSMMUG00000059127	H2AFB3	prefrontal cortex	present	gold quality	46.48
-ENSMMUG00000059127	H2AFB3	prefrontal cortex	present	gold quality	47.6
-ENSMMUG00000059127	H2AFB3	prefrontal cortex	present	gold quality	47.64
-ENSMMUG00000059127	H2AFB3	multicellular organism	present	gold quality	33.06
-ENSMMUG00000059127	H2AFB3	multicellular organism	present	gold quality	36.31
-ENSMMUG00000059127	H2AFB3	multicellular organism	present	gold quality	44.07
-ENSMMUG00000059127	H2AFB3	testis	present	gold quality	81.29
-ENSMMUG00000059127	H2AFB3	testis	present	gold quality	71.72
-ENSMMUG00000059127	H2AFB3	testis	present	gold quality	74.18
-ENSMMUG00000059127	H2AFB3	heart	present	gold quality	40.35
-ENSMMUG00000059127	H2AFB3	heart	present	gold quality	43.97
-ENSMMUG00000059127	H2AFB3	heart	present	gold quality	44.09
-ENSMMUG00000059127	H2AFB3	heart	present	gold quality	58.63
-ENSMMUG00000059127	H2AFB3	brain	present	gold quality	47.99
-ENSMMUG00000059127	H2AFB3	brain	present	gold quality	48.15
-ENSMMUG00000059127	H2AFB3	brain	present	gold quality	56.97
-ENSMMUG00000059127	H2AFB3	brain	present	gold quality	47.92
-ENSMMUG00000059127	H2AFB3	cerebral cortex	present	gold quality	49.99
-ENSMMUG00000059127	H2AFB3	adipose tissue	present	gold quality	46.73
-ENSMMUG00000059127	H2AFB3	skeletal muscle tissue	present	gold quality	50.27
-ENSMMUG00000059127	H2AFB3	cortex of kidney	present	gold quality	39.81
-ENSMMUG00000059127	H2AFB3	cerebellum	present	gold quality	47.47
-ENSMMUG00000059127	H2AFB3	cerebellum	present	gold quality	47.54
-ENSMMUG00000059127	H2AFB3	cerebellum	present	gold quality	48.65
-ENSMMUG00000059127	H2AFB3	cerebellum	present	gold quality	52.22
-ENSMMUG00000059127	H2AFB3	cerebellum	present	gold quality	54.5
-ENSMMUG00000059127	H2AFB3	spleen	present	gold quality	42.9
-ENSMMUG00000059127	H2AFB3	liver	present	gold quality	45.0
-ENSMMUG00000059127	H2AFB3	kidney	present	gold quality	39.5
-ENSMMUG00000059127	H2AFB3	cerebellar cortex	present	gold quality	47.94
-ENSMMUG00000059127	H2AFB3	cerebellar cortex	present	gold quality	41.53
-ENSMMUG00000059127	H2AFB3	cerebellar cortex	present	gold quality	47.78
-ENSMMUG00000059127	H2AFB3	primary visual cortex	present	gold quality	52.46
-ENSMMUG00000059127	H2AFB3	superior frontal gyrus	present	gold quality	47.6
-ENSMMUG00000059127	H2AFB3	hindlimb stylopod muscle	present	gold quality	55.05
-ENSMMUG00000059127	H2AFB3	dorsolateral prefrontal cortex	present	gold quality	60.37
-ENSMMUG00000059127	H2AFB3	dorsolateral prefrontal cortex	present	gold quality	51.12
-ENSMMUG00000060294	HIST1H2AC	spermatocyte	present	gold quality	59.92
-ENSMMUG00000060294	HIST1H2AC	spermatid	present	gold quality	54.61
-ENSMMUG00000060294	HIST1H2AC	fibroblast	present	gold quality	84.75
-ENSMMUG00000060294	HIST1H2AC	adult mammalian kidney	present	gold quality	80.98
-ENSMMUG00000060294	HIST1H2AC	adult mammalian kidney	present	gold quality	72.81
-ENSMMUG00000060294	HIST1H2AC	adult mammalian kidney	present	gold quality	72.29
-ENSMMUG00000060294	HIST1H2AC	prefrontal cortex	present	gold quality	73.71
-ENSMMUG00000060294	HIST1H2AC	prefrontal cortex	present	gold quality	66.55
-ENSMMUG00000060294	HIST1H2AC	prefrontal cortex	present	gold quality	73.61
-ENSMMUG00000060294	HIST1H2AC	prefrontal cortex	present	gold quality	73.61
-ENSMMUG00000060294	HIST1H2AC	multicellular organism	present	gold quality	83.32
-ENSMMUG00000060294	HIST1H2AC	multicellular organism	present	gold quality	81.99
-ENSMMUG00000060294	HIST1H2AC	multicellular organism	present	gold quality	77.46
-ENSMMUG00000060294	HIST1H2AC	testis	present	gold quality	47.98
-ENSMMUG00000060294	HIST1H2AC	testis	present	gold quality	49.78
-ENSMMUG00000060294	HIST1H2AC	testis	present	gold quality	48.46
-ENSMMUG00000060294	HIST1H2AC	heart	present	gold quality	87.63
-ENSMMUG00000060294	HIST1H2AC	heart	present	gold quality	86.89
-ENSMMUG00000060294	HIST1H2AC	heart	present	gold quality	85.34
-ENSMMUG00000060294	HIST1H2AC	heart	present	gold quality	83.52
-ENSMMUG00000060294	HIST1H2AC	heart	present	gold quality	86.23
-ENSMMUG00000060294	HIST1H2AC	brain	present	gold quality	74.8
-ENSMMUG00000060294	HIST1H2AC	brain	present	gold quality	74.16
-ENSMMUG00000060294	HIST1H2AC	brain	present	gold quality	70.5
-ENSMMUG00000060294	HIST1H2AC	brain	present	gold quality	74.33
-ENSMMUG00000060294	HIST1H2AC	cerebral cortex	present	gold quality	74.09
-ENSMMUG00000060294	HIST1H2AC	adipose tissue	present	gold quality	89.5
-ENSMMUG00000060294	HIST1H2AC	skeletal muscle tissue	present	gold quality	86.03
-ENSMMUG00000060294	HIST1H2AC	skeletal muscle tissue	present	gold quality	81.1
-ENSMMUG00000060294	HIST1H2AC	colon	present	gold quality	85.2
-ENSMMUG00000060294	HIST1H2AC	cortex of kidney	present	gold quality	82.6
-ENSMMUG00000060294	HIST1H2AC	frontal cortex	present	gold quality	91.37
-ENSMMUG00000060294	HIST1H2AC	Ammon's horn	present	gold quality	84.36
-ENSMMUG00000060294	HIST1H2AC	cerebellum	present	gold quality	77.62
-ENSMMUG00000060294	HIST1H2AC	cerebellum	present	gold quality	78.84
-ENSMMUG00000060294	HIST1H2AC	cerebellum	present	gold quality	79.72
-ENSMMUG00000060294	HIST1H2AC	cerebellum	present	gold quality	69.68
-ENSMMUG00000060294	HIST1H2AC	cerebellum	present	gold quality	73.27
-ENSMMUG00000060294	HIST1H2AC	lung	present	gold quality	85.25
-ENSMMUG00000060294	HIST1H2AC	lung	present	gold quality	90.7
-ENSMMUG00000060294	HIST1H2AC	spleen	present	gold quality	85.14
-ENSMMUG00000060294	HIST1H2AC	spleen	present	gold quality	80.77
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	85.89
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	88.5
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	90.03
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	88.26
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	88.28
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	86.44
-ENSMMUG00000060294	HIST1H2AC	liver	present	gold quality	89.14
-ENSMMUG00000060294	HIST1H2AC	kidney	present	gold quality	81.39
-ENSMMUG00000060294	HIST1H2AC	kidney	present	gold quality	81.52
-ENSMMUG00000060294	HIST1H2AC	ileum	present	gold quality	76.87
-ENSMMUG00000060294	HIST1H2AC	cerebellar cortex	present	gold quality	81.01
-ENSMMUG00000060294	HIST1H2AC	cerebellar cortex	present	gold quality	79.65
-ENSMMUG00000060294	HIST1H2AC	cerebellar cortex	present	gold quality	76.37
-ENSMMUG00000060294	HIST1H2AC	primary visual cortex	present	gold quality	73.37
-ENSMMUG00000060294	HIST1H2AC	superior frontal gyrus	present	gold quality	76.82
-ENSMMUG00000060294	HIST1H2AC	hindlimb stylopod muscle	present	gold quality	86.63
-ENSMMUG00000060294	HIST1H2AC	olfactory segment of nasal mucosa	present	gold quality	75.57
-ENSMMUG00000060294	HIST1H2AC	dorsolateral prefrontal cortex	present	gold quality	71.91
-ENSMMUG00000060294	HIST1H2AC	dorsolateral prefrontal cortex	present	gold quality	71.64
-ENSMMUG00000060663	HIST1H2AE	spermatocyte	present	gold quality	59.42
-ENSMMUG00000060663	HIST1H2AE	spermatid	present	gold quality	73.05
-ENSMMUG00000060663	HIST1H2AE	fibroblast	present	gold quality	61.2
-ENSMMUG00000060663	HIST1H2AE	adult mammalian kidney	present	gold quality	52.61
-ENSMMUG00000060663	HIST1H2AE	adult mammalian kidney	present	gold quality	57.41
-ENSMMUG00000060663	HIST1H2AE	prefrontal cortex	present	gold quality	39.69
-ENSMMUG00000060663	HIST1H2AE	prefrontal cortex	present	gold quality	65.41
-ENSMMUG00000060663	HIST1H2AE	prefrontal cortex	present	gold quality	39.91
-ENSMMUG00000060663	HIST1H2AE	prefrontal cortex	present	gold quality	39.66
-ENSMMUG00000060663	HIST1H2AE	multicellular organism	present	gold quality	47.16
-ENSMMUG00000060663	HIST1H2AE	multicellular organism	present	gold quality	49.7
-ENSMMUG00000060663	HIST1H2AE	multicellular organism	present	gold quality	47.02
-ENSMMUG00000060663	HIST1H2AE	testis	present	gold quality	71.44
-ENSMMUG00000060663	HIST1H2AE	testis	present	gold quality	60.73
-ENSMMUG00000060663	HIST1H2AE	testis	present	gold quality	63.27
-ENSMMUG00000060663	HIST1H2AE	heart	present	gold quality	47.41
-ENSMMUG00000060663	HIST1H2AE	heart	present	gold quality	55.67
-ENSMMUG00000060663	HIST1H2AE	heart	present	gold quality	47.27
-ENSMMUG00000060663	HIST1H2AE	heart	present	gold quality	58.33
-ENSMMUG00000060663	HIST1H2AE	heart	present	gold quality	46.7
-ENSMMUG00000060663	HIST1H2AE	brain	present	gold quality	43.28
-ENSMMUG00000060663	HIST1H2AE	brain	present	gold quality	40.93
-ENSMMUG00000060663	HIST1H2AE	brain	present	gold quality	45.12
-ENSMMUG00000060663	HIST1H2AE	brain	present	gold quality	40.14
-ENSMMUG00000060663	HIST1H2AE	cerebral cortex	present	gold quality	51.49
-ENSMMUG00000060663	HIST1H2AE	adipose tissue	present	gold quality	63.92
-ENSMMUG00000060663	HIST1H2AE	skeletal muscle tissue	present	gold quality	67.14
-ENSMMUG00000060663	HIST1H2AE	skeletal muscle tissue	present	gold quality	44.9
-ENSMMUG00000060663	HIST1H2AE	colon	present	gold quality	54.31
-ENSMMUG00000060663	HIST1H2AE	cortex of kidney	present	gold quality	51.74
-ENSMMUG00000060663	HIST1H2AE	frontal cortex	present	gold quality	47.08
-ENSMMUG00000060663	HIST1H2AE	cerebellum	present	gold quality	47.92
-ENSMMUG00000060663	HIST1H2AE	cerebellum	present	gold quality	55.49
-ENSMMUG00000060663	HIST1H2AE	cerebellum	present	gold quality	54.33
-ENSMMUG00000060663	HIST1H2AE	cerebellum	present	gold quality	55.56
-ENSMMUG00000060663	HIST1H2AE	lung	present	gold quality	52.12
-ENSMMUG00000060663	HIST1H2AE	lung	present	gold quality	40.73
-ENSMMUG00000060663	HIST1H2AE	spleen	present	gold quality	51.53
-ENSMMUG00000060663	HIST1H2AE	spleen	present	gold quality	46.34
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	49.05
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	52.22
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	45.44
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	57.27
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	66.11
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	75.38
-ENSMMUG00000060663	HIST1H2AE	liver	present	gold quality	71.17
-ENSMMUG00000060663	HIST1H2AE	kidney	present	gold quality	52.01
-ENSMMUG00000060663	HIST1H2AE	kidney	present	gold quality	53.82
-ENSMMUG00000060663	HIST1H2AE	cerebellar cortex	present	gold quality	56.05
-ENSMMUG00000060663	HIST1H2AE	cerebellar cortex	present	gold quality	70.3
-ENSMMUG00000060663	HIST1H2AE	cerebellar cortex	present	gold quality	60.9
-ENSMMUG00000060663	HIST1H2AE	primary visual cortex	present	gold quality	51.59
-ENSMMUG00000060663	HIST1H2AE	superior frontal gyrus	present	gold quality	40.82
-ENSMMUG00000060663	HIST1H2AE	hindlimb stylopod muscle	present	gold quality	43.78
-ENSMMUG00000060663	HIST1H2AE	olfactory segment of nasal mucosa	present	gold quality	49.02
-ENSMMUG00000060663	HIST1H2AE	dorsolateral prefrontal cortex	present	gold quality	49.77
-ENSMMUG00000061036	H2AC21	spermatocyte	present	gold quality	41.4
-ENSMMUG00000061036	H2AC21	spermatid	present	gold quality	47.96
-ENSMMUG00000061036	H2AC21	fibroblast	present	gold quality	46.92
-ENSMMUG00000061036	H2AC21	adult mammalian kidney	present	gold quality	48.05
-ENSMMUG00000061036	H2AC21	adult mammalian kidney	present	gold quality	65.46
-ENSMMUG00000061036	H2AC21	adult mammalian kidney	present	gold quality	56.2
-ENSMMUG00000061036	H2AC21	prefrontal cortex	present	gold quality	36.33
-ENSMMUG00000061036	H2AC21	prefrontal cortex	present	gold quality	36.51
-ENSMMUG00000061036	H2AC21	prefrontal cortex	present	gold quality	36.42
-ENSMMUG00000061036	H2AC21	multicellular organism	present	gold quality	34.66
-ENSMMUG00000061036	H2AC21	multicellular organism	present	gold quality	36.19
-ENSMMUG00000061036	H2AC21	multicellular organism	present	gold quality	43.95
-ENSMMUG00000061036	H2AC21	testis	present	gold quality	58.93
-ENSMMUG00000061036	H2AC21	testis	present	gold quality	58.71
-ENSMMUG00000061036	H2AC21	testis	present	gold quality	67.72
-ENSMMUG00000061036	H2AC21	heart	present	gold quality	40.2
-ENSMMUG00000061036	H2AC21	heart	present	gold quality	46.97
-ENSMMUG00000061036	H2AC21	heart	present	gold quality	57.38
-ENSMMUG00000061036	H2AC21	heart	present	gold quality	67.37
-ENSMMUG00000061036	H2AC21	brain	present	gold quality	37.87
-ENSMMUG00000061036	H2AC21	brain	present	gold quality	37.2
-ENSMMUG00000061036	H2AC21	brain	present	gold quality	45.42
-ENSMMUG00000061036	H2AC21	brain	present	gold quality	36.84
-ENSMMUG00000061036	H2AC21	cerebral cortex	present	gold quality	47.75
-ENSMMUG00000061036	H2AC21	adipose tissue	present	gold quality	48.07
-ENSMMUG00000061036	H2AC21	skeletal muscle tissue	present	gold quality	44.8
-ENSMMUG00000061036	H2AC21	colon	present	gold quality	31.62
-ENSMMUG00000061036	H2AC21	cortex of kidney	present	gold quality	55.54
-ENSMMUG00000061036	H2AC21	frontal cortex	present	gold quality	36.87
-ENSMMUG00000061036	H2AC21	cerebellum	present	gold quality	48.01
-ENSMMUG00000061036	H2AC21	cerebellum	present	gold quality	40.96
-ENSMMUG00000061036	H2AC21	cerebellum	present	gold quality	38.27
-ENSMMUG00000061036	H2AC21	cerebellum	present	gold quality	53.02
-ENSMMUG00000061036	H2AC21	cerebellum	present	gold quality	52.27
-ENSMMUG00000061036	H2AC21	spleen	present	gold quality	48.13
-ENSMMUG00000061036	H2AC21	liver	present	gold quality	65.38
-ENSMMUG00000061036	H2AC21	liver	present	gold quality	73.09
-ENSMMUG00000061036	H2AC21	liver	present	gold quality	70.29
-ENSMMUG00000061036	H2AC21	liver	present	gold quality	67.23
-ENSMMUG00000061036	H2AC21	liver	present	gold quality	75.99
-ENSMMUG00000061036	H2AC21	liver	present	gold quality	81.65
-ENSMMUG00000061036	H2AC21	kidney	present	gold quality	49.75
-ENSMMUG00000061036	H2AC21	kidney	present	gold quality	52.78
-ENSMMUG00000061036	H2AC21	cerebellar cortex	present	gold quality	42.05
-ENSMMUG00000061036	H2AC21	cerebellar cortex	present	gold quality	44.29
-ENSMMUG00000061036	H2AC21	primary visual cortex	present	gold quality	46.22
-ENSMMUG00000061036	H2AC21	superior frontal gyrus	present	gold quality	46.46
-ENSMMUG00000061036	H2AC21	hindlimb stylopod muscle	present	gold quality	57.53
-ENSMMUG00000061036	H2AC21	olfactory segment of nasal mucosa	present	gold quality	57.26
-ENSMMUG00000061036	H2AC21	dorsolateral prefrontal cortex	present	gold quality	44.22
-ENSMMUG00000061750	H2AC12	spermatocyte	present	gold quality	46.56
-ENSMMUG00000061750	H2AC12	spermatid	present	gold quality	49.68
-ENSMMUG00000061750	H2AC12	fibroblast	present	gold quality	45.19
-ENSMMUG00000061750	H2AC12	multicellular organism	present	gold quality	29.57
-ENSMMUG00000061750	H2AC12	multicellular organism	present	gold quality	31.21
-ENSMMUG00000061750	H2AC12	multicellular organism	present	gold quality	28.13
-ENSMMUG00000061750	H2AC12	heart	present	gold quality	46.77
-ENSMMUG00000061750	H2AC12	colon	present	gold quality	42.3
-ENSMMUG00000061750	H2AC12	liver	present	gold quality	38.78
-ENSMMUG00000061750	H2AC12	liver	present	gold quality	34.7
-ENSMMUG00000061750	H2AC12	liver	present	gold quality	44.95
-ENSMMUG00000061750	H2AC12	liver	present	gold quality	46.92
-ENSMMUG00000061750	H2AC12	liver	present	gold quality	46.59
-ENSMMUG00000061750	H2AC12	liver	present	gold quality	59.36
-ENSMMUG00000062046	LOC704994	fibroblast	present	gold quality	45.37
-ENSMMUG00000062046	LOC704994	multicellular organism	present	gold quality	34.19
-ENSMMUG00000062046	LOC704994	multicellular organism	present	gold quality	28.91
-ENSMMUG00000062046	LOC704994	multicellular organism	present	gold quality	28.59
-ENSMMUG00000062046	LOC704994	colon	present	gold quality	42.2
-ENSMMUG00000062046	LOC704994	liver	present	gold quality	41.24
-ENSMMUG00000062046	LOC704994	liver	present	gold quality	36.28
-ENSMMUG00000062046	LOC704994	liver	present	gold quality	47.36
-ENSMMUG00000062046	LOC704994	liver	present	gold quality	54.41
-ENSMMUG00000062046	LOC704994	liver	present	gold quality	52.23
-ENSMMUG00000062046	LOC704994	liver	present	gold quality	68.46
-ENSMMUG00000062046	LOC704994	olfactory segment of nasal mucosa	present	gold quality	52.59
+Gene ID	Gene name	Anatomical entity name	cell_mean_score	cell_std_score	cell_n	cell_status	Expression score	Expression std	Expression n	raw_row_count	qualifying_row_count
+ENSMMUG00000000962	H2AZ2	Ammon's horn	91.12	0.0	1	present_gold	91.12	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	adipose tissue	86.4	0.0	1	present_gold	86.4	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	adult mammalian kidney	96.34333333333335	0.8279090127141587	3	present_gold	96.34333333333335	0.8279090127141587	3	3	3
+ENSMMUG00000000962	H2AZ2	brain	94.595	1.1382003338604356	4	present_gold	94.595	1.1382003338604356	4	4	4
+ENSMMUG00000000962	H2AZ2	cerebellar cortex	97.56	1.3173078607523734	3	present_gold	97.56	1.3173078607523734	3	3	3
+ENSMMUG00000000962	H2AZ2	cerebellum	96.99	0.6008743629079232	5	present_gold	96.99	0.6008743629079232	5	5	5
+ENSMMUG00000000962	H2AZ2	cerebral cortex	94.89	0.0	1	present_gold	94.89	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	colon	97.73	0.0	1	present_gold	97.73	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	cortex of kidney	95.39	0.0	1	present_gold	95.39	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	dorsolateral prefrontal cortex	95.97	0.7778174593051983	2	present_gold	95.97	0.7778174593051983	2	2	2
+ENSMMUG00000000962	H2AZ2	fibroblast	93.34	0.0	1	present_gold	93.34	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	frontal cortex	92.55	0.0	1	present_gold	92.55	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	heart	96.61	0.8378842402146006	5	present_gold	96.61	0.8378842402146006	5	5	5
+ENSMMUG00000000962	H2AZ2	hindlimb stylopod muscle	96.5	0.0	1	present_gold	96.5	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	ileum	91.02	0.0	1	present_gold	91.02	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	kidney	94.695	0.14849242404917057	2	present_gold	94.695	0.14849242404917057	2	2	2
+ENSMMUG00000000962	H2AZ2	liver	92.2957142857143	2.2023612869134896	7	present_gold	92.2957142857143	2.2023612869134896	7	7	7
+ENSMMUG00000000962	H2AZ2	lung	93.63499999999999	3.3870414818835672	2	present_gold	93.63499999999999	3.3870414818835672	2	2	2
+ENSMMUG00000000962	H2AZ2	multicellular organism	96.01666666666667	1.2843026642241837	3	present_gold	96.01666666666667	1.2843026642241837	3	3	3
+ENSMMUG00000000962	H2AZ2	olfactory segment of nasal mucosa	96.0	0.0	1	present_gold	96.0	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	prefrontal cortex	94.69749999999999	1.3557623931451548	4	present_gold	94.69749999999999	1.3557623931451548	4	4	4
+ENSMMUG00000000962	H2AZ2	primary visual cortex	93.36	0.0	1	present_gold	93.36	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	skeletal muscle tissue	94.785	2.0152543263816565	2	present_gold	94.785	2.0152543263816565	2	2	2
+ENSMMUG00000000962	H2AZ2	spermatid	97.18	0.0	1	present_gold	97.18	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	spermatocyte	97.04	0.0	1	present_gold	97.04	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	spleen	95.16499999999999	2.36880771697494	2	present_gold	95.16499999999999	2.36880771697494	2	2	2
+ENSMMUG00000000962	H2AZ2	superior frontal gyrus	92.86	0.0	1	present_gold	92.86	0.0	1	1	1
+ENSMMUG00000000962	H2AZ2	testis	97.19333333333333	0.9569918146637109	3	present_gold	97.19333333333333	0.9569918146637109	3	3	3
+ENSMMUG00000006395	H2AFY2	Ammon's horn	51.52	0.0	1	present_gold	51.52	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	adipose tissue	51.86	0.0	1	present_gold	51.86	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	adult mammalian kidney	64.68333333333334	1.8436196281590589	3	present_gold	64.68333333333334	1.8436196281590589	3	3	3
+ENSMMUG00000006395	H2AFY2	brain	69.3725	0.6411643055151034	4	present_gold	69.3725	0.6411643055151034	4	4	4
+ENSMMUG00000006395	H2AFY2	cerebellar cortex	77.35000000000001	8.346705937074818	3	present_gold	77.35000000000001	8.346705937074818	3	3	3
+ENSMMUG00000006395	H2AFY2	cerebellum	73.71000000000001	2.5321433608703923	5	present_gold	73.71000000000001	2.5321433608703923	5	5	5
+ENSMMUG00000006395	H2AFY2	cerebral cortex	65.47	0.0	1	present_gold	65.47	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	colon	54.61	0.0	1	present_gold	54.61	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	cortex of kidney	60.86	0.0	1	present_gold	60.86	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	dorsolateral prefrontal cortex	68.19999999999999	0.7212489168102757	2	present_gold	68.19999999999999	0.7212489168102757	2	2	2
+ENSMMUG00000006395	H2AFY2	fibroblast	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000006395	H2AFY2	frontal cortex	53.02	0.0	1	present_gold	53.02	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	heart	65.606	3.033064456947793	5	present_gold	65.606	3.033064456947793	5	5	5
+ENSMMUG00000006395	H2AFY2	hindlimb stylopod muscle	56.24	0.0	1	present_gold	56.24	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000006395	H2AFY2	kidney	61.295	0.38890872965259915	2	present_gold	61.295	0.38890872965259915	2	2	2
+ENSMMUG00000006395	H2AFY2	liver	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000006395	H2AFY2	lung	41.2	0.0	1	present_gold	41.2	0.0	1	2	1
+ENSMMUG00000006395	H2AFY2	multicellular organism	55.92666666666667	4.612378273009848	3	present_gold	55.92666666666667	4.612378273009848	3	3	3
+ENSMMUG00000006395	H2AFY2	olfactory segment of nasal mucosa	64.8	0.0	1	present_gold	64.8	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	prefrontal cortex	72.565	4.2233833198830855	4	present_gold	72.565	4.2233833198830855	4	4	4
+ENSMMUG00000006395	H2AFY2	primary visual cortex	69.78	0.0	1	present_gold	69.78	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	skeletal muscle tissue	60.66	0.0	1	present_gold	60.66	0.0	1	2	1
+ENSMMUG00000006395	H2AFY2	spermatid	46.83	0.0	1	present_gold	46.83	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	spermatocyte	47.92	0.0	1	present_gold	47.92	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000006395	H2AFY2	superior frontal gyrus	68.37	0.0	1	present_gold	68.37	0.0	1	1	1
+ENSMMUG00000006395	H2AFY2	testis	55.38333333333333	2.4407444219609156	3	present_gold	55.38333333333333	2.4407444219609156	3	3	3
+ENSMMUG00000014465	H2AFY	Ammon's horn	93.38	0.0	1	present_gold	93.38	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	adipose tissue	95.55	0.0	1	present_gold	95.55	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	adult mammalian kidney	96.18333333333334	0.3592121007612824	3	present_gold	96.18333333333334	0.3592121007612824	3	3	3
+ENSMMUG00000014465	H2AFY	brain	95.89	0.15165750888103083	4	present_gold	95.89	0.15165750888103083	4	4	4
+ENSMMUG00000014465	H2AFY	cerebellar cortex	97.07000000000001	0.3143246729100386	3	present_gold	97.07000000000001	0.3143246729100386	3	3	3
+ENSMMUG00000014465	H2AFY	cerebellum	96.516	0.5941632772226825	5	present_gold	96.516	0.5941632772226825	5	5	5
+ENSMMUG00000014465	H2AFY	cerebral cortex	93.26	0.0	1	present_gold	93.26	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	colon	97.38	0.0	1	present_gold	97.38	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	cortex of kidney	96.07	0.0	1	present_gold	96.07	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	dorsolateral prefrontal cortex	95.235	0.33234018715767655	2	present_gold	95.235	0.33234018715767655	2	2	2
+ENSMMUG00000014465	H2AFY	fibroblast	94.96	0.0	1	present_gold	94.96	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	frontal cortex	94.42	0.0	1	present_gold	94.42	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	heart	94.792	0.6759955621156091	5	present_gold	94.792	0.6759955621156091	5	5	5
+ENSMMUG00000014465	H2AFY	hindlimb stylopod muscle	95.85	0.0	1	present_gold	95.85	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	ileum	91.22	0.0	1	present_gold	91.22	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	kidney	95.87	0.4242640687119345	2	present_gold	95.87	0.4242640687119345	2	2	2
+ENSMMUG00000014465	H2AFY	liver	91.89857142857143	0.6422727502504563	7	present_gold	91.89857142857143	0.6422727502504563	7	7	7
+ENSMMUG00000014465	H2AFY	lung	96.39	0.6929646455628093	2	present_gold	96.39	0.6929646455628093	2	2	2
+ENSMMUG00000014465	H2AFY	multicellular organism	95.89999999999999	0.7631513611335566	3	present_gold	95.89999999999999	0.7631513611335566	3	3	3
+ENSMMUG00000014465	H2AFY	olfactory segment of nasal mucosa	96.99	0.0	1	present_gold	96.99	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	prefrontal cortex	96.2825	0.06551081335677675	4	present_gold	96.2825	0.06551081335677675	4	4	4
+ENSMMUG00000014465	H2AFY	primary visual cortex	95.65	0.0	1	present_gold	95.65	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	skeletal muscle tissue	96.19999999999999	0.014142135623728137	2	present_gold	96.19999999999999	0.014142135623728137	2	2	2
+ENSMMUG00000014465	H2AFY	spermatid	66.81	0.0	1	present_gold	66.81	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	spermatocyte	77.13	0.0	1	present_gold	77.13	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	spleen	97.815	0.16263455967290874	2	present_gold	97.815	0.16263455967290874	2	2	2
+ENSMMUG00000014465	H2AFY	superior frontal gyrus	95.04	0.0	1	present_gold	95.04	0.0	1	1	1
+ENSMMUG00000014465	H2AFY	testis	80.36333333333333	3.5191807758814164	3	present_gold	80.36333333333333	3.5191807758814164	3	3	3
+ENSMMUG00000018013	H2AJ	Ammon's horn	62.8	0.0	1	present_gold	62.8	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	adipose tissue	98.51	0.0	1	present_gold	98.51	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	adult mammalian kidney	95.74666666666667	1.8510627578051804	3	present_gold	95.74666666666667	1.8510627578051804	3	3	3
+ENSMMUG00000018013	H2AJ	brain	75.92	1.4596118205422497	4	present_gold	75.92	1.4596118205422497	4	4	4
+ENSMMUG00000018013	H2AJ	cerebellar cortex	79.62	4.464336456854481	3	present_gold	79.62	4.464336456854481	3	3	3
+ENSMMUG00000018013	H2AJ	cerebellum	76.49600000000001	5.390141927630481	5	present_gold	76.49600000000001	5.390141927630481	5	5	5
+ENSMMUG00000018013	H2AJ	cerebral cortex	67.2	0.0	1	present_gold	67.2	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	colon	92.38	0.0	1	present_gold	92.38	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	cortex of kidney	95.73	0.0	1	present_gold	95.73	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	dorsolateral prefrontal cortex	74.395	1.1667261889578076	2	present_gold	74.395	1.1667261889578076	2	2	2
+ENSMMUG00000018013	H2AJ	fibroblast	95.16	0.0	1	present_gold	95.16	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	frontal cortex	74.02	0.0	1	present_gold	74.02	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	heart	94.886	2.959793911744532	5	present_gold	94.886	2.959793911744532	5	5	5
+ENSMMUG00000018013	H2AJ	hindlimb stylopod muscle	89.31	0.0	1	present_gold	89.31	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	ileum	81.75	0.0	1	present_gold	81.75	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	kidney	95.555	0.47376154339498805	2	present_gold	95.555	0.47376154339498805	2	2	2
+ENSMMUG00000018013	H2AJ	liver	96.14142857142858	0.44603544595426525	7	present_gold	96.14142857142858	0.44603544595426525	7	7	7
+ENSMMUG00000018013	H2AJ	lung	90.035	6.4417427766094475	2	present_gold	90.035	6.4417427766094475	2	2	2
+ENSMMUG00000018013	H2AJ	multicellular organism	85.91333333333334	1.5843715894111912	3	present_gold	85.91333333333334	1.5843715894111912	3	3	3
+ENSMMUG00000018013	H2AJ	olfactory segment of nasal mucosa	98.76	0.0	1	present_gold	98.76	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	prefrontal cortex	76.245	4.070622393033609	4	present_gold	76.245	4.070622393033609	4	4	4
+ENSMMUG00000018013	H2AJ	primary visual cortex	76.44	0.0	1	present_gold	76.44	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	skeletal muscle tissue	88.405	0.28991378028648207	2	present_gold	88.405	0.28991378028648207	2	2	2
+ENSMMUG00000018013	H2AJ	spermatid	94.21	0.0	1	present_gold	94.21	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	spermatocyte	94.55	0.0	1	present_gold	94.55	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	spleen	90.095	5.975052301026318	2	present_gold	90.095	5.975052301026318	2	2	2
+ENSMMUG00000018013	H2AJ	superior frontal gyrus	81.13	0.0	1	present_gold	81.13	0.0	1	1	1
+ENSMMUG00000018013	H2AJ	testis	99.53333333333335	0.07234178138069844	3	present_gold	99.53333333333335	0.07234178138069844	3	3	3
+ENSMMUG00000037540	H2AC20	adipose tissue	96.39	0.0	1	present_gold	96.39	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	adult mammalian kidney	86.03666666666668	6.6932827023317385	3	present_gold	86.03666666666668	6.6932827023317385	3	3	3
+ENSMMUG00000037540	H2AC20	brain	67.4925	1.714280704357759	4	present_gold	67.4925	1.714280704357759	4	4	4
+ENSMMUG00000037540	H2AC20	cerebellar cortex	73.75	1.0811567878897148	3	present_gold	73.75	1.0811567878897148	3	3	3
+ENSMMUG00000037540	H2AC20	cerebellum	66.94800000000001	4.335824027794484	5	present_gold	66.94800000000001	4.335824027794484	5	5	5
+ENSMMUG00000037540	H2AC20	cerebral cortex	62.15	0.0	1	present_gold	62.15	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	colon	67.84	0.0	1	present_gold	67.84	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	cortex of kidney	89.32	0.0	1	present_gold	89.32	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	dorsolateral prefrontal cortex	63.495	5.451793282948277	2	present_gold	63.495	5.451793282948277	2	2	2
+ENSMMUG00000037540	H2AC20	fibroblast	91.56	0.0	1	present_gold	91.56	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	frontal cortex	70.24	0.0	1	present_gold	70.24	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	heart	81.55	4.0309800297198235	5	present_gold	81.55	4.0309800297198235	5	5	5
+ENSMMUG00000037540	H2AC20	hindlimb stylopod muscle	84.37	0.0	1	present_gold	84.37	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	ileum	87.0	0.0	1	present_gold	87.0	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	kidney	87.915	2.100107140124045	2	present_gold	87.915	2.100107140124045	2	2	2
+ENSMMUG00000037540	H2AC20	liver	91.80571428571429	3.1397603790887048	7	present_gold	91.80571428571429	3.1397603790887048	7	7	7
+ENSMMUG00000037540	H2AC20	lung	79.225	17.35947147812974	2	present_gold	79.225	17.35947147812974	2	2	2
+ENSMMUG00000037540	H2AC20	multicellular organism	78.94	1.9178373236539084	3	present_gold	78.94	1.9178373236539084	3	3	3
+ENSMMUG00000037540	H2AC20	olfactory segment of nasal mucosa	95.84	0.0	1	present_gold	95.84	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	prefrontal cortex	68.9725	0.824110631731767	4	present_gold	68.9725	0.824110631731767	4	4	4
+ENSMMUG00000037540	H2AC20	primary visual cortex	72.97	0.0	1	present_gold	72.97	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	skeletal muscle tissue	83.755	10.118698038779497	2	present_gold	83.755	10.118698038779497	2	2	2
+ENSMMUG00000037540	H2AC20	spermatid	98.68	0.0	1	present_gold	98.68	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	spermatocyte	96.66	0.0	1	present_gold	96.66	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	spleen	80.99000000000001	16.13617674667702	2	present_gold	80.99000000000001	16.13617674667702	2	2	2
+ENSMMUG00000037540	H2AC20	superior frontal gyrus	74.67	0.0	1	present_gold	74.67	0.0	1	1	1
+ENSMMUG00000037540	H2AC20	testis	97.04	1.9600765291181828	3	present_gold	97.04	1.9600765291181828	3	3	3
+ENSMMUG00000038454	H2AFZ	Ammon's horn	97.74	0.0	1	present_gold	97.74	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	adipose tissue	94.66	0.0	1	present_gold	94.66	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	adult mammalian kidney	94.13	2.8936309370754225	3	present_gold	94.13	2.8936309370754225	3	3	3
+ENSMMUG00000038454	H2AFZ	brain	98.1675	0.3587362076326686	4	present_gold	98.1675	0.3587362076326686	4	4	4
+ENSMMUG00000038454	H2AFZ	cerebellar cortex	98.48333333333333	0.0971253485622233	3	present_gold	98.48333333333333	0.0971253485622233	3	3	3
+ENSMMUG00000038454	H2AFZ	cerebellum	98.546	0.5299339581495025	5	present_gold	98.546	0.5299339581495025	5	5	5
+ENSMMUG00000038454	H2AFZ	cerebral cortex	99.1	0.0	1	present_gold	99.1	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	colon	98.56	0.0	1	present_gold	98.56	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	cortex of kidney	96.09	0.0	1	present_gold	96.09	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	dorsolateral prefrontal cortex	97.65	0.014142135623728137	2	present_gold	97.65	0.014142135623728137	2	2	2
+ENSMMUG00000038454	H2AFZ	fibroblast	97.46	0.0	1	present_gold	97.46	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	frontal cortex	97.2	0.0	1	present_gold	97.2	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	heart	93.70599999999999	1.1198124843026205	5	present_gold	93.70599999999999	1.1198124843026205	5	5	5
+ENSMMUG00000038454	H2AFZ	hindlimb stylopod muscle	96.61	0.0	1	present_gold	96.61	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	ileum	99.38	0.0	1	present_gold	99.38	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	kidney	95.61	0.36769552621701196	2	present_gold	95.61	0.36769552621701196	2	2	2
+ENSMMUG00000038454	H2AFZ	liver	92.65142857142857	0.9144657560825425	7	present_gold	92.65142857142857	0.9144657560825425	7	7	7
+ENSMMUG00000038454	H2AFZ	lung	96.835	0.37476659402887097	2	present_gold	96.835	0.37476659402887097	2	2	2
+ENSMMUG00000038454	H2AFZ	multicellular organism	98.16333333333334	0.7737139867763387	3	present_gold	98.16333333333334	0.7737139867763387	3	3	3
+ENSMMUG00000038454	H2AFZ	olfactory segment of nasal mucosa	98.52	0.0	1	present_gold	98.52	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	prefrontal cortex	98.3275	0.26499999999999346	4	present_gold	98.3275	0.26499999999999346	4	4	4
+ENSMMUG00000038454	H2AFZ	primary visual cortex	98.37	0.0	1	present_gold	98.37	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	skeletal muscle tissue	95.66999999999999	3.0829855659733467	2	present_gold	95.66999999999999	3.0829855659733467	2	2	2
+ENSMMUG00000038454	H2AFZ	spermatid	98.9	0.0	1	present_gold	98.9	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	spermatocyte	99.69	0.0	1	present_gold	99.69	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	spleen	97.91499999999999	0.8131727983645236	2	present_gold	97.91499999999999	0.8131727983645236	2	2	2
+ENSMMUG00000038454	H2AFZ	superior frontal gyrus	97.7	0.0	1	present_gold	97.7	0.0	1	1	1
+ENSMMUG00000038454	H2AFZ	testis	98.63666666666666	0.3074627348693348	3	present_gold	98.63666666666666	0.3074627348693348	3	3	3
+ENSMMUG00000039988	HIST1H2AA	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	adult mammalian kidney	47.31	9.574225817265853	2	present_gold	47.31	9.574225817265853	2	3	2
+ENSMMUG00000039988	HIST1H2AA	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000039988	HIST1H2AA	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000039988	HIST1H2AA	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000039988	HIST1H2AA	cerebral cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	colon	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	cortex of kidney	37.52	0.0	1	present_gold	37.52	0.0	1	1	1
+ENSMMUG00000039988	HIST1H2AA	dorsolateral prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000039988	HIST1H2AA	fibroblast	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000039988	HIST1H2AA	hindlimb stylopod muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	kidney	38.7	1.2445079348883221	2	present_gold	38.7	1.2445079348883221	2	2	2
+ENSMMUG00000039988	HIST1H2AA	liver	41.730000000000004	6.406387437550117	2	present_gold	41.730000000000004	6.406387437550117	2	4	2
+ENSMMUG00000039988	HIST1H2AA	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000039988	HIST1H2AA	multicellular organism	32.71666666666667	4.911357585569732	3	present_gold	32.71666666666667	4.911357585569732	3	3	3
+ENSMMUG00000039988	HIST1H2AA	olfactory segment of nasal mucosa	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000039988	HIST1H2AA	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000039988	HIST1H2AA	spermatid	68.8	0.0	1	present_gold	68.8	0.0	1	1	1
+ENSMMUG00000039988	HIST1H2AA	spermatocyte	88.12	0.0	1	present_gold	88.12	0.0	1	1	1
+ENSMMUG00000039988	HIST1H2AA	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000039988	HIST1H2AA	superior frontal gyrus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000039988	HIST1H2AA	testis	59.330000000000005	8.507990362006767	3	present_gold	59.330000000000005	8.507990362006767	3	3	3
+ENSMMUG00000042665	HIST1H2AK	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	adult mammalian kidney	47.72	0.0	1	present_gold	47.72	0.0	1	3	1
+ENSMMUG00000042665	HIST1H2AK	brain	42.489999999999995	2.487448491929029	4	present_gold	42.489999999999995	2.487448491929029	4	4	4
+ENSMMUG00000042665	HIST1H2AK	cerebellar cortex	48.13333333333333	0.9737213838328336	3	present_gold	48.13333333333333	0.9737213838328336	3	3	3
+ENSMMUG00000042665	HIST1H2AK	cerebellum	49.384	3.0265706666126273	5	present_gold	49.384	3.0265706666126273	5	5	5
+ENSMMUG00000042665	HIST1H2AK	cerebral cortex	47.36	0.0	1	present_gold	47.36	0.0	1	1	1
+ENSMMUG00000042665	HIST1H2AK	colon	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	dorsolateral prefrontal cortex	48.84	0.0	1	present_gold	48.84	0.0	1	2	1
+ENSMMUG00000042665	HIST1H2AK	fibroblast	43.73	0.0	1	present_gold	43.73	0.0	1	1	1
+ENSMMUG00000042665	HIST1H2AK	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	heart	39.05	0.0	1	present_gold	39.05	0.0	1	5	1
+ENSMMUG00000042665	HIST1H2AK	hindlimb stylopod muscle	53.41	0.0	1	present_gold	53.41	0.0	1	1	1
+ENSMMUG00000042665	HIST1H2AK	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000042665	HIST1H2AK	liver	41.50833333333333	5.406497634020261	6	present_gold	41.50833333333333	5.406497634020261	6	7	6
+ENSMMUG00000042665	HIST1H2AK	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000042665	HIST1H2AK	multicellular organism	36.43	2.6273751159665037	3	present_gold	36.43	2.6273751159665037	3	3	3
+ENSMMUG00000042665	HIST1H2AK	olfactory segment of nasal mucosa	33.65	0.0	1	present_gold	33.65	0.0	1	1	1
+ENSMMUG00000042665	HIST1H2AK	prefrontal cortex	42.68000000000001	0.11532562594670781	3	present_gold	42.68000000000001	0.11532562594670781	3	4	3
+ENSMMUG00000042665	HIST1H2AK	primary visual cortex	34.38	0.0	1	present_gold	34.38	0.0	1	1	1
+ENSMMUG00000042665	HIST1H2AK	skeletal muscle tissue	44.8	0.0	1	present_gold	44.8	0.0	1	2	1
+ENSMMUG00000042665	HIST1H2AK	spermatid	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	spermatocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000042665	HIST1H2AK	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000042665	HIST1H2AK	superior frontal gyrus	38.1	0.0	1	present_gold	38.1	0.0	1	1	1
+ENSMMUG00000042665	HIST1H2AK	testis	34.74	0.0	1	present_gold	34.74	0.0	1	3	1
+ENSMMUG00000044496	H2AFX	Ammon's horn	79.66	0.0	1	present_gold	79.66	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	adipose tissue	70.81	0.0	1	present_gold	70.81	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	adult mammalian kidney	71.71666666666667	7.586542910531337	3	present_gold	71.71666666666667	7.586542910531337	3	3	3
+ENSMMUG00000044496	H2AFX	brain	74.23249999999999	6.86524762845449	4	present_gold	74.23249999999999	6.86524762845449	4	4	4
+ENSMMUG00000044496	H2AFX	cerebellar cortex	85.60000000000001	2.9041866331212245	3	present_gold	85.60000000000001	2.9041866331212245	3	3	3
+ENSMMUG00000044496	H2AFX	cerebellum	84.92999999999999	4.00233057105482	5	present_gold	84.92999999999999	4.00233057105482	5	5	5
+ENSMMUG00000044496	H2AFX	cerebral cortex	82.53	0.0	1	present_gold	82.53	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	colon	85.44	0.0	1	present_gold	85.44	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	cortex of kidney	80.38	0.0	1	present_gold	80.38	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	dorsolateral prefrontal cortex	84.725	1.22329473145273	2	present_gold	84.725	1.22329473145273	2	2	2
+ENSMMUG00000044496	H2AFX	fibroblast	88.48	0.0	1	present_gold	88.48	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	frontal cortex	82.9	0.0	1	present_gold	82.9	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	heart	72.354	5.48809438694343	5	present_gold	72.354	5.48809438694343	5	5	5
+ENSMMUG00000044496	H2AFX	hindlimb stylopod muscle	79.47	0.0	1	present_gold	79.47	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000044496	H2AFX	kidney	75.88	2.0223253941935257	2	present_gold	75.88	2.0223253941935257	2	2	2
+ENSMMUG00000044496	H2AFX	liver	69.33428571428571	3.0326218422505677	7	present_gold	69.33428571428571	3.0326218422505677	7	7	7
+ENSMMUG00000044496	H2AFX	lung	67.34	7.636753236814711	2	present_gold	67.34	7.636753236814711	2	2	2
+ENSMMUG00000044496	H2AFX	multicellular organism	72.60333333333334	1.8387042539063612	3	present_gold	72.60333333333334	1.8387042539063612	3	3	3
+ENSMMUG00000044496	H2AFX	olfactory segment of nasal mucosa	87.91	0.0	1	present_gold	87.91	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	prefrontal cortex	70.075	5.338804485400577	4	present_gold	70.075	5.338804485400577	4	4	4
+ENSMMUG00000044496	H2AFX	primary visual cortex	88.28	0.0	1	present_gold	88.28	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	skeletal muscle tissue	72.49000000000001	6.264966081312811	2	present_gold	72.49000000000001	6.264966081312811	2	2	2
+ENSMMUG00000044496	H2AFX	spermatid	90.29	0.0	1	present_gold	90.29	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	spermatocyte	94.45	0.0	1	present_gold	94.45	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	spleen	79.905	8.053946237714776	2	present_gold	79.905	8.053946237714776	2	2	2
+ENSMMUG00000044496	H2AFX	superior frontal gyrus	89.56	0.0	1	present_gold	89.56	0.0	1	1	1
+ENSMMUG00000044496	H2AFX	testis	82.61666666666667	2.112447237999881	3	present_gold	82.61666666666667	2.112447237999881	3	3	3
+ENSMMUG00000049519	H2AC17	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000049519	H2AC17	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000049519	H2AC17	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000049519	H2AC17	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000049519	H2AC17	cerebral cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	colon	45.96	0.0	1	present_gold	45.96	0.0	1	1	1
+ENSMMUG00000049519	H2AC17	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	dorsolateral prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000049519	H2AC17	fibroblast	54.97	0.0	1	present_gold	54.97	0.0	1	1	1
+ENSMMUG00000049519	H2AC17	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000049519	H2AC17	hindlimb stylopod muscle	32.67	0.0	1	present_gold	32.67	0.0	1	1	1
+ENSMMUG00000049519	H2AC17	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000049519	H2AC17	liver	52.68833333333333	8.1032324825755	6	present_gold	52.68833333333333	8.1032324825755	6	7	6
+ENSMMUG00000049519	H2AC17	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000049519	H2AC17	multicellular organism	31.330000000000002	1.7036138060018169	3	present_gold	31.330000000000002	1.7036138060018169	3	3	3
+ENSMMUG00000049519	H2AC17	olfactory segment of nasal mucosa	37.74	0.0	1	present_gold	37.74	0.0	1	1	1
+ENSMMUG00000049519	H2AC17	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000049519	H2AC17	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000049519	H2AC17	spermatid	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	spermatocyte	40.01	0.0	1	present_gold	40.01	0.0	1	1	1
+ENSMMUG00000049519	H2AC17	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000049519	H2AC17	superior frontal gyrus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000049519	H2AC17	testis	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052150	HIST1H2AJ	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	adult mammalian kidney	40.865	14.969450557719211	2	present_gold	40.865	14.969450557719211	2	3	2
+ENSMMUG00000052150	HIST1H2AJ	brain	32.519999999999996	2.065962245540804	4	present_gold	32.519999999999996	2.065962245540804	4	4	4
+ENSMMUG00000052150	HIST1H2AJ	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000052150	HIST1H2AJ	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000052150	HIST1H2AJ	cerebral cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	colon	42.62	0.0	1	present_gold	42.62	0.0	1	1	1
+ENSMMUG00000052150	HIST1H2AJ	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	dorsolateral prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052150	HIST1H2AJ	fibroblast	36.21	0.0	1	present_gold	36.21	0.0	1	1	1
+ENSMMUG00000052150	HIST1H2AJ	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000052150	HIST1H2AJ	hindlimb stylopod muscle	41.9	0.0	1	present_gold	41.9	0.0	1	1	1
+ENSMMUG00000052150	HIST1H2AJ	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052150	HIST1H2AJ	liver	43.903333333333336	5.948235592733922	6	present_gold	43.903333333333336	5.948235592733922	6	7	6
+ENSMMUG00000052150	HIST1H2AJ	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052150	HIST1H2AJ	multicellular organism	33.11	4.23220982466607	3	present_gold	33.11	4.23220982466607	3	3	3
+ENSMMUG00000052150	HIST1H2AJ	olfactory segment of nasal mucosa	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	prefrontal cortex	35.4525	1.3385159692734345	4	present_gold	35.4525	1.3385159692734345	4	4	4
+ENSMMUG00000052150	HIST1H2AJ	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052150	HIST1H2AJ	spermatid	60.38	0.0	1	present_gold	60.38	0.0	1	1	1
+ENSMMUG00000052150	HIST1H2AJ	spermatocyte	56.52	0.0	1	present_gold	56.52	0.0	1	1	1
+ENSMMUG00000052150	HIST1H2AJ	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052150	HIST1H2AJ	superior frontal gyrus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052150	HIST1H2AJ	testis	60.586666666666666	3.9039253749698317	3	present_gold	60.586666666666666	3.9039253749698317	3	3	3
+ENSMMUG00000052414	HIST1H2AK	adipose tissue	47.58	0.0	1	present_gold	47.58	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000052414	HIST1H2AK	brain	34.615	5.302681711486495	4	present_gold	34.615	5.302681711486495	4	4	4
+ENSMMUG00000052414	HIST1H2AK	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000052414	HIST1H2AK	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000052414	HIST1H2AK	cerebral cortex	45.7	0.0	1	present_gold	45.7	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	colon	45.92	0.0	1	present_gold	45.92	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052414	HIST1H2AK	dorsolateral prefrontal cortex	54.46	0.0	1	present_gold	54.46	0.0	1	2	1
+ENSMMUG00000052414	HIST1H2AK	fibroblast	58.75	0.0	1	present_gold	58.75	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052414	HIST1H2AK	heart	46.4025	2.5378780506557046	4	present_gold	46.4025	2.5378780506557046	4	5	4
+ENSMMUG00000052414	HIST1H2AK	hindlimb stylopod muscle	32.63	0.0	1	present_gold	32.63	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052414	HIST1H2AK	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052414	HIST1H2AK	liver	52.074999999999996	11.294474312689369	6	present_gold	52.074999999999996	11.294474312689369	6	7	6
+ENSMMUG00000052414	HIST1H2AK	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052414	HIST1H2AK	multicellular organism	42.3	5.342022089059535	3	present_gold	42.3	5.342022089059535	3	3	3
+ENSMMUG00000052414	HIST1H2AK	olfactory segment of nasal mucosa	35.03	0.0	1	present_gold	35.03	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	prefrontal cortex	32.38	0.02645751311064467	3	present_gold	32.38	0.02645751311064467	3	4	3
+ENSMMUG00000052414	HIST1H2AK	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052414	HIST1H2AK	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000052414	HIST1H2AK	spermatid	65.82	0.0	1	present_gold	65.82	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	spermatocyte	57.65	0.0	1	present_gold	57.65	0.0	1	1	1
+ENSMMUG00000052414	HIST1H2AK	spleen	43.815	3.1324830406564055	2	present_gold	43.815	3.1324830406564055	2	2	2
+ENSMMUG00000052414	HIST1H2AK	superior frontal gyrus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000052414	HIST1H2AK	testis	63.32666666666666	4.7244188355112335	3	present_gold	63.32666666666666	4.7244188355112335	3	3	3
+ENSMMUG00000055745	LOC106995531	adipose tissue	46.73	0.0	1	present_gold	46.73	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000055745	LOC106995531	brain	50.2575	4.476035261999916	4	present_gold	50.2575	4.476035261999916	4	4	4
+ENSMMUG00000055745	LOC106995531	cerebellar cortex	45.75	3.655502701407837	3	present_gold	45.75	3.655502701407837	3	3	3
+ENSMMUG00000055745	LOC106995531	cerebellum	50.076	3.1394474036046542	5	present_gold	50.076	3.1394474036046542	5	5	5
+ENSMMUG00000055745	LOC106995531	cerebral cortex	49.99	0.0	1	present_gold	49.99	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	colon	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055745	LOC106995531	cortex of kidney	39.81	0.0	1	present_gold	39.81	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	dorsolateral prefrontal cortex	55.745	6.540737725975565	2	present_gold	55.745	6.540737725975565	2	2	2
+ENSMMUG00000055745	LOC106995531	fibroblast	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055745	LOC106995531	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055745	LOC106995531	heart	46.760000000000005	8.101399056130163	4	present_gold	46.760000000000005	8.101399056130163	4	5	4
+ENSMMUG00000055745	LOC106995531	hindlimb stylopod muscle	55.05	0.0	1	present_gold	55.05	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055745	LOC106995531	kidney	39.5	0.0	1	present_gold	39.5	0.0	1	2	1
+ENSMMUG00000055745	LOC106995531	liver	45.0	0.0	1	present_gold	45.0	0.0	1	5	1
+ENSMMUG00000055745	LOC106995531	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000055745	LOC106995531	multicellular organism	37.81333333333333	5.656857195769867	3	present_gold	37.81333333333333	5.656857195769867	3	3	3
+ENSMMUG00000055745	LOC106995531	olfactory segment of nasal mucosa	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055745	LOC106995531	prefrontal cortex	47.3675	0.5950560197718101	4	present_gold	47.3675	0.5950560197718101	4	4	4
+ENSMMUG00000055745	LOC106995531	primary visual cortex	52.46	0.0	1	present_gold	52.46	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	skeletal muscle tissue	50.27	0.0	1	present_gold	50.27	0.0	1	2	1
+ENSMMUG00000055745	LOC106995531	spermatid	79.42	0.0	1	present_gold	79.42	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	spermatocyte	66.66	0.0	1	present_gold	66.66	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	spleen	42.9	0.0	1	present_gold	42.9	0.0	1	2	1
+ENSMMUG00000055745	LOC106995531	superior frontal gyrus	47.6	0.0	1	present_gold	47.6	0.0	1	1	1
+ENSMMUG00000055745	LOC106995531	testis	75.73	4.969718301875875	3	present_gold	75.73	4.969718301875875	3	3	3
+ENSMMUG00000055788	HIST1H2AK	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055788	HIST1H2AK	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000055788	HIST1H2AK	brain	38.59	1.6822009392459636	4	present_gold	38.59	1.6822009392459636	4	4	4
+ENSMMUG00000055788	HIST1H2AK	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000055788	HIST1H2AK	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000055788	HIST1H2AK	cerebral cortex	50.89	0.0	1	present_gold	50.89	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	colon	48.48	0.0	1	present_gold	48.48	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055788	HIST1H2AK	dorsolateral prefrontal cortex	47.935	0.24748737341529264	2	present_gold	47.935	0.24748737341529264	2	2	2
+ENSMMUG00000055788	HIST1H2AK	fibroblast	64.38	0.0	1	present_gold	64.38	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055788	HIST1H2AK	heart	45.33	0.0	1	present_gold	45.33	0.0	1	5	1
+ENSMMUG00000055788	HIST1H2AK	hindlimb stylopod muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055788	HIST1H2AK	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055788	HIST1H2AK	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000055788	HIST1H2AK	liver	39.685	3.694827465525284	6	present_gold	39.685	3.694827465525284	6	7	6
+ENSMMUG00000055788	HIST1H2AK	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000055788	HIST1H2AK	multicellular organism	40.903333333333336	2.8121936870232336	3	present_gold	40.903333333333336	2.8121936870232336	3	3	3
+ENSMMUG00000055788	HIST1H2AK	olfactory segment of nasal mucosa	29.91	0.0	1	present_gold	29.91	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	prefrontal cortex	38.64666666666667	0.12096831541082852	3	present_gold	38.64666666666667	0.12096831541082852	3	4	3
+ENSMMUG00000055788	HIST1H2AK	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000055788	HIST1H2AK	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000055788	HIST1H2AK	spermatid	78.61	0.0	1	present_gold	78.61	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	spermatocyte	78.16	0.0	1	present_gold	78.16	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000055788	HIST1H2AK	superior frontal gyrus	34.03	0.0	1	present_gold	34.03	0.0	1	1	1
+ENSMMUG00000055788	HIST1H2AK	testis	50.81	5.292154570682908	3	present_gold	50.81	5.292154570682908	3	3	3
+ENSMMUG00000059127	H2AFB3	adipose tissue	46.73	0.0	1	present_gold	46.73	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000059127	H2AFB3	brain	50.2575	4.476035261999916	4	present_gold	50.2575	4.476035261999916	4	4	4
+ENSMMUG00000059127	H2AFB3	cerebellar cortex	45.75	3.655502701407837	3	present_gold	45.75	3.655502701407837	3	3	3
+ENSMMUG00000059127	H2AFB3	cerebellum	50.076	3.1394474036046542	5	present_gold	50.076	3.1394474036046542	5	5	5
+ENSMMUG00000059127	H2AFB3	cerebral cortex	49.99	0.0	1	present_gold	49.99	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	colon	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000059127	H2AFB3	cortex of kidney	39.81	0.0	1	present_gold	39.81	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	dorsolateral prefrontal cortex	55.745	6.540737725975565	2	present_gold	55.745	6.540737725975565	2	2	2
+ENSMMUG00000059127	H2AFB3	fibroblast	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000059127	H2AFB3	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000059127	H2AFB3	heart	46.760000000000005	8.101399056130163	4	present_gold	46.760000000000005	8.101399056130163	4	5	4
+ENSMMUG00000059127	H2AFB3	hindlimb stylopod muscle	55.05	0.0	1	present_gold	55.05	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000059127	H2AFB3	kidney	39.5	0.0	1	present_gold	39.5	0.0	1	2	1
+ENSMMUG00000059127	H2AFB3	liver	45.0	0.0	1	present_gold	45.0	0.0	1	5	1
+ENSMMUG00000059127	H2AFB3	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000059127	H2AFB3	multicellular organism	37.81333333333333	5.656857195769867	3	present_gold	37.81333333333333	5.656857195769867	3	3	3
+ENSMMUG00000059127	H2AFB3	olfactory segment of nasal mucosa	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000059127	H2AFB3	prefrontal cortex	47.3675	0.5950560197718101	4	present_gold	47.3675	0.5950560197718101	4	4	4
+ENSMMUG00000059127	H2AFB3	primary visual cortex	52.46	0.0	1	present_gold	52.46	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	skeletal muscle tissue	50.27	0.0	1	present_gold	50.27	0.0	1	2	1
+ENSMMUG00000059127	H2AFB3	spermatid	79.42	0.0	1	present_gold	79.42	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	spermatocyte	66.66	0.0	1	present_gold	66.66	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	spleen	42.9	0.0	1	present_gold	42.9	0.0	1	2	1
+ENSMMUG00000059127	H2AFB3	superior frontal gyrus	47.6	0.0	1	present_gold	47.6	0.0	1	1	1
+ENSMMUG00000059127	H2AFB3	testis	75.73	4.969718301875875	3	present_gold	75.73	4.969718301875875	3	3	3
+ENSMMUG00000060294	HIST1H2AC	Ammon's horn	84.36	0.0	1	present_gold	84.36	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	adipose tissue	89.5	0.0	1	present_gold	89.5	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	adult mammalian kidney	75.36	4.874002462042874	3	present_gold	75.36	4.874002462042874	3	3	3
+ENSMMUG00000060294	HIST1H2AC	brain	73.44749999999999	1.983555309706957	4	present_gold	73.44749999999999	1.983555309706957	4	4	4
+ENSMMUG00000060294	HIST1H2AC	cerebellar cortex	79.01	2.385288242540092	3	present_gold	79.01	2.385288242540092	3	3	3
+ENSMMUG00000060294	HIST1H2AC	cerebellum	75.826	4.235927289272089	5	present_gold	75.826	4.235927289272089	5	5	5
+ENSMMUG00000060294	HIST1H2AC	cerebral cortex	74.09	0.0	1	present_gold	74.09	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	colon	85.2	0.0	1	present_gold	85.2	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	cortex of kidney	82.6	0.0	1	present_gold	82.6	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	dorsolateral prefrontal cortex	71.775	0.19091883092036502	2	present_gold	71.775	0.19091883092036502	2	2	2
+ENSMMUG00000060294	HIST1H2AC	fibroblast	84.75	0.0	1	present_gold	84.75	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	frontal cortex	91.37	0.0	1	present_gold	91.37	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	heart	85.922	1.5856765117765985	5	present_gold	85.922	1.5856765117765985	5	5	5
+ENSMMUG00000060294	HIST1H2AC	hindlimb stylopod muscle	86.63	0.0	1	present_gold	86.63	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	ileum	76.87	0.0	1	present_gold	76.87	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	kidney	81.455	0.09192388155424797	2	present_gold	81.455	0.09192388155424797	2	2	2
+ENSMMUG00000060294	HIST1H2AC	liver	88.07714285714285	1.4526150474886588	7	present_gold	88.07714285714285	1.4526150474886588	7	7	7
+ENSMMUG00000060294	HIST1H2AC	lung	87.975	3.8537319574666857	2	present_gold	87.975	3.8537319574666857	2	2	2
+ENSMMUG00000060294	HIST1H2AC	multicellular organism	80.92333333333333	3.072170785183228	3	present_gold	80.92333333333333	3.072170785183228	3	3	3
+ENSMMUG00000060294	HIST1H2AC	olfactory segment of nasal mucosa	75.57	0.0	1	present_gold	75.57	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	prefrontal cortex	71.87	3.5469799360394854	4	present_gold	71.87	3.5469799360394854	4	4	4
+ENSMMUG00000060294	HIST1H2AC	primary visual cortex	73.37	0.0	1	present_gold	73.37	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	skeletal muscle tissue	83.565	3.4860364312496843	2	present_gold	83.565	3.4860364312496843	2	2	2
+ENSMMUG00000060294	HIST1H2AC	spermatid	54.61	0.0	1	present_gold	54.61	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	spermatocyte	59.92	0.0	1	present_gold	59.92	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	spleen	82.955	3.090056633785216	2	present_gold	82.955	3.090056633785216	2	2	2
+ENSMMUG00000060294	HIST1H2AC	superior frontal gyrus	76.82	0.0	1	present_gold	76.82	0.0	1	1	1
+ENSMMUG00000060294	HIST1H2AC	testis	48.74	0.9320944158184853	3	present_gold	48.74	0.9320944158184853	3	3	3
+ENSMMUG00000060663	HIST1H2AE	adipose tissue	63.92	0.0	1	present_gold	63.92	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	adult mammalian kidney	55.01	3.3941125496954263	2	present_gold	55.01	3.3941125496954263	2	3	2
+ENSMMUG00000060663	HIST1H2AE	brain	42.3675	2.268411705724219	4	present_gold	42.3675	2.268411705724219	4	4	4
+ENSMMUG00000060663	HIST1H2AE	cerebellar cortex	62.416666666666664	7.245055785384494	3	present_gold	62.416666666666664	7.245055785384494	3	3	3
+ENSMMUG00000060663	HIST1H2AE	cerebellum	53.325	3.6472135482675903	4	present_gold	53.325	3.6472135482675903	4	5	4
+ENSMMUG00000060663	HIST1H2AE	cerebral cortex	51.49	0.0	1	present_gold	51.49	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	colon	54.31	0.0	1	present_gold	54.31	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	cortex of kidney	51.74	0.0	1	present_gold	51.74	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	dorsolateral prefrontal cortex	49.77	0.0	1	present_gold	49.77	0.0	1	2	1
+ENSMMUG00000060663	HIST1H2AE	fibroblast	61.2	0.0	1	present_gold	61.2	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	frontal cortex	47.08	0.0	1	present_gold	47.08	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	heart	51.076	5.495450845927019	5	present_gold	51.076	5.495450845927019	5	5	5
+ENSMMUG00000060663	HIST1H2AE	hindlimb stylopod muscle	43.78	0.0	1	present_gold	43.78	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000060663	HIST1H2AE	kidney	52.915	1.2798632739476528	2	present_gold	52.915	1.2798632739476528	2	2	2
+ENSMMUG00000060663	HIST1H2AE	liver	59.519999999999996	11.524683654371314	7	present_gold	59.519999999999996	11.524683654371314	7	7	7
+ENSMMUG00000060663	HIST1H2AE	lung	46.425	8.053946237714776	2	present_gold	46.425	8.053946237714776	2	2	2
+ENSMMUG00000060663	HIST1H2AE	multicellular organism	47.96	1.5085091978506477	3	present_gold	47.96	1.5085091978506477	3	3	3
+ENSMMUG00000060663	HIST1H2AE	olfactory segment of nasal mucosa	49.02	0.0	1	present_gold	49.02	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	prefrontal cortex	46.1675	12.82881749551896	4	present_gold	46.1675	12.82881749551896	4	4	4
+ENSMMUG00000060663	HIST1H2AE	primary visual cortex	51.59	0.0	1	present_gold	51.59	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	skeletal muscle tissue	56.019999999999996	15.726054813588817	2	present_gold	56.019999999999996	15.726054813588817	2	2	2
+ENSMMUG00000060663	HIST1H2AE	spermatid	73.05	0.0	1	present_gold	73.05	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	spermatocyte	59.42	0.0	1	present_gold	59.42	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	spleen	48.935	3.66988419435818	2	present_gold	48.935	3.66988419435818	2	2	2
+ENSMMUG00000060663	HIST1H2AE	superior frontal gyrus	40.82	0.0	1	present_gold	40.82	0.0	1	1	1
+ENSMMUG00000060663	HIST1H2AE	testis	65.14666666666666	5.59619811419622	3	present_gold	65.14666666666666	5.59619811419622	3	3	3
+ENSMMUG00000061036	H2AC21	adipose tissue	48.07	0.0	1	present_gold	48.07	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	adult mammalian kidney	56.56999999999999	8.710895476356031	3	present_gold	56.56999999999999	8.710895476356031	3	3	3
+ENSMMUG00000061036	H2AC21	brain	39.3325	4.08071378560173	4	present_gold	39.3325	4.08071378560173	4	4	4
+ENSMMUG00000061036	H2AC21	cerebellar cortex	43.17	1.5839191898578677	2	present_gold	43.17	1.5839191898578677	2	3	2
+ENSMMUG00000061036	H2AC21	cerebellum	46.506	6.6428103992211005	5	present_gold	46.506	6.6428103992211005	5	5	5
+ENSMMUG00000061036	H2AC21	cerebral cortex	47.75	0.0	1	present_gold	47.75	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	colon	31.62	0.0	1	present_gold	31.62	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	cortex of kidney	55.54	0.0	1	present_gold	55.54	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	dorsolateral prefrontal cortex	44.22	0.0	1	present_gold	44.22	0.0	1	2	1
+ENSMMUG00000061036	H2AC21	fibroblast	46.92	0.0	1	present_gold	46.92	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	frontal cortex	36.87	0.0	1	present_gold	36.87	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	heart	52.980000000000004	11.914705199878007	4	present_gold	52.980000000000004	11.914705199878007	4	5	4
+ENSMMUG00000061036	H2AC21	hindlimb stylopod muscle	57.53	0.0	1	present_gold	57.53	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061036	H2AC21	kidney	51.265	2.1425335469952396	2	present_gold	51.265	2.1425335469952396	2	2	2
+ENSMMUG00000061036	H2AC21	liver	72.27166666666666	5.988143006531046	6	present_gold	72.27166666666666	5.988143006531046	6	7	6
+ENSMMUG00000061036	H2AC21	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000061036	H2AC21	multicellular organism	38.266666666666666	4.981007260919559	3	present_gold	38.266666666666666	4.981007260919559	3	3	3
+ENSMMUG00000061036	H2AC21	olfactory segment of nasal mucosa	57.26	0.0	1	present_gold	57.26	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	prefrontal cortex	36.419999999999995	0.08999999999999986	3	present_gold	36.419999999999995	0.08999999999999986	3	4	3
+ENSMMUG00000061036	H2AC21	primary visual cortex	46.22	0.0	1	present_gold	46.22	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	skeletal muscle tissue	44.8	0.0	1	present_gold	44.8	0.0	1	2	1
+ENSMMUG00000061036	H2AC21	spermatid	47.96	0.0	1	present_gold	47.96	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	spermatocyte	41.4	0.0	1	present_gold	41.4	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	spleen	48.13	0.0	1	present_gold	48.13	0.0	1	2	1
+ENSMMUG00000061036	H2AC21	superior frontal gyrus	46.46	0.0	1	present_gold	46.46	0.0	1	1	1
+ENSMMUG00000061036	H2AC21	testis	61.78666666666667	5.13959466624882	3	present_gold	61.78666666666667	5.13959466624882	3	3	3
+ENSMMUG00000061750	H2AC12	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000061750	H2AC12	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000061750	H2AC12	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000061750	H2AC12	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000061750	H2AC12	cerebral cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	colon	42.3	0.0	1	present_gold	42.3	0.0	1	1	1
+ENSMMUG00000061750	H2AC12	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	dorsolateral prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000061750	H2AC12	fibroblast	45.19	0.0	1	present_gold	45.19	0.0	1	1	1
+ENSMMUG00000061750	H2AC12	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	heart	46.77	0.0	1	present_gold	46.77	0.0	1	5	1
+ENSMMUG00000061750	H2AC12	hindlimb stylopod muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000061750	H2AC12	liver	45.21666666666667	8.448944707279523	6	present_gold	45.21666666666667	8.448944707279523	6	7	6
+ENSMMUG00000061750	H2AC12	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000061750	H2AC12	multicellular organism	29.636666666666667	1.5410818710676393	3	present_gold	29.636666666666667	1.5410818710676393	3	3	3
+ENSMMUG00000061750	H2AC12	olfactory segment of nasal mucosa	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000061750	H2AC12	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000061750	H2AC12	spermatid	49.68	0.0	1	present_gold	49.68	0.0	1	1	1
+ENSMMUG00000061750	H2AC12	spermatocyte	46.56	0.0	1	present_gold	46.56	0.0	1	1	1
+ENSMMUG00000061750	H2AC12	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000061750	H2AC12	superior frontal gyrus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000061750	H2AC12	testis	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000062046	LOC704994	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000062046	LOC704994	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000062046	LOC704994	cerebellar cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSMMUG00000062046	LOC704994	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000062046	LOC704994	cerebral cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	colon	42.2	0.0	1	present_gold	42.2	0.0	1	1	1
+ENSMMUG00000062046	LOC704994	cortex of kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	dorsolateral prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000062046	LOC704994	fibroblast	45.37	0.0	1	present_gold	45.37	0.0	1	1	1
+ENSMMUG00000062046	LOC704994	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	5	0
+ENSMMUG00000062046	LOC704994	hindlimb stylopod muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000062046	LOC704994	liver	49.99666666666667	11.288384590660728	6	present_gold	49.99666666666667	11.288384590660728	6	7	6
+ENSMMUG00000062046	LOC704994	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000062046	LOC704994	multicellular organism	30.563333333333333	3.14485823739852	3	present_gold	30.563333333333333	3.14485823739852	3	3	3
+ENSMMUG00000062046	LOC704994	olfactory segment of nasal mucosa	52.59	0.0	1	present_gold	52.59	0.0	1	1	1
+ENSMMUG00000062046	LOC704994	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSMMUG00000062046	LOC704994	primary visual cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000062046	LOC704994	spermatid	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	spermatocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSMMUG00000062046	LOC704994	superior frontal gyrus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSMMUG00000062046	LOC704994	testis	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0

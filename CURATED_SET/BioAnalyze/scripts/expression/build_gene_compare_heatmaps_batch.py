@@ -79,7 +79,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--include-absent-species",
-        action="store_true",
+        action=argparse.BooleanOptionalAction,
+        default=True,
         help="Include all known species as empty columns when a gene is absent.",
     )
     parser.add_argument(

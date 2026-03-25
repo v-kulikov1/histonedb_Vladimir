@@ -99,6 +99,26 @@ Recent Outputs (2026-03-24)
 - CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_order_legend.svg
 - CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.png
 - CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.svg
+Recent Outputs (2026-03-25)
+- CURATED_SET/BioAnalyze/audits/bgee_h2a_expression_source_audit_3species.tsv
+- CURATED_SET/BioAnalyze/stats/ranking/reports/bgee_h2a_expression_source_audit_3species.md
+- CURATED_SET/BioAnalyze/figures/heatmaps/species/human/h2a_all.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/species/human/h2a_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/species/human/coverage_ge70/h2a_all.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/species/human/coverage_ge70/h2a_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/species/mus_musculus/coverage_ge70/h2a_all.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/species/mus_musculus/coverage_ge70/h2a_all.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AB3/H2AB3_gene_compare_heatmap.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/gene_compare/H2AB3/H2AB3_gene_compare_heatmap.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/presentation_human_pan/hs_aligned_all_presentation.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/presentation_human_pan/hs_aligned_all_presentation.svg
+- CURATED_SET/BioAnalyze/figures/heatmaps/presentation_human_pan/h2a_pan_troglodytes_all_presentation.png
+- CURATED_SET/BioAnalyze/figures/heatmaps/presentation_human_pan/h2a_pan_troglodytes_all_presentation.svg
+- CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot.png
+- CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot.svg
+- CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.png
+- CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.svg
+- CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_number_legend.png
 Recent Script Additions (2026-03-17)
 - CURATED_SET/BioAnalyze/scripts/expression/summarize_shared_h2a_gene_names_across_species.py
   Rebuilds the shared-gene summary in `stats/shared_genes/` and writes a reusable long-form
@@ -137,6 +157,19 @@ Recent Script Additions (2026-03-24)
   Rebuilds SQK codon entropy heatmaps from external FASTA pairs, writes the
   `without-short` and `full` heatmaps, and exports standalone order/Shannon
   support graphics for the `full` presentation layout.
+Recent Script Additions (2026-03-25)
+- CURATED_SET/BioAnalyze/scripts/expression/normalized_expression_common.py
+  Centralizes normalized Gene x tissue helpers used by species heatmaps,
+  coverage filtering, aligned human/pan views, and downstream expression tables.
+- CURATED_SET/BioAnalyze/scripts/expression/audit_bgee_h2a_expression_sources.py
+  Audits which Bgee source-specific tracks underlie heatmap-relevant H2A
+  expression rows and exports both TSV and Markdown summaries.
+- CURATED_SET/BioAnalyze/scripts/expression/build_human_pan_presentation_heatmaps.py
+  Builds presentation-oriented aligned human/pan H2A heatmaps together with
+  shared legends and number-mapping support files.
+- CURATED_SET/BioAnalyze/scripts/expression/build_human_h2a_boxplot.py
+  Builds the analytical and presentation versions of the human H2A boxplot and
+  exports the number legend plus supporting TSV tables.
 
 External raw data:
 - stored at C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw

@@ -35,7 +35,7 @@ DATASETS = {
         "protein": "protein_from_SQK_nuc(without short).fasta",
         "cds": "SQK_nuc(without short).fasta",
         "stem": "sqk_nuc_without_short_codon_entropy_annotated",
-        "presentation_mode": False,
+        "presentation_mode": True,
     },
     "full": {
         "protein": "protein_from_SQK_nuc.fasta",

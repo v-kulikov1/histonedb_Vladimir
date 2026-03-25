@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Count in how many species each H2A Gene name appears in the "
-            "species-level *_present_gold.tsv files used for heatmaps and build "
+            "species-level normalized H2A TSV files used for heatmaps and build "
             "a reusable detail index for gene_compare workflows."
         )
     )
@@ -36,7 +36,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--processed-dir",
         default=str(DEFAULT_PROCESSED_DIR),
-        help="Directory with per-species processed *_present_gold.tsv files.",
+        help="Directory with per-species normalized H2A TSV files.",
     )
     parser.add_argument(
         "--out-dir",
@@ -67,7 +67,7 @@ def plot_summary(summary_df: pd.DataFrame, out_png: Path, out_svg: Path) -> None
     bars = ax.barh(plot_df["gene_name"], plot_df["species_count"], color="#3C6E71")
 
     ax.set_title("Shared H2A Gene Names Across Species")
-    ax.set_xlabel("Number of species with gene in *_present_gold.tsv")
+    ax.set_xlabel("Number of species with gene in normalized H2A TSV")
     ax.set_ylabel("Gene name")
     ax.set_xlim(0, max(int(plot_df["species_count"].max()) + 1, 2))
 

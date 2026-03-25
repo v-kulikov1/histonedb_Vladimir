@@ -1,0 +1,299 @@
+anatomical_entity_name	observed_gene_count	display_gene_count	fill_rate	threshold	kept	panel
+Ammon's horn	17	17	1.0	0.7	True	clustered
+Brodmann (1909) area 9	17	17	1.0	0.7	True	clustered
+C1 segment of cervical spinal cord	17	17	1.0	0.7	True	clustered
+adenohypophysis	17	17	1.0	0.7	True	clustered
+adipose tissue	17	17	1.0	0.7	True	clustered
+adrenal gland	17	17	1.0	0.7	True	clustered
+adrenal tissue	17	17	1.0	0.7	True	clustered
+adult mammalian kidney	17	17	1.0	0.7	True	clustered
+amygdala	17	17	1.0	0.7	True	clustered
+anterior cingulate cortex	17	17	1.0	0.7	True	clustered
+apex of heart	17	17	1.0	0.7	True	clustered
+ascending aorta	17	17	1.0	0.7	True	clustered
+blood	17	17	1.0	0.7	True	clustered
+body of pancreas	17	17	1.0	0.7	True	clustered
+body of stomach	17	17	1.0	0.7	True	clustered
+body of uterus	17	17	1.0	0.7	True	clustered
+bone marrow	17	17	1.0	0.7	True	clustered
+bone marrow cell	17	17	1.0	0.7	True	clustered
+brain	17	17	1.0	0.7	True	clustered
+calcaneal tendon	17	17	1.0	0.7	True	clustered
+caudate nucleus	17	17	1.0	0.7	True	clustered
+cerebellar cortex	17	17	1.0	0.7	True	clustered
+cerebellar hemisphere	17	17	1.0	0.7	True	clustered
+cerebellum	17	17	1.0	0.7	True	clustered
+cerebral cortex	17	17	1.0	0.7	True	clustered
+colon	17	17	1.0	0.7	True	clustered
+colonic epithelium	17	17	1.0	0.7	True	clustered
+corpus callosum	17	17	1.0	0.7	True	clustered
+cortex of kidney	17	17	1.0	0.7	True	clustered
+cortical plate	17	17	1.0	0.7	True	clustered
+descending thoracic aorta	17	17	1.0	0.7	True	clustered
+dorsolateral prefrontal cortex	17	17	1.0	0.7	True	clustered
+duodenum	17	17	1.0	0.7	True	clustered
+ectocervix	17	17	1.0	0.7	True	clustered
+endocervix	17	17	1.0	0.7	True	clustered
+endometrium	17	17	1.0	0.7	True	clustered
+esophagogastric junction muscularis propria	17	17	1.0	0.7	True	clustered
+esophagus	17	17	1.0	0.7	True	clustered
+esophagus mucosa	17	17	1.0	0.7	True	clustered
+frontal cortex	17	17	1.0	0.7	True	clustered
+fundus of stomach	17	17	1.0	0.7	True	clustered
+gall bladder	17	17	1.0	0.7	True	clustered
+ganglionic eminence	17	17	1.0	0.7	True	clustered
+gastrocnemius	17	17	1.0	0.7	True	clustered
+granulocyte	17	17	1.0	0.7	True	clustered
+heart	17	17	1.0	0.7	True	clustered
+heart left ventricle	17	17	1.0	0.7	True	clustered
+hindlimb stylopod muscle	17	17	1.0	0.7	True	clustered
+hypothalamus	17	17	1.0	0.7	True	clustered
+intestine	17	17	1.0	0.7	True	clustered
+islet of Langerhans	17	17	1.0	0.7	True	clustered
+kidney	17	17	1.0	0.7	True	clustered
+left adrenal gland	17	17	1.0	0.7	True	clustered
+left adrenal gland cortex	17	17	1.0	0.7	True	clustered
+left coronary artery	17	17	1.0	0.7	True	clustered
+left lobe of thyroid gland	17	17	1.0	0.7	True	clustered
+left ovary	17	17	1.0	0.7	True	clustered
+left testis	17	17	1.0	0.7	True	clustered
+left uterine tube	17	17	1.0	0.7	True	clustered
+leukocyte	17	17	1.0	0.7	True	clustered
+liver	17	17	1.0	0.7	True	clustered
+lower esophagus	17	17	1.0	0.7	True	clustered
+lower esophagus mucosa	17	17	1.0	0.7	True	clustered
+lower esophagus muscularis layer	17	17	1.0	0.7	True	clustered
+lung	17	17	1.0	0.7	True	clustered
+lymph node	17	17	1.0	0.7	True	clustered
+metanephros cortex	17	17	1.0	0.7	True	clustered
+minor salivary gland	17	17	1.0	0.7	True	clustered
+monocyte	17	17	1.0	0.7	True	clustered
+mucosa of stomach	17	17	1.0	0.7	True	clustered
+mucosa of transverse colon	17	17	1.0	0.7	True	clustered
+multicellular organism	17	17	1.0	0.7	True	clustered
+muscle layer of sigmoid colon	17	17	1.0	0.7	True	clustered
+muscle of leg	17	17	1.0	0.7	True	clustered
+muscle tissue	17	17	1.0	0.7	True	clustered
+myometrium	17	17	1.0	0.7	True	clustered
+nucleus accumbens	17	17	1.0	0.7	True	clustered
+olfactory segment of nasal mucosa	17	17	1.0	0.7	True	clustered
+omental fat pad	17	17	1.0	0.7	True	clustered
+ovary	17	17	1.0	0.7	True	clustered
+pancreas	17	17	1.0	0.7	True	clustered
+pituitary gland	17	17	1.0	0.7	True	clustered
+placenta	17	17	1.0	0.7	True	clustered
+popliteal artery	17	17	1.0	0.7	True	clustered
+prefrontal cortex	17	17	1.0	0.7	True	clustered
+primary visual cortex	17	17	1.0	0.7	True	clustered
+prostate gland	17	17	1.0	0.7	True	clustered
+putamen	17	17	1.0	0.7	True	clustered
+rectum	17	17	1.0	0.7	True	clustered
+right adrenal gland	17	17	1.0	0.7	True	clustered
+right adrenal gland cortex	17	17	1.0	0.7	True	clustered
+right atrium auricular region	17	17	1.0	0.7	True	clustered
+right coronary artery	17	17	1.0	0.7	True	clustered
+right frontal lobe	17	17	1.0	0.7	True	clustered
+right hemisphere of cerebellum	17	17	1.0	0.7	True	clustered
+right lobe of liver	17	17	1.0	0.7	True	clustered
+right lobe of thyroid gland	17	17	1.0	0.7	True	clustered
+right lung	17	17	1.0	0.7	True	clustered
+right ovary	17	17	1.0	0.7	True	clustered
+right testis	17	17	1.0	0.7	True	clustered
+right uterine tube	17	17	1.0	0.7	True	clustered
+saliva-secreting gland	17	17	1.0	0.7	True	clustered
+skeletal muscle tissue	17	17	1.0	0.7	True	clustered
+skin of abdomen	17	17	1.0	0.7	True	clustered
+skin of leg	17	17	1.0	0.7	True	clustered
+small intestine	17	17	1.0	0.7	True	clustered
+small intestine Peyer's patch	17	17	1.0	0.7	True	clustered
+smooth muscle tissue	17	17	1.0	0.7	True	clustered
+spleen	17	17	1.0	0.7	True	clustered
+stomach	17	17	1.0	0.7	True	clustered
+stromal cell of endometrium	17	17	1.0	0.7	True	clustered
+subcutaneous adipose tissue	17	17	1.0	0.7	True	clustered
+substantia nigra	17	17	1.0	0.7	True	clustered
+superior frontal gyrus	17	17	1.0	0.7	True	clustered
+sural nerve	17	17	1.0	0.7	True	clustered
+temporal lobe	17	17	1.0	0.7	True	clustered
+testis	17	17	1.0	0.7	True	clustered
+thoracic aorta	17	17	1.0	0.7	True	clustered
+thoracic mammary gland	17	17	1.0	0.7	True	clustered
+thyroid gland	17	17	1.0	0.7	True	clustered
+tibial artery	17	17	1.0	0.7	True	clustered
+tibial nerve	17	17	1.0	0.7	True	clustered
+tonsil	17	17	1.0	0.7	True	clustered
+transverse colon	17	17	1.0	0.7	True	clustered
+upper lobe of left lung	17	17	1.0	0.7	True	clustered
+urinary bladder	17	17	1.0	0.7	True	clustered
+vagina	17	17	1.0	0.7	True	clustered
+ventricular zone	17	17	1.0	0.7	True	clustered
+vermiform appendix	17	17	1.0	0.7	True	clustered
+zone of skin	17	17	1.0	0.7	True	clustered
+uterine cervix	16	17	0.9411764705882353	0.7	True	clustered
+fallopian tube	15	17	0.8823529411764706	0.7	True	clustered
+male germ line stem cell (sensu Vertebrata) in testis	15	17	0.8823529411764706	0.7	True	clustered
+primordial germ cell in gonad	14	17	0.8235294117647058	0.7	True	clustered
+cerebellar vermis	7	17	0.4117647058823529	0.7	False	clustered
+metanephric glomerulus	7	17	0.4117647058823529	0.7	False	clustered
+quadriceps femoris	7	17	0.4117647058823529	0.7	False	clustered
+spinal cord	7	17	0.4117647058823529	0.7	False	clustered
+thymus	7	17	0.4117647058823529	0.7	False	clustered
+vastus lateralis	7	17	0.4117647058823529	0.7	False	clustered
+Brodmann (1909) area 10	6	17	0.35294117647058826	0.7	False	clustered
+central nervous system	6	17	0.35294117647058826	0.7	False	clustered
+dorsal plus ventral thalamus	6	17	0.35294117647058826	0.7	False	clustered
+dorsal root ganglion	6	17	0.35294117647058826	0.7	False	clustered
+endometrium epithelium	6	17	0.35294117647058826	0.7	False	clustered
+epithelium of bronchus	6	17	0.35294117647058826	0.7	False	clustered
+frontal pole	6	17	0.35294117647058826	0.7	False	clustered
+layer of synovial tissue	6	17	0.35294117647058826	0.7	False	clustered
+middle frontal gyrus	6	17	0.35294117647058826	0.7	False	clustered
+paraflocculus	6	17	0.35294117647058826	0.7	False	clustered
+sigmoid colon	6	17	0.35294117647058826	0.7	False	clustered
+trachea	6	17	0.35294117647058826	0.7	False	clustered
+uterus	6	17	0.35294117647058826	0.7	False	clustered
+material anatomical entity	5	17	0.29411764705882354	0.7	False	clustered
+Brodmann (1909) area 23	4	17	0.23529411764705882	0.7	False	clustered
+Brodmann (1909) area 46	4	17	0.23529411764705882	0.7	False	clustered
+adipose tissue of abdominal region	4	17	0.23529411764705882	0.7	False	clustered
+adrenal cortex	4	17	0.23529411764705882	0.7	False	clustered
+adult organism	4	17	0.23529411764705882	0.7	False	clustered
+amniotic fluid	4	17	0.23529411764705882	0.7	False	clustered
+anatomical system	4	17	0.23529411764705882	0.7	False	clustered
+aorta	4	17	0.23529411764705882	0.7	False	clustered
+biceps brachii	4	17	0.23529411764705882	0.7	False	clustered
+blood vessel layer	4	17	0.23529411764705882	0.7	False	clustered
+body of tongue	4	17	0.23529411764705882	0.7	False	clustered
+bronchial epithelial cell	4	17	0.23529411764705882	0.7	False	clustered
+bronchus	4	17	0.23529411764705882	0.7	False	clustered
+buccal mucosa cell	4	17	0.23529411764705882	0.7	False	clustered
+caecum	4	17	0.23529411764705882	0.7	False	clustered
+caput epididymis	4	17	0.23529411764705882	0.7	False	clustered
+cardia of stomach	4	17	0.23529411764705882	0.7	False	clustered
+cardiac atrium	4	17	0.23529411764705882	0.7	False	clustered
+cardiac ventricle	4	17	0.23529411764705882	0.7	False	clustered
+cartilage tissue	4	17	0.23529411764705882	0.7	False	clustered
+cauda epididymis	4	17	0.23529411764705882	0.7	False	clustered
+choroid plexus epithelium	4	17	0.23529411764705882	0.7	False	clustered
+colonic mucosa	4	17	0.23529411764705882	0.7	False	clustered
+coronary artery	4	17	0.23529411764705882	0.7	False	clustered
+corpus epididymis	4	17	0.23529411764705882	0.7	False	clustered
+cranial nerve II	4	17	0.23529411764705882	0.7	False	clustered
+decidua	4	17	0.23529411764705882	0.7	False	clustered
+deltoid	4	17	0.23529411764705882	0.7	False	clustered
+dorsal motor nucleus of vagus nerve	4	17	0.23529411764705882	0.7	False	clustered
+endothelial cell	4	17	0.23529411764705882	0.7	False	clustered
+entorhinal cortex	4	17	0.23529411764705882	0.7	False	clustered
+epithelium of mammary gland	4	17	0.23529411764705882	0.7	False	clustered
+epithelium of nasopharynx	4	17	0.23529411764705882	0.7	False	clustered
+esophagus squamous epithelium	4	17	0.23529411764705882	0.7	False	clustered
+female reproductive system	4	17	0.23529411764705882	0.7	False	clustered
+forebrain	4	17	0.23529411764705882	0.7	False	clustered
+germinal epithelium of ovary	4	17	0.23529411764705882	0.7	False	clustered
+gingiva	4	17	0.23529411764705882	0.7	False	clustered
+gingival epithelium	4	17	0.23529411764705882	0.7	False	clustered
+heart right ventricle	4	17	0.23529411764705882	0.7	False	clustered
+inferior olivary complex	4	17	0.23529411764705882	0.7	False	clustered
+inferior vagus X ganglion	4	17	0.23529411764705882	0.7	False	clustered
+jejunal mucosa	4	17	0.23529411764705882	0.7	False	clustered
+jejunum	4	17	0.23529411764705882	0.7	False	clustered
+large intestine	4	17	0.23529411764705882	0.7	False	clustered
+lateral globus pallidus	4	17	0.23529411764705882	0.7	False	clustered
+lateral nuclear group of thalamus	4	17	0.23529411764705882	0.7	False	clustered
+lower lobe of lung	4	17	0.23529411764705882	0.7	False	clustered
+mammalian vulva	4	17	0.23529411764705882	0.7	False	clustered
+mammary duct	4	17	0.23529411764705882	0.7	False	clustered
+medial globus pallidus	4	17	0.23529411764705882	0.7	False	clustered
+medulla oblongata	4	17	0.23529411764705882	0.7	False	clustered
+metanephros	4	17	0.23529411764705882	0.7	False	clustered
+midbrain	4	17	0.23529411764705882	0.7	False	clustered
+middle temporal gyrus	4	17	0.23529411764705882	0.7	False	clustered
+mouth mucosa	4	17	0.23529411764705882	0.7	False	clustered
+mucosa of paranasal sinus	4	17	0.23529411764705882	0.7	False	clustered
+mucosa of sigmoid colon	4	17	0.23529411764705882	0.7	False	clustered
+myocardium	4	17	0.23529411764705882	0.7	False	clustered
+nasal cavity epithelium	4	17	0.23529411764705882	0.7	False	clustered
+nasal cavity mucosa	4	17	0.23529411764705882	0.7	False	clustered
+neocortex	4	17	0.23529411764705882	0.7	False	clustered
+nephron tubule	4	17	0.23529411764705882	0.7	False	clustered
+nipple	4	17	0.23529411764705882	0.7	False	clustered
+occipital lobe	4	17	0.23529411764705882	0.7	False	clustered
+oocyte	4	17	0.23529411764705882	0.7	False	clustered
+oral cavity	4	17	0.23529411764705882	0.7	False	clustered
+oviduct epithelium	4	17	0.23529411764705882	0.7	False	clustered
+palpebral conjunctiva	4	17	0.23529411764705882	0.7	False	clustered
+parietal lobe	4	17	0.23529411764705882	0.7	False	clustered
+parietal pleura	4	17	0.23529411764705882	0.7	False	clustered
+parotid gland	4	17	0.23529411764705882	0.7	False	clustered
+penis	4	17	0.23529411764705882	0.7	False	clustered
+pericardium	4	17	0.23529411764705882	0.7	False	clustered
+periodontal ligament	4	17	0.23529411764705882	0.7	False	clustered
+peritoneum	4	17	0.23529411764705882	0.7	False	clustered
+pharyngeal mucosa	4	17	0.23529411764705882	0.7	False	clustered
+pigmented layer of retina	4	17	0.23529411764705882	0.7	False	clustered
+pons	4	17	0.23529411764705882	0.7	False	clustered
+postcentral gyrus	4	17	0.23529411764705882	0.7	False	clustered
+pylorus	4	17	0.23529411764705882	0.7	False	clustered
+renal glomerulus	4	17	0.23529411764705882	0.7	False	clustered
+renal medulla	4	17	0.23529411764705882	0.7	False	clustered
+saphenous vein	4	17	0.23529411764705882	0.7	False	clustered
+secondary oocyte	4	17	0.23529411764705882	0.7	False	clustered
+seminal vesicle	4	17	0.23529411764705882	0.7	False	clustered
+skeletal muscle tissue of biceps brachii	4	17	0.23529411764705882	0.7	False	clustered
+skeletal muscle tissue of rectus abdominis	4	17	0.23529411764705882	0.7	False	clustered
+skin of hip	4	17	0.23529411764705882	0.7	False	clustered
+sperm	4	17	0.23529411764705882	0.7	False	clustered
+substantia nigra pars compacta	4	17	0.23529411764705882	0.7	False	clustered
+substantia nigra pars reticulata	4	17	0.23529411764705882	0.7	False	clustered
+subthalamic nucleus	4	17	0.23529411764705882	0.7	False	clustered
+superficial temporal artery	4	17	0.23529411764705882	0.7	False	clustered
+superior surface of tongue	4	17	0.23529411764705882	0.7	False	clustered
+superior vestibular nucleus	4	17	0.23529411764705882	0.7	False	clustered
+synovial joint	4	17	0.23529411764705882	0.7	False	clustered
+tendon	4	17	0.23529411764705882	0.7	False	clustered
+tendon of biceps brachii	4	17	0.23529411764705882	0.7	False	clustered
+tibia	4	17	0.23529411764705882	0.7	False	clustered
+trabecular bone tissue	4	17	0.23529411764705882	0.7	False	clustered
+trigeminal ganglion	4	17	0.23529411764705882	0.7	False	clustered
+upper leg skin	4	17	0.23529411764705882	0.7	False	clustered
+upper lobe of lung	4	17	0.23529411764705882	0.7	False	clustered
+urethra	4	17	0.23529411764705882	0.7	False	clustered
+vena cava	4	17	0.23529411764705882	0.7	False	clustered
+ventral tegmental area	4	17	0.23529411764705882	0.7	False	clustered
+visceral pleura	4	17	0.23529411764705882	0.7	False	clustered
+CA1 field of hippocampus	3	17	0.17647058823529413	0.7	False	clustered
+cardiac muscle of right atrium	3	17	0.17647058823529413	0.7	False	clustered
+cervix epithelium	3	17	0.17647058823529413	0.7	False	clustered
+cervix squamous epithelium	3	17	0.17647058823529413	0.7	False	clustered
+cingulate cortex	3	17	0.17647058823529413	0.7	False	clustered
+connective tissue	3	17	0.17647058823529413	0.7	False	clustered
+diaphragm	3	17	0.17647058823529413	0.7	False	clustered
+embryo	3	17	0.17647058823529413	0.7	False	clustered
+epithelial cell of pancreas	3	17	0.17647058823529413	0.7	False	clustered
+epithelium of esophagus	3	17	0.17647058823529413	0.7	False	clustered
+globus pallidus	3	17	0.17647058823529413	0.7	False	clustered
+gluteal muscle	3	17	0.17647058823529413	0.7	False	clustered
+hair follicle	3	17	0.17647058823529413	0.7	False	clustered
+ileal mucosa	3	17	0.17647058823529413	0.7	False	clustered
+kidney epithelium	3	17	0.17647058823529413	0.7	False	clustered
+left ventricle myocardium	3	17	0.17647058823529413	0.7	False	clustered
+male germ cell	3	17	0.17647058823529413	0.7	False	clustered
+mammary gland	3	17	0.17647058823529413	0.7	False	clustered
+mononuclear cell	3	17	0.17647058823529413	0.7	False	clustered
+mucosa of urinary bladder	3	17	0.17647058823529413	0.7	False	clustered
+muscle organ	3	17	0.17647058823529413	0.7	False	clustered
+olfactory bulb	3	17	0.17647058823529413	0.7	False	clustered
+orbitofrontal cortex	3	17	0.17647058823529413	0.7	False	clustered
+pancreatic ductal cell	3	17	0.17647058823529413	0.7	False	clustered
+pleura	3	17	0.17647058823529413	0.7	False	clustered
+squamous epithelium	3	17	0.17647058823529413	0.7	False	clustered
+telencephalon	3	17	0.17647058823529413	0.7	False	clustered
+tibialis anterior	3	17	0.17647058823529413	0.7	False	clustered
+tongue	3	17	0.17647058823529413	0.7	False	clustered
+tongue squamous epithelium	3	17	0.17647058823529413	0.7	False	clustered
+triceps brachii	3	17	0.17647058823529413	0.7	False	clustered
+type B pancreatic cell	3	17	0.17647058823529413	0.7	False	clustered
+upper arm skin	3	17	0.17647058823529413	0.7	False	clustered
+eye	1	17	0.058823529411764705	0.7	False	clustered
+nasopharynx	1	17	0.058823529411764705	0.7	False	clustered
+retina	1	17	0.058823529411764705	0.7	False	clustered

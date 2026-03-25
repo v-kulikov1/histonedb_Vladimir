@@ -1,1243 +1,648 @@
-Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
-ENSSSCG00000009178	H2AFZ	oocyte	present	gold quality	86.99
-ENSSSCG00000009178	H2AFZ	granulosa cell	present	gold quality	99.24
-ENSSSCG00000009178	H2AFZ	pituitary gland	present	gold quality	97.76
-ENSSSCG00000009178	H2AFZ	pituitary gland	present	gold quality	94.86
-ENSSSCG00000009178	H2AFZ	lymph node	present	gold quality	95.98
-ENSSSCG00000009178	H2AFZ	adult mammalian kidney	present	gold quality	93.61
-ENSSSCG00000009178	H2AFZ	adult mammalian kidney	present	gold quality	93.13
-ENSSSCG00000009178	H2AFZ	adult mammalian kidney	present	gold quality	94.01
-ENSSSCG00000009178	H2AFZ	adult mammalian kidney	present	gold quality	81.59
-ENSSSCG00000009178	H2AFZ	blood	present	gold quality	97.94
-ENSSSCG00000009178	H2AFZ	blood	present	gold quality	97.85
-ENSSSCG00000009178	H2AFZ	blood	present	gold quality	97.87
-ENSSSCG00000009178	H2AFZ	prefrontal cortex	present	gold quality	96.26
-ENSSSCG00000009178	H2AFZ	material anatomical entity	present	gold quality	99.31
-ENSSSCG00000009178	H2AFZ	material anatomical entity	present	gold quality	94.21
-ENSSSCG00000009178	H2AFZ	testis	present	gold quality	98.79
-ENSSSCG00000009178	H2AFZ	testis	present	gold quality	98.82
-ENSSSCG00000009178	H2AFZ	testis	present	gold quality	96.15
-ENSSSCG00000009178	H2AFZ	stomach	present	gold quality	98.46
-ENSSSCG00000009178	H2AFZ	stomach	present	gold quality	97.41
-ENSSSCG00000009178	H2AFZ	heart	present	gold quality	93.62
-ENSSSCG00000009178	H2AFZ	heart	present	gold quality	86.56
-ENSSSCG00000009178	H2AFZ	heart	present	gold quality	85.85
-ENSSSCG00000009178	H2AFZ	heart	present	gold quality	79.78
-ENSSSCG00000009178	H2AFZ	heart	present	gold quality	93.72
-ENSSSCG00000009178	H2AFZ	heart	present	gold quality	90.73
-ENSSSCG00000009178	H2AFZ	cerebral cortex	present	gold quality	96.71
-ENSSSCG00000009178	H2AFZ	pons	present	gold quality	96.21
-ENSSSCG00000009178	H2AFZ	pons	present	gold quality	90.49
-ENSSSCG00000009178	H2AFZ	penis	present	gold quality	97.76
-ENSSSCG00000009178	H2AFZ	ovary	present	gold quality	88.94
-ENSSSCG00000009178	H2AFZ	ovary	present	gold quality	90.32
-ENSSSCG00000009178	H2AFZ	ovary	present	gold quality	95.94
-ENSSSCG00000009178	H2AFZ	uterus	present	gold quality	97.41
-ENSSSCG00000009178	H2AFZ	uterus	present	gold quality	98.59
-ENSSSCG00000009178	H2AFZ	uterus	present	gold quality	94.09
-ENSSSCG00000009178	H2AFZ	adipose tissue	present	gold quality	93.4
-ENSSSCG00000009178	H2AFZ	adipose tissue	present	gold quality	90.92
-ENSSSCG00000009178	H2AFZ	right lobe of liver	present	gold quality	93.74
-ENSSSCG00000009178	H2AFZ	right lobe of liver	present	gold quality	93.57
-ENSSSCG00000009178	H2AFZ	skeletal muscle tissue	present	gold quality	93.11
-ENSSSCG00000009178	H2AFZ	skeletal muscle tissue	present	gold quality	94.87
-ENSSSCG00000009178	H2AFZ	caecum	present	gold quality	97.78
-ENSSSCG00000009178	H2AFZ	caecum	present	gold quality	97.49
-ENSSSCG00000009178	H2AFZ	colon	present	gold quality	97.78
-ENSSSCG00000009178	H2AFZ	colon	present	gold quality	97.74
-ENSSSCG00000009178	H2AFZ	psoas major muscle	present	gold quality	97.62
-ENSSSCG00000009178	H2AFZ	psoas major muscle	present	gold quality	96.39
-ENSSSCG00000009178	H2AFZ	epididymis	present	gold quality	93.51
-ENSSSCG00000009178	H2AFZ	semimembranosus muscle	present	gold quality	96.53
-ENSSSCG00000009178	H2AFZ	semimembranosus muscle	present	gold quality	95.81
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	89.55
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	94.49
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	97.46
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	98.36
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	94.05
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	98.16
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	97.69
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	97.39
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	98.06
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	97.2
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	91.16
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	88.55
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	88.67
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	89.18
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	96.91
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	92.01
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	95.23
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	96.38
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	96.07
-ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	present	gold quality	94.79
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	96.17
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	95.92
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	95.32
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	94.5
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	96.7
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	96.86
-ENSSSCG00000009178	H2AFZ	frontal cortex	present	gold quality	94.13
-ENSSSCG00000009178	H2AFZ	amygdala	present	gold quality	97.65
-ENSSSCG00000009178	H2AFZ	amygdala	present	gold quality	94.84
-ENSSSCG00000009178	H2AFZ	forebrain	present	gold quality	97.83
-ENSSSCG00000009178	H2AFZ	medulla oblongata	present	gold quality	93.4
-ENSSSCG00000009178	H2AFZ	medulla oblongata	present	gold quality	95.49
-ENSSSCG00000009178	H2AFZ	dorsal plus ventral thalamus	present	gold quality	96.1
-ENSSSCG00000009178	H2AFZ	dorsal plus ventral thalamus	present	gold quality	91.5
-ENSSSCG00000009178	H2AFZ	hypothalamus	present	gold quality	94.44
-ENSSSCG00000009178	H2AFZ	hypothalamus	present	gold quality	97.7
-ENSSSCG00000009178	H2AFZ	Ammon's horn	present	gold quality	97.19
-ENSSSCG00000009178	H2AFZ	cerebellum	present	gold quality	97.18
-ENSSSCG00000009178	H2AFZ	cerebellum	present	gold quality	96.79
-ENSSSCG00000009178	H2AFZ	cerebellum	present	gold quality	95.52
-ENSSSCG00000009178	H2AFZ	lung	present	gold quality	92.89
-ENSSSCG00000009178	H2AFZ	lung	present	gold quality	96.88
-ENSSSCG00000009178	H2AFZ	lung	present	gold quality	97.27
-ENSSSCG00000009178	H2AFZ	lung	present	gold quality	88.31
-ENSSSCG00000009178	H2AFZ	heart left ventricle	present	gold quality	88.87
-ENSSSCG00000009178	H2AFZ	heart left ventricle	present	gold quality	86.04
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	99.08
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	94.61
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	97.74
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	98.36
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	88.07
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	97.96
-ENSSSCG00000009178	H2AFZ	spleen	present	gold quality	98.15
-ENSSSCG00000009178	H2AFZ	liver	present	gold quality	95.74
-ENSSSCG00000009178	H2AFZ	liver	present	gold quality	92.05
-ENSSSCG00000009178	H2AFZ	liver	present	gold quality	93.01
-ENSSSCG00000009178	H2AFZ	liver	present	gold quality	92.28
-ENSSSCG00000009178	H2AFZ	liver	present	gold quality	92.12
-ENSSSCG00000009178	H2AFZ	liver	present	gold quality	84.73
-ENSSSCG00000009178	H2AFZ	kidney	present	gold quality	96.81
-ENSSSCG00000009178	H2AFZ	duodenum	present	gold quality	97.36
-ENSSSCG00000009178	H2AFZ	duodenum	present	gold quality	97.77
-ENSSSCG00000009178	H2AFZ	ileum	present	gold quality	98.55
-ENSSSCG00000009178	H2AFZ	ileum	present	gold quality	99.06
-ENSSSCG00000009178	H2AFZ	subcutaneous adipose tissue	present	gold quality	96.49
-ENSSSCG00000009178	H2AFZ	subcutaneous adipose tissue	present	gold quality	92.95
-ENSSSCG00000009178	H2AFZ	subcutaneous adipose tissue	present	gold quality	94.78
-ENSSSCG00000009178	H2AFZ	brainstem	present	gold quality	95.72
-ENSSSCG00000009178	H2AFZ	brainstem	present	gold quality	94.47
-ENSSSCG00000009178	H2AFZ	brainstem	present	gold quality	94.05
-ENSSSCG00000009178	H2AFZ	corpus callosum	present	gold quality	91.08
-ENSSSCG00000009178	H2AFZ	corpus callosum	present	gold quality	96.89
-ENSSSCG00000009178	H2AFZ	tonsil	present	gold quality	98.69
-ENSSSCG00000009178	H2AFZ	muscle tissue	present	gold quality	85.17
-ENSSSCG00000009178	H2AFZ	muscle tissue	present	gold quality	89.5
-ENSSSCG00000009178	H2AFZ	hippocampal formation	present	gold quality	98.08
-ENSSSCG00000009178	H2AFZ	hippocampal formation	present	gold quality	95.98
-ENSSSCG00000009178	H2AFZ	mesenteric lymph node	present	gold quality	98.11
-ENSSSCG00000009178	H2AFZ	mesenteric lymph node	present	gold quality	98.64
-ENSSSCG00000009178	H2AFZ	omentum	present	gold quality	94.94
-ENSSSCG00000009178	H2AFZ	omentum	present	gold quality	95.55
-ENSSSCG00000009178	H2AFZ	endocardial endothelium	present	gold quality	96.04
-ENSSSCG00000009178	H2AFZ	forelimb bud	present	gold quality	99.5
-ENSSSCG00000009178	H2AFZ	hindlimb bud	present	gold quality	99.54
-ENSSSCG00000009178	H2AFZ	metanephros cortex	present	gold quality	93.77
-ENSSSCG00000009178	H2AFZ	metanephros cortex	present	gold quality	93.78
-ENSSSCG00000009178	H2AFZ	longissimus lumborum muscle	present	gold quality	95.87
-ENSSSCG00000009178	H2AFZ	occipital cortex	present	gold quality	96.71
-ENSSSCG00000009178	H2AFZ	occipital cortex	present	gold quality	95.22
-ENSSSCG00000009178	H2AFZ	occipital cortex	present	gold quality	97.45
-ENSSSCG00000014307	MACROH2A1	oocyte	present	gold quality	85.94
-ENSSSCG00000014307	MACROH2A1	granulosa cell	present	gold quality	96.94
-ENSSSCG00000014307	MACROH2A1	pituitary gland	present	gold quality	93.32
-ENSSSCG00000014307	MACROH2A1	pituitary gland	present	gold quality	92.91
-ENSSSCG00000014307	MACROH2A1	lymph node	present	gold quality	96.53
-ENSSSCG00000014307	MACROH2A1	adult mammalian kidney	present	gold quality	96.48
-ENSSSCG00000014307	MACROH2A1	adult mammalian kidney	present	gold quality	94.63
-ENSSSCG00000014307	MACROH2A1	adult mammalian kidney	present	gold quality	94.81
-ENSSSCG00000014307	MACROH2A1	adult mammalian kidney	present	gold quality	89.45
-ENSSSCG00000014307	MACROH2A1	blood	present	gold quality	96.23
-ENSSSCG00000014307	MACROH2A1	blood	present	gold quality	96.0
-ENSSSCG00000014307	MACROH2A1	blood	present	gold quality	96.56
-ENSSSCG00000014307	MACROH2A1	prefrontal cortex	present	gold quality	95.18
-ENSSSCG00000014307	MACROH2A1	material anatomical entity	present	gold quality	93.11
-ENSSSCG00000014307	MACROH2A1	material anatomical entity	present	gold quality	93.21
-ENSSSCG00000014307	MACROH2A1	testis	present	gold quality	84.25
-ENSSSCG00000014307	MACROH2A1	testis	present	gold quality	82.37
-ENSSSCG00000014307	MACROH2A1	testis	present	gold quality	85.2
-ENSSSCG00000014307	MACROH2A1	stomach	present	gold quality	89.72
-ENSSSCG00000014307	MACROH2A1	stomach	present	gold quality	89.08
-ENSSSCG00000014307	MACROH2A1	heart	present	gold quality	96.51
-ENSSSCG00000014307	MACROH2A1	heart	present	gold quality	97.91
-ENSSSCG00000014307	MACROH2A1	heart	present	gold quality	94.72
-ENSSSCG00000014307	MACROH2A1	heart	present	gold quality	93.71
-ENSSSCG00000014307	MACROH2A1	heart	present	gold quality	96.25
-ENSSSCG00000014307	MACROH2A1	heart	present	gold quality	96.77
-ENSSSCG00000014307	MACROH2A1	cerebral cortex	present	gold quality	91.25
-ENSSSCG00000014307	MACROH2A1	pons	present	gold quality	91.48
-ENSSSCG00000014307	MACROH2A1	pons	present	gold quality	94.03
-ENSSSCG00000014307	MACROH2A1	penis	present	gold quality	95.38
-ENSSSCG00000014307	MACROH2A1	ovary	present	gold quality	96.0
-ENSSSCG00000014307	MACROH2A1	ovary	present	gold quality	96.29
-ENSSSCG00000014307	MACROH2A1	ovary	present	gold quality	93.29
-ENSSSCG00000014307	MACROH2A1	uterus	present	gold quality	96.99
-ENSSSCG00000014307	MACROH2A1	uterus	present	gold quality	97.38
-ENSSSCG00000014307	MACROH2A1	uterus	present	gold quality	93.78
-ENSSSCG00000014307	MACROH2A1	adipose tissue	present	gold quality	93.18
-ENSSSCG00000014307	MACROH2A1	adipose tissue	present	gold quality	90.47
-ENSSSCG00000014307	MACROH2A1	right lobe of liver	present	gold quality	91.33
-ENSSSCG00000014307	MACROH2A1	right lobe of liver	present	gold quality	91.34
-ENSSSCG00000014307	MACROH2A1	skeletal muscle tissue	present	gold quality	91.74
-ENSSSCG00000014307	MACROH2A1	skeletal muscle tissue	present	gold quality	89.45
-ENSSSCG00000014307	MACROH2A1	caecum	present	gold quality	94.1
-ENSSSCG00000014307	MACROH2A1	caecum	present	gold quality	95.38
-ENSSSCG00000014307	MACROH2A1	colon	present	gold quality	94.1
-ENSSSCG00000014307	MACROH2A1	colon	present	gold quality	94.81
-ENSSSCG00000014307	MACROH2A1	psoas major muscle	present	gold quality	96.06
-ENSSSCG00000014307	MACROH2A1	psoas major muscle	present	gold quality	94.89
-ENSSSCG00000014307	MACROH2A1	epididymis	present	gold quality	92.9
-ENSSSCG00000014307	MACROH2A1	semimembranosus muscle	present	gold quality	91.88
-ENSSSCG00000014307	MACROH2A1	semimembranosus muscle	present	gold quality	92.53
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	90.11
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	92.67
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	90.54
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	95.68
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	94.84
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	94.9
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	94.07
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	95.1
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	94.68
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	94.74
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	92.08
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	93.44
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	91.66
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	93.44
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	88.71
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	92.86
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	92.34
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	92.24
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	93.12
-ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	present	gold quality	92.42
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	95.29
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	95.62
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	92.76
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	89.89
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	95.8
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	95.78
-ENSSSCG00000014307	MACROH2A1	frontal cortex	present	gold quality	92.61
-ENSSSCG00000014307	MACROH2A1	amygdala	present	gold quality	91.36
-ENSSSCG00000014307	MACROH2A1	amygdala	present	gold quality	93.88
-ENSSSCG00000014307	MACROH2A1	forebrain	present	gold quality	93.91
-ENSSSCG00000014307	MACROH2A1	medulla oblongata	present	gold quality	94.39
-ENSSSCG00000014307	MACROH2A1	medulla oblongata	present	gold quality	90.02
-ENSSSCG00000014307	MACROH2A1	dorsal plus ventral thalamus	present	gold quality	94.6
-ENSSSCG00000014307	MACROH2A1	dorsal plus ventral thalamus	present	gold quality	93.57
-ENSSSCG00000014307	MACROH2A1	hypothalamus	present	gold quality	95.24
-ENSSSCG00000014307	MACROH2A1	hypothalamus	present	gold quality	96.87
-ENSSSCG00000014307	MACROH2A1	Ammon's horn	present	gold quality	94.61
-ENSSSCG00000014307	MACROH2A1	cerebellum	present	gold quality	94.79
-ENSSSCG00000014307	MACROH2A1	cerebellum	present	gold quality	91.35
-ENSSSCG00000014307	MACROH2A1	cerebellum	present	gold quality	90.26
-ENSSSCG00000014307	MACROH2A1	lung	present	gold quality	94.34
-ENSSSCG00000014307	MACROH2A1	lung	present	gold quality	95.1
-ENSSSCG00000014307	MACROH2A1	lung	present	gold quality	92.35
-ENSSSCG00000014307	MACROH2A1	lung	present	gold quality	94.24
-ENSSSCG00000014307	MACROH2A1	heart left ventricle	present	gold quality	97.15
-ENSSSCG00000014307	MACROH2A1	heart left ventricle	present	gold quality	96.46
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	97.37
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	95.84
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	95.38
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	95.09
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	95.77
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	95.43
-ENSSSCG00000014307	MACROH2A1	spleen	present	gold quality	94.47
-ENSSSCG00000014307	MACROH2A1	liver	present	gold quality	93.2
-ENSSSCG00000014307	MACROH2A1	liver	present	gold quality	92.84
-ENSSSCG00000014307	MACROH2A1	liver	present	gold quality	89.44
-ENSSSCG00000014307	MACROH2A1	liver	present	gold quality	89.87
-ENSSSCG00000014307	MACROH2A1	liver	present	gold quality	89.99
-ENSSSCG00000014307	MACROH2A1	liver	present	gold quality	91.47
-ENSSSCG00000014307	MACROH2A1	kidney	present	gold quality	95.72
-ENSSSCG00000014307	MACROH2A1	duodenum	present	gold quality	93.43
-ENSSSCG00000014307	MACROH2A1	duodenum	present	gold quality	92.83
-ENSSSCG00000014307	MACROH2A1	ileum	present	gold quality	93.55
-ENSSSCG00000014307	MACROH2A1	ileum	present	gold quality	93.64
-ENSSSCG00000014307	MACROH2A1	subcutaneous adipose tissue	present	gold quality	94.22
-ENSSSCG00000014307	MACROH2A1	subcutaneous adipose tissue	present	gold quality	93.65
-ENSSSCG00000014307	MACROH2A1	subcutaneous adipose tissue	present	gold quality	94.38
-ENSSSCG00000014307	MACROH2A1	brainstem	present	gold quality	88.36
-ENSSSCG00000014307	MACROH2A1	brainstem	present	gold quality	92.97
-ENSSSCG00000014307	MACROH2A1	brainstem	present	gold quality	91.46
-ENSSSCG00000014307	MACROH2A1	corpus callosum	present	gold quality	93.19
-ENSSSCG00000014307	MACROH2A1	corpus callosum	present	gold quality	90.51
-ENSSSCG00000014307	MACROH2A1	tonsil	present	gold quality	95.05
-ENSSSCG00000014307	MACROH2A1	muscle tissue	present	gold quality	93.15
-ENSSSCG00000014307	MACROH2A1	muscle tissue	present	gold quality	93.7
-ENSSSCG00000014307	MACROH2A1	hippocampal formation	present	gold quality	91.04
-ENSSSCG00000014307	MACROH2A1	hippocampal formation	present	gold quality	91.84
-ENSSSCG00000014307	MACROH2A1	mesenteric lymph node	present	gold quality	93.98
-ENSSSCG00000014307	MACROH2A1	mesenteric lymph node	present	gold quality	94.08
-ENSSSCG00000014307	MACROH2A1	omentum	present	gold quality	89.15
-ENSSSCG00000014307	MACROH2A1	omentum	present	gold quality	89.13
-ENSSSCG00000014307	MACROH2A1	endocardial endothelium	present	gold quality	92.51
-ENSSSCG00000014307	MACROH2A1	forelimb bud	present	gold quality	98.67
-ENSSSCG00000014307	MACROH2A1	hindlimb bud	present	gold quality	98.74
-ENSSSCG00000014307	MACROH2A1	metanephros cortex	present	gold quality	92.24
-ENSSSCG00000014307	MACROH2A1	metanephros cortex	present	gold quality	92.25
-ENSSSCG00000014307	MACROH2A1	longissimus lumborum muscle	present	gold quality	91.17
-ENSSSCG00000014307	MACROH2A1	occipital cortex	present	gold quality	94.1
-ENSSSCG00000014307	MACROH2A1	occipital cortex	present	gold quality	92.59
-ENSSSCG00000014307	MACROH2A1	occipital cortex	present	gold quality	89.83
-ENSSSCG00000016738	H2AZ2	oocyte	present	gold quality	84.95
-ENSSSCG00000016738	H2AZ2	granulosa cell	present	gold quality	97.44
-ENSSSCG00000016738	H2AZ2	pituitary gland	present	gold quality	93.01
-ENSSSCG00000016738	H2AZ2	pituitary gland	present	gold quality	87.33
-ENSSSCG00000016738	H2AZ2	lymph node	present	gold quality	97.23
-ENSSSCG00000016738	H2AZ2	adult mammalian kidney	present	gold quality	97.07
-ENSSSCG00000016738	H2AZ2	adult mammalian kidney	present	gold quality	95.32
-ENSSSCG00000016738	H2AZ2	adult mammalian kidney	present	gold quality	95.55
-ENSSSCG00000016738	H2AZ2	adult mammalian kidney	present	gold quality	88.79
-ENSSSCG00000016738	H2AZ2	blood	present	gold quality	96.67
-ENSSSCG00000016738	H2AZ2	blood	present	gold quality	96.42
-ENSSSCG00000016738	H2AZ2	blood	present	gold quality	96.8
-ENSSSCG00000016738	H2AZ2	prefrontal cortex	present	gold quality	83.66
-ENSSSCG00000016738	H2AZ2	material anatomical entity	present	gold quality	96.69
-ENSSSCG00000016738	H2AZ2	material anatomical entity	present	gold quality	93.4
-ENSSSCG00000016738	H2AZ2	testis	present	gold quality	90.28
-ENSSSCG00000016738	H2AZ2	testis	present	gold quality	90.03
-ENSSSCG00000016738	H2AZ2	testis	present	gold quality	81.03
-ENSSSCG00000016738	H2AZ2	stomach	present	gold quality	95.15
-ENSSSCG00000016738	H2AZ2	stomach	present	gold quality	94.74
-ENSSSCG00000016738	H2AZ2	heart	present	gold quality	93.68
-ENSSSCG00000016738	H2AZ2	heart	present	gold quality	95.58
-ENSSSCG00000016738	H2AZ2	heart	present	gold quality	94.91
-ENSSSCG00000016738	H2AZ2	heart	present	gold quality	77.32
-ENSSSCG00000016738	H2AZ2	heart	present	gold quality	93.48
-ENSSSCG00000016738	H2AZ2	heart	present	gold quality	94.52
-ENSSSCG00000016738	H2AZ2	cerebral cortex	present	gold quality	85.79
-ENSSSCG00000016738	H2AZ2	pons	present	gold quality	85.42
-ENSSSCG00000016738	H2AZ2	pons	present	gold quality	80.09
-ENSSSCG00000016738	H2AZ2	penis	present	gold quality	94.07
-ENSSSCG00000016738	H2AZ2	ovary	present	gold quality	91.88
-ENSSSCG00000016738	H2AZ2	ovary	present	gold quality	88.75
-ENSSSCG00000016738	H2AZ2	ovary	present	gold quality	86.88
-ENSSSCG00000016738	H2AZ2	uterus	present	gold quality	96.76
-ENSSSCG00000016738	H2AZ2	uterus	present	gold quality	98.16
-ENSSSCG00000016738	H2AZ2	uterus	present	gold quality	93.08
-ENSSSCG00000016738	H2AZ2	adipose tissue	present	gold quality	94.69
-ENSSSCG00000016738	H2AZ2	adipose tissue	present	gold quality	84.9
-ENSSSCG00000016738	H2AZ2	right lobe of liver	present	gold quality	88.25
-ENSSSCG00000016738	H2AZ2	right lobe of liver	present	gold quality	87.99
-ENSSSCG00000016738	H2AZ2	skeletal muscle tissue	present	gold quality	96.17
-ENSSSCG00000016738	H2AZ2	skeletal muscle tissue	present	gold quality	96.79
-ENSSSCG00000016738	H2AZ2	caecum	present	gold quality	95.37
-ENSSSCG00000016738	H2AZ2	caecum	present	gold quality	94.98
-ENSSSCG00000016738	H2AZ2	colon	present	gold quality	95.21
-ENSSSCG00000016738	H2AZ2	colon	present	gold quality	95.43
-ENSSSCG00000016738	H2AZ2	psoas major muscle	present	gold quality	96.13
-ENSSSCG00000016738	H2AZ2	psoas major muscle	present	gold quality	96.1
-ENSSSCG00000016738	H2AZ2	epididymis	present	gold quality	93.73
-ENSSSCG00000016738	H2AZ2	semimembranosus muscle	present	gold quality	97.32
-ENSSSCG00000016738	H2AZ2	semimembranosus muscle	present	gold quality	97.05
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	96.94
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	97.57
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	93.99
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	96.58
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	93.42
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	95.89
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	95.49
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	96.08
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	95.89
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	95.97
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	96.06
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	90.87
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	97.24
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	95.4
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	97.02
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	96.93
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	94.64
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	97.48
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	97.14
-ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	present	gold quality	94.49
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	85.11
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	87.17
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	87.52
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	79.72
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	84.92
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	84.41
-ENSSSCG00000016738	H2AZ2	frontal cortex	present	gold quality	76.07
-ENSSSCG00000016738	H2AZ2	amygdala	present	gold quality	84.1
-ENSSSCG00000016738	H2AZ2	amygdala	present	gold quality	84.2
-ENSSSCG00000016738	H2AZ2	forebrain	present	gold quality	91.3
-ENSSSCG00000016738	H2AZ2	medulla oblongata	present	gold quality	79.68
-ENSSSCG00000016738	H2AZ2	medulla oblongata	present	gold quality	79.51
-ENSSSCG00000016738	H2AZ2	dorsal plus ventral thalamus	present	gold quality	84.71
-ENSSSCG00000016738	H2AZ2	dorsal plus ventral thalamus	present	gold quality	79.37
-ENSSSCG00000016738	H2AZ2	hypothalamus	present	gold quality	90.52
-ENSSSCG00000016738	H2AZ2	hypothalamus	present	gold quality	94.01
-ENSSSCG00000016738	H2AZ2	Ammon's horn	present	gold quality	90.65
-ENSSSCG00000016738	H2AZ2	cerebellum	present	gold quality	90.68
-ENSSSCG00000016738	H2AZ2	cerebellum	present	gold quality	84.06
-ENSSSCG00000016738	H2AZ2	cerebellum	present	gold quality	83.64
-ENSSSCG00000016738	H2AZ2	lung	present	gold quality	88.55
-ENSSSCG00000016738	H2AZ2	lung	present	gold quality	95.49
-ENSSSCG00000016738	H2AZ2	lung	present	gold quality	96.85
-ENSSSCG00000016738	H2AZ2	lung	present	gold quality	82.24
-ENSSSCG00000016738	H2AZ2	heart left ventricle	present	gold quality	93.3
-ENSSSCG00000016738	H2AZ2	heart left ventricle	present	gold quality	92.15
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	97.88
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	94.3
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	96.98
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	97.44
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	78.11
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	95.08
-ENSSSCG00000016738	H2AZ2	spleen	present	gold quality	95.92
-ENSSSCG00000016738	H2AZ2	liver	present	gold quality	93.5
-ENSSSCG00000016738	H2AZ2	liver	present	gold quality	94.1
-ENSSSCG00000016738	H2AZ2	liver	present	gold quality	92.74
-ENSSSCG00000016738	H2AZ2	liver	present	gold quality	92.29
-ENSSSCG00000016738	H2AZ2	liver	present	gold quality	91.3
-ENSSSCG00000016738	H2AZ2	liver	present	gold quality	73.48
-ENSSSCG00000016738	H2AZ2	kidney	present	gold quality	96.3
-ENSSSCG00000016738	H2AZ2	duodenum	present	gold quality	95.12
-ENSSSCG00000016738	H2AZ2	duodenum	present	gold quality	95.42
-ENSSSCG00000016738	H2AZ2	ileum	present	gold quality	96.07
-ENSSSCG00000016738	H2AZ2	ileum	present	gold quality	96.62
-ENSSSCG00000016738	H2AZ2	subcutaneous adipose tissue	present	gold quality	96.19
-ENSSSCG00000016738	H2AZ2	subcutaneous adipose tissue	present	gold quality	92.84
-ENSSSCG00000016738	H2AZ2	subcutaneous adipose tissue	present	gold quality	92.98
-ENSSSCG00000016738	H2AZ2	brainstem	present	gold quality	80.38
-ENSSSCG00000016738	H2AZ2	brainstem	present	gold quality	81.56
-ENSSSCG00000016738	H2AZ2	brainstem	present	gold quality	81.41
-ENSSSCG00000016738	H2AZ2	corpus callosum	present	gold quality	83.57
-ENSSSCG00000016738	H2AZ2	corpus callosum	present	gold quality	84.01
-ENSSSCG00000016738	H2AZ2	tonsil	present	gold quality	96.13
-ENSSSCG00000016738	H2AZ2	muscle tissue	present	gold quality	97.27
-ENSSSCG00000016738	H2AZ2	muscle tissue	present	gold quality	97.3
-ENSSSCG00000016738	H2AZ2	hippocampal formation	present	gold quality	86.7
-ENSSSCG00000016738	H2AZ2	hippocampal formation	present	gold quality	81.67
-ENSSSCG00000016738	H2AZ2	mesenteric lymph node	present	gold quality	95.59
-ENSSSCG00000016738	H2AZ2	mesenteric lymph node	present	gold quality	96.33
-ENSSSCG00000016738	H2AZ2	omentum	present	gold quality	95.2
-ENSSSCG00000016738	H2AZ2	omentum	present	gold quality	95.02
-ENSSSCG00000016738	H2AZ2	endocardial endothelium	present	gold quality	93.48
-ENSSSCG00000016738	H2AZ2	forelimb bud	present	gold quality	98.69
-ENSSSCG00000016738	H2AZ2	hindlimb bud	present	gold quality	98.62
-ENSSSCG00000016738	H2AZ2	metanephros cortex	present	gold quality	95.09
-ENSSSCG00000016738	H2AZ2	metanephros cortex	present	gold quality	95.35
-ENSSSCG00000016738	H2AZ2	longissimus lumborum muscle	present	gold quality	97.01
-ENSSSCG00000016738	H2AZ2	occipital cortex	present	gold quality	86.58
-ENSSSCG00000016738	H2AZ2	occipital cortex	present	gold quality	70.8
-ENSSSCG00000016738	H2AZ2	occipital cortex	present	gold quality	82.3
-ENSSSCG00000031713	MACROH2A2	granulosa cell	present	gold quality	87.74
-ENSSSCG00000031713	MACROH2A2	pituitary gland	present	gold quality	79.89
-ENSSSCG00000031713	MACROH2A2	pituitary gland	present	gold quality	75.22
-ENSSSCG00000031713	MACROH2A2	adult mammalian kidney	present	gold quality	55.36
-ENSSSCG00000031713	MACROH2A2	adult mammalian kidney	present	gold quality	60.25
-ENSSSCG00000031713	MACROH2A2	adult mammalian kidney	present	gold quality	59.36
-ENSSSCG00000031713	MACROH2A2	prefrontal cortex	present	gold quality	64.08
-ENSSSCG00000031713	MACROH2A2	material anatomical entity	present	gold quality	70.86
-ENSSSCG00000031713	MACROH2A2	material anatomical entity	present	gold quality	59.05
-ENSSSCG00000031713	MACROH2A2	testis	present	gold quality	58.65
-ENSSSCG00000031713	MACROH2A2	testis	present	gold quality	54.06
-ENSSSCG00000031713	MACROH2A2	testis	present	gold quality	53.2
-ENSSSCG00000031713	MACROH2A2	stomach	present	gold quality	66.24
-ENSSSCG00000031713	MACROH2A2	stomach	present	gold quality	57.38
-ENSSSCG00000031713	MACROH2A2	heart	present	gold quality	77.36
-ENSSSCG00000031713	MACROH2A2	heart	present	gold quality	61.6
-ENSSSCG00000031713	MACROH2A2	heart	present	gold quality	76.94
-ENSSSCG00000031713	MACROH2A2	heart	present	gold quality	72.44
-ENSSSCG00000031713	MACROH2A2	heart	present	gold quality	78.87
-ENSSSCG00000031713	MACROH2A2	heart	present	gold quality	70.38
-ENSSSCG00000031713	MACROH2A2	cerebral cortex	present	gold quality	70.55
-ENSSSCG00000031713	MACROH2A2	pons	present	gold quality	59.23
-ENSSSCG00000031713	MACROH2A2	pons	present	gold quality	58.41
-ENSSSCG00000031713	MACROH2A2	ovary	present	gold quality	48.76
-ENSSSCG00000031713	MACROH2A2	ovary	present	gold quality	60.38
-ENSSSCG00000031713	MACROH2A2	ovary	present	gold quality	74.07
-ENSSSCG00000031713	MACROH2A2	uterus	present	gold quality	58.0
-ENSSSCG00000031713	MACROH2A2	uterus	present	gold quality	92.91
-ENSSSCG00000031713	MACROH2A2	uterus	present	gold quality	59.66
-ENSSSCG00000031713	MACROH2A2	adipose tissue	present	gold quality	55.91
-ENSSSCG00000031713	MACROH2A2	adipose tissue	present	gold quality	64.96
-ENSSSCG00000031713	MACROH2A2	right lobe of liver	present	gold quality	44.7
-ENSSSCG00000031713	MACROH2A2	skeletal muscle tissue	present	gold quality	53.69
-ENSSSCG00000031713	MACROH2A2	psoas major muscle	present	gold quality	58.41
-ENSSSCG00000031713	MACROH2A2	psoas major muscle	present	gold quality	54.76
-ENSSSCG00000031713	MACROH2A2	epididymis	present	gold quality	59.03
-ENSSSCG00000031713	MACROH2A2	semimembranosus muscle	present	gold quality	62.54
-ENSSSCG00000031713	MACROH2A2	semimembranosus muscle	present	gold quality	62.3
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	59.0
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	53.81
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	85.93
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	56.09
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	85.24
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	85.33
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	86.48
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	83.76
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	85.34
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	58.15
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	61.51
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	63.32
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	63.15
-ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	present	gold quality	60.78
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	64.46
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	66.56
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	58.79
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	55.33
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	64.68
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	64.42
-ENSSSCG00000031713	MACROH2A2	frontal cortex	present	gold quality	57.87
-ENSSSCG00000031713	MACROH2A2	amygdala	present	gold quality	61.4
-ENSSSCG00000031713	MACROH2A2	amygdala	present	gold quality	64.98
-ENSSSCG00000031713	MACROH2A2	forebrain	present	gold quality	83.64
-ENSSSCG00000031713	MACROH2A2	medulla oblongata	present	gold quality	60.38
-ENSSSCG00000031713	MACROH2A2	medulla oblongata	present	gold quality	62.81
-ENSSSCG00000031713	MACROH2A2	dorsal plus ventral thalamus	present	gold quality	60.45
-ENSSSCG00000031713	MACROH2A2	dorsal plus ventral thalamus	present	gold quality	62.18
-ENSSSCG00000031713	MACROH2A2	hypothalamus	present	gold quality	66.0
-ENSSSCG00000031713	MACROH2A2	hypothalamus	present	gold quality	75.27
-ENSSSCG00000031713	MACROH2A2	Ammon's horn	present	gold quality	63.51
-ENSSSCG00000031713	MACROH2A2	cerebellum	present	gold quality	76.38
-ENSSSCG00000031713	MACROH2A2	cerebellum	present	gold quality	77.05
-ENSSSCG00000031713	MACROH2A2	cerebellum	present	gold quality	77.79
-ENSSSCG00000031713	MACROH2A2	lung	present	gold quality	49.69
-ENSSSCG00000031713	MACROH2A2	lung	present	gold quality	49.98
-ENSSSCG00000031713	MACROH2A2	lung	present	gold quality	55.94
-ENSSSCG00000031713	MACROH2A2	heart left ventricle	present	gold quality	68.42
-ENSSSCG00000031713	MACROH2A2	heart left ventricle	present	gold quality	68.16
-ENSSSCG00000031713	MACROH2A2	spleen	present	gold quality	49.64
-ENSSSCG00000031713	MACROH2A2	spleen	present	gold quality	56.31
-ENSSSCG00000031713	MACROH2A2	spleen	present	gold quality	53.78
-ENSSSCG00000031713	MACROH2A2	spleen	present	gold quality	50.25
-ENSSSCG00000031713	MACROH2A2	liver	present	gold quality	54.76
-ENSSSCG00000031713	MACROH2A2	liver	present	gold quality	53.98
-ENSSSCG00000031713	MACROH2A2	liver	present	gold quality	52.49
-ENSSSCG00000031713	MACROH2A2	liver	present	gold quality	49.73
-ENSSSCG00000031713	MACROH2A2	kidney	present	gold quality	64.16
-ENSSSCG00000031713	MACROH2A2	subcutaneous adipose tissue	present	gold quality	72.65
-ENSSSCG00000031713	MACROH2A2	subcutaneous adipose tissue	present	gold quality	55.32
-ENSSSCG00000031713	MACROH2A2	subcutaneous adipose tissue	present	gold quality	59.7
-ENSSSCG00000031713	MACROH2A2	brainstem	present	gold quality	90.78
-ENSSSCG00000031713	MACROH2A2	brainstem	present	gold quality	62.54
-ENSSSCG00000031713	MACROH2A2	brainstem	present	gold quality	62.66
-ENSSSCG00000031713	MACROH2A2	corpus callosum	present	gold quality	52.85
-ENSSSCG00000031713	MACROH2A2	muscle tissue	present	gold quality	57.3
-ENSSSCG00000031713	MACROH2A2	muscle tissue	present	gold quality	59.94
-ENSSSCG00000031713	MACROH2A2	hippocampal formation	present	gold quality	52.47
-ENSSSCG00000031713	MACROH2A2	hippocampal formation	present	gold quality	59.31
-ENSSSCG00000031713	MACROH2A2	omentum	present	gold quality	61.43
-ENSSSCG00000031713	MACROH2A2	omentum	present	gold quality	60.42
-ENSSSCG00000031713	MACROH2A2	endocardial endothelium	present	gold quality	49.5
-ENSSSCG00000031713	MACROH2A2	forelimb bud	present	gold quality	98.34
-ENSSSCG00000031713	MACROH2A2	hindlimb bud	present	gold quality	98.57
-ENSSSCG00000031713	MACROH2A2	longissimus lumborum muscle	present	gold quality	64.55
-ENSSSCG00000031713	MACROH2A2	occipital cortex	present	gold quality	64.88
-ENSSSCG00000031713	MACROH2A2	occipital cortex	present	gold quality	58.52
-ENSSSCG00000031713	MACROH2A2	occipital cortex	present	gold quality	63.75
-ENSSSCG00000032609	LOC100154071	pituitary gland	present	gold quality	72.74
-ENSSSCG00000032609	LOC100154071	pituitary gland	present	gold quality	51.78
-ENSSSCG00000032609	LOC100154071	adult mammalian kidney	present	gold quality	61.14
-ENSSSCG00000032609	LOC100154071	material anatomical entity	present	gold quality	62.28
-ENSSSCG00000032609	LOC100154071	material anatomical entity	present	gold quality	40.27
-ENSSSCG00000032609	LOC100154071	testis	present	gold quality	94.05
-ENSSSCG00000032609	LOC100154071	stomach	present	gold quality	90.3
-ENSSSCG00000032609	LOC100154071	stomach	present	gold quality	84.0
-ENSSSCG00000032609	LOC100154071	heart	present	gold quality	51.28
-ENSSSCG00000032609	LOC100154071	heart	present	gold quality	76.92
-ENSSSCG00000032609	LOC100154071	heart	present	gold quality	56.24
-ENSSSCG00000032609	LOC100154071	cerebral cortex	present	gold quality	82.47
-ENSSSCG00000032609	LOC100154071	pons	present	gold quality	44.84
-ENSSSCG00000032609	LOC100154071	penis	present	gold quality	97.15
-ENSSSCG00000032609	LOC100154071	ovary	present	gold quality	92.16
-ENSSSCG00000032609	LOC100154071	ovary	present	gold quality	94.3
-ENSSSCG00000032609	LOC100154071	ovary	present	gold quality	86.74
-ENSSSCG00000032609	LOC100154071	uterus	present	gold quality	69.0
-ENSSSCG00000032609	LOC100154071	adipose tissue	present	gold quality	88.63
-ENSSSCG00000032609	LOC100154071	right lobe of liver	present	gold quality	79.7
-ENSSSCG00000032609	LOC100154071	right lobe of liver	present	gold quality	81.03
-ENSSSCG00000032609	LOC100154071	skeletal muscle tissue	present	gold quality	75.68
-ENSSSCG00000032609	LOC100154071	skeletal muscle tissue	present	gold quality	80.86
-ENSSSCG00000032609	LOC100154071	caecum	present	gold quality	96.94
-ENSSSCG00000032609	LOC100154071	caecum	present	gold quality	97.0
-ENSSSCG00000032609	LOC100154071	colon	present	gold quality	95.88
-ENSSSCG00000032609	LOC100154071	colon	present	gold quality	97.08
-ENSSSCG00000032609	LOC100154071	psoas major muscle	present	gold quality	42.59
-ENSSSCG00000032609	LOC100154071	epididymis	present	gold quality	68.81
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	91.22
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	58.16
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	53.77
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	87.68
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	61.22
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	85.85
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	34.77
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	78.01
-ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	present	gold quality	80.7
-ENSSSCG00000032609	LOC100154071	frontal cortex	present	gold quality	54.26
-ENSSSCG00000032609	LOC100154071	amygdala	present	gold quality	54.91
-ENSSSCG00000032609	LOC100154071	forebrain	present	gold quality	91.0
-ENSSSCG00000032609	LOC100154071	dorsal plus ventral thalamus	present	gold quality	51.12
-ENSSSCG00000032609	LOC100154071	lung	present	gold quality	43.03
-ENSSSCG00000032609	LOC100154071	lung	present	gold quality	88.95
-ENSSSCG00000032609	LOC100154071	heart left ventricle	present	gold quality	72.36
-ENSSSCG00000032609	LOC100154071	heart left ventricle	present	gold quality	65.87
-ENSSSCG00000032609	LOC100154071	spleen	present	gold quality	54.51
-ENSSSCG00000032609	LOC100154071	spleen	present	gold quality	43.81
-ENSSSCG00000032609	LOC100154071	spleen	present	gold quality	94.26
-ENSSSCG00000032609	LOC100154071	spleen	present	gold quality	98.75
-ENSSSCG00000032609	LOC100154071	spleen	present	gold quality	98.51
-ENSSSCG00000032609	LOC100154071	liver	present	gold quality	48.69
-ENSSSCG00000032609	LOC100154071	liver	present	gold quality	35.34
-ENSSSCG00000032609	LOC100154071	liver	present	gold quality	75.76
-ENSSSCG00000032609	LOC100154071	duodenum	present	gold quality	97.14
-ENSSSCG00000032609	LOC100154071	duodenum	present	gold quality	97.43
-ENSSSCG00000032609	LOC100154071	ileum	present	gold quality	98.58
-ENSSSCG00000032609	LOC100154071	ileum	present	gold quality	99.12
-ENSSSCG00000032609	LOC100154071	subcutaneous adipose tissue	present	gold quality	60.79
-ENSSSCG00000032609	LOC100154071	subcutaneous adipose tissue	present	gold quality	74.29
-ENSSSCG00000032609	LOC100154071	brainstem	present	gold quality	69.71
-ENSSSCG00000032609	LOC100154071	brainstem	present	gold quality	44.93
-ENSSSCG00000032609	LOC100154071	corpus callosum	present	gold quality	53.85
-ENSSSCG00000032609	LOC100154071	tonsil	present	gold quality	98.61
-ENSSSCG00000032609	LOC100154071	hippocampal formation	present	gold quality	78.76
-ENSSSCG00000032609	LOC100154071	hippocampal formation	present	gold quality	71.3
-ENSSSCG00000032609	LOC100154071	mesenteric lymph node	present	gold quality	97.81
-ENSSSCG00000032609	LOC100154071	mesenteric lymph node	present	gold quality	98.71
-ENSSSCG00000032609	LOC100154071	omentum	present	gold quality	89.96
-ENSSSCG00000032609	LOC100154071	omentum	present	gold quality	92.58
-ENSSSCG00000032609	LOC100154071	forelimb bud	present	gold quality	53.27
-ENSSSCG00000032609	LOC100154071	hindlimb bud	present	gold quality	56.16
-ENSSSCG00000032609	LOC100154071	metanephros cortex	present	gold quality	53.95
-ENSSSCG00000032609	LOC100154071	metanephros cortex	present	gold quality	65.29
-ENSSSCG00000033451	H2AC11	oocyte	present	gold quality	61.94
-ENSSSCG00000033451	H2AC11	granulosa cell	present	gold quality	46.99
-ENSSSCG00000033451	H2AC11	blood	present	gold quality	58.9
-ENSSSCG00000033451	H2AC11	blood	present	gold quality	57.86
-ENSSSCG00000033451	H2AC11	blood	present	gold quality	57.6
-ENSSSCG00000033451	H2AC11	material anatomical entity	present	gold quality	38.59
-ENSSSCG00000033451	H2AC11	material anatomical entity	present	gold quality	39.42
-ENSSSCG00000033451	H2AC11	testis	present	gold quality	86.02
-ENSSSCG00000033451	H2AC11	heart	present	gold quality	66.02
-ENSSSCG00000033451	H2AC11	cerebral cortex	present	gold quality	44.97
-ENSSSCG00000033451	H2AC11	penis	present	gold quality	46.07
-ENSSSCG00000033451	H2AC11	ovary	present	gold quality	55.75
-ENSSSCG00000033451	H2AC11	ovary	present	gold quality	65.19
-ENSSSCG00000033451	H2AC11	ovary	present	gold quality	47.64
-ENSSSCG00000033451	H2AC11	uterus	present	gold quality	45.37
-ENSSSCG00000033451	H2AC11	adipose tissue	present	gold quality	56.64
-ENSSSCG00000033451	H2AC11	right lobe of liver	present	gold quality	45.56
-ENSSSCG00000033451	H2AC11	right lobe of liver	present	gold quality	43.89
-ENSSSCG00000033451	H2AC11	caecum	present	gold quality	73.56
-ENSSSCG00000033451	H2AC11	caecum	present	gold quality	49.86
-ENSSSCG00000033451	H2AC11	colon	present	gold quality	68.61
-ENSSSCG00000033451	H2AC11	colon	present	gold quality	49.24
-ENSSSCG00000033451	H2AC11	psoas major muscle	present	gold quality	43.45
-ENSSSCG00000033451	H2AC11	psoas major muscle	present	gold quality	45.99
-ENSSSCG00000033451	H2AC11	semimembranosus muscle	present	gold quality	55.78
-ENSSSCG00000033451	H2AC11	semimembranosus muscle	present	gold quality	58.29
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	47.24
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	40.73
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	44.48
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	47.03
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	39.08
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	40.51
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	56.76
-ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	present	gold quality	57.2
-ENSSSCG00000033451	H2AC11	forebrain	present	gold quality	69.1
-ENSSSCG00000033451	H2AC11	lung	present	gold quality	38.38
-ENSSSCG00000033451	H2AC11	lung	present	gold quality	80.71
-ENSSSCG00000033451	H2AC11	spleen	present	gold quality	59.5
-ENSSSCG00000033451	H2AC11	spleen	present	gold quality	42.05
-ENSSSCG00000033451	H2AC11	spleen	present	gold quality	38.94
-ENSSSCG00000033451	H2AC11	spleen	present	gold quality	69.94
-ENSSSCG00000033451	H2AC11	spleen	present	gold quality	79.46
-ENSSSCG00000033451	H2AC11	spleen	present	gold quality	58.59
-ENSSSCG00000033451	H2AC11	liver	present	gold quality	36.92
-ENSSSCG00000033451	H2AC11	liver	present	gold quality	83.33
-ENSSSCG00000033451	H2AC11	duodenum	present	gold quality	64.55
-ENSSSCG00000033451	H2AC11	duodenum	present	gold quality	48.62
-ENSSSCG00000033451	H2AC11	ileum	present	gold quality	80.92
-ENSSSCG00000033451	H2AC11	ileum	present	gold quality	55.11
-ENSSSCG00000033451	H2AC11	subcutaneous adipose tissue	present	gold quality	42.4
-ENSSSCG00000033451	H2AC11	tonsil	present	gold quality	67.5
-ENSSSCG00000033451	H2AC11	muscle tissue	present	gold quality	30.02
-ENSSSCG00000033451	H2AC11	muscle tissue	present	gold quality	54.64
-ENSSSCG00000033451	H2AC11	mesenteric lymph node	present	gold quality	73.98
-ENSSSCG00000033451	H2AC11	mesenteric lymph node	present	gold quality	68.32
-ENSSSCG00000033451	H2AC11	omentum	present	gold quality	47.33
-ENSSSCG00000033451	H2AC11	forelimb bud	present	gold quality	50.19
-ENSSSCG00000033451	H2AC11	hindlimb bud	present	gold quality	53.57
-ENSSSCG00000033451	H2AC11	longissimus lumborum muscle	present	gold quality	59.1
-ENSSSCG00000037533	H2AC21	granulosa cell	present	gold quality	50.18
-ENSSSCG00000037533	H2AC21	pituitary gland	present	gold quality	76.27
-ENSSSCG00000037533	H2AC21	pituitary gland	present	gold quality	77.45
-ENSSSCG00000037533	H2AC21	adult mammalian kidney	present	gold quality	51.4
-ENSSSCG00000037533	H2AC21	adult mammalian kidney	present	gold quality	86.75
-ENSSSCG00000037533	H2AC21	blood	present	gold quality	50.19
-ENSSSCG00000037533	H2AC21	blood	present	gold quality	50.42
-ENSSSCG00000037533	H2AC21	blood	present	gold quality	47.64
-ENSSSCG00000037533	H2AC21	prefrontal cortex	present	gold quality	40.99
-ENSSSCG00000037533	H2AC21	material anatomical entity	present	gold quality	95.57
-ENSSSCG00000037533	H2AC21	material anatomical entity	present	gold quality	52.94
-ENSSSCG00000037533	H2AC21	testis	present	gold quality	87.49
-ENSSSCG00000037533	H2AC21	stomach	present	gold quality	94.9
-ENSSSCG00000037533	H2AC21	stomach	present	gold quality	84.86
-ENSSSCG00000037533	H2AC21	heart	present	gold quality	64.38
-ENSSSCG00000037533	H2AC21	heart	present	gold quality	48.93
-ENSSSCG00000037533	H2AC21	heart	present	gold quality	94.32
-ENSSSCG00000037533	H2AC21	heart	present	gold quality	69.65
-ENSSSCG00000037533	H2AC21	heart	present	gold quality	70.04
-ENSSSCG00000037533	H2AC21	cerebral cortex	present	gold quality	92.69
-ENSSSCG00000037533	H2AC21	pons	present	gold quality	72.25
-ENSSSCG00000037533	H2AC21	pons	present	gold quality	75.35
-ENSSSCG00000037533	H2AC21	penis	present	gold quality	96.04
-ENSSSCG00000037533	H2AC21	ovary	present	gold quality	95.77
-ENSSSCG00000037533	H2AC21	ovary	present	gold quality	97.17
-ENSSSCG00000037533	H2AC21	ovary	present	gold quality	90.77
-ENSSSCG00000037533	H2AC21	uterus	present	gold quality	94.83
-ENSSSCG00000037533	H2AC21	uterus	present	gold quality	84.15
-ENSSSCG00000037533	H2AC21	adipose tissue	present	gold quality	49.33
-ENSSSCG00000037533	H2AC21	adipose tissue	present	gold quality	89.82
-ENSSSCG00000037533	H2AC21	right lobe of liver	present	gold quality	91.32
-ENSSSCG00000037533	H2AC21	right lobe of liver	present	gold quality	91.95
-ENSSSCG00000037533	H2AC21	skeletal muscle tissue	present	gold quality	76.43
-ENSSSCG00000037533	H2AC21	skeletal muscle tissue	present	gold quality	78.03
-ENSSSCG00000037533	H2AC21	caecum	present	gold quality	96.29
-ENSSSCG00000037533	H2AC21	caecum	present	gold quality	96.23
-ENSSSCG00000037533	H2AC21	colon	present	gold quality	95.56
-ENSSSCG00000037533	H2AC21	colon	present	gold quality	96.41
-ENSSSCG00000037533	H2AC21	psoas major muscle	present	gold quality	81.0
-ENSSSCG00000037533	H2AC21	psoas major muscle	present	gold quality	69.12
-ENSSSCG00000037533	H2AC21	epididymis	present	gold quality	83.95
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	83.33
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	98.96
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	62.03
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	96.27
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	98.58
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	98.25
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	96.31
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	98.13
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	48.92
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	47.91
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	30.11
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	85.64
-ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	present	gold quality	85.88
-ENSSSCG00000037533	H2AC21	frontal cortex	present	gold quality	42.06
-ENSSSCG00000037533	H2AC21	frontal cortex	present	gold quality	38.9
-ENSSSCG00000037533	H2AC21	frontal cortex	present	gold quality	80.46
-ENSSSCG00000037533	H2AC21	frontal cortex	present	gold quality	39.5
-ENSSSCG00000037533	H2AC21	frontal cortex	present	gold quality	58.95
-ENSSSCG00000037533	H2AC21	frontal cortex	present	gold quality	79.33
-ENSSSCG00000037533	H2AC21	amygdala	present	gold quality	86.8
-ENSSSCG00000037533	H2AC21	amygdala	present	gold quality	70.44
-ENSSSCG00000037533	H2AC21	forebrain	present	gold quality	95.81
-ENSSSCG00000037533	H2AC21	medulla oblongata	present	gold quality	75.65
-ENSSSCG00000037533	H2AC21	medulla oblongata	present	gold quality	74.48
-ENSSSCG00000037533	H2AC21	dorsal plus ventral thalamus	present	gold quality	78.78
-ENSSSCG00000037533	H2AC21	dorsal plus ventral thalamus	present	gold quality	72.78
-ENSSSCG00000037533	H2AC21	hypothalamus	present	gold quality	30.21
-ENSSSCG00000037533	H2AC21	hypothalamus	present	gold quality	40.86
-ENSSSCG00000037533	H2AC21	cerebellum	present	gold quality	95.26
-ENSSSCG00000037533	H2AC21	cerebellum	present	gold quality	90.09
-ENSSSCG00000037533	H2AC21	lung	present	gold quality	63.79
-ENSSSCG00000037533	H2AC21	lung	present	gold quality	95.48
-ENSSSCG00000037533	H2AC21	heart left ventricle	present	gold quality	71.37
-ENSSSCG00000037533	H2AC21	heart left ventricle	present	gold quality	69.58
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	97.46
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	55.33
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	48.74
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	35.31
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	97.81
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	97.57
-ENSSSCG00000037533	H2AC21	spleen	present	gold quality	97.53
-ENSSSCG00000037533	H2AC21	liver	present	gold quality	57.17
-ENSSSCG00000037533	H2AC21	liver	present	gold quality	42.88
-ENSSSCG00000037533	H2AC21	liver	present	gold quality	97.26
-ENSSSCG00000037533	H2AC21	kidney	present	gold quality	50.33
-ENSSSCG00000037533	H2AC21	duodenum	present	gold quality	96.15
-ENSSSCG00000037533	H2AC21	duodenum	present	gold quality	97.35
-ENSSSCG00000037533	H2AC21	ileum	present	gold quality	98.06
-ENSSSCG00000037533	H2AC21	ileum	present	gold quality	99.23
-ENSSSCG00000037533	H2AC21	subcutaneous adipose tissue	present	gold quality	90.41
-ENSSSCG00000037533	H2AC21	subcutaneous adipose tissue	present	gold quality	79.1
-ENSSSCG00000037533	H2AC21	subcutaneous adipose tissue	present	gold quality	83.15
-ENSSSCG00000037533	H2AC21	brainstem	present	gold quality	88.16
-ENSSSCG00000037533	H2AC21	brainstem	present	gold quality	73.13
-ENSSSCG00000037533	H2AC21	brainstem	present	gold quality	76.93
-ENSSSCG00000037533	H2AC21	corpus callosum	present	gold quality	78.41
-ENSSSCG00000037533	H2AC21	corpus callosum	present	gold quality	84.05
-ENSSSCG00000037533	H2AC21	tonsil	present	gold quality	98.19
-ENSSSCG00000037533	H2AC21	hippocampal formation	present	gold quality	89.54
-ENSSSCG00000037533	H2AC21	hippocampal formation	present	gold quality	81.49
-ENSSSCG00000037533	H2AC21	mesenteric lymph node	present	gold quality	97.44
-ENSSSCG00000037533	H2AC21	mesenteric lymph node	present	gold quality	98.28
-ENSSSCG00000037533	H2AC21	omentum	present	gold quality	92.83
-ENSSSCG00000037533	H2AC21	omentum	present	gold quality	95.08
-ENSSSCG00000037533	H2AC21	endocardial endothelium	present	gold quality	34.51
-ENSSSCG00000037533	H2AC21	forelimb bud	present	gold quality	55.51
-ENSSSCG00000037533	H2AC21	hindlimb bud	present	gold quality	60.39
-ENSSSCG00000037533	H2AC21	metanephros cortex	present	gold quality	70.4
-ENSSSCG00000037533	H2AC21	metanephros cortex	present	gold quality	77.15
-ENSSSCG00000037533	H2AC21	occipital cortex	present	gold quality	26.23
-ENSSSCG00000037533	H2AC21	occipital cortex	present	gold quality	79.17
-ENSSSCG00000037533	H2AC21	occipital cortex	present	gold quality	83.09
-ENSSSCG00000039307	H2AJ	oocyte	present	gold quality	87.07
-ENSSSCG00000039307	H2AJ	granulosa cell	present	gold quality	93.18
-ENSSSCG00000039307	H2AJ	pituitary gland	present	gold quality	93.9
-ENSSSCG00000039307	H2AJ	pituitary gland	present	gold quality	91.48
-ENSSSCG00000039307	H2AJ	lymph node	present	gold quality	94.69
-ENSSSCG00000039307	H2AJ	adult mammalian kidney	present	gold quality	96.37
-ENSSSCG00000039307	H2AJ	adult mammalian kidney	present	gold quality	96.71
-ENSSSCG00000039307	H2AJ	adult mammalian kidney	present	gold quality	97.16
-ENSSSCG00000039307	H2AJ	adult mammalian kidney	present	gold quality	98.88
-ENSSSCG00000039307	H2AJ	blood	present	gold quality	92.58
-ENSSSCG00000039307	H2AJ	blood	present	gold quality	92.42
-ENSSSCG00000039307	H2AJ	blood	present	gold quality	92.1
-ENSSSCG00000039307	H2AJ	prefrontal cortex	present	gold quality	84.5
-ENSSSCG00000039307	H2AJ	material anatomical entity	present	gold quality	90.52
-ENSSSCG00000039307	H2AJ	material anatomical entity	present	gold quality	88.64
-ENSSSCG00000039307	H2AJ	testis	present	gold quality	62.12
-ENSSSCG00000039307	H2AJ	testis	present	gold quality	64.14
-ENSSSCG00000039307	H2AJ	testis	present	gold quality	89.74
-ENSSSCG00000039307	H2AJ	stomach	present	gold quality	90.5
-ENSSSCG00000039307	H2AJ	stomach	present	gold quality	88.49
-ENSSSCG00000039307	H2AJ	heart	present	gold quality	89.58
-ENSSSCG00000039307	H2AJ	heart	present	gold quality	87.85
-ENSSSCG00000039307	H2AJ	heart	present	gold quality	84.26
-ENSSSCG00000039307	H2AJ	heart	present	gold quality	96.02
-ENSSSCG00000039307	H2AJ	heart	present	gold quality	90.54
-ENSSSCG00000039307	H2AJ	heart	present	gold quality	92.98
-ENSSSCG00000039307	H2AJ	cerebral cortex	present	gold quality	72.66
-ENSSSCG00000039307	H2AJ	pons	present	gold quality	92.86
-ENSSSCG00000039307	H2AJ	pons	present	gold quality	85.7
-ENSSSCG00000039307	H2AJ	penis	present	gold quality	96.59
-ENSSSCG00000039307	H2AJ	ovary	present	gold quality	99.39
-ENSSSCG00000039307	H2AJ	ovary	present	gold quality	99.1
-ENSSSCG00000039307	H2AJ	ovary	present	gold quality	97.79
-ENSSSCG00000039307	H2AJ	uterus	present	gold quality	94.96
-ENSSSCG00000039307	H2AJ	uterus	present	gold quality	90.67
-ENSSSCG00000039307	H2AJ	uterus	present	gold quality	87.59
-ENSSSCG00000039307	H2AJ	adipose tissue	present	gold quality	98.44
-ENSSSCG00000039307	H2AJ	adipose tissue	present	gold quality	98.84
-ENSSSCG00000039307	H2AJ	right lobe of liver	present	gold quality	97.45
-ENSSSCG00000039307	H2AJ	right lobe of liver	present	gold quality	97.22
-ENSSSCG00000039307	H2AJ	skeletal muscle tissue	present	gold quality	86.99
-ENSSSCG00000039307	H2AJ	skeletal muscle tissue	present	gold quality	86.14
-ENSSSCG00000039307	H2AJ	caecum	present	gold quality	92.32
-ENSSSCG00000039307	H2AJ	caecum	present	gold quality	88.85
-ENSSSCG00000039307	H2AJ	colon	present	gold quality	93.17
-ENSSSCG00000039307	H2AJ	colon	present	gold quality	90.88
-ENSSSCG00000039307	H2AJ	psoas major muscle	present	gold quality	90.52
-ENSSSCG00000039307	H2AJ	psoas major muscle	present	gold quality	95.37
-ENSSSCG00000039307	H2AJ	epididymis	present	gold quality	97.32
-ENSSSCG00000039307	H2AJ	semimembranosus muscle	present	gold quality	93.04
-ENSSSCG00000039307	H2AJ	semimembranosus muscle	present	gold quality	93.28
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	81.19
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	91.85
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	86.43
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	83.61
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	94.61
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	85.32
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	88.87
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	81.17
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	85.65
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	82.11
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	86.26
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	94.47
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	82.65
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	92.59
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	84.89
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	79.1
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	88.81
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	93.64
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	93.05
-ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	present	gold quality	89.21
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	86.0
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	85.57
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	78.68
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	82.78
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	85.88
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	86.93
-ENSSSCG00000039307	H2AJ	frontal cortex	present	gold quality	82.38
-ENSSSCG00000039307	H2AJ	amygdala	present	gold quality	85.87
-ENSSSCG00000039307	H2AJ	amygdala	present	gold quality	90.61
-ENSSSCG00000039307	H2AJ	forebrain	present	gold quality	77.4
-ENSSSCG00000039307	H2AJ	medulla oblongata	present	gold quality	83.59
-ENSSSCG00000039307	H2AJ	medulla oblongata	present	gold quality	92.88
-ENSSSCG00000039307	H2AJ	dorsal plus ventral thalamus	present	gold quality	89.02
-ENSSSCG00000039307	H2AJ	dorsal plus ventral thalamus	present	gold quality	73.92
-ENSSSCG00000039307	H2AJ	hypothalamus	present	gold quality	83.67
-ENSSSCG00000039307	H2AJ	hypothalamus	present	gold quality	85.97
-ENSSSCG00000039307	H2AJ	Ammon's horn	present	gold quality	86.14
-ENSSSCG00000039307	H2AJ	cerebellum	present	gold quality	85.3
-ENSSSCG00000039307	H2AJ	cerebellum	present	gold quality	87.45
-ENSSSCG00000039307	H2AJ	cerebellum	present	gold quality	83.05
-ENSSSCG00000039307	H2AJ	lung	present	gold quality	91.01
-ENSSSCG00000039307	H2AJ	lung	present	gold quality	87.05
-ENSSSCG00000039307	H2AJ	lung	present	gold quality	85.65
-ENSSSCG00000039307	H2AJ	lung	present	gold quality	93.28
-ENSSSCG00000039307	H2AJ	heart left ventricle	present	gold quality	85.71
-ENSSSCG00000039307	H2AJ	heart left ventricle	present	gold quality	82.26
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	88.3
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	92.69
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	88.86
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	76.29
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	92.04
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	79.67
-ENSSSCG00000039307	H2AJ	spleen	present	gold quality	82.5
-ENSSSCG00000039307	H2AJ	liver	present	gold quality	97.97
-ENSSSCG00000039307	H2AJ	liver	present	gold quality	94.68
-ENSSSCG00000039307	H2AJ	liver	present	gold quality	98.32
-ENSSSCG00000039307	H2AJ	liver	present	gold quality	97.0
-ENSSSCG00000039307	H2AJ	liver	present	gold quality	97.04
-ENSSSCG00000039307	H2AJ	liver	present	gold quality	99.12
-ENSSSCG00000039307	H2AJ	kidney	present	gold quality	98.28
-ENSSSCG00000039307	H2AJ	duodenum	present	gold quality	95.9
-ENSSSCG00000039307	H2AJ	duodenum	present	gold quality	95.94
-ENSSSCG00000039307	H2AJ	ileum	present	gold quality	93.29
-ENSSSCG00000039307	H2AJ	ileum	present	gold quality	93.85
-ENSSSCG00000039307	H2AJ	subcutaneous adipose tissue	present	gold quality	97.8
-ENSSSCG00000039307	H2AJ	subcutaneous adipose tissue	present	gold quality	97.45
-ENSSSCG00000039307	H2AJ	subcutaneous adipose tissue	present	gold quality	96.98
-ENSSSCG00000039307	H2AJ	brainstem	present	gold quality	80.81
-ENSSSCG00000039307	H2AJ	brainstem	present	gold quality	88.61
-ENSSSCG00000039307	H2AJ	brainstem	present	gold quality	90.57
-ENSSSCG00000039307	H2AJ	corpus callosum	present	gold quality	76.74
-ENSSSCG00000039307	H2AJ	corpus callosum	present	gold quality	87.64
-ENSSSCG00000039307	H2AJ	tonsil	present	gold quality	94.4
-ENSSSCG00000039307	H2AJ	muscle tissue	present	gold quality	81.2
-ENSSSCG00000039307	H2AJ	muscle tissue	present	gold quality	87.36
-ENSSSCG00000039307	H2AJ	hippocampal formation	present	gold quality	90.58
-ENSSSCG00000039307	H2AJ	hippocampal formation	present	gold quality	83.64
-ENSSSCG00000039307	H2AJ	mesenteric lymph node	present	gold quality	87.61
-ENSSSCG00000039307	H2AJ	mesenteric lymph node	present	gold quality	83.7
-ENSSSCG00000039307	H2AJ	omentum	present	gold quality	96.34
-ENSSSCG00000039307	H2AJ	omentum	present	gold quality	94.63
-ENSSSCG00000039307	H2AJ	endocardial endothelium	present	gold quality	91.17
-ENSSSCG00000039307	H2AJ	forelimb bud	present	gold quality	91.37
-ENSSSCG00000039307	H2AJ	hindlimb bud	present	gold quality	91.25
-ENSSSCG00000039307	H2AJ	metanephros cortex	present	gold quality	97.04
-ENSSSCG00000039307	H2AJ	metanephros cortex	present	gold quality	97.35
-ENSSSCG00000039307	H2AJ	longissimus lumborum muscle	present	gold quality	94.45
-ENSSSCG00000039307	H2AJ	occipital cortex	present	gold quality	87.46
-ENSSSCG00000039307	H2AJ	occipital cortex	present	gold quality	82.42
-ENSSSCG00000039307	H2AJ	occipital cortex	present	gold quality	88.46
-ENSSSCG00000042208	H2AX	oocyte	present	gold quality	83.34
-ENSSSCG00000042208	H2AX	granulosa cell	present	gold quality	95.41
-ENSSSCG00000042208	H2AX	pituitary gland	present	gold quality	49.54
-ENSSSCG00000042208	H2AX	pituitary gland	present	gold quality	60.43
-ENSSSCG00000042208	H2AX	lymph node	present	gold quality	81.64
-ENSSSCG00000042208	H2AX	adult mammalian kidney	present	gold quality	89.38
-ENSSSCG00000042208	H2AX	adult mammalian kidney	present	gold quality	57.96
-ENSSSCG00000042208	H2AX	adult mammalian kidney	present	gold quality	62.31
-ENSSSCG00000042208	H2AX	blood	present	gold quality	85.83
-ENSSSCG00000042208	H2AX	blood	present	gold quality	87.41
-ENSSSCG00000042208	H2AX	blood	present	gold quality	87.22
-ENSSSCG00000042208	H2AX	prefrontal cortex	present	gold quality	87.68
-ENSSSCG00000042208	H2AX	material anatomical entity	present	gold quality	74.9
-ENSSSCG00000042208	H2AX	testis	present	gold quality	75.67
-ENSSSCG00000042208	H2AX	testis	present	gold quality	72.82
-ENSSSCG00000042208	H2AX	testis	present	gold quality	85.9
-ENSSSCG00000042208	H2AX	stomach	present	gold quality	65.55
-ENSSSCG00000042208	H2AX	stomach	present	gold quality	55.43
-ENSSSCG00000042208	H2AX	heart	present	gold quality	84.3
-ENSSSCG00000042208	H2AX	heart	present	gold quality	87.51
-ENSSSCG00000042208	H2AX	heart	present	gold quality	55.45
-ENSSSCG00000042208	H2AX	heart	present	gold quality	66.52
-ENSSSCG00000042208	H2AX	heart	present	gold quality	86.26
-ENSSSCG00000042208	H2AX	heart	present	gold quality	85.85
-ENSSSCG00000042208	H2AX	cerebral cortex	present	gold quality	69.68
-ENSSSCG00000042208	H2AX	pons	present	gold quality	49.08
-ENSSSCG00000042208	H2AX	pons	present	gold quality	70.74
-ENSSSCG00000042208	H2AX	penis	present	gold quality	84.14
-ENSSSCG00000042208	H2AX	ovary	present	gold quality	98.44
-ENSSSCG00000042208	H2AX	ovary	present	gold quality	98.93
-ENSSSCG00000042208	H2AX	ovary	present	gold quality	50.9
-ENSSSCG00000042208	H2AX	uterus	present	gold quality	81.53
-ENSSSCG00000042208	H2AX	uterus	present	gold quality	95.39
-ENSSSCG00000042208	H2AX	uterus	present	gold quality	57.26
-ENSSSCG00000042208	H2AX	adipose tissue	present	gold quality	89.62
-ENSSSCG00000042208	H2AX	right lobe of liver	present	gold quality	76.09
-ENSSSCG00000042208	H2AX	right lobe of liver	present	gold quality	76.13
-ENSSSCG00000042208	H2AX	skeletal muscle tissue	present	gold quality	70.06
-ENSSSCG00000042208	H2AX	skeletal muscle tissue	present	gold quality	73.51
-ENSSSCG00000042208	H2AX	caecum	present	gold quality	90.47
-ENSSSCG00000042208	H2AX	caecum	present	gold quality	90.0
-ENSSSCG00000042208	H2AX	colon	present	gold quality	86.06
-ENSSSCG00000042208	H2AX	colon	present	gold quality	84.63
-ENSSSCG00000042208	H2AX	psoas major muscle	present	gold quality	83.01
-ENSSSCG00000042208	H2AX	psoas major muscle	present	gold quality	85.31
-ENSSSCG00000042208	H2AX	epididymis	present	gold quality	61.6
-ENSSSCG00000042208	H2AX	semimembranosus muscle	present	gold quality	60.32
-ENSSSCG00000042208	H2AX	semimembranosus muscle	present	gold quality	67.13
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	70.48
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	86.99
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	98.52
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	94.63
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	78.96
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	98.6
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	91.05
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	76.33
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	91.13
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	68.69
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	59.9
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	94.65
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	81.81
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	75.79
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	54.27
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	66.52
-ENSSSCG00000042208	H2AX	longissimus thoracis muscle	present	gold quality	76.73
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	87.22
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	89.18
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	72.64
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	56.33
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	89.07
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	89.06
-ENSSSCG00000042208	H2AX	frontal cortex	present	gold quality	69.89
-ENSSSCG00000042208	H2AX	amygdala	present	gold quality	62.5
-ENSSSCG00000042208	H2AX	forebrain	present	gold quality	83.81
-ENSSSCG00000042208	H2AX	medulla oblongata	present	gold quality	60.49
-ENSSSCG00000042208	H2AX	medulla oblongata	present	gold quality	60.06
-ENSSSCG00000042208	H2AX	dorsal plus ventral thalamus	present	gold quality	65.96
-ENSSSCG00000042208	H2AX	hypothalamus	present	gold quality	68.87
-ENSSSCG00000042208	H2AX	hypothalamus	present	gold quality	52.59
-ENSSSCG00000042208	H2AX	Ammon's horn	present	gold quality	88.8
-ENSSSCG00000042208	H2AX	cerebellum	present	gold quality	71.6
-ENSSSCG00000042208	H2AX	cerebellum	present	gold quality	59.61
-ENSSSCG00000042208	H2AX	lung	present	gold quality	94.78
-ENSSSCG00000042208	H2AX	lung	present	gold quality	95.72
-ENSSSCG00000042208	H2AX	lung	present	gold quality	60.42
-ENSSSCG00000042208	H2AX	lung	present	gold quality	57.17
-ENSSSCG00000042208	H2AX	heart left ventricle	present	gold quality	66.12
-ENSSSCG00000042208	H2AX	heart left ventricle	present	gold quality	63.23
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	97.61
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	81.84
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	88.59
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	67.47
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	67.16
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	94.7
-ENSSSCG00000042208	H2AX	spleen	present	gold quality	94.21
-ENSSSCG00000042208	H2AX	liver	present	gold quality	85.9
-ENSSSCG00000042208	H2AX	liver	present	gold quality	63.67
-ENSSSCG00000042208	H2AX	liver	present	gold quality	83.37
-ENSSSCG00000042208	H2AX	liver	present	gold quality	60.11
-ENSSSCG00000042208	H2AX	liver	present	gold quality	70.08
-ENSSSCG00000042208	H2AX	liver	present	gold quality	82.46
-ENSSSCG00000042208	H2AX	kidney	present	gold quality	90.07
-ENSSSCG00000042208	H2AX	duodenum	present	gold quality	83.81
-ENSSSCG00000042208	H2AX	duodenum	present	gold quality	84.71
-ENSSSCG00000042208	H2AX	ileum	present	gold quality	89.89
-ENSSSCG00000042208	H2AX	ileum	present	gold quality	93.53
-ENSSSCG00000042208	H2AX	subcutaneous adipose tissue	present	gold quality	92.44
-ENSSSCG00000042208	H2AX	subcutaneous adipose tissue	present	gold quality	94.28
-ENSSSCG00000042208	H2AX	subcutaneous adipose tissue	present	gold quality	95.07
-ENSSSCG00000042208	H2AX	brainstem	present	gold quality	57.97
-ENSSSCG00000042208	H2AX	brainstem	present	gold quality	60.7
-ENSSSCG00000042208	H2AX	corpus callosum	present	gold quality	64.07
-ENSSSCG00000042208	H2AX	corpus callosum	present	gold quality	58.94
-ENSSSCG00000042208	H2AX	tonsil	present	gold quality	95.75
-ENSSSCG00000042208	H2AX	muscle tissue	present	gold quality	80.0
-ENSSSCG00000042208	H2AX	muscle tissue	present	gold quality	88.47
-ENSSSCG00000042208	H2AX	hippocampal formation	present	gold quality	53.88
-ENSSSCG00000042208	H2AX	hippocampal formation	present	gold quality	59.16
-ENSSSCG00000042208	H2AX	mesenteric lymph node	present	gold quality	92.06
-ENSSSCG00000042208	H2AX	mesenteric lymph node	present	gold quality	95.68
-ENSSSCG00000042208	H2AX	omentum	present	gold quality	76.14
-ENSSSCG00000042208	H2AX	omentum	present	gold quality	80.85
-ENSSSCG00000042208	H2AX	endocardial endothelium	present	gold quality	85.55
-ENSSSCG00000042208	H2AX	forelimb bud	present	gold quality	97.61
-ENSSSCG00000042208	H2AX	hindlimb bud	present	gold quality	96.76
-ENSSSCG00000042208	H2AX	metanephros cortex	present	gold quality	64.4
-ENSSSCG00000042208	H2AX	metanephros cortex	present	gold quality	65.97
-ENSSSCG00000042208	H2AX	longissimus lumborum muscle	present	gold quality	65.38
-ENSSSCG00000042208	H2AX	occipital cortex	present	gold quality	74.3
-ENSSSCG00000042208	H2AX	occipital cortex	present	gold quality	61.32
-ENSSSCG00000042208	H2AX	occipital cortex	present	gold quality	50.52
-ENSSSCG00000046222	H2AC17	pituitary gland	present	gold quality	52.74
-ENSSSCG00000046222	H2AC17	material anatomical entity	present	gold quality	38.98
-ENSSSCG00000046222	H2AC17	material anatomical entity	present	gold quality	37.23
-ENSSSCG00000046222	H2AC17	testis	present	gold quality	85.96
-ENSSSCG00000046222	H2AC17	stomach	present	gold quality	73.65
-ENSSSCG00000046222	H2AC17	stomach	present	gold quality	63.65
-ENSSSCG00000046222	H2AC17	heart	present	gold quality	64.71
-ENSSSCG00000046222	H2AC17	heart	present	gold quality	39.41
-ENSSSCG00000046222	H2AC17	cerebral cortex	present	gold quality	50.72
-ENSSSCG00000046222	H2AC17	penis	present	gold quality	85.31
-ENSSSCG00000046222	H2AC17	ovary	present	gold quality	59.64
-ENSSSCG00000046222	H2AC17	ovary	present	gold quality	77.64
-ENSSSCG00000046222	H2AC17	ovary	present	gold quality	65.74
-ENSSSCG00000046222	H2AC17	uterus	present	gold quality	39.24
-ENSSSCG00000046222	H2AC17	uterus	present	gold quality	54.27
-ENSSSCG00000046222	H2AC17	adipose tissue	present	gold quality	64.83
-ENSSSCG00000046222	H2AC17	right lobe of liver	present	gold quality	54.97
-ENSSSCG00000046222	H2AC17	right lobe of liver	present	gold quality	54.57
-ENSSSCG00000046222	H2AC17	skeletal muscle tissue	present	gold quality	58.72
-ENSSSCG00000046222	H2AC17	skeletal muscle tissue	present	gold quality	63.59
-ENSSSCG00000046222	H2AC17	caecum	present	gold quality	88.83
-ENSSSCG00000046222	H2AC17	caecum	present	gold quality	83.15
-ENSSSCG00000046222	H2AC17	colon	present	gold quality	89.25
-ENSSSCG00000046222	H2AC17	colon	present	gold quality	85.53
-ENSSSCG00000046222	H2AC17	epididymis	present	gold quality	50.13
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	82.7
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	52.85
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	51.07
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	44.88
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	66.63
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	47.78
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	63.82
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	34.45
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	66.72
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	54.71
-ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	present	gold quality	56.89
-ENSSSCG00000046222	H2AC17	forebrain	present	gold quality	73.86
-ENSSSCG00000046222	H2AC17	dorsal plus ventral thalamus	present	gold quality	46.37
-ENSSSCG00000046222	H2AC17	lung	present	gold quality	58.25
-ENSSSCG00000046222	H2AC17	heart left ventricle	present	gold quality	53.66
-ENSSSCG00000046222	H2AC17	heart left ventricle	present	gold quality	52.01
-ENSSSCG00000046222	H2AC17	spleen	present	gold quality	52.32
-ENSSSCG00000046222	H2AC17	spleen	present	gold quality	59.54
-ENSSSCG00000046222	H2AC17	spleen	present	gold quality	90.72
-ENSSSCG00000046222	H2AC17	spleen	present	gold quality	90.57
-ENSSSCG00000046222	H2AC17	liver	present	gold quality	71.04
-ENSSSCG00000046222	H2AC17	duodenum	present	gold quality	86.97
-ENSSSCG00000046222	H2AC17	duodenum	present	gold quality	90.81
-ENSSSCG00000046222	H2AC17	ileum	present	gold quality	95.23
-ENSSSCG00000046222	H2AC17	ileum	present	gold quality	96.5
-ENSSSCG00000046222	H2AC17	subcutaneous adipose tissue	present	gold quality	25.79
-ENSSSCG00000046222	H2AC17	brainstem	present	gold quality	80.02
-ENSSSCG00000046222	H2AC17	tonsil	present	gold quality	96.19
-ENSSSCG00000046222	H2AC17	muscle tissue	present	gold quality	48.75
-ENSSSCG00000046222	H2AC17	hippocampal formation	present	gold quality	67.01
-ENSSSCG00000046222	H2AC17	hippocampal formation	present	gold quality	56.21
-ENSSSCG00000046222	H2AC17	mesenteric lymph node	present	gold quality	90.58
-ENSSSCG00000046222	H2AC17	mesenteric lymph node	present	gold quality	95.73
-ENSSSCG00000046222	H2AC17	omentum	present	gold quality	68.6
-ENSSSCG00000046222	H2AC17	omentum	present	gold quality	72.04
-ENSSSCG00000046222	H2AC17	forelimb bud	present	gold quality	43.04
-ENSSSCG00000046222	H2AC17	hindlimb bud	present	gold quality	45.59
-ENSSSCG00000046222	H2AC17	metanephros cortex	present	gold quality	51.0
-ENSSSCG00000047716	H2AC12	forebrain	present	gold quality	25.55
-ENSSSCG00000047900	H2AW	granulosa cell	present	gold quality	57.06
-ENSSSCG00000047900	H2AW	pituitary gland	present	gold quality	96.79
-ENSSSCG00000047900	H2AW	pituitary gland	present	gold quality	94.51
-ENSSSCG00000047900	H2AW	lymph node	present	gold quality	47.69
-ENSSSCG00000047900	H2AW	adult mammalian kidney	present	gold quality	51.4
-ENSSSCG00000047900	H2AW	adult mammalian kidney	present	gold quality	30.76
-ENSSSCG00000047900	H2AW	adult mammalian kidney	present	gold quality	77.94
-ENSSSCG00000047900	H2AW	blood	present	gold quality	69.38
-ENSSSCG00000047900	H2AW	blood	present	gold quality	69.91
-ENSSSCG00000047900	H2AW	blood	present	gold quality	68.42
-ENSSSCG00000047900	H2AW	prefrontal cortex	present	gold quality	57.32
-ENSSSCG00000047900	H2AW	material anatomical entity	present	gold quality	77.61
-ENSSSCG00000047900	H2AW	material anatomical entity	present	gold quality	55.15
-ENSSSCG00000047900	H2AW	testis	present	gold quality	46.06
-ENSSSCG00000047900	H2AW	testis	present	gold quality	45.39
-ENSSSCG00000047900	H2AW	testis	present	gold quality	95.08
-ENSSSCG00000047900	H2AW	stomach	present	gold quality	95.55
-ENSSSCG00000047900	H2AW	stomach	present	gold quality	89.48
-ENSSSCG00000047900	H2AW	heart	present	gold quality	46.26
-ENSSSCG00000047900	H2AW	heart	present	gold quality	57.06
-ENSSSCG00000047900	H2AW	heart	present	gold quality	69.1
-ENSSSCG00000047900	H2AW	heart	present	gold quality	49.24
-ENSSSCG00000047900	H2AW	heart	present	gold quality	52.59
-ENSSSCG00000047900	H2AW	cerebral cortex	present	gold quality	94.01
-ENSSSCG00000047900	H2AW	pons	present	gold quality	90.89
-ENSSSCG00000047900	H2AW	pons	present	gold quality	87.83
-ENSSSCG00000047900	H2AW	penis	present	gold quality	91.89
-ENSSSCG00000047900	H2AW	ovary	present	gold quality	93.89
-ENSSSCG00000047900	H2AW	ovary	present	gold quality	93.67
-ENSSSCG00000047900	H2AW	ovary	present	gold quality	96.91
-ENSSSCG00000047900	H2AW	uterus	present	gold quality	82.95
-ENSSSCG00000047900	H2AW	uterus	present	gold quality	63.04
-ENSSSCG00000047900	H2AW	uterus	present	gold quality	80.21
-ENSSSCG00000047900	H2AW	adipose tissue	present	gold quality	51.19
-ENSSSCG00000047900	H2AW	adipose tissue	present	gold quality	91.29
-ENSSSCG00000047900	H2AW	right lobe of liver	present	gold quality	63.09
-ENSSSCG00000047900	H2AW	right lobe of liver	present	gold quality	61.79
-ENSSSCG00000047900	H2AW	skeletal muscle tissue	present	gold quality	66.19
-ENSSSCG00000047900	H2AW	skeletal muscle tissue	present	gold quality	72.93
-ENSSSCG00000047900	H2AW	caecum	present	gold quality	91.0
-ENSSSCG00000047900	H2AW	caecum	present	gold quality	90.5
-ENSSSCG00000047900	H2AW	colon	present	gold quality	92.53
-ENSSSCG00000047900	H2AW	colon	present	gold quality	91.77
-ENSSSCG00000047900	H2AW	psoas major muscle	present	gold quality	53.6
-ENSSSCG00000047900	H2AW	psoas major muscle	present	gold quality	55.35
-ENSSSCG00000047900	H2AW	epididymis	present	gold quality	72.69
-ENSSSCG00000047900	H2AW	semimembranosus muscle	present	gold quality	30.84
-ENSSSCG00000047900	H2AW	semimembranosus muscle	present	gold quality	33.2
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	60.68
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	80.25
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	63.46
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	23.87
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	54.34
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	65.5
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	53.44
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	54.29
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	53.68
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	45.44
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	79.51
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	30.49
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	77.4
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	53.38
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	65.22
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	30.47
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	42.49
-ENSSSCG00000047900	H2AW	longissimus thoracis muscle	present	gold quality	66.65
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	61.99
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	60.75
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	40.92
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	94.87
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	58.28
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	57.65
-ENSSSCG00000047900	H2AW	frontal cortex	present	gold quality	96.02
-ENSSSCG00000047900	H2AW	amygdala	present	gold quality	97.27
-ENSSSCG00000047900	H2AW	amygdala	present	gold quality	94.87
-ENSSSCG00000047900	H2AW	forebrain	present	gold quality	95.44
-ENSSSCG00000047900	H2AW	medulla oblongata	present	gold quality	84.17
-ENSSSCG00000047900	H2AW	medulla oblongata	present	gold quality	92.13
-ENSSSCG00000047900	H2AW	dorsal plus ventral thalamus	present	gold quality	94.79
-ENSSSCG00000047900	H2AW	dorsal plus ventral thalamus	present	gold quality	73.99
-ENSSSCG00000047900	H2AW	hypothalamus	present	gold quality	30.37
-ENSSSCG00000047900	H2AW	hypothalamus	present	gold quality	52.28
-ENSSSCG00000047900	H2AW	Ammon's horn	present	gold quality	61.38
-ENSSSCG00000047900	H2AW	cerebellum	present	gold quality	32.64
-ENSSSCG00000047900	H2AW	cerebellum	present	gold quality	98.48
-ENSSSCG00000047900	H2AW	cerebellum	present	gold quality	98.04
-ENSSSCG00000047900	H2AW	lung	present	gold quality	62.97
-ENSSSCG00000047900	H2AW	lung	present	gold quality	58.77
-ENSSSCG00000047900	H2AW	lung	present	gold quality	34.72
-ENSSSCG00000047900	H2AW	lung	present	gold quality	94.56
-ENSSSCG00000047900	H2AW	heart left ventricle	present	gold quality	79.57
-ENSSSCG00000047900	H2AW	heart left ventricle	present	gold quality	70.65
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	69.34
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	57.17
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	67.03
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	38.38
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	95.84
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	93.48
-ENSSSCG00000047900	H2AW	spleen	present	gold quality	95.3
-ENSSSCG00000047900	H2AW	liver	present	gold quality	49.14
-ENSSSCG00000047900	H2AW	liver	present	gold quality	35.66
-ENSSSCG00000047900	H2AW	liver	present	gold quality	75.76
-ENSSSCG00000047900	H2AW	duodenum	present	gold quality	92.15
-ENSSSCG00000047900	H2AW	duodenum	present	gold quality	95.87
-ENSSSCG00000047900	H2AW	ileum	present	gold quality	97.29
-ENSSSCG00000047900	H2AW	ileum	present	gold quality	98.62
-ENSSSCG00000047900	H2AW	subcutaneous adipose tissue	present	gold quality	51.44
-ENSSSCG00000047900	H2AW	subcutaneous adipose tissue	present	gold quality	43.78
-ENSSSCG00000047900	H2AW	subcutaneous adipose tissue	present	gold quality	58.8
-ENSSSCG00000047900	H2AW	brainstem	present	gold quality	89.54
-ENSSSCG00000047900	H2AW	brainstem	present	gold quality	86.01
-ENSSSCG00000047900	H2AW	brainstem	present	gold quality	91.31
-ENSSSCG00000047900	H2AW	corpus callosum	present	gold quality	84.56
-ENSSSCG00000047900	H2AW	corpus callosum	present	gold quality	97.82
-ENSSSCG00000047900	H2AW	tonsil	present	gold quality	96.95
-ENSSSCG00000047900	H2AW	muscle tissue	present	gold quality	30.01
-ENSSSCG00000047900	H2AW	hippocampal formation	present	gold quality	97.47
-ENSSSCG00000047900	H2AW	hippocampal formation	present	gold quality	92.67
-ENSSSCG00000047900	H2AW	mesenteric lymph node	present	gold quality	94.39
-ENSSSCG00000047900	H2AW	mesenteric lymph node	present	gold quality	96.73
-ENSSSCG00000047900	H2AW	omentum	present	gold quality	83.75
-ENSSSCG00000047900	H2AW	omentum	present	gold quality	85.25
-ENSSSCG00000047900	H2AW	endocardial endothelium	present	gold quality	54.2
-ENSSSCG00000047900	H2AW	forelimb bud	present	gold quality	56.4
-ENSSSCG00000047900	H2AW	hindlimb bud	present	gold quality	56.38
-ENSSSCG00000047900	H2AW	metanephros cortex	present	gold quality	72.22
-ENSSSCG00000047900	H2AW	metanephros cortex	present	gold quality	78.78
-ENSSSCG00000047900	H2AW	longissimus lumborum muscle	present	gold quality	59.57
-ENSSSCG00000047900	H2AW	occipital cortex	present	gold quality	36.53
-ENSSSCG00000047900	H2AW	occipital cortex	present	gold quality	96.95
-ENSSSCG00000047900	H2AW	occipital cortex	present	gold quality	98.06
+Gene ID	Gene name	Anatomical entity name	cell_mean_score	cell_std_score	cell_n	cell_status	Expression score	Expression std	Expression n	raw_row_count	qualifying_row_count
+ENSSSCG00000009178	H2AFZ	Ammon's horn	97.19	0.0	1	present_gold	97.19	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	adipose tissue	92.16	1.7536248173426408	2	present_gold	92.16	1.7536248173426408	2	2	2
+ENSSSCG00000009178	H2AFZ	adult mammalian kidney	90.58500000000001	6.0074481548602074	4	present_gold	90.58500000000001	6.0074481548602074	4	4	4
+ENSSSCG00000009178	H2AFZ	amygdala	96.245	1.9869700551342002	2	present_gold	96.245	1.9869700551342002	2	2	2
+ENSSSCG00000009178	H2AFZ	blood	97.88666666666666	0.047258156262526205	3	present_gold	97.88666666666666	0.047258156262526205	3	3	3
+ENSSSCG00000009178	H2AFZ	brainstem	94.74666666666667	0.8686963412685323	3	present_gold	94.74666666666667	0.8686963412685323	3	3	3
+ENSSSCG00000009178	H2AFZ	caecum	97.63499999999999	0.20506096654410322	2	present_gold	97.63499999999999	0.20506096654410322	2	2	2
+ENSSSCG00000009178	H2AFZ	cerebellum	96.49666666666667	0.8680053763274417	3	present_gold	96.49666666666667	0.8680053763274417	3	3	3
+ENSSSCG00000009178	H2AFZ	cerebral cortex	96.71	0.0	1	present_gold	96.71	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	colon	97.75999999999999	0.028284271247466325	2	present_gold	97.75999999999999	0.028284271247466325	2	2	2
+ENSSSCG00000009178	H2AFZ	corpus callosum	93.985	4.108290398693843	2	present_gold	93.985	4.108290398693843	2	2	2
+ENSSSCG00000009178	H2AFZ	dorsal plus ventral thalamus	93.8	3.2526911934581144	2	present_gold	93.8	3.2526911934581144	2	2	2
+ENSSSCG00000009178	H2AFZ	duodenum	97.565	0.28991378028648207	2	present_gold	97.565	0.28991378028648207	2	2	2
+ENSSSCG00000009178	H2AFZ	endocardial endothelium	96.04	0.0	1	present_gold	96.04	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	epididymis	93.51	0.0	1	present_gold	93.51	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	forebrain	97.83	0.0	1	present_gold	97.83	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	forelimb bud	99.5	0.0	1	present_gold	99.5	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	frontal cortex	95.65714285714286	1.052880402921978	7	present_gold	95.65714285714286	1.052880402921978	7	7	7
+ENSSSCG00000009178	H2AFZ	granulosa cell	99.24	0.0	1	present_gold	99.24	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	heart	88.37666666666667	5.388300907212465	6	present_gold	88.37666666666667	5.388300907212465	6	6	6
+ENSSSCG00000009178	H2AFZ	heart left ventricle	87.45500000000001	2.001112190757928	2	present_gold	87.45500000000001	2.001112190757928	2	2	2
+ENSSSCG00000009178	H2AFZ	hindlimb bud	99.54	0.0	1	present_gold	99.54	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	hippocampal formation	97.03	1.4849242404917458	2	present_gold	97.03	1.4849242404917458	2	2	2
+ENSSSCG00000009178	H2AFZ	hypothalamus	96.07	2.3051681066681486	2	present_gold	96.07	2.3051681066681486	2	2	2
+ENSSSCG00000009178	H2AFZ	ileum	98.805	0.36062445840514284	2	present_gold	98.805	0.36062445840514284	2	2	2
+ENSSSCG00000009178	H2AFZ	kidney	96.81	0.0	1	present_gold	96.81	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	liver	91.65500000000002	3.6671992037520926	6	present_gold	91.65500000000002	3.6671992037520926	6	6	6
+ENSSSCG00000009178	H2AFZ	longissimus lumborum muscle	95.87	0.0	1	present_gold	95.87	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	longissimus thoracis muscle	94.568	3.461328616221476	20	present_gold	94.568	3.461328616221476	20	20	20
+ENSSSCG00000009178	H2AFZ	lung	93.8375	4.182896723563704	4	present_gold	93.8375	4.182896723563704	4	4	4
+ENSSSCG00000009178	H2AFZ	lymph node	95.98	0.0	1	present_gold	95.98	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	material anatomical entity	96.75999999999999	3.6062445840513986	2	present_gold	96.75999999999999	3.6062445840513986	2	2	2
+ENSSSCG00000009178	H2AFZ	medulla oblongata	94.445	1.4778531726798767	2	present_gold	94.445	1.4778531726798767	2	2	2
+ENSSSCG00000009178	H2AFZ	mesenteric lymph node	98.375	0.37476659402887097	2	present_gold	98.375	0.37476659402887097	2	2	2
+ENSSSCG00000009178	H2AFZ	metanephros cortex	93.775	0.007071067811869092	2	present_gold	93.775	0.007071067811869092	2	2	2
+ENSSSCG00000009178	H2AFZ	muscle tissue	87.33500000000001	3.0617723625377495	2	present_gold	87.33500000000001	3.0617723625377495	2	2	2
+ENSSSCG00000009178	H2AFZ	occipital cortex	96.46	1.135825690852255	3	present_gold	96.46	1.135825690852255	3	3	3
+ENSSSCG00000009178	H2AFZ	omentum	95.245	0.43133513652379357	2	present_gold	95.245	0.43133513652379357	2	2	2
+ENSSSCG00000009178	H2AFZ	oocyte	86.99	0.0	1	present_gold	86.99	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	ovary	91.73333333333333	3.7078475337226773	3	present_gold	91.73333333333333	3.7078475337226773	3	3	3
+ENSSSCG00000009178	H2AFZ	penis	97.76	0.0	1	present_gold	97.76	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	pituitary gland	96.31	2.0506096654409918	2	present_gold	96.31	2.0506096654409918	2	2	2
+ENSSSCG00000009178	H2AFZ	pons	93.35	4.0446507883870515	2	present_gold	93.35	4.0446507883870515	2	2	2
+ENSSSCG00000009178	H2AFZ	prefrontal cortex	96.26	0.0	1	present_gold	96.26	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	psoas major muscle	97.005	0.8697413408594563	2	present_gold	97.005	0.8697413408594563	2	2	2
+ENSSSCG00000009178	H2AFZ	right lobe of liver	93.655	0.12020815280171428	2	present_gold	93.655	0.12020815280171428	2	2	2
+ENSSSCG00000009178	H2AFZ	semimembranosus muscle	96.17	0.5091168824543134	2	present_gold	96.17	0.5091168824543134	2	2	2
+ENSSSCG00000009178	H2AFZ	skeletal muscle tissue	93.99000000000001	1.2445079348883272	2	present_gold	93.99000000000001	1.2445079348883272	2	2	2
+ENSSSCG00000009178	H2AFZ	spleen	96.28142857142858	3.8903788528943597	7	present_gold	96.28142857142858	3.8903788528943597	7	7	7
+ENSSSCG00000009178	H2AFZ	stomach	97.935	0.7424621202458729	2	present_gold	97.935	0.7424621202458729	2	2	2
+ENSSSCG00000009178	H2AFZ	subcutaneous adipose tissue	94.74000000000001	1.7703389505967455	3	present_gold	94.74000000000001	1.7703389505967455	3	3	3
+ENSSSCG00000009178	H2AFZ	testis	97.92	1.5329383549249427	3	present_gold	97.92	1.5329383549249427	3	3	3
+ENSSSCG00000009178	H2AFZ	tonsil	98.69	0.0	1	present_gold	98.69	0.0	1	1	1
+ENSSSCG00000009178	H2AFZ	uterus	96.69666666666667	2.3332666657142576	3	present_gold	96.69666666666667	2.3332666657142576	3	3	3
+ENSSSCG00000014307	MACROH2A1	Ammon's horn	94.61	0.0	1	present_gold	94.61	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	adipose tissue	91.825	1.9162593770155494	2	present_gold	91.825	1.9162593770155494	2	2	2
+ENSSSCG00000014307	MACROH2A1	adult mammalian kidney	93.8425	3.0444854518730526	4	present_gold	93.8425	3.0444854518730526	4	4	4
+ENSSSCG00000014307	MACROH2A1	amygdala	92.62	1.781909088590097	2	present_gold	92.62	1.781909088590097	2	2	2
+ENSSSCG00000014307	MACROH2A1	blood	96.26333333333334	0.28148416178061225	3	present_gold	96.26333333333334	0.28148416178061225	3	3	3
+ENSSSCG00000014307	MACROH2A1	brainstem	90.92999999999999	2.3502553052806827	3	present_gold	90.92999999999999	2.3502553052806827	3	3	3
+ENSSSCG00000014307	MACROH2A1	caecum	94.74	0.9050966799187816	2	present_gold	94.74	0.9050966799187816	2	2	2
+ENSSSCG00000014307	MACROH2A1	cerebellum	92.13333333333333	2.3644097219672706	3	present_gold	92.13333333333333	2.3644097219672706	3	3	3
+ENSSSCG00000014307	MACROH2A1	cerebral cortex	91.25	0.0	1	present_gold	91.25	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	colon	94.455	0.5020458146424543	2	present_gold	94.455	0.5020458146424543	2	2	2
+ENSSSCG00000014307	MACROH2A1	corpus callosum	91.85	1.8950461735799422	2	present_gold	91.85	1.8950461735799422	2	2	2
+ENSSSCG00000014307	MACROH2A1	dorsal plus ventral thalamus	94.085	0.7283199846221448	2	present_gold	94.085	0.7283199846221448	2	2	2
+ENSSSCG00000014307	MACROH2A1	duodenum	93.13	0.4242640687119345	2	present_gold	93.13	0.4242640687119345	2	2	2
+ENSSSCG00000014307	MACROH2A1	endocardial endothelium	92.51	0.0	1	present_gold	92.51	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	epididymis	92.9	0.0	1	present_gold	92.9	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	forebrain	93.91	0.0	1	present_gold	93.91	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	forelimb bud	98.67	0.0	1	present_gold	98.67	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	frontal cortex	93.96428571428571	2.2748542601146795	7	present_gold	93.96428571428571	2.2748542601146795	7	7	7
+ENSSSCG00000014307	MACROH2A1	granulosa cell	96.94	0.0	1	present_gold	96.94	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	heart	95.97833333333334	1.5128306801049054	6	present_gold	95.97833333333334	1.5128306801049054	6	6	6
+ENSSSCG00000014307	MACROH2A1	heart left ventricle	96.805	0.4879036790187263	2	present_gold	96.805	0.4879036790187263	2	2	2
+ENSSSCG00000014307	MACROH2A1	hindlimb bud	98.74	0.0	1	present_gold	98.74	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	hippocampal formation	91.44	0.565685424949236	2	present_gold	91.44	0.565685424949236	2	2	2
+ENSSSCG00000014307	MACROH2A1	hypothalamus	96.055	1.1525840533340792	2	present_gold	96.055	1.1525840533340792	2	2	2
+ENSSSCG00000014307	MACROH2A1	ileum	93.595	0.06363961030679169	2	present_gold	93.595	0.06363961030679169	2	2	2
+ENSSSCG00000014307	MACROH2A1	kidney	95.72	0.0	1	present_gold	95.72	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	liver	91.13499999999999	1.6166477662125434	6	present_gold	91.13499999999999	1.6166477662125434	6	6	6
+ENSSSCG00000014307	MACROH2A1	longissimus lumborum muscle	91.17	0.0	1	present_gold	91.17	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	longissimus thoracis muscle	92.982	1.8195707995944665	20	present_gold	92.982	1.8195707995944665	20	20	20
+ENSSSCG00000014307	MACROH2A1	lung	94.0075	1.1698254855604182	4	present_gold	94.0075	1.1698254855604182	4	4	4
+ENSSSCG00000014307	MACROH2A1	lymph node	96.53	0.0	1	present_gold	96.53	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	material anatomical entity	93.16	0.07071067811865074	2	present_gold	93.16	0.07071067811865074	2	2	2
+ENSSSCG00000014307	MACROH2A1	medulla oblongata	92.205	3.090056633785216	2	present_gold	92.205	3.090056633785216	2	2	2
+ENSSSCG00000014307	MACROH2A1	mesenteric lymph node	94.03	0.07071067811865074	2	present_gold	94.03	0.07071067811865074	2	2	2
+ENSSSCG00000014307	MACROH2A1	metanephros cortex	92.245	0.007071067811869092	2	present_gold	92.245	0.007071067811869092	2	2	2
+ENSSSCG00000014307	MACROH2A1	muscle tissue	93.42500000000001	0.38890872965259915	2	present_gold	93.42500000000001	0.38890872965259915	2	2	2
+ENSSSCG00000014307	MACROH2A1	occipital cortex	92.17333333333333	2.1652790428333546	3	present_gold	92.17333333333333	2.1652790428333546	3	3	3
+ENSSSCG00000014307	MACROH2A1	omentum	89.14	0.014142135623738184	2	present_gold	89.14	0.014142135623738184	2	2	2
+ENSSSCG00000014307	MACROH2A1	oocyte	85.94	0.0	1	present_gold	85.94	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	ovary	95.19333333333334	1.6547003756974639	3	present_gold	95.19333333333334	1.6547003756974639	3	3	3
+ENSSSCG00000014307	MACROH2A1	penis	95.38	0.0	1	present_gold	95.38	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	pituitary gland	93.115	0.28991378028648207	2	present_gold	93.115	0.28991378028648207	2	2	2
+ENSSSCG00000014307	MACROH2A1	pons	92.755	1.8031222920256942	2	present_gold	92.755	1.8031222920256942	2	2	2
+ENSSSCG00000014307	MACROH2A1	prefrontal cortex	95.18	0.0	1	present_gold	95.18	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	psoas major muscle	95.475	0.8273149339882618	2	present_gold	95.475	0.8273149339882618	2	2	2
+ENSSSCG00000014307	MACROH2A1	right lobe of liver	91.33500000000001	0.007071067811869092	2	present_gold	91.33500000000001	0.007071067811869092	2	2	2
+ENSSSCG00000014307	MACROH2A1	semimembranosus muscle	92.205	0.4596194077712599	2	present_gold	92.205	0.4596194077712599	2	2	2
+ENSSSCG00000014307	MACROH2A1	skeletal muscle tissue	90.595	1.6192745289171881	2	present_gold	90.595	1.6192745289171881	2	2	2
+ENSSSCG00000014307	MACROH2A1	spleen	95.62142857142858	0.8972630341103743	7	present_gold	95.62142857142858	0.8972630341103743	7	7	7
+ENSSSCG00000014307	MACROH2A1	stomach	89.4	0.4525483399593908	2	present_gold	89.4	0.4525483399593908	2	2	2
+ENSSSCG00000014307	MACROH2A1	subcutaneous adipose tissue	94.08333333333333	0.38370995990895174	3	present_gold	94.08333333333333	0.38370995990895174	3	3	3
+ENSSSCG00000014307	MACROH2A1	testis	83.94	1.4402430350465147	3	present_gold	83.94	1.4402430350465147	3	3	3
+ENSSSCG00000014307	MACROH2A1	tonsil	95.05	0.0	1	present_gold	95.05	0.0	1	1	1
+ENSSSCG00000014307	MACROH2A1	uterus	96.05	1.9755252466116413	3	present_gold	96.05	1.9755252466116413	3	3	3
+ENSSSCG00000016738	H2AZ2	Ammon's horn	90.65	0.0	1	present_gold	90.65	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	adipose tissue	89.795	6.922575387816295	2	present_gold	89.795	6.922575387816295	2	2	2
+ENSSSCG00000016738	H2AZ2	adult mammalian kidney	94.1825	3.6778922858978107	4	present_gold	94.1825	3.6778922858978107	4	4	4
+ENSSSCG00000016738	H2AZ2	amygdala	84.15	0.07071067811866079	2	present_gold	84.15	0.07071067811866079	2	2	2
+ENSSSCG00000016738	H2AZ2	blood	96.63	0.19313207915827765	3	present_gold	96.63	0.19313207915827765	3	3	3
+ENSSSCG00000016738	H2AZ2	brainstem	81.11666666666666	0.6423654204059686	3	present_gold	81.11666666666666	0.6423654204059686	3	3	3
+ENSSSCG00000016738	H2AZ2	caecum	95.17500000000001	0.27577164466275395	2	present_gold	95.17500000000001	0.27577164466275395	2	2	2
+ENSSSCG00000016738	H2AZ2	cerebellum	86.12666666666667	3.9488901394358087	3	present_gold	86.12666666666667	3.9488901394358087	3	3	3
+ENSSSCG00000016738	H2AZ2	cerebral cortex	85.79	0.0	1	present_gold	85.79	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	colon	95.32	0.1555634918610497	2	present_gold	95.32	0.1555634918610497	2	2	2
+ENSSSCG00000016738	H2AZ2	corpus callosum	83.78999999999999	0.31112698372208936	2	present_gold	83.78999999999999	0.31112698372208936	2	2	2
+ENSSSCG00000016738	H2AZ2	dorsal plus ventral thalamus	82.03999999999999	3.775950211536156	2	present_gold	82.03999999999999	3.775950211536156	2	2	2
+ENSSSCG00000016738	H2AZ2	duodenum	95.27000000000001	0.21213203435596226	2	present_gold	95.27000000000001	0.21213203435596226	2	2	2
+ENSSSCG00000016738	H2AZ2	endocardial endothelium	93.48	0.0	1	present_gold	93.48	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	epididymis	93.73	0.0	1	present_gold	93.73	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	forebrain	91.3	0.0	1	present_gold	91.3	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	forelimb bud	98.69	0.0	1	present_gold	98.69	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	frontal cortex	83.55999999999999	4.174006867906826	7	present_gold	83.55999999999999	4.174006867906826	7	7	7
+ENSSSCG00000016738	H2AZ2	granulosa cell	97.44	0.0	1	present_gold	97.44	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	heart	91.58166666666666	7.029937173735389	6	present_gold	91.58166666666666	7.029937173735389	6	6	6
+ENSSSCG00000016738	H2AZ2	heart left ventricle	92.725	0.8131727983645236	2	present_gold	92.725	0.8131727983645236	2	2	2
+ENSSSCG00000016738	H2AZ2	hindlimb bud	98.62	0.0	1	present_gold	98.62	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	hippocampal formation	84.185	3.556747109368335	2	present_gold	84.185	3.556747109368335	2	2	2
+ENSSSCG00000016738	H2AZ2	hypothalamus	92.265	2.4678026663410573	2	present_gold	92.265	2.4678026663410573	2	2	2
+ENSSSCG00000016738	H2AZ2	ileum	96.345	0.38890872965260914	2	present_gold	96.345	0.38890872965260914	2	2	2
+ENSSSCG00000016738	H2AZ2	kidney	96.3	0.0	1	present_gold	96.3	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	liver	89.56833333333333	7.940958170565226	6	present_gold	89.56833333333333	7.940958170565226	6	6	6
+ENSSSCG00000016738	H2AZ2	longissimus lumborum muscle	97.01	0.0	1	present_gold	97.01	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	longissimus thoracis muscle	95.7545	1.6417368049849228	20	present_gold	95.7545	1.6417368049849228	20	20	20
+ENSSSCG00000016738	H2AZ2	lung	90.7825	6.756070726884574	4	present_gold	90.7825	6.756070726884574	4	4	4
+ENSSSCG00000016738	H2AZ2	lymph node	97.23	0.0	1	present_gold	97.23	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	material anatomical entity	95.045	2.3263813101037356	2	present_gold	95.045	2.3263813101037356	2	2	2
+ENSSSCG00000016738	H2AZ2	medulla oblongata	79.595	0.12020815280171428	2	present_gold	79.595	0.12020815280171428	2	2	2
+ENSSSCG00000016738	H2AZ2	mesenteric lymph node	95.96000000000001	0.5232590180780415	2	present_gold	95.96000000000001	0.5232590180780415	2	2	2
+ENSSSCG00000016738	H2AZ2	metanephros cortex	95.22	0.18384776310849593	2	present_gold	95.22	0.18384776310849593	2	2	2
+ENSSSCG00000016738	H2AZ2	muscle tissue	97.285	0.02121320343559723	2	present_gold	97.285	0.02121320343559723	2	2	2
+ENSSSCG00000016738	H2AZ2	occipital cortex	79.89333333333333	8.160645399313301	3	present_gold	79.89333333333333	8.160645399313301	3	3	3
+ENSSSCG00000016738	H2AZ2	omentum	95.11	0.12727922061358338	2	present_gold	95.11	0.12727922061358338	2	2	2
+ENSSSCG00000016738	H2AZ2	oocyte	84.95	0.0	1	present_gold	84.95	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	ovary	89.17	2.5263214363971973	3	present_gold	89.17	2.5263214363971973	3	3	3
+ENSSSCG00000016738	H2AZ2	penis	94.07	0.0	1	present_gold	94.07	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	pituitary gland	90.17	4.016366517139595	2	present_gold	90.17	4.016366517139595	2	2	2
+ENSSSCG00000016738	H2AZ2	pons	82.755	3.768879143724297	2	present_gold	82.755	3.768879143724297	2	2	2
+ENSSSCG00000016738	H2AZ2	prefrontal cortex	83.66	0.0	1	present_gold	83.66	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	psoas major muscle	96.115	0.02121320343559723	2	present_gold	96.115	0.02121320343559723	2	2	2
+ENSSSCG00000016738	H2AZ2	right lobe of liver	88.12	0.18384776310850598	2	present_gold	88.12	0.18384776310850598	2	2	2
+ENSSSCG00000016738	H2AZ2	semimembranosus muscle	97.185	0.19091883092036502	2	present_gold	97.185	0.19091883092036502	2	2	2
+ENSSSCG00000016738	H2AZ2	skeletal muscle tissue	96.48	0.4384062043356627	2	present_gold	96.48	0.4384062043356627	2	2	2
+ENSSSCG00000016738	H2AZ2	spleen	93.67285714285715	6.981572684063179	7	present_gold	93.67285714285715	6.981572684063179	7	7	7
+ENSSSCG00000016738	H2AZ2	stomach	94.945	0.2899137802864921	2	present_gold	94.945	0.2899137802864921	2	2	2
+ENSSSCG00000016738	H2AZ2	subcutaneous adipose tissue	94.00333333333333	1.8950021987674106	3	present_gold	94.00333333333333	1.8950021987674106	3	3	3
+ENSSSCG00000016738	H2AZ2	testis	87.11333333333334	5.269803917920792	3	present_gold	87.11333333333334	5.269803917920792	3	3	3
+ENSSSCG00000016738	H2AZ2	tonsil	96.13	0.0	1	present_gold	96.13	0.0	1	1	1
+ENSSSCG00000016738	H2AZ2	uterus	96.0	2.623890241606916	3	present_gold	96.0	2.623890241606916	3	3	3
+ENSSSCG00000031713	MACROH2A2	Ammon's horn	63.51	0.0	1	present_gold	63.51	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	adipose tissue	60.434999999999995	6.399316369738253	2	present_gold	60.434999999999995	6.399316369738253	2	2	2
+ENSSSCG00000031713	MACROH2A2	adult mammalian kidney	58.32333333333333	2.6046176942755603	3	present_gold	58.32333333333333	2.6046176942755603	3	4	3
+ENSSSCG00000031713	MACROH2A2	amygdala	63.19	2.531442276647844	2	present_gold	63.19	2.531442276647844	2	2	2
+ENSSSCG00000031713	MACROH2A2	blood	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000031713	MACROH2A2	brainstem	71.99333333333333	16.26984122028649	3	present_gold	71.99333333333333	16.26984122028649	3	3	3
+ENSSSCG00000031713	MACROH2A2	caecum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000031713	MACROH2A2	cerebellum	77.07333333333334	0.7052895386529855	3	present_gold	77.07333333333334	0.7052895386529855	3	3	3
+ENSSSCG00000031713	MACROH2A2	cerebral cortex	70.55	0.0	1	present_gold	70.55	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	colon	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000031713	MACROH2A2	corpus callosum	52.85	0.0	1	present_gold	52.85	0.0	1	2	1
+ENSSSCG00000031713	MACROH2A2	dorsal plus ventral thalamus	61.315	1.223294731452725	2	present_gold	61.315	1.223294731452725	2	2	2
+ENSSSCG00000031713	MACROH2A2	duodenum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000031713	MACROH2A2	endocardial endothelium	49.5	0.0	1	present_gold	49.5	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	epididymis	59.03	0.0	1	present_gold	59.03	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	forebrain	83.64	0.0	1	present_gold	83.64	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	forelimb bud	98.34	0.0	1	present_gold	98.34	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	frontal cortex	61.730000000000004	4.305492616027426	7	present_gold	61.730000000000004	4.305492616027426	7	7	7
+ENSSSCG00000031713	MACROH2A2	granulosa cell	87.74	0.0	1	present_gold	87.74	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	heart	72.93166666666667	6.420281665679994	6	present_gold	72.93166666666667	6.420281665679994	6	6	6
+ENSSSCG00000031713	MACROH2A2	heart left ventricle	68.28999999999999	0.18384776310850598	2	present_gold	68.28999999999999	0.18384776310850598	2	2	2
+ENSSSCG00000031713	MACROH2A2	hindlimb bud	98.57	0.0	1	present_gold	98.57	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	hippocampal formation	55.89	4.836610383315987	2	present_gold	55.89	4.836610383315987	2	2	2
+ENSSSCG00000031713	MACROH2A2	hypothalamus	70.63499999999999	6.554879861599293	2	present_gold	70.63499999999999	6.554879861599293	2	2	2
+ENSSSCG00000031713	MACROH2A2	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000031713	MACROH2A2	kidney	64.16	0.0	1	present_gold	64.16	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	liver	52.739999999999995	2.2166491227375915	4	present_gold	52.739999999999995	2.2166491227375915	4	6	4
+ENSSSCG00000031713	MACROH2A2	longissimus lumborum muscle	64.55	0.0	1	present_gold	64.55	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	longissimus thoracis muscle	70.56357142857142	13.526294965529381	14	present_gold	70.56357142857142	13.526294965529381	14	20	14
+ENSSSCG00000031713	MACROH2A2	lung	51.87	3.5277046361621607	3	present_gold	51.87	3.5277046361621607	3	4	3
+ENSSSCG00000031713	MACROH2A2	lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000031713	MACROH2A2	material anatomical entity	64.955	8.350931085813128	2	present_gold	64.955	8.350931085813128	2	2	2
+ENSSSCG00000031713	MACROH2A2	medulla oblongata	61.595	1.7182694782833103	2	present_gold	61.595	1.7182694782833103	2	2	2
+ENSSSCG00000031713	MACROH2A2	mesenteric lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000031713	MACROH2A2	metanephros cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000031713	MACROH2A2	muscle tissue	58.62	1.866761902332486	2	present_gold	58.62	1.866761902332486	2	2	2
+ENSSSCG00000031713	MACROH2A2	occipital cortex	62.38333333333333	3.393115579129793	3	present_gold	62.38333333333333	3.393115579129793	3	3	3
+ENSSSCG00000031713	MACROH2A2	omentum	60.925	0.7141778489984116	2	present_gold	60.925	0.7141778489984116	2	2	2
+ENSSSCG00000031713	MACROH2A2	oocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000031713	MACROH2A2	ovary	61.06999999999999	12.669100204829068	3	present_gold	61.06999999999999	12.669100204829068	3	3	3
+ENSSSCG00000031713	MACROH2A2	penis	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000031713	MACROH2A2	pituitary gland	77.555	3.302188668141178	2	present_gold	77.555	3.302188668141178	2	2	2
+ENSSSCG00000031713	MACROH2A2	pons	58.81999999999999	0.5798275605729691	2	present_gold	58.81999999999999	0.5798275605729691	2	2	2
+ENSSSCG00000031713	MACROH2A2	prefrontal cortex	64.08	0.0	1	present_gold	64.08	0.0	1	1	1
+ENSSSCG00000031713	MACROH2A2	psoas major muscle	56.584999999999994	2.5809397513308974	2	present_gold	56.584999999999994	2.5809397513308974	2	2	2
+ENSSSCG00000031713	MACROH2A2	right lobe of liver	44.7	0.0	1	present_gold	44.7	0.0	1	2	1
+ENSSSCG00000031713	MACROH2A2	semimembranosus muscle	62.42	0.1697056274847728	2	present_gold	62.42	0.1697056274847728	2	2	2
+ENSSSCG00000031713	MACROH2A2	skeletal muscle tissue	53.69	0.0	1	present_gold	53.69	0.0	1	2	1
+ENSSSCG00000031713	MACROH2A2	spleen	52.495000000000005	3.130308823955448	4	present_gold	52.495000000000005	3.130308823955448	4	7	4
+ENSSSCG00000031713	MACROH2A2	stomach	61.81	6.264966081312806	2	present_gold	61.81	6.264966081312806	2	2	2
+ENSSSCG00000031713	MACROH2A2	subcutaneous adipose tissue	62.55666666666667	9.011250375687792	3	present_gold	62.55666666666667	9.011250375687792	3	3	3
+ENSSSCG00000031713	MACROH2A2	testis	55.303333333333335	2.930022753040208	3	present_gold	55.303333333333335	2.930022753040208	3	3	3
+ENSSSCG00000031713	MACROH2A2	tonsil	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000031713	MACROH2A2	uterus	70.19	19.693595405613472	3	present_gold	70.19	19.693595405613472	3	3	3
+ENSSSCG00000032609	LOC100154071	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	adipose tissue	88.63	0.0	1	present_gold	88.63	0.0	1	2	1
+ENSSSCG00000032609	LOC100154071	adult mammalian kidney	61.14	0.0	1	present_gold	61.14	0.0	1	4	1
+ENSSSCG00000032609	LOC100154071	amygdala	54.91	0.0	1	present_gold	54.91	0.0	1	2	1
+ENSSSCG00000032609	LOC100154071	blood	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000032609	LOC100154071	brainstem	57.31999999999999	17.522106037802644	2	present_gold	57.31999999999999	17.522106037802644	2	3	2
+ENSSSCG00000032609	LOC100154071	caecum	96.97	0.04242640687119446	2	present_gold	96.97	0.04242640687119446	2	2	2
+ENSSSCG00000032609	LOC100154071	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000032609	LOC100154071	cerebral cortex	82.47	0.0	1	present_gold	82.47	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	colon	96.47999999999999	0.848528137423859	2	present_gold	96.47999999999999	0.848528137423859	2	2	2
+ENSSSCG00000032609	LOC100154071	corpus callosum	53.85	0.0	1	present_gold	53.85	0.0	1	2	1
+ENSSSCG00000032609	LOC100154071	dorsal plus ventral thalamus	51.12	0.0	1	present_gold	51.12	0.0	1	2	1
+ENSSSCG00000032609	LOC100154071	duodenum	97.285	0.20506096654410322	2	present_gold	97.285	0.20506096654410322	2	2	2
+ENSSSCG00000032609	LOC100154071	endocardial endothelium	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	epididymis	68.81	0.0	1	present_gold	68.81	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	forebrain	91.0	0.0	1	present_gold	91.0	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	forelimb bud	53.27	0.0	1	present_gold	53.27	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	frontal cortex	54.26	0.0	1	present_gold	54.26	0.0	1	6	1
+ENSSSCG00000032609	LOC100154071	granulosa cell	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	heart	61.48	13.5994705779306	3	present_gold	61.48	13.5994705779306	3	6	3
+ENSSSCG00000032609	LOC100154071	heart left ventricle	69.11500000000001	4.58912300990069	2	present_gold	69.11500000000001	4.58912300990069	2	2	2
+ENSSSCG00000032609	LOC100154071	hindlimb bud	56.16	0.0	1	present_gold	56.16	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	hippocampal formation	75.03	5.27501658765165	2	present_gold	75.03	5.27501658765165	2	2	2
+ENSSSCG00000032609	LOC100154071	hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000032609	LOC100154071	ileum	98.85	0.3818376618407401	2	present_gold	98.85	0.3818376618407401	2	2	2
+ENSSSCG00000032609	LOC100154071	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	liver	53.26333333333334	20.59443209543136	3	present_gold	53.26333333333334	20.59443209543136	3	6	3
+ENSSSCG00000032609	LOC100154071	longissimus lumborum muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	longissimus thoracis muscle	70.15333333333334	19.086551548145096	9	present_gold	70.15333333333334	19.086551548145096	9	20	9
+ENSSSCG00000032609	LOC100154071	lung	65.99000000000001	32.470343392086264	2	present_gold	65.99000000000001	32.470343392086264	2	4	2
+ENSSSCG00000032609	LOC100154071	lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	material anatomical entity	51.275000000000006	15.56342025391591	2	present_gold	51.275000000000006	15.56342025391591	2	2	2
+ENSSSCG00000032609	LOC100154071	medulla oblongata	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000032609	LOC100154071	mesenteric lymph node	98.25999999999999	0.6363961030678867	2	present_gold	98.25999999999999	0.6363961030678867	2	2	2
+ENSSSCG00000032609	LOC100154071	metanephros cortex	59.620000000000005	8.018590898655452	2	present_gold	59.620000000000005	8.018590898655452	2	2	2
+ENSSSCG00000032609	LOC100154071	muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000032609	LOC100154071	occipital cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000032609	LOC100154071	omentum	91.27	1.8526197667087578	2	present_gold	91.27	1.8526197667087578	2	2	2
+ENSSSCG00000032609	LOC100154071	oocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	ovary	91.06666666666666	3.8967849996289687	3	present_gold	91.06666666666666	3.8967849996289687	3	3	3
+ENSSSCG00000032609	LOC100154071	penis	97.15	0.0	1	present_gold	97.15	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	pituitary gland	62.26	14.820958133670032	2	present_gold	62.26	14.820958133670032	2	2	2
+ENSSSCG00000032609	LOC100154071	pons	44.84	0.0	1	present_gold	44.84	0.0	1	2	1
+ENSSSCG00000032609	LOC100154071	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000032609	LOC100154071	psoas major muscle	42.59	0.0	1	present_gold	42.59	0.0	1	2	1
+ENSSSCG00000032609	LOC100154071	right lobe of liver	80.36500000000001	0.940452018978107	2	present_gold	80.36500000000001	0.940452018978107	2	2	2
+ENSSSCG00000032609	LOC100154071	semimembranosus muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000032609	LOC100154071	skeletal muscle tissue	78.27000000000001	3.6628131265463106	2	present_gold	78.27000000000001	3.6628131265463106	2	2	2
+ENSSSCG00000032609	LOC100154071	spleen	77.968	26.6286559931214	5	present_gold	77.968	26.6286559931214	5	7	5
+ENSSSCG00000032609	LOC100154071	stomach	87.15	4.454772721475248	2	present_gold	87.15	4.454772721475248	2	2	2
+ENSSSCG00000032609	LOC100154071	subcutaneous adipose tissue	67.54	9.545941546018398	2	present_gold	67.54	9.545941546018398	2	3	2
+ENSSSCG00000032609	LOC100154071	testis	94.05	0.0	1	present_gold	94.05	0.0	1	3	1
+ENSSSCG00000032609	LOC100154071	tonsil	98.61	0.0	1	present_gold	98.61	0.0	1	1	1
+ENSSSCG00000032609	LOC100154071	uterus	69.0	0.0	1	present_gold	69.0	0.0	1	3	1
+ENSSSCG00000033451	H2AC11	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000033451	H2AC11	adipose tissue	56.64	0.0	1	present_gold	56.64	0.0	1	2	1
+ENSSSCG00000033451	H2AC11	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSSSCG00000033451	H2AC11	amygdala	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	blood	58.120000000000005	0.6878953408767924	3	present_gold	58.120000000000005	0.6878953408767924	3	3	3
+ENSSSCG00000033451	H2AC11	brainstem	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	caecum	61.71	16.75843071412118	2	present_gold	61.71	16.75843071412118	2	2	2
+ENSSSCG00000033451	H2AC11	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000033451	H2AC11	cerebral cortex	44.97	0.0	1	present_gold	44.97	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	colon	58.925	13.696658351583425	2	present_gold	58.925	13.696658351583425	2	2	2
+ENSSSCG00000033451	H2AC11	corpus callosum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	dorsal plus ventral thalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	duodenum	56.584999999999994	11.264211024301702	2	present_gold	56.584999999999994	11.264211024301702	2	2	2
+ENSSSCG00000033451	H2AC11	endocardial endothelium	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000033451	H2AC11	epididymis	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000033451	H2AC11	forebrain	69.1	0.0	1	present_gold	69.1	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	forelimb bud	50.19	0.0	1	present_gold	50.19	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	7	0
+ENSSSCG00000033451	H2AC11	granulosa cell	46.99	0.0	1	present_gold	46.99	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	heart	66.02	0.0	1	present_gold	66.02	0.0	1	6	1
+ENSSSCG00000033451	H2AC11	heart left ventricle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	hindlimb bud	53.57	0.0	1	present_gold	53.57	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	hippocampal formation	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	ileum	68.015	18.250426022424794	2	present_gold	68.015	18.250426022424794	2	2	2
+ENSSSCG00000033451	H2AC11	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000033451	H2AC11	liver	60.125	32.81682571486767	2	present_gold	60.125	32.81682571486767	2	6	2
+ENSSSCG00000033451	H2AC11	longissimus lumborum muscle	59.1	0.0	1	present_gold	59.1	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	longissimus thoracis muscle	46.62875	7.05856407392568	8	present_gold	46.62875	7.05856407392568	8	20	8
+ENSSSCG00000033451	H2AC11	lung	59.545	29.931830047626548	2	present_gold	59.545	29.931830047626548	2	4	2
+ENSSSCG00000033451	H2AC11	lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000033451	H2AC11	material anatomical entity	39.005	0.5868986283848332	2	present_gold	39.005	0.5868986283848332	2	2	2
+ENSSSCG00000033451	H2AC11	medulla oblongata	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	mesenteric lymph node	71.15	4.002224381515867	2	present_gold	71.15	4.002224381515867	2	2	2
+ENSSSCG00000033451	H2AC11	metanephros cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	muscle tissue	42.33	17.408968952812803	2	present_gold	42.33	17.408968952812803	2	2	2
+ENSSSCG00000033451	H2AC11	occipital cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000033451	H2AC11	omentum	47.33	0.0	1	present_gold	47.33	0.0	1	2	1
+ENSSSCG00000033451	H2AC11	oocyte	61.94	0.0	1	present_gold	61.94	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	ovary	56.19333333333333	8.783395319199364	3	present_gold	56.19333333333333	8.783395319199364	3	3	3
+ENSSSCG00000033451	H2AC11	penis	46.07	0.0	1	present_gold	46.07	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	pituitary gland	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	pons	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000033451	H2AC11	psoas major muscle	44.72	1.79605122421383	2	present_gold	44.72	1.79605122421383	2	2	2
+ENSSSCG00000033451	H2AC11	right lobe of liver	44.725	1.1808683245815357	2	present_gold	44.725	1.1808683245815357	2	2	2
+ENSSSCG00000033451	H2AC11	semimembranosus muscle	57.035	1.7748380207782328	2	present_gold	57.035	1.7748380207782328	2	2	2
+ENSSSCG00000033451	H2AC11	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	spleen	58.080000000000005	15.64187328934741	6	present_gold	58.080000000000005	15.64187328934741	6	7	6
+ENSSSCG00000033451	H2AC11	stomach	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000033451	H2AC11	subcutaneous adipose tissue	42.4	0.0	1	present_gold	42.4	0.0	1	3	1
+ENSSSCG00000033451	H2AC11	testis	86.02	0.0	1	present_gold	86.02	0.0	1	3	1
+ENSSSCG00000033451	H2AC11	tonsil	67.5	0.0	1	present_gold	67.5	0.0	1	1	1
+ENSSSCG00000033451	H2AC11	uterus	45.37	0.0	1	present_gold	45.37	0.0	1	3	1
+ENSSSCG00000037533	H2AC21	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000037533	H2AC21	adipose tissue	69.57499999999999	28.630753570243307	2	present_gold	69.57499999999999	28.630753570243307	2	2	2
+ENSSSCG00000037533	H2AC21	adult mammalian kidney	69.075	24.996224714944454	2	present_gold	69.075	24.996224714944454	2	4	2
+ENSSSCG00000037533	H2AC21	amygdala	78.62	11.568266940211917	2	present_gold	78.62	11.568266940211917	2	2	2
+ENSSSCG00000037533	H2AC21	blood	49.416666666666664	1.5429301129128734	3	present_gold	49.416666666666664	1.5429301129128734	3	3	3
+ENSSSCG00000037533	H2AC21	brainstem	79.40666666666667	7.8150901039804594	3	present_gold	79.40666666666667	7.8150901039804594	3	3	3
+ENSSSCG00000037533	H2AC21	caecum	96.26	0.04242640687119446	2	present_gold	96.26	0.04242640687119446	2	2	2
+ENSSSCG00000037533	H2AC21	cerebellum	92.67500000000001	3.655742058734452	2	present_gold	92.67500000000001	3.655742058734452	2	3	2
+ENSSSCG00000037533	H2AC21	cerebral cortex	92.69	0.0	1	present_gold	92.69	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	colon	95.985	0.6010407640085614	2	present_gold	95.985	0.6010407640085614	2	2	2
+ENSSSCG00000037533	H2AC21	corpus callosum	81.22999999999999	3.9880822458921283	2	present_gold	81.22999999999999	3.9880822458921283	2	2	2
+ENSSSCG00000037533	H2AC21	dorsal plus ventral thalamus	75.78	4.242640687119285	2	present_gold	75.78	4.242640687119285	2	2	2
+ENSSSCG00000037533	H2AC21	duodenum	96.75	0.8485281374238489	2	present_gold	96.75	0.8485281374238489	2	2	2
+ENSSSCG00000037533	H2AC21	endocardial endothelium	34.51	0.0	1	present_gold	34.51	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	epididymis	83.95	0.0	1	present_gold	83.95	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	forebrain	95.81	0.0	1	present_gold	95.81	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	forelimb bud	55.51	0.0	1	present_gold	55.51	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	frontal cortex	56.53333333333333	19.5374508743251	6	present_gold	56.53333333333333	19.5374508743251	6	7	6
+ENSSSCG00000037533	H2AC21	granulosa cell	50.18	0.0	1	present_gold	50.18	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	heart	69.464	16.322372070259885	5	present_gold	69.464	16.322372070259885	5	6	5
+ENSSSCG00000037533	H2AC21	heart left ventricle	70.475	1.2657211383239246	2	present_gold	70.475	1.2657211383239246	2	2	2
+ENSSSCG00000037533	H2AC21	hindlimb bud	60.39	0.0	1	present_gold	60.39	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	hippocampal formation	85.515	5.692209588551716	2	present_gold	85.515	5.692209588551716	2	2	2
+ENSSSCG00000037533	H2AC21	hypothalamus	35.535	7.5306872196367305	2	present_gold	35.535	7.5306872196367305	2	2	2
+ENSSSCG00000037533	H2AC21	ileum	98.64500000000001	0.8273149339882618	2	present_gold	98.64500000000001	0.8273149339882618	2	2	2
+ENSSSCG00000037533	H2AC21	kidney	50.33	0.0	1	present_gold	50.33	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	liver	65.77	28.191596265554033	3	present_gold	65.77	28.191596265554033	3	6	3
+ENSSSCG00000037533	H2AC21	longissimus lumborum muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000037533	H2AC21	longissimus thoracis muscle	79.25538461538461	23.761170922110374	13	present_gold	79.25538461538461	23.761170922110374	13	20	13
+ENSSSCG00000037533	H2AC21	lung	79.635	22.408213895801694	2	present_gold	79.635	22.408213895801694	2	4	2
+ENSSSCG00000037533	H2AC21	lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000037533	H2AC21	material anatomical entity	74.255	30.14396208198252	2	present_gold	74.255	30.14396208198252	2	2	2
+ENSSSCG00000037533	H2AC21	medulla oblongata	75.065	0.8273149339882618	2	present_gold	75.065	0.8273149339882618	2	2	2
+ENSSSCG00000037533	H2AC21	mesenteric lymph node	97.86	0.5939696961967024	2	present_gold	97.86	0.5939696961967024	2	2	2
+ENSSSCG00000037533	H2AC21	metanephros cortex	73.775	4.772970773009196	2	present_gold	73.775	4.772970773009196	2	2	2
+ENSSSCG00000037533	H2AC21	muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000037533	H2AC21	occipital cortex	62.830000000000005	31.757071653412886	3	present_gold	62.830000000000005	31.757071653412886	3	3	3
+ENSSSCG00000037533	H2AC21	omentum	93.955	1.590990257669732	2	present_gold	93.955	1.590990257669732	2	2	2
+ENSSSCG00000037533	H2AC21	oocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000037533	H2AC21	ovary	94.57	3.3645207682521465	3	present_gold	94.57	3.3645207682521465	3	3	3
+ENSSSCG00000037533	H2AC21	penis	96.04	0.0	1	present_gold	96.04	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	pituitary gland	76.86	0.8343860018001309	2	present_gold	76.86	0.8343860018001309	2	2	2
+ENSSSCG00000037533	H2AC21	pons	73.8	2.192031021678293	2	present_gold	73.8	2.192031021678293	2	2	2
+ENSSSCG00000037533	H2AC21	prefrontal cortex	40.99	0.0	1	present_gold	40.99	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	psoas major muscle	75.06	8.40042856049618	2	present_gold	75.06	8.40042856049618	2	2	2
+ENSSSCG00000037533	H2AC21	right lobe of liver	91.63499999999999	0.44547727214753174	2	present_gold	91.63499999999999	0.44547727214753174	2	2	2
+ENSSSCG00000037533	H2AC21	semimembranosus muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000037533	H2AC21	skeletal muscle tissue	77.23	1.131370849898472	2	present_gold	77.23	1.131370849898472	2	2	2
+ENSSSCG00000037533	H2AC21	spleen	75.67857142857143	27.959264671167247	7	present_gold	75.67857142857143	27.959264671167247	7	7	7
+ENSSSCG00000037533	H2AC21	stomach	89.88	7.099352083112941	2	present_gold	89.88	7.099352083112941	2	2	2
+ENSSSCG00000037533	H2AC21	subcutaneous adipose tissue	84.22	5.730418832860299	3	present_gold	84.22	5.730418832860299	3	3	3
+ENSSSCG00000037533	H2AC21	testis	87.49	0.0	1	present_gold	87.49	0.0	1	3	1
+ENSSSCG00000037533	H2AC21	tonsil	98.19	0.0	1	present_gold	98.19	0.0	1	1	1
+ENSSSCG00000037533	H2AC21	uterus	89.49000000000001	7.551900423072322	2	present_gold	89.49000000000001	7.551900423072322	2	3	2
+ENSSSCG00000039307	H2AJ	Ammon's horn	86.14	0.0	1	present_gold	86.14	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	adipose tissue	98.64	0.28284271247462306	2	present_gold	98.64	0.28284271247462306	2	2	2
+ENSSSCG00000039307	H2AJ	adult mammalian kidney	97.28	1.114659888336645	4	present_gold	97.28	1.114659888336645	4	4	4
+ENSSSCG00000039307	H2AJ	amygdala	88.24000000000001	3.3516861428242315	2	present_gold	88.24000000000001	3.3516861428242315	2	2	2
+ENSSSCG00000039307	H2AJ	blood	92.36666666666667	0.24440403706431402	3	present_gold	92.36666666666667	0.24440403706431402	3	3	3
+ENSSSCG00000039307	H2AJ	brainstem	86.66333333333334	5.162996545934666	3	present_gold	86.66333333333334	5.162996545934666	3	3	3
+ENSSSCG00000039307	H2AJ	caecum	90.585	2.453660530717319	2	present_gold	90.585	2.453660530717319	2	2	2
+ENSSSCG00000039307	H2AJ	cerebellum	85.26666666666667	2.2001893857878114	3	present_gold	85.26666666666667	2.2001893857878114	3	3	3
+ENSSSCG00000039307	H2AJ	cerebral cortex	72.66	0.0	1	present_gold	72.66	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	colon	92.025	1.6192745289171981	2	present_gold	92.025	1.6192745289171981	2	2	2
+ENSSSCG00000039307	H2AJ	corpus callosum	82.19	7.707463914933372	2	present_gold	82.19	7.707463914933372	2	2	2
+ENSSSCG00000039307	H2AJ	dorsal plus ventral thalamus	81.47	10.677312395916863	2	present_gold	81.47	10.677312395916863	2	2	2
+ENSSSCG00000039307	H2AJ	duodenum	95.92	0.028284271247456274	2	present_gold	95.92	0.028284271247456274	2	2	2
+ENSSSCG00000039307	H2AJ	endocardial endothelium	91.17	0.0	1	present_gold	91.17	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	epididymis	97.32	0.0	1	present_gold	97.32	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	forebrain	77.4	0.0	1	present_gold	77.4	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	forelimb bud	91.37	0.0	1	present_gold	91.37	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	frontal cortex	84.03142857142858	2.915261157949251	7	present_gold	84.03142857142858	2.915261157949251	7	7	7
+ENSSSCG00000039307	H2AJ	granulosa cell	93.18	0.0	1	present_gold	93.18	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	heart	90.205	4.072020383053109	6	present_gold	90.205	4.072020383053109	6	6	6
+ENSSSCG00000039307	H2AJ	heart left ventricle	83.985	2.439518395093581	2	present_gold	83.985	2.439518395093581	2	2	2
+ENSSSCG00000039307	H2AJ	hindlimb bud	91.25	0.0	1	present_gold	91.25	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	hippocampal formation	87.11	4.907321061434638	2	present_gold	87.11	4.907321061434638	2	2	2
+ENSSSCG00000039307	H2AJ	hypothalamus	84.82	1.6263455967290572	2	present_gold	84.82	1.6263455967290572	2	2	2
+ENSSSCG00000039307	H2AJ	ileum	93.57	0.3959797974644582	2	present_gold	93.57	0.3959797974644582	2	2	2
+ENSSSCG00000039307	H2AJ	kidney	98.28	0.0	1	present_gold	98.28	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	liver	97.355	1.5365903813313397	6	present_gold	97.355	1.5365903813313397	6	6	6
+ENSSSCG00000039307	H2AJ	longissimus lumborum muscle	94.45	0.0	1	present_gold	94.45	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	longissimus thoracis muscle	87.274	4.887053142851286	20	present_gold	87.274	4.887053142851286	20	20	20
+ENSSSCG00000039307	H2AJ	lung	89.2475	3.5184501796482306	4	present_gold	89.2475	3.5184501796482306	4	4	4
+ENSSSCG00000039307	H2AJ	lymph node	94.69	0.0	1	present_gold	94.69	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	material anatomical entity	89.58	1.3293607486307062	2	present_gold	89.58	1.3293607486307062	2	2	2
+ENSSSCG00000039307	H2AJ	medulla oblongata	88.235	6.569021997223021	2	present_gold	88.235	6.569021997223021	2	2	2
+ENSSSCG00000039307	H2AJ	mesenteric lymph node	85.655	2.7647875144393983	2	present_gold	85.655	2.7647875144393983	2	2	2
+ENSSSCG00000039307	H2AJ	metanephros cortex	97.195	0.2192031021678213	2	present_gold	97.195	0.2192031021678213	2	2	2
+ENSSSCG00000039307	H2AJ	muscle tissue	84.28	4.35577777210913	2	present_gold	84.28	4.35577777210913	2	2	2
+ENSSSCG00000039307	H2AJ	occipital cortex	86.11333333333333	3.2373651838081696	3	present_gold	86.11333333333333	3.2373651838081696	3	3	3
+ENSSSCG00000039307	H2AJ	omentum	95.485	1.209152595829002	2	present_gold	95.485	1.209152595829002	2	2	2
+ENSSSCG00000039307	H2AJ	oocyte	87.07	0.0	1	present_gold	87.07	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	ovary	98.75999999999999	0.8524670081592556	3	present_gold	98.75999999999999	0.8524670081592556	3	3	3
+ENSSSCG00000039307	H2AJ	penis	96.59	0.0	1	present_gold	96.59	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	pituitary gland	92.69	1.7111984104714462	2	present_gold	92.69	1.7111984104714462	2	2	2
+ENSSSCG00000039307	H2AJ	pons	89.28	5.062884553295678	2	present_gold	89.28	5.062884553295678	2	2	2
+ENSSSCG00000039307	H2AJ	prefrontal cortex	84.5	0.0	1	present_gold	84.5	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	psoas major muscle	92.945	3.4294678887547616	2	present_gold	92.945	3.4294678887547616	2	2	2
+ENSSSCG00000039307	H2AJ	right lobe of liver	97.33500000000001	0.16263455967290874	2	present_gold	97.33500000000001	0.16263455967290874	2	2	2
+ENSSSCG00000039307	H2AJ	semimembranosus muscle	93.16	0.16970562748476778	2	present_gold	93.16	0.16970562748476778	2	2	2
+ENSSSCG00000039307	H2AJ	skeletal muscle tissue	86.565	0.6010407640085614	2	present_gold	86.565	0.6010407640085614	2	2	2
+ENSSSCG00000039307	H2AJ	spleen	85.76428571428572	6.336683825532239	7	present_gold	85.76428571428572	6.336683825532239	7	7	7
+ENSSSCG00000039307	H2AJ	stomach	89.495	1.421284630184964	2	present_gold	89.495	1.421284630184964	2	2	2
+ENSSSCG00000039307	H2AJ	subcutaneous adipose tissue	97.41000000000001	0.41146081222881636	3	present_gold	97.41000000000001	0.41146081222881636	3	3	3
+ENSSSCG00000039307	H2AJ	testis	72.0	15.396454137235622	3	present_gold	72.0	15.396454137235622	3	3	3
+ENSSSCG00000039307	H2AJ	tonsil	94.4	0.0	1	present_gold	94.4	0.0	1	1	1
+ENSSSCG00000039307	H2AJ	uterus	91.07333333333334	3.701517706743181	3	present_gold	91.07333333333334	3.701517706743181	3	3	3
+ENSSSCG00000042208	H2AX	Ammon's horn	88.8	0.0	1	present_gold	88.8	0.0	1	1	1
+ENSSSCG00000042208	H2AX	adipose tissue	89.62	0.0	1	present_gold	89.62	0.0	1	2	1
+ENSSSCG00000042208	H2AX	adult mammalian kidney	69.88333333333334	17.024119164683185	3	present_gold	69.88333333333334	17.024119164683185	3	4	3
+ENSSSCG00000042208	H2AX	amygdala	62.5	0.0	1	present_gold	62.5	0.0	1	2	1
+ENSSSCG00000042208	H2AX	blood	86.82	0.8626123115281854	3	present_gold	86.82	0.8626123115281854	3	3	3
+ENSSSCG00000042208	H2AX	brainstem	59.335	1.9304015126392775	2	present_gold	59.335	1.9304015126392775	2	3	2
+ENSSSCG00000042208	H2AX	caecum	90.235	0.33234018715767655	2	present_gold	90.235	0.33234018715767655	2	2	2
+ENSSSCG00000042208	H2AX	cerebellum	65.60499999999999	8.478210306426702	2	present_gold	65.60499999999999	8.478210306426702	2	3	2
+ENSSSCG00000042208	H2AX	cerebral cortex	69.68	0.0	1	present_gold	69.68	0.0	1	1	1
+ENSSSCG00000042208	H2AX	colon	85.345	1.0111626970967678	2	present_gold	85.345	1.0111626970967678	2	2	2
+ENSSSCG00000042208	H2AX	corpus callosum	61.504999999999995	3.6274577874869856	2	present_gold	61.504999999999995	3.6274577874869856	2	2	2
+ENSSSCG00000042208	H2AX	dorsal plus ventral thalamus	65.96	0.0	1	present_gold	65.96	0.0	1	2	1
+ENSSSCG00000042208	H2AX	duodenum	84.25999999999999	0.6363961030678867	2	present_gold	84.25999999999999	0.6363961030678867	2	2	2
+ENSSSCG00000042208	H2AX	endocardial endothelium	85.55	0.0	1	present_gold	85.55	0.0	1	1	1
+ENSSSCG00000042208	H2AX	epididymis	61.6	0.0	1	present_gold	61.6	0.0	1	1	1
+ENSSSCG00000042208	H2AX	forebrain	83.81	0.0	1	present_gold	83.81	0.0	1	1	1
+ENSSSCG00000042208	H2AX	forelimb bud	97.61	0.0	1	present_gold	97.61	0.0	1	1	1
+ENSSSCG00000042208	H2AX	frontal cortex	79.05571428571429	12.981770368665511	7	present_gold	79.05571428571429	12.981770368665511	7	7	7
+ENSSSCG00000042208	H2AX	granulosa cell	95.41	0.0	1	present_gold	95.41	0.0	1	1	1
+ENSSSCG00000042208	H2AX	heart	77.64833333333333	13.412912311152514	6	present_gold	77.64833333333333	13.412912311152514	6	6	6
+ENSSSCG00000042208	H2AX	heart left ventricle	64.675	2.043538597629128	2	present_gold	64.675	2.043538597629128	2	2	2
+ENSSSCG00000042208	H2AX	hindlimb bud	96.76	0.0	1	present_gold	96.76	0.0	1	1	1
+ENSSSCG00000042208	H2AX	hippocampal formation	56.519999999999996	3.7335238046649666	2	present_gold	56.519999999999996	3.7335238046649666	2	2	2
+ENSSSCG00000042208	H2AX	hypothalamus	60.730000000000004	11.511698397716994	2	present_gold	60.730000000000004	11.511698397716994	2	2	2
+ENSSSCG00000042208	H2AX	ileum	91.71000000000001	2.5738686835190334	2	present_gold	91.71000000000001	2.5738686835190334	2	2	2
+ENSSSCG00000042208	H2AX	kidney	90.07	0.0	1	present_gold	90.07	0.0	1	1	1
+ENSSSCG00000042208	H2AX	liver	74.265	11.095625714667921	6	present_gold	74.265	11.095625714667921	6	6	6
+ENSSSCG00000042208	H2AX	longissimus lumborum muscle	65.38	0.0	1	present_gold	65.38	0.0	1	1	1
+ENSSSCG00000042208	H2AX	longissimus thoracis muscle	80.29705882352941	13.51733274573144	17	present_gold	80.29705882352941	13.51733274573144	17	20	17
+ENSSSCG00000042208	H2AX	lung	77.02250000000001	21.092574325261168	4	present_gold	77.02250000000001	21.092574325261168	4	4	4
+ENSSSCG00000042208	H2AX	lymph node	81.64	0.0	1	present_gold	81.64	0.0	1	1	1
+ENSSSCG00000042208	H2AX	material anatomical entity	74.9	0.0	1	present_gold	74.9	0.0	1	2	1
+ENSSSCG00000042208	H2AX	medulla oblongata	60.275000000000006	0.30405591591021525	2	present_gold	60.275000000000006	0.30405591591021525	2	2	2
+ENSSSCG00000042208	H2AX	mesenteric lymph node	93.87	2.5597265478953055	2	present_gold	93.87	2.5597265478953055	2	2	2
+ENSSSCG00000042208	H2AX	metanephros cortex	65.185	1.1101576464628748	2	present_gold	65.185	1.1101576464628748	2	2	2
+ENSSSCG00000042208	H2AX	muscle tissue	84.235	5.989194436650057	2	present_gold	84.235	5.989194436650057	2	2	2
+ENSSSCG00000042208	H2AX	occipital cortex	62.04666666666666	11.90664240385732	3	present_gold	62.04666666666666	11.90664240385732	3	3	3
+ENSSSCG00000042208	H2AX	omentum	78.495	3.3304729393886348	2	present_gold	78.495	3.3304729393886348	2	2	2
+ENSSSCG00000042208	H2AX	oocyte	83.34	0.0	1	present_gold	83.34	0.0	1	1	1
+ENSSSCG00000042208	H2AX	ovary	82.75666666666667	27.589770447275082	3	present_gold	82.75666666666667	27.589770447275082	3	3	3
+ENSSSCG00000042208	H2AX	penis	84.14	0.0	1	present_gold	84.14	0.0	1	1	1
+ENSSSCG00000042208	H2AX	pituitary gland	54.985	7.700392847121503	2	present_gold	54.985	7.700392847121503	2	2	2
+ENSSSCG00000042208	H2AX	pons	59.91	15.315932880500617	2	present_gold	59.91	15.315932880500617	2	2	2
+ENSSSCG00000042208	H2AX	prefrontal cortex	87.68	0.0	1	present_gold	87.68	0.0	1	1	1
+ENSSSCG00000042208	H2AX	psoas major muscle	84.16	1.6263455967290572	2	present_gold	84.16	1.6263455967290572	2	2	2
+ENSSSCG00000042208	H2AX	right lobe of liver	76.11	0.028284271247456274	2	present_gold	76.11	0.028284271247456274	2	2	2
+ENSSSCG00000042208	H2AX	semimembranosus muscle	63.724999999999994	4.815397179880385	2	present_gold	63.724999999999994	4.815397179880385	2	2	2
+ENSSSCG00000042208	H2AX	skeletal muscle tissue	71.785	2.439518395093591	2	present_gold	71.785	2.439518395093591	2	2	2
+ENSSSCG00000042208	H2AX	spleen	84.51142857142858	12.810773367978777	7	present_gold	84.51142857142858	12.810773367978777	7	7	7
+ENSSSCG00000042208	H2AX	stomach	60.489999999999995	7.155920625607859	2	present_gold	60.489999999999995	7.155920625607859	2	2	2
+ENSSSCG00000042208	H2AX	subcutaneous adipose tissue	93.92999999999999	1.3494813818648985	3	present_gold	93.92999999999999	1.3494813818648985	3	3	3
+ENSSSCG00000042208	H2AX	testis	78.13	6.878248323519592	3	present_gold	78.13	6.878248323519592	3	3	3
+ENSSSCG00000042208	H2AX	tonsil	95.75	0.0	1	present_gold	95.75	0.0	1	1	1
+ENSSSCG00000042208	H2AX	uterus	78.06	19.300386006502563	3	present_gold	78.06	19.300386006502563	3	3	3
+ENSSSCG00000046222	H2AC17	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	adipose tissue	64.83	0.0	1	present_gold	64.83	0.0	1	2	1
+ENSSSCG00000046222	H2AC17	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSSSCG00000046222	H2AC17	amygdala	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	blood	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000046222	H2AC17	brainstem	80.02	0.0	1	present_gold	80.02	0.0	1	3	1
+ENSSSCG00000046222	H2AC17	caecum	85.99000000000001	4.016366517139585	2	present_gold	85.99000000000001	4.016366517139585	2	2	2
+ENSSSCG00000046222	H2AC17	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000046222	H2AC17	cerebral cortex	50.72	0.0	1	present_gold	50.72	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	colon	87.39	2.630437226013956	2	present_gold	87.39	2.630437226013956	2	2	2
+ENSSSCG00000046222	H2AC17	corpus callosum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	dorsal plus ventral thalamus	46.37	0.0	1	present_gold	46.37	0.0	1	2	1
+ENSSSCG00000046222	H2AC17	duodenum	88.89	2.715290039756345	2	present_gold	88.89	2.715290039756345	2	2	2
+ENSSSCG00000046222	H2AC17	endocardial endothelium	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	epididymis	50.13	0.0	1	present_gold	50.13	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	forebrain	73.86	0.0	1	present_gold	73.86	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	forelimb bud	43.04	0.0	1	present_gold	43.04	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	6	0
+ENSSSCG00000046222	H2AC17	granulosa cell	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	heart	52.059999999999995	17.88980156401965	2	present_gold	52.059999999999995	17.88980156401965	2	6	2
+ENSSSCG00000046222	H2AC17	heart left ventricle	52.834999999999994	1.1667261889578024	2	present_gold	52.834999999999994	1.1667261889578024	2	2	2
+ENSSSCG00000046222	H2AC17	hindlimb bud	45.59	0.0	1	present_gold	45.59	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	hippocampal formation	61.61	7.636753236814717	2	present_gold	61.61	7.636753236814717	2	2	2
+ENSSSCG00000046222	H2AC17	hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	ileum	95.86500000000001	0.8980256121069126	2	present_gold	95.86500000000001	0.8980256121069126	2	2	2
+ENSSSCG00000046222	H2AC17	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	liver	71.04	0.0	1	present_gold	71.04	0.0	1	6	1
+ENSSSCG00000046222	H2AC17	longissimus lumborum muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	longissimus thoracis muscle	56.59090909090909	13.001637169637872	11	present_gold	56.59090909090909	13.001637169637872	11	20	11
+ENSSSCG00000046222	H2AC17	lung	58.25	0.0	1	present_gold	58.25	0.0	1	4	1
+ENSSSCG00000046222	H2AC17	lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	material anatomical entity	38.105	1.2374368670764582	2	present_gold	38.105	1.2374368670764582	2	2	2
+ENSSSCG00000046222	H2AC17	medulla oblongata	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	mesenteric lymph node	93.155	3.6415999231107237	2	present_gold	93.155	3.6415999231107237	2	2	2
+ENSSSCG00000046222	H2AC17	metanephros cortex	51.0	0.0	1	present_gold	51.0	0.0	1	2	1
+ENSSSCG00000046222	H2AC17	muscle tissue	48.75	0.0	1	present_gold	48.75	0.0	1	2	1
+ENSSSCG00000046222	H2AC17	occipital cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000046222	H2AC17	omentum	70.32	2.4324473272817317	2	present_gold	70.32	2.4324473272817317	2	2	2
+ENSSSCG00000046222	H2AC17	oocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	ovary	67.67333333333333	9.154416056381386	3	present_gold	67.67333333333333	9.154416056381386	3	3	3
+ENSSSCG00000046222	H2AC17	penis	85.31	0.0	1	present_gold	85.31	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	pituitary gland	52.74	0.0	1	present_gold	52.74	0.0	1	2	1
+ENSSSCG00000046222	H2AC17	pons	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000046222	H2AC17	psoas major muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	right lobe of liver	54.769999999999996	0.282842712474618	2	present_gold	54.769999999999996	0.282842712474618	2	2	2
+ENSSSCG00000046222	H2AC17	semimembranosus muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000046222	H2AC17	skeletal muscle tissue	61.155	3.4436100243784895	2	present_gold	61.155	3.4436100243784895	2	2	2
+ENSSSCG00000046222	H2AC17	spleen	73.2875	20.258386534963737	4	present_gold	73.2875	20.258386534963737	4	7	4
+ENSSSCG00000046222	H2AC17	stomach	68.65	7.07106781186548	2	present_gold	68.65	7.07106781186548	2	2	2
+ENSSSCG00000046222	H2AC17	subcutaneous adipose tissue	25.79	0.0	1	present_gold	25.79	0.0	1	3	1
+ENSSSCG00000046222	H2AC17	testis	85.96	0.0	1	present_gold	85.96	0.0	1	3	1
+ENSSSCG00000046222	H2AC17	tonsil	96.19	0.0	1	present_gold	96.19	0.0	1	1	1
+ENSSSCG00000046222	H2AC17	uterus	46.755	10.62781492123381	2	present_gold	46.755	10.62781492123381	2	3	2
+ENSSSCG00000047716	H2AC12	Ammon's horn	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSSSCG00000047716	H2AC12	amygdala	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	blood	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047716	H2AC12	brainstem	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	caecum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047716	H2AC12	colon	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	corpus callosum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	dorsal plus ventral thalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	duodenum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	endocardial endothelium	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	epididymis	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	forebrain	25.55	0.0	1	present_gold	25.55	0.0	1	1	1
+ENSSSCG00000047716	H2AC12	forelimb bud	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	7	0
+ENSSSCG00000047716	H2AC12	granulosa cell	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	6	0
+ENSSSCG00000047716	H2AC12	heart left ventricle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	hindlimb bud	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	hippocampal formation	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	ileum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	liver	0.0	0.0	0	observed_zero	0.0	0.0	0	6	0
+ENSSSCG00000047716	H2AC12	longissimus lumborum muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	longissimus thoracis muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	20	0
+ENSSSCG00000047716	H2AC12	lung	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSSSCG00000047716	H2AC12	lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	material anatomical entity	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	medulla oblongata	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	mesenteric lymph node	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	metanephros cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	occipital cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047716	H2AC12	omentum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	oocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	ovary	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047716	H2AC12	penis	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	pituitary gland	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	pons	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	psoas major muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	right lobe of liver	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	semimembranosus muscle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	skeletal muscle tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	7	0
+ENSSSCG00000047716	H2AC12	stomach	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSSSCG00000047716	H2AC12	subcutaneous adipose tissue	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047716	H2AC12	testis	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047716	H2AC12	tonsil	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047716	H2AC12	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSSSCG00000047900	H2AW	Ammon's horn	61.38	0.0	1	present_gold	61.38	0.0	1	1	1
+ENSSSCG00000047900	H2AW	adipose tissue	71.24000000000001	28.35498192558056	2	present_gold	71.24000000000001	28.35498192558056	2	2	2
+ENSSSCG00000047900	H2AW	adult mammalian kidney	53.36666666666667	23.65140446851589	3	present_gold	53.36666666666667	23.65140446851589	3	4	3
+ENSSSCG00000047900	H2AW	amygdala	96.07	1.697056274847708	2	present_gold	96.07	1.697056274847708	2	2	2
+ENSSSCG00000047900	H2AW	blood	69.23666666666666	0.755270371015128	3	present_gold	69.23666666666666	0.755270371015128	3	3	3
+ENSSSCG00000047900	H2AW	brainstem	88.95333333333333	2.6982648745690865	3	present_gold	88.95333333333333	2.6982648745690865	3	3	3
+ENSSSCG00000047900	H2AW	caecum	90.75	0.3535533905932738	2	present_gold	90.75	0.3535533905932738	2	2	2
+ENSSSCG00000047900	H2AW	cerebellum	76.38666666666667	37.886363421861084	3	present_gold	76.38666666666667	37.886363421861084	3	3	3
+ENSSSCG00000047900	H2AW	cerebral cortex	94.01	0.0	1	present_gold	94.01	0.0	1	1	1
+ENSSSCG00000047900	H2AW	colon	92.15	0.5374011537017798	2	present_gold	92.15	0.5374011537017798	2	2	2
+ENSSSCG00000047900	H2AW	corpus callosum	91.19	9.376235918533613	2	present_gold	91.19	9.376235918533613	2	2	2
+ENSSSCG00000047900	H2AW	dorsal plus ventral thalamus	84.39	14.707821048680197	2	present_gold	84.39	14.707821048680197	2	2	2
+ENSSSCG00000047900	H2AW	duodenum	94.01	2.630437226013956	2	present_gold	94.01	2.630437226013956	2	2	2
+ENSSSCG00000047900	H2AW	endocardial endothelium	54.2	0.0	1	present_gold	54.2	0.0	1	1	1
+ENSSSCG00000047900	H2AW	epididymis	72.69	0.0	1	present_gold	72.69	0.0	1	1	1
+ENSSSCG00000047900	H2AW	forebrain	95.44	0.0	1	present_gold	95.44	0.0	1	1	1
+ENSSSCG00000047900	H2AW	forelimb bud	56.4	0.0	1	present_gold	56.4	0.0	1	1	1
+ENSSSCG00000047900	H2AW	frontal cortex	67.21142857142857	20.51980460317254	7	present_gold	67.21142857142857	20.51980460317254	7	7	7
+ENSSSCG00000047900	H2AW	granulosa cell	57.06	0.0	1	present_gold	57.06	0.0	1	1	1
+ENSSSCG00000047900	H2AW	heart	54.85	8.920683830290141	5	present_gold	54.85	8.920683830290141	5	6	5
+ENSSSCG00000047900	H2AW	heart left ventricle	75.11	6.307392488183995	2	present_gold	75.11	6.307392488183995	2	2	2
+ENSSSCG00000047900	H2AW	hindlimb bud	56.38	0.0	1	present_gold	56.38	0.0	1	1	1
+ENSSSCG00000047900	H2AW	hippocampal formation	95.07	3.394112549695426	2	present_gold	95.07	3.394112549695426	2	2	2
+ENSSSCG00000047900	H2AW	hypothalamus	41.325	15.492709575797257	2	present_gold	41.325	15.492709575797257	2	2	2
+ENSSSCG00000047900	H2AW	ileum	97.95500000000001	0.940452018978107	2	present_gold	97.95500000000001	0.940452018978107	2	2	2
+ENSSSCG00000047900	H2AW	kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047900	H2AW	liver	53.52	20.405656078646434	3	present_gold	53.52	20.405656078646434	3	6	3
+ENSSSCG00000047900	H2AW	longissimus lumborum muscle	59.57	0.0	1	present_gold	59.57	0.0	1	1	1
+ENSSSCG00000047900	H2AW	longissimus thoracis muscle	55.58666666666667	16.47688934092055	18	present_gold	55.58666666666667	16.47688934092055	18	20	18
+ENSSSCG00000047900	H2AW	lung	62.755	24.58621361657789	4	present_gold	62.755	24.58621361657789	4	4	4
+ENSSSCG00000047900	H2AW	lymph node	47.69	0.0	1	present_gold	47.69	0.0	1	1	1
+ENSSSCG00000047900	H2AW	material anatomical entity	66.38	15.881618305449859	2	present_gold	66.38	15.881618305449859	2	2	2
+ENSSSCG00000047900	H2AW	medulla oblongata	88.15	5.628569978244914	2	present_gold	88.15	5.628569978244914	2	2	2
+ENSSSCG00000047900	H2AW	mesenteric lymph node	95.56	1.6546298679765237	2	present_gold	95.56	1.6546298679765237	2	2	2
+ENSSSCG00000047900	H2AW	metanephros cortex	75.5	4.638620484583753	2	present_gold	75.5	4.638620484583753	2	2	2
+ENSSSCG00000047900	H2AW	muscle tissue	30.01	0.0	1	present_gold	30.01	0.0	1	2	1
+ENSSSCG00000047900	H2AW	occipital cortex	77.18	35.20830725837299	3	present_gold	77.18	35.20830725837299	3	3	3
+ENSSSCG00000047900	H2AW	omentum	84.5	1.0606601717798212	2	present_gold	84.5	1.0606601717798212	2	2	2
+ENSSSCG00000047900	H2AW	oocyte	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSSSCG00000047900	H2AW	ovary	94.82333333333334	1.8104511408301864	3	present_gold	94.82333333333334	1.8104511408301864	3	3	3
+ENSSSCG00000047900	H2AW	penis	91.89	0.0	1	present_gold	91.89	0.0	1	1	1
+ENSSSCG00000047900	H2AW	pituitary gland	95.65	1.612203461105329	2	present_gold	95.65	1.612203461105329	2	2	2
+ENSSSCG00000047900	H2AW	pons	89.36	2.163746750430837	2	present_gold	89.36	2.163746750430837	2	2	2
+ENSSSCG00000047900	H2AW	prefrontal cortex	57.32	0.0	1	present_gold	57.32	0.0	1	1	1
+ENSSSCG00000047900	H2AW	psoas major muscle	54.475	1.2374368670764582	2	present_gold	54.475	1.2374368670764582	2	2	2
+ENSSSCG00000047900	H2AW	right lobe of liver	62.44	0.9192388155425147	2	present_gold	62.44	0.9192388155425147	2	2	2
+ENSSSCG00000047900	H2AW	semimembranosus muscle	32.02	1.6687720036002542	2	present_gold	32.02	1.6687720036002542	2	2	2
+ENSSSCG00000047900	H2AW	skeletal muscle tissue	69.56	4.765899705197337	2	present_gold	69.56	4.765899705197337	2	2	2
+ENSSSCG00000047900	H2AW	spleen	73.79142857142857	22.106451870115073	7	present_gold	73.79142857142857	22.106451870115073	7	7	7
+ENSSSCG00000047900	H2AW	stomach	92.515	4.292138161802339	2	present_gold	92.515	4.292138161802339	2	2	2
+ENSSSCG00000047900	H2AW	subcutaneous adipose tissue	51.339999999999996	7.510499317621963	3	present_gold	51.339999999999996	7.510499317621963	3	3	3
+ENSSSCG00000047900	H2AW	testis	62.17666666666667	28.49709166447224	3	present_gold	62.17666666666667	28.49709166447224	3	3	3
+ENSSSCG00000047900	H2AW	tonsil	96.95	0.0	1	present_gold	96.95	0.0	1	1	1
+ENSSSCG00000047900	H2AW	uterus	75.39999999999999	10.791390086545848	3	present_gold	75.39999999999999	10.791390086545848	3	3	3

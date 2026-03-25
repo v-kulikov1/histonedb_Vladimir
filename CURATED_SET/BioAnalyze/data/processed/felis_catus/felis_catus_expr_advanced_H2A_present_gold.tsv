@@ -1,265 +1,277 @@
-Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
-ENSFCAG00000001225	MACROH2A2	zone of skin	present	gold quality	30.5
-ENSFCAG00000001225	MACROH2A2	adult mammalian kidney	present	gold quality	48.52
-ENSFCAG00000001225	MACROH2A2	adult mammalian kidney	present	gold quality	60.13
-ENSFCAG00000001225	MACROH2A2	prefrontal cortex	present	gold quality	55.1
-ENSFCAG00000001225	MACROH2A2	testis	present	gold quality	34.73
-ENSFCAG00000001225	MACROH2A2	testis	present	gold quality	32.59
-ENSFCAG00000001225	MACROH2A2	testis	present	gold quality	30.87
-ENSFCAG00000001225	MACROH2A2	embryo	present	gold quality	87.5
-ENSFCAG00000001225	MACROH2A2	brain	present	gold quality	52.66
-ENSFCAG00000001225	MACROH2A2	brain	present	gold quality	74.4
-ENSFCAG00000001225	MACROH2A2	uterus	present	gold quality	77.44
-ENSFCAG00000001225	MACROH2A2	spleen	present	gold quality	39.84
-ENSFCAG00000001225	MACROH2A2	liver	present	gold quality	68.08
-ENSFCAG00000001225	MACROH2A2	embryonic head	present	gold quality	93.82
-ENSFCAG00000001225	MACROH2A2	eyeball of camera-type eye	present	gold quality	70.4
-ENSFCAG00000001225	MACROH2A2	tip of external ear	present	gold quality	28.38
-ENSFCAG00000010271	H2AZ2	zone of skin	present	gold quality	98.4
-ENSFCAG00000010271	H2AZ2	adult mammalian kidney	present	gold quality	96.78
-ENSFCAG00000010271	H2AZ2	adult mammalian kidney	present	gold quality	96.31
-ENSFCAG00000010271	H2AZ2	prefrontal cortex	present	gold quality	94.84
-ENSFCAG00000010271	H2AZ2	testis	present	gold quality	96.12
-ENSFCAG00000010271	H2AZ2	testis	present	gold quality	96.78
-ENSFCAG00000010271	H2AZ2	testis	present	gold quality	98.18
-ENSFCAG00000010271	H2AZ2	embryo	present	gold quality	99.26
-ENSFCAG00000010271	H2AZ2	brain	present	gold quality	91.34
-ENSFCAG00000010271	H2AZ2	brain	present	gold quality	97.55
-ENSFCAG00000010271	H2AZ2	uterus	present	gold quality	98.86
-ENSFCAG00000010271	H2AZ2	spleen	present	gold quality	98.91
-ENSFCAG00000010271	H2AZ2	liver	present	gold quality	87.71
-ENSFCAG00000010271	H2AZ2	liver	present	gold quality	95.29
-ENSFCAG00000010271	H2AZ2	embryonic head	present	gold quality	99.39
-ENSFCAG00000010271	H2AZ2	eyeball of camera-type eye	present	gold quality	98.8
-ENSFCAG00000010271	H2AZ2	tip of external ear	present	gold quality	98.54
-ENSFCAG00000013924	MACROH2A1	zone of skin	present	gold quality	96.69
-ENSFCAG00000013924	MACROH2A1	adult mammalian kidney	present	gold quality	92.96
-ENSFCAG00000013924	MACROH2A1	adult mammalian kidney	present	gold quality	93.13
-ENSFCAG00000013924	MACROH2A1	prefrontal cortex	present	gold quality	92.5
-ENSFCAG00000013924	MACROH2A1	testis	present	gold quality	77.0
-ENSFCAG00000013924	MACROH2A1	testis	present	gold quality	77.69
-ENSFCAG00000013924	MACROH2A1	testis	present	gold quality	82.61
-ENSFCAG00000013924	MACROH2A1	embryo	present	gold quality	97.56
-ENSFCAG00000013924	MACROH2A1	brain	present	gold quality	92.15
-ENSFCAG00000013924	MACROH2A1	brain	present	gold quality	95.42
-ENSFCAG00000013924	MACROH2A1	uterus	present	gold quality	95.17
-ENSFCAG00000013924	MACROH2A1	spleen	present	gold quality	94.77
-ENSFCAG00000013924	MACROH2A1	liver	present	gold quality	86.93
-ENSFCAG00000013924	MACROH2A1	liver	present	gold quality	90.72
-ENSFCAG00000013924	MACROH2A1	embryonic head	present	gold quality	98.32
-ENSFCAG00000013924	MACROH2A1	eyeball of camera-type eye	present	gold quality	95.2
-ENSFCAG00000013924	MACROH2A1	tip of external ear	present	gold quality	95.46
-ENSFCAG00000024530	H2AW	adult mammalian kidney	present	gold quality	43.33
-ENSFCAG00000024530	H2AW	adult mammalian kidney	present	gold quality	39.74
-ENSFCAG00000024530	H2AW	prefrontal cortex	present	gold quality	44.1
-ENSFCAG00000024530	H2AW	testis	present	gold quality	39.85
-ENSFCAG00000024530	H2AW	testis	present	gold quality	38.18
-ENSFCAG00000024530	H2AW	testis	present	gold quality	47.19
-ENSFCAG00000024530	H2AW	embryo	present	gold quality	29.44
-ENSFCAG00000024530	H2AW	brain	present	gold quality	96.41
-ENSFCAG00000024530	H2AW	brain	present	gold quality	84.61
-ENSFCAG00000024530	H2AW	uterus	present	gold quality	48.35
-ENSFCAG00000024530	H2AW	spleen	present	gold quality	31.63
-ENSFCAG00000024530	H2AW	liver	present	gold quality	40.42
-ENSFCAG00000024530	H2AW	eyeball of camera-type eye	present	gold quality	68.97
-ENSFCAG00000024530	H2AW	tip of external ear	present	gold quality	24.18
-ENSFCAG00000027552	H2AC1	prefrontal cortex	present	gold quality	15.91
-ENSFCAG00000027552	H2AC1	testis	present	gold quality	47.8
-ENSFCAG00000027552	H2AC1	testis	present	gold quality	37.53
-ENSFCAG00000027552	H2AC1	testis	present	gold quality	22.56
-ENSFCAG00000027552	H2AC1	liver	present	gold quality	20.21
-ENSFCAG00000027552	H2AC1	eyeball of camera-type eye	present	gold quality	32.03
-ENSFCAG00000030442		testis	present	gold quality	45.71
-ENSFCAG00000030442		testis	present	gold quality	40.91
-ENSFCAG00000030442		testis	present	gold quality	30.95
-ENSFCAG00000030442		brain	present	gold quality	42.61
-ENSFCAG00000031712	H2AJ	zone of skin	present	gold quality	96.72
-ENSFCAG00000031712	H2AJ	adult mammalian kidney	present	gold quality	94.46
-ENSFCAG00000031712	H2AJ	adult mammalian kidney	present	gold quality	92.48
-ENSFCAG00000031712	H2AJ	prefrontal cortex	present	gold quality	65.65
-ENSFCAG00000031712	H2AJ	testis	present	gold quality	51.95
-ENSFCAG00000031712	H2AJ	testis	present	gold quality	56.88
-ENSFCAG00000031712	H2AJ	testis	present	gold quality	65.14
-ENSFCAG00000031712	H2AJ	embryo	present	gold quality	82.4
-ENSFCAG00000031712	H2AJ	brain	present	gold quality	57.61
-ENSFCAG00000031712	H2AJ	uterus	present	gold quality	87.23
-ENSFCAG00000031712	H2AJ	spleen	present	gold quality	93.0
-ENSFCAG00000031712	H2AJ	liver	present	gold quality	70.93
-ENSFCAG00000031712	H2AJ	liver	present	gold quality	86.84
-ENSFCAG00000031712	H2AJ	embryonic head	present	gold quality	71.72
-ENSFCAG00000031712	H2AJ	eyeball of camera-type eye	present	gold quality	88.82
-ENSFCAG00000031712	H2AJ	tip of external ear	present	gold quality	98.29
-ENSFCAG00000039458	H2AZ1	zone of skin	present	gold quality	94.45
-ENSFCAG00000039458	H2AZ1	adult mammalian kidney	present	gold quality	91.85
-ENSFCAG00000039458	H2AZ1	adult mammalian kidney	present	gold quality	90.63
-ENSFCAG00000039458	H2AZ1	prefrontal cortex	present	gold quality	95.38
-ENSFCAG00000039458	H2AZ1	testis	present	gold quality	98.62
-ENSFCAG00000039458	H2AZ1	testis	present	gold quality	98.7
-ENSFCAG00000039458	H2AZ1	testis	present	gold quality	98.22
-ENSFCAG00000039458	H2AZ1	embryo	present	gold quality	97.84
-ENSFCAG00000039458	H2AZ1	brain	present	gold quality	92.9
-ENSFCAG00000039458	H2AZ1	brain	present	gold quality	98.24
-ENSFCAG00000039458	H2AZ1	uterus	present	gold quality	93.4
-ENSFCAG00000039458	H2AZ1	spleen	present	gold quality	96.59
-ENSFCAG00000039458	H2AZ1	liver	present	gold quality	83.38
-ENSFCAG00000039458	H2AZ1	liver	present	gold quality	85.91
-ENSFCAG00000039458	H2AZ1	embryonic head	present	gold quality	98.47
-ENSFCAG00000039458	H2AZ1	eyeball of camera-type eye	present	gold quality	98.23
-ENSFCAG00000039458	H2AZ1	tip of external ear	present	gold quality	91.74
-ENSFCAG00000040278		zone of skin	present	gold quality	33.5
-ENSFCAG00000040278		adult mammalian kidney	present	gold quality	43.77
-ENSFCAG00000040278		adult mammalian kidney	present	gold quality	58.45
-ENSFCAG00000040278		prefrontal cortex	present	gold quality	12.69
-ENSFCAG00000040278		testis	present	gold quality	86.79
-ENSFCAG00000040278		testis	present	gold quality	89.54
-ENSFCAG00000040278		testis	present	gold quality	60.88
-ENSFCAG00000040278		embryo	present	gold quality	46.89
-ENSFCAG00000040278		brain	present	gold quality	95.08
-ENSFCAG00000040278		brain	present	gold quality	92.91
-ENSFCAG00000040278		uterus	present	gold quality	32.33
-ENSFCAG00000040278		spleen	present	gold quality	50.15
-ENSFCAG00000040278		liver	present	gold quality	96.68
-ENSFCAG00000040278		liver	present	gold quality	67.85
-ENSFCAG00000040278		embryonic head	present	gold quality	47.35
-ENSFCAG00000040278		eyeball of camera-type eye	present	gold quality	30.37
-ENSFCAG00000040278		tip of external ear	present	gold quality	55.92
-ENSFCAG00000040930	LOC101084707	testis	present	gold quality	12.78
-ENSFCAG00000040930	LOC101084707	embryo	present	gold quality	20.14
-ENSFCAG00000040930	LOC101084707	brain	present	gold quality	76.52
-ENSFCAG00000040930	LOC101084707	liver	present	gold quality	23.13
-ENSFCAG00000040930	LOC101084707	embryonic head	present	gold quality	36.19
-ENSFCAG00000040930	LOC101084707	eyeball of camera-type eye	present	gold quality	26.81
-ENSFCAG00000041358	H2AC7	zone of skin	present	gold quality	28.2
-ENSFCAG00000041358	H2AC7	adult mammalian kidney	present	gold quality	40.83
-ENSFCAG00000041358	H2AC7	adult mammalian kidney	present	gold quality	34.66
-ENSFCAG00000041358	H2AC7	brain	present	gold quality	96.09
-ENSFCAG00000041358	H2AC7	spleen	present	gold quality	32.75
-ENSFCAG00000041358	H2AC7	liver	present	gold quality	76.65
-ENSFCAG00000041358	H2AC7	liver	present	gold quality	36.51
-ENSFCAG00000041358	H2AC7	eyeball of camera-type eye	present	gold quality	31.53
-ENSFCAG00000041358	H2AC7	tip of external ear	present	gold quality	45.65
-ENSFCAG00000043084	LOC101086721	testis	present	gold quality	12.05
-ENSFCAG00000043084	LOC101086721	testis	present	gold quality	44.61
-ENSFCAG00000043084	LOC101086721	embryo	present	gold quality	27.85
-ENSFCAG00000043084	LOC101086721	spleen	present	gold quality	29.76
-ENSFCAG00000043084	LOC101086721	liver	present	gold quality	63.14
-ENSFCAG00000043084	LOC101086721	eyeball of camera-type eye	present	gold quality	22.66
-ENSFCAG00000043084	LOC101086721	tip of external ear	present	gold quality	27.22
-ENSFCAG00000043173	LOC101083265	adult mammalian kidney	present	gold quality	29.04
-ENSFCAG00000043173	LOC101083265	prefrontal cortex	present	gold quality	22.99
-ENSFCAG00000043173	LOC101083265	brain	present	gold quality	47.97
-ENSFCAG00000043173	LOC101083265	brain	present	gold quality	74.71
-ENSFCAG00000043173	LOC101083265	spleen	present	gold quality	18.32
-ENSFCAG00000043173	LOC101083265	liver	present	gold quality	36.92
-ENSFCAG00000043173	LOC101083265	eyeball of camera-type eye	present	gold quality	26.14
-ENSFCAG00000044530	LOC101094019	prefrontal cortex	present	gold quality	13.72
-ENSFCAG00000044530	LOC101094019	testis	present	gold quality	29.48
-ENSFCAG00000044530	LOC101094019	testis	present	gold quality	23.91
-ENSFCAG00000044530	LOC101094019	embryo	present	gold quality	31.16
-ENSFCAG00000044530	LOC101094019	spleen	present	gold quality	41.09
-ENSFCAG00000044530	LOC101094019	liver	present	gold quality	69.87
-ENSFCAG00000044530	LOC101094019	eyeball of camera-type eye	present	gold quality	39.72
-ENSFCAG00000044530	LOC101094019	tip of external ear	present	gold quality	49.66
-ENSFCAG00000044576	LOC101097798	adult mammalian kidney	present	gold quality	30.18
-ENSFCAG00000044576	LOC101097798	prefrontal cortex	present	gold quality	17.03
-ENSFCAG00000044576	LOC101097798	testis	present	gold quality	28.35
-ENSFCAG00000044576	LOC101097798	testis	present	gold quality	44.94
-ENSFCAG00000044576	LOC101097798	testis	present	gold quality	20.22
-ENSFCAG00000044576	LOC101097798	embryo	present	gold quality	16.49
-ENSFCAG00000044576	LOC101097798	uterus	present	gold quality	52.72
-ENSFCAG00000044576	LOC101097798	spleen	present	gold quality	23.53
-ENSFCAG00000044576	LOC101097798	liver	present	gold quality	31.73
-ENSFCAG00000044576	LOC101097798	eyeball of camera-type eye	present	gold quality	24.96
-ENSFCAG00000044576	LOC101097798	tip of external ear	present	gold quality	35.94
-ENSFCAG00000044591	LOC105260540	zone of skin	present	gold quality	36.46
-ENSFCAG00000044591	LOC105260540	adult mammalian kidney	present	gold quality	25.92
-ENSFCAG00000044591	LOC105260540	testis	present	gold quality	22.95
-ENSFCAG00000044591	LOC105260540	testis	present	gold quality	41.19
-ENSFCAG00000044591	LOC105260540	testis	present	gold quality	17.36
-ENSFCAG00000044591	LOC105260540	embryo	present	gold quality	48.56
-ENSFCAG00000044591	LOC105260540	brain	present	gold quality	54.74
-ENSFCAG00000044591	LOC105260540	brain	present	gold quality	94.53
-ENSFCAG00000044591	LOC105260540	spleen	present	gold quality	34.75
-ENSFCAG00000044591	LOC105260540	liver	present	gold quality	65.88
-ENSFCAG00000044591	LOC105260540	liver	present	gold quality	25.62
-ENSFCAG00000044591	LOC105260540	embryonic head	present	gold quality	46.49
-ENSFCAG00000044591	LOC105260540	eyeball of camera-type eye	present	gold quality	36.91
-ENSFCAG00000044591	LOC105260540	tip of external ear	present	gold quality	38.36
-ENSFCAG00000044965		adult mammalian kidney	present	gold quality	34.8
-ENSFCAG00000044965		adult mammalian kidney	present	gold quality	23.2
-ENSFCAG00000044965		testis	present	gold quality	24.68
-ENSFCAG00000044965		testis	present	gold quality	19.91
-ENSFCAG00000044965		embryo	present	gold quality	23.16
-ENSFCAG00000044965		eyeball of camera-type eye	present	gold quality	28.35
-ENSFCAG00000044965		tip of external ear	present	gold quality	31.39
-ENSFCAG00000048216	LOC105260540	adult mammalian kidney	present	gold quality	40.15
-ENSFCAG00000048216	LOC105260540	adult mammalian kidney	present	gold quality	19.67
-ENSFCAG00000048216	LOC105260540	prefrontal cortex	present	gold quality	25.91
-ENSFCAG00000048216	LOC105260540	testis	present	gold quality	45.32
-ENSFCAG00000048216	LOC105260540	testis	present	gold quality	34.38
-ENSFCAG00000048216	LOC105260540	testis	present	gold quality	12.85
-ENSFCAG00000048216	LOC105260540	embryo	present	gold quality	40.76
-ENSFCAG00000048216	LOC105260540	brain	present	gold quality	96.98
-ENSFCAG00000048216	LOC105260540	brain	present	gold quality	86.75
-ENSFCAG00000048216	LOC105260540	spleen	present	gold quality	43.11
-ENSFCAG00000048216	LOC105260540	liver	present	gold quality	84.36
-ENSFCAG00000048216	LOC105260540	liver	present	gold quality	29.35
-ENSFCAG00000048216	LOC105260540	embryonic head	present	gold quality	45.33
-ENSFCAG00000048216	LOC105260540	eyeball of camera-type eye	present	gold quality	37.53
-ENSFCAG00000048216	LOC105260540	tip of external ear	present	gold quality	64.01
-ENSFCAG00000048955	HYPM	testis	present	gold quality	92.67
-ENSFCAG00000048955	HYPM	testis	present	gold quality	81.12
-ENSFCAG00000048955	HYPM	testis	present	gold quality	94.19
-ENSFCAG00000048955	HYPM	spleen	present	gold quality	28.96
-ENSFCAG00000051396	LOC101085206	zone of skin	present	gold quality	42.49
-ENSFCAG00000051396	LOC101085206	adult mammalian kidney	present	gold quality	54.14
-ENSFCAG00000051396	LOC101085206	adult mammalian kidney	present	gold quality	62.59
-ENSFCAG00000051396	LOC101085206	prefrontal cortex	present	gold quality	49.24
-ENSFCAG00000051396	LOC101085206	testis	present	gold quality	11.59
-ENSFCAG00000051396	LOC101085206	testis	present	gold quality	21.38
-ENSFCAG00000051396	LOC101085206	testis	present	gold quality	26.99
-ENSFCAG00000051396	LOC101085206	embryo	present	gold quality	51.28
-ENSFCAG00000051396	LOC101085206	brain	present	gold quality	46.02
-ENSFCAG00000051396	LOC101085206	uterus	present	gold quality	40.58
-ENSFCAG00000051396	LOC101085206	spleen	present	gold quality	63.65
-ENSFCAG00000051396	LOC101085206	liver	present	gold quality	75.05
-ENSFCAG00000051396	LOC101085206	liver	present	gold quality	77.03
-ENSFCAG00000051396	LOC101085206	embryonic head	present	gold quality	36.59
-ENSFCAG00000051396	LOC101085206	eyeball of camera-type eye	present	gold quality	47.98
-ENSFCAG00000051396	LOC101085206	tip of external ear	present	gold quality	59.32
-ENSFCAG00000051680	H2AX	zone of skin	present	gold quality	58.95
-ENSFCAG00000051680	H2AX	adult mammalian kidney	present	gold quality	55.15
-ENSFCAG00000051680	H2AX	adult mammalian kidney	present	gold quality	62.8
-ENSFCAG00000051680	H2AX	prefrontal cortex	present	gold quality	69.57
-ENSFCAG00000051680	H2AX	testis	present	gold quality	72.24
-ENSFCAG00000051680	H2AX	testis	present	gold quality	72.44
-ENSFCAG00000051680	H2AX	testis	present	gold quality	79.38
-ENSFCAG00000051680	H2AX	embryo	present	gold quality	83.84
-ENSFCAG00000051680	H2AX	brain	present	gold quality	69.84
-ENSFCAG00000051680	H2AX	brain	present	gold quality	74.34
-ENSFCAG00000051680	H2AX	uterus	present	gold quality	61.42
-ENSFCAG00000051680	H2AX	spleen	present	gold quality	76.46
-ENSFCAG00000051680	H2AX	liver	present	gold quality	67.14
-ENSFCAG00000051680	H2AX	liver	present	gold quality	70.9
-ENSFCAG00000051680	H2AX	embryonic head	present	gold quality	75.81
-ENSFCAG00000051680	H2AX	eyeball of camera-type eye	present	gold quality	86.83
-ENSFCAG00000051680	H2AX	tip of external ear	present	gold quality	80.33
-ENSFCAG00000052540	LOC111558783	testis	present	gold quality	99.38
-ENSFCAG00000052540	LOC111558783	testis	present	gold quality	98.56
-ENSFCAG00000052540	LOC111558783	testis	present	gold quality	99.58
-ENSFCAG00000052540	LOC111558783	spleen	present	gold quality	59.22
-ENSFCAG00000052540	LOC111558783	liver	present	gold quality	20.96
-ENSFCAG00000053015	H2AC6	adult mammalian kidney	present	gold quality	28.44
-ENSFCAG00000053015	H2AC6	adult mammalian kidney	present	gold quality	23.63
-ENSFCAG00000053015	H2AC6	prefrontal cortex	present	gold quality	13.49
-ENSFCAG00000053015	H2AC6	testis	present	gold quality	39.23
-ENSFCAG00000053015	H2AC6	testis	present	gold quality	26.24
-ENSFCAG00000053015	H2AC6	testis	present	gold quality	33.42
-ENSFCAG00000053015	H2AC6	embryo	present	gold quality	18.58
-ENSFCAG00000053015	H2AC6	brain	present	gold quality	88.8
-ENSFCAG00000053015	H2AC6	brain	present	gold quality	77.48
-ENSFCAG00000053015	H2AC6	spleen	present	gold quality	31.04
-ENSFCAG00000053015	H2AC6	liver	present	gold quality	82.76
-ENSFCAG00000053015	H2AC6	liver	present	gold quality	32.67
-ENSFCAG00000053015	H2AC6	eyeball of camera-type eye	present	gold quality	27.42
-ENSFCAG00000053015	H2AC6	tip of external ear	present	gold quality	40.12
+Gene ID	Gene name	Anatomical entity name	cell_mean_score	cell_std_score	cell_n	cell_status	Expression score	Expression std	Expression n	raw_row_count	qualifying_row_count
+ENSFCAG00000001225	MACROH2A2	adult mammalian kidney	54.325	8.209509729575815	2	present_gold	54.325	8.209509729575815	2	2	2
+ENSFCAG00000001225	MACROH2A2	brain	63.53	15.37250142299555	2	present_gold	63.53	15.37250142299555	2	2	2
+ENSFCAG00000001225	MACROH2A2	embryo	87.5	0.0	1	present_gold	87.5	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	embryonic head	93.82	0.0	1	present_gold	93.82	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	eyeball of camera-type eye	70.4	0.0	1	present_gold	70.4	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	liver	68.08	0.0	1	present_gold	68.08	0.0	1	2	1
+ENSFCAG00000001225	MACROH2A2	prefrontal cortex	55.1	0.0	1	present_gold	55.1	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	spleen	39.84	0.0	1	present_gold	39.84	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	testis	32.73	1.9338045402780477	3	present_gold	32.73	1.9338045402780477	3	3	3
+ENSFCAG00000001225	MACROH2A2	tip of external ear	28.38	0.0	1	present_gold	28.38	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	uterus	77.44	0.0	1	present_gold	77.44	0.0	1	1	1
+ENSFCAG00000001225	MACROH2A2	zone of skin	30.5	0.0	1	present_gold	30.5	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	adult mammalian kidney	96.545	0.33234018715767655	2	present_gold	96.545	0.33234018715767655	2	2	2
+ENSFCAG00000010271	H2AZ2	brain	94.445	4.391133111168456	2	present_gold	94.445	4.391133111168456	2	2	2
+ENSFCAG00000010271	H2AZ2	embryo	99.26	0.0	1	present_gold	99.26	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	embryonic head	99.39	0.0	1	present_gold	99.39	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	eyeball of camera-type eye	98.8	0.0	1	present_gold	98.8	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	liver	91.5	5.359869401394039	2	present_gold	91.5	5.359869401394039	2	2	2
+ENSFCAG00000010271	H2AZ2	prefrontal cortex	94.84	0.0	1	present_gold	94.84	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	spleen	98.91	0.0	1	present_gold	98.91	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	testis	97.02666666666669	1.0519188815366596	3	present_gold	97.02666666666669	1.0519188815366596	3	3	3
+ENSFCAG00000010271	H2AZ2	tip of external ear	98.54	0.0	1	present_gold	98.54	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	uterus	98.86	0.0	1	present_gold	98.86	0.0	1	1	1
+ENSFCAG00000010271	H2AZ2	zone of skin	98.4	0.0	1	present_gold	98.4	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	adult mammalian kidney	93.04499999999999	0.12020815280171428	2	present_gold	93.04499999999999	0.12020815280171428	2	2	2
+ENSFCAG00000013924	MACROH2A1	brain	93.785	2.3122391744800077	2	present_gold	93.785	2.3122391744800077	2	2	2
+ENSFCAG00000013924	MACROH2A1	embryo	97.56	0.0	1	present_gold	97.56	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	embryonic head	98.32	0.0	1	present_gold	98.32	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	eyeball of camera-type eye	95.2	0.0	1	present_gold	95.2	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	liver	88.825	2.6799347006970096	2	present_gold	88.825	2.6799347006970096	2	2	2
+ENSFCAG00000013924	MACROH2A1	prefrontal cortex	92.5	0.0	1	present_gold	92.5	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	spleen	94.77	0.0	1	present_gold	94.77	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	testis	79.10000000000001	3.0592646175183997	3	present_gold	79.10000000000001	3.0592646175183997	3	3	3
+ENSFCAG00000013924	MACROH2A1	tip of external ear	95.46	0.0	1	present_gold	95.46	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	uterus	95.17	0.0	1	present_gold	95.17	0.0	1	1	1
+ENSFCAG00000013924	MACROH2A1	zone of skin	96.69	0.0	1	present_gold	96.69	0.0	1	1	1
+ENSFCAG00000024530	H2AW	adult mammalian kidney	41.535	2.538513344459703	2	present_gold	41.535	2.538513344459703	2	2	2
+ENSFCAG00000024530	H2AW	brain	90.50999999999999	8.343860018001259	2	present_gold	90.50999999999999	8.343860018001259	2	2	2
+ENSFCAG00000024530	H2AW	embryo	29.44	0.0	1	present_gold	29.44	0.0	1	1	1
+ENSFCAG00000024530	H2AW	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000024530	H2AW	eyeball of camera-type eye	68.97	0.0	1	present_gold	68.97	0.0	1	1	1
+ENSFCAG00000024530	H2AW	liver	40.42	0.0	1	present_gold	40.42	0.0	1	2	1
+ENSFCAG00000024530	H2AW	prefrontal cortex	44.1	0.0	1	present_gold	44.1	0.0	1	1	1
+ENSFCAG00000024530	H2AW	spleen	31.63	0.0	1	present_gold	31.63	0.0	1	1	1
+ENSFCAG00000024530	H2AW	testis	41.74	4.793130501040003	3	present_gold	41.74	4.793130501040003	3	3	3
+ENSFCAG00000024530	H2AW	tip of external ear	24.18	0.0	1	present_gold	24.18	0.0	1	1	1
+ENSFCAG00000024530	H2AW	uterus	48.35	0.0	1	present_gold	48.35	0.0	1	1	1
+ENSFCAG00000024530	H2AW	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000027552	H2AC1	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000027552	H2AC1	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000027552	H2AC1	embryo	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000027552	H2AC1	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000027552	H2AC1	eyeball of camera-type eye	32.03	0.0	1	present_gold	32.03	0.0	1	1	1
+ENSFCAG00000027552	H2AC1	liver	20.21	0.0	1	present_gold	20.21	0.0	1	2	1
+ENSFCAG00000027552	H2AC1	prefrontal cortex	15.91	0.0	1	present_gold	15.91	0.0	1	1	1
+ENSFCAG00000027552	H2AC1	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000027552	H2AC1	testis	35.96333333333333	12.692723637318089	3	present_gold	35.96333333333333	12.692723637318089	3	3	3
+ENSFCAG00000027552	H2AC1	tip of external ear	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000027552	H2AC1	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000027552	H2AC1	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000030442		brain	42.61	0.0	1	present_gold	42.61	0.0	1	2	1
+ENSFCAG00000030442		embryo	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		eyeball of camera-type eye	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		liver	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000030442		prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		testis	39.19	7.528824609459302	3	present_gold	39.19	7.528824609459302	3	3	3
+ENSFCAG00000030442		tip of external ear	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000030442		zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000031712	H2AJ	adult mammalian kidney	93.47	1.4000714267493568	2	present_gold	93.47	1.4000714267493568	2	2	2
+ENSFCAG00000031712	H2AJ	brain	57.61	0.0	1	present_gold	57.61	0.0	1	2	1
+ENSFCAG00000031712	H2AJ	embryo	82.4	0.0	1	present_gold	82.4	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	embryonic head	71.72	0.0	1	present_gold	71.72	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	eyeball of camera-type eye	88.82	0.0	1	present_gold	88.82	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	liver	78.885	11.25006888867797	2	present_gold	78.885	11.25006888867797	2	2	2
+ENSFCAG00000031712	H2AJ	prefrontal cortex	65.65	0.0	1	present_gold	65.65	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	spleen	93.0	0.0	1	present_gold	93.0	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	testis	57.99	6.664690540452721	3	present_gold	57.99	6.664690540452721	3	3	3
+ENSFCAG00000031712	H2AJ	tip of external ear	98.29	0.0	1	present_gold	98.29	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	uterus	87.23	0.0	1	present_gold	87.23	0.0	1	1	1
+ENSFCAG00000031712	H2AJ	zone of skin	96.72	0.0	1	present_gold	96.72	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	adult mammalian kidney	91.24	0.8626702730475871	2	present_gold	91.24	0.8626702730475871	2	2	2
+ENSFCAG00000039458	H2AZ1	brain	95.57	3.775950211536156	2	present_gold	95.57	3.775950211536156	2	2	2
+ENSFCAG00000039458	H2AZ1	embryo	97.84	0.0	1	present_gold	97.84	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	embryonic head	98.47	0.0	1	present_gold	98.47	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	eyeball of camera-type eye	98.23	0.0	1	present_gold	98.23	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	liver	84.645	1.788980156401966	2	present_gold	84.645	1.788980156401966	2	2	2
+ENSFCAG00000039458	H2AZ1	prefrontal cortex	95.38	0.0	1	present_gold	95.38	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	spleen	96.59	0.0	1	present_gold	96.59	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	testis	98.51333333333334	0.2571640202931481	3	present_gold	98.51333333333334	0.2571640202931481	3	3	3
+ENSFCAG00000039458	H2AZ1	tip of external ear	91.74	0.0	1	present_gold	91.74	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	uterus	93.4	0.0	1	present_gold	93.4	0.0	1	1	1
+ENSFCAG00000039458	H2AZ1	zone of skin	94.45	0.0	1	present_gold	94.45	0.0	1	1	1
+ENSFCAG00000040278		adult mammalian kidney	51.11	10.380327547818517	2	present_gold	51.11	10.380327547818517	2	2	2
+ENSFCAG00000040278		brain	93.995	1.5344217151748092	2	present_gold	93.995	1.5344217151748092	2	2	2
+ENSFCAG00000040278		embryo	46.89	0.0	1	present_gold	46.89	0.0	1	1	1
+ENSFCAG00000040278		embryonic head	47.35	0.0	1	present_gold	47.35	0.0	1	1	1
+ENSFCAG00000040278		eyeball of camera-type eye	30.37	0.0	1	present_gold	30.37	0.0	1	1	1
+ENSFCAG00000040278		liver	82.265	20.385888501608175	2	present_gold	82.265	20.385888501608175	2	2	2
+ENSFCAG00000040278		prefrontal cortex	12.69	0.0	1	present_gold	12.69	0.0	1	1	1
+ENSFCAG00000040278		spleen	50.15	0.0	1	present_gold	50.15	0.0	1	1	1
+ENSFCAG00000040278		testis	79.07000000000001	15.812896635341675	3	present_gold	79.07000000000001	15.812896635341675	3	3	3
+ENSFCAG00000040278		tip of external ear	55.92	0.0	1	present_gold	55.92	0.0	1	1	1
+ENSFCAG00000040278		uterus	32.33	0.0	1	present_gold	32.33	0.0	1	1	1
+ENSFCAG00000040278		zone of skin	33.5	0.0	1	present_gold	33.5	0.0	1	1	1
+ENSFCAG00000040930	LOC101084707	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000040930	LOC101084707	brain	76.52	0.0	1	present_gold	76.52	0.0	1	2	1
+ENSFCAG00000040930	LOC101084707	embryo	20.14	0.0	1	present_gold	20.14	0.0	1	1	1
+ENSFCAG00000040930	LOC101084707	embryonic head	36.19	0.0	1	present_gold	36.19	0.0	1	1	1
+ENSFCAG00000040930	LOC101084707	eyeball of camera-type eye	26.81	0.0	1	present_gold	26.81	0.0	1	1	1
+ENSFCAG00000040930	LOC101084707	liver	23.13	0.0	1	present_gold	23.13	0.0	1	2	1
+ENSFCAG00000040930	LOC101084707	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000040930	LOC101084707	spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000040930	LOC101084707	testis	12.78	0.0	1	present_gold	12.78	0.0	1	3	1
+ENSFCAG00000040930	LOC101084707	tip of external ear	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000040930	LOC101084707	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000040930	LOC101084707	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000041358	H2AC7	adult mammalian kidney	37.745	4.362848839920999	2	present_gold	37.745	4.362848839920999	2	2	2
+ENSFCAG00000041358	H2AC7	brain	96.09	0.0	1	present_gold	96.09	0.0	1	2	1
+ENSFCAG00000041358	H2AC7	embryo	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000041358	H2AC7	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000041358	H2AC7	eyeball of camera-type eye	31.53	0.0	1	present_gold	31.53	0.0	1	1	1
+ENSFCAG00000041358	H2AC7	liver	56.58	28.383266196828025	2	present_gold	56.58	28.383266196828025	2	2	2
+ENSFCAG00000041358	H2AC7	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000041358	H2AC7	spleen	32.75	0.0	1	present_gold	32.75	0.0	1	1	1
+ENSFCAG00000041358	H2AC7	testis	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSFCAG00000041358	H2AC7	tip of external ear	45.65	0.0	1	present_gold	45.65	0.0	1	1	1
+ENSFCAG00000041358	H2AC7	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000041358	H2AC7	zone of skin	28.2	0.0	1	present_gold	28.2	0.0	1	1	1
+ENSFCAG00000043084	LOC101086721	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000043084	LOC101086721	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000043084	LOC101086721	embryo	27.85	0.0	1	present_gold	27.85	0.0	1	1	1
+ENSFCAG00000043084	LOC101086721	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043084	LOC101086721	eyeball of camera-type eye	22.66	0.0	1	present_gold	22.66	0.0	1	1	1
+ENSFCAG00000043084	LOC101086721	liver	63.14	0.0	1	present_gold	63.14	0.0	1	2	1
+ENSFCAG00000043084	LOC101086721	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043084	LOC101086721	spleen	29.76	0.0	1	present_gold	29.76	0.0	1	1	1
+ENSFCAG00000043084	LOC101086721	testis	28.33	23.023396795433985	2	present_gold	28.33	23.023396795433985	2	3	2
+ENSFCAG00000043084	LOC101086721	tip of external ear	27.22	0.0	1	present_gold	27.22	0.0	1	1	1
+ENSFCAG00000043084	LOC101086721	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043084	LOC101086721	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043173	LOC101083265	adult mammalian kidney	29.04	0.0	1	present_gold	29.04	0.0	1	2	1
+ENSFCAG00000043173	LOC101083265	brain	61.339999999999996	18.90803532892828	2	present_gold	61.339999999999996	18.90803532892828	2	2	2
+ENSFCAG00000043173	LOC101083265	embryo	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043173	LOC101083265	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043173	LOC101083265	eyeball of camera-type eye	26.14	0.0	1	present_gold	26.14	0.0	1	1	1
+ENSFCAG00000043173	LOC101083265	liver	36.92	0.0	1	present_gold	36.92	0.0	1	2	1
+ENSFCAG00000043173	LOC101083265	prefrontal cortex	22.99	0.0	1	present_gold	22.99	0.0	1	1	1
+ENSFCAG00000043173	LOC101083265	spleen	18.32	0.0	1	present_gold	18.32	0.0	1	1	1
+ENSFCAG00000043173	LOC101083265	testis	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSFCAG00000043173	LOC101083265	tip of external ear	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043173	LOC101083265	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000043173	LOC101083265	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044530	LOC101094019	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000044530	LOC101094019	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000044530	LOC101094019	embryo	31.16	0.0	1	present_gold	31.16	0.0	1	1	1
+ENSFCAG00000044530	LOC101094019	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044530	LOC101094019	eyeball of camera-type eye	39.72	0.0	1	present_gold	39.72	0.0	1	1	1
+ENSFCAG00000044530	LOC101094019	liver	69.87	0.0	1	present_gold	69.87	0.0	1	2	1
+ENSFCAG00000044530	LOC101094019	prefrontal cortex	13.72	0.0	1	present_gold	13.72	0.0	1	1	1
+ENSFCAG00000044530	LOC101094019	spleen	41.09	0.0	1	present_gold	41.09	0.0	1	1	1
+ENSFCAG00000044530	LOC101094019	testis	26.695	3.93858477120907	2	present_gold	26.695	3.93858477120907	2	3	2
+ENSFCAG00000044530	LOC101094019	tip of external ear	49.66	0.0	1	present_gold	49.66	0.0	1	1	1
+ENSFCAG00000044530	LOC101094019	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044530	LOC101094019	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044576	LOC101097798	adult mammalian kidney	30.18	0.0	1	present_gold	30.18	0.0	1	2	1
+ENSFCAG00000044576	LOC101097798	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000044576	LOC101097798	embryo	16.49	0.0	1	present_gold	16.49	0.0	1	1	1
+ENSFCAG00000044576	LOC101097798	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044576	LOC101097798	eyeball of camera-type eye	24.96	0.0	1	present_gold	24.96	0.0	1	1	1
+ENSFCAG00000044576	LOC101097798	liver	31.73	0.0	1	present_gold	31.73	0.0	1	2	1
+ENSFCAG00000044576	LOC101097798	prefrontal cortex	17.03	0.0	1	present_gold	17.03	0.0	1	1	1
+ENSFCAG00000044576	LOC101097798	spleen	23.53	0.0	1	present_gold	23.53	0.0	1	1	1
+ENSFCAG00000044576	LOC101097798	testis	31.169999999999998	12.598964243143163	3	present_gold	31.169999999999998	12.598964243143163	3	3	3
+ENSFCAG00000044576	LOC101097798	tip of external ear	35.94	0.0	1	present_gold	35.94	0.0	1	1	1
+ENSFCAG00000044576	LOC101097798	uterus	52.72	0.0	1	present_gold	52.72	0.0	1	1	1
+ENSFCAG00000044576	LOC101097798	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044591	LOC105260540	adult mammalian kidney	25.92	0.0	1	present_gold	25.92	0.0	1	2	1
+ENSFCAG00000044591	LOC105260540	brain	74.635	28.135778823412725	2	present_gold	74.635	28.135778823412725	2	2	2
+ENSFCAG00000044591	LOC105260540	embryo	48.56	0.0	1	present_gold	48.56	0.0	1	1	1
+ENSFCAG00000044591	LOC105260540	embryonic head	46.49	0.0	1	present_gold	46.49	0.0	1	1	1
+ENSFCAG00000044591	LOC105260540	eyeball of camera-type eye	36.91	0.0	1	present_gold	36.91	0.0	1	1	1
+ENSFCAG00000044591	LOC105260540	liver	45.75	28.4681190105704	2	present_gold	45.75	28.4681190105704	2	2	2
+ENSFCAG00000044591	LOC105260540	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044591	LOC105260540	spleen	34.75	0.0	1	present_gold	34.75	0.0	1	1	1
+ENSFCAG00000044591	LOC105260540	testis	27.166666666666668	12.462039693939886	3	present_gold	27.166666666666668	12.462039693939886	3	3	3
+ENSFCAG00000044591	LOC105260540	tip of external ear	38.36	0.0	1	present_gold	38.36	0.0	1	1	1
+ENSFCAG00000044591	LOC105260540	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044591	LOC105260540	zone of skin	36.46	0.0	1	present_gold	36.46	0.0	1	1	1
+ENSFCAG00000044965		adult mammalian kidney	29.0	8.20243866176395	2	present_gold	29.0	8.20243866176395	2	2	2
+ENSFCAG00000044965		brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000044965		embryo	23.16	0.0	1	present_gold	23.16	0.0	1	1	1
+ENSFCAG00000044965		embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044965		eyeball of camera-type eye	28.35	0.0	1	present_gold	28.35	0.0	1	1	1
+ENSFCAG00000044965		liver	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000044965		prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044965		spleen	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044965		testis	22.295	3.3728993462598313	2	present_gold	22.295	3.3728993462598313	2	3	2
+ENSFCAG00000044965		tip of external ear	31.39	0.0	1	present_gold	31.39	0.0	1	1	1
+ENSFCAG00000044965		uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000044965		zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048216	LOC105260540	adult mammalian kidney	29.91	14.48154687870049	2	present_gold	29.91	14.48154687870049	2	2	2
+ENSFCAG00000048216	LOC105260540	brain	91.86500000000001	7.233702371538384	2	present_gold	91.86500000000001	7.233702371538384	2	2	2
+ENSFCAG00000048216	LOC105260540	embryo	40.76	0.0	1	present_gold	40.76	0.0	1	1	1
+ENSFCAG00000048216	LOC105260540	embryonic head	45.33	0.0	1	present_gold	45.33	0.0	1	1	1
+ENSFCAG00000048216	LOC105260540	eyeball of camera-type eye	37.53	0.0	1	present_gold	37.53	0.0	1	1	1
+ENSFCAG00000048216	LOC105260540	liver	56.855000000000004	38.89794403307198	2	present_gold	56.855000000000004	38.89794403307198	2	2	2
+ENSFCAG00000048216	LOC105260540	prefrontal cortex	25.91	0.0	1	present_gold	25.91	0.0	1	1	1
+ENSFCAG00000048216	LOC105260540	spleen	43.11	0.0	1	present_gold	43.11	0.0	1	1	1
+ENSFCAG00000048216	LOC105260540	testis	30.849999999999998	16.52031779355349	3	present_gold	30.849999999999998	16.52031779355349	3	3	3
+ENSFCAG00000048216	LOC105260540	tip of external ear	64.01	0.0	1	present_gold	64.01	0.0	1	1	1
+ENSFCAG00000048216	LOC105260540	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048216	LOC105260540	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000048955	HYPM	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000048955	HYPM	embryo	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	eyeball of camera-type eye	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	liver	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000048955	HYPM	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	spleen	28.96	0.0	1	present_gold	28.96	0.0	1	1	1
+ENSFCAG00000048955	HYPM	testis	89.32666666666667	7.1477012621774625	3	present_gold	89.32666666666667	7.1477012621774625	3	3	3
+ENSFCAG00000048955	HYPM	tip of external ear	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000048955	HYPM	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000051396	LOC101085206	adult mammalian kidney	58.365	5.975052301026328	2	present_gold	58.365	5.975052301026328	2	2	2
+ENSFCAG00000051396	LOC101085206	brain	46.02	0.0	1	present_gold	46.02	0.0	1	2	1
+ENSFCAG00000051396	LOC101085206	embryo	51.28	0.0	1	present_gold	51.28	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	embryonic head	36.59	0.0	1	present_gold	36.59	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	eyeball of camera-type eye	47.98	0.0	1	present_gold	47.98	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	liver	76.03999999999999	1.400071426749367	2	present_gold	76.03999999999999	1.400071426749367	2	2	2
+ENSFCAG00000051396	LOC101085206	prefrontal cortex	49.24	0.0	1	present_gold	49.24	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	spleen	63.65	0.0	1	present_gold	63.65	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	testis	19.986666666666665	7.793974168120736	3	present_gold	19.986666666666665	7.793974168120736	3	3	3
+ENSFCAG00000051396	LOC101085206	tip of external ear	59.32	0.0	1	present_gold	59.32	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	uterus	40.58	0.0	1	present_gold	40.58	0.0	1	1	1
+ENSFCAG00000051396	LOC101085206	zone of skin	42.49	0.0	1	present_gold	42.49	0.0	1	1	1
+ENSFCAG00000051680	H2AX	adult mammalian kidney	58.974999999999994	5.409366876077088	2	present_gold	58.974999999999994	5.409366876077088	2	2	2
+ENSFCAG00000051680	H2AX	brain	72.09	3.181980515339464	2	present_gold	72.09	3.181980515339464	2	2	2
+ENSFCAG00000051680	H2AX	embryo	83.84	0.0	1	present_gold	83.84	0.0	1	1	1
+ENSFCAG00000051680	H2AX	embryonic head	75.81	0.0	1	present_gold	75.81	0.0	1	1	1
+ENSFCAG00000051680	H2AX	eyeball of camera-type eye	86.83	0.0	1	present_gold	86.83	0.0	1	1	1
+ENSFCAG00000051680	H2AX	liver	69.02000000000001	2.658721497261422	2	present_gold	69.02000000000001	2.658721497261422	2	2	2
+ENSFCAG00000051680	H2AX	prefrontal cortex	69.57	0.0	1	present_gold	69.57	0.0	1	1	1
+ENSFCAG00000051680	H2AX	spleen	76.46	0.0	1	present_gold	76.46	0.0	1	1	1
+ENSFCAG00000051680	H2AX	testis	74.68666666666667	4.065775858717907	3	present_gold	74.68666666666667	4.065775858717907	3	3	3
+ENSFCAG00000051680	H2AX	tip of external ear	80.33	0.0	1	present_gold	80.33	0.0	1	1	1
+ENSFCAG00000051680	H2AX	uterus	61.42	0.0	1	present_gold	61.42	0.0	1	1	1
+ENSFCAG00000051680	H2AX	zone of skin	58.95	0.0	1	present_gold	58.95	0.0	1	1	1
+ENSFCAG00000052540	LOC111558783	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000052540	LOC111558783	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSFCAG00000052540	LOC111558783	embryo	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000052540	LOC111558783	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000052540	LOC111558783	eyeball of camera-type eye	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000052540	LOC111558783	liver	20.96	0.0	1	present_gold	20.96	0.0	1	2	1
+ENSFCAG00000052540	LOC111558783	prefrontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000052540	LOC111558783	spleen	59.22	0.0	1	present_gold	59.22	0.0	1	1	1
+ENSFCAG00000052540	LOC111558783	testis	99.17333333333333	0.5404936015655785	3	present_gold	99.17333333333333	0.5404936015655785	3	3	3
+ENSFCAG00000052540	LOC111558783	tip of external ear	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000052540	LOC111558783	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000052540	LOC111558783	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000053015	H2AC6	adult mammalian kidney	26.035	3.401183617507295	2	present_gold	26.035	3.401183617507295	2	2	2
+ENSFCAG00000053015	H2AC6	brain	83.14	8.004448763031712	2	present_gold	83.14	8.004448763031712	2	2	2
+ENSFCAG00000053015	H2AC6	embryo	18.58	0.0	1	present_gold	18.58	0.0	1	1	1
+ENSFCAG00000053015	H2AC6	embryonic head	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000053015	H2AC6	eyeball of camera-type eye	27.42	0.0	1	present_gold	27.42	0.0	1	1	1
+ENSFCAG00000053015	H2AC6	liver	57.715	35.41897866963417	2	present_gold	57.715	35.41897866963417	2	2	2
+ENSFCAG00000053015	H2AC6	prefrontal cortex	13.49	0.0	1	present_gold	13.49	0.0	1	1	1
+ENSFCAG00000053015	H2AC6	spleen	31.04	0.0	1	present_gold	31.04	0.0	1	1	1
+ENSFCAG00000053015	H2AC6	testis	32.96333333333333	6.507029532231533	3	present_gold	32.96333333333333	6.507029532231533	3	3	3
+ENSFCAG00000053015	H2AC6	tip of external ear	40.12	0.0	1	present_gold	40.12	0.0	1	1	1
+ENSFCAG00000053015	H2AC6	uterus	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSFCAG00000053015	H2AC6	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0

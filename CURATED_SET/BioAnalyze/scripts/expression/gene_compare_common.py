@@ -9,6 +9,12 @@ from typing import Dict, Iterable, List, Optional
 
 import pandas as pd
 
+from normalized_expression_common import (
+    CELL_STATUS_OBSERVED_ZERO,
+    CELL_STATUS_PRESENT_GOLD,
+    load_processed_expression_cells,
+)
+
 
 DEFAULT_HEATMAP_ROOT = Path(r"CURATED_SET/BioAnalyze/figures/heatmaps")
 DEFAULT_HEATMAP_DIR = DEFAULT_HEATMAP_ROOT / "species"
@@ -118,48 +124,11 @@ def normalize_map_df(map_tsv: Path) -> pd.DataFrame:
     return map_df
 
 
-def load_present_gold(
+def load_processed_expression(
     expr_tsv: Path,
     expr_cache: Optional[Dict[str, pd.DataFrame]] = None,
 ) -> pd.DataFrame:
-    cache_key = path_str(expr_tsv)
-    if expr_cache is not None and cache_key in expr_cache:
-        return expr_cache[cache_key]
-
-    expr_df = pd.read_csv(
-        expr_tsv,
-        sep="\t",
-        dtype=str,
-        usecols=[
-            "Gene ID",
-            "Gene name",
-            "Anatomical entity name",
-            "Expression",
-            "Call quality",
-            "Expression score",
-        ],
-        low_memory=True,
-    )
-    for col in [
-        "Gene ID",
-        "Gene name",
-        "Anatomical entity name",
-        "Expression",
-        "Call quality",
-    ]:
-        expr_df[col] = expr_df[col].fillna("").astype(str).str.strip()
-    expr_df["Expression score"] = pd.to_numeric(expr_df["Expression score"], errors="coerce")
-    expr_df = expr_df[
-        expr_df["Gene ID"].ne("")
-        & expr_df["Anatomical entity name"].ne("")
-        & expr_df["Expression"].eq("present")
-        & expr_df["Call quality"].eq("gold quality")
-        & expr_df["Expression score"].notna()
-    ].copy()
-
-    if expr_cache is not None:
-        expr_cache[cache_key] = expr_df
-    return expr_df
+    return load_processed_expression_cells(expr_tsv, expr_cache=expr_cache)
 
 
 def build_detail_rows(
@@ -168,7 +137,7 @@ def build_detail_rows(
     map_tsv: Path,
     expr_cache: Optional[Dict[str, pd.DataFrame]] = None,
 ) -> List[dict]:
-    expr_df = load_present_gold(expr_tsv, expr_cache=expr_cache)
+    expr_df = load_processed_expression(expr_tsv, expr_cache=expr_cache)
     map_df = normalize_map_df(map_tsv)
     species_name = infer_species_name(heatmap_species_dir, map_df)
 
@@ -403,7 +372,7 @@ def build_gene_long_dataframe(
 
     for species_dir, species_df in gene_rows.groupby("species_dir", sort=True):
         expr_path = Path(species_df["present_gold_path"].iloc[0])
-        expr_df = load_present_gold(expr_path, expr_cache=expr_cache)
+        expr_df = load_processed_expression(expr_path, expr_cache=expr_cache)
         target_ids = sorted(species_df["ensembl_gene_id"].dropna().astype(str).unique().tolist())
         filtered = expr_df[expr_df["Gene ID"].isin(target_ids)].copy()
         if filtered.empty:
@@ -413,7 +382,10 @@ def build_gene_long_dataframe(
             columns={
                 "Gene ID": "ensembl_gene_id",
                 "Anatomical entity name": "tissue",
-                "Expression score": "expression_score",
+                "cell_mean_score": "cell_mean_score",
+                "cell_std_score": "cell_std_score",
+                "cell_n": "cell_n",
+                "cell_status": "cell_status",
             }
         )
         filtered["gene_name"] = gene_name
@@ -432,7 +404,10 @@ def build_gene_long_dataframe(
                     "species_name",
                     "ensembl_gene_id",
                     "tissue",
-                    "expression_score",
+                    "cell_mean_score",
+                    "cell_std_score",
+                    "cell_n",
+                    "cell_status",
                     "map_label",
                     "class",
                 ]
@@ -441,16 +416,68 @@ def build_gene_long_dataframe(
 
     if not long_frames:
         raise RuntimeError(
-            f"Gene name '{gene_name}' exists in the index but has no present+gold rows."
+            f"Gene name '{gene_name}' exists in the index but has no normalized rows."
         )
 
     long_df = pd.concat(long_frames, ignore_index=True)
-    long_df["agg_expression_score"] = (
-        long_df.groupby(["gene_name", "species_dir", "tissue"])["expression_score"]
-        .transform("mean")
-        .astype(float)
-    )
+    long_df["cell_mean_score"] = pd.to_numeric(long_df["cell_mean_score"], errors="coerce")
+    long_df["cell_std_score"] = pd.to_numeric(long_df["cell_std_score"], errors="coerce").fillna(0.0)
+    long_df["cell_n"] = pd.to_numeric(long_df["cell_n"], errors="coerce").fillna(0).astype(int)
+    long_df["cell_status"] = long_df["cell_status"].fillna("").astype(str).str.strip()
+    long_df["expression_score"] = long_df["cell_mean_score"]
+    long_df["agg_expression_score"] = long_df["cell_mean_score"]
     return long_df
+
+
+def summarize_species_gene_tissue(long_df: pd.DataFrame) -> pd.DataFrame:
+    if long_df.empty:
+        return pd.DataFrame(
+            columns=[
+                "gene_name",
+                "species_dir",
+                "species_name",
+                "tissue",
+                "cell_mean_score",
+                "cell_std_score",
+                "cell_n",
+                "cell_status",
+                "expression_score",
+                "agg_expression_score",
+            ]
+        )
+
+    summary_rows: List[dict] = []
+    grouped = long_df.groupby(["gene_name", "species_dir", "species_name", "tissue"], sort=False)
+    for (gene_name, species_dir, species_name, tissue), group in grouped:
+        mean_score = float(group["cell_mean_score"].mean())
+        if len(group) == 1:
+            std_score = float(group["cell_std_score"].iloc[0])
+            status = str(group["cell_status"].iloc[0])
+        else:
+            std_score = float(group["cell_mean_score"].std(ddof=1))
+            if pd.isna(std_score):
+                std_score = 0.0
+            status = (
+                CELL_STATUS_PRESENT_GOLD
+                if group["cell_status"].eq(CELL_STATUS_PRESENT_GOLD).any()
+                else CELL_STATUS_OBSERVED_ZERO
+            )
+        summary_rows.append(
+            {
+                "gene_name": gene_name,
+                "species_dir": species_dir,
+                "species_name": species_name,
+                "tissue": tissue,
+                "cell_mean_score": mean_score,
+                "cell_std_score": std_score,
+                "cell_n": int(group["cell_n"].sum()),
+                "cell_status": status,
+                "expression_score": mean_score,
+                "agg_expression_score": mean_score,
+            }
+        )
+
+    return pd.DataFrame(summary_rows)
 
 
 def build_matrix(
@@ -459,10 +486,11 @@ def build_matrix(
     aggregate: str = "mean",
 ) -> pd.DataFrame:
     ensure_mean_aggregate(aggregate)
+    species_level_df = summarize_species_gene_tissue(long_df)
     matrix_df = (
-        long_df.groupby(["tissue", "species_dir"], as_index=False)["expression_score"]
+        species_level_df.groupby(["tissue", "species_dir"], as_index=False)["cell_mean_score"]
         .mean()
-        .pivot(index="tissue", columns="species_dir", values="expression_score")
+        .pivot(index="tissue", columns="species_dir", values="cell_mean_score")
     )
     matrix_df = matrix_df.reindex(columns=species_order)
 

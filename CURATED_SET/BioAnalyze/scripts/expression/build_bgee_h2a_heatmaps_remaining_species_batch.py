@@ -36,7 +36,7 @@ TARGET_SPECIES = [
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description=(
-            "Batch-build H2A present+gold tables, maps, and heatmaps for the "
+            "Batch-build normalized H2A cell tables, maps, and heatmaps for the "
             "remaining mammalian species using merged v4 labels."
         )
     )

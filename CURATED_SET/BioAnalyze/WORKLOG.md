@@ -676,3 +676,146 @@ SQK Full Codon Figure Simplification (2026-03-24)
     - length `128 aa` versus the reference `129 aa`
     - removing this one record returns Chiroptera from `69` nonsynonymous
       positions in `full` back to `2`, matching `without-short`
+
+SQK Without-Short Presentation Match (2026-03-25)
+- Goal:
+  - Make the `without-short` codon heatmap use the same enlarged presentation
+    layout as the accepted `full` figure so the two outputs can be used
+    interchangeably on slides.
+- Output changes:
+  - Refreshed:
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_without_short_codon_entropy_annotated.png`
+    - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_without_short_codon_entropy_annotated.svg`
+- Behavior:
+  - `without-short` now uses the same presentation mode as `full`, including:
+    - enlarged shortened left labels
+    - closer left brackets/labels
+    - the same overall slide-friendly scale and spacing
+    - hidden embedded Shannon colorbar in the main heatmap
+
+Human H2A Boxplot Builder (2026-03-25)
+- Goal:
+  - Add a reproducible CLI builder for a human H2A boxplot aligned to the
+    normalized species heatmap data instead of manually extracting values from
+    the rendered SVG.
+- Script:
+  - Added:
+    - `CURATED_SET/BioAnalyze/scripts/expression/build_human_h2a_boxplot.py`
+- Inputs:
+  - Uses the existing heatmap-aligned processed files:
+    - `CURATED_SET/BioAnalyze/data/processed/homo_sapiens/homo_sapiens_expr_advanced_H2A_present_gold.tsv`
+    - `CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv`
+- Outputs:
+  - Writes a dedicated human boxplot bundle to:
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot.png`
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot.svg`
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_source_values.tsv`
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_stats.tsv`
+- Behavior:
+  - Reuses the displayable human H2A gene selection logic from the heatmap
+    pipeline so the plot covers the same `29` displayed genes.
+  - Builds one distribution per gene from tissue-level `cell_mean_score`
+    values, keeps `observed_zero` rows as `0`, and excludes generic tissues:
+    - `multicellular organism`
+    - `anatomical system`
+    - `material anatomical entity`
+  - Exports per-gene summary statistics needed for a boxplot, including:
+    - `mean`, `std`, `q1`, `median`, `q3`, `iqr`, whiskers, and outlier count
+- Verification:
+  - CLI run completed successfully and produced all four expected outputs.
+  - The source table contains no excluded generic tissues.
+  - The stats table contains all `29` genes with nonzero tissue counts.
+  - Manual spot checks for `H2AZ1` and `MACROH2A2` confirmed that `q1`,
+    `median`, `q3`, and `std` match recalculation from the exported
+    `source_values.tsv`.
+
+Human H2A Presentation Boxplot Refinement (2026-03-25)
+- Goal:
+  - Make the human H2A boxplot slide-friendly by replacing left-side gene
+    labels with numbers, enforcing a curated `clustered -> variants` order,
+    increasing the X-axis label size, and exporting a separate legend image.
+- Output changes:
+  - Added presentation-specific outputs under:
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.png`
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.svg`
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_number_legend.png`
+  - Updated analytical tables:
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_source_values.tsv`
+    - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_stats.tsv`
+- Behavior:
+  - The builder now assigns `presentation_number` values `1..29` from top to
+    bottom using an explicit human gene order:
+    - clustered genes first
+    - variant genes second
+  - The presentation plot uses only these numbers on the Y axis and removes the
+    Y-axis title entirely.
+  - The X-axis label `Expression score` is rendered at double the default size
+    used by the analytical plot.
+  - The presentation plot keeps vertical X-grid lines and adds light horizontal
+    row guides so numbered rows are easier to align on a slide.
+  - A standalone PNG legend now maps each presentation number to its gene name
+    in the same top-to-bottom order as the presentation plot.
+- Verification:
+  - The regenerated tables contain `presentation_number` and cover all `29`
+    human genes.
+  - The presentation SVG contains numbered Y tick labels and no embedded
+    gene-name Y labels.
+  - The fixed presentation order was confirmed as `clustered -> variants`.
+
+Human H2A Presentation Styling Polish (2026-03-25)
+- Goal:
+  - Improve the slide-readability of the presentation boxplot by enlarging
+    numeric tick labels, removing the top title, and making the standalone gene
+    legend feel closer to the scientific support-legend style used elsewhere in
+    `BioAnalyze`.
+- Styling changes:
+  - The presentation plot now uses:
+    - doubled Y-side gene-number labels
+    - doubled bottom X tick labels
+    - extra left/bottom layout space so the larger labels do not crowd the plot
+    - no top title above the presentation panel
+  - The standalone legend PNG was restyled to use:
+    - right-aligned gene numbers
+    - fixed spacing between the number column and the gene-name column
+    - small colored class swatches for clustered vs variant rows
+    - cleaner manuscript-like alignment inspired by the codon order legend
+- Outputs refreshed:
+  - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.png`
+  - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.svg`
+  - `CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_number_legend.png`
+
+Graphics Batch 2503 (2026-03-25)
+- Goal:
+  - Consolidate the current March 25 graphics refresh across BioAnalyze into a
+    reproducible batch covering normalized-expression infrastructure, source
+    auditing, refreshed H2A heatmaps, presentation-oriented human/pan outputs,
+    candidate-panel refreshes, and the new human H2A boxplot workflow.
+- Expression / audit layer:
+  - Added normalized helper layer:
+    - `CURATED_SET/BioAnalyze/scripts/expression/normalized_expression_common.py`
+  - Added Bgee source audit builder:
+    - `CURATED_SET/BioAnalyze/scripts/expression/audit_bgee_h2a_expression_sources.py`
+  - Exported audit outputs:
+    - `CURATED_SET/BioAnalyze/audits/bgee_h2a_expression_source_audit_3species.tsv`
+    - `CURATED_SET/BioAnalyze/stats/ranking/reports/bgee_h2a_expression_source_audit_3species.md`
+- Heatmaps / presentation figures:
+  - Refreshed species heatmaps from the normalized expression layer, including:
+    - the restored `all` human H2A heatmap
+    - new `coverage_ge70` filtered panels for human and mouse
+    - updated remaining-species canonical / variant / all panels
+  - Refreshed cross-species gene-compare exports and added the new:
+    - `H2AB3_gene_compare_*` tables and heatmap
+  - Added a presentation-specific human/pan aligned figure set via:
+    - `CURATED_SET/BioAnalyze/scripts/expression/build_human_pan_presentation_heatmaps.py`
+    - outputs under `CURATED_SET/BioAnalyze/figures/heatmaps/presentation_human_pan/`
+- Boxplots / ranking graphics:
+  - Added the reproducible human H2A boxplot workflow:
+    - `CURATED_SET/BioAnalyze/scripts/expression/build_human_h2a_boxplot.py`
+    - analytical outputs under `CURATED_SET/BioAnalyze/figures/boxplot/human/`
+    - presentation outputs with numeric labels and standalone legend
+  - Refreshed ranking candidate panels, overview plots, and supporting tables
+    after the normalized-expression and plotting updates.
+- Commit intent:
+  - This batch is intended to be committed together as a single graphics-focused
+    checkpoint for `25.03`, combining the new plotting scripts with the
+    regenerated tables, audits, and figure outputs they produced.

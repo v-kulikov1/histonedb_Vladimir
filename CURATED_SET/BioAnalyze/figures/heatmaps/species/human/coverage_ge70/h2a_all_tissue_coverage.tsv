@@ -1,0 +1,306 @@
+anatomical_entity_name	observed_gene_count	display_gene_count	fill_rate	threshold	kept	panel
+Ammon's horn	29	29	1.0	0.7	True	all
+Brodmann (1909) area 9	29	29	1.0	0.7	True	all
+C1 segment of cervical spinal cord	29	29	1.0	0.7	True	all
+adenohypophysis	29	29	1.0	0.7	True	all
+adipose tissue	29	29	1.0	0.7	True	all
+adrenal gland	29	29	1.0	0.7	True	all
+adrenal tissue	29	29	1.0	0.7	True	all
+adult mammalian kidney	29	29	1.0	0.7	True	all
+amygdala	29	29	1.0	0.7	True	all
+anterior cingulate cortex	29	29	1.0	0.7	True	all
+apex of heart	29	29	1.0	0.7	True	all
+ascending aorta	29	29	1.0	0.7	True	all
+blood	29	29	1.0	0.7	True	all
+body of pancreas	29	29	1.0	0.7	True	all
+body of stomach	29	29	1.0	0.7	True	all
+body of uterus	29	29	1.0	0.7	True	all
+bone marrow	29	29	1.0	0.7	True	all
+bone marrow cell	29	29	1.0	0.7	True	all
+brain	29	29	1.0	0.7	True	all
+calcaneal tendon	29	29	1.0	0.7	True	all
+caudate nucleus	29	29	1.0	0.7	True	all
+cerebellar cortex	29	29	1.0	0.7	True	all
+cerebellar hemisphere	29	29	1.0	0.7	True	all
+cerebellum	29	29	1.0	0.7	True	all
+colon	29	29	1.0	0.7	True	all
+colonic epithelium	29	29	1.0	0.7	True	all
+corpus callosum	29	29	1.0	0.7	True	all
+cortex of kidney	29	29	1.0	0.7	True	all
+cortical plate	29	29	1.0	0.7	True	all
+descending thoracic aorta	29	29	1.0	0.7	True	all
+dorsolateral prefrontal cortex	29	29	1.0	0.7	True	all
+duodenum	29	29	1.0	0.7	True	all
+ectocervix	29	29	1.0	0.7	True	all
+endocervix	29	29	1.0	0.7	True	all
+endometrium	29	29	1.0	0.7	True	all
+esophagogastric junction muscularis propria	29	29	1.0	0.7	True	all
+esophagus	29	29	1.0	0.7	True	all
+esophagus mucosa	29	29	1.0	0.7	True	all
+frontal cortex	29	29	1.0	0.7	True	all
+fundus of stomach	29	29	1.0	0.7	True	all
+gall bladder	29	29	1.0	0.7	True	all
+ganglionic eminence	29	29	1.0	0.7	True	all
+gastrocnemius	29	29	1.0	0.7	True	all
+granulocyte	29	29	1.0	0.7	True	all
+heart	29	29	1.0	0.7	True	all
+heart left ventricle	29	29	1.0	0.7	True	all
+hindlimb stylopod muscle	29	29	1.0	0.7	True	all
+hypothalamus	29	29	1.0	0.7	True	all
+intestine	29	29	1.0	0.7	True	all
+islet of Langerhans	29	29	1.0	0.7	True	all
+kidney	29	29	1.0	0.7	True	all
+left adrenal gland	29	29	1.0	0.7	True	all
+left adrenal gland cortex	29	29	1.0	0.7	True	all
+left coronary artery	29	29	1.0	0.7	True	all
+left lobe of thyroid gland	29	29	1.0	0.7	True	all
+left ovary	29	29	1.0	0.7	True	all
+left testis	29	29	1.0	0.7	True	all
+left uterine tube	29	29	1.0	0.7	True	all
+leukocyte	29	29	1.0	0.7	True	all
+liver	29	29	1.0	0.7	True	all
+lower esophagus	29	29	1.0	0.7	True	all
+lower esophagus mucosa	29	29	1.0	0.7	True	all
+lower esophagus muscularis layer	29	29	1.0	0.7	True	all
+lung	29	29	1.0	0.7	True	all
+lymph node	29	29	1.0	0.7	True	all
+metanephros cortex	29	29	1.0	0.7	True	all
+minor salivary gland	29	29	1.0	0.7	True	all
+monocyte	29	29	1.0	0.7	True	all
+mucosa of stomach	29	29	1.0	0.7	True	all
+mucosa of transverse colon	29	29	1.0	0.7	True	all
+multicellular organism	29	29	1.0	0.7	True	all
+muscle layer of sigmoid colon	29	29	1.0	0.7	True	all
+muscle of leg	29	29	1.0	0.7	True	all
+myometrium	29	29	1.0	0.7	True	all
+nucleus accumbens	29	29	1.0	0.7	True	all
+olfactory segment of nasal mucosa	29	29	1.0	0.7	True	all
+omental fat pad	29	29	1.0	0.7	True	all
+ovary	29	29	1.0	0.7	True	all
+pancreas	29	29	1.0	0.7	True	all
+pituitary gland	29	29	1.0	0.7	True	all
+placenta	29	29	1.0	0.7	True	all
+popliteal artery	29	29	1.0	0.7	True	all
+prefrontal cortex	29	29	1.0	0.7	True	all
+primary visual cortex	29	29	1.0	0.7	True	all
+prostate gland	29	29	1.0	0.7	True	all
+putamen	29	29	1.0	0.7	True	all
+rectum	29	29	1.0	0.7	True	all
+right adrenal gland	29	29	1.0	0.7	True	all
+right adrenal gland cortex	29	29	1.0	0.7	True	all
+right atrium auricular region	29	29	1.0	0.7	True	all
+right coronary artery	29	29	1.0	0.7	True	all
+right frontal lobe	29	29	1.0	0.7	True	all
+right hemisphere of cerebellum	29	29	1.0	0.7	True	all
+right lobe of liver	29	29	1.0	0.7	True	all
+right lobe of thyroid gland	29	29	1.0	0.7	True	all
+right lung	29	29	1.0	0.7	True	all
+right ovary	29	29	1.0	0.7	True	all
+right testis	29	29	1.0	0.7	True	all
+right uterine tube	29	29	1.0	0.7	True	all
+skeletal muscle tissue	29	29	1.0	0.7	True	all
+skin of abdomen	29	29	1.0	0.7	True	all
+skin of leg	29	29	1.0	0.7	True	all
+small intestine Peyer's patch	29	29	1.0	0.7	True	all
+smooth muscle tissue	29	29	1.0	0.7	True	all
+spleen	29	29	1.0	0.7	True	all
+stomach	29	29	1.0	0.7	True	all
+stromal cell of endometrium	29	29	1.0	0.7	True	all
+subcutaneous adipose tissue	29	29	1.0	0.7	True	all
+substantia nigra	29	29	1.0	0.7	True	all
+superior frontal gyrus	29	29	1.0	0.7	True	all
+sural nerve	29	29	1.0	0.7	True	all
+temporal lobe	29	29	1.0	0.7	True	all
+testis	29	29	1.0	0.7	True	all
+thoracic aorta	29	29	1.0	0.7	True	all
+thoracic mammary gland	29	29	1.0	0.7	True	all
+thyroid gland	29	29	1.0	0.7	True	all
+tibial artery	29	29	1.0	0.7	True	all
+tibial nerve	29	29	1.0	0.7	True	all
+tonsil	29	29	1.0	0.7	True	all
+transverse colon	29	29	1.0	0.7	True	all
+upper lobe of left lung	29	29	1.0	0.7	True	all
+urinary bladder	29	29	1.0	0.7	True	all
+vagina	29	29	1.0	0.7	True	all
+ventricular zone	29	29	1.0	0.7	True	all
+vermiform appendix	29	29	1.0	0.7	True	all
+zone of skin	29	29	1.0	0.7	True	all
+cerebral cortex	28	29	0.9655172413793104	0.7	True	all
+small intestine	28	29	0.9655172413793104	0.7	True	all
+uterine cervix	28	29	0.9655172413793104	0.7	True	all
+fallopian tube	27	29	0.9310344827586207	0.7	True	all
+muscle tissue	27	29	0.9310344827586207	0.7	True	all
+saliva-secreting gland	27	29	0.9310344827586207	0.7	True	all
+male germ line stem cell (sensu Vertebrata) in testis	23	29	0.7931034482758621	0.7	True	all
+primordial germ cell in gonad	22	29	0.7586206896551724	0.7	True	all
+cerebellar vermis	14	29	0.4827586206896552	0.7	False	all
+metanephric glomerulus	14	29	0.4827586206896552	0.7	False	all
+quadriceps femoris	14	29	0.4827586206896552	0.7	False	all
+spinal cord	14	29	0.4827586206896552	0.7	False	all
+thymus	14	29	0.4827586206896552	0.7	False	all
+vastus lateralis	14	29	0.4827586206896552	0.7	False	all
+dorsal plus ventral thalamus	13	29	0.4482758620689655	0.7	False	all
+dorsal root ganglion	13	29	0.4482758620689655	0.7	False	all
+epithelium of bronchus	13	29	0.4482758620689655	0.7	False	all
+layer of synovial tissue	13	29	0.4482758620689655	0.7	False	all
+trachea	13	29	0.4482758620689655	0.7	False	all
+uterus	13	29	0.4482758620689655	0.7	False	all
+material anatomical entity	12	29	0.41379310344827586	0.7	False	all
+Brodmann (1909) area 10	11	29	0.3793103448275862	0.7	False	all
+Brodmann (1909) area 23	11	29	0.3793103448275862	0.7	False	all
+Brodmann (1909) area 46	11	29	0.3793103448275862	0.7	False	all
+adipose tissue of abdominal region	11	29	0.3793103448275862	0.7	False	all
+adrenal cortex	11	29	0.3793103448275862	0.7	False	all
+adult organism	11	29	0.3793103448275862	0.7	False	all
+amniotic fluid	11	29	0.3793103448275862	0.7	False	all
+anatomical system	11	29	0.3793103448275862	0.7	False	all
+aorta	11	29	0.3793103448275862	0.7	False	all
+biceps brachii	11	29	0.3793103448275862	0.7	False	all
+body of tongue	11	29	0.3793103448275862	0.7	False	all
+bronchial epithelial cell	11	29	0.3793103448275862	0.7	False	all
+bronchus	11	29	0.3793103448275862	0.7	False	all
+buccal mucosa cell	11	29	0.3793103448275862	0.7	False	all
+caecum	11	29	0.3793103448275862	0.7	False	all
+caput epididymis	11	29	0.3793103448275862	0.7	False	all
+cardia of stomach	11	29	0.3793103448275862	0.7	False	all
+cardiac atrium	11	29	0.3793103448275862	0.7	False	all
+cardiac ventricle	11	29	0.3793103448275862	0.7	False	all
+cartilage tissue	11	29	0.3793103448275862	0.7	False	all
+cauda epididymis	11	29	0.3793103448275862	0.7	False	all
+central nervous system	11	29	0.3793103448275862	0.7	False	all
+colonic mucosa	11	29	0.3793103448275862	0.7	False	all
+coronary artery	11	29	0.3793103448275862	0.7	False	all
+corpus epididymis	11	29	0.3793103448275862	0.7	False	all
+decidua	11	29	0.3793103448275862	0.7	False	all
+deltoid	11	29	0.3793103448275862	0.7	False	all
+endometrium epithelium	11	29	0.3793103448275862	0.7	False	all
+endothelial cell	11	29	0.3793103448275862	0.7	False	all
+entorhinal cortex	11	29	0.3793103448275862	0.7	False	all
+epithelium of mammary gland	11	29	0.3793103448275862	0.7	False	all
+epithelium of nasopharynx	11	29	0.3793103448275862	0.7	False	all
+esophagus squamous epithelium	11	29	0.3793103448275862	0.7	False	all
+female reproductive system	11	29	0.3793103448275862	0.7	False	all
+forebrain	11	29	0.3793103448275862	0.7	False	all
+frontal pole	11	29	0.3793103448275862	0.7	False	all
+germinal epithelium of ovary	11	29	0.3793103448275862	0.7	False	all
+gingiva	11	29	0.3793103448275862	0.7	False	all
+gingival epithelium	11	29	0.3793103448275862	0.7	False	all
+heart right ventricle	11	29	0.3793103448275862	0.7	False	all
+inferior vagus X ganglion	11	29	0.3793103448275862	0.7	False	all
+jejunal mucosa	11	29	0.3793103448275862	0.7	False	all
+jejunum	11	29	0.3793103448275862	0.7	False	all
+large intestine	11	29	0.3793103448275862	0.7	False	all
+lateral globus pallidus	11	29	0.3793103448275862	0.7	False	all
+lateral nuclear group of thalamus	11	29	0.3793103448275862	0.7	False	all
+lower lobe of lung	11	29	0.3793103448275862	0.7	False	all
+mammalian vulva	11	29	0.3793103448275862	0.7	False	all
+mammary duct	11	29	0.3793103448275862	0.7	False	all
+medial globus pallidus	11	29	0.3793103448275862	0.7	False	all
+medulla oblongata	11	29	0.3793103448275862	0.7	False	all
+metanephros	11	29	0.3793103448275862	0.7	False	all
+midbrain	11	29	0.3793103448275862	0.7	False	all
+middle frontal gyrus	11	29	0.3793103448275862	0.7	False	all
+middle temporal gyrus	11	29	0.3793103448275862	0.7	False	all
+mouth mucosa	11	29	0.3793103448275862	0.7	False	all
+mucosa of paranasal sinus	11	29	0.3793103448275862	0.7	False	all
+mucosa of sigmoid colon	11	29	0.3793103448275862	0.7	False	all
+myocardium	11	29	0.3793103448275862	0.7	False	all
+nasal cavity epithelium	11	29	0.3793103448275862	0.7	False	all
+nasal cavity mucosa	11	29	0.3793103448275862	0.7	False	all
+neocortex	11	29	0.3793103448275862	0.7	False	all
+nephron tubule	11	29	0.3793103448275862	0.7	False	all
+nipple	11	29	0.3793103448275862	0.7	False	all
+occipital lobe	11	29	0.3793103448275862	0.7	False	all
+oocyte	11	29	0.3793103448275862	0.7	False	all
+oral cavity	11	29	0.3793103448275862	0.7	False	all
+oviduct epithelium	11	29	0.3793103448275862	0.7	False	all
+palpebral conjunctiva	11	29	0.3793103448275862	0.7	False	all
+paraflocculus	11	29	0.3793103448275862	0.7	False	all
+parietal lobe	11	29	0.3793103448275862	0.7	False	all
+parietal pleura	11	29	0.3793103448275862	0.7	False	all
+parotid gland	11	29	0.3793103448275862	0.7	False	all
+penis	11	29	0.3793103448275862	0.7	False	all
+pericardium	11	29	0.3793103448275862	0.7	False	all
+peritoneum	11	29	0.3793103448275862	0.7	False	all
+pharyngeal mucosa	11	29	0.3793103448275862	0.7	False	all
+pigmented layer of retina	11	29	0.3793103448275862	0.7	False	all
+pons	11	29	0.3793103448275862	0.7	False	all
+postcentral gyrus	11	29	0.3793103448275862	0.7	False	all
+pylorus	11	29	0.3793103448275862	0.7	False	all
+renal medulla	11	29	0.3793103448275862	0.7	False	all
+saphenous vein	11	29	0.3793103448275862	0.7	False	all
+secondary oocyte	11	29	0.3793103448275862	0.7	False	all
+seminal vesicle	11	29	0.3793103448275862	0.7	False	all
+sigmoid colon	11	29	0.3793103448275862	0.7	False	all
+skeletal muscle tissue of biceps brachii	11	29	0.3793103448275862	0.7	False	all
+skeletal muscle tissue of rectus abdominis	11	29	0.3793103448275862	0.7	False	all
+skin of hip	11	29	0.3793103448275862	0.7	False	all
+sperm	11	29	0.3793103448275862	0.7	False	all
+substantia nigra pars compacta	11	29	0.3793103448275862	0.7	False	all
+substantia nigra pars reticulata	11	29	0.3793103448275862	0.7	False	all
+subthalamic nucleus	11	29	0.3793103448275862	0.7	False	all
+superficial temporal artery	11	29	0.3793103448275862	0.7	False	all
+superior surface of tongue	11	29	0.3793103448275862	0.7	False	all
+superior vestibular nucleus	11	29	0.3793103448275862	0.7	False	all
+synovial joint	11	29	0.3793103448275862	0.7	False	all
+tendon	11	29	0.3793103448275862	0.7	False	all
+tendon of biceps brachii	11	29	0.3793103448275862	0.7	False	all
+tibia	11	29	0.3793103448275862	0.7	False	all
+trabecular bone tissue	11	29	0.3793103448275862	0.7	False	all
+trigeminal ganglion	11	29	0.3793103448275862	0.7	False	all
+upper leg skin	11	29	0.3793103448275862	0.7	False	all
+upper lobe of lung	11	29	0.3793103448275862	0.7	False	all
+urethra	11	29	0.3793103448275862	0.7	False	all
+vena cava	11	29	0.3793103448275862	0.7	False	all
+ventral tegmental area	11	29	0.3793103448275862	0.7	False	all
+visceral pleura	11	29	0.3793103448275862	0.7	False	all
+CA1 field of hippocampus	10	29	0.3448275862068966	0.7	False	all
+blood vessel layer	10	29	0.3448275862068966	0.7	False	all
+cardiac muscle of right atrium	10	29	0.3448275862068966	0.7	False	all
+cervix epithelium	10	29	0.3448275862068966	0.7	False	all
+cervix squamous epithelium	10	29	0.3448275862068966	0.7	False	all
+choroid plexus epithelium	10	29	0.3448275862068966	0.7	False	all
+cingulate cortex	10	29	0.3448275862068966	0.7	False	all
+cranial nerve II	10	29	0.3448275862068966	0.7	False	all
+diaphragm	10	29	0.3448275862068966	0.7	False	all
+dorsal motor nucleus of vagus nerve	10	29	0.3448275862068966	0.7	False	all
+embryo	10	29	0.3448275862068966	0.7	False	all
+epithelium of esophagus	10	29	0.3448275862068966	0.7	False	all
+globus pallidus	10	29	0.3448275862068966	0.7	False	all
+gluteal muscle	10	29	0.3448275862068966	0.7	False	all
+hair follicle	10	29	0.3448275862068966	0.7	False	all
+ileal mucosa	10	29	0.3448275862068966	0.7	False	all
+inferior olivary complex	10	29	0.3448275862068966	0.7	False	all
+kidney epithelium	10	29	0.3448275862068966	0.7	False	all
+left ventricle myocardium	10	29	0.3448275862068966	0.7	False	all
+male germ cell	10	29	0.3448275862068966	0.7	False	all
+mononuclear cell	10	29	0.3448275862068966	0.7	False	all
+mucosa of urinary bladder	10	29	0.3448275862068966	0.7	False	all
+muscle organ	10	29	0.3448275862068966	0.7	False	all
+olfactory bulb	10	29	0.3448275862068966	0.7	False	all
+orbitofrontal cortex	10	29	0.3448275862068966	0.7	False	all
+pancreatic ductal cell	10	29	0.3448275862068966	0.7	False	all
+periodontal ligament	10	29	0.3448275862068966	0.7	False	all
+pleura	10	29	0.3448275862068966	0.7	False	all
+renal glomerulus	10	29	0.3448275862068966	0.7	False	all
+squamous epithelium	10	29	0.3448275862068966	0.7	False	all
+telencephalon	10	29	0.3448275862068966	0.7	False	all
+tibialis anterior	10	29	0.3448275862068966	0.7	False	all
+tongue	10	29	0.3448275862068966	0.7	False	all
+tongue squamous epithelium	10	29	0.3448275862068966	0.7	False	all
+triceps brachii	10	29	0.3448275862068966	0.7	False	all
+type B pancreatic cell	10	29	0.3448275862068966	0.7	False	all
+upper arm skin	10	29	0.3448275862068966	0.7	False	all
+connective tissue	9	29	0.3103448275862069	0.7	False	all
+epithelial cell of pancreas	9	29	0.3103448275862069	0.7	False	all
+mammary gland	9	29	0.3103448275862069	0.7	False	all
+eye	4	29	0.13793103448275862	0.7	False	all
+retina	4	29	0.13793103448275862	0.7	False	all
+nasopharynx	3	29	0.10344827586206896	0.7	False	all
+nerve	3	29	0.10344827586206896	0.7	False	all
+skeletal muscle organ	3	29	0.10344827586206896	0.7	False	all
+artery	2	29	0.06896551724137931	0.7	False	all
+bone element	2	29	0.06896551724137931	0.7	False	all
+frontal lobe	2	29	0.06896551724137931	0.7	False	all
+cochlea	1	29	0.034482758620689655	0.7	False	all
+peripheral nervous system	1	29	0.034482758620689655	0.7	False	all

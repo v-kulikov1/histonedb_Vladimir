@@ -1,199 +1,242 @@
-tissue,bos_taurus,equus_caballus,human,macaca_mulatta,pan_troglodytes,sus_scrofa
-adult mammalian kidney,43.98,37.71,55.052,56.56999999999999,74.35,69.075
-liver,40.54625,42.44,45.3125,72.27166666666666,45.876,65.77
-cerebellum,,93.465,34.765,46.506,40.22,92.67500000000001
-cerebral cortex,37.75,,28.97,47.75,27.24,92.69
-colon,37.27,,58.904444444444444,31.62,61.73,95.985
-frontal cortex,46.345,,37.56,36.87,28.5,56.53333333333333
-heart,31.45,,67.00399999999999,52.980000000000004,45.785,69.464
-multicellular organism,41.26,51.79,38.58,38.266666666666666,35.32,
-prefrontal cortex,,35.99,34.7625,36.419999999999995,26.623333333333335,40.99
-skeletal muscle tissue,43.163333333333334,,47.91,44.8,62.41,77.23
-spleen,47.94,,37.798,48.13,79.02,75.67857142857143
-adipose tissue,40.697500000000005,,39.894999999999996,48.07,,69.57499999999999
-blood,53.462500000000006,48.07,57.580000000000005,,,49.416666666666664
-bone marrow,52.2,73.68,68.21,,98.71,
-cortex of kidney,44.66,,44.31,55.54,36.66,
-kidney,45.37,,83.64,51.265,,50.33
-lung,43.403333333333336,,63.714285714285715,,64.92,79.635
-pituitary gland,50.605,,30.615000000000002,,65.27,76.86
-testis,49.27,33.68666666666667,,61.78666666666667,,87.49
-brain,40.66,,30.16,39.3325,,
-cerebellar cortex,,,36.06,43.17,52.04666666666666,
-endometrium,38.935,46.29,31.15,,,
-hindlimb stylopod muscle,,,60.59,57.53,50.85,
-lymph node,54.965,,53.25,,80.35,
-muscle tissue,37.43,46.7,45.97,,,
-olfactory segment of nasal mucosa,42.2,,46.04,57.26,,
-ovary,43.669999999999995,,43.875,,,94.57
-subcutaneous adipose tissue,43.96888888888889,,40.051,,,84.22
-superior frontal gyrus,,,34.23,46.46,28.375,
-zone of skin,46.25,38.15,47.370000000000005,,,
-adenohypophysis,51.585,,41.25,,,
-adrenal gland,51.60333333333333,,44.41,,,
-amygdala,,,29.64,,,78.62
-brainstem,,60.91,,,,79.40666666666667
-caecum,90.15,,,,,96.26
-corpus callosum,,,89.115,,,81.22999999999999
-dorsolateral prefrontal cortex,,,38.29,44.22,,
-duodenum,51.0975,,,,,96.75
-heart left ventricle,,,31.7,,,70.475
-hypothalamus,,,36.696666666666665,,,35.535
-ileum,65.342,,,,,98.64500000000001
-leukocyte,62.947272727272725,60.83,,,,
-longissimus thoracis muscle,38.065,,,,,79.25538461538461
-mesenteric lymph node,52.675,,,,,97.86
-metanephros cortex,44.62,,,,,73.775
-monocyte,54.13,,51.23,,,
-myometrium,44.71,,35.25,,,
-omental fat pad,37.985,,40.743,,,
-placenta,48.86,,36.91,,,
-pons,55.295,,,,,73.8
-primary visual cortex,,,53.3,46.22,,
-prostate gland,62.41,,34.84285714285714,,,
-right lobe of liver,,,40.12,,,91.63499999999999
-saliva-secreting gland,53.56,,29.47,,,
-stomach,,,64.11749999999999,,,89.88
-thymus,52.67,,,,98.99,
-thyroid gland,46.215,,33.52,,,
-tonsil,,,64.77,,,98.19
-uterine cervix,60.05500000000001,,53.21,,,
-uterus,38.86,,,,,89.49000000000001
-Ammon's horn,,,44.63,,,
-Brodmann (1909) area 9,,,35.14,,,
-C1 segment of cervical spinal cord,,,43.75,,,
-abdominal lymph node,53.67,,,,,
-abomasum,46.27,,,,,
-adrenal tissue,,,87.48,,,
-ampulla of uterine tube,45.78,,,,,
-anterior cingulate cortex,,,32.98,,,
-anterior segment of eyeball,57.53,,,,,
-aorta,49.075,,,,,
-articular cartilage of joint,,31.17,,,,
-ascending aorta,,,39.96142857142858,,,
-body of pancreas,,,36.29,,,
-body of stomach,,,34.77,,,
-body of uterus,,,34.07,,,
-bone marrow cell,,,97.24,,,
-calcaneal tendon,,,97.718,,,
-caudate nucleus,,,38.0375,,,
-cerebellar hemisphere,,,36.20333333333333,,,
-chorionic villus,,38.17,,,,
-colonic epithelium,,,86.13,,,
-conceptus,91.56,,,,,
-cumulus cell,69.24,,,,,
-descending colon,64.11,,,,,
-descending thoracic aorta,,,48.535,,,
-diaphragm,56.42,,,,,
-dorsal plus ventral thalamus,,,,,,75.78
-ectocervix,,,52.193333333333335,,,
-embryo,,37.98,,,,
-endocardial endothelium,,,,,,34.51
-endocervix,,,50.185,,,
-epididymis,,,,,,83.95
-epithelium of bronchus,,36.879999999999995,,,,
-esophagogastric junction muscularis propria,,,37.02625,,,
-esophagus,,,34.58,,,
-esophagus mucosa,,,35.809999999999995,,,
-fallopian tube,,,30.57,,,
-fibroblast,,,,46.92,,
-forebrain,,,,,,95.81
-forelimb bud,,,,,,55.51
-fundus of stomach,,,53.89,,,
-gall bladder,50.33,,,,,
-ganglionic eminence,,,45.709999999999994,,,
-gastrocnemius,,,42.592222222222226,,,
-gluteal muscle,40.74,,,,,
-granulocyte,,,68.06,,,
-granulosa cell,,,,,,50.18
-hindlimb bud,,,,,,60.39
-hippocampal formation,,,,,,85.515
-ileocecal valve,58.43,,,,,
-inner cell mass,,90.94,,,,
-intercostal muscle,37.78,,,,,
-intestine,,,81.23,,,
-intramuscular adipose tissue,32.12,,,,,
-islet of Langerhans,,,40.24857142857143,,,
-isthmus of fallopian tube,37.955,,,,,
-jejunum,55.4525,,,,,
-laryngeal cartilage,57.5,,,,,
-left adrenal gland,,,30.679999999999996,,,
-left adrenal gland cortex,,,42.4975,,,
-left coronary artery,,,41.815,,,
-left lobe of thyroid gland,,,30.9825,,,
-left ovary,,,43.518,,,
-left uterine tube,,,47.32,,,
-longissimus muscle,69.65666666666667,,,,,
-lower esophagus,,,33.510000000000005,,,
-lower esophagus muscularis layer,,,37.21909090909091,,,
-mammary gland,43.8175,,,,,
-material anatomical entity,,,,,,74.255
-medulla oblongata,,,,,,75.065
-milk,43.195,,,,,
-minor salivary gland,,,34.775,,,
-mucosa of stomach,,,49.44,,,
-muscle layer of sigmoid colon,,,40.92888888888889,,,
-muscle of leg,,,42.08,,,
-nasal cavity mucosa,63.83,,,,,
-nasopharynx,55.88,,,,,
-neurohypophysis,44.72,,,,,
-neutrophil,88.75,,,,,
-nucleus accumbens,,,39.8,,,
-occipital cortex,,,,,,62.830000000000005
-omasum,44.655,,,,,
-omentum,,,,,,93.955
-oocyte,90.05,,,,,
-oviduct epithelium,,81.32,,,,
-pancreas,,,33.375,,,
-penis,,,,,,96.04
-pharyngeal tonsil,56.39,,,,,
-popliteal artery,,,40.43,,,
-psoas major muscle,,,,,,75.06
-putamen,,,36.419999999999995,,,
-rectum,,,38.43,,,
-rectus femoris,53.47,,,,,
-renal medulla,44.95,,,,,
-retina,43.73,,,,,
-retropharyngeal lymph node,55.86,,,,,
-right adrenal gland,,,46.379999999999995,,,
-right adrenal gland cortex,,,45.79,,,
-right atrium auricular region,,,37.19199999999999,,,
-right coronary artery,,,51.86,,,
-right frontal lobe,,,28.835,,,
-right lobe of thyroid gland,,,35.605000000000004,,,
-right ovary,,,42.056666666666665,,,
-rumen,80.595,,,,,
-rumen epithelium,55.276666666666664,,,,,
-rumen papilla,39.93,,,,,
-scapular muscle,33.34,,,,,
-semitendinosus,45.696666666666665,,,,,
-skin of abdomen,,,49.602,,,
-skin of leg,,,45.764545454545456,,,
-small intestine,,,36.894999999999996,,,
-small intestine Peyer's patch,,,38.53111111111111,,,
-spermatid,,,,47.96,,
-spermatocyte,,,,41.4,,
-spinal cord,,70.72,,,,
-spiral colon,91.67,,,,,
-substantia nigra,,,36.71,,,
-sural nerve,,,90.28,,,
-synovial membrane of synovial joint,,31.34,,,,
-temporal lobe,,,,,66.89,
-theca cell,48.76,,,,,
-thoracic aorta,,,41.519999999999996,,,
-thoracic mammary gland,,,44.3275,,,
-tibial artery,,,42.76363636363636,,,
-tibial nerve,,,39.5775,,,
-tongue muscle,46.58,,,,,
-trachea,50.76,,,,,
-transverse colon,,,38.558,,,
-triceps brachii,,57.1,,,,
-trophectoderm,,95.63499999999999,,,,
-trophoblast,,32.635,,,,
-upper lobe of left lung,,,38.22,,,
-ureter,47.980000000000004,,,,,
-urethra,47.54,,,,,
-urinary bladder,,,47.3575,,,
-uterine tube infundibulum,47.6,,,,,
-vagina,,,38.31,,,
-ventricular zone,,,69.42,,,
+tissue,bos_taurus,canis_lupus_familiaris,cavia_porcellus,equus_caballus,felis_catus,heterocephalus_glaber,human,macaca_mulatta,mus_musculus,oryctolagus_cuniculus,pan_troglodytes,sus_scrofa
+adult mammalian kidney,43.98,,,37.71,,,55.052,56.56999999999999,,,74.35,69.075
+cerebellum,0.0,,,93.465,,,34.765,46.506,,,40.22,92.675
+liver,40.54625,,,42.44,,,45.3125,72.27166666666666,,,45.876,65.77
+prefrontal cortex,0.0,,,35.99,,,34.7625,36.42,,,26.62333333333333,40.99
+testis,49.27,,,33.68666666666667,,,0.0,61.78666666666667,,,0.0,87.49
+cerebral cortex,37.75,,,,,,28.97,47.75,,,27.24,92.69
+colon,37.27,,,,,,58.90444444444445,31.62,,,61.73,95.985
+frontal cortex,46.345,,,,,,37.56,36.87,,,28.5,56.53333333333333
+heart,31.45,,,,,,67.00399999999999,52.98,,,45.785,69.464
+lung,43.403333333333336,,,,,,63.71428571428572,0.0,,,64.92,79.635
+multicellular organism,41.26,,,51.79,,,38.58,38.266666666666666,,,35.32,
+skeletal muscle tissue,43.16333333333333,,,,,,47.91,44.8,,,62.41,77.23
+spleen,47.94,,,,,,37.798,48.13,,,79.02,75.67857142857143
+adipose tissue,40.697500000000005,,,,,,39.895,48.07,,,,69.57499999999999
+blood,53.462500000000006,,,48.07,,,57.580000000000005,,,,,49.41666666666666
+bone marrow,52.2,,,73.68,,,68.21,,,,98.71,
+cortex of kidney,44.66,,,,,,44.31,55.54,,,36.66,
+kidney,45.37,,,,,,83.64,51.265,,,,50.33
+lymph node,54.965,,,,,,53.25,,,,80.35,0.0
+muscle tissue,37.43,,,46.7,,,45.97,,,,,0.0
+pituitary gland,50.605,,,,,,30.615,,,,65.27,76.86
+Ammon's horn,0.0,,,,,,44.63,,,,,0.0
+brain,40.66,,,,,,30.16,39.3325,,,,
+cerebellar cortex,,,,,,,36.06,43.17,,,52.04666666666666,
+dorsolateral prefrontal cortex,,,,,,,38.29,44.22,,,0.0,
+duodenum,51.0975,,,,,,0.0,,,,,96.75
+endometrium,38.935,,,46.29,,,31.15,,,,,
+hindlimb stylopod muscle,,,,,,,60.59,57.53,,,50.85,
+hypothalamus,0.0,,,,,,36.696666666666665,,,,,35.535
+ileum,65.342,,,,,,,0.0,,,,98.645
+leukocyte,62.947272727272725,,,60.83,,,0.0,,,,,
+metanephros cortex,44.62,,,,,,0.0,,,,,73.775
+olfactory segment of nasal mucosa,42.2,,,,,,46.04,57.26,,,,
+ovary,43.67,,,,,,43.875,,,,,94.57
+primary visual cortex,,,,,,,53.3,46.22,,,0.0,
+subcutaneous adipose tissue,43.96888888888889,,,,,,40.051,,,,,84.22
+superior frontal gyrus,,,,,,,34.23,46.46,,,28.375,
+zone of skin,46.25,,,38.15,,,47.370000000000005,,,,,
+adenohypophysis,51.585,,,,,,41.25,,,,,
+adrenal gland,51.60333333333333,,,,,,44.41,,,,,
+amygdala,,,,,,,29.64,,,,,78.62
+brainstem,,,,60.91,,,,,,,,79.40666666666667
+caecum,90.15,,,,,,,,,,,96.26
+corpus callosum,,,,,,,89.115,,,,,81.22999999999999
+esophagus,0.0,,,,,,34.58,,,,,
+fibroblast,,,,,,,,46.92,,,0.0,
+gall bladder,50.33,,,,,,0.0,,,,,
+gluteus medius,0.0,,,0.0,,,,,,,,
+granulosa cell,0.0,,,,,,,,,,,50.18
+heart left ventricle,,,,,,,31.7,,,,,70.475
+longissimus thoracis muscle,38.065,,,,,,,,,,,79.25538461538461
+mesenteric lymph node,52.675,,,,,,,,,,,97.86
+monocyte,54.13,,,,,,51.23,,,,,
+myometrium,44.71,,,,,,35.25,,,,,
+omental fat pad,37.985,,,,,,40.743,,,,,
+oocyte,90.05,,,,,,,,,,,0.0
+oviduct epithelium,0.0,,,81.32,,,,,,,,
+placenta,48.86,,,,,,36.91,,,,,
+pons,55.295,,,,,,,,,,,73.8
+prostate gland,62.41,,,,,,34.84285714285714,,,,,
+retina,43.73,,,0.0,,,,,,,,
+right lobe of liver,,,,,,,40.12,,,,,91.635
+saliva-secreting gland,53.56,,,,,,29.47,,,,,
+semimembranosus muscle,0.0,,,,,,,,,,,0.0
+spermatid,0.0,,,,,,,47.96,,,,
+spermatocyte,0.0,,,,,,,41.4,,,,
+stomach,,,,,,,64.11749999999999,,,,,89.88
+temporal lobe,,,,,,,0.0,,,,66.89,
+thymus,52.67,,,,,,,,,,98.99,
+thyroid gland,46.215,,,,,,33.52,,,,,
+tonsil,,,,,,,64.77,,,,,98.19
+triceps brachii,0.0,,,57.1,,,,,,,,
+urinary bladder,0.0,,,,,,47.3575,,,,,
+uterine cervix,60.05500000000001,,,,,,53.21,,,,,
+uterus,38.86,,,,,,,,,,,89.49000000000001
+Brodmann (1909) area 10,,,,,,,,,,,0.0,
+Brodmann (1909) area 9,,,,,,,35.14,,,,,
+C1 segment of cervical spinal cord,,,,,,,43.75,,,,,
+abdominal lymph node,53.67,,,,,,,,,,,
+abomasum,46.27,,,,,,,,,,,
+adrenal tissue,,,,,,,87.48,,,,,
+ampulla of uterine tube,45.78,,,,,,,,,,,
+anterior cingulate cortex,,,,,,,32.98,,,,,
+anterior segment of eyeball,57.53,,,,,,,,,,,
+aorta,49.075,,,,,,,,,,,
+apex of heart,,,,,,,0.0,,,,,
+articular cartilage of joint,,,,31.17,,,,,,,,
+ascending aorta,,,,,,,39.96142857142858,,,,,
+ascending colon,0.0,,,,,,,,,,,
+biceps femoris,0.0,,,,,,,,,,,
+body of pancreas,,,,,,,36.29,,,,,
+body of stomach,,,,,,,34.77,,,,,
+body of uterus,,,,,,,34.07,,,,,
+bone marrow cell,,,,,,,97.24,,,,,
+calcaneal tendon,,,,,,,97.718,,,,,
+caput epididymis,0.0,,,,,,,,,,,
+cardiac atrium,0.0,,,,,,,,,,,
+cardiac ventricle,0.0,,,,,,,,,,,
+caudate nucleus,,,,,,,38.0375,,,,,
+cerebellar hemisphere,,,,,,,36.20333333333333,,,,,
+chorionic villus,,,,38.17,,,,,,,,
+choroid plexus,0.0,,,,,,,,,,,
+colonic epithelium,,,,,,,86.13,,,,,
+conceptus,91.56,,,,,,,,,,,
+corpus epididymis,0.0,,,,,,,,,,,
+corpus luteum,0.0,,,,,,,,,,,
+cortical plate,,,,,,,0.0,,,,,
+cumulus cell,69.24,,,,,,,,,,,
+descending colon,64.11,,,,,,,,,,,
+descending thoracic aorta,,,,,,,48.535,,,,,
+diaphragm,56.42,,,,,,,,,,,
+digestive system secreted substance,0.0,,,,,,,,,,,
+dorsal plus ventral thalamus,,,,,,,,,,,,75.78
+dorsal thalamus,0.0,,,,,,,,,,,
+ectocervix,,,,,,,52.193333333333335,,,,,
+embryo,,,,37.98,,,,,,,,
+endocardial endothelium,,,,,,,,,,,,34.51
+endocervix,,,,,,,50.185,,,,,
+epididymis,,,,,,,,,,,,83.95
+epithelium of bronchus,,,,36.88,,,,,,,,
+esophagogastric junction muscularis propria,,,,,,,37.02625,,,,,
+esophagus mucosa,,,,,,,35.809999999999995,,,,,
+fallopian tube,,,,,,,30.57,,,,,
+floor plate of diencephalon,0.0,,,,,,,,,,,
+forebrain,,,,,,,,,,,,95.81
+forelimb bud,,,,,,,,,,,,55.51
+fornix of vagina,0.0,,,,,,,,,,,
+fundus of stomach,,,,,,,53.89,,,,,
+ganglionic eminence,,,,,,,45.71,,,,,
+gastrocnemius,,,,,,,42.59222222222223,,,,,
+gluteal muscle,40.74,,,,,,,,,,,
+granulocyte,,,,,,,68.06,,,,,
+hindlimb bud,,,,,,,,,,,,60.39
+hippocampal formation,,,,,,,,,,,,85.515
+ileocecal valve,58.43,,,,,,,,,,,
+infraspinatus muscle,0.0,,,,,,,,,,,
+inner cell mass,,,,90.94,,,,,,,,
+intercostal muscle,37.78,,,,,,,,,,,
+intestine,,,,,,,81.23,,,,,
+intramuscular adipose tissue,32.12,,,,,,,,,,,
+islet of Langerhans,,,,,,,40.24857142857143,,,,,
+isthmus of fallopian tube,37.955,,,,,,,,,,,
+jejunum,55.4525,,,,,,,,,,,
+laryngeal cartilage,57.5,,,,,,,,,,,
+left adrenal gland,,,,,,,30.68,,,,,
+left adrenal gland cortex,,,,,,,42.4975,,,,,
+left coronary artery,,,,,,,41.815,,,,,
+left lobe of thyroid gland,,,,,,,30.9825,,,,,
+left ovary,,,,,,,43.518,,,,,
+left testis,,,,,,,0.0,,,,,
+left uterine tube,,,,,,,47.32,,,,,
+longissimus lumborum muscle,,,,,,,,,,,,0.0
+longissimus muscle,69.65666666666667,,,,,,,,,,,
+lower esophagus,,,,,,,33.510000000000005,,,,,
+lower esophagus mucosa,,,,,,,0.0,,,,,
+lower esophagus muscularis layer,,,,,,,37.21909090909091,,,,,
+male germ line stem cell (sensu Vertebrata) in testis,,,,,,,0.0,,,,,
+mammary gland,43.8175,,,,,,,,,,,
+mammary gland fat,0.0,,,,,,,,,,,
+material anatomical entity,,,,,,,,,,,,74.255
+medulla oblongata,,,,,,,,,,,,75.065
+midbrain,0.0,,,,,,,,,,,
+milk,43.195,,,,,,,,,,,
+minor salivary gland,,,,,,,34.775,,,,,
+mucosa of stomach,,,,,,,49.44,,,,,
+mucosa of transverse colon,,,,,,,0.0,,,,,
+muscle layer of sigmoid colon,,,,,,,40.92888888888889,,,,,
+muscle of leg,,,,,,,42.08,,,,,
+nasal cavity mucosa,63.83,,,,,,,,,,,
+nasopharynx,55.88,,,,,,,,,,,
+neurohypophysis,44.72,,,,,,,,,,,
+neutrophil,88.75,,,,,,,,,,,
+nucleus accumbens,,,,,,,39.8,,,,,
+occipital cortex,,,,,,,,,,,,62.830000000000005
+occipital lobe,0.0,,,,,,,,,,,
+omasum,44.655,,,,,,,,,,,
+omentum,,,,,,,,,,,,93.955
+pancreas,,,,,,,33.375,,,,,
+parenchyma of mammary gland,0.0,,,,,,,,,,,
+penis,,,,,,,,,,,,96.04
+pharyngeal tonsil,56.39,,,,,,,,,,,
+pigment epithelium of eye,0.0,,,,,,,,,,,
+popliteal artery,,,,,,,40.43,,,,,
+psoas major muscle,,,,,,,,,,,,75.06
+putamen,,,,,,,36.42,,,,,
+rectum,,,,,,,38.43,,,,,
+rectus femoris,53.47,,,,,,,,,,,
+renal medulla,44.95,,,,,,,,,,,
+retropharyngeal lymph node,55.86,,,,,,,,,,,
+right adrenal gland,,,,,,,46.38,,,,,
+right adrenal gland cortex,,,,,,,45.79,,,,,
+right atrium auricular region,,,,,,,37.19199999999999,,,,,
+right coronary artery,,,,,,,51.86,,,,,
+right frontal lobe,,,,,,,28.835,,,,,
+right hemisphere of cerebellum,,,,,,,0.0,,,,,
+right lobe of thyroid gland,,,,,,,35.605000000000004,,,,,
+right lung,,,,,,,0.0,,,,,
+right ovary,,,,,,,42.056666666666665,,,,,
+right testis,,,,,,,0.0,,,,,
+right uterine tube,,,,,,,0.0,,,,,
+rumen,80.595,,,,,,,,,,,
+rumen epithelium,55.27666666666666,,,,,,,,,,,
+rumen papilla,39.93,,,,,,,,,,,
+ruminant reticulum,0.0,,,,,,,,,,,
+scapular muscle,33.34,,,,,,,,,,,
+semen,0.0,,,,,,,,,,,
+semitendinosus,45.696666666666665,,,,,,,,,,,
+skin of abdomen,,,,,,,49.602,,,,,
+skin of leg,,,,,,,45.764545454545456,,,,,
+small intestine,,,,,,,36.895,,,,,
+small intestine Peyer's patch,,,,,,,38.53111111111111,,,,,
+smooth muscle tissue,,,,,,,0.0,,,,,
+spinal cord,,,,70.72,,,,,,,,
+spiral colon,91.67,,,,,,,,,,,
+stromal cell of endometrium,,,,,,,0.0,,,,,
+substantia nigra,,,,,,,36.71,,,,,
+supraspinatus muscle,0.0,,,,,,,,,,,
+sural nerve,,,,,,,90.28,,,,,
+surface of tongue,0.0,,,,,,,,,,,
+synovial membrane of synovial joint,,,,31.34,,,,,,,,
+temporal cortex,0.0,,,,,,,,,,,
+theca cell,48.76,,,,,,,,,,,
+thoracic aorta,,,,,,,41.52,,,,,
+thoracic mammary gland,,,,,,,44.3275,,,,,
+tibial artery,,,,,,,42.76363636363636,,,,,
+tibial nerve,,,,,,,39.5775,,,,,
+tongue,0.0,,,,,,,,,,,
+tongue muscle,46.58,,,,,,,,,,,
+trachea,50.76,,,,,,,,,,,
+transverse colon,,,,,,,38.558,,,,,
+trophectoderm,,,,95.635,,,,,,,,
+trophoblast,,,,32.635,,,,,,,,
+upper lobe of left lung,,,,,,,38.22,,,,,
+ureter,47.98,,,,,,,,,,,
+urethra,47.54,,,,,,,,,,,
+uterine horn,0.0,,,,,,,,,,,
+uterine tube infundibulum,47.6,,,,,,,,,,,
+vagina,,,,,,,38.31,,,,,
+vas deferens,0.0,,,,,,,,,,,
+ventricular zone,,,,,,,69.42,,,,,
+vermiform appendix,,,,,,,0.0,,,,,

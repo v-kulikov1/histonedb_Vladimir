@@ -1,30 +1,31 @@
-Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
-ENSCPOG00000006352	LOC100724929	testis	present	gold quality	92.0
-ENSCPOG00000034514	H2AC19	uterine cervix	present	gold quality	69.37
-ENSCPOG00000034514	H2AC19	pituitary gland	present	gold quality	60.97
-ENSCPOG00000034514	H2AC19	pituitary gland	present	gold quality	82.84
-ENSCPOG00000034514	H2AC19	zone of skin	present	gold quality	61.6
-ENSCPOG00000034514	H2AC19	zone of skin	present	gold quality	62.25
-ENSCPOG00000034514	H2AC19	adult mammalian kidney	present	gold quality	68.21
-ENSCPOG00000034514	H2AC19	adult mammalian kidney	present	gold quality	58.53
-ENSCPOG00000034514	H2AC19	adult mammalian kidney	present	gold quality	62.11
-ENSCPOG00000034514	H2AC19	testis	present	gold quality	71.47
-ENSCPOG00000034514	H2AC19	heart	present	gold quality	48.05
-ENSCPOG00000034514	H2AC19	heart	present	gold quality	69.18
-ENSCPOG00000034514	H2AC19	brain	present	gold quality	56.64
-ENSCPOG00000034514	H2AC19	ovary	present	gold quality	63.55
-ENSCPOG00000034514	H2AC19	frontal cortex	present	gold quality	35.13
-ENSCPOG00000034514	H2AC19	frontal cortex	present	gold quality	56.82
-ENSCPOG00000034514	H2AC19	hypothalamus	present	gold quality	38.57
-ENSCPOG00000034514	H2AC19	hypothalamus	present	gold quality	42.98
-ENSCPOG00000034514	H2AC19	cerebellum	present	gold quality	47.94
-ENSCPOG00000034514	H2AC19	cerebellum	present	gold quality	45.52
-ENSCPOG00000034514	H2AC19	thyroid gland	present	gold quality	67.18
-ENSCPOG00000034514	H2AC19	thyroid gland	present	gold quality	60.86
-ENSCPOG00000034514	H2AC19	heart left ventricle	present	gold quality	91.58
-ENSCPOG00000034514	H2AC19	heart left ventricle	present	gold quality	85.04
-ENSCPOG00000034514	H2AC19	liver	present	gold quality	57.09
-ENSCPOG00000034514	H2AC19	liver	present	gold quality	69.55
-ENSCPOG00000034514	H2AC19	liver	present	gold quality	68.23
-ENSCPOG00000034514	H2AC19	adrenal gland	present	gold quality	61.01
-ENSCPOG00000034514	H2AC19	adrenal gland	present	gold quality	59.18
+Gene ID	Gene name	Anatomical entity name	cell_mean_score	cell_std_score	cell_n	cell_status	Expression score	Expression std	Expression n	raw_row_count	qualifying_row_count
+ENSCPOG00000006352	LOC100724929	adrenal gland	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSCPOG00000006352	LOC100724929	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSCPOG00000006352	LOC100724929	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	frontal cortex	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	heart left ventricle	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	liver	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSCPOG00000006352	LOC100724929	ovary	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSCPOG00000006352	LOC100724929	pituitary gland	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	testis	92.0	0.0	1	present_gold	92.0	0.0	1	1	1
+ENSCPOG00000006352	LOC100724929	thyroid gland	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000006352	LOC100724929	uterine cervix	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSCPOG00000006352	LOC100724929	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSCPOG00000034514	H2AC19	adrenal gland	60.095	1.2940054095713807	2	present_gold	60.095	1.2940054095713807	2	2	2
+ENSCPOG00000034514	H2AC19	adult mammalian kidney	62.949999999999996	4.8943641057853435	3	present_gold	62.949999999999996	4.8943641057853435	3	3	3
+ENSCPOG00000034514	H2AC19	brain	56.64	0.0	1	present_gold	56.64	0.0	1	1	1
+ENSCPOG00000034514	H2AC19	cerebellum	46.730000000000004	1.7111984104714413	2	present_gold	46.730000000000004	1.7111984104714413	2	2	2
+ENSCPOG00000034514	H2AC19	frontal cortex	45.975	15.337146083936213	2	present_gold	45.975	15.337146083936213	2	2	2
+ENSCPOG00000034514	H2AC19	heart	58.615	14.941166286471756	2	present_gold	58.615	14.941166286471756	2	2	2
+ENSCPOG00000034514	H2AC19	heart left ventricle	88.31	4.624478348960015	2	present_gold	88.31	4.624478348960015	2	2	2
+ENSCPOG00000034514	H2AC19	hypothalamus	40.775	3.1183409050326723	2	present_gold	40.775	3.1183409050326723	2	2	2
+ENSCPOG00000034514	H2AC19	liver	64.95666666666666	6.844628063915037	3	present_gold	64.95666666666666	6.844628063915037	3	3	3
+ENSCPOG00000034514	H2AC19	ovary	63.55	0.0	1	present_gold	63.55	0.0	1	1	1
+ENSCPOG00000034514	H2AC19	pituitary gland	71.905	15.464425304549797	2	present_gold	71.905	15.464425304549797	2	2	2
+ENSCPOG00000034514	H2AC19	testis	71.47	0.0	1	present_gold	71.47	0.0	1	1	1
+ENSCPOG00000034514	H2AC19	thyroid gland	64.02000000000001	4.468914857098985	2	present_gold	64.02000000000001	4.468914857098985	2	2	2
+ENSCPOG00000034514	H2AC19	uterine cervix	69.37	0.0	1	present_gold	69.37	0.0	1	1	1
+ENSCPOG00000034514	H2AC19	zone of skin	61.925	0.4596194077712549	2	present_gold	61.925	0.4596194077712549	2	2	2

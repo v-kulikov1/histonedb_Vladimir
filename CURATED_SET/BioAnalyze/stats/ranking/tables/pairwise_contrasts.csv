@@ -1,308 +1,489 @@
 gene_name,gene_class,tissue,candidate_level,species_n,combo_range,max_species,max_species_name,min_species,min_species_name,species_high,species_high_name,high_score,species_low,species_low_name,low_score,abs_diff
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,94.05,felis_catus,Felis catus,12.78,81.27
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.88111111111112,felis_catus,Felis catus,13.49,68.39111111111113
-H2AC19,clustered,bone marrow,high_confidence,4,68.0,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,99.75,equus_caballus,Equus caballus,31.75,68.0
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.69,pan_troglodytes,Pan troglodytes,27.24,65.45
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,96.45,felis_catus,Felis catus,31.04,65.41
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,90.93333333333334,felis_catus,Felis catus,26.035,64.89833333333334
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,95.985,macaca_mulatta,Macaca mulatta,31.62,64.365
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.28461538461539,felis_catus,Felis catus,26.035,64.2496153846154
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.69,human,Homo sapiens,28.97,63.72
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,94.05,human,Homo sapiens,31.560000000000002,62.489999999999995
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,74.22181818181818,felis_catus,Felis catus,13.49,60.73181818181818
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,76.52,canis_lupus_familiaris,Canis lupus familiaris,16.05,60.47
-H2AC14,clustered,cerebral cortex,high_confidence,4,59.2,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,82.47,human,Homo sapiens,23.27,59.2
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.17416666666666,felis_catus,Felis catus,31.04,59.134166666666665
-H2AC17,clustered,testis,high_confidence,4,58.79333333333332,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,85.96,felis_catus,Felis catus,27.166666666666668,58.79333333333332
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,95.985,bos_taurus,Bos taurus,37.27,58.714999999999996
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,93.465,human,Homo sapiens,34.765,58.7
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,71.87,felis_catus,Felis catus,13.49,58.38
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,81.945,canis_lupus_familiaris,Canis lupus familiaris,23.59,58.35499999999999
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,sus_scrofa,Sus scrofa,92.67500000000001,human,Homo sapiens,34.765,57.91000000000001
-H2AC14,clustered,cerebral cortex,high_confidence,4,59.2,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,82.47,pan_troglodytes,Pan troglodytes,25.39,57.08
-H2AC20,clustered,prefrontal cortex,high_confidence,4,56.2825,macaca_mulatta,Macaca mulatta,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,68.9725,felis_catus,Felis catus,12.69,56.2825
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.69,bos_taurus,Bos taurus,37.75,54.94
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,97.04,equus_caballus,Equus caballus,42.20333333333333,54.83666666666667
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,86.02,canis_lupus_familiaris,Canis lupus familiaris,31.3475,54.6725
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,97.8075,bos_taurus,Bos taurus,43.593333333333334,54.21416666666667
-H2AC8,clustered,brain,conservative,4,54.01500000000001,felis_catus,Felis catus,bos_taurus,Bos taurus,felis_catus,Felis catus,91.86500000000001,bos_taurus,Bos taurus,37.85,54.01500000000001
-H2AC14,clustered,colon,conservative,4,53.85999999999999,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,96.47999999999999,macaca_mulatta,Macaca mulatta,42.62,53.85999999999999
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,76.52,human,Homo sapiens,22.680000000000003,53.83999999999999
-H2AC21,clustered,testis,conservative,4,53.80333333333333,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,87.49,equus_caballus,Equus caballus,33.68666666666667,53.80333333333333
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,93.465,pan_troglodytes,Pan troglodytes,40.22,53.245000000000005
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,93.62,canis_lupus_familiaris,Canis lupus familiaris,40.5,53.120000000000005
-H2AC25,clustered,ovary,conservative,4,53.07333333333334,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.82333333333334,canis_lupus_familiaris,Canis lupus familiaris,41.75,53.07333333333334
-H2AC25,clustered,hypothalamus,conservative,4,53.00124999999999,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,81.35125,canis_lupus_familiaris,Canis lupus familiaris,28.35,53.00124999999999
-H2AC13,clustered,cerebellum,conservative,4,52.572500000000005,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,79.89750000000001,human,Homo sapiens,27.325,52.572500000000005
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,sus_scrofa,Sus scrofa,92.67500000000001,pan_troglodytes,Pan troglodytes,40.22,52.45500000000001
-H2AC14,clustered,colon,conservative,4,53.85999999999999,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,96.47999999999999,bos_taurus,Bos taurus,44.03,52.44999999999999
-H2AC25,clustered,colon,conservative,4,51.99000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,92.15,canis_lupus_familiaris,Canis lupus familiaris,40.16,51.99000000000001
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,82.955,felis_catus,Felis catus,31.04,51.915
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.01,canis_lupus_familiaris,Canis lupus familiaris,42.875,51.135000000000005
-H2AC19,clustered,bone marrow,high_confidence,4,68.0,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,human,Homo sapiens,82.56,equus_caballus,Equus caballus,31.75,50.81
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.38,canis_lupus_familiaris,Canis lupus familiaris,23.59,50.78999999999999
-H2AC7,clustered,bone marrow,conservative,4,50.4,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,88.72,canis_lupus_familiaris,Canis lupus familiaris,38.32,50.4
-H2AC19,clustered,testis,conservative,4,50.38666666666666,human,Homo sapiens,bos_taurus,Bos taurus,human,Homo sapiens,96.25,bos_taurus,Bos taurus,45.86333333333334,50.38666666666666
-H2AC17,clustered,testis,high_confidence,4,58.79333333333332,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,85.96,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,50.15666666666666
-H2AC19,clustered,testis,conservative,4,50.38666666666666,human,Homo sapiens,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,95.82,bos_taurus,Bos taurus,45.86333333333334,49.956666666666656
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,97.04,human,Homo sapiens,47.2325,49.807500000000005
-H2AC8,clustered,brain,conservative,4,54.01500000000001,felis_catus,Felis catus,bos_taurus,Bos taurus,felis_catus,Felis catus,91.86500000000001,macaca_mulatta,Macaca mulatta,42.3675,49.49750000000001
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,75.36,felis_catus,Felis catus,26.035,49.325
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,89.62,canis_lupus_familiaris,Canis lupus familiaris,40.66,48.96000000000001
-H2AC20,clustered,liver,conservative,4,48.885714285714286,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,91.80571428571429,equus_caballus,Equus caballus,42.92,48.885714285714286
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.27,felis_catus,Felis catus,32.96333333333333,48.306666666666665
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,97.04,bos_taurus,Bos taurus,48.7625,48.2775
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,78.57000000000001,felis_catus,Felis catus,30.5,48.07000000000001
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,60.586666666666666,felis_catus,Felis catus,12.78,47.806666666666665
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.01,bos_taurus,Bos taurus,46.245000000000005,47.765
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.27,equus_caballus,Equus caballus,33.83,47.44
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,93.465,macaca_mulatta,Macaca mulatta,46.506,46.959
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,60.07,felis_catus,Felis catus,13.49,46.58
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,sus_scrofa,Sus scrofa,92.67500000000001,macaca_mulatta,Macaca mulatta,46.506,46.16900000000001
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,81.945,felis_catus,Felis catus,35.96333333333333,45.98166666666666
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,bos_taurus,Bos taurus,58.612,felis_catus,Felis catus,12.78,45.832
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,90.93333333333334,equus_caballus,Equus caballus,45.89,45.04333333333334
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.69,macaca_mulatta,Macaca mulatta,47.75,44.94
-H2AC25,clustered,colon,conservative,4,51.99000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,92.15,bos_taurus,Bos taurus,47.24,44.910000000000004
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,85.0,canis_lupus_familiaris,Canis lupus familiaris,40.5,44.5
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.28461538461539,equus_caballus,Equus caballus,45.89,44.39461538461539
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,67.905,canis_lupus_familiaris,Canis lupus familiaris,23.59,44.315
-H2AC25,clustered,ovary,conservative,4,53.07333333333334,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.82333333333334,bos_taurus,Bos taurus,50.785,44.03833333333334
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,76.52,macaca_mulatta,Macaca mulatta,32.519999999999996,44.0
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,76.52,bos_taurus,Bos taurus,33.66,42.86
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,97.8075,canis_lupus_familiaris,Canis lupus familiaris,55.5725,42.23500000000001
-H2AC13,clustered,cerebellum,conservative,4,52.572500000000005,equus_caballus,Equus caballus,human,Homo sapiens,bos_taurus,Bos taurus,69.31666666666666,human,Homo sapiens,27.325,41.99166666666666
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,bos_taurus,Bos taurus,67.4275,felis_catus,Felis catus,26.035,41.3925
-H2AC17,clustered,testis,high_confidence,4,58.79333333333332,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,85.96,human,Homo sapiens,44.59285714285714,41.36714285714285
-H2AC14,clustered,colon,conservative,4,53.85999999999999,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,96.47999999999999,human,Homo sapiens,55.437777777777775,41.042222222222215
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.88111111111112,bos_taurus,Bos taurus,41.08,40.801111111111126
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,86.02,equus_caballus,Equus caballus,45.4225,40.5975
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,83.08,canis_lupus_familiaris,Canis lupus familiaris,42.875,40.205
-H2AC25,clustered,hypothalamus,conservative,4,53.00124999999999,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,81.35125,sus_scrofa,Sus scrofa,41.325,40.02624999999999
-H2AC25,clustered,hypothalamus,conservative,4,53.00124999999999,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,81.35125,bos_taurus,Bos taurus,41.805,39.54624999999999
-H2AC20,clustered,liver,conservative,4,48.885714285714286,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,felis_catus,Felis catus,82.265,equus_caballus,Equus caballus,42.92,39.345
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.38,felis_catus,Felis catus,35.96333333333333,38.416666666666664
-H2AC14,clustered,cerebral cortex,high_confidence,4,59.2,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,82.47,bos_taurus,Bos taurus,44.16,38.31
-H2AC21,clustered,testis,conservative,4,53.80333333333333,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,87.49,bos_taurus,Bos taurus,49.27,38.21999999999999
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,93.62,bos_taurus,Bos taurus,55.44,38.18000000000001
-H2AC8,clustered,brain,conservative,4,54.01500000000001,felis_catus,Felis catus,bos_taurus,Bos taurus,felis_catus,Felis catus,91.86500000000001,human,Homo sapiens,54.24578947368421,37.6192105263158
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,80.33,canis_lupus_familiaris,Canis lupus familiaris,42.875,37.455
-H2AC19,clustered,bone marrow,high_confidence,4,68.0,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,bos_taurus,Bos taurus,69.07,equus_caballus,Equus caballus,31.75,37.31999999999999
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,95.985,human,Homo sapiens,58.904444444444444,37.080555555555556
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,felis_catus,Felis catus,79.07000000000001,equus_caballus,Equus caballus,42.20333333333333,36.866666666666674
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,83.08,bos_taurus,Bos taurus,46.245000000000005,36.834999999999994
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,86.02,bos_taurus,Bos taurus,49.2425,36.777499999999996
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,67.77333333333333,felis_catus,Felis catus,31.04,36.73333333333333
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.27,canis_lupus_familiaris,Canis lupus familiaris,44.56875,36.701249999999995
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.695,canis_lupus_familiaris,Canis lupus familiaris,40.66,36.035
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,59.330000000000005,canis_lupus_familiaris,Canis lupus familiaris,23.59,35.74000000000001
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,94.05,bos_taurus,Bos taurus,58.612,35.437999999999995
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,66.72461538461538,canis_lupus_familiaris,Canis lupus familiaris,31.3475,35.37711538461538
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,58.906666666666666,canis_lupus_familiaris,Canis lupus familiaris,23.59,35.31666666666666
-H2AC25,clustered,ovary,conservative,4,53.07333333333334,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,77.035,canis_lupus_familiaris,Canis lupus familiaris,41.75,35.285
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,61.29,felis_catus,Felis catus,26.035,35.254999999999995
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,equus_caballus,Equus caballus,65.74000000000001,felis_catus,Felis catus,30.5,35.24000000000001
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,75.53999999999999,canis_lupus_familiaris,Canis lupus familiaris,40.5,35.03999999999999
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,64.92666666666666,felis_catus,Felis catus,30.5,34.42666666666666
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,95.985,pan_troglodytes,Pan troglodytes,61.73,34.255
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.88,canis_lupus_familiaris,Canis lupus familiaris,40.66,34.22
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,bos_taurus,Bos taurus,65.19,felis_catus,Felis catus,31.04,34.15
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,80.33,bos_taurus,Bos taurus,46.245000000000005,34.084999999999994
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,77.1525,bos_taurus,Bos taurus,43.593333333333334,33.55916666666667
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,94.05,macaca_mulatta,Macaca mulatta,60.586666666666666,33.46333333333333
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,74.22181818181818,bos_taurus,Bos taurus,41.08,33.14181818181818
-H2AC20,clustered,prefrontal cortex,high_confidence,4,56.2825,macaca_mulatta,Macaca mulatta,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,68.9725,equus_caballus,Equus caballus,36.42,32.552499999999995
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.27,macaca_mulatta,Macaca mulatta,48.74,32.529999999999994
-H2AC20,clustered,prefrontal cortex,high_confidence,4,56.2825,macaca_mulatta,Macaca mulatta,felis_catus,Felis catus,human,Homo sapiens,44.974000000000004,felis_catus,Felis catus,12.69,32.284000000000006
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,75.826,bos_taurus,Bos taurus,43.593333333333334,32.23266666666666
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,63.32666666666666,canis_lupus_familiaris,Canis lupus familiaris,31.3475,31.97916666666666
-H2AC25,clustered,colon,conservative,4,51.99000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,72.10499999999999,canis_lupus_familiaris,Canis lupus familiaris,40.16,31.944999999999993
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,67.905,felis_catus,Felis catus,35.96333333333333,31.94166666666667
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,felis_catus,Felis catus,79.07000000000001,human,Homo sapiens,47.2325,31.837500000000006
-H2AC19,clustered,testis,conservative,4,50.38666666666666,human,Homo sapiens,bos_taurus,Bos taurus,equus_caballus,Equus caballus,77.53,bos_taurus,Bos taurus,45.86333333333334,31.666666666666664
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,75.08500000000001,bos_taurus,Bos taurus,43.593333333333334,31.491666666666674
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,96.45,bos_taurus,Bos taurus,65.19,31.260000000000005
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,71.87,bos_taurus,Bos taurus,41.08,30.790000000000006
-H2AC19,clustered,bone marrow,high_confidence,4,68.0,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,99.75,bos_taurus,Bos taurus,69.07,30.680000000000007
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,felis_catus,Felis catus,79.07000000000001,bos_taurus,Bos taurus,48.7625,30.307500000000005
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,70.81,canis_lupus_familiaris,Canis lupus familiaris,40.66,30.150000000000006
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,pan_troglodytes,Pan troglodytes,61.73,macaca_mulatta,Macaca mulatta,31.62,30.109999999999996
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,78.57000000000001,canis_lupus_familiaris,Canis lupus familiaris,48.56999999999999,30.000000000000014
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,90.93333333333334,canis_lupus_familiaris,Canis lupus familiaris,61.29,29.643333333333338
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,85.0,bos_taurus,Bos taurus,55.44,29.560000000000002
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,62.51333333333333,felis_catus,Felis catus,32.96333333333333,29.549999999999997
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,75.36,equus_caballus,Equus caballus,45.89,29.47
-H2AC13,clustered,cerebellum,conservative,4,52.572500000000005,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,79.89750000000001,mus_musculus,Mus musculus,50.623333333333335,29.274166666666673
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,60.586666666666666,human,Homo sapiens,31.560000000000002,29.026666666666664
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.28461538461539,canis_lupus_familiaris,Canis lupus familiaris,61.29,28.994615384615393
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,62.51333333333333,equus_caballus,Equus caballus,33.83,28.68333333333333
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,96.45,canis_lupus_familiaris,Canis lupus familiaris,67.77333333333333,28.676666666666677
-H2AC21,clustered,testis,conservative,4,53.80333333333333,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,61.78666666666667,equus_caballus,Equus caballus,33.68666666666667,28.1
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,41.08,felis_catus,Felis catus,13.49,27.589999999999996
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,human,Homo sapiens,58.904444444444444,macaca_mulatta,Macaca mulatta,31.62,27.284444444444443
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,bos_taurus,Bos taurus,58.612,human,Homo sapiens,31.560000000000002,27.052
-H2AC25,clustered,ovary,conservative,4,53.07333333333334,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,77.035,bos_taurus,Bos taurus,50.785,26.25
-H2AC7,clustered,bone marrow,conservative,4,50.4,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,64.375,canis_lupus_familiaris,Canis lupus familiaris,38.32,26.055
-H2AC7,clustered,bone marrow,conservative,4,50.4,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,64.32,canis_lupus_familiaris,Canis lupus familiaris,38.32,25.999999999999993
-H2AC20,clustered,liver,conservative,4,48.885714285714286,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,91.80571428571429,human,Homo sapiens,66.07636363636364,25.72935064935065
-H2AC21,clustered,testis,conservative,4,53.80333333333333,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,87.49,macaca_mulatta,Macaca mulatta,61.78666666666667,25.703333333333326
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.17416666666666,bos_taurus,Bos taurus,65.19,24.984166666666667
-H2AC25,clustered,colon,conservative,4,51.99000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,72.10499999999999,bos_taurus,Bos taurus,47.24,24.864999999999988
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,57.425,felis_catus,Felis catus,32.96333333333333,24.461666666666666
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,pan_troglodytes,Pan troglodytes,61.73,bos_taurus,Bos taurus,37.27,24.459999999999994
-H2AC7,clustered,bone marrow,conservative,4,50.4,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,88.72,human,Homo sapiens,64.32,24.400000000000006
-H2AC7,clustered,bone marrow,conservative,4,50.4,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,88.72,bos_taurus,Bos taurus,64.375,24.345
-H2AC20,clustered,prefrontal cortex,high_confidence,4,56.2825,macaca_mulatta,Macaca mulatta,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,68.9725,human,Homo sapiens,44.974000000000004,23.998499999999993
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.27,pan_troglodytes,Pan troglodytes,57.425,23.845
-H2AC20,clustered,prefrontal cortex,high_confidence,4,56.2825,macaca_mulatta,Macaca mulatta,felis_catus,Felis catus,equus_caballus,Equus caballus,36.42,felis_catus,Felis catus,12.69,23.730000000000004
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,57.425,equus_caballus,Equus caballus,33.83,23.595
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,90.93333333333334,bos_taurus,Bos taurus,67.4275,23.505833333333342
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,59.330000000000005,felis_catus,Felis catus,35.96333333333333,23.366666666666674
-H2AC13,clustered,cerebellum,conservative,4,52.572500000000005,equus_caballus,Equus caballus,human,Homo sapiens,mus_musculus,Mus musculus,50.623333333333335,human,Homo sapiens,27.325,23.298333333333336
-H2AC20,clustered,liver,conservative,4,48.885714285714286,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,human,Homo sapiens,66.07636363636364,equus_caballus,Equus caballus,42.92,23.156363636363636
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,81.945,bos_taurus,Bos taurus,58.906666666666666,23.038333333333327
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,58.906666666666666,felis_catus,Felis catus,35.96333333333333,22.943333333333335
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.28461538461539,bos_taurus,Bos taurus,67.4275,22.857115384615398
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,97.8075,human,Homo sapiens,75.08500000000001,22.722499999999997
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,86.02,macaca_mulatta,Macaca mulatta,63.32666666666666,22.693333333333335
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,81.945,macaca_mulatta,Macaca mulatta,59.330000000000005,22.614999999999988
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.17416666666666,canis_lupus_familiaris,Canis lupus familiaris,67.77333333333333,22.40083333333334
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,97.8075,macaca_mulatta,Macaca mulatta,75.826,21.98150000000001
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.88111111111112,canis_lupus_familiaris,Canis lupus familiaris,60.07,21.811111111111124
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,human,Homo sapiens,58.904444444444444,bos_taurus,Bos taurus,37.27,21.63444444444444
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,77.1525,canis_lupus_familiaris,Canis lupus familiaris,55.5725,21.580000000000005
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,bos_taurus,Bos taurus,67.4275,equus_caballus,Equus caballus,45.89,21.537499999999994
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,66.72461538461538,equus_caballus,Equus caballus,45.4225,21.302115384615377
-H2AC14,clustered,cerebral cortex,high_confidence,4,59.2,sus_scrofa,Sus scrofa,human,Homo sapiens,bos_taurus,Bos taurus,44.16,human,Homo sapiens,23.27,20.889999999999997
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,97.8075,pan_troglodytes,Pan troglodytes,77.1525,20.655
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,macaca_mulatta,Macaca mulatta,47.75,pan_troglodytes,Pan troglodytes,27.24,20.51
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,75.826,canis_lupus_familiaris,Canis lupus familiaris,55.5725,20.253499999999995
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,75.53999999999999,bos_taurus,Bos taurus,55.44,20.099999999999994
-H2AC25,clustered,colon,conservative,4,51.99000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,92.15,human,Homo sapiens,72.10499999999999,20.045000000000016
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,equus_caballus,Equus caballus,45.89,felis_catus,Felis catus,26.035,19.855
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,75.08500000000001,canis_lupus_familiaris,Canis lupus familiaris,55.5725,19.51250000000001
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,86.02,human,Homo sapiens,66.72461538461538,19.29538461538462
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,60.07,bos_taurus,Bos taurus,41.08,18.990000000000002
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,89.62,macaca_mulatta,Macaca mulatta,70.81,18.810000000000002
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,human,Homo sapiens,31.560000000000002,felis_catus,Felis catus,12.78,18.78
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,macaca_mulatta,Macaca mulatta,47.75,human,Homo sapiens,28.97,18.78
-H2AC14,clustered,cerebral cortex,high_confidence,4,59.2,sus_scrofa,Sus scrofa,human,Homo sapiens,bos_taurus,Bos taurus,44.16,pan_troglodytes,Pan troglodytes,25.39,18.769999999999996
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.27,bos_taurus,Bos taurus,62.51333333333333,18.756666666666668
-H2AC19,clustered,testis,conservative,4,50.38666666666666,human,Homo sapiens,bos_taurus,Bos taurus,human,Homo sapiens,96.25,equus_caballus,Equus caballus,77.53,18.72
-H2AC13,clustered,cerebellum,conservative,4,52.572500000000005,equus_caballus,Equus caballus,human,Homo sapiens,bos_taurus,Bos taurus,69.31666666666666,mus_musculus,Mus musculus,50.623333333333335,18.693333333333328
-H2AC19,clustered,testis,conservative,4,50.38666666666666,human,Homo sapiens,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,95.82,equus_caballus,Equus caballus,77.53,18.289999999999992
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,93.62,human,Homo sapiens,75.53999999999999,18.080000000000013
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,48.56999999999999,felis_catus,Felis catus,30.5,18.069999999999993
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,97.04,felis_catus,Felis catus,79.07000000000001,17.97
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,62.51333333333333,canis_lupus_familiaris,Canis lupus familiaris,44.56875,17.944583333333327
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,63.32666666666666,equus_caballus,Equus caballus,45.4225,17.90416666666666
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,49.2425,canis_lupus_familiaris,Canis lupus familiaris,31.3475,17.895
-H2AC25,clustered,ovary,conservative,4,53.07333333333334,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.82333333333334,human,Homo sapiens,77.035,17.78833333333334
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,82.955,bos_taurus,Bos taurus,65.19,17.765
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,33.66,canis_lupus_familiaris,Canis lupus familiaris,16.05,17.609999999999996
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,66.72461538461538,bos_taurus,Bos taurus,49.2425,17.482115384615376
-H2AC17,clustered,testis,high_confidence,4,58.79333333333332,sus_scrofa,Sus scrofa,felis_catus,Felis catus,human,Homo sapiens,44.59285714285714,felis_catus,Felis catus,27.166666666666668,17.426190476190474
-H2AC19,clustered,bone marrow,high_confidence,4,68.0,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,99.75,human,Homo sapiens,82.56,17.189999999999998
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,equus_caballus,Equus caballus,65.74000000000001,canis_lupus_familiaris,Canis lupus familiaris,48.56999999999999,17.170000000000016
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,32.519999999999996,canis_lupus_familiaris,Canis lupus familiaris,16.05,16.469999999999995
-H2AC8,clustered,brain,conservative,4,54.01500000000001,felis_catus,Felis catus,bos_taurus,Bos taurus,human,Homo sapiens,54.24578947368421,bos_taurus,Bos taurus,37.85,16.39578947368421
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,64.92666666666666,canis_lupus_familiaris,Canis lupus familiaris,48.56999999999999,16.35666666666667
-H2AC20,clustered,liver,conservative,4,48.885714285714286,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,felis_catus,Felis catus,82.265,human,Homo sapiens,66.07636363636364,16.188636363636363
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,48.74,felis_catus,Felis catus,32.96333333333333,15.77666666666667
-H2AC21,clustered,testis,conservative,4,53.80333333333333,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,bos_taurus,Bos taurus,49.27,equus_caballus,Equus caballus,33.68666666666667,15.583333333333336
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,90.93333333333334,macaca_mulatta,Macaca mulatta,75.36,15.573333333333338
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.38,bos_taurus,Bos taurus,58.906666666666666,15.47333333333333
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,61.29,equus_caballus,Equus caballus,45.89,15.399999999999999
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,82.955,canis_lupus_familiaris,Canis lupus familiaris,67.77333333333333,15.181666666666672
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.38,macaca_mulatta,Macaca mulatta,59.330000000000005,15.04999999999999
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,55.44,canis_lupus_familiaris,Canis lupus familiaris,40.5,14.939999999999998
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.28461538461539,macaca_mulatta,Macaca mulatta,75.36,14.924615384615393
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,48.74,equus_caballus,Equus caballus,33.83,14.910000000000004
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,89.62,human,Homo sapiens,74.88,14.740000000000009
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,74.22181818181818,canis_lupus_familiaris,Canis lupus familiaris,60.07,14.151818181818179
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,63.32666666666666,bos_taurus,Bos taurus,49.2425,14.084166666666661
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,45.4225,canis_lupus_familiaris,Canis lupus familiaris,31.3475,14.075
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,75.36,canis_lupus_familiaris,Canis lupus familiaris,61.29,14.07
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,81.945,mus_musculus,Mus musculus,67.905,14.039999999999992
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,62.51333333333333,macaca_mulatta,Macaca mulatta,48.74,13.773333333333326
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.01,pan_troglodytes,Pan troglodytes,80.33,13.680000000000007
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,78.57000000000001,bos_taurus,Bos taurus,64.92666666666666,13.643333333333345
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,96.45,macaca_mulatta,Macaca mulatta,82.955,13.495000000000005
-H2AC19,clustered,bone marrow,high_confidence,4,68.0,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,human,Homo sapiens,82.56,bos_taurus,Bos taurus,69.07,13.490000000000009
-H2AC25,clustered,hypothalamus,conservative,4,53.00124999999999,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,41.805,canis_lupus_familiaris,Canis lupus familiaris,28.35,13.454999999999998
-H2AC25,clustered,hypothalamus,conservative,4,53.00124999999999,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,41.325,canis_lupus_familiaris,Canis lupus familiaris,28.35,12.975000000000001
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,89.62,mus_musculus,Mus musculus,76.695,12.925000000000011
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,57.425,canis_lupus_familiaris,Canis lupus familiaris,44.56875,12.856249999999996
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,78.57000000000001,equus_caballus,Equus caballus,65.74000000000001,12.829999999999998
-H2AC14,clustered,colon,conservative,4,53.85999999999999,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,human,Homo sapiens,55.437777777777775,macaca_mulatta,Macaca mulatta,42.62,12.817777777777778
-H2AC21,clustered,testis,conservative,4,53.80333333333333,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,61.78666666666667,bos_taurus,Bos taurus,49.27,12.516666666666666
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,35.96333333333333,canis_lupus_familiaris,Canis lupus familiaris,23.59,12.373333333333331
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,55.5725,bos_taurus,Bos taurus,43.593333333333334,11.979166666666664
-H2AC8,clustered,brain,conservative,4,54.01500000000001,felis_catus,Felis catus,bos_taurus,Bos taurus,human,Homo sapiens,54.24578947368421,macaca_mulatta,Macaca mulatta,42.3675,11.878289473684212
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,71.87,canis_lupus_familiaris,Canis lupus familiaris,60.07,11.800000000000004
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,macaca_mulatta,Macaca mulatta,46.506,human,Homo sapiens,34.765,11.741
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,44.56875,felis_catus,Felis catus,32.96333333333333,11.60541666666667
-H2AC14,clustered,colon,conservative,4,53.85999999999999,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,human,Homo sapiens,55.437777777777775,bos_taurus,Bos taurus,44.03,11.407777777777774
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,33.66,human,Homo sapiens,22.680000000000003,10.979999999999993
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.01,human,Homo sapiens,83.08,10.930000000000007
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,44.56875,equus_caballus,Equus caballus,33.83,10.738750000000003
-H2AC13,clustered,cerebellum,conservative,4,52.572500000000005,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,79.89750000000001,bos_taurus,Bos taurus,69.31666666666666,10.580833333333345
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,37.75,pan_troglodytes,Pan troglodytes,27.24,10.510000000000002
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.88111111111112,macaca_mulatta,Macaca mulatta,71.87,10.01111111111112
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,macaca_mulatta,Macaca mulatta,47.75,bos_taurus,Bos taurus,37.75,10.0
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,32.519999999999996,human,Homo sapiens,22.680000000000003,9.839999999999993
-H2AC20,clustered,liver,conservative,4,48.885714285714286,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,91.80571428571429,felis_catus,Felis catus,82.265,9.540714285714287
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,85.0,human,Homo sapiens,75.53999999999999,9.460000000000008
-H2AC25,clustered,ovary,conservative,4,53.07333333333334,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,50.785,canis_lupus_familiaris,Canis lupus familiaris,41.75,9.034999999999997
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,67.905,bos_taurus,Bos taurus,58.906666666666666,8.998333333333335
-H2AC17,clustered,testis,high_confidence,4,58.79333333333332,sus_scrofa,Sus scrofa,felis_catus,Felis catus,human,Homo sapiens,44.59285714285714,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,8.789523809523807
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,37.75,human,Homo sapiens,28.97,8.780000000000001
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,57.425,macaca_mulatta,Macaca mulatta,48.74,8.684999999999995
-H2AC17,clustered,testis,high_confidence,4,58.79333333333332,sus_scrofa,Sus scrofa,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,felis_catus,Felis catus,27.166666666666668,8.636666666666667
-H2AC13,clustered,bone marrow,conservative,5,53.120000000000005,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,93.62,mus_musculus,Mus musculus,85.0,8.620000000000005
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,67.905,macaca_mulatta,Macaca mulatta,59.330000000000005,8.574999999999996
-H2AC20,clustered,prefrontal cortex,high_confidence,4,56.2825,macaca_mulatta,Macaca mulatta,felis_catus,Felis catus,human,Homo sapiens,44.974000000000004,equus_caballus,Equus caballus,36.42,8.554000000000002
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,75.36,bos_taurus,Bos taurus,67.4275,7.9325000000000045
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.88111111111112,pan_troglodytes,Pan troglodytes,74.22181818181818,7.6592929292929455
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,81.945,human,Homo sapiens,74.38,7.564999999999998
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,human,Homo sapiens,90.17416666666666,macaca_mulatta,Macaca mulatta,82.955,7.219166666666666
-H2AC25,clustered,colon,conservative,4,51.99000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,47.24,canis_lupus_familiaris,Canis lupus familiaris,40.16,7.080000000000005
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,22.680000000000003,canis_lupus_familiaris,Canis lupus familiaris,16.05,6.630000000000003
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,bos_taurus,Bos taurus,48.7625,equus_caballus,Equus caballus,42.20333333333333,6.55916666666667
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.38,mus_musculus,Mus musculus,67.905,6.474999999999994
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,macaca_mulatta,Macaca mulatta,46.506,pan_troglodytes,Pan troglodytes,40.22,6.286000000000001
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,96.45,human,Homo sapiens,90.17416666666666,6.275833333333338
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,bos_taurus,Bos taurus,67.4275,canis_lupus_familiaris,Canis lupus familiaris,61.29,6.137499999999996
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.695,macaca_mulatta,Macaca mulatta,70.81,5.884999999999991
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,37.27,macaca_mulatta,Macaca mulatta,31.62,5.650000000000002
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,pan_troglodytes,Pan troglodytes,40.22,human,Homo sapiens,34.765,5.454999999999998
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,62.51333333333333,pan_troglodytes,Pan troglodytes,57.425,5.088333333333331
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,human,Homo sapiens,47.2325,equus_caballus,Equus caballus,42.20333333333333,5.029166666666669
-H2AC8,clustered,brain,conservative,4,54.01500000000001,felis_catus,Felis catus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,42.3675,bos_taurus,Bos taurus,37.85,4.517499999999998
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,48.74,canis_lupus_familiaris,Canis lupus familiaris,44.56875,4.171250000000001
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,74.88,macaca_mulatta,Macaca mulatta,70.81,4.069999999999993
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,49.2425,equus_caballus,Equus caballus,45.4225,3.8200000000000003
-H2AC11,clustered,testis,high_confidence,6,54.6725,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,66.72461538461538,macaca_mulatta,Macaca mulatta,63.32666666666666,3.397948717948715
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,46.245000000000005,canis_lupus_familiaris,Canis lupus familiaris,42.875,3.3700000000000045
-H2AC21,clustered,colon,high_confidence,5,64.365,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,pan_troglodytes,Pan troglodytes,61.73,human,Homo sapiens,58.904444444444444,2.825555555555553
-H2AC25,clustered,cerebral cortex,conservative,5,51.135000000000005,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,83.08,pan_troglodytes,Pan troglodytes,80.33,2.75
-H2AC6,clustered,spleen,high_confidence,6,65.41,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,67.77333333333333,bos_taurus,Bos taurus,65.19,2.5833333333333286
-H2AC6,clustered,prefrontal cortex,high_confidence,6,68.39111111111113,human,Homo sapiens,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,74.22181818181818,macaca_mulatta,Macaca mulatta,71.87,2.3518181818181745
-H2AC14,clustered,cerebral cortex,high_confidence,4,59.2,sus_scrofa,Sus scrofa,human,Homo sapiens,pan_troglodytes,Pan troglodytes,25.39,human,Homo sapiens,23.27,2.120000000000001
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,77.1525,human,Homo sapiens,75.08500000000001,2.0674999999999955
-H2AC14,clustered,testis,high_confidence,5,81.27,sus_scrofa,Sus scrofa,felis_catus,Felis catus,macaca_mulatta,Macaca mulatta,60.586666666666666,bos_taurus,Bos taurus,58.612,1.9746666666666641
-H2AX,variant,adipose tissue,conservative,5,48.96000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.695,human,Homo sapiens,74.88,1.8149999999999977
-H2AC21,clustered,cerebral cortex,high_confidence,5,65.45,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,human,Homo sapiens,28.97,pan_troglodytes,Pan troglodytes,27.24,1.7300000000000004
-H2AC20,clustered,testis,high_confidence,5,54.83666666666667,macaca_mulatta,Macaca mulatta,equus_caballus,Equus caballus,bos_taurus,Bos taurus,48.7625,human,Homo sapiens,47.2325,1.5300000000000011
-H2AC14,clustered,colon,conservative,4,53.85999999999999,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,44.03,macaca_mulatta,Macaca mulatta,42.62,1.4100000000000037
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,77.1525,macaca_mulatta,Macaca mulatta,75.826,1.32650000000001
-H2AC14,clustered,brain,high_confidence,5,60.47,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,33.66,macaca_mulatta,Macaca mulatta,32.519999999999996,1.1400000000000006
-H2AC6,clustered,testis,conservative,7,48.306666666666665,human,Homo sapiens,felis_catus,Felis catus,equus_caballus,Equus caballus,33.83,felis_catus,Felis catus,32.96333333333333,0.8666666666666671
-MACROH2A2,variant,zone of skin,conservative,5,48.07000000000001,human,Homo sapiens,felis_catus,Felis catus,equus_caballus,Equus caballus,65.74000000000001,bos_taurus,Bos taurus,64.92666666666666,0.8133333333333468
-H2AC21,clustered,cerebellum,high_confidence,5,58.7,equus_caballus,Equus caballus,human,Homo sapiens,equus_caballus,Equus caballus,93.465,sus_scrofa,Sus scrofa,92.67500000000001,0.789999999999992
-H2AC6,clustered,cerebellum,high_confidence,6,54.21416666666667,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,75.826,human,Homo sapiens,75.08500000000001,0.7409999999999854
-H2AC6,clustered,adult mammalian kidney,high_confidence,7,64.89833333333334,pan_troglodytes,Pan troglodytes,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,90.93333333333334,human,Homo sapiens,90.28461538461539,0.6487179487179446
-H2AC25,clustered,hypothalamus,conservative,4,53.00124999999999,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,41.805,sus_scrofa,Sus scrofa,41.325,0.4799999999999969
-H2AC19,clustered,testis,conservative,4,50.38666666666666,human,Homo sapiens,bos_taurus,Bos taurus,human,Homo sapiens,96.25,pan_troglodytes,Pan troglodytes,95.82,0.4300000000000068
-H2AC1,clustered,testis,high_confidence,7,58.35499999999999,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,59.330000000000005,bos_taurus,Bos taurus,58.906666666666666,0.4233333333333391
-H2AC7,clustered,bone marrow,conservative,4,50.4,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,64.375,human,Homo sapiens,64.32,0.05500000000000682
+H2AC14,clustered,bone marrow,high_confidence,4,99.63,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,99.63,canis_lupus_familiaris,Canis lupus familiaris,0.0,99.63
+H2AC8,clustered,bone marrow,high_confidence,4,99.38,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,99.38,bos_taurus,Bos taurus,0.0,99.38
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,96.48,canis_lupus_familiaris,Canis lupus familiaris,0.0,96.48
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,96.48,pan_troglodytes,Pan troglodytes,0.0,96.48
+H2AC7,clustered,brain,high_confidence,4,96.09,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,96.09,canis_lupus_familiaris,Canis lupus familiaris,0.0,96.09
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.955,bos_taurus,Bos taurus,0.0,94.955
+H2AC11,clustered,bone marrow,high_confidence,4,94.42,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.42,bos_taurus,Bos taurus,0.0,94.42
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.05,canis_lupus_familiaris,Canis lupus familiaris,0.0,94.05
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.05,pan_troglodytes,Pan troglodytes,0.0,94.05
+H2AC20,clustered,brain,high_confidence,4,93.995,felis_catus,Felis catus,bos_taurus,Bos taurus,felis_catus,Felis catus,93.995,bos_taurus,Bos taurus,0.0,93.995
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,93.465,bos_taurus,Bos taurus,0.0,93.465
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,sus_scrofa,Sus scrofa,92.675,bos_taurus,Bos taurus,0.0,92.675
+H2AC19,clustered,adult mammalian kidney,high_confidence,4,92.61,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,92.61,equus_caballus,Equus caballus,0.0,92.61
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.15,pan_troglodytes,Pan troglodytes,0.0,92.15
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,91.80571428571427,bos_taurus,Bos taurus,0.0,91.80571428571427
+H2AC14,clustered,ovary,high_confidence,4,91.06666666666666,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,91.06666666666666,canis_lupus_familiaris,Canis lupus familiaris,0.0,91.06666666666666
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,88.63,canis_lupus_familiaris,Canis lupus familiaris,0.0,88.63
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,88.63,macaca_mulatta,Macaca mulatta,0.0,88.63
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,87.49,human,Homo sapiens,0.0,87.49
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,87.49,pan_troglodytes,Pan troglodytes,0.0,87.49
+H2AC19,clustered,adult mammalian kidney,high_confidence,4,92.61,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,human,Homo sapiens,87.00181818181818,equus_caballus,Equus caballus,0.0,87.00181818181818
+MACROH2A2,variant,thymus,high_confidence,4,86.695,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,86.695,pan_troglodytes,Pan troglodytes,0.0,86.695
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,86.03666666666668,bos_taurus,Bos taurus,0.0,86.03666666666668
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,85.96,equus_caballus,Equus caballus,0.0,85.96
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,85.96,macaca_mulatta,Macaca mulatta,0.0,85.96
+H2AC8,clustered,bone marrow,high_confidence,4,99.38,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,equus_caballus,Equus caballus,85.07,bos_taurus,Bos taurus,0.0,85.07
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,84.56857142857143,felis_catus,Felis catus,0.0,84.56857142857143
+H2AC13,clustered,kidney,high_confidence,4,84.275,mus_musculus,Mus musculus,macaca_mulatta,Macaca mulatta,mus_musculus,Mus musculus,84.275,macaca_mulatta,Macaca mulatta,0.0,84.275
+MACROH2A2,variant,metanephros cortex,high_confidence,4,83.965,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,83.965,sus_scrofa,Sus scrofa,0.0,83.965
+H2AC13,clustered,kidney,high_confidence,4,84.275,mus_musculus,Mus musculus,macaca_mulatta,Macaca mulatta,human,Homo sapiens,82.935,macaca_mulatta,Macaca mulatta,0.0,82.935
+H2AC17,clustered,kidney,high_confidence,4,82.89,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,82.89,macaca_mulatta,Macaca mulatta,0.0,82.89
+H2AC17,clustered,kidney,high_confidence,4,82.89,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,82.89,sus_scrofa,Sus scrofa,0.0,82.89
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,equus_caballus,Equus caballus,0.0,82.71000000000001
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,macaca_mulatta,Macaca mulatta,0.0,82.71000000000001
+H2AC20,clustered,cerebellum,conservative,4,82.508,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,82.508,bos_taurus,Bos taurus,0.0,82.508
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,82.47,canis_lupus_familiaris,Canis lupus familiaris,0.0,82.47
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,82.47,macaca_mulatta,Macaca mulatta,0.0,82.47
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,felis_catus,Felis catus,82.265,bos_taurus,Bos taurus,0.0,82.265
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,82.135,sus_scrofa,Sus scrofa,0.0,82.135
+H2AC25,clustered,zone of skin,conservative,4,81.97,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.97,felis_catus,Felis catus,0.0,81.97
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,81.88111111111112,equus_caballus,Equus caballus,0.0,81.88111111111112
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,81.59,pan_troglodytes,Pan troglodytes,0.0,81.59
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.05,felis_catus,Felis catus,12.78,81.27
+H2AC14,clustered,kidney,conservative,4,81.15,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,81.15,macaca_mulatta,Macaca mulatta,0.0,81.15
+H2AC14,clustered,kidney,conservative,4,81.15,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,81.15,sus_scrofa,Sus scrofa,0.0,81.15
+H2AC20,clustered,spleen,conservative,4,80.99000000000001,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,80.99000000000001,bos_taurus,Bos taurus,0.0,80.99000000000001
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,80.63166666666666,pan_troglodytes,Pan troglodytes,0.0,80.63166666666666
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,80.63166666666666,sus_scrofa,Sus scrofa,0.0,80.63166666666666
+H2AC21,clustered,lymph node,conservative,4,80.35,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,80.35,sus_scrofa,Sus scrofa,0.0,80.35
+H2AC7,clustered,cerebellum,conservative,4,80.2925,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,80.2925,bos_taurus,Bos taurus,0.0,80.2925
+H2AC7,clustered,cerebellum,conservative,4,80.2925,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,80.2925,canis_lupus_familiaris,Canis lupus familiaris,0.0,80.2925
+H2AC7,clustered,cerebellum,conservative,4,80.2925,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,80.2925,human,Homo sapiens,0.0,80.2925
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,79.93,bos_taurus,Bos taurus,0.0,79.93
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,79.93,human,Homo sapiens,0.0,79.93
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,79.93,macaca_mulatta,Macaca mulatta,0.0,79.93
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,79.93,sus_scrofa,Sus scrofa,0.0,79.93
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,79.89750000000001,canis_lupus_familiaris,Canis lupus familiaris,0.0,79.89750000000001
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,79.89750000000001,macaca_mulatta,Macaca mulatta,0.0,79.89750000000001
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,79.69142857142857,felis_catus,Felis catus,0.0,79.69142857142857
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,79.635,macaca_mulatta,Macaca mulatta,0.0,79.635
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,human,Homo sapiens,79.4875,pan_troglodytes,Pan troglodytes,0.0,79.4875
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,79.3925,macaca_mulatta,Macaca mulatta,0.0,79.3925
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,79.3925,sus_scrofa,Sus scrofa,0.0,79.3925
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,78.27000000000001,canis_lupus_familiaris,Canis lupus familiaris,0.0,78.27000000000001
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,78.27000000000001,human,Homo sapiens,0.0,78.27000000000001
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,78.27000000000001,macaca_mulatta,Macaca mulatta,0.0,78.27000000000001
+H2AC25,clustered,bone marrow,conservative,4,78.26,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,78.26,canis_lupus_familiaris,Canis lupus familiaris,0.0,78.26
+H2AC13,clustered,thymus,conservative,4,78.1225,mus_musculus,Mus musculus,human,Homo sapiens,mus_musculus,Mus musculus,78.1225,human,Homo sapiens,0.0,78.1225
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,77.968,felis_catus,Felis catus,0.0,77.968
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,77.968,macaca_mulatta,Macaca mulatta,0.0,77.968
+H2AC12,clustered,bone marrow,conservative,4,77.07,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,77.07,canis_lupus_familiaris,Canis lupus familiaris,0.0,77.07
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.43928571428572,canis_lupus_familiaris,Canis lupus familiaris,0.0,76.43928571428572
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,felis_catus,Felis catus,76.03999999999999,equus_caballus,Equus caballus,0.0,76.03999999999999
+H2AC14,clustered,bone marrow,high_confidence,4,99.63,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,75.65,canis_lupus_familiaris,Canis lupus familiaris,0.0,75.65
+H2AC25,clustered,metanephros cortex,conservative,4,75.5,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,75.5,canis_lupus_familiaris,Canis lupus familiaris,0.0,75.5
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,75.44,canis_lupus_familiaris,Canis lupus familiaris,0.0,75.44
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,74.22181818181818,equus_caballus,Equus caballus,0.0,74.22181818181818
+H2AC8,clustered,bone marrow,high_confidence,4,99.38,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,human,Homo sapiens,74.065,bos_taurus,Bos taurus,0.0,74.065
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,human,Homo sapiens,72.10499999999999,pan_troglodytes,Pan troglodytes,0.0,72.10499999999999
+MACROH2A2,variant,thymus,high_confidence,4,86.695,human,Homo sapiens,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,72.1,pan_troglodytes,Pan troglodytes,0.0,72.1
+H2AC13,clustered,thymus,conservative,4,78.1225,mus_musculus,Mus musculus,human,Homo sapiens,bos_taurus,Bos taurus,72.0,human,Homo sapiens,0.0,72.0
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,71.87,equus_caballus,Equus caballus,0.0,71.87
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,69.31666666666666,canis_lupus_familiaris,Canis lupus familiaris,0.0,69.31666666666666
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,69.31666666666666,macaca_mulatta,Macaca mulatta,0.0,69.31666666666666
+H2AC25,clustered,bone marrow,conservative,4,78.26,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,69.23,canis_lupus_familiaris,Canis lupus familiaris,0.0,69.23
+H2AC20,clustered,spleen,conservative,4,80.99000000000001,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,68.82090909090908,bos_taurus,Bos taurus,0.0,68.82090909090908
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,81.88111111111112,felis_catus,Felis catus,13.49,68.39111111111113
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,68.08,equus_caballus,Equus caballus,0.0,68.08
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,68.08,macaca_mulatta,Macaca mulatta,0.0,68.08
+H2AC14,clustered,ovary,high_confidence,4,91.06666666666666,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,91.06666666666666,human,Homo sapiens,23.1,67.96666666666667
+H2AC20,clustered,brain,high_confidence,4,93.995,felis_catus,Felis catus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,67.4925,bos_taurus,Bos taurus,0.0,67.4925
+H2AC20,clustered,cerebellum,conservative,4,82.508,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,66.94800000000001,bos_taurus,Bos taurus,0.0,66.94800000000001
+H2AC11,clustered,bone marrow,high_confidence,4,94.42,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,66.63,bos_taurus,Bos taurus,0.0,66.63
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,66.4709090909091,bos_taurus,Bos taurus,0.0,66.4709090909091
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,66.07636363636364,bos_taurus,Bos taurus,0.0,66.07636363636364
+H2AC7,clustered,brain,high_confidence,4,96.09,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,96.09,human,Homo sapiens,30.096666666666664,65.99333333333334
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,pan_troglodytes,Pan troglodytes,64.92,macaca_mulatta,Macaca mulatta,0.0,64.92
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,64.72,felis_catus,Felis catus,0.0,64.72
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,64.72,macaca_mulatta,Macaca mulatta,0.0,64.72
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,human,Homo sapiens,63.71428571428572,macaca_mulatta,Macaca mulatta,0.0,63.71428571428572
+H2AC11,clustered,bone marrow,high_confidence,4,94.42,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,63.36,bos_taurus,Bos taurus,0.0,63.36
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.05,human,Homo sapiens,31.56,62.489999999999995
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,macaca_mulatta,Macaca mulatta,61.78666666666667,human,Homo sapiens,0.0,61.78666666666667
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,macaca_mulatta,Macaca mulatta,61.78666666666667,pan_troglodytes,Pan troglodytes,0.0,61.78666666666667
+H2AC25,clustered,metanephros cortex,conservative,4,75.5,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,61.645,canis_lupus_familiaris,Canis lupus familiaris,0.0,61.645
+H2AC12,clustered,bone marrow,conservative,4,77.07,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,61.6,canis_lupus_familiaris,Canis lupus familiaris,0.0,61.6
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,79.3925,canis_lupus_familiaris,Canis lupus familiaris,18.66,60.7325
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,74.22181818181818,felis_catus,Felis catus,13.49,60.73181818181818
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,60.586666666666666,canis_lupus_familiaris,Canis lupus familiaris,0.0,60.586666666666666
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,60.586666666666666,pan_troglodytes,Pan troglodytes,0.0,60.586666666666666
+H2AC25,clustered,metanephros cortex,conservative,4,75.5,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,60.41,canis_lupus_familiaris,Canis lupus familiaris,0.0,60.41
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,60.07,equus_caballus,Equus caballus,0.0,60.07
+H2AC25,clustered,bone marrow,conservative,4,78.26,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,59.58,canis_lupus_familiaris,Canis lupus familiaris,0.0,59.58
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,82.47,human,Homo sapiens,23.27,59.2
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,85.96,felis_catus,Felis catus,27.166666666666668,58.79333333333332
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,93.465,human,Homo sapiens,34.765,58.7
+MACROH2A2,variant,thymus,high_confidence,4,86.695,human,Homo sapiens,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,58.64,pan_troglodytes,Pan troglodytes,0.0,58.64
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,58.612,canis_lupus_familiaris,Canis lupus familiaris,0.0,58.612
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,58.612,pan_troglodytes,Pan troglodytes,0.0,58.612
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,71.87,felis_catus,Felis catus,13.49,58.38
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,sus_scrofa,Sus scrofa,92.675,human,Homo sapiens,34.765,57.91
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,57.72166666666666,bos_taurus,Bos taurus,0.0,57.72166666666666
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,82.47,pan_troglodytes,Pan troglodytes,25.39,57.08
+H2AC19,clustered,adult mammalian kidney,high_confidence,4,92.61,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,92.61,bos_taurus,Bos taurus,35.64,56.97
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,56.510000000000005,sus_scrofa,Sus scrofa,0.0,56.510000000000005
+H2AC14,clustered,bone marrow,high_confidence,4,99.63,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,56.21,canis_lupus_familiaris,Canis lupus familiaris,0.0,56.21
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,56.083333333333336,equus_caballus,Equus caballus,0.0,56.083333333333336
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,56.083333333333336,macaca_mulatta,Macaca mulatta,0.0,56.083333333333336
+H2AC20,clustered,cerebellum,conservative,4,82.508,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,56.04,bos_taurus,Bos taurus,0.0,56.04
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,55.64,sus_scrofa,Sus scrofa,0.0,55.64
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,88.63,human,Homo sapiens,33.169999999999995,55.46
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,55.437777777777775,canis_lupus_familiaris,Canis lupus familiaris,0.0,55.437777777777775
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,55.437777777777775,pan_troglodytes,Pan troglodytes,0.0,55.437777777777775
+MACROH2A2,variant,metanephros cortex,high_confidence,4,83.965,human,Homo sapiens,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,55.41,sus_scrofa,Sus scrofa,0.0,55.41
+H2AC21,clustered,lymph node,conservative,4,80.35,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,54.965,sus_scrofa,Sus scrofa,0.0,54.965
+H2AC7,clustered,brain,high_confidence,4,96.09,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,96.09,bos_taurus,Bos taurus,41.4,54.690000000000005
+MACROH2A2,variant,metanephros cortex,high_confidence,4,83.965,human,Homo sapiens,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,54.68,sus_scrofa,Sus scrofa,0.0,54.68
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,54.61,sus_scrofa,Sus scrofa,0.0,54.61
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.43928571428572,felis_catus,Felis catus,22.295,54.144285714285715
+H2AC13,clustered,thymus,conservative,4,78.1225,mus_musculus,Mus musculus,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,54.14,human,Homo sapiens,0.0,54.14
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,96.48,macaca_mulatta,Macaca mulatta,42.62,53.86000000000001
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,87.49,equus_caballus,Equus caballus,33.68666666666667,53.80333333333333
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,53.325,bos_taurus,Bos taurus,0.0,53.325
+H2AC21,clustered,lymph node,conservative,4,80.35,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,human,Homo sapiens,53.25,sus_scrofa,Sus scrofa,0.0,53.25
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,93.465,pan_troglodytes,Pan troglodytes,40.22,53.245000000000005
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,75.44,felis_catus,Felis catus,22.295,53.144999999999996
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,52.985,bos_taurus,Bos taurus,0.0,52.985
+H2AC13,clustered,kidney,high_confidence,4,84.275,mus_musculus,Mus musculus,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,52.87,macaca_mulatta,Macaca mulatta,0.0,52.87
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,52.83,sus_scrofa,Sus scrofa,0.0,52.83
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,mus_musculus,Mus musculus,52.82272727272727,equus_caballus,Equus caballus,0.0,52.82272727272727
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,52.74,equus_caballus,Equus caballus,0.0,52.74
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,52.74,macaca_mulatta,Macaca mulatta,0.0,52.74
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,52.7,pan_troglodytes,Pan troglodytes,0.0,52.7
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,52.7,sus_scrofa,Sus scrofa,0.0,52.7
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,79.89750000000001,human,Homo sapiens,27.325,52.572500000000005
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,sus_scrofa,Sus scrofa,92.675,pan_troglodytes,Pan troglodytes,40.22,52.455
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,96.48,bos_taurus,Bos taurus,44.03,52.45
+H2AC14,clustered,ovary,high_confidence,4,91.06666666666666,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,52.03666666666667,canis_lupus_familiaris,Canis lupus familiaris,0.0,52.03666666666667
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.15,canis_lupus_familiaris,Canis lupus familiaris,40.16,51.99000000000001
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,51.94,pan_troglodytes,Pan troglodytes,0.0,51.94
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,51.94,sus_scrofa,Sus scrofa,0.0,51.94
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,51.87,pan_troglodytes,Pan troglodytes,0.0,51.87
+H2AC20,clustered,brain,high_confidence,4,93.995,felis_catus,Felis catus,bos_taurus,Bos taurus,human,Homo sapiens,51.86333333333334,bos_taurus,Bos taurus,0.0,51.86333333333334
+H2AC19,clustered,adult mammalian kidney,high_confidence,4,92.61,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,human,Homo sapiens,87.00181818181818,bos_taurus,Bos taurus,35.64,51.36181818181818
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,felis_catus,Felis catus,51.11,bos_taurus,Bos taurus,0.0,51.11
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,bos_taurus,Bos taurus,50.80285714285714,equus_caballus,Equus caballus,0.0,50.80285714285714
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,50.623333333333335,canis_lupus_familiaris,Canis lupus familiaris,0.0,50.623333333333335
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,50.623333333333335,macaca_mulatta,Macaca mulatta,0.0,50.623333333333335
+H2AC12,clustered,bone marrow,conservative,4,77.07,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,50.455,canis_lupus_familiaris,Canis lupus familiaris,0.0,50.455
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,50.32,felis_catus,Felis catus,0.0,50.32
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,85.96,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,50.15666666666666
+H2AC20,clustered,spleen,conservative,4,80.99000000000001,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,felis_catus,Felis catus,50.15,bos_taurus,Bos taurus,0.0,50.15
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,49.98857142857143,pan_troglodytes,Pan troglodytes,0.0,49.98857142857143
+H2AC17,clustered,kidney,high_confidence,4,82.89,human,Homo sapiens,macaca_mulatta,Macaca mulatta,canis_lupus_familiaris,Canis lupus familiaris,49.71,macaca_mulatta,Macaca mulatta,0.0,49.71
+H2AC17,clustered,kidney,high_confidence,4,82.89,human,Homo sapiens,macaca_mulatta,Macaca mulatta,canis_lupus_familiaris,Canis lupus familiaris,49.71,sus_scrofa,Sus scrofa,0.0,49.71
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,bos_taurus,Bos taurus,49.27,human,Homo sapiens,0.0,49.27
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,bos_taurus,Bos taurus,49.27,pan_troglodytes,Pan troglodytes,0.0,49.27
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,91.80571428571427,equus_caballus,Equus caballus,42.92,48.88571428571427
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,60.586666666666666,felis_catus,Felis catus,12.78,47.806666666666665
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,86.03666666666668,equus_caballus,Equus caballus,38.28,47.756666666666675
+H2AC14,clustered,kidney,conservative,4,81.15,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,81.15,bos_taurus,Bos taurus,33.48,47.67000000000001
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,47.24,pan_troglodytes,Pan troglodytes,0.0,47.24
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,bos_taurus,Bos taurus,47.188,equus_caballus,Equus caballus,0.0,47.188
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,bos_taurus,Bos taurus,47.188,macaca_mulatta,Macaca mulatta,0.0,47.188
+H2AC25,clustered,zone of skin,conservative,4,81.97,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.97,canis_lupus_familiaris,Canis lupus familiaris,34.822,47.147999999999996
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,93.465,macaca_mulatta,Macaca mulatta,46.506,46.959
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,46.875,bos_taurus,Bos taurus,0.0,46.875
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,46.875,human,Homo sapiens,0.0,46.875
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,46.875,macaca_mulatta,Macaca mulatta,0.0,46.875
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,46.875,sus_scrofa,Sus scrofa,0.0,46.875
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,bos_taurus,Bos taurus,46.832,felis_catus,Felis catus,0.0,46.832
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,bos_taurus,Bos taurus,46.832,macaca_mulatta,Macaca mulatta,0.0,46.832
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,84.56857142857143,equus_caballus,Equus caballus,37.89,46.67857142857143
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,60.07,felis_catus,Felis catus,13.49,46.58
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,46.506,bos_taurus,Bos taurus,0.0,46.506
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,46.428,canis_lupus_familiaris,Canis lupus familiaris,0.0,46.428
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,sus_scrofa,Sus scrofa,92.675,macaca_mulatta,Macaca mulatta,46.506,46.169
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,45.95,equus_caballus,Equus caballus,0.0,45.95
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,45.95,macaca_mulatta,Macaca mulatta,0.0,45.95
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,58.612,felis_catus,Felis catus,12.78,45.832
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,88.63,bos_taurus,Bos taurus,42.948,45.681999999999995
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,45.68,canis_lupus_familiaris,Canis lupus familiaris,0.0,45.68
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,45.68,human,Homo sapiens,0.0,45.68
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,45.68,macaca_mulatta,Macaca mulatta,0.0,45.68
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.15,bos_taurus,Bos taurus,47.24,44.910000000000004
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,human,Homo sapiens,44.59285714285714,equus_caballus,Equus caballus,0.0,44.59285714285714
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,human,Homo sapiens,44.59285714285714,macaca_mulatta,Macaca mulatta,0.0,44.59285714285714
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,human,Homo sapiens,44.434000000000005,felis_catus,Felis catus,0.0,44.434000000000005
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,human,Homo sapiens,44.434000000000005,macaca_mulatta,Macaca mulatta,0.0,44.434000000000005
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,44.4,macaca_mulatta,Macaca mulatta,0.0,44.4
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,44.4,sus_scrofa,Sus scrofa,0.0,44.4
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.16,canis_lupus_familiaris,Canis lupus familiaris,0.0,44.16
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.16,macaca_mulatta,Macaca mulatta,0.0,44.16
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.03,canis_lupus_familiaris,Canis lupus familiaris,0.0,44.03
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.03,pan_troglodytes,Pan troglodytes,0.0,44.03
+H2AC25,clustered,zone of skin,conservative,4,81.97,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,43.57333333333333,felis_catus,Felis catus,0.0,43.57333333333333
+H2AC14,clustered,bone marrow,high_confidence,4,99.63,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,99.63,bos_taurus,Bos taurus,56.21,43.419999999999995
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,43.403333333333336,macaca_mulatta,Macaca mulatta,0.0,43.403333333333336
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,42.948,canis_lupus_familiaris,Canis lupus familiaris,0.0,42.948
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,42.948,macaca_mulatta,Macaca mulatta,0.0,42.948
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,equus_caballus,Equus caballus,42.92,bos_taurus,Bos taurus,0.0,42.92
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,42.62,canis_lupus_familiaris,Canis lupus familiaris,0.0,42.62
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,42.62,pan_troglodytes,Pan troglodytes,0.0,42.62
+H2AC20,clustered,brain,high_confidence,4,93.995,felis_catus,Felis catus,bos_taurus,Bos taurus,felis_catus,Felis catus,93.995,human,Homo sapiens,51.86333333333334,42.13166666666667
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,69.31666666666666,human,Homo sapiens,27.325,41.99166666666666
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.955,pan_troglodytes,Pan troglodytes,52.985,41.97
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,79.69142857142857,equus_caballus,Equus caballus,37.89,41.80142857142857
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.955,macaca_mulatta,Macaca mulatta,53.325,41.629999999999995
+H2AC7,clustered,brain,high_confidence,4,96.09,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,41.4,canis_lupus_familiaris,Canis lupus familiaris,0.0,41.4
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,85.96,human,Homo sapiens,44.59285714285714,41.36714285714285
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,41.335,felis_catus,Felis catus,0.0,41.335
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,41.335,macaca_mulatta,Macaca mulatta,0.0,41.335
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,macaca_mulatta,Macaca mulatta,41.2,pan_troglodytes,Pan troglodytes,0.0,41.2
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,bos_taurus,Bos taurus,41.08,equus_caballus,Equus caballus,0.0,41.08
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,96.48,human,Homo sapiens,55.437777777777775,41.04222222222223
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,81.88111111111112,bos_taurus,Bos taurus,41.08,40.801111111111126
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,40.59666666666667,canis_lupus_familiaris,Canis lupus familiaris,0.0,40.59666666666667
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,40.59666666666667,human,Homo sapiens,0.0,40.59666666666667
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,40.59666666666667,macaca_mulatta,Macaca mulatta,0.0,40.59666666666667
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,81.59,macaca_mulatta,Macaca mulatta,41.2,40.39
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,40.22,bos_taurus,Bos taurus,0.0,40.22
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,40.16,pan_troglodytes,Pan troglodytes,0.0,40.16
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,human,Homo sapiens,39.82,equus_caballus,Equus caballus,0.0,39.82
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,39.685,equus_caballus,Equus caballus,0.0,39.685
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,felis_catus,Felis catus,76.03999999999999,canis_lupus_familiaris,Canis lupus familiaris,36.596,39.443999999999996
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,felis_catus,Felis catus,82.265,equus_caballus,Equus caballus,42.92,39.345
+H2AC14,clustered,ovary,high_confidence,4,91.06666666666666,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,91.06666666666666,bos_taurus,Bos taurus,52.03666666666667,39.029999999999994
+H2AC25,clustered,zone of skin,conservative,4,81.97,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,81.97,bos_taurus,Bos taurus,43.57333333333333,38.39666666666667
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,82.47,bos_taurus,Bos taurus,44.16,38.31
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,human,Homo sapiens,79.4875,macaca_mulatta,Macaca mulatta,41.2,38.287499999999994
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,equus_caballus,Equus caballus,38.28,bos_taurus,Bos taurus,0.0,38.28
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,87.49,bos_taurus,Bos taurus,49.27,38.21999999999999
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,equus_caballus,Equus caballus,37.89,felis_catus,Felis catus,0.0,37.89
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,78.27000000000001,bos_taurus,Bos taurus,40.59666666666667,37.67333333333334
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.955,human,Homo sapiens,57.72166666666666,37.23333333333334
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,canis_lupus_familiaris,Canis lupus familiaris,45.95,36.760000000000005
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,77.968,canis_lupus_familiaris,Canis lupus familiaris,41.335,36.633
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,36.596,equus_caballus,Equus caballus,0.0,36.596
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,felis_catus,Felis catus,76.03999999999999,macaca_mulatta,Macaca mulatta,39.685,36.35499999999999
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,79.635,bos_taurus,Bos taurus,43.403333333333336,36.23166666666667
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,felis_catus,Felis catus,76.03999999999999,human,Homo sapiens,39.82,36.21999999999999
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,equus_caballus,Equus caballus,0.0,35.803333333333335
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,macaca_mulatta,Macaca mulatta,0.0,35.803333333333335
+H2AC19,clustered,adult mammalian kidney,high_confidence,4,92.61,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,bos_taurus,Bos taurus,35.64,equus_caballus,Equus caballus,0.0,35.64
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,bos_taurus,Bos taurus,47.188,35.522000000000006
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.05,bos_taurus,Bos taurus,58.612,35.437999999999995
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,79.3925,bos_taurus,Bos taurus,44.4,34.9925
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,86.03666666666668,felis_catus,Felis catus,51.11,34.92666666666668
+H2AC25,clustered,zone of skin,conservative,4,81.97,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,34.822,felis_catus,Felis catus,0.0,34.822
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,34.765,bos_taurus,Bos taurus,0.0,34.765
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,84.56857142857143,bos_taurus,Bos taurus,50.32,34.24857142857143
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,equus_caballus,Equus caballus,33.68666666666667,human,Homo sapiens,0.0,33.68666666666667
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,equus_caballus,Equus caballus,33.68666666666667,pan_troglodytes,Pan troglodytes,0.0,33.68666666666667
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,77.968,human,Homo sapiens,44.434000000000005,33.534
+H2AC14,clustered,kidney,conservative,4,81.15,human,Homo sapiens,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,33.48,macaca_mulatta,Macaca mulatta,0.0,33.48
+H2AC14,clustered,kidney,conservative,4,81.15,human,Homo sapiens,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,33.48,sus_scrofa,Sus scrofa,0.0,33.48
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,94.05,macaca_mulatta,Macaca mulatta,60.586666666666666,33.46333333333333
+H2AC17,clustered,kidney,high_confidence,4,82.89,human,Homo sapiens,macaca_mulatta,Macaca mulatta,human,Homo sapiens,82.89,canis_lupus_familiaris,Canis lupus familiaris,49.71,33.18
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,33.169999999999995,canis_lupus_familiaris,Canis lupus familiaris,0.0,33.169999999999995
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,33.169999999999995,macaca_mulatta,Macaca mulatta,0.0,33.169999999999995
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,74.22181818181818,bos_taurus,Bos taurus,41.08,33.14181818181818
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,79.93,canis_lupus_familiaris,Canis lupus familiaris,46.875,33.05500000000001
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,78.27000000000001,pan_troglodytes,Pan troglodytes,45.68,32.59000000000001
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,human,Homo sapiens,72.10499999999999,canis_lupus_familiaris,Canis lupus familiaris,40.16,31.944999999999993
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,81.59,bos_taurus,Bos taurus,49.98857142857143,31.60142857142857
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,31.56,canis_lupus_familiaris,Canis lupus familiaris,0.0,31.56
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,31.56,pan_troglodytes,Pan troglodytes,0.0,31.56
+H2AC13,clustered,kidney,high_confidence,4,84.275,mus_musculus,Mus musculus,macaca_mulatta,Macaca mulatta,mus_musculus,Mus musculus,84.275,bos_taurus,Bos taurus,52.87,31.40500000000001
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,77.968,bos_taurus,Bos taurus,46.832,31.136000000000003
+H2AC11,clustered,bone marrow,high_confidence,4,94.42,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.42,human,Homo sapiens,63.36,31.060000000000002
+H2AC20,clustered,spleen,conservative,4,80.99000000000001,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,80.99000000000001,felis_catus,Felis catus,50.15,30.84000000000001
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,71.87,bos_taurus,Bos taurus,41.08,30.790000000000006
+H2AC7,clustered,brain,high_confidence,4,96.09,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,30.096666666666664,canis_lupus_familiaris,Canis lupus familiaris,0.0,30.096666666666664
+H2AC13,clustered,kidney,high_confidence,4,84.275,mus_musculus,Mus musculus,macaca_mulatta,Macaca mulatta,human,Homo sapiens,82.935,bos_taurus,Bos taurus,52.87,30.065000000000005
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.43928571428572,human,Homo sapiens,46.428,30.01128571428572
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,sus_scrofa,Sus scrofa,52.74,29.970000000000006
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,81.59,sus_scrofa,Sus scrofa,51.87,29.720000000000006
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,human,Homo sapiens,79.4875,bos_taurus,Bos taurus,49.98857142857143,29.498928571428564
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,79.69142857142857,bos_taurus,Bos taurus,50.32,29.371428571428574
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,82.135,pan_troglodytes,Pan troglodytes,52.83,29.305000000000007
+MACROH2A2,variant,metanephros cortex,high_confidence,4,83.965,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,83.965,canis_lupus_familiaris,Canis lupus familiaris,54.68,29.285000000000004
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,79.89750000000001,mus_musculus,Mus musculus,50.623333333333335,29.274166666666673
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,60.586666666666666,human,Homo sapiens,31.56,29.026666666666667
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,75.44,human,Homo sapiens,46.428,29.012
+H2AC14,clustered,ovary,high_confidence,4,91.06666666666666,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,52.03666666666667,human,Homo sapiens,23.1,28.936666666666667
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,80.63166666666666,bos_taurus,Bos taurus,51.94,28.691666666666663
+MACROH2A2,variant,metanephros cortex,high_confidence,4,83.965,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,83.965,bos_taurus,Bos taurus,55.41,28.555000000000007
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,66.4709090909091,equus_caballus,Equus caballus,38.28,28.190909090909102
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,macaca_mulatta,Macaca mulatta,61.78666666666667,equus_caballus,Equus caballus,33.68666666666667,28.1
+MACROH2A2,variant,thymus,high_confidence,4,86.695,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,86.695,canis_lupus_familiaris,Canis lupus familiaris,58.64,28.054999999999993
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,80.63166666666666,canis_lupus_familiaris,Canis lupus familiaris,52.7,27.931666666666658
+H2AC11,clustered,bone marrow,high_confidence,4,94.42,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,94.42,canis_lupus_familiaris,Canis lupus familiaris,66.63,27.790000000000006
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,human,Homo sapiens,79.4875,sus_scrofa,Sus scrofa,51.87,27.6175
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,bos_taurus,Bos taurus,41.08,felis_catus,Felis catus,13.49,27.589999999999996
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,82.135,macaca_mulatta,Macaca mulatta,54.61,27.525000000000006
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,27.325,canis_lupus_familiaris,Canis lupus familiaris,0.0,27.325
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,27.325,macaca_mulatta,Macaca mulatta,0.0,27.325
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,felis_catus,Felis catus,27.166666666666668,equus_caballus,Equus caballus,0.0,27.166666666666668
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,felis_catus,Felis catus,27.166666666666668,macaca_mulatta,Macaca mulatta,0.0,27.166666666666668
+H2AC21,clustered,lymph node,conservative,4,80.35,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,80.35,human,Homo sapiens,53.25,27.099999999999994
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,58.612,human,Homo sapiens,31.56,27.052000000000003
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,pan_troglodytes,Pan troglodytes,56.083333333333336,26.626666666666672
+H2AC12,clustered,bone marrow,conservative,4,77.07,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,77.07,bos_taurus,Bos taurus,50.455,26.614999999999995
+H2AC20,clustered,brain,high_confidence,4,93.995,felis_catus,Felis catus,bos_taurus,Bos taurus,felis_catus,Felis catus,93.995,macaca_mulatta,Macaca mulatta,67.4925,26.502499999999998
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,82.135,bos_taurus,Bos taurus,55.64,26.495000000000005
+H2AC20,clustered,cerebellum,conservative,4,82.508,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,82.508,human,Homo sapiens,56.04,26.467999999999996
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,44.4,canis_lupus_familiaris,Canis lupus familiaris,18.66,25.74
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,91.80571428571427,human,Homo sapiens,66.07636363636364,25.729350649350636
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,sus_scrofa,Sus scrofa,87.49,macaca_mulatta,Macaca mulatta,61.78666666666667,25.703333333333326
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,human,Homo sapiens,82.135,canis_lupus_familiaris,Canis lupus familiaris,56.510000000000005,25.625
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,25.39,canis_lupus_familiaris,Canis lupus familiaris,0.0,25.39
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,25.39,macaca_mulatta,Macaca mulatta,0.0,25.39
+H2AC21,clustered,lymph node,conservative,4,80.35,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,80.35,bos_taurus,Bos taurus,54.965,25.38499999999999
+H2AC8,clustered,bone marrow,high_confidence,4,99.38,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,99.38,human,Homo sapiens,74.065,25.314999999999998
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,felis_catus,Felis catus,76.03999999999999,bos_taurus,Bos taurus,50.80285714285714,25.23714285714285
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,human,Homo sapiens,72.10499999999999,bos_taurus,Bos taurus,47.24,24.864999999999988
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,46.428,felis_catus,Felis catus,22.295,24.132999999999996
+H2AC13,clustered,thymus,conservative,4,78.1225,mus_musculus,Mus musculus,human,Homo sapiens,mus_musculus,Mus musculus,78.1225,canis_lupus_familiaris,Canis lupus familiaris,54.14,23.9825
+H2AC14,clustered,bone marrow,high_confidence,4,99.63,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,99.63,human,Homo sapiens,75.65,23.97999999999999
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,64.72,canis_lupus_familiaris,Canis lupus familiaris,41.335,23.384999999999998
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,50.623333333333335,human,Homo sapiens,27.325,23.298333333333336
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,23.27,canis_lupus_familiaris,Canis lupus familiaris,0.0,23.27
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,23.27,macaca_mulatta,Macaca mulatta,0.0,23.27
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,felis_catus,Felis catus,76.03999999999999,mus_musculus,Mus musculus,52.82272727272727,23.21727272727272
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,66.07636363636364,equus_caballus,Equus caballus,42.92,23.156363636363636
+H2AC14,clustered,ovary,high_confidence,4,91.06666666666666,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,23.1,canis_lupus_familiaris,Canis lupus familiaris,0.0,23.1
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,22.295,canis_lupus_familiaris,Canis lupus familiaris,0.0,22.295
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,68.08,canis_lupus_familiaris,Canis lupus familiaris,45.95,22.129999999999995
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,81.88111111111112,canis_lupus_familiaris,Canis lupus familiaris,60.07,21.811111111111124
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,pan_troglodytes,Pan troglodytes,64.92,bos_taurus,Bos taurus,43.403333333333336,21.516666666666666
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,68.08,bos_taurus,Bos taurus,47.188,20.891999999999996
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.16,human,Homo sapiens,23.27,20.889999999999997
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,human,Homo sapiens,63.71428571428572,bos_taurus,Bos taurus,43.403333333333336,20.310952380952386
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,64.72,human,Homo sapiens,44.434000000000005,20.285999999999994
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,92.15,human,Homo sapiens,72.10499999999999,20.045000000000016
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,86.03666666666668,human,Homo sapiens,66.4709090909091,19.565757575757573
+H2AC14,clustered,bone marrow,high_confidence,4,99.63,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,75.65,bos_taurus,Bos taurus,56.21,19.440000000000005
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,60.07,bos_taurus,Bos taurus,41.08,18.990000000000002
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,31.56,felis_catus,Felis catus,12.78,18.78
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.16,pan_troglodytes,Pan troglodytes,25.39,18.769999999999996
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,69.31666666666666,mus_musculus,Mus musculus,50.623333333333335,18.693333333333328
+H2AC25,clustered,bone marrow,conservative,4,78.26,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,78.26,bos_taurus,Bos taurus,59.58,18.680000000000007
+H2AC20,clustered,spleen,conservative,4,80.99000000000001,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,68.82090909090908,felis_catus,Felis catus,50.15,18.670909090909085
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,canis_lupus_familiaris,Canis lupus familiaris,18.66,macaca_mulatta,Macaca mulatta,0.0,18.66
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,canis_lupus_familiaris,Canis lupus familiaris,18.66,sus_scrofa,Sus scrofa,0.0,18.66
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,pan_troglodytes,Pan troglodytes,64.72,bos_taurus,Bos taurus,46.832,17.887999999999998
+H2AC13,clustered,thymus,conservative,4,78.1225,mus_musculus,Mus musculus,human,Homo sapiens,bos_taurus,Bos taurus,72.0,canis_lupus_familiaris,Canis lupus familiaris,54.14,17.86
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,human,Homo sapiens,44.59285714285714,felis_catus,Felis catus,27.166666666666668,17.426190476190474
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,mus_musculus,Mus musculus,52.82272727272727,canis_lupus_familiaris,Canis lupus familiaris,36.596,16.226727272727274
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,felis_catus,Felis catus,82.265,human,Homo sapiens,66.07636363636364,16.188636363636363
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,79.635,human,Homo sapiens,63.71428571428572,15.920714285714283
+H2AC20,clustered,brain,high_confidence,4,93.995,felis_catus,Felis catus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,67.4925,human,Homo sapiens,51.86333333333334,15.62916666666667
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,bos_taurus,Bos taurus,49.27,equus_caballus,Equus caballus,33.68666666666667,15.583333333333336
+H2AC20,clustered,cerebellum,conservative,4,82.508,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,82.508,macaca_mulatta,Macaca mulatta,66.94800000000001,15.559999999999988
+H2AC12,clustered,bone marrow,conservative,4,77.07,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,77.07,equus_caballus,Equus caballus,61.6,15.469999999999992
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,human,Homo sapiens,66.4709090909091,felis_catus,Felis catus,51.11,15.360909090909104
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,68.08,sus_scrofa,Sus scrofa,52.74,15.339999999999996
+H2AC25,clustered,metanephros cortex,conservative,4,75.5,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,75.5,bos_taurus,Bos taurus,60.41,15.090000000000003
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,sus_scrofa,Sus scrofa,79.635,pan_troglodytes,Pan troglodytes,64.92,14.715000000000003
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,82.71000000000001,felis_catus,Felis catus,68.08,14.63000000000001
+MACROH2A2,variant,thymus,high_confidence,4,86.695,human,Homo sapiens,pan_troglodytes,Pan troglodytes,human,Homo sapiens,86.695,bos_taurus,Bos taurus,72.1,14.594999999999999
+H2AC8,clustered,bone marrow,high_confidence,4,99.38,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,99.38,equus_caballus,Equus caballus,85.07,14.310000000000002
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,bos_taurus,Bos taurus,50.80285714285714,canis_lupus_familiaris,Canis lupus familiaris,36.596,14.206857142857146
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,74.22181818181818,canis_lupus_familiaris,Canis lupus familiaris,60.07,14.151818181818179
+H2AC25,clustered,metanephros cortex,conservative,4,75.5,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,sus_scrofa,Sus scrofa,75.5,human,Homo sapiens,61.645,13.854999999999997
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,13.49,equus_caballus,Equus caballus,0.0,13.49
+MACROH2A2,variant,thymus,high_confidence,4,86.695,human,Homo sapiens,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,72.1,canis_lupus_familiaris,Canis lupus familiaris,58.64,13.459999999999994
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,sus_scrofa,Sus scrofa,77.968,pan_troglodytes,Pan troglodytes,64.72,13.248000000000005
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,mus_musculus,Mus musculus,52.82272727272727,macaca_mulatta,Macaca mulatta,39.685,13.137727272727268
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,mus_musculus,Mus musculus,52.82272727272727,human,Homo sapiens,39.82,13.00272727272727
+H2AC20,clustered,adult mammalian kidney,high_confidence,5,86.03666666666668,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,felis_catus,Felis catus,51.11,equus_caballus,Equus caballus,38.28,12.829999999999998
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,55.437777777777775,macaca_mulatta,Macaca mulatta,42.62,12.817777777777778
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,12.78,canis_lupus_familiaris,Canis lupus familiaris,0.0,12.78
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,felis_catus,Felis catus,12.78,pan_troglodytes,Pan troglodytes,0.0,12.78
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,macaca_mulatta,Macaca mulatta,61.78666666666667,bos_taurus,Bos taurus,49.27,12.516666666666666
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,50.32,equus_caballus,Equus caballus,37.89,12.43
+H2AC20,clustered,spleen,conservative,4,80.99000000000001,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,80.99000000000001,human,Homo sapiens,68.82090909090908,12.169090909090926
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,felis_catus,Felis catus,68.08,pan_troglodytes,Pan troglodytes,56.083333333333336,11.996666666666663
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,71.87,canis_lupus_familiaris,Canis lupus familiaris,60.07,11.800000000000004
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,46.506,human,Homo sapiens,34.765,11.741
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,55.437777777777775,bos_taurus,Bos taurus,44.03,11.407777777777774
+H2AC7,clustered,brain,high_confidence,4,96.09,felis_catus,Felis catus,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,41.4,human,Homo sapiens,30.096666666666664,11.303333333333335
+H2AC12,clustered,bone marrow,conservative,4,77.07,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,61.6,bos_taurus,Bos taurus,50.455,11.145000000000003
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,bos_taurus,Bos taurus,50.80285714285714,macaca_mulatta,Macaca mulatta,39.685,11.11785714285714
+H2AC8,clustered,bone marrow,high_confidence,4,99.38,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,equus_caballus,Equus caballus,85.07,human,Homo sapiens,74.065,11.004999999999995
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,bos_taurus,Bos taurus,50.80285714285714,human,Homo sapiens,39.82,10.982857142857142
+H2AC20,clustered,cerebellum,conservative,4,82.508,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,66.94800000000001,human,Homo sapiens,56.04,10.908000000000008
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,51.87,macaca_mulatta,Macaca mulatta,41.2,10.669999999999995
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,equus_caballus,Equus caballus,79.89750000000001,bos_taurus,Bos taurus,69.31666666666666,10.580833333333345
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,56.083333333333336,canis_lupus_familiaris,Canis lupus familiaris,45.95,10.133333333333333
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,81.88111111111112,macaca_mulatta,Macaca mulatta,71.87,10.01111111111112
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,42.948,human,Homo sapiens,33.169999999999995,9.778000000000006
+H2AC25,clustered,bone marrow,conservative,4,78.26,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,69.23,bos_taurus,Bos taurus,59.58,9.650000000000006
+H2AC20,clustered,liver,high_confidence,5,91.80571428571427,macaca_mulatta,Macaca mulatta,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,91.80571428571427,felis_catus,Felis catus,82.265,9.540714285714273
+H2AC25,clustered,bone marrow,conservative,4,78.26,human,Homo sapiens,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,78.26,pan_troglodytes,Pan troglodytes,69.23,9.030000000000001
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,56.083333333333336,bos_taurus,Bos taurus,47.188,8.895333333333333
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,human,Homo sapiens,44.59285714285714,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,8.789523809523807
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,49.98857142857143,macaca_mulatta,Macaca mulatta,41.2,8.78857142857143
+H2AC25,clustered,zone of skin,conservative,4,81.97,human,Homo sapiens,felis_catus,Felis catus,bos_taurus,Bos taurus,43.57333333333333,canis_lupus_familiaris,Canis lupus familiaris,34.822,8.751333333333328
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,35.803333333333335,felis_catus,Felis catus,27.166666666666668,8.636666666666667
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,human,Homo sapiens,81.88111111111112,pan_troglodytes,Pan troglodytes,74.22181818181818,7.6592929292929455
+H2AC25,clustered,colon,high_confidence,5,92.15,sus_scrofa,Sus scrofa,pan_troglodytes,Pan troglodytes,bos_taurus,Bos taurus,47.24,canis_lupus_familiaris,Canis lupus familiaris,40.16,7.080000000000005
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,52.74,canis_lupus_familiaris,Canis lupus familiaris,45.95,6.789999999999999
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,46.506,pan_troglodytes,Pan troglodytes,40.22,6.286000000000001
+H2AC13,clustered,thymus,conservative,4,78.1225,mus_musculus,Mus musculus,human,Homo sapiens,mus_musculus,Mus musculus,78.1225,bos_taurus,Bos taurus,72.0,6.122500000000002
+H2AC19,clustered,adult mammalian kidney,high_confidence,4,92.61,pan_troglodytes,Pan troglodytes,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,92.61,human,Homo sapiens,87.00181818181818,5.608181818181819
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,sus_scrofa,Sus scrofa,52.74,bos_taurus,Bos taurus,47.188,5.552
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,bos_taurus,Bos taurus,46.832,canis_lupus_familiaris,Canis lupus familiaris,41.335,5.497
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,pan_troglodytes,Pan troglodytes,40.22,human,Homo sapiens,34.765,5.454999999999998
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,45.68,bos_taurus,Bos taurus,40.59666666666667,5.083333333333329
+H2AC6,clustered,zone of skin,high_confidence,5,84.56857142857143,human,Homo sapiens,felis_catus,Felis catus,human,Homo sapiens,84.56857142857143,canis_lupus_familiaris,Canis lupus familiaris,79.69142857142857,4.877142857142857
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,57.72166666666666,pan_troglodytes,Pan troglodytes,52.985,4.7366666666666575
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,57.72166666666666,macaca_mulatta,Macaca mulatta,53.325,4.396666666666654
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,56.510000000000005,pan_troglodytes,Pan troglodytes,52.83,3.680000000000007
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,56.083333333333336,sus_scrofa,Sus scrofa,52.74,3.3433333333333337
+H2AC11,clustered,bone marrow,high_confidence,4,94.42,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,66.63,human,Homo sapiens,63.36,3.269999999999996
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,human,Homo sapiens,39.82,canis_lupus_familiaris,Canis lupus familiaris,36.596,3.2240000000000038
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,human,Homo sapiens,44.434000000000005,canis_lupus_familiaris,Canis lupus familiaris,41.335,3.0990000000000038
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,macaca_mulatta,Macaca mulatta,39.685,canis_lupus_familiaris,Canis lupus familiaris,36.596,3.0890000000000057
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,55.64,pan_troglodytes,Pan troglodytes,52.83,2.8100000000000023
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,bos_taurus,Bos taurus,46.832,human,Homo sapiens,44.434000000000005,2.397999999999996
+H2AC6,clustered,prefrontal cortex,conservative,7,81.88111111111112,human,Homo sapiens,equus_caballus,Equus caballus,pan_troglodytes,Pan troglodytes,74.22181818181818,macaca_mulatta,Macaca mulatta,71.87,2.3518181818181745
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,25.39,human,Homo sapiens,23.27,2.120000000000001
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,81.59,human,Homo sapiens,79.4875,2.1025000000000063
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,mus_musculus,Mus musculus,52.82272727272727,bos_taurus,Bos taurus,50.80285714285714,2.019870129870128
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,macaca_mulatta,Macaca mulatta,60.586666666666666,bos_taurus,Bos taurus,58.612,1.9746666666666641
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,56.510000000000005,macaca_mulatta,Macaca mulatta,54.61,1.9000000000000057
+MACROH2A2,variant,lung,conservative,6,81.59,canis_lupus_familiaris,Canis lupus familiaris,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,51.87,bos_taurus,Bos taurus,49.98857142857143,1.8814285714285646
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,54.61,pan_troglodytes,Pan troglodytes,52.83,1.7800000000000011
+H2AC21,clustered,lymph node,conservative,4,80.35,pan_troglodytes,Pan troglodytes,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,54.965,human,Homo sapiens,53.25,1.7150000000000034
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,bos_taurus,Bos taurus,44.03,macaca_mulatta,Macaca mulatta,42.62,1.4100000000000037
+H2AC13,clustered,kidney,high_confidence,4,84.275,mus_musculus,Mus musculus,macaca_mulatta,Macaca mulatta,mus_musculus,Mus musculus,84.275,human,Homo sapiens,82.935,1.3400000000000034
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,bos_taurus,Bos taurus,47.188,canis_lupus_familiaris,Canis lupus familiaris,45.95,1.2379999999999995
+H2AC25,clustered,metanephros cortex,conservative,4,75.5,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,61.645,bos_taurus,Bos taurus,60.41,1.2350000000000065
+H2AC21,clustered,lung,conservative,5,79.635,sus_scrofa,Sus scrofa,macaca_mulatta,Macaca mulatta,pan_troglodytes,Pan troglodytes,64.92,human,Homo sapiens,63.71428571428572,1.2057142857142793
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,55.64,macaca_mulatta,Macaca mulatta,54.61,1.0300000000000011
+H2AB3,variant,testis,conservative,5,76.43928571428572,mus_musculus,Mus musculus,canis_lupus_familiaris,Canis lupus familiaris,mus_musculus,Mus musculus,76.43928571428572,equus_caballus,Equus caballus,75.44,0.999285714285719
+MACROH2A2,variant,colon,conservative,6,82.135,human,Homo sapiens,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,56.510000000000005,bos_taurus,Bos taurus,55.64,0.8700000000000045
+H2AC21,clustered,cerebellum,high_confidence,6,93.465,equus_caballus,Equus caballus,bos_taurus,Bos taurus,equus_caballus,Equus caballus,93.465,sus_scrofa,Sus scrofa,92.675,0.7900000000000063
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,canis_lupus_familiaris,Canis lupus familiaris,52.7,bos_taurus,Bos taurus,51.94,0.7600000000000051
+MACROH2A2,variant,metanephros cortex,high_confidence,4,83.965,human,Homo sapiens,sus_scrofa,Sus scrofa,bos_taurus,Bos taurus,55.41,canis_lupus_familiaris,Canis lupus familiaris,54.68,0.7299999999999969
+H2AC8,clustered,cerebellum,high_confidence,5,94.955,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,53.325,pan_troglodytes,Pan troglodytes,52.985,0.3400000000000034
+H2AC13,clustered,liver,conservative,7,76.03999999999999,felis_catus,Felis catus,equus_caballus,Equus caballus,human,Homo sapiens,39.82,macaca_mulatta,Macaca mulatta,39.685,0.134999999999998
+H2AC14,clustered,colon,high_confidence,6,96.48,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,pan_troglodytes,Pan troglodytes,0.0,0.0
+H2AC14,clustered,testis,high_confidence,7,94.05,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,pan_troglodytes,Pan troglodytes,0.0,0.0
+H2AC14,clustered,adipose tissue,high_confidence,5,88.63,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC21,clustered,testis,high_confidence,6,87.49,sus_scrofa,Sus scrofa,human,Homo sapiens,human,Homo sapiens,0.0,pan_troglodytes,Pan troglodytes,0.0,0.0
+H2AC17,clustered,testis,high_confidence,6,85.96,sus_scrofa,Sus scrofa,equus_caballus,Equus caballus,equus_caballus,Equus caballus,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC17,clustered,kidney,high_confidence,4,82.89,human,Homo sapiens,macaca_mulatta,Macaca mulatta,macaca_mulatta,Macaca mulatta,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+MACROH2A2,variant,liver,high_confidence,8,82.71000000000001,human,Homo sapiens,equus_caballus,Equus caballus,equus_caballus,Equus caballus,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC14,clustered,cerebral cortex,conservative,6,82.47,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC14,clustered,kidney,conservative,4,81.15,human,Homo sapiens,macaca_mulatta,Macaca mulatta,macaca_mulatta,Macaca mulatta,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+MACROH2A2,variant,lymph node,conservative,5,80.63166666666666,human,Homo sapiens,pan_troglodytes,Pan troglodytes,pan_troglodytes,Pan troglodytes,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+H2AC7,clustered,cerebellum,conservative,4,80.2925,equus_caballus,Equus caballus,bos_taurus,Bos taurus,bos_taurus,Bos taurus,0.0,canis_lupus_familiaris,Canis lupus familiaris,0.0,0.0
+H2AC7,clustered,cerebellum,conservative,4,80.2925,equus_caballus,Equus caballus,bos_taurus,Bos taurus,bos_taurus,Bos taurus,0.0,human,Homo sapiens,0.0,0.0
+H2AC7,clustered,cerebellum,conservative,4,80.2925,equus_caballus,Equus caballus,bos_taurus,Bos taurus,canis_lupus_familiaris,Canis lupus familiaris,0.0,human,Homo sapiens,0.0,0.0
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,bos_taurus,Bos taurus,0.0,human,Homo sapiens,0.0,0.0
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,bos_taurus,Bos taurus,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,bos_taurus,Bos taurus,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,human,Homo sapiens,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+H2AC11,clustered,cerebellum,conservative,6,79.93,equus_caballus,Equus caballus,bos_taurus,Bos taurus,macaca_mulatta,Macaca mulatta,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+H2AC13,clustered,cerebellum,conservative,6,79.89750000000001,equus_caballus,Equus caballus,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC12,clustered,kidney,conservative,5,79.3925,human,Homo sapiens,macaca_mulatta,Macaca mulatta,macaca_mulatta,Macaca mulatta,0.0,sus_scrofa,Sus scrofa,0.0,0.0
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,human,Homo sapiens,0.0,0.0
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,canis_lupus_familiaris,Canis lupus familiaris,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC14,clustered,skeletal muscle tissue,conservative,6,78.27000000000001,sus_scrofa,Sus scrofa,canis_lupus_familiaris,Canis lupus familiaris,human,Homo sapiens,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0
+H2AC14,clustered,spleen,conservative,7,77.968,sus_scrofa,Sus scrofa,felis_catus,Felis catus,felis_catus,Felis catus,0.0,macaca_mulatta,Macaca mulatta,0.0,0.0

@@ -2,15 +2,23 @@
   "gene_name": "H2AC19",
   "tissue_mode": "union",
   "aggregate": "mean",
-  "include_absent_species": false,
+  "include_absent_species": true,
   "detail_index_path": "CURATED_SET/BioAnalyze/data/gene_compare/index/shared_h2a_gene_names_across_species_detail.csv",
-  "species_count": 4,
-  "tissue_count": 217,
+  "species_count": 12,
+  "tissue_count": 228,
   "species_order": [
     "bos_taurus",
+    "canis_lupus_familiaris",
+    "cavia_porcellus",
     "equus_caballus",
+    "felis_catus",
+    "heterocephalus_glaber",
     "human",
-    "pan_troglodytes"
+    "macaca_mulatta",
+    "mus_musculus",
+    "oryctolagus_cuniculus",
+    "pan_troglodytes",
+    "sus_scrofa"
   ],
   "species": [
     {
@@ -21,8 +29,26 @@
       ],
       "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_expr_advanced_H2A_present_gold.tsv",
       "map_path": "CURATED_SET/BioAnalyze/data/processed/bos_taurus/bos_taurus_h2a_canonical_variant_map.tsv",
-      "row_count": 267,
-      "tissue_count": 115
+      "row_count": 127,
+      "tissue_count": 127
+    },
+    {
+      "species_dir": "canis_lupus_familiaris",
+      "species_name": "Canis Lupus Familiaris",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
+    },
+    {
+      "species_dir": "cavia_porcellus",
+      "species_name": "Cavia Porcellus",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
     },
     {
       "species_dir": "equus_caballus",
@@ -32,8 +58,26 @@
       ],
       "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_expr_advanced_H2A_present_gold.tsv",
       "map_path": "CURATED_SET/BioAnalyze/data/processed/equus_caballus/equus_caballus_h2a_canonical_variant_map.tsv",
-      "row_count": 46,
-      "tissue_count": 21
+      "row_count": 26,
+      "tissue_count": 26
+    },
+    {
+      "species_dir": "felis_catus",
+      "species_name": "Felis Catus",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
+    },
+    {
+      "species_dir": "heterocephalus_glaber",
+      "species_name": "Heterocephalus Glaber",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
     },
     {
       "species_dir": "human",
@@ -43,8 +87,35 @@
       ],
       "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
       "map_path": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
-      "row_count": 746,
+      "row_count": 134,
       "tissue_count": 134
+    },
+    {
+      "species_dir": "macaca_mulatta",
+      "species_name": "Macaca Mulatta",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
+    },
+    {
+      "species_dir": "mus_musculus",
+      "species_name": "Mus Musculus",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
+    },
+    {
+      "species_dir": "oryctolagus_cuniculus",
+      "species_name": "Oryctolagus Cuniculus",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
     },
     {
       "species_dir": "pan_troglodytes",
@@ -54,8 +125,17 @@
       ],
       "present_gold_path": "CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv",
       "map_path": "CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_h2a_canonical_variant_map.tsv",
-      "row_count": 70,
+      "row_count": 26,
       "tissue_count": 26
+    },
+    {
+      "species_dir": "sus_scrofa",
+      "species_name": "Sus Scrofa",
+      "ensembl_gene_ids": [],
+      "present_gold_path": "",
+      "map_path": "",
+      "row_count": 0,
+      "tissue_count": 0
     }
   ]
 }

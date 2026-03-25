@@ -34,7 +34,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
             "Build a cross-species heatmap for one canonical gene name using "
-            "the present+gold H2A files and the canonical variant maps."
+            "the normalized H2A cell files and the canonical variant maps."
         )
     )
     parser.add_argument(
@@ -75,7 +75,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--include-absent-species",
-        action="store_true",
+        action=argparse.BooleanOptionalAction,
+        default=True,
         help="Include all known species as empty columns when the gene is absent.",
     )
     parser.add_argument(
@@ -106,7 +107,7 @@ def plot_heatmap(matrix_df: pd.DataFrame, gene_name: str, out_png: Path, out_svg
         xticklabels=1,
         yticklabels=1,
     )
-    ax.set_title(f"{gene_name} Expression Across Species")
+    ax.set_title(f"{gene_name} Expression Across Species (normalized cells)")
     ax.set_xlabel("Species")
     ax.set_ylabel("Anatomical entity name")
     plt.xticks(rotation=45, ha="right", fontsize=9)

@@ -1,0 +1,351 @@
+anatomical_entity_name	observed_gene_count	display_gene_count	fill_rate	threshold	kept	panel
+Ammon's horn	9	9	1.0	0.7	True	all
+adrenal gland	9	9	1.0	0.7	True	all
+adult mammalian kidney	9	9	1.0	0.7	True	all
+animal zygote	9	9	1.0	0.7	True	all
+bone marrow	9	9	1.0	0.7	True	all
+brain	9	9	1.0	0.7	True	all
+cerebellar cortex	9	9	1.0	0.7	True	all
+cerebellum	9	9	1.0	0.7	True	all
+cerebral cortex	9	9	1.0	0.7	True	all
+colon	9	9	1.0	0.7	True	all
+cortex of kidney	9	9	1.0	0.7	True	all
+cortical plate	9	9	1.0	0.7	True	all
+dentate gyrus of hippocampal formation granule cell	9	9	1.0	0.7	True	all
+duodenum	9	9	1.0	0.7	True	all
+ectoplacental cone	9	9	1.0	0.7	True	all
+embryonic brain	9	9	1.0	0.7	True	all
+embryonic facial prominence	9	9	1.0	0.7	True	all
+embryonic post-anal tail	9	9	1.0	0.7	True	all
+epiblast (generic)	9	9	1.0	0.7	True	all
+esophagus	9	9	1.0	0.7	True	all
+forebrain	9	9	1.0	0.7	True	all
+forelimb bud	9	9	1.0	0.7	True	all
+frontal cortex	9	9	1.0	0.7	True	all
+ganglionic eminence	9	9	1.0	0.7	True	all
+granulocyte	9	9	1.0	0.7	True	all
+heart	9	9	1.0	0.7	True	all
+hindbrain	9	9	1.0	0.7	True	all
+hindlimb bud	9	9	1.0	0.7	True	all
+hindlimb stylopod muscle	9	9	1.0	0.7	True	all
+hypothalamus	9	9	1.0	0.7	True	all
+ileum	9	9	1.0	0.7	True	all
+intestine	9	9	1.0	0.7	True	all
+islet of Langerhans	9	9	1.0	0.7	True	all
+jejunum	9	9	1.0	0.7	True	all
+kidney	9	9	1.0	0.7	True	all
+lens of camera-type eye	9	9	1.0	0.7	True	all
+limb	9	9	1.0	0.7	True	all
+lip	9	9	1.0	0.7	True	all
+liver	9	9	1.0	0.7	True	all
+lung	9	9	1.0	0.7	True	all
+midbrain	9	9	1.0	0.7	True	all
+multicellular organism	9	9	1.0	0.7	True	all
+muscle tissue	9	9	1.0	0.7	True	all
+neural tube	9	9	1.0	0.7	True	all
+olfactory bulb	9	9	1.0	0.7	True	all
+ovary	9	9	1.0	0.7	True	all
+pancreas	9	9	1.0	0.7	True	all
+placenta	9	9	1.0	0.7	True	all
+primary oocyte	9	9	1.0	0.7	True	all
+primary visual cortex	9	9	1.0	0.7	True	all
+proximal tubule	9	9	1.0	0.7	True	all
+quadriceps femoris	9	9	1.0	0.7	True	all
+retinal neural layer	9	9	1.0	0.7	True	all
+right kidney	9	9	1.0	0.7	True	all
+secondary oocyte	9	9	1.0	0.7	True	all
+skeletal muscle tissue	9	9	1.0	0.7	True	all
+spermatid	9	9	1.0	0.7	True	all
+spermatocyte	9	9	1.0	0.7	True	all
+spleen	9	9	1.0	0.7	True	all
+stomach	9	9	1.0	0.7	True	all
+striatum	9	9	1.0	0.7	True	all
+superior frontal gyrus	9	9	1.0	0.7	True	all
+testis	9	9	1.0	0.7	True	all
+thymus	9	9	1.0	0.7	True	all
+undifferentiated genital tubercle	9	9	1.0	0.7	True	all
+urinary bladder	9	9	1.0	0.7	True	all
+uterus	9	9	1.0	0.7	True	all
+ventricular zone	9	9	1.0	0.7	True	all
+white adipose tissue	9	9	1.0	0.7	True	all
+yolk sac	9	9	1.0	0.7	True	all
+zone of skin	9	9	1.0	0.7	True	all
+blastoderm cell in morula	4	9	0.4444444444444444	0.7	False	all
+embryonic cell in blastocyst	4	9	0.4444444444444444	0.7	False	all
+epiblast cell in embryo	4	9	0.4444444444444444	0.7	False	all
+mesodermal cell in embryo	4	9	0.4444444444444444	0.7	False	all
+1st arch mandibular component	2	9	0.2222222222222222	0.7	False	all
+1st arch maxillary component	2	9	0.2222222222222222	0.7	False	all
+CA1 field of hippocampus	2	9	0.2222222222222222	0.7	False	all
+abdominal wall	2	9	0.2222222222222222	0.7	False	all
+adipose tissue	2	9	0.2222222222222222	0.7	False	all
+amygdala	2	9	0.2222222222222222	0.7	False	all
+anterior amygdaloid area	2	9	0.2222222222222222	0.7	False	all
+aorta	2	9	0.2222222222222222	0.7	False	all
+aorta tunica adventitia	2	9	0.2222222222222222	0.7	False	all
+aorta tunica media	2	9	0.2222222222222222	0.7	False	all
+aortic valve	2	9	0.2222222222222222	0.7	False	all
+arcuate nucleus of hypothalamus	2	9	0.2222222222222222	0.7	False	all
+ascending aorta	2	9	0.2222222222222222	0.7	False	all
+associated mesenchyme of midgut	2	9	0.2222222222222222	0.7	False	all
+atrioventricular region	2	9	0.2222222222222222	0.7	False	all
+atrioventricular valve	2	9	0.2222222222222222	0.7	False	all
+barrel cortex	2	9	0.2222222222222222	0.7	False	all
+bed nucleus of stria terminalis	2	9	0.2222222222222222	0.7	False	all
+blastocyst	2	9	0.2222222222222222	0.7	False	all
+blood	2	9	0.2222222222222222	0.7	False	all
+bone element	2	9	0.2222222222222222	0.7	False	all
+bone fossa	2	9	0.2222222222222222	0.7	False	all
+brain blood vessel	2	9	0.2222222222222222	0.7	False	all
+brainstem	2	9	0.2222222222222222	0.7	False	all
+brown adipose tissue	2	9	0.2222222222222222	0.7	False	all
+camera-type eye	2	9	0.2222222222222222	0.7	False	all
+cardiac atrium	2	9	0.2222222222222222	0.7	False	all
+cardiac muscle tissue	2	9	0.2222222222222222	0.7	False	all
+cardiac ventricle	2	9	0.2222222222222222	0.7	False	all
+carotid body	2	9	0.2222222222222222	0.7	False	all
+caudate-putamen	2	9	0.2222222222222222	0.7	False	all
+central gray substance of midbrain	2	9	0.2222222222222222	0.7	False	all
+central nervous system	2	9	0.2222222222222222	0.7	False	all
+cerebellar nuclear complex	2	9	0.2222222222222222	0.7	False	all
+cerebellar vermis	2	9	0.2222222222222222	0.7	False	all
+cerebellum lobe	2	9	0.2222222222222222	0.7	False	all
+cerebral hemisphere	2	9	0.2222222222222222	0.7	False	all
+choroid plexus epithelium	2	9	0.2222222222222222	0.7	False	all
+ciliary body	2	9	0.2222222222222222	0.7	False	all
+cingulate cortex	2	9	0.2222222222222222	0.7	False	all
+cleaving embryo	2	9	0.2222222222222222	0.7	False	all
+cochlea	2	9	0.2222222222222222	0.7	False	all
+condyle	2	9	0.2222222222222222	0.7	False	all
+conjunctival fornix	2	9	0.2222222222222222	0.7	False	all
+cornea	2	9	0.2222222222222222	0.7	False	all
+cranial nerve II	2	9	0.2222222222222222	0.7	False	all
+crypt of Lieberkuhn of small intestine	2	9	0.2222222222222222	0.7	False	all
+cumulus cell	2	9	0.2222222222222222	0.7	False	all
+decidua	2	9	0.2222222222222222	0.7	False	all
+dentate gyrus of hippocampal formation	2	9	0.2222222222222222	0.7	False	all
+dermis	2	9	0.2222222222222222	0.7	False	all
+diaphragm	2	9	0.2222222222222222	0.7	False	all
+diaphysis of femur	2	9	0.2222222222222222	0.7	False	all
+digastric muscle group	2	9	0.2222222222222222	0.7	False	all
+dorsal pancreas	2	9	0.2222222222222222	0.7	False	all
+dorsal root ganglion	2	9	0.2222222222222222	0.7	False	all
+dorsal striatum	2	9	0.2222222222222222	0.7	False	all
+dorsal tegmental nucleus	2	9	0.2222222222222222	0.7	False	all
+dorsomedial nucleus of hypothalamus	2	9	0.2222222222222222	0.7	False	all
+ear	2	9	0.2222222222222222	0.7	False	all
+ear vesicle	2	9	0.2222222222222222	0.7	False	all
+efferent duct	2	9	0.2222222222222222	0.7	False	all
+embryo	2	9	0.2222222222222222	0.7	False	all
+endocardial cushion	2	9	0.2222222222222222	0.7	False	all
+endoderm of midgut	2	9	0.2222222222222222	0.7	False	all
+endothelial cell of lymphatic vessel	2	9	0.2222222222222222	0.7	False	all
+epididymal fat pad	2	9	0.2222222222222222	0.7	False	all
+epididymis	2	9	0.2222222222222222	0.7	False	all
+epithelium of cochlear duct	2	9	0.2222222222222222	0.7	False	all
+epithelium of lens	2	9	0.2222222222222222	0.7	False	all
+epithelium of small intestine	2	9	0.2222222222222222	0.7	False	all
+epithelium of stomach	2	9	0.2222222222222222	0.7	False	all
+external carotid artery	2	9	0.2222222222222222	0.7	False	all
+extra-ocular muscle	2	9	0.2222222222222222	0.7	False	all
+eyeball of camera-type eye	2	9	0.2222222222222222	0.7	False	all
+facial nucleus	2	9	0.2222222222222222	0.7	False	all
+femorotibial joint	2	9	0.2222222222222222	0.7	False	all
+fetal liver hematopoietic progenitor cell	2	9	0.2222222222222222	0.7	False	all
+floor plate of midbrain	2	9	0.2222222222222222	0.7	False	all
+frontonasal prominence	2	9	0.2222222222222222	0.7	False	all
+gastrocnemius	2	9	0.2222222222222222	0.7	False	all
+gastrocnemius medialis	2	9	0.2222222222222222	0.7	False	all
+gastrula	2	9	0.2222222222222222	0.7	False	all
+globus pallidus	2	9	0.2222222222222222	0.7	False	all
+gonadal ridge	2	9	0.2222222222222222	0.7	False	all
+habenula	2	9	0.2222222222222222	0.7	False	all
+hair follicle	2	9	0.2222222222222222	0.7	False	all
+head	2	9	0.2222222222222222	0.7	False	all
+heart left ventricle	2	9	0.2222222222222222	0.7	False	all
+heart right ventricle	2	9	0.2222222222222222	0.7	False	all
+hindlimb long bone	2	9	0.2222222222222222	0.7	False	all
+hippocampal field	2	9	0.2222222222222222	0.7	False	all
+humerus cartilage element	2	9	0.2222222222222222	0.7	False	all
+indifferent gonad	2	9	0.2222222222222222	0.7	False	all
+inferior colliculus	2	9	0.2222222222222222	0.7	False	all
+inguinal mammary gland	2	9	0.2222222222222222	0.7	False	all
+intercostal muscle	2	9	0.2222222222222222	0.7	False	all
+internal carotid artery	2	9	0.2222222222222222	0.7	False	all
+interventricular septum	2	9	0.2222222222222222	0.7	False	all
+intestinal epithelium	2	9	0.2222222222222222	0.7	False	all
+intestinal villus	2	9	0.2222222222222222	0.7	False	all
+iris	2	9	0.2222222222222222	0.7	False	all
+knee joint	2	9	0.2222222222222222	0.7	False	all
+lacrimal gland	2	9	0.2222222222222222	0.7	False	all
+large intestine	2	9	0.2222222222222222	0.7	False	all
+late embryo	2	9	0.2222222222222222	0.7	False	all
+lateral geniculate body	2	9	0.2222222222222222	0.7	False	all
+lateral hypothalamic area	2	9	0.2222222222222222	0.7	False	all
+lateral septal nucleus	2	9	0.2222222222222222	0.7	False	all
+left colon	2	9	0.2222222222222222	0.7	False	all
+left lobe of liver	2	9	0.2222222222222222	0.7	False	all
+left lung	2	9	0.2222222222222222	0.7	False	all
+left lung lobe	2	9	0.2222222222222222	0.7	False	all
+limb bud	2	9	0.2222222222222222	0.7	False	all
+lobe of prostate	2	9	0.2222222222222222	0.7	False	all
+lumbar dorsal root ganglion	2	9	0.2222222222222222	0.7	False	all
+lumbar subsegment of spinal cord	2	9	0.2222222222222222	0.7	False	all
+lymph node	2	9	0.2222222222222222	0.7	False	all
+male reproductive system	2	9	0.2222222222222222	0.7	False	all
+mammary bud	2	9	0.2222222222222222	0.7	False	all
+mammary gland	2	9	0.2222222222222222	0.7	False	all
+mammillary body	2	9	0.2222222222222222	0.7	False	all
+mandibular prominence	2	9	0.2222222222222222	0.7	False	all
+manus	2	9	0.2222222222222222	0.7	False	all
+masseter muscle	2	9	0.2222222222222222	0.7	False	all
+maxillary prominence	2	9	0.2222222222222222	0.7	False	all
+medial dorsal nucleus of thalamus	2	9	0.2222222222222222	0.7	False	all
+medial ganglionic eminence	2	9	0.2222222222222222	0.7	False	all
+medial geniculate body	2	9	0.2222222222222222	0.7	False	all
+medial preoptic region	2	9	0.2222222222222222	0.7	False	all
+medial vestibular nucleus	2	9	0.2222222222222222	0.7	False	all
+median eminence of neurohypophysis	2	9	0.2222222222222222	0.7	False	all
+membranous labyrinth	2	9	0.2222222222222222	0.7	False	all
+mesenteric lymph node	2	9	0.2222222222222222	0.7	False	all
+metanephric S-shaped body	2	9	0.2222222222222222	0.7	False	all
+metanephric collecting duct	2	9	0.2222222222222222	0.7	False	all
+metanephric cortical collecting duct	2	9	0.2222222222222222	0.7	False	all
+metanephric loop of Henle	2	9	0.2222222222222222	0.7	False	all
+metanephric mesenchyme	2	9	0.2222222222222222	0.7	False	all
+metanephric proximal tubule	2	9	0.2222222222222222	0.7	False	all
+metanephric renal vesicle	2	9	0.2222222222222222	0.7	False	all
+metanephric ureteric bud	2	9	0.2222222222222222	0.7	False	all
+metanephros	2	9	0.2222222222222222	0.7	False	all
+migratory enteric neural crest cell	2	9	0.2222222222222222	0.7	False	all
+molar tooth	2	9	0.2222222222222222	0.7	False	all
+motor neuron	2	9	0.2222222222222222	0.7	False	all
+mucous cell of stomach	2	9	0.2222222222222222	0.7	False	all
+muscle of arm	2	9	0.2222222222222222	0.7	False	all
+muscle of leg	2	9	0.2222222222222222	0.7	False	all
+myocardium of ventricle	2	9	0.2222222222222222	0.7	False	all
+neocortex	2	9	0.2222222222222222	0.7	False	all
+nucleus accumbens	2	9	0.2222222222222222	0.7	False	all
+nucleus of brain	2	9	0.2222222222222222	0.7	False	all
+olfactory epithelium	2	9	0.2222222222222222	0.7	False	all
+olfactory tubercle	2	9	0.2222222222222222	0.7	False	all
+oocyte	2	9	0.2222222222222222	0.7	False	all
+optic fissure	2	9	0.2222222222222222	0.7	False	all
+otic placode	2	9	0.2222222222222222	0.7	False	all
+outflow tract	2	9	0.2222222222222222	0.7	False	all
+paneth cell	2	9	0.2222222222222222	0.7	False	all
+paraventricular nucleus of hypothalamus	2	9	0.2222222222222222	0.7	False	all
+parotid gland	2	9	0.2222222222222222	0.7	False	all
+peripheral lymph node	2	9	0.2222222222222222	0.7	False	all
+pes	2	9	0.2222222222222222	0.7	False	all
+pharyngeal arch 2	2	9	0.2222222222222222	0.7	False	all
+pigmented layer of retina	2	9	0.2222222222222222	0.7	False	all
+pineal body	2	9	0.2222222222222222	0.7	False	all
+piriform cortex	2	9	0.2222222222222222	0.7	False	all
+pituitary gland	2	9	0.2222222222222222	0.7	False	all
+placenta labyrinth	2	9	0.2222222222222222	0.7	False	all
+pontine nuclear group	2	9	0.2222222222222222	0.7	False	all
+prefrontal cortex	2	9	0.2222222222222222	0.7	False	all
+presomitic mesoderm	2	9	0.2222222222222222	0.7	False	all
+primary motor cortex	2	9	0.2222222222222222	0.7	False	all
+primitive streak	2	9	0.2222222222222222	0.7	False	all
+prostate gland	2	9	0.2222222222222222	0.7	False	all
+prostate gland ventral lobe	2	9	0.2222222222222222	0.7	False	all
+pyloric antrum	2	9	0.2222222222222222	0.7	False	all
+renal corpuscle	2	9	0.2222222222222222	0.7	False	all
+renal medulla collecting duct	2	9	0.2222222222222222	0.7	False	all
+renal medulla interstitium	2	9	0.2222222222222222	0.7	False	all
+respiratory primordium	2	9	0.2222222222222222	0.7	False	all
+retina	2	9	0.2222222222222222	0.7	False	all
+retrosplenial region	2	9	0.2222222222222222	0.7	False	all
+rhombomere 4	2	9	0.2222222222222222	0.7	False	all
+right colon	2	9	0.2222222222222222	0.7	False	all
+right lung	2	9	0.2222222222222222	0.7	False	all
+right lung lobe	2	9	0.2222222222222222	0.7	False	all
+rostral migratory stream	2	9	0.2222222222222222	0.7	False	all
+saccule of membranous labyrinth	2	9	0.2222222222222222	0.7	False	all
+saliva-secreting gland	2	9	0.2222222222222222	0.7	False	all
+sciatic nerve	2	9	0.2222222222222222	0.7	False	all
+secondary palatal shelf	2	9	0.2222222222222222	0.7	False	all
+semi-lunar valve	2	9	0.2222222222222222	0.7	False	all
+seminal vesicle	2	9	0.2222222222222222	0.7	False	all
+seminiferous tubule of testis	2	9	0.2222222222222222	0.7	False	all
+sexually immature organism	2	9	0.2222222222222222	0.7	False	all
+skin epidermis	2	9	0.2222222222222222	0.7	False	all
+skin of abdomen	2	9	0.2222222222222222	0.7	False	all
+skin of back	2	9	0.2222222222222222	0.7	False	all
+skin of external ear	2	9	0.2222222222222222	0.7	False	all
+small intestine	2	9	0.2222222222222222	0.7	False	all
+small intestine Peyer's patch	2	9	0.2222222222222222	0.7	False	all
+soleus muscle	2	9	0.2222222222222222	0.7	False	all
+somite	2	9	0.2222222222222222	0.7	False	all
+spinal cord	2	9	0.2222222222222222	0.7	False	all
+sternocleidomastoid	2	9	0.2222222222222222	0.7	False	all
+stria vascularis of cochlear duct	2	9	0.2222222222222222	0.7	False	all
+stroma of bone marrow	2	9	0.2222222222222222	0.7	False	all
+subcutaneous adipose tissue	2	9	0.2222222222222222	0.7	False	all
+subiculum	2	9	0.2222222222222222	0.7	False	all
+submandibular gland	2	9	0.2222222222222222	0.7	False	all
+subparaventricular zone	2	9	0.2222222222222222	0.7	False	all
+substantia nigra	2	9	0.2222222222222222	0.7	False	all
+superior cervical ganglion	2	9	0.2222222222222222	0.7	False	all
+superior colliculus	2	9	0.2222222222222222	0.7	False	all
+suprachiasmatic nucleus	2	9	0.2222222222222222	0.7	False	all
+supraoptic nucleus	2	9	0.2222222222222222	0.7	False	all
+tail skin	2	9	0.2222222222222222	0.7	False	all
+tarsal region	2	9	0.2222222222222222	0.7	False	all
+telencephalon	2	9	0.2222222222222222	0.7	False	all
+temporal lobe	2	9	0.2222222222222222	0.7	False	all
+temporalis muscle	2	9	0.2222222222222222	0.7	False	all
+tibialis anterior	2	9	0.2222222222222222	0.7	False	all
+trachea	2	9	0.2222222222222222	0.7	False	all
+triceps brachii	2	9	0.2222222222222222	0.7	False	all
+triceps surae	2	9	0.2222222222222222	0.7	False	all
+trigeminal ganglion	2	9	0.2222222222222222	0.7	False	all
+umbilical cord	2	9	0.2222222222222222	0.7	False	all
+ureter	2	9	0.2222222222222222	0.7	False	all
+ureter smooth muscle	2	9	0.2222222222222222	0.7	False	all
+ureteric bud tip	2	9	0.2222222222222222	0.7	False	all
+urinary bladder urothelium	2	9	0.2222222222222222	0.7	False	all
+urogenital fold	2	9	0.2222222222222222	0.7	False	all
+urothelium	2	9	0.2222222222222222	0.7	False	all
+uterine cervix	2	9	0.2222222222222222	0.7	False	all
+utricle of membranous labyrinth	2	9	0.2222222222222222	0.7	False	all
+vas deferens	2	9	0.2222222222222222	0.7	False	all
+vastus lateralis	2	9	0.2222222222222222	0.7	False	all
+vault of skull	2	9	0.2222222222222222	0.7	False	all
+ventral horn of spinal cord	2	9	0.2222222222222222	0.7	False	all
+ventral tegmental area	2	9	0.2222222222222222	0.7	False	all
+ventromedial nucleus of hypothalamus	2	9	0.2222222222222222	0.7	False	all
+vestibular epithelium	2	9	0.2222222222222222	0.7	False	all
+vestibular membrane of cochlear duct	2	9	0.2222222222222222	0.7	False	all
+vestibular organ	2	9	0.2222222222222222	0.7	False	all
+visual cortex	2	9	0.2222222222222222	0.7	False	all
+CA3 field of hippocampus	1	9	0.1111111111111111	0.7	False	all
+ankle joint	1	9	0.1111111111111111	0.7	False	all
+blood vessel	1	9	0.1111111111111111	0.7	False	all
+cardiac muscle of left ventricle	1	9	0.1111111111111111	0.7	False	all
+cerebellum external granule cell layer	1	9	0.1111111111111111	0.7	False	all
+cerebral cortex subventricular zone	1	9	0.1111111111111111	0.7	False	all
+choroid plexus of fourth ventricle	1	9	0.1111111111111111	0.7	False	all
+entorhinal cortex	1	9	0.1111111111111111	0.7	False	all
+extensor digitorum longus	1	9	0.1111111111111111	0.7	False	all
+femur	1	9	0.1111111111111111	0.7	False	all
+gall bladder	1	9	0.1111111111111111	0.7	False	all
+gonadal fat pad	1	9	0.1111111111111111	0.7	False	all
+hindlimb zeugopod muscle	1	9	0.1111111111111111	0.7	False	all
+ileal epithelium	1	9	0.1111111111111111	0.7	False	all
+layer of retina	1	9	0.1111111111111111	0.7	False	all
+medulla oblongata	1	9	0.1111111111111111	0.7	False	all
+morula	1	9	0.1111111111111111	0.7	False	all
+outer nuclear layer of retina	1	9	0.1111111111111111	0.7	False	all
+perirhinal cortex	1	9	0.1111111111111111	0.7	False	all
+pharyngeal arch 1	1	9	0.1111111111111111	0.7	False	all
+plantaris	1	9	0.1111111111111111	0.7	False	all
+pons	1	9	0.1111111111111111	0.7	False	all
+skin of snout	1	9	0.1111111111111111	0.7	False	all
+substantia propria of cornea	1	9	0.1111111111111111	0.7	False	all
+superior surface of tongue	1	9	0.1111111111111111	0.7	False	all
+telencephalon lateral wall	1	9	0.1111111111111111	0.7	False	all
+thoracic mammary gland	1	9	0.1111111111111111	0.7	False	all
+tracheobronchial tree	1	9	0.1111111111111111	0.7	False	all

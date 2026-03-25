@@ -15,6 +15,7 @@ from gene_compare_common import (
     DEFAULT_RANKING_PLOTS_DIR,
     DEFAULT_RANKING_TABLES_DIR,
     safe_slug,
+    summarize_species_gene_tissue,
 )
 
 
@@ -248,16 +249,25 @@ def load_candidate_scores(
         raise FileNotFoundError(long_path)
 
     long_df = pd.read_csv(long_path)
+    if "cell_mean_score" not in long_df.columns and "expression_score" in long_df.columns:
+        long_df["cell_mean_score"] = long_df["expression_score"]
+    if "cell_std_score" not in long_df.columns:
+        long_df["cell_std_score"] = 0.0
+    if "cell_n" not in long_df.columns:
+        long_df["cell_n"] = 0
+    if "cell_status" not in long_df.columns:
+        long_df["cell_status"] = ""
     filtered = long_df[long_df["tissue"].eq(tissue)].copy()
     if filtered.empty:
         raise RuntimeError(f"No rows found for {gene_name} / {tissue} in {long_path}")
 
-    plot_df = (
-        filtered.groupby(["species_dir", "species_name"], as_index=False)["agg_expression_score"]
-        .mean()
-        .rename(columns={"agg_expression_score": "expression_score"})
-        .sort_values(by=["expression_score", "species_name"], ascending=[True, True])
-        .reset_index(drop=True)
+    species_level_df = summarize_species_gene_tissue(filtered)
+    plot_df = species_level_df[
+        ["species_dir", "species_name", "cell_mean_score", "cell_std_score", "cell_n", "cell_status"]
+    ].copy()
+    plot_df = plot_df.rename(columns={"cell_mean_score": "expression_score"})
+    plot_df = plot_df.sort_values(by=["expression_score", "species_name"], ascending=[True, True]).reset_index(
+        drop=True
     )
     return plot_df
 
@@ -350,25 +360,26 @@ def plot_candidate_panels(
             row["gene_name"],
             row["tissue"],
         )
-        bars = ax.barh(
+        ax.barh(
             plot_df["species_name"],
             plot_df["expression_score"],
+            xerr=plot_df["cell_std_score"],
             color=color_map.get(row["gene_class"], "#888888"),
             alpha=0.9,
+            ecolor="#222222",
+            capsize=3,
         )
         ax.set_title(panel_title(row))
         ax.set_xlabel("Expression score")
         ax.set_ylabel("")
-        ax.set_xlim(0, max(100, float(plot_df["expression_score"].max()) + 5))
-
-        for bar, value in zip(bars, plot_df["expression_score"]):
-            ax.text(
-                value + 0.8,
-                bar.get_y() + bar.get_height() / 2,
-                f"{value:.2f}",
-                va="center",
-                fontsize=8,
-            )
+        ax.set_xlim(
+            0,
+            max(
+                100,
+                float((plot_df["expression_score"] + plot_df["cell_std_score"]).max()) + 5,
+            ),
+        )
+        ax.grid(axis="x", alpha=0.2)
 
     for ax in axes_flat[n_panels:]:
         ax.axis("off")

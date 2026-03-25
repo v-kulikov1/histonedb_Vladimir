@@ -18,23 +18,25 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+from normalized_expression_common import load_processed_expression_cells
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description=(
-            "Build heatmaps for the larger of two present+gold datasets, "
+            "Build heatmaps for the larger of two normalized H2A datasets, "
             "keeping only tissue and merged gene_name intersections."
         )
     )
     p.add_argument(
         "--a-present-gold",
         default=r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
-        help="Present+gold TSV for dataset A.",
+        help="Normalized H2A TSV for dataset A.",
     )
     p.add_argument(
         "--b-present-gold",
         default=r"CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv",
-        help="Present+gold TSV for dataset B.",
+        help="Normalized H2A TSV for dataset B.",
     )
     p.add_argument(
         "--a-species",
@@ -140,13 +142,12 @@ def heatmap(
         df.pivot_table(
             index="Gene row label",
             columns="Anatomical entity name",
-            values="Expression score",
+            values="cell_mean_score",
             aggfunc="mean",
         )
         .reindex(columns=target_names)
-        .dropna(axis=0, how="all")
     )
-    if mat.shape[0] == 0 or mat.shape[1] == 0:
+    if mat.shape[0] == 0 or mat.shape[1] == 0 or mat.notna().sum().sum() == 0:
         raise RuntimeError(f"Empty matrix for {title}: {mat.shape}")
 
     labels_sorted = sorted(mat.index.tolist(), key=lambda s: (s.split(":", 1)[0], s))
@@ -182,25 +183,6 @@ def heatmap(
     return mat.shape[0], mat.shape[1]
 
 
-def load_present_gold(path: Path) -> pd.DataFrame:
-    usecols = [
-        "Gene ID",
-        "Gene name",
-        "Anatomical entity name",
-        "Expression",
-        "Call quality",
-        "Expression score",
-    ]
-    df = pd.read_csv(path, sep="\t", dtype=str, usecols=usecols, low_memory=True)
-    df["Expression"] = df["Expression"].fillna("").astype(str).str.strip()
-    df["Call quality"] = df["Call quality"].fillna("").astype(str).str.strip()
-    df["Gene ID"] = df["Gene ID"].fillna("").astype(str).str.strip()
-    df["Gene name"] = df["Gene name"].fillna("").astype(str).str.strip()
-    df["Anatomical entity name"] = df["Anatomical entity name"].fillna("").astype(str).str.strip()
-    df = df[df["Expression"].eq("present") & df["Call quality"].eq("gold quality")].copy()
-    return df
-
-
 def main() -> None:
     args = parse_args()
     a_path = Path(args.a_present_gold)
@@ -213,8 +195,8 @@ def main() -> None:
         if not p.exists():
             raise FileNotFoundError(p)
 
-    a_df = load_present_gold(a_path)
-    b_df = load_present_gold(b_path)
+    a_df = load_processed_expression_cells(a_path)
+    b_df = load_processed_expression_cells(b_path)
 
     a_rows = len(a_df)
     b_rows = len(b_df)
@@ -276,9 +258,10 @@ def main() -> None:
     ].copy()
 
     primary_df["Expression score"] = pd.to_numeric(
-        primary_df["Expression score"], errors="coerce"
+        primary_df["cell_mean_score"], errors="coerce"
     )
-    primary_df = primary_df[primary_df["Expression score"].notna()].copy()
+    primary_df["cell_mean_score"] = primary_df["Expression score"]
+    primary_df = primary_df[primary_df["cell_mean_score"].notna()].copy()
     if primary_df.empty or not tissues or not genes:
         raise RuntimeError("No overlapping tissues/merged gene_name values after intersection.")
 
@@ -321,7 +304,7 @@ def main() -> None:
         primary_df,
         label_map,
         tissues,
-        f"H2A Expression (present + gold) - {primary_species} (intersection with {secondary_species})",
+        f"H2A Expression (normalized cells) - {primary_species} (intersection with {secondary_species})",
         all_png,
         all_svg,
         "HGNC" if id_col == "hgnc_id" else "VGNC",
@@ -330,7 +313,7 @@ def main() -> None:
         canonical,
         label_map,
         tissues,
-        f"H2A Expression (present + gold) - {primary_species} (intersection, clustered H2A)",
+        f"H2A Expression (normalized cells) - {primary_species} (intersection, clustered H2A)",
         can_png,
         can_svg,
         "HGNC" if id_col == "hgnc_id" else "VGNC",
@@ -339,7 +322,7 @@ def main() -> None:
         variants,
         label_map,
         tissues,
-        f"H2A Expression (present + gold) - {primary_species} (intersection, variants)",
+        f"H2A Expression (normalized cells) - {primary_species} (intersection, variants)",
         var_png,
         var_svg,
         "HGNC" if id_col == "hgnc_id" else "VGNC",

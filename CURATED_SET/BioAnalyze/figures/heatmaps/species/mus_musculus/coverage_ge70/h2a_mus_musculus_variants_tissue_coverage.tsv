@@ -1,0 +1,351 @@
+anatomical_entity_name	observed_gene_count	display_gene_count	fill_rate	threshold	kept	panel
+Ammon's horn	7	7	1.0	0.7	True	variants
+adrenal gland	7	7	1.0	0.7	True	variants
+adult mammalian kidney	7	7	1.0	0.7	True	variants
+animal zygote	7	7	1.0	0.7	True	variants
+bone marrow	7	7	1.0	0.7	True	variants
+brain	7	7	1.0	0.7	True	variants
+cerebellar cortex	7	7	1.0	0.7	True	variants
+cerebellum	7	7	1.0	0.7	True	variants
+cerebral cortex	7	7	1.0	0.7	True	variants
+colon	7	7	1.0	0.7	True	variants
+cortex of kidney	7	7	1.0	0.7	True	variants
+cortical plate	7	7	1.0	0.7	True	variants
+dentate gyrus of hippocampal formation granule cell	7	7	1.0	0.7	True	variants
+duodenum	7	7	1.0	0.7	True	variants
+ectoplacental cone	7	7	1.0	0.7	True	variants
+embryonic brain	7	7	1.0	0.7	True	variants
+embryonic facial prominence	7	7	1.0	0.7	True	variants
+embryonic post-anal tail	7	7	1.0	0.7	True	variants
+epiblast (generic)	7	7	1.0	0.7	True	variants
+esophagus	7	7	1.0	0.7	True	variants
+forebrain	7	7	1.0	0.7	True	variants
+forelimb bud	7	7	1.0	0.7	True	variants
+frontal cortex	7	7	1.0	0.7	True	variants
+ganglionic eminence	7	7	1.0	0.7	True	variants
+granulocyte	7	7	1.0	0.7	True	variants
+heart	7	7	1.0	0.7	True	variants
+hindbrain	7	7	1.0	0.7	True	variants
+hindlimb bud	7	7	1.0	0.7	True	variants
+hindlimb stylopod muscle	7	7	1.0	0.7	True	variants
+hypothalamus	7	7	1.0	0.7	True	variants
+ileum	7	7	1.0	0.7	True	variants
+intestine	7	7	1.0	0.7	True	variants
+islet of Langerhans	7	7	1.0	0.7	True	variants
+jejunum	7	7	1.0	0.7	True	variants
+kidney	7	7	1.0	0.7	True	variants
+lens of camera-type eye	7	7	1.0	0.7	True	variants
+limb	7	7	1.0	0.7	True	variants
+lip	7	7	1.0	0.7	True	variants
+liver	7	7	1.0	0.7	True	variants
+lung	7	7	1.0	0.7	True	variants
+midbrain	7	7	1.0	0.7	True	variants
+multicellular organism	7	7	1.0	0.7	True	variants
+muscle tissue	7	7	1.0	0.7	True	variants
+neural tube	7	7	1.0	0.7	True	variants
+olfactory bulb	7	7	1.0	0.7	True	variants
+ovary	7	7	1.0	0.7	True	variants
+pancreas	7	7	1.0	0.7	True	variants
+placenta	7	7	1.0	0.7	True	variants
+primary oocyte	7	7	1.0	0.7	True	variants
+primary visual cortex	7	7	1.0	0.7	True	variants
+proximal tubule	7	7	1.0	0.7	True	variants
+quadriceps femoris	7	7	1.0	0.7	True	variants
+retinal neural layer	7	7	1.0	0.7	True	variants
+right kidney	7	7	1.0	0.7	True	variants
+secondary oocyte	7	7	1.0	0.7	True	variants
+skeletal muscle tissue	7	7	1.0	0.7	True	variants
+spermatid	7	7	1.0	0.7	True	variants
+spermatocyte	7	7	1.0	0.7	True	variants
+spleen	7	7	1.0	0.7	True	variants
+stomach	7	7	1.0	0.7	True	variants
+striatum	7	7	1.0	0.7	True	variants
+superior frontal gyrus	7	7	1.0	0.7	True	variants
+testis	7	7	1.0	0.7	True	variants
+thymus	7	7	1.0	0.7	True	variants
+undifferentiated genital tubercle	7	7	1.0	0.7	True	variants
+urinary bladder	7	7	1.0	0.7	True	variants
+uterus	7	7	1.0	0.7	True	variants
+ventricular zone	7	7	1.0	0.7	True	variants
+white adipose tissue	7	7	1.0	0.7	True	variants
+yolk sac	7	7	1.0	0.7	True	variants
+zone of skin	7	7	1.0	0.7	True	variants
+1st arch mandibular component	2	7	0.2857142857142857	0.7	False	variants
+1st arch maxillary component	2	7	0.2857142857142857	0.7	False	variants
+CA1 field of hippocampus	2	7	0.2857142857142857	0.7	False	variants
+abdominal wall	2	7	0.2857142857142857	0.7	False	variants
+adipose tissue	2	7	0.2857142857142857	0.7	False	variants
+amygdala	2	7	0.2857142857142857	0.7	False	variants
+anterior amygdaloid area	2	7	0.2857142857142857	0.7	False	variants
+aorta	2	7	0.2857142857142857	0.7	False	variants
+aorta tunica adventitia	2	7	0.2857142857142857	0.7	False	variants
+aorta tunica media	2	7	0.2857142857142857	0.7	False	variants
+aortic valve	2	7	0.2857142857142857	0.7	False	variants
+arcuate nucleus of hypothalamus	2	7	0.2857142857142857	0.7	False	variants
+ascending aorta	2	7	0.2857142857142857	0.7	False	variants
+associated mesenchyme of midgut	2	7	0.2857142857142857	0.7	False	variants
+atrioventricular region	2	7	0.2857142857142857	0.7	False	variants
+atrioventricular valve	2	7	0.2857142857142857	0.7	False	variants
+barrel cortex	2	7	0.2857142857142857	0.7	False	variants
+bed nucleus of stria terminalis	2	7	0.2857142857142857	0.7	False	variants
+blastocyst	2	7	0.2857142857142857	0.7	False	variants
+blastoderm cell in morula	2	7	0.2857142857142857	0.7	False	variants
+blood	2	7	0.2857142857142857	0.7	False	variants
+bone element	2	7	0.2857142857142857	0.7	False	variants
+bone fossa	2	7	0.2857142857142857	0.7	False	variants
+brain blood vessel	2	7	0.2857142857142857	0.7	False	variants
+brainstem	2	7	0.2857142857142857	0.7	False	variants
+brown adipose tissue	2	7	0.2857142857142857	0.7	False	variants
+camera-type eye	2	7	0.2857142857142857	0.7	False	variants
+cardiac atrium	2	7	0.2857142857142857	0.7	False	variants
+cardiac muscle tissue	2	7	0.2857142857142857	0.7	False	variants
+cardiac ventricle	2	7	0.2857142857142857	0.7	False	variants
+carotid body	2	7	0.2857142857142857	0.7	False	variants
+caudate-putamen	2	7	0.2857142857142857	0.7	False	variants
+central gray substance of midbrain	2	7	0.2857142857142857	0.7	False	variants
+central nervous system	2	7	0.2857142857142857	0.7	False	variants
+cerebellar nuclear complex	2	7	0.2857142857142857	0.7	False	variants
+cerebellar vermis	2	7	0.2857142857142857	0.7	False	variants
+cerebellum lobe	2	7	0.2857142857142857	0.7	False	variants
+cerebral hemisphere	2	7	0.2857142857142857	0.7	False	variants
+choroid plexus epithelium	2	7	0.2857142857142857	0.7	False	variants
+ciliary body	2	7	0.2857142857142857	0.7	False	variants
+cingulate cortex	2	7	0.2857142857142857	0.7	False	variants
+cleaving embryo	2	7	0.2857142857142857	0.7	False	variants
+cochlea	2	7	0.2857142857142857	0.7	False	variants
+condyle	2	7	0.2857142857142857	0.7	False	variants
+conjunctival fornix	2	7	0.2857142857142857	0.7	False	variants
+cornea	2	7	0.2857142857142857	0.7	False	variants
+cranial nerve II	2	7	0.2857142857142857	0.7	False	variants
+crypt of Lieberkuhn of small intestine	2	7	0.2857142857142857	0.7	False	variants
+cumulus cell	2	7	0.2857142857142857	0.7	False	variants
+decidua	2	7	0.2857142857142857	0.7	False	variants
+dentate gyrus of hippocampal formation	2	7	0.2857142857142857	0.7	False	variants
+dermis	2	7	0.2857142857142857	0.7	False	variants
+diaphragm	2	7	0.2857142857142857	0.7	False	variants
+diaphysis of femur	2	7	0.2857142857142857	0.7	False	variants
+digastric muscle group	2	7	0.2857142857142857	0.7	False	variants
+dorsal pancreas	2	7	0.2857142857142857	0.7	False	variants
+dorsal root ganglion	2	7	0.2857142857142857	0.7	False	variants
+dorsal striatum	2	7	0.2857142857142857	0.7	False	variants
+dorsal tegmental nucleus	2	7	0.2857142857142857	0.7	False	variants
+dorsomedial nucleus of hypothalamus	2	7	0.2857142857142857	0.7	False	variants
+ear	2	7	0.2857142857142857	0.7	False	variants
+ear vesicle	2	7	0.2857142857142857	0.7	False	variants
+efferent duct	2	7	0.2857142857142857	0.7	False	variants
+embryo	2	7	0.2857142857142857	0.7	False	variants
+embryonic cell in blastocyst	2	7	0.2857142857142857	0.7	False	variants
+endocardial cushion	2	7	0.2857142857142857	0.7	False	variants
+endoderm of midgut	2	7	0.2857142857142857	0.7	False	variants
+endothelial cell of lymphatic vessel	2	7	0.2857142857142857	0.7	False	variants
+epiblast cell in embryo	2	7	0.2857142857142857	0.7	False	variants
+epididymal fat pad	2	7	0.2857142857142857	0.7	False	variants
+epididymis	2	7	0.2857142857142857	0.7	False	variants
+epithelium of cochlear duct	2	7	0.2857142857142857	0.7	False	variants
+epithelium of lens	2	7	0.2857142857142857	0.7	False	variants
+epithelium of small intestine	2	7	0.2857142857142857	0.7	False	variants
+epithelium of stomach	2	7	0.2857142857142857	0.7	False	variants
+external carotid artery	2	7	0.2857142857142857	0.7	False	variants
+extra-ocular muscle	2	7	0.2857142857142857	0.7	False	variants
+eyeball of camera-type eye	2	7	0.2857142857142857	0.7	False	variants
+facial nucleus	2	7	0.2857142857142857	0.7	False	variants
+femorotibial joint	2	7	0.2857142857142857	0.7	False	variants
+fetal liver hematopoietic progenitor cell	2	7	0.2857142857142857	0.7	False	variants
+floor plate of midbrain	2	7	0.2857142857142857	0.7	False	variants
+frontonasal prominence	2	7	0.2857142857142857	0.7	False	variants
+gastrocnemius	2	7	0.2857142857142857	0.7	False	variants
+gastrocnemius medialis	2	7	0.2857142857142857	0.7	False	variants
+gastrula	2	7	0.2857142857142857	0.7	False	variants
+globus pallidus	2	7	0.2857142857142857	0.7	False	variants
+gonadal ridge	2	7	0.2857142857142857	0.7	False	variants
+habenula	2	7	0.2857142857142857	0.7	False	variants
+hair follicle	2	7	0.2857142857142857	0.7	False	variants
+head	2	7	0.2857142857142857	0.7	False	variants
+heart left ventricle	2	7	0.2857142857142857	0.7	False	variants
+heart right ventricle	2	7	0.2857142857142857	0.7	False	variants
+hindlimb long bone	2	7	0.2857142857142857	0.7	False	variants
+hippocampal field	2	7	0.2857142857142857	0.7	False	variants
+humerus cartilage element	2	7	0.2857142857142857	0.7	False	variants
+indifferent gonad	2	7	0.2857142857142857	0.7	False	variants
+inferior colliculus	2	7	0.2857142857142857	0.7	False	variants
+inguinal mammary gland	2	7	0.2857142857142857	0.7	False	variants
+intercostal muscle	2	7	0.2857142857142857	0.7	False	variants
+internal carotid artery	2	7	0.2857142857142857	0.7	False	variants
+interventricular septum	2	7	0.2857142857142857	0.7	False	variants
+intestinal epithelium	2	7	0.2857142857142857	0.7	False	variants
+intestinal villus	2	7	0.2857142857142857	0.7	False	variants
+iris	2	7	0.2857142857142857	0.7	False	variants
+knee joint	2	7	0.2857142857142857	0.7	False	variants
+lacrimal gland	2	7	0.2857142857142857	0.7	False	variants
+large intestine	2	7	0.2857142857142857	0.7	False	variants
+late embryo	2	7	0.2857142857142857	0.7	False	variants
+lateral geniculate body	2	7	0.2857142857142857	0.7	False	variants
+lateral hypothalamic area	2	7	0.2857142857142857	0.7	False	variants
+lateral septal nucleus	2	7	0.2857142857142857	0.7	False	variants
+left colon	2	7	0.2857142857142857	0.7	False	variants
+left lobe of liver	2	7	0.2857142857142857	0.7	False	variants
+left lung	2	7	0.2857142857142857	0.7	False	variants
+left lung lobe	2	7	0.2857142857142857	0.7	False	variants
+limb bud	2	7	0.2857142857142857	0.7	False	variants
+lobe of prostate	2	7	0.2857142857142857	0.7	False	variants
+lumbar dorsal root ganglion	2	7	0.2857142857142857	0.7	False	variants
+lumbar subsegment of spinal cord	2	7	0.2857142857142857	0.7	False	variants
+lymph node	2	7	0.2857142857142857	0.7	False	variants
+male reproductive system	2	7	0.2857142857142857	0.7	False	variants
+mammary bud	2	7	0.2857142857142857	0.7	False	variants
+mammary gland	2	7	0.2857142857142857	0.7	False	variants
+mammillary body	2	7	0.2857142857142857	0.7	False	variants
+mandibular prominence	2	7	0.2857142857142857	0.7	False	variants
+manus	2	7	0.2857142857142857	0.7	False	variants
+masseter muscle	2	7	0.2857142857142857	0.7	False	variants
+maxillary prominence	2	7	0.2857142857142857	0.7	False	variants
+medial dorsal nucleus of thalamus	2	7	0.2857142857142857	0.7	False	variants
+medial ganglionic eminence	2	7	0.2857142857142857	0.7	False	variants
+medial geniculate body	2	7	0.2857142857142857	0.7	False	variants
+medial preoptic region	2	7	0.2857142857142857	0.7	False	variants
+medial vestibular nucleus	2	7	0.2857142857142857	0.7	False	variants
+median eminence of neurohypophysis	2	7	0.2857142857142857	0.7	False	variants
+membranous labyrinth	2	7	0.2857142857142857	0.7	False	variants
+mesenteric lymph node	2	7	0.2857142857142857	0.7	False	variants
+mesodermal cell in embryo	2	7	0.2857142857142857	0.7	False	variants
+metanephric S-shaped body	2	7	0.2857142857142857	0.7	False	variants
+metanephric collecting duct	2	7	0.2857142857142857	0.7	False	variants
+metanephric cortical collecting duct	2	7	0.2857142857142857	0.7	False	variants
+metanephric loop of Henle	2	7	0.2857142857142857	0.7	False	variants
+metanephric mesenchyme	2	7	0.2857142857142857	0.7	False	variants
+metanephric proximal tubule	2	7	0.2857142857142857	0.7	False	variants
+metanephric renal vesicle	2	7	0.2857142857142857	0.7	False	variants
+metanephric ureteric bud	2	7	0.2857142857142857	0.7	False	variants
+metanephros	2	7	0.2857142857142857	0.7	False	variants
+migratory enteric neural crest cell	2	7	0.2857142857142857	0.7	False	variants
+molar tooth	2	7	0.2857142857142857	0.7	False	variants
+motor neuron	2	7	0.2857142857142857	0.7	False	variants
+mucous cell of stomach	2	7	0.2857142857142857	0.7	False	variants
+muscle of arm	2	7	0.2857142857142857	0.7	False	variants
+muscle of leg	2	7	0.2857142857142857	0.7	False	variants
+myocardium of ventricle	2	7	0.2857142857142857	0.7	False	variants
+neocortex	2	7	0.2857142857142857	0.7	False	variants
+nucleus accumbens	2	7	0.2857142857142857	0.7	False	variants
+nucleus of brain	2	7	0.2857142857142857	0.7	False	variants
+olfactory epithelium	2	7	0.2857142857142857	0.7	False	variants
+olfactory tubercle	2	7	0.2857142857142857	0.7	False	variants
+oocyte	2	7	0.2857142857142857	0.7	False	variants
+optic fissure	2	7	0.2857142857142857	0.7	False	variants
+otic placode	2	7	0.2857142857142857	0.7	False	variants
+outflow tract	2	7	0.2857142857142857	0.7	False	variants
+paneth cell	2	7	0.2857142857142857	0.7	False	variants
+paraventricular nucleus of hypothalamus	2	7	0.2857142857142857	0.7	False	variants
+parotid gland	2	7	0.2857142857142857	0.7	False	variants
+peripheral lymph node	2	7	0.2857142857142857	0.7	False	variants
+pes	2	7	0.2857142857142857	0.7	False	variants
+pharyngeal arch 2	2	7	0.2857142857142857	0.7	False	variants
+pigmented layer of retina	2	7	0.2857142857142857	0.7	False	variants
+pineal body	2	7	0.2857142857142857	0.7	False	variants
+piriform cortex	2	7	0.2857142857142857	0.7	False	variants
+pituitary gland	2	7	0.2857142857142857	0.7	False	variants
+placenta labyrinth	2	7	0.2857142857142857	0.7	False	variants
+pontine nuclear group	2	7	0.2857142857142857	0.7	False	variants
+prefrontal cortex	2	7	0.2857142857142857	0.7	False	variants
+presomitic mesoderm	2	7	0.2857142857142857	0.7	False	variants
+primary motor cortex	2	7	0.2857142857142857	0.7	False	variants
+primitive streak	2	7	0.2857142857142857	0.7	False	variants
+prostate gland	2	7	0.2857142857142857	0.7	False	variants
+prostate gland ventral lobe	2	7	0.2857142857142857	0.7	False	variants
+pyloric antrum	2	7	0.2857142857142857	0.7	False	variants
+renal corpuscle	2	7	0.2857142857142857	0.7	False	variants
+renal medulla collecting duct	2	7	0.2857142857142857	0.7	False	variants
+renal medulla interstitium	2	7	0.2857142857142857	0.7	False	variants
+respiratory primordium	2	7	0.2857142857142857	0.7	False	variants
+retina	2	7	0.2857142857142857	0.7	False	variants
+retrosplenial region	2	7	0.2857142857142857	0.7	False	variants
+rhombomere 4	2	7	0.2857142857142857	0.7	False	variants
+right colon	2	7	0.2857142857142857	0.7	False	variants
+right lung	2	7	0.2857142857142857	0.7	False	variants
+right lung lobe	2	7	0.2857142857142857	0.7	False	variants
+rostral migratory stream	2	7	0.2857142857142857	0.7	False	variants
+saccule of membranous labyrinth	2	7	0.2857142857142857	0.7	False	variants
+saliva-secreting gland	2	7	0.2857142857142857	0.7	False	variants
+sciatic nerve	2	7	0.2857142857142857	0.7	False	variants
+secondary palatal shelf	2	7	0.2857142857142857	0.7	False	variants
+semi-lunar valve	2	7	0.2857142857142857	0.7	False	variants
+seminal vesicle	2	7	0.2857142857142857	0.7	False	variants
+seminiferous tubule of testis	2	7	0.2857142857142857	0.7	False	variants
+sexually immature organism	2	7	0.2857142857142857	0.7	False	variants
+skin epidermis	2	7	0.2857142857142857	0.7	False	variants
+skin of abdomen	2	7	0.2857142857142857	0.7	False	variants
+skin of back	2	7	0.2857142857142857	0.7	False	variants
+skin of external ear	2	7	0.2857142857142857	0.7	False	variants
+small intestine	2	7	0.2857142857142857	0.7	False	variants
+small intestine Peyer's patch	2	7	0.2857142857142857	0.7	False	variants
+soleus muscle	2	7	0.2857142857142857	0.7	False	variants
+somite	2	7	0.2857142857142857	0.7	False	variants
+spinal cord	2	7	0.2857142857142857	0.7	False	variants
+sternocleidomastoid	2	7	0.2857142857142857	0.7	False	variants
+stria vascularis of cochlear duct	2	7	0.2857142857142857	0.7	False	variants
+stroma of bone marrow	2	7	0.2857142857142857	0.7	False	variants
+subcutaneous adipose tissue	2	7	0.2857142857142857	0.7	False	variants
+subiculum	2	7	0.2857142857142857	0.7	False	variants
+submandibular gland	2	7	0.2857142857142857	0.7	False	variants
+subparaventricular zone	2	7	0.2857142857142857	0.7	False	variants
+substantia nigra	2	7	0.2857142857142857	0.7	False	variants
+superior cervical ganglion	2	7	0.2857142857142857	0.7	False	variants
+superior colliculus	2	7	0.2857142857142857	0.7	False	variants
+suprachiasmatic nucleus	2	7	0.2857142857142857	0.7	False	variants
+supraoptic nucleus	2	7	0.2857142857142857	0.7	False	variants
+tail skin	2	7	0.2857142857142857	0.7	False	variants
+tarsal region	2	7	0.2857142857142857	0.7	False	variants
+telencephalon	2	7	0.2857142857142857	0.7	False	variants
+temporal lobe	2	7	0.2857142857142857	0.7	False	variants
+temporalis muscle	2	7	0.2857142857142857	0.7	False	variants
+tibialis anterior	2	7	0.2857142857142857	0.7	False	variants
+trachea	2	7	0.2857142857142857	0.7	False	variants
+triceps brachii	2	7	0.2857142857142857	0.7	False	variants
+triceps surae	2	7	0.2857142857142857	0.7	False	variants
+trigeminal ganglion	2	7	0.2857142857142857	0.7	False	variants
+umbilical cord	2	7	0.2857142857142857	0.7	False	variants
+ureter	2	7	0.2857142857142857	0.7	False	variants
+ureter smooth muscle	2	7	0.2857142857142857	0.7	False	variants
+ureteric bud tip	2	7	0.2857142857142857	0.7	False	variants
+urinary bladder urothelium	2	7	0.2857142857142857	0.7	False	variants
+urogenital fold	2	7	0.2857142857142857	0.7	False	variants
+urothelium	2	7	0.2857142857142857	0.7	False	variants
+uterine cervix	2	7	0.2857142857142857	0.7	False	variants
+utricle of membranous labyrinth	2	7	0.2857142857142857	0.7	False	variants
+vas deferens	2	7	0.2857142857142857	0.7	False	variants
+vastus lateralis	2	7	0.2857142857142857	0.7	False	variants
+vault of skull	2	7	0.2857142857142857	0.7	False	variants
+ventral horn of spinal cord	2	7	0.2857142857142857	0.7	False	variants
+ventral tegmental area	2	7	0.2857142857142857	0.7	False	variants
+ventromedial nucleus of hypothalamus	2	7	0.2857142857142857	0.7	False	variants
+vestibular epithelium	2	7	0.2857142857142857	0.7	False	variants
+vestibular membrane of cochlear duct	2	7	0.2857142857142857	0.7	False	variants
+vestibular organ	2	7	0.2857142857142857	0.7	False	variants
+visual cortex	2	7	0.2857142857142857	0.7	False	variants
+CA3 field of hippocampus	1	7	0.14285714285714285	0.7	False	variants
+ankle joint	1	7	0.14285714285714285	0.7	False	variants
+blood vessel	1	7	0.14285714285714285	0.7	False	variants
+cardiac muscle of left ventricle	1	7	0.14285714285714285	0.7	False	variants
+cerebellum external granule cell layer	1	7	0.14285714285714285	0.7	False	variants
+cerebral cortex subventricular zone	1	7	0.14285714285714285	0.7	False	variants
+choroid plexus of fourth ventricle	1	7	0.14285714285714285	0.7	False	variants
+entorhinal cortex	1	7	0.14285714285714285	0.7	False	variants
+extensor digitorum longus	1	7	0.14285714285714285	0.7	False	variants
+femur	1	7	0.14285714285714285	0.7	False	variants
+gall bladder	1	7	0.14285714285714285	0.7	False	variants
+gonadal fat pad	1	7	0.14285714285714285	0.7	False	variants
+hindlimb zeugopod muscle	1	7	0.14285714285714285	0.7	False	variants
+ileal epithelium	1	7	0.14285714285714285	0.7	False	variants
+layer of retina	1	7	0.14285714285714285	0.7	False	variants
+medulla oblongata	1	7	0.14285714285714285	0.7	False	variants
+morula	1	7	0.14285714285714285	0.7	False	variants
+outer nuclear layer of retina	1	7	0.14285714285714285	0.7	False	variants
+perirhinal cortex	1	7	0.14285714285714285	0.7	False	variants
+pharyngeal arch 1	1	7	0.14285714285714285	0.7	False	variants
+plantaris	1	7	0.14285714285714285	0.7	False	variants
+pons	1	7	0.14285714285714285	0.7	False	variants
+skin of snout	1	7	0.14285714285714285	0.7	False	variants
+substantia propria of cornea	1	7	0.14285714285714285	0.7	False	variants
+superior surface of tongue	1	7	0.14285714285714285	0.7	False	variants
+telencephalon lateral wall	1	7	0.14285714285714285	0.7	False	variants
+thoracic mammary gland	1	7	0.14285714285714285	0.7	False	variants
+tracheobronchial tree	1	7	0.14285714285714285	0.7	False	variants

@@ -1,0 +1,301 @@
+gene_name,species_dir,species_name,ensembl_gene_id,tissue,cell_mean_score,cell_std_score,cell_n,cell_status,map_label,class,expression_score,agg_expression_score
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,adipose tissue,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,adrenal cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,adrenal gland,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,adult mammalian kidney,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,blood,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,bone marrow,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,brain,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,cardiac muscle of left ventricle,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,cartilage tissue,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,cerebellum,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,cerebral cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,colon,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,frontal cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,granulocyte,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,hair follicle,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,head,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,heart,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,heart left ventricle,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,heart right ventricle,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,hypothalamus,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,jejunum,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,keratinocyte,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,kidney,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,large intestine,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,left cardiac atrium,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,liver,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,lung,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,lymph node,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,mammary gland,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,metanephros cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,mitral valve,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,mucosa of urinary bladder,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,nose,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,occipital cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,occipital lobe,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,olfactory bulb,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,ovary,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,pancreas,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,pituitary gland,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,placenta,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,prefrontal cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,renal medulla,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,retina,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,right cardiac atrium,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,saliva-secreting gland,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,skeletal muscle tissue,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,small intestine,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,smooth muscle tissue,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,spinal cord,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,spleen,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,stomach,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,temporal lobe,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,testis,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,thymus,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,thyroid gland,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,tongue,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,urinary bladder,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,canis_lupus_familiaris,Canis lupus familiaris,ENSCAFG00000028471,zone of skin,0.0,0.0,0,observed_zero,H2AB3:VGNC:83746,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,adult mammalian kidney,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,articular cartilage of joint,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,blood,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,bone marrow,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,brainstem,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,cerebellum,33.3,0.0,1,present_gold,H2AB3:VGNC:83789,variant,33.3,33.3
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,chorionic villus,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,embryo,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,endometrium,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,epithelium of bronchus,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,gluteus medius,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,inner cell mass,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,leukocyte,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,liver,38.97,0.0,1,present_gold,H2AB3:VGNC:83789,variant,38.97,38.97
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,multicellular organism,20.71,0.0,1,present_gold,H2AB3:VGNC:83789,variant,20.71,20.71
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,muscle tissue,29.6,0.0,1,present_gold,H2AB3:VGNC:83789,variant,29.6,29.6
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,oviduct epithelium,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,prefrontal cortex,38.93,0.0,1,present_gold,H2AB3:VGNC:83789,variant,38.93,38.93
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,retina,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,spinal cord,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,synovial membrane of synovial joint,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,testis,75.44,18.627876959009583,4,present_gold,H2AB3:VGNC:83789,variant,75.44,75.44
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,triceps brachii,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,trophectoderm,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,trophoblast,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,equus_caballus,Equus caballus,ENSECAG00000029871,zone of skin,0.0,0.0,0,observed_zero,H2AB3:VGNC:83789,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,adult mammalian kidney,29.0,8.20243866176395,2,present_gold,H2AB3:VGNC:109868,variant,29.0,29.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,brain,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,embryo,23.16,0.0,1,present_gold,H2AB3:VGNC:109868,variant,23.16,23.16
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,embryonic head,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,eyeball of camera-type eye,28.35,0.0,1,present_gold,H2AB3:VGNC:109868,variant,28.35,28.35
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,liver,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,prefrontal cortex,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,spleen,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,testis,22.295,3.372899346259832,2,present_gold,H2AB3:VGNC:109868,variant,22.295,22.295
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,tip of external ear,31.39,0.0,1,present_gold,H2AB3:VGNC:109868,variant,31.39,31.39
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,uterus,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,felis_catus,Felis catus,ENSFCAG00000044965,zone of skin,0.0,0.0,0,observed_zero,H2AB3:VGNC:109868,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,Ammon's horn,35.932500000000005,2.9278476167086755,4,present_gold,H2AB3:HGNC:14455,variant,35.932500000000005,35.932500000000005
+H2AB3,human,Homo sapiens,ENSG00000277745,Brodmann (1909) area 9,40.55166666666667,7.777741103088137,6,present_gold,H2AB3:HGNC:14455,variant,40.55166666666667,40.55166666666667
+H2AB3,human,Homo sapiens,ENSG00000277745,C1 segment of cervical spinal cord,41.73,5.944364277756424,7,present_gold,H2AB3:HGNC:14455,variant,41.73,41.73
+H2AB3,human,Homo sapiens,ENSG00000277745,adenohypophysis,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,adipose tissue,39.105,0.0636396103067866,2,present_gold,H2AB3:HGNC:14455,variant,39.105,39.105
+H2AB3,human,Homo sapiens,ENSG00000277745,adrenal gland,38.78,0.9758073580374323,2,present_gold,H2AB3:HGNC:14455,variant,38.78,38.78
+H2AB3,human,Homo sapiens,ENSG00000277745,adrenal tissue,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,adult mammalian kidney,48.8,11.877912274469786,5,present_gold,H2AB3:HGNC:14455,variant,48.8,48.8
+H2AB3,human,Homo sapiens,ENSG00000277745,amygdala,42.522,10.804400492391975,5,present_gold,H2AB3:HGNC:14455,variant,42.522,42.522
+H2AB3,human,Homo sapiens,ENSG00000277745,anterior cingulate cortex,37.61714285714286,6.702697751119109,7,present_gold,H2AB3:HGNC:14455,variant,37.61714285714286,37.61714285714286
+H2AB3,human,Homo sapiens,ENSG00000277745,apex of heart,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,ascending aorta,41.64,5.421358224651825,9,present_gold,H2AB3:HGNC:14455,variant,41.64,41.64
+H2AB3,human,Homo sapiens,ENSG00000277745,blood,48.315625,8.052621079499518,16,present_gold,H2AB3:HGNC:14455,variant,48.315625,48.315625
+H2AB3,human,Homo sapiens,ENSG00000277745,body of pancreas,37.82,5.658371800135745,8,present_gold,H2AB3:HGNC:14455,variant,37.82,37.82
+H2AB3,human,Homo sapiens,ENSG00000277745,body of stomach,36.925,2.4179143905440488,6,present_gold,H2AB3:HGNC:14455,variant,36.925,36.925
+H2AB3,human,Homo sapiens,ENSG00000277745,body of uterus,43.77333333333333,4.365745449901238,3,present_gold,H2AB3:HGNC:14455,variant,43.77333333333333,43.77333333333333
+H2AB3,human,Homo sapiens,ENSG00000277745,bone marrow,42.76,0.0,1,present_gold,H2AB3:HGNC:14455,variant,42.76,42.76
+H2AB3,human,Homo sapiens,ENSG00000277745,bone marrow cell,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,brain,33.96,0.2351595203260998,3,present_gold,H2AB3:HGNC:14455,variant,33.96,33.96
+H2AB3,human,Homo sapiens,ENSG00000277745,calcaneal tendon,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,caudate nucleus,32.95333333333333,3.968015456959142,6,present_gold,H2AB3:HGNC:14455,variant,32.95333333333333,32.95333333333333
+H2AB3,human,Homo sapiens,ENSG00000277745,cerebellar cortex,38.38,1.244507934888322,2,present_gold,H2AB3:HGNC:14455,variant,38.38,38.38
+H2AB3,human,Homo sapiens,ENSG00000277745,cerebellar hemisphere,38.61888888888889,4.803741886395552,9,present_gold,H2AB3:HGNC:14455,variant,38.61888888888889,38.61888888888889
+H2AB3,human,Homo sapiens,ENSG00000277745,cerebellum,47.28333333333333,15.262681066357034,3,present_gold,H2AB3:HGNC:14455,variant,47.28333333333333,47.28333333333333
+H2AB3,human,Homo sapiens,ENSG00000277745,cerebral cortex,33.98,0.0,1,present_gold,H2AB3:HGNC:14455,variant,33.98,33.98
+H2AB3,human,Homo sapiens,ENSG00000277745,colon,39.59,3.393297314805566,7,present_gold,H2AB3:HGNC:14455,variant,39.59,39.59
+H2AB3,human,Homo sapiens,ENSG00000277745,colonic epithelium,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,corpus callosum,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,cortex of kidney,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,cortical plate,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,descending thoracic aorta,42.985,1.0111626970967629,2,present_gold,H2AB3:HGNC:14455,variant,42.985,42.985
+H2AB3,human,Homo sapiens,ENSG00000277745,dorsolateral prefrontal cortex,37.52571428571429,3.0737916712254987,7,present_gold,H2AB3:HGNC:14455,variant,37.52571428571429,37.52571428571429
+H2AB3,human,Homo sapiens,ENSG00000277745,duodenum,45.05,0.0,1,present_gold,H2AB3:HGNC:14455,variant,45.05,45.05
+H2AB3,human,Homo sapiens,ENSG00000277745,ectocervix,50.235,6.371032098490797,2,present_gold,H2AB3:HGNC:14455,variant,50.235,50.235
+H2AB3,human,Homo sapiens,ENSG00000277745,endocervix,47.44,5.154677487486487,3,present_gold,H2AB3:HGNC:14455,variant,47.44,47.44
+H2AB3,human,Homo sapiens,ENSG00000277745,endometrium,27.77,0.0,1,present_gold,H2AB3:HGNC:14455,variant,27.77,27.77
+H2AB3,human,Homo sapiens,ENSG00000277745,esophagogastric junction muscularis propria,43.935,6.153514352700324,10,present_gold,H2AB3:HGNC:14455,variant,43.935,43.935
+H2AB3,human,Homo sapiens,ENSG00000277745,esophagus,39.98,0.4167333280008528,4,present_gold,H2AB3:HGNC:14455,variant,39.98,39.98
+H2AB3,human,Homo sapiens,ENSG00000277745,esophagus mucosa,40.836,5.148180261024278,10,present_gold,H2AB3:HGNC:14455,variant,40.836,40.836
+H2AB3,human,Homo sapiens,ENSG00000277745,fallopian tube,33.44,0.0,1,present_gold,H2AB3:HGNC:14455,variant,33.44,33.44
+H2AB3,human,Homo sapiens,ENSG00000277745,frontal cortex,36.150000000000006,0.2687005768508899,2,present_gold,H2AB3:HGNC:14455,variant,36.150000000000006,36.150000000000006
+H2AB3,human,Homo sapiens,ENSG00000277745,fundus of stomach,45.91,0.0,1,present_gold,H2AB3:HGNC:14455,variant,45.91,45.91
+H2AB3,human,Homo sapiens,ENSG00000277745,gall bladder,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,ganglionic eminence,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,gastrocnemius,42.8,5.42839386927662,11,present_gold,H2AB3:HGNC:14455,variant,42.8,42.8
+H2AB3,human,Homo sapiens,ENSG00000277745,granulocyte,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,heart,40.26,8.595444529904587,4,present_gold,H2AB3:HGNC:14455,variant,40.26,40.26
+H2AB3,human,Homo sapiens,ENSG00000277745,heart left ventricle,41.64,7.878862862114049,11,present_gold,H2AB3:HGNC:14455,variant,41.64,41.64
+H2AB3,human,Homo sapiens,ENSG00000277745,hindlimb stylopod muscle,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,hypothalamus,33.015,5.483238094411003,4,present_gold,H2AB3:HGNC:14455,variant,33.015,33.015
+H2AB3,human,Homo sapiens,ENSG00000277745,intestine,39.12,0.0,1,present_gold,H2AB3:HGNC:14455,variant,39.12,39.12
+H2AB3,human,Homo sapiens,ENSG00000277745,islet of Langerhans,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,kidney,36.17,0.0,1,present_gold,H2AB3:HGNC:14455,variant,36.17,36.17
+H2AB3,human,Homo sapiens,ENSG00000277745,left adrenal gland,42.125,6.4452424314373165,6,present_gold,H2AB3:HGNC:14455,variant,42.125,42.125
+H2AB3,human,Homo sapiens,ENSG00000277745,left adrenal gland cortex,50.494,8.120325116644038,5,present_gold,H2AB3:HGNC:14455,variant,50.494,50.494
+H2AB3,human,Homo sapiens,ENSG00000277745,left coronary artery,50.002,5.688340707095524,5,present_gold,H2AB3:HGNC:14455,variant,50.002,50.002
+H2AB3,human,Homo sapiens,ENSG00000277745,left lobe of thyroid gland,42.284444444444446,6.387904803437335,9,present_gold,H2AB3:HGNC:14455,variant,42.284444444444446,42.284444444444446
+H2AB3,human,Homo sapiens,ENSG00000277745,left ovary,41.3225,3.749412176150638,4,present_gold,H2AB3:HGNC:14455,variant,41.3225,41.3225
+H2AB3,human,Homo sapiens,ENSG00000277745,left testis,39.23666666666667,7.7167108710037,6,present_gold,H2AB3:HGNC:14455,variant,39.23666666666667,39.23666666666667
+H2AB3,human,Homo sapiens,ENSG00000277745,left uterine tube,46.095,3.443610024378489,2,present_gold,H2AB3:HGNC:14455,variant,46.095,46.095
+H2AB3,human,Homo sapiens,ENSG00000277745,leukocyte,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,liver,40.175,3.8113055505954914,2,present_gold,H2AB3:HGNC:14455,variant,40.175,40.175
+H2AB3,human,Homo sapiens,ENSG00000277745,lower esophagus,42.41,3.2526911934581197,2,present_gold,H2AB3:HGNC:14455,variant,42.41,42.41
+H2AB3,human,Homo sapiens,ENSG00000277745,lower esophagus mucosa,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,lower esophagus muscularis layer,41.671,2.8229749870974365,10,present_gold,H2AB3:HGNC:14455,variant,41.671,41.671
+H2AB3,human,Homo sapiens,ENSG00000277745,lung,31.98,4.14743294098892,3,present_gold,H2AB3:HGNC:14455,variant,31.98,31.98
+H2AB3,human,Homo sapiens,ENSG00000277745,lymph node,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,metanephros cortex,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,minor salivary gland,40.152,7.917851349955998,5,present_gold,H2AB3:HGNC:14455,variant,40.152,40.152
+H2AB3,human,Homo sapiens,ENSG00000277745,monocyte,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,mucosa of stomach,45.86,0.0,1,present_gold,H2AB3:HGNC:14455,variant,45.86,45.86
+H2AB3,human,Homo sapiens,ENSG00000277745,mucosa of transverse colon,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,multicellular organism,38.34,0.0,1,present_gold,H2AB3:HGNC:14455,variant,38.34,38.34
+H2AB3,human,Homo sapiens,ENSG00000277745,muscle layer of sigmoid colon,43.07,7.468980296309978,10,present_gold,H2AB3:HGNC:14455,variant,43.07,43.07
+H2AB3,human,Homo sapiens,ENSG00000277745,muscle of leg,44.760000000000005,0.9899494936611656,2,present_gold,H2AB3:HGNC:14455,variant,44.760000000000005,44.760000000000005
+H2AB3,human,Homo sapiens,ENSG00000277745,muscle tissue,39.02,0.0,1,present_gold,H2AB3:HGNC:14455,variant,39.02,39.02
+H2AB3,human,Homo sapiens,ENSG00000277745,myometrium,40.554,6.940322759065316,5,present_gold,H2AB3:HGNC:14455,variant,40.554,40.554
+H2AB3,human,Homo sapiens,ENSG00000277745,nucleus accumbens,30.948,5.563400039544164,5,present_gold,H2AB3:HGNC:14455,variant,30.948,30.948
+H2AB3,human,Homo sapiens,ENSG00000277745,olfactory segment of nasal mucosa,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,omental fat pad,41.23636363636364,3.565479694872129,11,present_gold,H2AB3:HGNC:14455,variant,41.23636363636364,41.23636363636364
+H2AB3,human,Homo sapiens,ENSG00000277745,ovary,41.086666666666666,0.4313158162336908,3,present_gold,H2AB3:HGNC:14455,variant,41.086666666666666,41.086666666666666
+H2AB3,human,Homo sapiens,ENSG00000277745,pancreas,33.24,0.2121320343559622,2,present_gold,H2AB3:HGNC:14455,variant,33.24,33.24
+H2AB3,human,Homo sapiens,ENSG00000277745,pituitary gland,36.858,4.471797177869318,5,present_gold,H2AB3:HGNC:14455,variant,36.858,36.858
+H2AB3,human,Homo sapiens,ENSG00000277745,placenta,31.1,0.0,1,present_gold,H2AB3:HGNC:14455,variant,31.1,31.1
+H2AB3,human,Homo sapiens,ENSG00000277745,popliteal artery,41.42,0.0,1,present_gold,H2AB3:HGNC:14455,variant,41.42,41.42
+H2AB3,human,Homo sapiens,ENSG00000277745,prefrontal cortex,39.72,0.0,1,present_gold,H2AB3:HGNC:14455,variant,39.72,39.72
+H2AB3,human,Homo sapiens,ENSG00000277745,primary visual cortex,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,primordial germ cell in gonad,84.74,0.0,1,present_gold,H2AB3:HGNC:14455,variant,84.74,84.74
+H2AB3,human,Homo sapiens,ENSG00000277745,prostate gland,39.435,3.971786212056953,8,present_gold,H2AB3:HGNC:14455,variant,39.435,39.435
+H2AB3,human,Homo sapiens,ENSG00000277745,putamen,37.1525,1.071397063028765,4,present_gold,H2AB3:HGNC:14455,variant,37.1525,37.1525
+H2AB3,human,Homo sapiens,ENSG00000277745,rectum,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,right adrenal gland,42.74,3.068843430349613,2,present_gold,H2AB3:HGNC:14455,variant,42.74,42.74
+H2AB3,human,Homo sapiens,ENSG00000277745,right adrenal gland cortex,43.86,0.0,1,present_gold,H2AB3:HGNC:14455,variant,43.86,43.86
+H2AB3,human,Homo sapiens,ENSG00000277745,right atrium auricular region,40.488,8.070029120145724,5,present_gold,H2AB3:HGNC:14455,variant,40.488,40.488
+H2AB3,human,Homo sapiens,ENSG00000277745,right coronary artery,53.39,5.996265504461926,2,present_gold,H2AB3:HGNC:14455,variant,53.39,53.39
+H2AB3,human,Homo sapiens,ENSG00000277745,right frontal lobe,39.43,7.5462882708432675,4,present_gold,H2AB3:HGNC:14455,variant,39.43,39.43
+H2AB3,human,Homo sapiens,ENSG00000277745,right hemisphere of cerebellum,41.845,10.97057427849609,4,present_gold,H2AB3:HGNC:14455,variant,41.845,41.845
+H2AB3,human,Homo sapiens,ENSG00000277745,right lobe of liver,53.175,1.9586857838867389,2,present_gold,H2AB3:HGNC:14455,variant,53.175,53.175
+H2AB3,human,Homo sapiens,ENSG00000277745,right lobe of thyroid gland,40.886,6.132371482550612,5,present_gold,H2AB3:HGNC:14455,variant,40.886,40.886
+H2AB3,human,Homo sapiens,ENSG00000277745,right lung,60.81,0.0,1,present_gold,H2AB3:HGNC:14455,variant,60.81,60.81
+H2AB3,human,Homo sapiens,ENSG00000277745,right ovary,51.164,7.038379074758621,5,present_gold,H2AB3:HGNC:14455,variant,51.164,51.164
+H2AB3,human,Homo sapiens,ENSG00000277745,right testis,60.6825,23.029287693427836,4,present_gold,H2AB3:HGNC:14455,variant,60.6825,60.6825
+H2AB3,human,Homo sapiens,ENSG00000277745,right uterine tube,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,saliva-secreting gland,34.74,0.0,1,present_gold,H2AB3:HGNC:14455,variant,34.74,34.74
+H2AB3,human,Homo sapiens,ENSG00000277745,skeletal muscle tissue,41.925,1.8455486988968888,2,present_gold,H2AB3:HGNC:14455,variant,41.925,41.925
+H2AB3,human,Homo sapiens,ENSG00000277745,skin of abdomen,36.724,3.784879860121793,10,present_gold,H2AB3:HGNC:14455,variant,36.724,36.724
+H2AB3,human,Homo sapiens,ENSG00000277745,skin of leg,35.46909090909091,3.4500476940049825,11,present_gold,H2AB3:HGNC:14455,variant,35.46909090909091,35.46909090909091
+H2AB3,human,Homo sapiens,ENSG00000277745,small intestine,39.045,0.1484924240491756,2,present_gold,H2AB3:HGNC:14455,variant,39.045,39.045
+H2AB3,human,Homo sapiens,ENSG00000277745,small intestine Peyer's patch,41.803,8.827109820194703,10,present_gold,H2AB3:HGNC:14455,variant,41.803,41.803
+H2AB3,human,Homo sapiens,ENSG00000277745,smooth muscle tissue,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,spleen,49.69272727272728,6.642556873537615,11,present_gold,H2AB3:HGNC:14455,variant,49.69272727272728,49.69272727272728
+H2AB3,human,Homo sapiens,ENSG00000277745,stomach,36.71428571428572,3.431573289046182,7,present_gold,H2AB3:HGNC:14455,variant,36.71428571428572,36.71428571428572
+H2AB3,human,Homo sapiens,ENSG00000277745,stromal cell of endometrium,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,subcutaneous adipose tissue,40.381,5.365592956773535,10,present_gold,H2AB3:HGNC:14455,variant,40.381,40.381
+H2AB3,human,Homo sapiens,ENSG00000277745,substantia nigra,39.92333333333333,5.589645188501085,3,present_gold,H2AB3:HGNC:14455,variant,39.92333333333333,39.92333333333333
+H2AB3,human,Homo sapiens,ENSG00000277745,superior frontal gyrus,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,sural nerve,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,temporal lobe,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,testis,46.428,4.464618684725496,5,present_gold,H2AB3:HGNC:14455,variant,46.428,46.428
+H2AB3,human,Homo sapiens,ENSG00000277745,thoracic aorta,40.5,3.3558545856458086,6,present_gold,H2AB3:HGNC:14455,variant,40.5,40.5
+H2AB3,human,Homo sapiens,ENSG00000277745,thoracic mammary gland,37.98125,9.204698237468577,8,present_gold,H2AB3:HGNC:14455,variant,37.98125,37.98125
+H2AB3,human,Homo sapiens,ENSG00000277745,thyroid gland,39.82090909090909,3.2568434243772133,11,present_gold,H2AB3:HGNC:14455,variant,39.82090909090909,39.82090909090909
+H2AB3,human,Homo sapiens,ENSG00000277745,tibial artery,41.332,4.3166262546370895,10,present_gold,H2AB3:HGNC:14455,variant,41.332,41.332
+H2AB3,human,Homo sapiens,ENSG00000277745,tibial nerve,40.20111111111111,7.349104442795129,9,present_gold,H2AB3:HGNC:14455,variant,40.20111111111111,40.20111111111111
+H2AB3,human,Homo sapiens,ENSG00000277745,tonsil,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,transverse colon,37.872,5.036082692816799,10,present_gold,H2AB3:HGNC:14455,variant,37.872,37.872
+H2AB3,human,Homo sapiens,ENSG00000277745,upper lobe of left lung,36.86,3.6794836594283167,6,present_gold,H2AB3:HGNC:14455,variant,36.86,36.86
+H2AB3,human,Homo sapiens,ENSG00000277745,urinary bladder,47.015,13.119770069123415,4,present_gold,H2AB3:HGNC:14455,variant,47.015,47.015
+H2AB3,human,Homo sapiens,ENSG00000277745,uterine cervix,40.12,0.0,1,present_gold,H2AB3:HGNC:14455,variant,40.12,40.12
+H2AB3,human,Homo sapiens,ENSG00000277745,vagina,39.472,4.710660250962703,5,present_gold,H2AB3:HGNC:14455,variant,39.472,39.472
+H2AB3,human,Homo sapiens,ENSG00000277745,ventricular zone,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,vermiform appendix,0.0,0.0,0,observed_zero,H2AB3:HGNC:14455,variant,0.0,0.0
+H2AB3,human,Homo sapiens,ENSG00000277745,zone of skin,35.120000000000005,0.0424264068711894,2,present_gold,H2AB3:HGNC:14455,variant,35.120000000000005,35.120000000000005
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,Ammon's horn,26.28,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,26.28,26.28
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,adrenal gland,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,adult mammalian kidney,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,animal zygote,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,bone marrow,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,brain,40.78,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,40.78,40.78
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,cerebellar cortex,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,cerebellum,49.775,15.52099384704472,2,present_gold,H2ab3:ENSMUSG00000083616,variant,49.775,49.775
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,cerebral cortex,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,colon,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,cortex of kidney,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,cortical plate,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,dentate gyrus of hippocampal formation granule cell,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,duodenum,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,ectoplacental cone,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,embryonic brain,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,embryonic facial prominence,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,embryonic post-anal tail,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,epiblast (generic),0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,esophagus,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,forebrain,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,forelimb bud,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,frontal cortex,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,ganglionic eminence,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,granulocyte,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,heart,33.72,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,33.72,33.72
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,hindbrain,38.43,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,38.43,38.43
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,hindlimb bud,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,hindlimb stylopod muscle,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,hypothalamus,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,ileum,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,intestine,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,islet of Langerhans,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,jejunum,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,kidney,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,lens of camera-type eye,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,limb,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,lip,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,liver,57.8,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,57.8,57.8
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,lung,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,midbrain,59.77,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,59.77,59.77
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,multicellular organism,25.15,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,25.15,25.15
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,muscle tissue,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,neural tube,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,olfactory bulb,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,ovary,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,pancreas,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,placenta,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,primary oocyte,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,primary visual cortex,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,proximal tubule,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,quadriceps femoris,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,retinal neural layer,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,right kidney,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,secondary oocyte,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,skeletal muscle tissue,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,spermatid,67.77,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,67.77,67.77
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,spermatocyte,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,spleen,28.52,0.0,1,present_gold,H2ab3:ENSMUSG00000083616,variant,28.52,28.52
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,stomach,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,striatum,57.725,5.975052301026328,2,present_gold,H2ab3:ENSMUSG00000083616,variant,57.725,57.725
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,superior frontal gyrus,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,testis,76.43928571428572,9.240806212152137,14,present_gold,H2ab3:ENSMUSG00000083616,variant,76.43928571428572,76.43928571428572
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,thymus,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,undifferentiated genital tubercle,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,urinary bladder,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,uterus,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,ventricular zone,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,white adipose tissue,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,yolk sac,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0
+H2AB3,mus_musculus,Mus musculus,ENSMUSG00000083616,zone of skin,0.0,0.0,0,observed_zero,H2ab3:ENSMUSG00000083616,variant,0.0,0.0

@@ -13,19 +13,26 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+from normalized_expression_common import (
+    build_species_heatmap_display_index,
+    build_tissue_coverage_table,
+    load_processed_expression_cells,
+    sort_gene_labels,
+)
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description=(
-            "Build two heatmaps from Bgee advanced H2A data: "
-            "clustered (canonical) vs variants. "
+            "Build human H2A heatmaps from normalized H2A cell tables: "
+            "all, clustered (canonical), and variants. "
             "Rows are unique Ensembl IDs; labels are merged gene_name:HGNC."
         )
     )
     p.add_argument(
         "--expr",
         default=r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
-        help="H2A-only Bgee advanced TSV (preferably present+gold filtered).",
+        help="Normalized H2A cell TSV for Homo sapiens.",
     )
     p.add_argument(
         "--h2a-merged",
@@ -46,6 +53,15 @@ def parse_args() -> argparse.Namespace:
         "--show-all-xticks",
         action="store_true",
         help="Force all anatomical entity labels on X axis (default: True).",
+    )
+    p.add_argument(
+        "--min-tissue-fill-rate",
+        type=float,
+        default=0.0,
+        help=(
+            "Keep only anatomical entities with non-missing coverage >= this fraction "
+            "within each panel. observed_zero counts as filled."
+        ),
     )
     return p.parse_args()
 
@@ -114,6 +130,8 @@ def classify_ensg(h2a_hs: pd.DataFrame) -> Dict[str, str]:
 def heatmap(
     df: pd.DataFrame,
     label_map: Dict[str, str],
+    gene_ids: list[str],
+    tissue_names: list[str],
     title: str,
     out_png: Path,
     out_svg: Path,
@@ -125,18 +143,13 @@ def heatmap(
         df.pivot_table(
             index="Gene row label",
             columns="Anatomical entity name",
-            values="Expression score",
+            values="cell_mean_score",
             aggfunc="mean",
         )
-        .dropna(axis=0, how="all")
-        .dropna(axis=1, how="all")
     )
-    if mat.shape[0] == 0 or mat.shape[1] == 0:
+    mat = mat.reindex(index=sort_gene_labels(label_map, gene_ids), columns=tissue_names)
+    if mat.shape[0] == 0 or mat.shape[1] == 0 or mat.notna().sum().sum() == 0:
         raise RuntimeError(f"Empty matrix for {title}: {mat.shape}")
-
-    # Sort rows by Gene name prefix (before ':')
-    labels_sorted = sorted(mat.index.tolist(), key=lambda s: (s.split(":", 1)[0], s))
-    mat = mat.reindex(labels_sorted)
 
     mat_log = np.log10(mat + 1)
 
@@ -156,7 +169,7 @@ def heatmap(
     )
     ax.set_title(title)
     ax.set_xlabel("Anatomical entity name")
-    ax.set_ylabel("GeneName:HGNC (one row per Ensembl ID)")
+    ax.set_ylabel("GeneName:HGNC (one row per displayed gene)")
     plt.xticks(rotation=90, fontsize=5 if show_all_xticks else 6)
     plt.yticks(rotation=0, fontsize=8)
     plt.tight_layout()
@@ -177,29 +190,17 @@ def main() -> None:
     out_dir = Path(args.out_dir)
     out_map = Path(args.out_map)
     show_all_xticks = True if args.show_all_xticks else True
+    min_tissue_fill_rate = float(args.min_tissue_fill_rate)
+
+    if not 0.0 <= min_tissue_fill_rate <= 1.0:
+        raise ValueError("min_tissue_fill_rate must be between 0.0 and 1.0")
 
     if not expr_path.exists():
         raise FileNotFoundError(expr_path)
     if not h2a_path.exists():
         raise FileNotFoundError(h2a_path)
 
-    expr = pd.read_csv(expr_path, sep="\t", dtype=str, low_memory=True)
-    for c in ["Gene ID", "Gene name", "Anatomical entity name"]:
-        if c not in expr.columns:
-            raise RuntimeError(f"Missing column in expr: {c}")
-        expr[c] = expr[c].fillna("").astype(str).str.strip()
-    if "Expression score" not in expr.columns:
-        raise RuntimeError("Missing column in expr: Expression score")
-    expr["Expression score"] = pd.to_numeric(expr["Expression score"], errors="coerce")
-    expr = expr[expr["Expression score"].notna()].copy()
-
-    # If present/gold columns exist, enforce filter (safe even if already filtered)
-    if "Expression" in expr.columns and "Call quality" in expr.columns:
-        expr["Expression"] = expr["Expression"].fillna("").astype(str).str.strip()
-        expr["Call quality"] = expr["Call quality"].fillna("").astype(str).str.strip()
-        expr = expr[
-            expr["Expression"].eq("present") & expr["Call quality"].eq("gold quality")
-        ].copy()
+    expr = load_processed_expression_cells(expr_path)
 
     h2a = pd.read_csv(h2a_path, dtype=str)
     required_h2a_cols = {"species_name", "ensembl_gene_id", "hgnc_id", "variant"}
@@ -238,40 +239,111 @@ def main() -> None:
     out_map.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(map_rows).to_csv(out_map, sep="\t", index=False)
 
-    expr["class"] = expr["Gene ID"].map(cls_map)
+    display_map_rows = pd.DataFrame(map_rows)
+    display_df = build_species_heatmap_display_index(
+        display_map_rows,
+        expr,
+        preferred_id_col="hgnc_id",
+    )
+    display_gene_ids = display_df["ensembl_gene_id"].dropna().astype(str).tolist()
+    if not display_gene_ids:
+        raise RuntimeError("No displayable human heatmap rows remained after deduplication.")
+
+    display_label_map = dict(
+        zip(
+            display_df["ensembl_gene_id"].astype(str),
+            display_df["label"].astype(str),
+        )
+    )
+    expr = expr[expr["Gene ID"].isin(display_gene_ids)].copy()
+    expr["class"] = expr["Gene ID"].map(display_df.set_index("ensembl_gene_id")["class"].to_dict())
     canonical = expr[expr["class"].eq("clustered")].copy()
     variants = expr[expr["class"].eq("variant")].copy()
+    tissue_names = sorted(expr["Anatomical entity name"].dropna().astype(str).unique().tolist())
+    canonical_gene_ids = display_df.loc[
+        display_df["class"].eq("clustered"), "ensembl_gene_id"
+    ].astype(str).tolist()
+    variant_gene_ids = display_df.loc[
+        display_df["class"].eq("variant"), "ensembl_gene_id"
+    ].astype(str).tolist()
 
     if canonical.empty:
         raise RuntimeError("No clustered (canonical) rows after filtering.")
     if variants.empty:
         raise RuntimeError("No variant rows after filtering.")
 
+    def panel_tissues_and_report(
+        panel_df: pd.DataFrame,
+        panel_gene_ids: list[str],
+        panel_key: str,
+    ) -> list[str]:
+        coverage_df = build_tissue_coverage_table(
+            panel_df,
+            panel_gene_ids,
+            threshold=min_tissue_fill_rate,
+            panel=panel_key,
+        )
+        if min_tissue_fill_rate > 0:
+            coverage_tsv = out_dir / f"h2a_{panel_key}_tissue_coverage.tsv"
+            out_dir.mkdir(parents=True, exist_ok=True)
+            coverage_df.to_csv(coverage_tsv, sep="\t", index=False)
+        kept_tissues = coverage_df.loc[coverage_df["kept"], "anatomical_entity_name"].astype(str).tolist()
+        if min_tissue_fill_rate > 0 and not kept_tissues:
+            raise RuntimeError(
+                f"No tissues passed min_tissue_fill_rate={min_tissue_fill_rate:.2f} for panel '{panel_key}'."
+            )
+        if min_tissue_fill_rate > 0:
+            return kept_tissues
+        return coverage_df["anatomical_entity_name"].astype(str).tolist()
+
+    all_gene_ids = display_df["ensembl_gene_id"].astype(str).tolist()
+    all_tissue_names = panel_tissues_and_report(expr, all_gene_ids, "all")
+    canonical_tissue_names = panel_tissues_and_report(canonical, canonical_gene_ids, "clustered")
+    variant_tissue_names = panel_tissues_and_report(variants, variant_gene_ids, "variants")
+
+    all_png = out_dir / "h2a_all.png"
+    all_svg = out_dir / "h2a_all.svg"
     can_png = out_dir / "h2a_clustered.png"
     can_svg = out_dir / "h2a_clustered.svg"
     var_png = out_dir / "h2a_variants.png"
     var_svg = out_dir / "h2a_variants.svg"
 
+    all_rows, all_cols = heatmap(
+        expr,
+        display_label_map,
+        all_gene_ids,
+        all_tissue_names,
+        "H2A Human Expression (normalized cells) - all",
+        all_png,
+        all_svg,
+        show_all_xticks,
+    )
     can_rows, can_cols = heatmap(
         canonical,
-        label_map,
-        "H2A Human Expression (present + gold) - clustered H2A",
+        display_label_map,
+        canonical_gene_ids,
+        canonical_tissue_names,
+        "H2A Human Expression (normalized cells) - clustered H2A",
         can_png,
         can_svg,
         show_all_xticks,
     )
     var_rows, var_cols = heatmap(
         variants,
-        label_map,
-        "H2A Human Expression (present + gold) - variants",
+        display_label_map,
+        variant_gene_ids,
+        variant_tissue_names,
+        "H2A Human Expression (normalized cells) - variants",
         var_png,
         var_svg,
         show_all_xticks,
     )
 
+    print(f"ALL_ROWS={all_rows} ALL_COLS={all_cols}")
     print(f"CANONICAL_ROWS={can_rows} CANONICAL_COLS={can_cols}")
     print(f"VARIANT_ROWS={var_rows} VARIANT_COLS={var_cols}")
     print(f"MAP_TSV={out_map}")
+    print(f"ALL_SVG={all_svg}")
     print(f"CANONICAL_SVG={can_svg}")
     print(f"VARIANT_SVG={var_svg}")
 

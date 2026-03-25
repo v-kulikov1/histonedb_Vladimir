@@ -1,0 +1,306 @@
+anatomical_entity_name	observed_gene_count	display_gene_count	fill_rate	threshold	kept	panel
+Ammon's horn	12	12	1.0	0.7	True	variants
+Brodmann (1909) area 9	12	12	1.0	0.7	True	variants
+C1 segment of cervical spinal cord	12	12	1.0	0.7	True	variants
+adenohypophysis	12	12	1.0	0.7	True	variants
+adipose tissue	12	12	1.0	0.7	True	variants
+adrenal gland	12	12	1.0	0.7	True	variants
+adrenal tissue	12	12	1.0	0.7	True	variants
+adult mammalian kidney	12	12	1.0	0.7	True	variants
+amygdala	12	12	1.0	0.7	True	variants
+anterior cingulate cortex	12	12	1.0	0.7	True	variants
+apex of heart	12	12	1.0	0.7	True	variants
+ascending aorta	12	12	1.0	0.7	True	variants
+blood	12	12	1.0	0.7	True	variants
+body of pancreas	12	12	1.0	0.7	True	variants
+body of stomach	12	12	1.0	0.7	True	variants
+body of uterus	12	12	1.0	0.7	True	variants
+bone marrow	12	12	1.0	0.7	True	variants
+bone marrow cell	12	12	1.0	0.7	True	variants
+brain	12	12	1.0	0.7	True	variants
+calcaneal tendon	12	12	1.0	0.7	True	variants
+caudate nucleus	12	12	1.0	0.7	True	variants
+cerebellar cortex	12	12	1.0	0.7	True	variants
+cerebellar hemisphere	12	12	1.0	0.7	True	variants
+cerebellum	12	12	1.0	0.7	True	variants
+colon	12	12	1.0	0.7	True	variants
+colonic epithelium	12	12	1.0	0.7	True	variants
+corpus callosum	12	12	1.0	0.7	True	variants
+cortex of kidney	12	12	1.0	0.7	True	variants
+cortical plate	12	12	1.0	0.7	True	variants
+descending thoracic aorta	12	12	1.0	0.7	True	variants
+dorsolateral prefrontal cortex	12	12	1.0	0.7	True	variants
+duodenum	12	12	1.0	0.7	True	variants
+ectocervix	12	12	1.0	0.7	True	variants
+endocervix	12	12	1.0	0.7	True	variants
+endometrium	12	12	1.0	0.7	True	variants
+esophagogastric junction muscularis propria	12	12	1.0	0.7	True	variants
+esophagus	12	12	1.0	0.7	True	variants
+esophagus mucosa	12	12	1.0	0.7	True	variants
+fallopian tube	12	12	1.0	0.7	True	variants
+frontal cortex	12	12	1.0	0.7	True	variants
+fundus of stomach	12	12	1.0	0.7	True	variants
+gall bladder	12	12	1.0	0.7	True	variants
+ganglionic eminence	12	12	1.0	0.7	True	variants
+gastrocnemius	12	12	1.0	0.7	True	variants
+granulocyte	12	12	1.0	0.7	True	variants
+heart	12	12	1.0	0.7	True	variants
+heart left ventricle	12	12	1.0	0.7	True	variants
+hindlimb stylopod muscle	12	12	1.0	0.7	True	variants
+hypothalamus	12	12	1.0	0.7	True	variants
+intestine	12	12	1.0	0.7	True	variants
+islet of Langerhans	12	12	1.0	0.7	True	variants
+kidney	12	12	1.0	0.7	True	variants
+left adrenal gland	12	12	1.0	0.7	True	variants
+left adrenal gland cortex	12	12	1.0	0.7	True	variants
+left coronary artery	12	12	1.0	0.7	True	variants
+left lobe of thyroid gland	12	12	1.0	0.7	True	variants
+left ovary	12	12	1.0	0.7	True	variants
+left testis	12	12	1.0	0.7	True	variants
+left uterine tube	12	12	1.0	0.7	True	variants
+leukocyte	12	12	1.0	0.7	True	variants
+liver	12	12	1.0	0.7	True	variants
+lower esophagus	12	12	1.0	0.7	True	variants
+lower esophagus mucosa	12	12	1.0	0.7	True	variants
+lower esophagus muscularis layer	12	12	1.0	0.7	True	variants
+lung	12	12	1.0	0.7	True	variants
+lymph node	12	12	1.0	0.7	True	variants
+metanephros cortex	12	12	1.0	0.7	True	variants
+minor salivary gland	12	12	1.0	0.7	True	variants
+monocyte	12	12	1.0	0.7	True	variants
+mucosa of stomach	12	12	1.0	0.7	True	variants
+mucosa of transverse colon	12	12	1.0	0.7	True	variants
+multicellular organism	12	12	1.0	0.7	True	variants
+muscle layer of sigmoid colon	12	12	1.0	0.7	True	variants
+muscle of leg	12	12	1.0	0.7	True	variants
+myometrium	12	12	1.0	0.7	True	variants
+nucleus accumbens	12	12	1.0	0.7	True	variants
+olfactory segment of nasal mucosa	12	12	1.0	0.7	True	variants
+omental fat pad	12	12	1.0	0.7	True	variants
+ovary	12	12	1.0	0.7	True	variants
+pancreas	12	12	1.0	0.7	True	variants
+pituitary gland	12	12	1.0	0.7	True	variants
+placenta	12	12	1.0	0.7	True	variants
+popliteal artery	12	12	1.0	0.7	True	variants
+prefrontal cortex	12	12	1.0	0.7	True	variants
+primary visual cortex	12	12	1.0	0.7	True	variants
+prostate gland	12	12	1.0	0.7	True	variants
+putamen	12	12	1.0	0.7	True	variants
+rectum	12	12	1.0	0.7	True	variants
+right adrenal gland	12	12	1.0	0.7	True	variants
+right adrenal gland cortex	12	12	1.0	0.7	True	variants
+right atrium auricular region	12	12	1.0	0.7	True	variants
+right coronary artery	12	12	1.0	0.7	True	variants
+right frontal lobe	12	12	1.0	0.7	True	variants
+right hemisphere of cerebellum	12	12	1.0	0.7	True	variants
+right lobe of liver	12	12	1.0	0.7	True	variants
+right lobe of thyroid gland	12	12	1.0	0.7	True	variants
+right lung	12	12	1.0	0.7	True	variants
+right ovary	12	12	1.0	0.7	True	variants
+right testis	12	12	1.0	0.7	True	variants
+right uterine tube	12	12	1.0	0.7	True	variants
+skeletal muscle tissue	12	12	1.0	0.7	True	variants
+skin of abdomen	12	12	1.0	0.7	True	variants
+skin of leg	12	12	1.0	0.7	True	variants
+small intestine Peyer's patch	12	12	1.0	0.7	True	variants
+smooth muscle tissue	12	12	1.0	0.7	True	variants
+spleen	12	12	1.0	0.7	True	variants
+stomach	12	12	1.0	0.7	True	variants
+stromal cell of endometrium	12	12	1.0	0.7	True	variants
+subcutaneous adipose tissue	12	12	1.0	0.7	True	variants
+substantia nigra	12	12	1.0	0.7	True	variants
+superior frontal gyrus	12	12	1.0	0.7	True	variants
+sural nerve	12	12	1.0	0.7	True	variants
+temporal lobe	12	12	1.0	0.7	True	variants
+testis	12	12	1.0	0.7	True	variants
+thoracic aorta	12	12	1.0	0.7	True	variants
+thoracic mammary gland	12	12	1.0	0.7	True	variants
+thyroid gland	12	12	1.0	0.7	True	variants
+tibial artery	12	12	1.0	0.7	True	variants
+tibial nerve	12	12	1.0	0.7	True	variants
+tonsil	12	12	1.0	0.7	True	variants
+transverse colon	12	12	1.0	0.7	True	variants
+upper lobe of left lung	12	12	1.0	0.7	True	variants
+urinary bladder	12	12	1.0	0.7	True	variants
+uterine cervix	12	12	1.0	0.7	True	variants
+vagina	12	12	1.0	0.7	True	variants
+ventricular zone	12	12	1.0	0.7	True	variants
+vermiform appendix	12	12	1.0	0.7	True	variants
+zone of skin	12	12	1.0	0.7	True	variants
+cerebral cortex	11	12	0.9166666666666666	0.7	True	variants
+small intestine	11	12	0.9166666666666666	0.7	True	variants
+muscle tissue	10	12	0.8333333333333334	0.7	True	variants
+saliva-secreting gland	10	12	0.8333333333333334	0.7	True	variants
+male germ line stem cell (sensu Vertebrata) in testis	8	12	0.6666666666666666	0.7	False	variants
+primordial germ cell in gonad	8	12	0.6666666666666666	0.7	False	variants
+Brodmann (1909) area 23	7	12	0.5833333333333334	0.7	False	variants
+Brodmann (1909) area 46	7	12	0.5833333333333334	0.7	False	variants
+CA1 field of hippocampus	7	12	0.5833333333333334	0.7	False	variants
+adipose tissue of abdominal region	7	12	0.5833333333333334	0.7	False	variants
+adrenal cortex	7	12	0.5833333333333334	0.7	False	variants
+adult organism	7	12	0.5833333333333334	0.7	False	variants
+amniotic fluid	7	12	0.5833333333333334	0.7	False	variants
+anatomical system	7	12	0.5833333333333334	0.7	False	variants
+aorta	7	12	0.5833333333333334	0.7	False	variants
+biceps brachii	7	12	0.5833333333333334	0.7	False	variants
+body of tongue	7	12	0.5833333333333334	0.7	False	variants
+bronchial epithelial cell	7	12	0.5833333333333334	0.7	False	variants
+bronchus	7	12	0.5833333333333334	0.7	False	variants
+buccal mucosa cell	7	12	0.5833333333333334	0.7	False	variants
+caecum	7	12	0.5833333333333334	0.7	False	variants
+caput epididymis	7	12	0.5833333333333334	0.7	False	variants
+cardia of stomach	7	12	0.5833333333333334	0.7	False	variants
+cardiac atrium	7	12	0.5833333333333334	0.7	False	variants
+cardiac muscle of right atrium	7	12	0.5833333333333334	0.7	False	variants
+cardiac ventricle	7	12	0.5833333333333334	0.7	False	variants
+cartilage tissue	7	12	0.5833333333333334	0.7	False	variants
+cauda epididymis	7	12	0.5833333333333334	0.7	False	variants
+cerebellar vermis	7	12	0.5833333333333334	0.7	False	variants
+cervix epithelium	7	12	0.5833333333333334	0.7	False	variants
+cervix squamous epithelium	7	12	0.5833333333333334	0.7	False	variants
+cingulate cortex	7	12	0.5833333333333334	0.7	False	variants
+colonic mucosa	7	12	0.5833333333333334	0.7	False	variants
+coronary artery	7	12	0.5833333333333334	0.7	False	variants
+corpus epididymis	7	12	0.5833333333333334	0.7	False	variants
+decidua	7	12	0.5833333333333334	0.7	False	variants
+deltoid	7	12	0.5833333333333334	0.7	False	variants
+diaphragm	7	12	0.5833333333333334	0.7	False	variants
+dorsal plus ventral thalamus	7	12	0.5833333333333334	0.7	False	variants
+dorsal root ganglion	7	12	0.5833333333333334	0.7	False	variants
+embryo	7	12	0.5833333333333334	0.7	False	variants
+endothelial cell	7	12	0.5833333333333334	0.7	False	variants
+entorhinal cortex	7	12	0.5833333333333334	0.7	False	variants
+epithelium of bronchus	7	12	0.5833333333333334	0.7	False	variants
+epithelium of esophagus	7	12	0.5833333333333334	0.7	False	variants
+epithelium of mammary gland	7	12	0.5833333333333334	0.7	False	variants
+epithelium of nasopharynx	7	12	0.5833333333333334	0.7	False	variants
+esophagus squamous epithelium	7	12	0.5833333333333334	0.7	False	variants
+female reproductive system	7	12	0.5833333333333334	0.7	False	variants
+forebrain	7	12	0.5833333333333334	0.7	False	variants
+germinal epithelium of ovary	7	12	0.5833333333333334	0.7	False	variants
+gingiva	7	12	0.5833333333333334	0.7	False	variants
+gingival epithelium	7	12	0.5833333333333334	0.7	False	variants
+globus pallidus	7	12	0.5833333333333334	0.7	False	variants
+gluteal muscle	7	12	0.5833333333333334	0.7	False	variants
+hair follicle	7	12	0.5833333333333334	0.7	False	variants
+heart right ventricle	7	12	0.5833333333333334	0.7	False	variants
+ileal mucosa	7	12	0.5833333333333334	0.7	False	variants
+inferior vagus X ganglion	7	12	0.5833333333333334	0.7	False	variants
+jejunal mucosa	7	12	0.5833333333333334	0.7	False	variants
+jejunum	7	12	0.5833333333333334	0.7	False	variants
+kidney epithelium	7	12	0.5833333333333334	0.7	False	variants
+large intestine	7	12	0.5833333333333334	0.7	False	variants
+lateral globus pallidus	7	12	0.5833333333333334	0.7	False	variants
+lateral nuclear group of thalamus	7	12	0.5833333333333334	0.7	False	variants
+layer of synovial tissue	7	12	0.5833333333333334	0.7	False	variants
+left ventricle myocardium	7	12	0.5833333333333334	0.7	False	variants
+lower lobe of lung	7	12	0.5833333333333334	0.7	False	variants
+male germ cell	7	12	0.5833333333333334	0.7	False	variants
+mammalian vulva	7	12	0.5833333333333334	0.7	False	variants
+mammary duct	7	12	0.5833333333333334	0.7	False	variants
+material anatomical entity	7	12	0.5833333333333334	0.7	False	variants
+medial globus pallidus	7	12	0.5833333333333334	0.7	False	variants
+medulla oblongata	7	12	0.5833333333333334	0.7	False	variants
+metanephric glomerulus	7	12	0.5833333333333334	0.7	False	variants
+metanephros	7	12	0.5833333333333334	0.7	False	variants
+midbrain	7	12	0.5833333333333334	0.7	False	variants
+middle temporal gyrus	7	12	0.5833333333333334	0.7	False	variants
+mononuclear cell	7	12	0.5833333333333334	0.7	False	variants
+mouth mucosa	7	12	0.5833333333333334	0.7	False	variants
+mucosa of paranasal sinus	7	12	0.5833333333333334	0.7	False	variants
+mucosa of sigmoid colon	7	12	0.5833333333333334	0.7	False	variants
+mucosa of urinary bladder	7	12	0.5833333333333334	0.7	False	variants
+muscle organ	7	12	0.5833333333333334	0.7	False	variants
+myocardium	7	12	0.5833333333333334	0.7	False	variants
+nasal cavity epithelium	7	12	0.5833333333333334	0.7	False	variants
+nasal cavity mucosa	7	12	0.5833333333333334	0.7	False	variants
+neocortex	7	12	0.5833333333333334	0.7	False	variants
+nephron tubule	7	12	0.5833333333333334	0.7	False	variants
+nipple	7	12	0.5833333333333334	0.7	False	variants
+occipital lobe	7	12	0.5833333333333334	0.7	False	variants
+olfactory bulb	7	12	0.5833333333333334	0.7	False	variants
+oocyte	7	12	0.5833333333333334	0.7	False	variants
+oral cavity	7	12	0.5833333333333334	0.7	False	variants
+orbitofrontal cortex	7	12	0.5833333333333334	0.7	False	variants
+oviduct epithelium	7	12	0.5833333333333334	0.7	False	variants
+palpebral conjunctiva	7	12	0.5833333333333334	0.7	False	variants
+pancreatic ductal cell	7	12	0.5833333333333334	0.7	False	variants
+parietal lobe	7	12	0.5833333333333334	0.7	False	variants
+parietal pleura	7	12	0.5833333333333334	0.7	False	variants
+parotid gland	7	12	0.5833333333333334	0.7	False	variants
+penis	7	12	0.5833333333333334	0.7	False	variants
+pericardium	7	12	0.5833333333333334	0.7	False	variants
+peritoneum	7	12	0.5833333333333334	0.7	False	variants
+pharyngeal mucosa	7	12	0.5833333333333334	0.7	False	variants
+pigmented layer of retina	7	12	0.5833333333333334	0.7	False	variants
+pleura	7	12	0.5833333333333334	0.7	False	variants
+pons	7	12	0.5833333333333334	0.7	False	variants
+postcentral gyrus	7	12	0.5833333333333334	0.7	False	variants
+pylorus	7	12	0.5833333333333334	0.7	False	variants
+quadriceps femoris	7	12	0.5833333333333334	0.7	False	variants
+renal medulla	7	12	0.5833333333333334	0.7	False	variants
+saphenous vein	7	12	0.5833333333333334	0.7	False	variants
+secondary oocyte	7	12	0.5833333333333334	0.7	False	variants
+seminal vesicle	7	12	0.5833333333333334	0.7	False	variants
+skeletal muscle tissue of biceps brachii	7	12	0.5833333333333334	0.7	False	variants
+skeletal muscle tissue of rectus abdominis	7	12	0.5833333333333334	0.7	False	variants
+skin of hip	7	12	0.5833333333333334	0.7	False	variants
+sperm	7	12	0.5833333333333334	0.7	False	variants
+spinal cord	7	12	0.5833333333333334	0.7	False	variants
+squamous epithelium	7	12	0.5833333333333334	0.7	False	variants
+substantia nigra pars compacta	7	12	0.5833333333333334	0.7	False	variants
+substantia nigra pars reticulata	7	12	0.5833333333333334	0.7	False	variants
+subthalamic nucleus	7	12	0.5833333333333334	0.7	False	variants
+superficial temporal artery	7	12	0.5833333333333334	0.7	False	variants
+superior surface of tongue	7	12	0.5833333333333334	0.7	False	variants
+superior vestibular nucleus	7	12	0.5833333333333334	0.7	False	variants
+synovial joint	7	12	0.5833333333333334	0.7	False	variants
+telencephalon	7	12	0.5833333333333334	0.7	False	variants
+tendon	7	12	0.5833333333333334	0.7	False	variants
+tendon of biceps brachii	7	12	0.5833333333333334	0.7	False	variants
+thymus	7	12	0.5833333333333334	0.7	False	variants
+tibia	7	12	0.5833333333333334	0.7	False	variants
+tibialis anterior	7	12	0.5833333333333334	0.7	False	variants
+tongue	7	12	0.5833333333333334	0.7	False	variants
+tongue squamous epithelium	7	12	0.5833333333333334	0.7	False	variants
+trabecular bone tissue	7	12	0.5833333333333334	0.7	False	variants
+trachea	7	12	0.5833333333333334	0.7	False	variants
+triceps brachii	7	12	0.5833333333333334	0.7	False	variants
+trigeminal ganglion	7	12	0.5833333333333334	0.7	False	variants
+type B pancreatic cell	7	12	0.5833333333333334	0.7	False	variants
+upper arm skin	7	12	0.5833333333333334	0.7	False	variants
+upper leg skin	7	12	0.5833333333333334	0.7	False	variants
+upper lobe of lung	7	12	0.5833333333333334	0.7	False	variants
+urethra	7	12	0.5833333333333334	0.7	False	variants
+uterus	7	12	0.5833333333333334	0.7	False	variants
+vastus lateralis	7	12	0.5833333333333334	0.7	False	variants
+vena cava	7	12	0.5833333333333334	0.7	False	variants
+ventral tegmental area	7	12	0.5833333333333334	0.7	False	variants
+visceral pleura	7	12	0.5833333333333334	0.7	False	variants
+blood vessel layer	6	12	0.5	0.7	False	variants
+choroid plexus epithelium	6	12	0.5	0.7	False	variants
+connective tissue	6	12	0.5	0.7	False	variants
+cranial nerve II	6	12	0.5	0.7	False	variants
+dorsal motor nucleus of vagus nerve	6	12	0.5	0.7	False	variants
+epithelial cell of pancreas	6	12	0.5	0.7	False	variants
+inferior olivary complex	6	12	0.5	0.7	False	variants
+mammary gland	6	12	0.5	0.7	False	variants
+periodontal ligament	6	12	0.5	0.7	False	variants
+renal glomerulus	6	12	0.5	0.7	False	variants
+Brodmann (1909) area 10	5	12	0.4166666666666667	0.7	False	variants
+central nervous system	5	12	0.4166666666666667	0.7	False	variants
+endometrium epithelium	5	12	0.4166666666666667	0.7	False	variants
+frontal pole	5	12	0.4166666666666667	0.7	False	variants
+middle frontal gyrus	5	12	0.4166666666666667	0.7	False	variants
+paraflocculus	5	12	0.4166666666666667	0.7	False	variants
+sigmoid colon	5	12	0.4166666666666667	0.7	False	variants
+eye	3	12	0.25	0.7	False	variants
+nerve	3	12	0.25	0.7	False	variants
+retina	3	12	0.25	0.7	False	variants
+skeletal muscle organ	3	12	0.25	0.7	False	variants
+artery	2	12	0.16666666666666666	0.7	False	variants
+bone element	2	12	0.16666666666666666	0.7	False	variants
+frontal lobe	2	12	0.16666666666666666	0.7	False	variants
+nasopharynx	2	12	0.16666666666666666	0.7	False	variants
+cochlea	1	12	0.08333333333333333	0.7	False	variants
+peripheral nervous system	1	12	0.08333333333333333	0.7	False	variants

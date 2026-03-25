@@ -1,0 +1,76 @@
+anatomical_entity_name	observed_gene_count	display_gene_count	fill_rate	threshold	kept	panel
+Ammon's horn	2	2	1.0	0.7	True	clustered
+adrenal gland	2	2	1.0	0.7	True	clustered
+adult mammalian kidney	2	2	1.0	0.7	True	clustered
+animal zygote	2	2	1.0	0.7	True	clustered
+blastoderm cell in morula	2	2	1.0	0.7	True	clustered
+bone marrow	2	2	1.0	0.7	True	clustered
+brain	2	2	1.0	0.7	True	clustered
+cerebellar cortex	2	2	1.0	0.7	True	clustered
+cerebellum	2	2	1.0	0.7	True	clustered
+cerebral cortex	2	2	1.0	0.7	True	clustered
+colon	2	2	1.0	0.7	True	clustered
+cortex of kidney	2	2	1.0	0.7	True	clustered
+cortical plate	2	2	1.0	0.7	True	clustered
+dentate gyrus of hippocampal formation granule cell	2	2	1.0	0.7	True	clustered
+duodenum	2	2	1.0	0.7	True	clustered
+ectoplacental cone	2	2	1.0	0.7	True	clustered
+embryonic brain	2	2	1.0	0.7	True	clustered
+embryonic cell in blastocyst	2	2	1.0	0.7	True	clustered
+embryonic facial prominence	2	2	1.0	0.7	True	clustered
+embryonic post-anal tail	2	2	1.0	0.7	True	clustered
+epiblast (generic)	2	2	1.0	0.7	True	clustered
+epiblast cell in embryo	2	2	1.0	0.7	True	clustered
+esophagus	2	2	1.0	0.7	True	clustered
+forebrain	2	2	1.0	0.7	True	clustered
+forelimb bud	2	2	1.0	0.7	True	clustered
+frontal cortex	2	2	1.0	0.7	True	clustered
+ganglionic eminence	2	2	1.0	0.7	True	clustered
+granulocyte	2	2	1.0	0.7	True	clustered
+heart	2	2	1.0	0.7	True	clustered
+hindbrain	2	2	1.0	0.7	True	clustered
+hindlimb bud	2	2	1.0	0.7	True	clustered
+hindlimb stylopod muscle	2	2	1.0	0.7	True	clustered
+hypothalamus	2	2	1.0	0.7	True	clustered
+ileum	2	2	1.0	0.7	True	clustered
+intestine	2	2	1.0	0.7	True	clustered
+islet of Langerhans	2	2	1.0	0.7	True	clustered
+jejunum	2	2	1.0	0.7	True	clustered
+kidney	2	2	1.0	0.7	True	clustered
+lens of camera-type eye	2	2	1.0	0.7	True	clustered
+limb	2	2	1.0	0.7	True	clustered
+lip	2	2	1.0	0.7	True	clustered
+liver	2	2	1.0	0.7	True	clustered
+lung	2	2	1.0	0.7	True	clustered
+mesodermal cell in embryo	2	2	1.0	0.7	True	clustered
+midbrain	2	2	1.0	0.7	True	clustered
+multicellular organism	2	2	1.0	0.7	True	clustered
+muscle tissue	2	2	1.0	0.7	True	clustered
+neural tube	2	2	1.0	0.7	True	clustered
+olfactory bulb	2	2	1.0	0.7	True	clustered
+ovary	2	2	1.0	0.7	True	clustered
+pancreas	2	2	1.0	0.7	True	clustered
+placenta	2	2	1.0	0.7	True	clustered
+primary oocyte	2	2	1.0	0.7	True	clustered
+primary visual cortex	2	2	1.0	0.7	True	clustered
+proximal tubule	2	2	1.0	0.7	True	clustered
+quadriceps femoris	2	2	1.0	0.7	True	clustered
+retinal neural layer	2	2	1.0	0.7	True	clustered
+right kidney	2	2	1.0	0.7	True	clustered
+secondary oocyte	2	2	1.0	0.7	True	clustered
+skeletal muscle tissue	2	2	1.0	0.7	True	clustered
+spermatid	2	2	1.0	0.7	True	clustered
+spermatocyte	2	2	1.0	0.7	True	clustered
+spleen	2	2	1.0	0.7	True	clustered
+stomach	2	2	1.0	0.7	True	clustered
+striatum	2	2	1.0	0.7	True	clustered
+superior frontal gyrus	2	2	1.0	0.7	True	clustered
+testis	2	2	1.0	0.7	True	clustered
+thymus	2	2	1.0	0.7	True	clustered
+undifferentiated genital tubercle	2	2	1.0	0.7	True	clustered
+urinary bladder	2	2	1.0	0.7	True	clustered
+uterus	2	2	1.0	0.7	True	clustered
+ventricular zone	2	2	1.0	0.7	True	clustered
+white adipose tissue	2	2	1.0	0.7	True	clustered
+yolk sac	2	2	1.0	0.7	True	clustered
+zone of skin	2	2	1.0	0.7	True	clustered

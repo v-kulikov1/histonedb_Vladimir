@@ -1,3 +1,27 @@
-Gene ID	Gene name	Anatomical entity name	Expression	Call quality	Expression score
-ENSHGLG00000020875	H2AC17	testis	present	gold quality	34.63
-ENSHGLG00000020875	H2AC17	liver	present	gold quality	27.12
+Gene ID	Gene name	Anatomical entity name	cell_mean_score	cell_std_score	cell_n	cell_status	Expression score	Expression std	Expression n	raw_row_count	qualifying_row_count
+ENSHGLG00000020875	H2AC17	adrenal gland	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000020875	H2AC17	adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSHGLG00000020875	H2AC17	brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000020875	H2AC17	cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000020875	H2AC17	heart	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000020875	H2AC17	hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000020875	H2AC17	liver	27.12	0.0	1	present_gold	27.12	0.0	1	6	1
+ENSHGLG00000020875	H2AC17	multicellular organism	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSHGLG00000020875	H2AC17	ovary	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000020875	H2AC17	pituitary gland	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000020875	H2AC17	testis	34.63	0.0	1	present_gold	34.63	0.0	1	2	1
+ENSHGLG00000020875	H2AC17	thyroid gland	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000020875	H2AC17	zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000021333		adrenal gland	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000021333		adult mammalian kidney	0.0	0.0	0	observed_zero	0.0	0.0	0	4	0
+ENSHGLG00000021333		brain	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000021333		cerebellum	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000021333		heart	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000021333		hypothalamus	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000021333		liver	0.0	0.0	0	observed_zero	0.0	0.0	0	6	0
+ENSHGLG00000021333		multicellular organism	0.0	0.0	0	observed_zero	0.0	0.0	0	1	0
+ENSHGLG00000021333		ovary	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000021333		pituitary gland	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000021333		testis	0.0	0.0	0	observed_zero	0.0	0.0	0	2	0
+ENSHGLG00000021333		thyroid gland	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0
+ENSHGLG00000021333		zone of skin	0.0	0.0	0	observed_zero	0.0	0.0	0	3	0

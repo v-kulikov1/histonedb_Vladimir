@@ -24,6 +24,7 @@ from gene_compare_common import (
     collect_gene_rows,
     load_detail_index,
     safe_slug,
+    summarize_species_gene_tissue,
 )
 
 
@@ -145,13 +146,20 @@ def build_species_level_long(detail_df: pd.DataFrame, target_genes: Iterable[str
             expr_cache=expr_cache,
             aggregate="mean",
         )
-        species_level = (
-            gene_long_df[
-                ["gene_name", "species_dir", "species_name", "tissue", "agg_expression_score"]
+        species_level = summarize_species_gene_tissue(gene_long_df)
+        species_level = species_level[
+            [
+                "gene_name",
+                "species_dir",
+                "species_name",
+                "tissue",
+                "cell_mean_score",
+                "cell_std_score",
+                "cell_n",
+                "cell_status",
+                "expression_score",
             ]
-            .drop_duplicates(subset=["gene_name", "species_dir", "tissue"], keep="first")
-            .rename(columns={"agg_expression_score": "expression_score"})
-        )
+        ].copy()
         species_level["gene_class"] = gene_class
         species_level["gene_species_count"] = int(gene_rows["species_dir"].nunique())
         frames.append(species_level)
@@ -164,6 +172,10 @@ def build_species_level_long(detail_df: pd.DataFrame, target_genes: Iterable[str
                 "species_name",
                 "tissue",
                 "expression_score",
+                "cell_mean_score",
+                "cell_std_score",
+                "cell_n",
+                "cell_status",
                 "gene_class",
                 "gene_species_count",
             ]
@@ -175,6 +187,9 @@ def build_species_level_long(detail_df: pd.DataFrame, target_genes: Iterable[str
     long_df["gene_species_count"] = pd.to_numeric(
         long_df["gene_species_count"], errors="coerce"
     ).fillna(0).astype(int)
+    long_df["cell_mean_score"] = pd.to_numeric(long_df["cell_mean_score"], errors="coerce")
+    long_df["cell_std_score"] = pd.to_numeric(long_df["cell_std_score"], errors="coerce").fillna(0.0)
+    long_df["cell_n"] = pd.to_numeric(long_df["cell_n"], errors="coerce").fillna(0).astype(int)
     long_df = long_df[~long_df["tissue"].isin(GENERIC_TISSUES)].copy()
     return long_df
 
