@@ -1,6 +1,6 @@
-# BioAnalyze H2A Merge Worklog
+﻿# BioAnalyze H2A Merge Worklog
 
-Last updated: 2026-03-17
+Last updated: 2026-03-31
 
 Goal
 - Build a single H2A dataset for mammalia + human with consistent taxonomy fields, gene identifiers, and symbol-style gene names.
@@ -262,7 +262,7 @@ Heatmap Label Refresh (2026-03-15)
 Cross-Species Gene*Tissue Comparison (2026-03-17)
 - Goal:
   - Move from manual heatmap inspection to a reproducible comparison layer that
-    ranks strong cross-species expression differences at the `gene × tissue`
+    ranks strong cross-species expression differences at the `gene Г— tissue`
     level.
 - Shared helper layer:
   - Added `CURATED_SET/BioAnalyze/scripts/expression/gene_compare_common.py`
@@ -659,7 +659,7 @@ SQK Full Codon Figure Simplification (2026-03-24)
     - `CURATED_SET/BioAnalyze/figures/codons/sqk_nuc_full_shannon_scale.svg`
 - Behavior:
   - The `full` heatmap now uses large shortened region labels:
-    - `α1e`, `α1`, `L1`, `α2`, `L2`, `α3`, `β3`
+    - `О±1e`, `О±1`, `L1`, `О±2`, `L2`, `О±3`, `ОІ3`
   - After presentation tuning, the left region brackets and labels were moved
     back closer to the heatmap body while keeping the larger slide-friendly
     font size.
@@ -819,3 +819,257 @@ Graphics Batch 2503 (2026-03-25)
   - This batch is intended to be committed together as a single graphics-focused
     checkpoint for `25.03`, combining the new plotting scripts with the
     regenerated tables, audits, and figure outputs they produced.
+
+Tree Reconstruction Route (2026-03-29)
+- Goal:
+  - Reconstruct the historical H2A.J / cH2A / nonplacental tree-preparation
+    workflow, archive the supporting evidence, and explain why the nucleotide
+    tree failed.
+- New folders:
+  - Script:
+    - `CURATED_SET/BioAnalyze/scripts/h2aj_tree/`
+  - Audit:
+    - `CURATED_SET/BioAnalyze/audits/h2aj_tree/`
+  - Data:
+    - `CURATED_SET/BioAnalyze/data/h2aj_tree/`
+- New script:
+  - `CURATED_SET/BioAnalyze/scripts/h2aj_tree/rebuild_h2aj_tree_history.py`
+- Inputs archived outside git:
+  - `C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree`
+  - historical files from:
+    - `C:\Users\USER\Documents\Р“РёСЃС‚РѕРЅС‹`
+    - `C:\Users\USER\Documents\My_test`
+    - `C:\Users\USER\Documents\Р Р°Р±РѕС‚Р° РЅР°Рґ РіСЂР°РЅС‚РѕРј HistoneJ`
+    - `C:\Users\USER\Downloads\Telegram Desktop\ChatExport_2026-03-29\result.json`
+    - `C:\Users\USER\Downloads\Telegram Desktop\Draft2.docx`
+- Behavior:
+  - Copies a minimal historical evidence set into external storage and writes a
+    manifest with checksum / mtime / count metadata.
+  - Rebuilds both `historical` and `clean` tree-input outputs for:
+    - protein stages
+    - nucleotide stages
+    - post-PhyML rooting
+  - Exports evidence tables from notebooks, Telegram chat, and `Draft2.docx`.
+  - Reproduces the documented nucleotide rooting failure where the full
+    `cH2A_nuc` set is not monophyletic.
+- Key findings:
+  - The confirmed successful archived web run is the AA tree from `2025-06-03`
+    with:
+    - `LG`
+    - `BioNJ`
+    - `FreeRate(3)`
+    - `SH-like branch supports`
+  - `All_AA_0206 = 387` is the early broad-outgroup protein run.
+  - `All_AA_1006 = 338` matches:
+    - `H2AJ = 230`
+    - `cH2A = 57`
+    - `nonplacental/platypus = 51`
+  - The nucleotide failure is upstream of tree-building:
+    - BLAST HSP fragments instead of full CDS
+    - partial-codon translations
+    - SQK/SHK filtering by aligned position
+    - protein sequences mixed into the nucleotide tree
+    - short-sequence artifacts
+- Outputs:
+  - `CURATED_SET/BioAnalyze/data/h2aj_tree/evidence/`
+  - `CURATED_SET/BioAnalyze/data/h2aj_tree/historical/`
+  - `CURATED_SET/BioAnalyze/data/h2aj_tree/clean/`
+  - `CURATED_SET/BioAnalyze/audits/h2aj_tree/h2aj_tree_reconstruction_audit.md`
+- Verification:
+  - `py_compile` succeeded for:
+    - `CURATED_SET/BioAnalyze/scripts/h2aj_tree/rebuild_h2aj_tree_history.py`
+  - Full CLI run succeeded with:
+    - `--phase all --profile both`
+  - Rebuilt control points include:
+    - `All_AA_0206 = 387 / 208`
+    - `All_AA_1006 = 338 / 180`
+    - `All_NUC_1606 = 315 / 396`
+    - `SQK_nuc = 227`
+    - `SQK_nuc(without short) = 224`
+    - merged July nucleotide set = `312`
+
+BioAnalyze Structure Cleanup (2026-03-31)
+- Goal:
+  - Consolidate the recovered tree workflow under a single `h2aj_tree`
+    namespace and remove the abandoned nonplacental H2A.J synteny research
+    branch.
+- Tree changes:
+  - Moved:
+    - `CURATED_SET/BioAnalyze/scripts/tree/` ->
+      `CURATED_SET/BioAnalyze/scripts/h2aj_tree/`
+    - `CURATED_SET/BioAnalyze/audits/tree/` ->
+      `CURATED_SET/BioAnalyze/audits/h2aj_tree/`
+    - `CURATED_SET/BioAnalyze/stats/tree/` ->
+      `CURATED_SET/BioAnalyze/data/h2aj_tree/`
+  - Updated the recovered tree CLI so its default output root now points to:
+    - `CURATED_SET/BioAnalyze/data/h2aj_tree/`
+- Synteny cleanup:
+  - Preserved the placental H2A.J synteny route:
+    - `CURATED_SET/BioAnalyze/scripts/h2aj_synteny/build_h2aj_synteny_plot.py`
+    - `CURATED_SET/BioAnalyze/figures/h2aj_synteny/`
+  - Removed the later nonplacental branch entirely, including:
+    - NCBI survey outputs
+    - BLAST-first rescue route
+    - `EMP1/MGP` hand-analysis route
+    - local-search probing route
+    - the whole `CURATED_SET/BioAnalyze/stats/h2aj_synteny/` tree
+- Documentation cleanup:
+  - Updated:
+    - `CURATED_SET/BioAnalyze/WORKLOG.md`
+    - `CURATED_SET/BioAnalyze/AGENTS.md`
+    - `CURATED_SET/BioAnalyze/audits/h2aj_tree/h2aj_tree_reconstruction_audit.md`
+  - Removed stale references to:
+    - `scripts/tree`
+    - `audits/tree`
+    - `stats/tree`
+    - nonplacental `h2aj_synteny` routes
+- Verification:
+  - Confirmed the kept placental synteny files still exist.
+  - Confirmed `CURATED_SET/BioAnalyze/stats/h2aj_synteny/` is gone.
+  - `py_compile` succeeded for:
+    - `CURATED_SET/BioAnalyze/scripts/h2aj_tree/rebuild_h2aj_tree_history.py`
+
+Codon Entropy Renormalization (2026-03-30)
+- Goal:
+  - Change SQK codon-entropy normalization so each cell is scaled by the full
+    synonymous codon space of the reference amino acid, not by the number of
+    codons actually observed in that order.
+- Script updated:
+  - `CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps.py`
+- Behavior:
+  - Added an explicit `AA_MAX_SYNONYMOUS_CODONS` table for the standard genetic
+    code and a validation helper that checks it against
+    `CodonTable.unambiguous_dna_by_id[1]`.
+  - Entropy is now computed only from codons translating to the reference amino
+    acid at that position.
+  - Nonsynonymous codons and `---` are excluded from the entropy numerator.
+  - The `*` overlay remains separate and still marks cells where at least one
+    observed codon translates to a non-reference amino acid.
+  - Cells containing only nonsynonymous codons and/or `---` now resolve to
+    `NaN` instead of contributing zero diversity.
+- Verification:
+  - Synthetic helper cases cover:
+    - `L`: `3` observed synonymous codons normalized by `6` possible
+    - `I`: `2` observed synonymous codons normalized by `3` possible
+    - `M` / `W`: `0.0` despite single-codon synonymous space
+    - mixed synonymous plus nonsynonymous cells preserving the `*` overlay
+    - cells with only nonsynonymous codons and/or `---` returning `NaN`
+  - Full CLI rebuild should regenerate both `without-short` and `full`
+    heatmaps with unchanged matrix dimensions but updated entropy values.
+
+Codon Entropy Majority-AA Basis Update (2026-03-30)
+- Goal:
+  - Remove the white `NaN` stripes at SQK position `126` and align both entropy
+    and `*` semantics to the most frequent amino acid observed in each
+    `(position, order)` cell.
+- Script updated:
+  - `CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps.py`
+- Behavior:
+  - The entropy basis is now the most frequent translated amino acid in the
+    cell, excluding `---`.
+  - If multiple amino acids are tied for first place, the reference amino acid
+    is preferred when it is among the tied leaders; otherwise the tie is broken
+    deterministically in code.
+  - Entropy still measures synonymous codon diversity only, but now relative to
+    the synonymous space of the selected majority amino acid.
+  - The `*` overlay now marks codons encoding amino acids different from that
+    per-cell majority amino acid rather than different from the human
+    reference amino acid.
+- Position `126` impact:
+  - The earlier reference-AA logic created exactly `5` white `NaN` cells at
+    position `126` because no synonymous codons remained for `T` in:
+    - `Carnivora`
+    - `Chiroptera`
+    - `Lagomorpha`
+    - `Perissodactyla`
+    - `Rodentia`
+  - Under the majority-AA basis, those `5` cells should now render with finite
+    entropy values while the rest of the matrix remains effectively unchanged.
+- Verification:
+  - Synthetic checks should cover:
+    - majority-AA cells with mixed synonymous codons
+    - tie resolution when reference AA is one of the leaders
+    - `---`-only cells staying `NaN`
+    - uniform non-reference amino acid cells getting finite entropy and no `*`
+  - A full CLI rebuild should confirm:
+    - both datasets remain `129 x 8`
+    - the `5` white cells at `126` disappear
+    - `Eulipotyphla` at `126` resolves via the tie rule
+
+Alternative All-61 Codon Entropy Builder (2026-03-30)
+- Goal:
+  - Add a separate SQK codon-entropy visualization route that normalizes every
+    cell by the same theoretical denominator:
+    - `log2(61)` for the `61` sense codons in the standard genetic code
+  - Keep the existing main codon builder untouched while generating an
+    alternative interpretation set in its own output folder.
+- New script:
+  - `CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps_all61.py`
+- Output folder:
+  - `CURATED_SET/BioAnalyze/figures/codons/all_coding_61/`
+- Behavior:
+  - Entropy numerator is the raw Shannon entropy over all observed sense codons
+    in a cell.
+  - `---` is excluded from the entropy numerator.
+  - No per-cell amino-acid basis or majority-amino-acid logic is used.
+  - The `*` overlay in this variant marks cells containing more than one
+    translated amino acid.
+  - The script writes:
+    - `without-short` heatmap PNG/SVG
+    - `full` heatmap PNG/SVG
+    - standalone order legend PNG/SVG
+    - standalone Shannon scale PNG/SVG labeled with `/ log2(61)`
+    - `all61_entropy_summary.tsv`
+- Summary TSV contents:
+  - global `sense_codon_count = 61`
+  - per-amino-acid theoretical maxima under `log2(61)` normalization
+  - observed min / max / mean entropy for each dataset
+- Key observed values:
+  - Current observed max entropy in both datasets is about `0.3374`
+  - Current observed mean entropy is about:
+    - `0.0496` for `without-short`
+    - `0.0524` for `full`
+  - The standalone all-61 Shannon scale is now matched to the actual `full`
+    heatmap color range:
+    - `vmin = 0`
+    - `vmax = observed full max в‰€ 0.3374`
+    This avoids the misleading earlier mismatch where the legend used `0..1`
+    while the heatmap colors were auto-stretched only to the observed maximum.
+  - Position `126` no longer contains the earlier white `NaN` cells caused by
+    amino-acid filtering logic in the alternative all-61 variant.
+- Verification:
+  - `py_compile` succeeded for:
+    - `CURATED_SET/BioAnalyze/scripts/codons/build_codon_heatmaps_all61.py`
+  - Synthetic checks covered:
+    - one-codon cells
+    - two-codon equal mixtures
+    - four-codon equal mixtures
+    - `---`-only cells
+    - star-mask behavior for one-AA vs multi-AA cells
+  - Full CLI run succeeded with:
+    - `.\.venv\Scripts\python.exe CURATED_SET\BioAnalyze\scripts\codons\build_codon_heatmaps_all61.py --dataset all`
+  - Rebuilt matrices remained:
+    - `129 x 8` for both datasets
+
+H2A.J Tree Clean Short-Sequence Filter (2026-04-01)
+- Goal:
+  - Remove three known short H2A.J/SQK records from the `clean` `data/h2aj_tree` outputs without touching `historical`.
+- Dropped clean ID prefixes:
+  - `Myotis-lucifugus|XM_006084274`
+  - `Homo-sapiens|AK303301`
+  - `Homo-sapiens|AL133626`
+- Script changes:
+  - Added repeatable `--drop-clean-id` to `CURATED_SET/BioAnalyze/scripts/h2aj_tree/rebuild_h2aj_tree_history.py`.
+  - Applied prefix-based filtering only to `clean` FASTA/PHY outputs.
+  - Switched July clean SQK sources to:
+    - `SQK_nuc(without short).fasta`
+    - `protein_from_SQK_nuc(without short).fasta`
+  - Added `clean/postprocess/README_filtered_clean_note.txt` to mark `NWK` files as historical reference only.
+- Expected rebuilt counts:
+  - `nuc_0907`: `312 -> 309`
+  - `nuc_1606`: `315 -> 312`
+  - `aa_1006`: `338 -> 335`
+  - `aa_0206`: `387 -> 385`
+  - `h2aj_aligned_historical`: `230 -> 227`
+- Verification note:
+  - `All_AA_0206.fasta` contains the two short human records but not the short bat record, so the clean rebuild correctly removes `2` rows there rather than `3`.

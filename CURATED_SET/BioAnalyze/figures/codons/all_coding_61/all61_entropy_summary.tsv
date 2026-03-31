@@ -1,0 +1,24 @@
+entry_type	dataset	amino_acid	sense_codon_count	synonymous_codon_count	normalized_max_entropy	observed_min_entropy	observed_max_entropy	observed_mean_entropy
+global			61		1.0			
+amino_acid_max		A	61	4.0	0.3372261973790022			
+amino_acid_max		C	61	2.0	0.1686130986895011			
+amino_acid_max		D	61	2.0	0.1686130986895011			
+amino_acid_max		E	61	2.0	0.1686130986895011			
+amino_acid_max		F	61	2.0	0.1686130986895011			
+amino_acid_max		G	61	4.0	0.3372261973790022			
+amino_acid_max		H	61	2.0	0.1686130986895011			
+amino_acid_max		I	61	3.0	0.2672454385532547			
+amino_acid_max		K	61	2.0	0.1686130986895011			
+amino_acid_max		L	61	6.0	0.43585853724275586			
+amino_acid_max		M	61	1.0	0.0			
+amino_acid_max		N	61	2.0	0.1686130986895011			
+amino_acid_max		P	61	4.0	0.3372261973790022			
+amino_acid_max		Q	61	2.0	0.1686130986895011			
+amino_acid_max		R	61	6.0	0.43585853724275586			
+amino_acid_max		S	61	6.0	0.43585853724275586			
+amino_acid_max		T	61	4.0	0.3372261973790022			
+amino_acid_max		V	61	4.0	0.3372261973790022			
+amino_acid_max		W	61	1.0	0.0			
+amino_acid_max		Y	61	2.0	0.1686130986895011			
+dataset_observed	without-short		61			0.0	0.3374389835809231	0.04963747411890689
+dataset_observed	full		61			0.0	0.3374389835809231	0.05238454307609976

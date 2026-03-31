@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""Build annotated codon entropy heatmaps for SQK H2A datasets."""
+"""Build alternative codon entropy heatmaps normalized by log2(61)."""
 
 from __future__ import annotations
 
@@ -26,44 +26,41 @@ BIOANALYZE_ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_INPUT_DIR = Path(
     r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons"
 )
-DEFAULT_OUTPUT_DIR = BIOANALYZE_ROOT / "figures" / "codons"
+DEFAULT_OUTPUT_DIR = BIOANALYZE_ROOT / "figures" / "codons" / "all_coding_61"
 
 STANDARD_TABLE = CodonTable.unambiguous_dna_by_id[1]
-AA_MAX_SYNONYMOUS_CODONS = {
-    # Standard genetic code (NCBI translation table 1), excluding stop codons.
-    "A": 4,
-    "C": 2,
-    "D": 2,
-    "E": 2,
-    "F": 2,
-    "G": 4,
-    "H": 2,
-    "I": 3,
-    "K": 2,
-    "L": 6,
-    "M": 1,
-    "N": 2,
-    "P": 4,
-    "Q": 2,
-    "R": 6,
-    "S": 6,
-    "T": 4,
-    "V": 4,
-    "W": 1,
-    "Y": 2,
+SENSE_CODON_COUNT = len(STANDARD_TABLE.forward_table)
+if SENSE_CODON_COUNT != 61:
+    raise ValueError(f"Expected 61 sense codons, found {SENSE_CODON_COUNT}.")
+
+AA_SYNONYMOUS_CODONS = {
+    amino_acid: frozenset(codons)
+    for amino_acid, codons in sorted(
+        defaultdict(
+            set,
+            {
+                amino_acid: {
+                    codon
+                    for codon, aa in STANDARD_TABLE.forward_table.items()
+                    if aa == amino_acid
+                }
+                for amino_acid in set(STANDARD_TABLE.forward_table.values())
+            },
+        ).items()
+    )
 }
 
 DATASETS = {
     "without-short": {
         "protein": "protein_from_SQK_nuc(without short).fasta",
         "cds": "SQK_nuc(without short).fasta",
-        "stem": "sqk_nuc_without_short_codon_entropy_annotated",
+        "stem": "sqk_nuc_without_short_codon_entropy_annotated_all61",
         "presentation_mode": True,
     },
     "full": {
         "protein": "protein_from_SQK_nuc.fasta",
         "cds": "SQK_nuc.fasta",
-        "stem": "sqk_nuc_full_codon_entropy_annotated",
+        "stem": "sqk_nuc_full_codon_entropy_annotated_all61",
         "presentation_mode": True,
     },
 }
@@ -80,23 +77,23 @@ ORDER_COLORS = {
 }
 
 DEFAULT_REGIONS = [
-    (17, 23, "α1ext"),
-    (27, 38, "α1"),
+    (17, 23, "\u03b11ext"),
+    (27, 38, "\u03b11"),
     (40, 45, "loopL1"),
-    (47, 74, "α2"),
+    (47, 74, "\u03b12"),
     (76, 78, "loopL2"),
-    (80, 89, "α3"),
-    (100, 102, "β3"),
+    (80, 89, "\u03b13"),
+    (100, 102, "\u03b23"),
 ]
 
 FULL_PRESENTATION_REGIONS = [
-    (17, 23, "α1e"),
-    (27, 38, "α1"),
+    (17, 23, "\u03b11e"),
+    (27, 38, "\u03b11"),
     (40, 45, "L1"),
-    (47, 74, "α2"),
+    (47, 74, "\u03b12"),
     (76, 78, "L2"),
-    (80, 89, "α3"),
-    (100, 102, "β3"),
+    (80, 89, "\u03b13"),
+    (100, 102, "\u03b23"),
 ]
 
 HIGHLIGHTED_POSITIONS = [43, 57, 62, 65, 78, 91, 92, 93, 123, 124, 125]
@@ -104,39 +101,11 @@ BLUE_POSITIONS = {43, 78}
 GREEN_POSITIONS = {123, 124, 125}
 
 
-def build_synonymous_codon_sets() -> Dict[str, frozenset[str]]:
-    synonymous_codons: Dict[str, set[str]] = defaultdict(set)
-    for codon, amino_acid in STANDARD_TABLE.forward_table.items():
-        synonymous_codons[amino_acid].add(codon)
-    return {
-        amino_acid: frozenset(codons)
-        for amino_acid, codons in sorted(synonymous_codons.items())
-    }
-
-
-AA_SYNONYMOUS_CODONS = build_synonymous_codon_sets()
-
-
-def validate_synonymous_codon_counts() -> None:
-    derived_counts = {
-        amino_acid: len(codons)
-        for amino_acid, codons in AA_SYNONYMOUS_CODONS.items()
-    }
-    if derived_counts != AA_MAX_SYNONYMOUS_CODONS:
-        raise ValueError(
-            "AA_MAX_SYNONYMOUS_CODONS does not match the standard genetic code: "
-            f"{derived_counts}"
-        )
-
-
-validate_synonymous_codon_counts()
-
-
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
-            "Build annotated codon-entropy heatmaps from paired protein/CDS FASTA "
-            "inputs for the SQK H2A datasets."
+            "Build alternative codon-entropy heatmaps from paired protein/CDS FASTA "
+            "inputs for the SQK H2A datasets using Shannon / log2(61)."
         )
     )
     parser.add_argument(
@@ -209,61 +178,22 @@ def shannon_entropy(codons: Sequence[str]) -> float:
     return float(-np.sum(probabilities * np.log2(probabilities)))
 
 
-def basis_amino_acid_for_cell(
-    codons: Sequence[str], reference_aa: str
-) -> str | None:
-    amino_acid_counts: Counter[str] = Counter()
-    for codon in codons:
-        if codon == "---":
-            continue
-        amino_acid = STANDARD_TABLE.forward_table.get(codon)
-        if amino_acid is not None:
-            amino_acid_counts[amino_acid] += 1
-
-    if not amino_acid_counts:
-        return None
-
-    top_count = max(amino_acid_counts.values())
-    leaders = sorted(
-        amino_acid
-        for amino_acid, count in amino_acid_counts.items()
-        if count == top_count
-    )
-    # Prefer the reference amino acid on ties to keep the basis biologically stable.
-    if reference_aa in leaders:
-        return reference_aa
-    return leaders[0]
-
-
-def synonymous_codons_for_amino_acid(
-    codons: Sequence[str], basis_aa: str
-) -> Tuple[List[str], bool]:
-    synonymous_codons: List[str] = []
-    has_alternative_amino_acid = False
-    for codon in codons:
-        if codon == "---":
-            continue
-        amino_acid = STANDARD_TABLE.forward_table.get(codon)
-        if amino_acid == basis_aa:
-            synonymous_codons.append(codon)
-        elif amino_acid is not None:
-            has_alternative_amino_acid = True
-    return synonymous_codons, has_alternative_amino_acid
-
-
-def normalized_entropy(codons: Sequence[str], reference_aa: str) -> float:
-    """Normalize synonymous codon diversity relative to the most frequent amino acid in the cell."""
-    basis_aa = basis_amino_acid_for_cell(codons, reference_aa)
-    if basis_aa is None:
+def normalized_entropy_all61(codons: Sequence[str]) -> float:
+    sense_codons = [codon for codon in codons if codon in STANDARD_TABLE.forward_table]
+    if not sense_codons:
         return float("nan")
-
-    synonymous_codons, _ = synonymous_codons_for_amino_acid(codons, basis_aa)
-    max_synonymous_count = AA_MAX_SYNONYMOUS_CODONS.get(basis_aa)
-    if max_synonymous_count is None:
-        raise ValueError(f"Unsupported amino acid for entropy: {basis_aa}")
-    if max_synonymous_count <= 1 or len(set(synonymous_codons)) <= 1:
+    if len(set(sense_codons)) <= 1:
         return 0.0
-    return float(shannon_entropy(synonymous_codons) / np.log2(max_synonymous_count))
+    return float(shannon_entropy(sense_codons) / np.log2(SENSE_CODON_COUNT))
+
+
+def has_multiple_amino_acids(codons: Sequence[str]) -> bool:
+    amino_acids = {
+        STANDARD_TABLE.forward_table[codon]
+        for codon in codons
+        if codon in STANDARD_TABLE.forward_table
+    }
+    return len(amino_acids) > 1
 
 
 def collect_position_codons(
@@ -313,7 +243,7 @@ def collect_position_codons(
 
     positions = sorted(position_codons.keys())
     matrix: List[List[float]] = []
-    non_syn_mask = pd.DataFrame(
+    multi_aa_mask = pd.DataFrame(
         False,
         index=[position + 1 for position in positions],
         columns=valid_orders,
@@ -321,24 +251,15 @@ def collect_position_codons(
 
     for position in positions:
         row: List[float] = []
-        human_aa = aa_ref[position]
         for order in valid_orders:
             codons = position_codons[position].get(order, [])
             if not codons:
                 row.append(np.nan)
                 continue
 
-            basis_aa = basis_amino_acid_for_cell(codons, human_aa)
-            if basis_aa is None:
-                row.append(np.nan)
-                continue
-
-            synonymous_codons, has_non_synonymous = synonymous_codons_for_amino_acid(
-                codons, basis_aa
-            )
-            row.append(normalized_entropy(codons, human_aa))
-            if has_non_synonymous:
-                non_syn_mask.at[position + 1, order] = True
+            row.append(normalized_entropy_all61(codons))
+            if has_multiple_amino_acids(codons):
+                multi_aa_mask.at[position + 1, order] = True
         matrix.append(row)
 
     entropy_df = pd.DataFrame(
@@ -346,7 +267,7 @@ def collect_position_codons(
         index=[position + 1 for position in positions],
         columns=valid_orders,
     )
-    return entropy_df, non_syn_mask, aa_ref
+    return entropy_df, multi_aa_mask, aa_ref
 
 
 def draw_region_annotations(
@@ -435,10 +356,10 @@ def draw_order_swatches(ax: plt.Axes, orders: Sequence[str]) -> None:
     ax.set_ylim(ymin, -gap_top)
 
 
-def draw_non_syn_markers(ax: plt.Axes, non_syn_mask: pd.DataFrame) -> None:
-    for row_index, position in enumerate(non_syn_mask.index):
-        for column_index, order in enumerate(non_syn_mask.columns):
-            if non_syn_mask.at[position, order]:
+def draw_multi_aa_markers(ax: plt.Axes, multi_aa_mask: pd.DataFrame) -> None:
+    for row_index, position in enumerate(multi_aa_mask.index):
+        for column_index, order in enumerate(multi_aa_mask.columns):
+            if multi_aa_mask.at[position, order]:
                 ax.text(
                     column_index + 0.5,
                     row_index + 0.5,
@@ -455,10 +376,11 @@ def draw_non_syn_markers(ax: plt.Axes, non_syn_mask: pd.DataFrame) -> None:
 def build_heatmap(
     *,
     entropy_df: pd.DataFrame,
-    non_syn_mask: pd.DataFrame,
+    multi_aa_mask: pd.DataFrame,
     aa_ref: str,
     output_stem: Path,
     presentation_mode: bool,
+    vmax: float,
 ) -> None:
     if entropy_df.empty:
         raise RuntimeError("Entropy matrix is empty; no heatmap can be written.")
@@ -469,7 +391,14 @@ def build_heatmap(
         entropy_df,
         cmap="viridis",
         cbar=not presentation_mode,
-        cbar_kws={"label": "Норм. энтропия Шеннона (0–1)"},
+        cbar_kws={
+            "label": (
+                "\u041d\u043e\u0440\u043c. \u044d\u043d\u0442\u0440\u043e\u043f\u0438\u044f "
+                "\u0428\u0435\u043d\u043d\u043e\u043d\u0430 / log2(61)"
+            )
+        },
+        vmin=0.0,
+        vmax=vmax,
         linewidths=0.5,
         linecolor="gray",
         yticklabels=1,
@@ -500,7 +429,7 @@ def build_heatmap(
             line_width=1.5,
         )
     draw_highlighted_positions(ax, aa_ref)
-    draw_non_syn_markers(ax, non_syn_mask)
+    draw_multi_aa_markers(ax, multi_aa_mask)
 
     ax.set_xlabel("")
     ax.set_ylabel("")
@@ -536,25 +465,26 @@ def build_order_legend(output_dir: Path) -> None:
     )
     plt.tight_layout()
 
-    legend_stem = output_dir / "sqk_nuc_full_order_legend"
+    legend_stem = output_dir / "sqk_nuc_full_order_legend_all61"
     plt.savefig(legend_stem.with_suffix(".png"), dpi=300, bbox_inches="tight")
     plt.savefig(legend_stem.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
 
 
-def build_shannon_scale(output_dir: Path) -> None:
+def build_shannon_scale(output_dir: Path, vmax: float) -> None:
     fig = plt.figure(figsize=(3.2, 7.2))
     color_ax = fig.add_axes([0.42, 0.23, 0.18, 0.66])
-    norm = colors.Normalize(vmin=0.0, vmax=1.0)
+    norm = colors.Normalize(vmin=0.0, vmax=vmax)
     scalar = cm.ScalarMappable(norm=norm, cmap="viridis")
     scalar.set_array([])
     colorbar = fig.colorbar(scalar, cax=color_ax, orientation="vertical")
-    colorbar.set_ticks([0.0, 0.5, 1.0])
+    colorbar.set_ticks([0.0, vmax / 2.0, vmax])
     colorbar.ax.tick_params(labelsize=15, width=1.2, length=6)
     fig.text(
         0.5,
         0.08,
-        "Норм. энтропия Шеннона",
+        "\u041d\u043e\u0440\u043c. \u044d\u043d\u0442\u0440\u043e\u043f\u0438\u044f "
+        "\u0428\u0435\u043d\u043d\u043e\u043d\u0430",
         ha="center",
         va="center",
         fontsize=18,
@@ -563,16 +493,67 @@ def build_shannon_scale(output_dir: Path) -> None:
     fig.text(
         0.5,
         0.035,
-        "(0–1)",
+        "/ log2(61)",
         ha="center",
         va="center",
         fontsize=16,
     )
 
-    scale_stem = output_dir / "sqk_nuc_full_shannon_scale"
+    scale_stem = output_dir / "sqk_nuc_full_shannon_scale_all61"
     plt.savefig(scale_stem.with_suffix(".png"), dpi=300, bbox_inches="tight")
     plt.savefig(scale_stem.with_suffix(".svg"), bbox_inches="tight")
     plt.close(fig)
+
+
+def build_summary_tsv(output_dir: Path, dataset_frames: Dict[str, pd.DataFrame]) -> None:
+    rows: List[Dict[str, object]] = [
+        {
+            "entry_type": "global",
+            "dataset": "",
+            "amino_acid": "",
+            "sense_codon_count": SENSE_CODON_COUNT,
+            "synonymous_codon_count": np.nan,
+            "normalized_max_entropy": 1.0,
+            "observed_min_entropy": np.nan,
+            "observed_max_entropy": np.nan,
+            "observed_mean_entropy": np.nan,
+        }
+    ]
+
+    for amino_acid, codons in AA_SYNONYMOUS_CODONS.items():
+        rows.append(
+            {
+                "entry_type": "amino_acid_max",
+                "dataset": "",
+                "amino_acid": amino_acid,
+                "sense_codon_count": SENSE_CODON_COUNT,
+                "synonymous_codon_count": len(codons),
+                "normalized_max_entropy": np.log2(len(codons)) / np.log2(SENSE_CODON_COUNT),
+                "observed_min_entropy": np.nan,
+                "observed_max_entropy": np.nan,
+                "observed_mean_entropy": np.nan,
+            }
+        )
+
+    for dataset_name, entropy_df in dataset_frames.items():
+        finite_values = entropy_df.to_numpy(dtype=float)
+        finite_values = finite_values[np.isfinite(finite_values)]
+        rows.append(
+            {
+                "entry_type": "dataset_observed",
+                "dataset": dataset_name,
+                "amino_acid": "",
+                "sense_codon_count": SENSE_CODON_COUNT,
+                "synonymous_codon_count": np.nan,
+                "normalized_max_entropy": np.nan,
+                "observed_min_entropy": float(np.min(finite_values)) if finite_values.size else np.nan,
+                "observed_max_entropy": float(np.max(finite_values)) if finite_values.size else np.nan,
+                "observed_mean_entropy": float(np.mean(finite_values)) if finite_values.size else np.nan,
+            }
+        )
+
+    summary_path = output_dir / "all61_entropy_summary.tsv"
+    pd.DataFrame(rows).to_csv(summary_path, sep="\t", index=False)
 
 
 def build_dataset(dataset_name: str, input_dir: Path, output_dir: Path) -> pd.DataFrame:
@@ -582,16 +563,20 @@ def build_dataset(dataset_name: str, input_dir: Path, output_dir: Path) -> pd.Da
     require_file(protein_path)
     require_file(cds_path)
 
-    entropy_df, non_syn_mask, aa_ref = collect_position_codons(protein_path, cds_path)
+    entropy_df, multi_aa_mask, aa_ref = collect_position_codons(protein_path, cds_path)
+    finite_values = entropy_df.to_numpy(dtype=float)
+    finite_values = finite_values[np.isfinite(finite_values)]
+    vmax = float(np.max(finite_values)) if finite_values.size else 1.0
     build_heatmap(
         entropy_df=entropy_df,
-        non_syn_mask=non_syn_mask,
+        multi_aa_mask=multi_aa_mask,
         aa_ref=aa_ref,
         output_stem=output_dir / dataset_config["stem"],
         presentation_mode=bool(dataset_config["presentation_mode"]),
+        vmax=vmax,
     )
     print(
-        f"[{dataset_name}] wrote heatmap with shape "
+        f"[{dataset_name}] wrote all61 heatmap with shape "
         f"{entropy_df.shape[0]}x{entropy_df.shape[1]}"
     )
     return entropy_df
@@ -603,15 +588,22 @@ def main() -> None:
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    dataset_frames: Dict[str, pd.DataFrame] = {}
     dataset_names = resolve_dataset_names(args.dataset)
     for dataset_name in dataset_names:
-        build_dataset(dataset_name, input_dir, output_dir)
+        dataset_frames[dataset_name] = build_dataset(dataset_name, input_dir, output_dir)
+
+    build_summary_tsv(output_dir, dataset_frames)
+    print("[summary] wrote all61 entropy summary")
 
     if args.with_legend and "full" in dataset_names:
         build_order_legend(output_dir)
-        build_shannon_scale(output_dir)
-        print("[legend] wrote full order legend")
-        print("[legend] wrote full Shannon scale")
+        full_values = dataset_frames["full"].to_numpy(dtype=float)
+        full_values = full_values[np.isfinite(full_values)]
+        full_vmax = float(np.max(full_values)) if full_values.size else 1.0
+        build_shannon_scale(output_dir, full_vmax)
+        print("[legend] wrote all61 full order legend")
+        print("[legend] wrote all61 full Shannon scale")
 
 
 if __name__ == "__main__":

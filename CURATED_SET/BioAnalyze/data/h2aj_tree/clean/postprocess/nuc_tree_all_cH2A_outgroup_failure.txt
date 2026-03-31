@@ -1,0 +1,87 @@
+The full cH2A_nuc set is not monophyletic.
+cH2A_nuc terminals inspected: 34
+MRCA descendant count: 315
+Foreign descendants inside the MRCA subtree:
+- Myotis-lucifugus|XM_006084274|Mammalia|H2AJ
+- Homo-sapiens|AL133626|Mammalia|H2AJ
+- Homo-sapiens|AK303301|Mammalia|H2AJ
+- Pongo-pygmaeus|XM-054444588|Mammalia|H2AJ
+- Leopardus-geoffroyi|XM_045462732|Mammalia|H2AJ
+- Bison-bison-bison|XM-010858722|Mammalia|H2AJ
+- Bos-indicus-x-Bos-taurus|XM-027541407|Mammalia|H2AJ
+- Bos-indicus|XM-019961512|Mammalia|H2AJ
+- Bos-javanicus|XM-061417772|Mammalia|H2AJ
+- Bos-mutus|XM-005903616|Mammalia|H2AJ
+- Bos-taurus|BC103043|Mammalia|H2AJ
+- Bos-taurus|KX592814|Mammalia|H2AJ
+- Bos-taurus|NM-001078089|Mammalia|H2AJ
+- Bubalus-bubalis|XM-006055133|Mammalia|H2AJ
+- Bubalus-kerabau|XM-055566150|Mammalia|H2AJ
+- Budorcas-taxicolor|XM_052640303|Mammalia|H2AJ
+- Capra-hircus|XM-018048447|Mammalia|H2AJ
+- Capricornis-sumatraensis|XM-068970661|Mammalia|H2AJ
+- Cervus-canadensis|XM-043440217|Mammalia|H2AJ
+- Cervus-elaphus|XM-043881179|Mammalia|H2AJ
+- Choloepus-didactylus|XM_037847528|Mammalia|H2AJ
+- Chrysochloris-asiatica|XM_006866035|Mammalia|H2AJ
+- Colobus-angolensis-palliatus|XR-001003141|Mammalia|H2AJ
+- Dama-dama|XM_061125059|Mammalia|H2AJ
+- Dasypus-novemcinctus|XM_004460319|Mammalia|H2AJ
+- Elephantulus-edwardii|XM_006888429|Mammalia|H2AJ
+- Elephas-maximus-indicus|XM-049881507|Mammalia|H2AJ
+- Homo-sapiens|AC010168|Mammalia|H2AJ
+- Homo-sapiens|BC003602|Mammalia|H2AJ
+- Homo-sapiens|NM-177925|Mammalia|H2AJ
+- Homo-sapiens|NR-027716|Mammalia|H2AJ
+- Human-ORFeome-Gateway-entry-vector|LT733621|Unknown|H2AJ
+- Loxodonta-africana|XM-003405665|Mammalia|H2AJ
+- Moschus-berezovskii|XM-055394183|Mammalia|H2AJ
+- Muntiacus-reevesi|XM_065940911|Mammalia|H2AJ
+- Odocoileus-virginianus|XM-020887307|Mammalia|H2AJ
+- Orycteropus-afer-afer|XM_007944469|Mammalia|H2AJ
+- Oryx-dammah|XM-040235241|Mammalia|H2AJ
+- Ovis-aries|XM-042247501|Mammalia|H2AJ
+- Ovis-canadensis|XM-069585647|Mammalia|H2AJ
+- Pan-troglodytes|NM-001374559|Mammalia|H2AJ
+- Phacochoerus-africanus|XM-047787496|Mammalia|H2AJ
+- Sorex-araneus|XM_004611301|Mammalia|H2AJ
+- Sorex-fumeus|XM_056134613|Mammalia|H2AJ
+- Suncus-etruscus|XM_049783714|Mammalia|H2AJ
+- Sus-scrofa|AK233149|Mammalia|H2AJ
+- Sus-scrofa|XM-013997814|Mammalia|H2AJ
+- Trichechus-manatus-latirostris|XM-004387336|Mammalia|H2AJ
+- synthetic-construct|HQ447950|Unknown|H2AJ
+- synthetic-construct|KJ894256|Unknown|H2AJ
+- Urocitellus-parryii|XM_026414169|Mammalia|H2AJ
+- Sciurus-carolinensis|XM_047551107|Mammalia|H2AJ
+- Rattus-rattus|XM_032905517|Mammalia|H2AJ
+- Psammomys-obesus|XM_055610589|Mammalia|H2AJ
+- Phodopus-roborovskii|XM_051173136|Mammalia|H2AJ
+- Peromyscus-maniculatus-bairdii|XM_006976513|Mammalia|H2AJ
+- Peromyscus-leucopus|XM_028872172|Mammalia|H2AJ
+- Peromyscus-eremicus|XM_059256974|Mammalia|H2AJ
+- Peromyscus-californicus-insignis|XM_052721282|Mammalia|H2AJ
+- Onychomys-torridus|XM_036182861|Mammalia|H2AJ
+- Octodon-degus|XM_004626088|Mammalia|H2AJ
+- Nannospalax-galili|XM_008856042|Mammalia|H2AJ
+- Mustela-erminea|XM_032347412|Mammalia|H2AJ
+- Mus-pahari|XM_021188752|Mammalia|H2AJ
+- Mus-musculus|NM_177688|Mammalia|H2AJ
+- Mus-musculus|NG_212890|Mammalia|H2AJ
+- Mus-musculus|JN964095|Mammalia|H2AJ
+- Mus-musculus|JN951932|Mammalia|H2AJ
+- Mus-musculus|BC099606|Mammalia|H2AJ
+- Mus-musculus|BC024397|Mammalia|H2AJ
+- Callorhinus-ursinus|XM_025879656|Mammalia|H2AJ
+- Camelus-bactrianus|XM-010946464|Mammalia|H2AJ
+- Camelus-dromedarius|XM-010988875|Mammalia|H2AJ
+- Camelus-ferus|XM-006192112|Mammalia|H2AJ
+- Canis-lupus-baileyi|XM_072798911|Mammalia|H2AJ
+- Canis-lupus-dingo|XM_025455170|Mammalia|H2AJ
+- Canis-lupus-familiaris|XM_038438940|Mammalia|H2AJ
+- Canis-lupus-familiaris|XM_038576872|Mammalia|H2AJ
+- Canis-lupus-familiaris|XM_543796|Mammalia|H2AJ
+- Carlito-syrichta|XM-008071205|Mammalia|H2AJ
+- ... and 201 more
+
+Historical rooted_tree.nwk matches the regenerated first-cH2A rooting.

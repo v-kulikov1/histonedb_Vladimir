@@ -9,10 +9,12 @@ BioAnalyze is a local data-processing pipeline for histone H2A datasets. It stan
 
 Structure:
 - audits/ (pipeline QA and validation tables)
+- audits/h2aj_tree (tree-reconstruction audit narrative and evidence interpretation)
 - data/raw (placeholder; raw files are stored externally)
 - data/processed (intermediate normalized tables)
 - data/gene_compare (gene-level comparison indexes and per-gene exported tables)
 - data/merged (final merged outputs)
+- data/h2aj_tree (historical and clean H2A.J tree-reconstruction inputs plus evidence)
 - figures/heatmaps (heatmap graphics root)
 - figures/heatmaps/species (per-species H2A heatmaps)
 - figures/heatmaps/gene_compare (cross-species per-gene heatmaps)
@@ -20,6 +22,7 @@ Structure:
 - scripts/annotate (annotation utilities)
 - scripts/merge_taxonomy (taxonomy merge pipeline)
 - scripts/expression (expression, summary, and heatmap builders)
+- scripts/h2aj_tree (historical H2A.J tree reconstruction workflow)
 - stats/shared_genes (shared-gene summary tables and plots)
 - stats/ranking/tables (gene*tissue comparison tables)
 - stats/ranking/reports (manuscript-oriented text outputs)
@@ -119,6 +122,16 @@ Recent Outputs (2026-03-25)
 - CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.png
 - CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_presentation.svg
 - CURATED_SET/BioAnalyze/figures/boxplot/human/h2a_human_boxplot_number_legend.png
+Recent Outputs (2026-03-29)
+- CURATED_SET/BioAnalyze/data/h2aj_tree/evidence/evidence_summary.md
+- CURATED_SET/BioAnalyze/data/h2aj_tree/historical/
+- CURATED_SET/BioAnalyze/data/h2aj_tree/clean/
+- CURATED_SET/BioAnalyze/audits/h2aj_tree/h2aj_tree_reconstruction_audit.md
+Recent Outputs (2026-04-01)
+- CURATED_SET/BioAnalyze/data/h2aj_tree/clean/nuc/nuc_0907_alignment.phy
+- CURATED_SET/BioAnalyze/data/h2aj_tree/clean/aa/aa_1006_mammalian_cH2A_plus_nonplacental_alignment.phy
+- CURATED_SET/BioAnalyze/data/h2aj_tree/clean/postprocess/README_filtered_clean_note.txt
+- CURATED_SET/BioAnalyze/audits/h2aj_tree/h2aj_tree_reconstruction_audit.md
 Recent Script Additions (2026-03-17)
 - CURATED_SET/BioAnalyze/scripts/expression/summarize_shared_h2a_gene_names_across_species.py
   Rebuilds the shared-gene summary in `stats/shared_genes/` and writes a reusable long-form
@@ -170,6 +183,17 @@ Recent Script Additions (2026-03-25)
 - CURATED_SET/BioAnalyze/scripts/expression/build_human_h2a_boxplot.py
   Builds the analytical and presentation versions of the human H2A boxplot and
   exports the number legend plus supporting TSV tables.
+Recent Script Additions (2026-03-29)
+- CURATED_SET/BioAnalyze/scripts/h2aj_tree/rebuild_h2aj_tree_history.py
+  Reconstructs the historical H2A.J tree workflow, archives source evidence,
+  and rebuilds the `historical`, `clean`, and `evidence` outputs under
+  `data/h2aj_tree/`.
+Recent Script Changes (2026-04-01)
+- CURATED_SET/BioAnalyze/scripts/h2aj_tree/rebuild_h2aj_tree_history.py
+  Adds repeatable `--drop-clean-id` filtering for `clean` outputs, switches the
+  July clean SQK source to the `without short` FASTA pairs, and leaves an
+  explicit note that `clean/postprocess/*.nwk` remain historical reference
+  trees rather than trees inferred from the newly filtered alignments.
 
 External raw data:
 - stored at C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw

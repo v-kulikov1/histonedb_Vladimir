@@ -1,0 +1,17 @@
+logical_name	archived_path	record_count	site_count	source_mtime	note
+H2AJ.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\H2AJ.fasta	230	149	2025-06-02T14:49:08	Early aligned H2A.J protein set.
+cH2A.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\cH2A.fasta	57		2025-06-02T15:05:26	Canonical H2A outgroup protein set.
+platypus.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\platypus.fasta	51		2025-06-10T13:46:24	Historical nonplacental protein set, labelled as platypus.
+All_AA_0206.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_AA_0206.fasta	387	208	2025-06-02T17:40:31	02 June 2025 broad outgroup amino-acid alignment.
+All_AA_0206.phy	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_AA_0206.phy	387	208	2025-06-02T17:45:13	PhyML-ready PHYLIP for the 02 June 2025 amino-acid alignment.
+All_AA_1006.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_AA_1006.fasta	338	200	2025-06-10T13:41:03	10 June 2025 mammal cH2A + nonplacental amino-acid alignment.
+All_AA_1006.phy	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_AA_1006.phy	338	180	2025-06-10T14:08:41	PHYLIP for the 10 June 2025 mammal/nonplacental AA set.
+All_NUC_1606.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_NUC_1606.fasta	315	399	2025-06-16T16:27:46	16 June 2025 nucleotide alignment.
+All_NUC_1606.phy	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_NUC_1606.phy	315	396	2025-06-16T16:32:34	PHYLIP for the 16 June 2025 nucleotide alignment.
+SQK_nuc.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons\SQK_nuc.fasta	227		2025-07-08T12:55:43	08 July 2025 SQK nucleotide set. Reused existing raw/codons archive copy.
+SQK_nuc(without short).fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons\SQK_nuc(without short).fasta	224	390	2025-07-08T15:54:15	08 July 2025 SQK nucleotide set without short sequences. Reused existing raw/codons archive copy.
+protein_from_SQK_nuc.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons\protein_from_SQK_nuc.fasta	227		2025-07-08T12:55:26	Translated proteins from SQK_nuc. Reused existing raw/codons archive copy.
+protein_from_SQK_nuc(without short).fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons\protein_from_SQK_nuc(without short).fasta	224	129	2025-07-08T15:52:52	Translated proteins from SQK_nuc(without short). Reused existing raw/codons archive copy.
+cH2A_nuc + platypus_nuc + SQK_nuc.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\cH2A_nuc + platypus_nuc + SQK_nuc.fasta	312		2025-07-09T17:29:22	09 July 2025 merged nucleotide set.
+All_NUC_0907.fasta	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\my_test\All_NUC_0907.fasta	312	402	2026-03-29T20:19:20	July 2025 aligned nucleotide FASTA present only in My_test.
+All_NUC_0907.phy	C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree\histones\All_NUC_0907.phy	312	396	2025-07-09T17:31:59	PHYLIP for the July merged nucleotide set.
