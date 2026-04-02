@@ -1,0 +1,36 @@
+axis	tissue_letter	compare_tissue_key	bgee_tissue_label	match_type	is_underlined
+OX	A	adipose tissue	adipose tissue	exact	False
+OX	B	adrenal gland	adrenal gland	exact	False
+OX	C	amygdala	amygdala	exact	False
+OX	D	cerebellum	cerebellum	exact	False
+OX	E	cerebral cortex	cerebral cortex	exact	False
+OX	F	colon	colon	exact	False
+OX	G	endometrium	endometrium	exact	False
+OX	H	esophagus	esophagus	exact	False
+OX	I	fallopian tube	fallopian tube	exact	False
+OX	J	hypothalamus	hypothalamus	exact	False
+OX	K	kidney	kidney	exact	False
+OX	L	liver	liver	exact	False
+OX	M	lung	lung	exact	False
+OX	N	nucleus accumbens	nucleus accumbens	exact	False
+OX	O	ovary	ovary	exact	False
+OX	P	pancreas	pancreas	exact	False
+OX	Q	pituitary gland	pituitary gland	exact	False
+OX	R	putamen	putamen	exact	False
+OX	S	retina	retina	exact	False
+OX	T	small intestine	small intestine	exact	False
+OX	U	spinal cord	spinal cord	exact	False
+OX	V	spleen	spleen	exact	False
+OX	W	stomach	stomach	exact	False
+OX	X	substantia nigra	substantia nigra	exact	False
+OX	Y	testis	testis	exact	False
+OX	Z	thyroid gland	thyroid gland	exact	False
+OX	AA	urinary bladder	urinary bladder	exact	False
+OX	AB	vagina	vagina	exact	False
+OX	AC	mammary gland	mammary gland	safe_synonym	True
+OX	AD	caudate nucleus	caudate nucleus	safe_synonym	True
+OX	AE	uterine cervix	uterine cervix	safe_synonym	True
+OX	AF	myocardium	myocardium	safe_synonym	True
+OX	AG	prostate gland	prostate gland	safe_synonym	True
+OX	AH	saliva-secreting gland	saliva-secreting gland	safe_synonym	True
+OX	AI	skeletal muscle tissue	skeletal muscle tissue	safe_synonym	True

@@ -1,0 +1,36 @@
+compare_tissue_key	tissue_letter	hpa_tissue_label	bgee_tissue_label	match_type	is_underlined
+adipose tissue	A	adipose tissue	adipose tissue	exact	False
+adrenal gland	B	adrenal gland	adrenal gland	exact	False
+amygdala	C	amygdala	amygdala	exact	False
+cerebellum	D	cerebellum	cerebellum	exact	False
+cerebral cortex	E	cerebral cortex	cerebral cortex	exact	False
+colon	F	colon	colon	exact	False
+endometrium	G	endometrium	endometrium	exact	False
+esophagus	H	esophagus	esophagus	exact	False
+fallopian tube	I	fallopian tube	fallopian tube	exact	False
+hypothalamus	J	hypothalamus	hypothalamus	exact	False
+kidney	K	kidney	kidney	exact	False
+liver	L	liver	liver	exact	False
+lung	M	lung	lung	exact	False
+nucleus accumbens	N	nucleus accumbens	nucleus accumbens	exact	False
+ovary	O	ovary	ovary	exact	False
+pancreas	P	pancreas	pancreas	exact	False
+pituitary gland	Q	pituitary gland	pituitary gland	exact	False
+putamen	R	putamen	putamen	exact	False
+retina	S	retina	retina	exact	False
+small intestine	T	small intestine	small intestine	exact	False
+spinal cord	U	spinal cord	spinal cord	exact	False
+spleen	V	spleen	spleen	exact	False
+stomach	W	stomach	stomach	exact	False
+substantia nigra	X	substantia nigra	substantia nigra	exact	False
+testis	Y	testis	testis	exact	False
+thyroid gland	Z	thyroid gland	thyroid gland	exact	False
+urinary bladder	AA	urinary bladder	urinary bladder	exact	False
+vagina	AB	vagina	vagina	exact	False
+mammary gland	AC	breast	mammary gland	safe_synonym	True
+caudate nucleus	AD	caudate	caudate nucleus	safe_synonym	True
+uterine cervix	AE	cervix	uterine cervix	safe_synonym	True
+myocardium	AF	heart muscle	myocardium	safe_synonym	True
+prostate gland	AG	prostate	prostate gland	safe_synonym	True
+saliva-secreting gland	AH	salivary gland	saliva-secreting gland	safe_synonym	True
+skeletal muscle tissue	AI	skeletal muscle	skeletal muscle tissue	safe_synonym	True

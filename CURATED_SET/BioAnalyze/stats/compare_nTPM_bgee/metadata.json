@@ -1,0 +1,51 @@
+{
+  "hpa_tsv": "CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_hpa_aligned_long.tsv",
+  "bgee_tsv": "CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_bgee_aligned_long.tsv",
+  "compare_metadata_path": "CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_metadata.json",
+  "out_dir": "CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee",
+  "top_n": 20,
+  "total_compare_slots": 595,
+  "non_missing_pair_count": 477,
+  "nonzero_any_pair_count": 417,
+  "both_zero_pair_count": 60,
+  "safe_synonym_pair_count": 81,
+  "max_abs_log_diff": 1.9146075677710805,
+  "max_abs_raw_diff": 88.50750000000001,
+  "top_difference_examples": [
+    {
+      "subset_label": "overall",
+      "canonical_gene_name": "H2AC14",
+      "hpa_tissue_label": "kidney",
+      "bgee_tissue_label": "kidney",
+      "abs_diff_log": 1.9146075677710805
+    },
+    {
+      "subset_label": "overall",
+      "canonical_gene_name": "H2AC12",
+      "hpa_tissue_label": "kidney",
+      "bgee_tissue_label": "kidney",
+      "abs_diff_log": 1.9052155343138024
+    },
+    {
+      "subset_label": "overall",
+      "canonical_gene_name": "H2AC21",
+      "hpa_tissue_label": "kidney",
+      "bgee_tissue_label": "kidney",
+      "abs_diff_log": 1.8861829695328853
+    },
+    {
+      "subset_label": "overall",
+      "canonical_gene_name": "H2AC13",
+      "hpa_tissue_label": "kidney",
+      "bgee_tissue_label": "kidney",
+      "abs_diff_log": 1.8825504096066261
+    },
+    {
+      "subset_label": "overall",
+      "canonical_gene_name": "H2AC16",
+      "hpa_tissue_label": "kidney",
+      "bgee_tissue_label": "kidney",
+      "abs_diff_log": 1.8641603540155849
+    }
+  ]
+}

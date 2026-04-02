@@ -1,0 +1,100 @@
+{
+  "input_tsv": "C:/Users/USER/Documents/GitHub/histonedb_external_storage/BioAnalyze/raw/expression_nTPM/human/test.tsv",
+  "out_data_dir": "C:/Users/USER/Documents/GitHub/histonedb/CURATED_SET/BioAnalyze/data/expression_nTPM/human",
+  "out_fig_dir": "C:/Users/USER/Documents/GitHub/histonedb/CURATED_SET/BioAnalyze/figures/expression_nTPM/human",
+  "required_columns": [
+    "Gene name",
+    "Tissue",
+    "nTPM",
+    "variant"
+  ],
+  "filter_rule": "nTPM > 0",
+  "thresholds": {
+    "high_gt": 10.0,
+    "moderate_gt": 1.0,
+    "low_lte": 1.0
+  },
+  "source_row_count": 557,
+  "source_gene_count": 17,
+  "source_tissue_count": 37,
+  "aggregated_cell_count": 557,
+  "nonzero_cell_count": 400,
+  "expressed_gene_count": 16,
+  "nonzero_tissue_count": 37,
+  "expressed_genes": [
+    "H2AC6",
+    "H2AC25",
+    "H2AC19",
+    "H2AC8",
+    "H2AC20",
+    "H2AC1",
+    "H2AC15",
+    "H2AC7",
+    "H2AC17",
+    "H2AC12",
+    "H2AC11",
+    "H2AC13",
+    "H2AC16",
+    "H2AC14",
+    "H2AC21",
+    "H2AC4"
+  ],
+  "zero_only_genes": [
+    "H2AC18"
+  ],
+  "class_counts": {
+    "high": 2,
+    "low": 11,
+    "moderate": 4
+  },
+  "legacy_variant_gene_map": {
+    "cH2A.10_(Homo_sapiens)": [
+      "H2AC21"
+    ],
+    "cH2A.11_(Homo_sapiens)": [
+      "H2AC25"
+    ],
+    "cH2A.1_(Homo_sapiens)": [
+      "H2AC1"
+    ],
+    "cH2A.2_(Homo_sapiens)": [
+      "H2AC4",
+      "H2AC8"
+    ],
+    "cH2A.3_(Homo_sapiens)": [
+      "H2AC6"
+    ],
+    "cH2A.4_(Homo_sapiens)": [
+      "H2AC7"
+    ],
+    "cH2A.5_(Homo_sapiens)": [
+      "H2AC11",
+      "H2AC13",
+      "H2AC15",
+      "H2AC16",
+      "H2AC17"
+    ],
+    "cH2A.6_(Homo_sapiens)": [
+      "H2AC12"
+    ],
+    "cH2A.7_(Homo_sapiens)": [
+      "H2AC14"
+    ],
+    "cH2A.8_(Homo_sapiens)": [
+      "H2AC18",
+      "H2AC19"
+    ],
+    "cH2A.9_(Homo_sapiens)": [
+      "H2AC20"
+    ]
+  },
+  "top_tissue_by_expressed_gene_count": {
+    "tissue": "liver",
+    "expressed_gene_count": 15
+  },
+  "notes": [
+    "This workflow is intentionally separate from normalized Expression score outputs.",
+    "Gene name is the primary analysis key; legacy variant labels are kept for traceability.",
+    "Zero-only genes are preserved in raw summary/audit tables and excluded from expressed-gene plots."
+  ]
+}

@@ -1,0 +1,3 @@
+subset_label	subset_description	pair_count	hpa_zero_count	bgee_zero_count	pearson_log	spearman_log	pearson_raw	spearman_raw
+all_non_missing	All paired cells with non-missing values in both sources.	477	127	68	0.43896258132510585	0.8133292189968154	0.5385377131778781	0.8133292189968154
+nonzero_any	Paired cells where either HPA or Bgee is > 0.	417	67	8	0.45657934043720894	0.7614598437530472	0.6009477438948566	0.7614598437530472

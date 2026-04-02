@@ -1,0 +1,18 @@
+gene_name	legacy_variant	mean_nTPM	median_nTPM	max_nTPM	expressed_tissue_count	top_tissue	top_tissue_median_nTPM	top_tissue_mean_nTPM	source_tissue_count	source_mean_nTPM	source_max_nTPM	expression_class
+H2AC6	cH2A.3_(Homo_sapiens)	13.891891891891891	12.3	29.5	37	liver	29.5	29.5	37	13.891891891891891	29.5	high
+H2AC25	cH2A.11_(Homo_sapiens)	13.037837837837838	10.8	80.6	37	cerebellum	80.6	80.6	37	13.037837837837838	80.6	high
+H2AC19	cH2A.8_(Homo_sapiens)	6.5	6.5	6.5	1	retina	6.5	6.5	1	6.5	6.5	moderate
+H2AC8	cH2A.2_(Homo_sapiens)	5.924324324324324	4.1	31.9	37	prostate	31.9	31.9	37	5.924324324324324	31.9	moderate
+H2AC20	cH2A.9_(Homo_sapiens)	2.3864864864864863	2.4	5.2	37	cervix	5.2	5.2	37	2.3864864864864863	5.2	moderate
+H2AC1	cH2A.1_(Homo_sapiens)	1.9333333333333333	0.2	5.5	3	testis	5.5	5.5	37	0.15675675675675677	5.5	moderate
+H2AC15	cH2A.5_(Homo_sapiens)	0.7594594594594595	0.6	2.5	37	testis	2.5	2.5	37	0.7594594594594595	2.5	low
+H2AC7	cH2A.4_(Homo_sapiens)	0.7323529411764705	0.5	3.2	34	cervix	3.2	3.2	37	0.672972972972973	3.2	low
+H2AC17	cH2A.5_(Homo_sapiens)	0.425	0.4	1.2	28	spleen	1.2	1.2	37	0.3216216216216216	1.2	low
+H2AC12	cH2A.6_(Homo_sapiens)	0.3391304347826087	0.2	2.0	23	small intestine	2.0	2.0	37	0.2108108108108108	2.0	low
+H2AC11	cH2A.5_(Homo_sapiens)	0.33888888888888885	0.2	3.1	36	testis	3.1	3.1	37	0.3297297297297297	3.1	low
+H2AC13	cH2A.5_(Homo_sapiens)	0.3041666666666667	0.2	1.1	24	spleen	1.1	1.1	37	0.1972972972972973	1.1	low
+H2AC16	cH2A.5_(Homo_sapiens)	0.21333333333333335	0.2	0.6	15	spleen	0.6	0.6	37	0.08648648648648649	0.6	low
+H2AC14	cH2A.7_(Homo_sapiens)	0.20714285714285713	0.1	0.6	14	spleen	0.6	0.6	37	0.07837837837837838	0.6	low
+H2AC21	cH2A.10_(Homo_sapiens)	0.19545454545454544	0.15000000000000002	0.5	22	skin	0.5	0.5	37	0.11621621621621621	0.5	low
+H2AC4	cH2A.2_(Homo_sapiens)	0.18666666666666668	0.1	0.7	15	testis	0.7	0.7	37	0.07567567567567568	0.7	low
+H2AC18	cH2A.8_(Homo_sapiens)	0.0	0.0	0.0	0		0.0	0.0	1	0.0	0.0	low

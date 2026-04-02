@@ -1,0 +1,596 @@
+gene_order	gene_number	tissue_order	tissue_letter	canonical_gene_name	ensembl_gene_id	bgee_gene_label	compare_tissue_key	hpa_tissue_label	bgee_tissue_label	match_type	is_underlined	cell_mean_score
+1	1	1	A	H2AC1	ENSG00000164508	H2AC1	adipose tissue	adipose tissue	adipose tissue	exact	False	0.0
+1	1	2	B	H2AC1	ENSG00000164508	H2AC1	adrenal gland	adrenal gland	adrenal gland	exact	False	0.0
+1	1	3	C	H2AC1	ENSG00000164508	H2AC1	amygdala	amygdala	amygdala	exact	False	0.0
+1	1	4	D	H2AC1	ENSG00000164508	H2AC1	cerebellum	cerebellum	cerebellum	exact	False	0.0
+1	1	5	E	H2AC1	ENSG00000164508	H2AC1	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	0.0
+1	1	6	F	H2AC1	ENSG00000164508	H2AC1	colon	colon	colon	exact	False	0.0
+1	1	7	G	H2AC1	ENSG00000164508	H2AC1	endometrium	endometrium	endometrium	exact	False	0.0
+1	1	8	H	H2AC1	ENSG00000164508	H2AC1	esophagus	esophagus	esophagus	exact	False	0.0
+1	1	9	I	H2AC1	ENSG00000164508	H2AC1	fallopian tube	fallopian tube	fallopian tube	exact	False	0.0
+1	1	10	J	H2AC1	ENSG00000164508	H2AC1	hypothalamus	hypothalamus	hypothalamus	exact	False	0.0
+1	1	11	K	H2AC1	ENSG00000164508	H2AC1	kidney	kidney	kidney	exact	False	35.42
+1	1	12	L	H2AC1	ENSG00000164508	H2AC1	liver	liver	liver	exact	False	40.521428571428565
+1	1	13	M	H2AC1	ENSG00000164508	H2AC1	lung	lung	lung	exact	False	24.64333333333333
+1	1	14	N	H2AC1	ENSG00000164508	H2AC1	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	0.0
+1	1	15	O	H2AC1	ENSG00000164508	H2AC1	ovary	ovary	ovary	exact	False	0.0
+1	1	16	P	H2AC1	ENSG00000164508	H2AC1	pancreas	pancreas	pancreas	exact	False	31.475
+1	1	17	Q	H2AC1	ENSG00000164508	H2AC1	pituitary gland	pituitary gland	pituitary gland	exact	False	0.0
+1	1	18	R	H2AC1	ENSG00000164508	H2AC1	putamen	putamen	putamen	exact	False	0.0
+1	1	19	S	H2AC1	ENSG00000164508	H2AC1	retina	retina	retina	exact	False	
+1	1	20	T	H2AC1	ENSG00000164508	H2AC1	small intestine	small intestine	small intestine	exact	False	0.0
+1	1	21	U	H2AC1	ENSG00000164508	H2AC1	spinal cord	spinal cord	spinal cord	exact	False	
+1	1	22	V	H2AC1	ENSG00000164508	H2AC1	spleen	spleen	spleen	exact	False	0.0
+1	1	23	W	H2AC1	ENSG00000164508	H2AC1	stomach	stomach	stomach	exact	False	0.0
+1	1	24	X	H2AC1	ENSG00000164508	H2AC1	substantia nigra	substantia nigra	substantia nigra	exact	False	0.0
+1	1	25	Y	H2AC1	ENSG00000164508	H2AC1	testis	testis	testis	exact	False	74.38
+1	1	26	Z	H2AC1	ENSG00000164508	H2AC1	thyroid gland	thyroid gland	thyroid gland	exact	False	0.0
+1	1	27	AA	H2AC1	ENSG00000164508	H2AC1	urinary bladder	urinary bladder	urinary bladder	exact	False	0.0
+1	1	28	AB	H2AC1	ENSG00000164508	H2AC1	vagina	vagina	vagina	exact	False	0.0
+1	1	29	AC	H2AC1	ENSG00000164508	H2AC1	mammary gland	breast	mammary gland	safe_synonym	True	
+1	1	30	AD	H2AC1	ENSG00000164508	H2AC1	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	0.0
+1	1	31	AE	H2AC1	ENSG00000164508	H2AC1	uterine cervix	cervix	uterine cervix	safe_synonym	True	
+1	1	32	AF	H2AC1	ENSG00000164508	H2AC1	myocardium	heart muscle	myocardium	safe_synonym	True	
+1	1	33	AG	H2AC1	ENSG00000164508	H2AC1	prostate gland	prostate	prostate gland	safe_synonym	True	0.0
+1	1	34	AH	H2AC1	ENSG00000164508	H2AC1	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	0.0
+1	1	35	AI	H2AC1	ENSG00000164508	H2AC1	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+2	2	1	A	H2AC4	ENSG00000278463	H2AC4	adipose tissue	adipose tissue	adipose tissue	exact	False	30.45
+2	2	2	B	H2AC4	ENSG00000278463	H2AC4	adrenal gland	adrenal gland	adrenal gland	exact	False	33.97
+2	2	3	C	H2AC4	ENSG00000278463	H2AC4	amygdala	amygdala	amygdala	exact	False	25.64
+2	2	4	D	H2AC4	ENSG00000278463	H2AC4	cerebellum	cerebellum	cerebellum	exact	False	34.3
+2	2	5	E	H2AC4	ENSG00000278463	H2AC4	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	37.44
+2	2	6	F	H2AC4	ENSG00000278463	H2AC4	colon	colon	colon	exact	False	56.26875
+2	2	7	G	H2AC4	ENSG00000278463	H2AC4	endometrium	endometrium	endometrium	exact	False	0.0
+2	2	8	H	H2AC4	ENSG00000278463	H2AC4	esophagus	esophagus	esophagus	exact	False	27.5
+2	2	9	I	H2AC4	ENSG00000278463	H2AC4	fallopian tube	fallopian tube	fallopian tube	exact	False	
+2	2	10	J	H2AC4	ENSG00000278463	H2AC4	hypothalamus	hypothalamus	hypothalamus	exact	False	0.0
+2	2	11	K	H2AC4	ENSG00000278463	H2AC4	kidney	kidney	kidney	exact	False	64.16333333333334
+2	2	12	L	H2AC4	ENSG00000278463	H2AC4	liver	liver	liver	exact	False	39.51714285714286
+2	2	13	M	H2AC4	ENSG00000278463	H2AC4	lung	lung	lung	exact	False	52.93285714285714
+2	2	14	N	H2AC4	ENSG00000278463	H2AC4	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	0.0
+2	2	15	O	H2AC4	ENSG00000278463	H2AC4	ovary	ovary	ovary	exact	False	59.99
+2	2	16	P	H2AC4	ENSG00000278463	H2AC4	pancreas	pancreas	pancreas	exact	False	0.0
+2	2	17	Q	H2AC4	ENSG00000278463	H2AC4	pituitary gland	pituitary gland	pituitary gland	exact	False	29.57
+2	2	18	R	H2AC4	ENSG00000278463	H2AC4	putamen	putamen	putamen	exact	False	0.0
+2	2	19	S	H2AC4	ENSG00000278463	H2AC4	retina	retina	retina	exact	False	
+2	2	20	T	H2AC4	ENSG00000278463	H2AC4	small intestine	small intestine	small intestine	exact	False	28.695
+2	2	21	U	H2AC4	ENSG00000278463	H2AC4	spinal cord	spinal cord	spinal cord	exact	False	29.6
+2	2	22	V	H2AC4	ENSG00000278463	H2AC4	spleen	spleen	spleen	exact	False	40.47571428571428
+2	2	23	W	H2AC4	ENSG00000278463	H2AC4	stomach	stomach	stomach	exact	False	58.10583333333333
+2	2	24	X	H2AC4	ENSG00000278463	H2AC4	substantia nigra	substantia nigra	substantia nigra	exact	False	30.4275
+2	2	25	Y	H2AC4	ENSG00000278463	H2AC4	testis	testis	testis	exact	False	46.26222222222222
+2	2	26	Z	H2AC4	ENSG00000278463	H2AC4	thyroid gland	thyroid gland	thyroid gland	exact	False	0.0
+2	2	27	AA	H2AC4	ENSG00000278463	H2AC4	urinary bladder	urinary bladder	urinary bladder	exact	False	0.0
+2	2	28	AB	H2AC4	ENSG00000278463	H2AC4	vagina	vagina	vagina	exact	False	51.72
+2	2	29	AC	H2AC4	ENSG00000278463	H2AC4	mammary gland	breast	mammary gland	safe_synonym	True	
+2	2	30	AD	H2AC4	ENSG00000278463	H2AC4	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	29.42
+2	2	31	AE	H2AC4	ENSG00000278463	H2AC4	uterine cervix	cervix	uterine cervix	safe_synonym	True	39.11
+2	2	32	AF	H2AC4	ENSG00000278463	H2AC4	myocardium	heart muscle	myocardium	safe_synonym	True	0.0
+2	2	33	AG	H2AC4	ENSG00000278463	H2AC4	prostate gland	prostate	prostate gland	safe_synonym	True	0.0
+2	2	34	AH	H2AC4	ENSG00000278463	H2AC4	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	0.0
+2	2	35	AI	H2AC4	ENSG00000278463	H2AC4	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+3	3	1	A	H2AC6	ENSG00000180573	H2AC6	adipose tissue	adipose tissue	adipose tissue	exact	False	84.59705882352942
+3	3	2	B	H2AC6	ENSG00000180573	H2AC6	adrenal gland	adrenal gland	adrenal gland	exact	False	84.4875
+3	3	3	C	H2AC6	ENSG00000180573	H2AC6	amygdala	amygdala	amygdala	exact	False	82.92090909090909
+3	3	4	D	H2AC6	ENSG00000180573	H2AC6	cerebellum	cerebellum	cerebellum	exact	False	75.08500000000001
+3	3	5	E	H2AC6	ENSG00000180573	H2AC6	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	78.676
+3	3	6	F	H2AC6	ENSG00000180573	H2AC6	colon	colon	colon	exact	False	88.48333333333333
+3	3	7	G	H2AC6	ENSG00000180573	H2AC6	endometrium	endometrium	endometrium	exact	False	90.00466666666667
+3	3	8	H	H2AC6	ENSG00000180573	H2AC6	esophagus	esophagus	esophagus	exact	False	87.89285714285714
+3	3	9	I	H2AC6	ENSG00000180573	H2AC6	fallopian tube	fallopian tube	fallopian tube	exact	False	87.38499999999999
+3	3	10	J	H2AC6	ENSG00000180573	H2AC6	hypothalamus	hypothalamus	hypothalamus	exact	False	85.02600000000001
+3	3	11	K	H2AC6	ENSG00000180573	H2AC6	kidney	kidney	kidney	exact	False	89.57166666666666
+3	3	12	L	H2AC6	ENSG00000180573	H2AC6	liver	liver	liver	exact	False	90.51190476190476
+3	3	13	M	H2AC6	ENSG00000180573	H2AC6	lung	lung	lung	exact	False	85.08947368421053
+3	3	14	N	H2AC6	ENSG00000180573	H2AC6	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	82.89461538461539
+3	3	15	O	H2AC6	ENSG00000180573	H2AC6	ovary	ovary	ovary	exact	False	86.89
+3	3	16	P	H2AC6	ENSG00000180573	H2AC6	pancreas	pancreas	pancreas	exact	False	83.45500000000001
+3	3	17	Q	H2AC6	ENSG00000180573	H2AC6	pituitary gland	pituitary gland	pituitary gland	exact	False	87.45357142857144
+3	3	18	R	H2AC6	ENSG00000180573	H2AC6	putamen	putamen	putamen	exact	False	84.70928571428571
+3	3	19	S	H2AC6	ENSG00000180573	H2AC6	retina	retina	retina	exact	False	73.98
+3	3	20	T	H2AC6	ENSG00000180573	H2AC6	small intestine	small intestine	small intestine	exact	False	86.075
+3	3	21	U	H2AC6	ENSG00000180573	H2AC6	spinal cord	spinal cord	spinal cord	exact	False	88.273
+3	3	22	V	H2AC6	ENSG00000180573	H2AC6	spleen	spleen	spleen	exact	False	90.17416666666666
+3	3	23	W	H2AC6	ENSG00000180573	H2AC6	stomach	stomach	stomach	exact	False	88.92
+3	3	24	X	H2AC6	ENSG00000180573	H2AC6	substantia nigra	substantia nigra	substantia nigra	exact	False	87.208
+3	3	25	Y	H2AC6	ENSG00000180573	H2AC6	testis	testis	testis	exact	False	81.27
+3	3	26	Z	H2AC6	ENSG00000180573	H2AC6	thyroid gland	thyroid gland	thyroid gland	exact	False	86.93235294117646
+3	3	27	AA	H2AC6	ENSG00000180573	H2AC6	urinary bladder	urinary bladder	urinary bladder	exact	False	81.1525
+3	3	28	AB	H2AC6	ENSG00000180573	H2AC6	vagina	vagina	vagina	exact	False	95.305
+3	3	29	AC	H2AC6	ENSG00000180573	H2AC6	mammary gland	breast	mammary gland	safe_synonym	True	83.35499999999999
+3	3	30	AD	H2AC6	ENSG00000180573	H2AC6	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	84.35470588235295
+3	3	31	AE	H2AC6	ENSG00000180573	H2AC6	uterine cervix	cervix	uterine cervix	safe_synonym	True	84.4
+3	3	32	AF	H2AC6	ENSG00000180573	H2AC6	myocardium	heart muscle	myocardium	safe_synonym	True	83.56
+3	3	33	AG	H2AC6	ENSG00000180573	H2AC6	prostate gland	prostate	prostate gland	safe_synonym	True	91.685
+3	3	34	AH	H2AC6	ENSG00000180573	H2AC6	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	78.862
+3	3	35	AI	H2AC6	ENSG00000180573	H2AC6	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	81.73333333333333
+4	4	1	A	H2AC7	ENSG00000196866	H2AC7	adipose tissue	adipose tissue	adipose tissue	exact	False	40.02
+4	4	2	B	H2AC7	ENSG00000196866	H2AC7	adrenal gland	adrenal gland	adrenal gland	exact	False	42.080000000000005
+4	4	3	C	H2AC7	ENSG00000196866	H2AC7	amygdala	amygdala	amygdala	exact	False	30.68
+4	4	4	D	H2AC7	ENSG00000196866	H2AC7	cerebellum	cerebellum	cerebellum	exact	False	0.0
+4	4	5	E	H2AC7	ENSG00000196866	H2AC7	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	29.26
+4	4	6	F	H2AC7	ENSG00000196866	H2AC7	colon	colon	colon	exact	False	59.18333333333333
+4	4	7	G	H2AC7	ENSG00000196866	H2AC7	endometrium	endometrium	endometrium	exact	False	31.16
+4	4	8	H	H2AC7	ENSG00000196866	H2AC7	esophagus	esophagus	esophagus	exact	False	44.975
+4	4	9	I	H2AC7	ENSG00000196866	H2AC7	fallopian tube	fallopian tube	fallopian tube	exact	False	26.66
+4	4	10	J	H2AC7	ENSG00000196866	H2AC7	hypothalamus	hypothalamus	hypothalamus	exact	False	36.92
+4	4	11	K	H2AC7	ENSG00000196866	H2AC7	kidney	kidney	kidney	exact	False	84.3325
+4	4	12	L	H2AC7	ENSG00000196866	H2AC7	liver	liver	liver	exact	False	49.57125
+4	4	13	M	H2AC7	ENSG00000196866	H2AC7	lung	lung	lung	exact	False	64.38714285714285
+4	4	14	N	H2AC7	ENSG00000196866	H2AC7	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	28.763333333333332
+4	4	15	O	H2AC7	ENSG00000196866	H2AC7	ovary	ovary	ovary	exact	False	38.10333333333333
+4	4	16	P	H2AC7	ENSG00000196866	H2AC7	pancreas	pancreas	pancreas	exact	False	31.26
+4	4	17	Q	H2AC7	ENSG00000196866	H2AC7	pituitary gland	pituitary gland	pituitary gland	exact	False	38.04375
+4	4	18	R	H2AC7	ENSG00000196866	H2AC7	putamen	putamen	putamen	exact	False	37.53666666666666
+4	4	19	S	H2AC7	ENSG00000196866	H2AC7	retina	retina	retina	exact	False	
+4	4	20	T	H2AC7	ENSG00000196866	H2AC7	small intestine	small intestine	small intestine	exact	False	39.725
+4	4	21	U	H2AC7	ENSG00000196866	H2AC7	spinal cord	spinal cord	spinal cord	exact	False	
+4	4	22	V	H2AC7	ENSG00000196866	H2AC7	spleen	spleen	spleen	exact	False	48.408181818181816
+4	4	23	W	H2AC7	ENSG00000196866	H2AC7	stomach	stomach	stomach	exact	False	66.8625
+4	4	24	X	H2AC7	ENSG00000196866	H2AC7	substantia nigra	substantia nigra	substantia nigra	exact	False	41.16571428571428
+4	4	25	Y	H2AC7	ENSG00000196866	H2AC7	testis	testis	testis	exact	False	32.8
+4	4	26	Z	H2AC7	ENSG00000196866	H2AC7	thyroid gland	thyroid gland	thyroid gland	exact	False	35.367777777777775
+4	4	27	AA	H2AC7	ENSG00000196866	H2AC7	urinary bladder	urinary bladder	urinary bladder	exact	False	41.42
+4	4	28	AB	H2AC7	ENSG00000196866	H2AC7	vagina	vagina	vagina	exact	False	61.592
+4	4	29	AC	H2AC7	ENSG00000196866	H2AC7	mammary gland	breast	mammary gland	safe_synonym	True	
+4	4	30	AD	H2AC7	ENSG00000196866	H2AC7	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	34.02
+4	4	31	AE	H2AC7	ENSG00000196866	H2AC7	uterine cervix	cervix	uterine cervix	safe_synonym	True	53.7
+4	4	32	AF	H2AC7	ENSG00000196866	H2AC7	myocardium	heart muscle	myocardium	safe_synonym	True	
+4	4	33	AG	H2AC7	ENSG00000196866	H2AC7	prostate gland	prostate	prostate gland	safe_synonym	True	50.80125
+4	4	34	AH	H2AC7	ENSG00000196866	H2AC7	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	44.55
+4	4	35	AI	H2AC7	ENSG00000196866	H2AC7	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+5	5	1	A	H2AC8	ENSG00000277075	H2AC8	adipose tissue	adipose tissue	adipose tissue	exact	False	52.031000000000006
+5	5	2	B	H2AC8	ENSG00000277075	H2AC8	adrenal gland	adrenal gland	adrenal gland	exact	False	74.29249999999999
+5	5	3	C	H2AC8	ENSG00000277075	H2AC8	amygdala	amygdala	amygdala	exact	False	57.315
+5	5	4	D	H2AC8	ENSG00000277075	H2AC8	cerebellum	cerebellum	cerebellum	exact	False	57.72166666666666
+5	5	5	E	H2AC8	ENSG00000277075	H2AC8	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	54.215555555555554
+5	5	6	F	H2AC8	ENSG00000277075	H2AC8	colon	colon	colon	exact	False	73.280625
+5	5	7	G	H2AC8	ENSG00000277075	H2AC8	endometrium	endometrium	endometrium	exact	False	57.74400000000001
+5	5	8	H	H2AC8	ENSG00000277075	H2AC8	esophagus	esophagus	esophagus	exact	False	66.75428571428571
+5	5	9	I	H2AC8	ENSG00000277075	H2AC8	fallopian tube	fallopian tube	fallopian tube	exact	False	64.695
+5	5	10	J	H2AC8	ENSG00000277075	H2AC8	hypothalamus	hypothalamus	hypothalamus	exact	False	61.2375
+5	5	11	K	H2AC8	ENSG00000277075	H2AC8	kidney	kidney	kidney	exact	False	70.64333333333333
+5	5	12	L	H2AC8	ENSG00000277075	H2AC8	liver	liver	liver	exact	False	65.455
+5	5	13	M	H2AC8	ENSG00000277075	H2AC8	lung	lung	lung	exact	False	67.78714285714285
+5	5	14	N	H2AC8	ENSG00000277075	H2AC8	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	57.64545454545455
+5	5	15	O	H2AC8	ENSG00000277075	H2AC8	ovary	ovary	ovary	exact	False	71.80636363636364
+5	5	16	P	H2AC8	ENSG00000277075	H2AC8	pancreas	pancreas	pancreas	exact	False	51.075
+5	5	17	Q	H2AC8	ENSG00000277075	H2AC8	pituitary gland	pituitary gland	pituitary gland	exact	False	63.474545454545456
+5	5	18	R	H2AC8	ENSG00000277075	H2AC8	putamen	putamen	putamen	exact	False	58.475
+5	5	19	S	H2AC8	ENSG00000277075	H2AC8	retina	retina	retina	exact	False	
+5	5	20	T	H2AC8	ENSG00000277075	H2AC8	small intestine	small intestine	small intestine	exact	False	69.31
+5	5	21	U	H2AC8	ENSG00000277075	H2AC8	spinal cord	spinal cord	spinal cord	exact	False	70.505
+5	5	22	V	H2AC8	ENSG00000277075	H2AC8	spleen	spleen	spleen	exact	False	71.3575
+5	5	23	W	H2AC8	ENSG00000277075	H2AC8	stomach	stomach	stomach	exact	False	80.13666666666667
+5	5	24	X	H2AC8	ENSG00000277075	H2AC8	substantia nigra	substantia nigra	substantia nigra	exact	False	62.596
+5	5	25	Y	H2AC8	ENSG00000277075	H2AC8	testis	testis	testis	exact	False	67.59538461538462
+5	5	26	Z	H2AC8	ENSG00000277075	H2AC8	thyroid gland	thyroid gland	thyroid gland	exact	False	70.20058823529412
+5	5	27	AA	H2AC8	ENSG00000277075	H2AC8	urinary bladder	urinary bladder	urinary bladder	exact	False	59.75625
+5	5	28	AB	H2AC8	ENSG00000277075	H2AC8	vagina	vagina	vagina	exact	False	72.46916666666667
+5	5	29	AC	H2AC8	ENSG00000277075	H2AC8	mammary gland	breast	mammary gland	safe_synonym	True	46.98
+5	5	30	AD	H2AC8	ENSG00000277075	H2AC8	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	60.42
+5	5	31	AE	H2AC8	ENSG00000277075	H2AC8	uterine cervix	cervix	uterine cervix	safe_synonym	True	62.782
+5	5	32	AF	H2AC8	ENSG00000277075	H2AC8	myocardium	heart muscle	myocardium	safe_synonym	True	0.0
+5	5	33	AG	H2AC8	ENSG00000277075	H2AC8	prostate gland	prostate	prostate gland	safe_synonym	True	81.388125
+5	5	34	AH	H2AC8	ENSG00000277075	H2AC8	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	63.612
+5	5	35	AI	H2AC8	ENSG00000277075	H2AC8	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+6	6	1	A	H2AC11	ENSG00000196787	H2AC11	adipose tissue	adipose tissue	adipose tissue	exact	False	42.38375
+6	6	2	B	H2AC11	ENSG00000196787	H2AC11	adrenal gland	adrenal gland	adrenal gland	exact	False	51.1
+6	6	3	C	H2AC11	ENSG00000196787	H2AC11	amygdala	amygdala	amygdala	exact	False	40.27
+6	6	4	D	H2AC11	ENSG00000196787	H2AC11	cerebellum	cerebellum	cerebellum	exact	False	0.0
+6	6	5	E	H2AC11	ENSG00000196787	H2AC11	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	50.21333333333334
+6	6	6	F	H2AC11	ENSG00000196787	H2AC11	colon	colon	colon	exact	False	59.79764705882353
+6	6	7	G	H2AC11	ENSG00000196787	H2AC11	endometrium	endometrium	endometrium	exact	False	56.905
+6	6	8	H	H2AC11	ENSG00000196787	H2AC11	esophagus	esophagus	esophagus	exact	False	51.70857142857143
+6	6	9	I	H2AC11	ENSG00000196787	H2AC11	fallopian tube	fallopian tube	fallopian tube	exact	False	46.23
+6	6	10	J	H2AC11	ENSG00000196787	H2AC11	hypothalamus	hypothalamus	hypothalamus	exact	False	44.334
+6	6	11	K	H2AC11	ENSG00000196787	H2AC11	kidney	kidney	kidney	exact	False	63.52
+6	6	12	L	H2AC11	ENSG00000196787	H2AC11	liver	liver	liver	exact	False	57.458
+6	6	13	M	H2AC11	ENSG00000196787	H2AC11	lung	lung	lung	exact	False	61.1390909090909
+6	6	14	N	H2AC11	ENSG00000196787	H2AC11	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	40.295
+6	6	15	O	H2AC11	ENSG00000196787	H2AC11	ovary	ovary	ovary	exact	False	75.20599999999999
+6	6	16	P	H2AC11	ENSG00000196787	H2AC11	pancreas	pancreas	pancreas	exact	False	41.935
+6	6	17	Q	H2AC11	ENSG00000196787	H2AC11	pituitary gland	pituitary gland	pituitary gland	exact	False	34.19
+6	6	18	R	H2AC11	ENSG00000196787	H2AC11	putamen	putamen	putamen	exact	False	43.94
+6	6	19	S	H2AC11	ENSG00000196787	H2AC11	retina	retina	retina	exact	False	
+6	6	20	T	H2AC11	ENSG00000196787	H2AC11	small intestine	small intestine	small intestine	exact	False	51.445
+6	6	21	U	H2AC11	ENSG00000196787	H2AC11	spinal cord	spinal cord	spinal cord	exact	False	48.915
+6	6	22	V	H2AC11	ENSG00000196787	H2AC11	spleen	spleen	spleen	exact	False	54.814166666666665
+6	6	23	W	H2AC11	ENSG00000196787	H2AC11	stomach	stomach	stomach	exact	False	66.73583333333333
+6	6	24	X	H2AC11	ENSG00000196787	H2AC11	substantia nigra	substantia nigra	substantia nigra	exact	False	49.35545454545454
+6	6	25	Y	H2AC11	ENSG00000196787	H2AC11	testis	testis	testis	exact	False	66.72461538461538
+6	6	26	Z	H2AC11	ENSG00000196787	H2AC11	thyroid gland	thyroid gland	thyroid gland	exact	False	45.45066666666666
+6	6	27	AA	H2AC11	ENSG00000196787	H2AC11	urinary bladder	urinary bladder	urinary bladder	exact	False	46.5025
+6	6	28	AB	H2AC11	ENSG00000196787	H2AC11	vagina	vagina	vagina	exact	False	59.892727272727264
+6	6	29	AC	H2AC11	ENSG00000196787	H2AC11	mammary gland	breast	mammary gland	safe_synonym	True	42.82
+6	6	30	AD	H2AC11	ENSG00000196787	H2AC11	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	39.72
+6	6	31	AE	H2AC11	ENSG00000196787	H2AC11	uterine cervix	cervix	uterine cervix	safe_synonym	True	51.93
+6	6	32	AF	H2AC11	ENSG00000196787	H2AC11	myocardium	heart muscle	myocardium	safe_synonym	True	0.0
+6	6	33	AG	H2AC11	ENSG00000196787	H2AC11	prostate gland	prostate	prostate gland	safe_synonym	True	49.52125
+6	6	34	AH	H2AC11	ENSG00000196787	H2AC11	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	0.0
+6	6	35	AI	H2AC11	ENSG00000196787	H2AC11	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+7	7	1	A	H2AC12	ENSG00000274997	H2AC12	adipose tissue	adipose tissue	adipose tissue	exact	False	34.585
+7	7	2	B	H2AC12	ENSG00000274997	H2AC12	adrenal gland	adrenal gland	adrenal gland	exact	False	43.06
+7	7	3	C	H2AC12	ENSG00000274997	H2AC12	amygdala	amygdala	amygdala	exact	False	0.0
+7	7	4	D	H2AC12	ENSG00000274997	H2AC12	cerebellum	cerebellum	cerebellum	exact	False	0.0
+7	7	5	E	H2AC12	ENSG00000274997	H2AC12	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	24.97
+7	7	6	F	H2AC12	ENSG00000274997	H2AC12	colon	colon	colon	exact	False	62.0488888888889
+7	7	7	G	H2AC12	ENSG00000274997	H2AC12	endometrium	endometrium	endometrium	exact	False	0.0
+7	7	8	H	H2AC12	ENSG00000274997	H2AC12	esophagus	esophagus	esophagus	exact	False	36.89
+7	7	9	I	H2AC12	ENSG00000274997	H2AC12	fallopian tube	fallopian tube	fallopian tube	exact	False	29.0
+7	7	10	J	H2AC12	ENSG00000274997	H2AC12	hypothalamus	hypothalamus	hypothalamus	exact	False	36.465
+7	7	11	K	H2AC12	ENSG00000274997	H2AC12	kidney	kidney	kidney	exact	False	79.3925
+7	7	12	L	H2AC12	ENSG00000274997	H2AC12	liver	liver	liver	exact	False	36.705
+7	7	13	M	H2AC12	ENSG00000274997	H2AC12	lung	lung	lung	exact	False	63.09666666666666
+7	7	14	N	H2AC12	ENSG00000274997	H2AC12	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	0.0
+7	7	15	O	H2AC12	ENSG00000274997	H2AC12	ovary	ovary	ovary	exact	False	31.425
+7	7	16	P	H2AC12	ENSG00000274997	H2AC12	pancreas	pancreas	pancreas	exact	False	28.975
+7	7	17	Q	H2AC12	ENSG00000274997	H2AC12	pituitary gland	pituitary gland	pituitary gland	exact	False	48.86
+7	7	18	R	H2AC12	ENSG00000274997	H2AC12	putamen	putamen	putamen	exact	False	27.48
+7	7	19	S	H2AC12	ENSG00000274997	H2AC12	retina	retina	retina	exact	False	
+7	7	20	T	H2AC12	ENSG00000274997	H2AC12	small intestine	small intestine	small intestine	exact	False	43.370000000000005
+7	7	21	U	H2AC12	ENSG00000274997	H2AC12	spinal cord	spinal cord	spinal cord	exact	False	
+7	7	22	V	H2AC12	ENSG00000274997	H2AC12	spleen	spleen	spleen	exact	False	47.16375
+7	7	23	W	H2AC12	ENSG00000274997	H2AC12	stomach	stomach	stomach	exact	False	62.51916666666667
+7	7	24	X	H2AC12	ENSG00000274997	H2AC12	substantia nigra	substantia nigra	substantia nigra	exact	False	36.97
+7	7	25	Y	H2AC12	ENSG00000274997	H2AC12	testis	testis	testis	exact	False	53.8325
+7	7	26	Z	H2AC12	ENSG00000274997	H2AC12	thyroid gland	thyroid gland	thyroid gland	exact	False	30.406666666666663
+7	7	27	AA	H2AC12	ENSG00000274997	H2AC12	urinary bladder	urinary bladder	urinary bladder	exact	False	49.11666666666667
+7	7	28	AB	H2AC12	ENSG00000274997	H2AC12	vagina	vagina	vagina	exact	False	35.95333333333333
+7	7	29	AC	H2AC12	ENSG00000274997	H2AC12	mammary gland	breast	mammary gland	safe_synonym	True	
+7	7	30	AD	H2AC12	ENSG00000274997	H2AC12	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	28.57
+7	7	31	AE	H2AC12	ENSG00000274997	H2AC12	uterine cervix	cervix	uterine cervix	safe_synonym	True	45.39
+7	7	32	AF	H2AC12	ENSG00000274997	H2AC12	myocardium	heart muscle	myocardium	safe_synonym	True	
+7	7	33	AG	H2AC12	ENSG00000274997	H2AC12	prostate gland	prostate	prostate gland	safe_synonym	True	31.65
+7	7	34	AH	H2AC12	ENSG00000274997	H2AC12	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	0.0
+7	7	35	AI	H2AC12	ENSG00000274997	H2AC12	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	45.35
+8	8	1	A	H2AC13	ENSG00000196747	H2AC13	adipose tissue	adipose tissue	adipose tissue	exact	False	30.805
+8	8	2	B	H2AC13	ENSG00000196747	H2AC13	adrenal gland	adrenal gland	adrenal gland	exact	False	50.03
+8	8	3	C	H2AC13	ENSG00000196747	H2AC13	amygdala	amygdala	amygdala	exact	False	0.0
+8	8	4	D	H2AC13	ENSG00000196747	H2AC13	cerebellum	cerebellum	cerebellum	exact	False	27.325
+8	8	5	E	H2AC13	ENSG00000196747	H2AC13	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	27.58
+8	8	6	F	H2AC13	ENSG00000196747	H2AC13	colon	colon	colon	exact	False	60.782
+8	8	7	G	H2AC13	ENSG00000196747	H2AC13	endometrium	endometrium	endometrium	exact	False	49.83
+8	8	8	H	H2AC13	ENSG00000196747	H2AC13	esophagus	esophagus	esophagus	exact	False	42.785
+8	8	9	I	H2AC13	ENSG00000196747	H2AC13	fallopian tube	fallopian tube	fallopian tube	exact	False	32.04
+8	8	10	J	H2AC13	ENSG00000196747	H2AC13	hypothalamus	hypothalamus	hypothalamus	exact	False	42.325
+8	8	11	K	H2AC13	ENSG00000196747	H2AC13	kidney	kidney	kidney	exact	False	82.935
+8	8	12	L	H2AC13	ENSG00000196747	H2AC13	liver	liver	liver	exact	False	39.82
+8	8	13	M	H2AC13	ENSG00000196747	H2AC13	lung	lung	lung	exact	False	67.74666666666667
+8	8	14	N	H2AC13	ENSG00000196747	H2AC13	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	32.8325
+8	8	15	O	H2AC13	ENSG00000196747	H2AC13	ovary	ovary	ovary	exact	False	34.43
+8	8	16	P	H2AC13	ENSG00000196747	H2AC13	pancreas	pancreas	pancreas	exact	False	28.37
+8	8	17	Q	H2AC13	ENSG00000196747	H2AC13	pituitary gland	pituitary gland	pituitary gland	exact	False	27.785
+8	8	18	R	H2AC13	ENSG00000196747	H2AC13	putamen	putamen	putamen	exact	False	43.11
+8	8	19	S	H2AC13	ENSG00000196747	H2AC13	retina	retina	retina	exact	False	
+8	8	20	T	H2AC13	ENSG00000196747	H2AC13	small intestine	small intestine	small intestine	exact	False	45.705
+8	8	21	U	H2AC13	ENSG00000196747	H2AC13	spinal cord	spinal cord	spinal cord	exact	False	43.87
+8	8	22	V	H2AC13	ENSG00000196747	H2AC13	spleen	spleen	spleen	exact	False	55.259166666666665
+8	8	23	W	H2AC13	ENSG00000196747	H2AC13	stomach	stomach	stomach	exact	False	65.09083333333334
+8	8	24	X	H2AC13	ENSG00000196747	H2AC13	substantia nigra	substantia nigra	substantia nigra	exact	False	35.07
+8	8	25	Y	H2AC13	ENSG00000196747	H2AC13	testis	testis	testis	exact	False	34.802499999999995
+8	8	26	Z	H2AC13	ENSG00000196747	H2AC13	thyroid gland	thyroid gland	thyroid gland	exact	False	31.367
+8	8	27	AA	H2AC13	ENSG00000196747	H2AC13	urinary bladder	urinary bladder	urinary bladder	exact	False	38.84
+8	8	28	AB	H2AC13	ENSG00000196747	H2AC13	vagina	vagina	vagina	exact	False	45.422
+8	8	29	AC	H2AC13	ENSG00000196747	H2AC13	mammary gland	breast	mammary gland	safe_synonym	True	
+8	8	30	AD	H2AC13	ENSG00000196747	H2AC13	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	36.675
+8	8	31	AE	H2AC13	ENSG00000196747	H2AC13	uterine cervix	cervix	uterine cervix	safe_synonym	True	45.08
+8	8	32	AF	H2AC13	ENSG00000196747	H2AC13	myocardium	heart muscle	myocardium	safe_synonym	True	
+8	8	33	AG	H2AC13	ENSG00000196747	H2AC13	prostate gland	prostate	prostate gland	safe_synonym	True	37.83142857142857
+8	8	34	AH	H2AC13	ENSG00000196747	H2AC13	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	31.96
+8	8	35	AI	H2AC13	ENSG00000196747	H2AC13	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+9	9	1	A	H2AC14	ENSG00000276368	H2AC14	adipose tissue	adipose tissue	adipose tissue	exact	False	33.169999999999995
+9	9	2	B	H2AC14	ENSG00000276368	H2AC14	adrenal gland	adrenal gland	adrenal gland	exact	False	40.39
+9	9	3	C	H2AC14	ENSG00000276368	H2AC14	amygdala	amygdala	amygdala	exact	False	0.0
+9	9	4	D	H2AC14	ENSG00000276368	H2AC14	cerebellum	cerebellum	cerebellum	exact	False	0.0
+9	9	5	E	H2AC14	ENSG00000276368	H2AC14	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	23.27
+9	9	6	F	H2AC14	ENSG00000276368	H2AC14	colon	colon	colon	exact	False	55.437777777777775
+9	9	7	G	H2AC14	ENSG00000276368	H2AC14	endometrium	endometrium	endometrium	exact	False	37.37
+9	9	8	H	H2AC14	ENSG00000276368	H2AC14	esophagus	esophagus	esophagus	exact	False	34.085
+9	9	9	I	H2AC14	ENSG00000276368	H2AC14	fallopian tube	fallopian tube	fallopian tube	exact	False	26.32
+9	9	10	J	H2AC14	ENSG00000276368	H2AC14	hypothalamus	hypothalamus	hypothalamus	exact	False	39.28
+9	9	11	K	H2AC14	ENSG00000276368	H2AC14	kidney	kidney	kidney	exact	False	81.15
+9	9	12	L	H2AC14	ENSG00000276368	H2AC14	liver	liver	liver	exact	False	41.035714285714285
+9	9	13	M	H2AC14	ENSG00000276368	H2AC14	lung	lung	lung	exact	False	59.012857142857136
+9	9	14	N	H2AC14	ENSG00000276368	H2AC14	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	0.0
+9	9	15	O	H2AC14	ENSG00000276368	H2AC14	ovary	ovary	ovary	exact	False	23.1
+9	9	16	P	H2AC14	ENSG00000276368	H2AC14	pancreas	pancreas	pancreas	exact	False	26.94
+9	9	17	Q	H2AC14	ENSG00000276368	H2AC14	pituitary gland	pituitary gland	pituitary gland	exact	False	0.0
+9	9	18	R	H2AC14	ENSG00000276368	H2AC14	putamen	putamen	putamen	exact	False	0.0
+9	9	19	S	H2AC14	ENSG00000276368	H2AC14	retina	retina	retina	exact	False	
+9	9	20	T	H2AC14	ENSG00000276368	H2AC14	small intestine	small intestine	small intestine	exact	False	33.980000000000004
+9	9	21	U	H2AC14	ENSG00000276368	H2AC14	spinal cord	spinal cord	spinal cord	exact	False	
+9	9	22	V	H2AC14	ENSG00000276368	H2AC14	spleen	spleen	spleen	exact	False	44.434000000000005
+9	9	23	W	H2AC14	ENSG00000276368	H2AC14	stomach	stomach	stomach	exact	False	61.16166666666667
+9	9	24	X	H2AC14	ENSG00000276368	H2AC14	substantia nigra	substantia nigra	substantia nigra	exact	False	32.52
+9	9	25	Y	H2AC14	ENSG00000276368	H2AC14	testis	testis	testis	exact	False	31.56
+9	9	26	Z	H2AC14	ENSG00000276368	H2AC14	thyroid gland	thyroid gland	thyroid gland	exact	False	0.0
+9	9	27	AA	H2AC14	ENSG00000276368	H2AC14	urinary bladder	urinary bladder	urinary bladder	exact	False	33.965
+9	9	28	AB	H2AC14	ENSG00000276368	H2AC14	vagina	vagina	vagina	exact	False	33.012
+9	9	29	AC	H2AC14	ENSG00000276368	H2AC14	mammary gland	breast	mammary gland	safe_synonym	True	
+9	9	30	AD	H2AC14	ENSG00000276368	H2AC14	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	26.91
+9	9	31	AE	H2AC14	ENSG00000276368	H2AC14	uterine cervix	cervix	uterine cervix	safe_synonym	True	34.67
+9	9	32	AF	H2AC14	ENSG00000276368	H2AC14	myocardium	heart muscle	myocardium	safe_synonym	True	
+9	9	33	AG	H2AC14	ENSG00000276368	H2AC14	prostate gland	prostate	prostate gland	safe_synonym	True	0.0
+9	9	34	AH	H2AC14	ENSG00000276368	H2AC14	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	26.74
+9	9	35	AI	H2AC14	ENSG00000276368	H2AC14	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+10	10	1	A	H2AC15	ENSG00000275221	H2AC15	adipose tissue	adipose tissue	adipose tissue	exact	False	39.705
+10	10	2	B	H2AC15	ENSG00000275221	H2AC15	adrenal gland	adrenal gland	adrenal gland	exact	False	45.81
+10	10	3	C	H2AC15	ENSG00000275221	H2AC15	amygdala	amygdala	amygdala	exact	False	37.26833333333334
+10	10	4	D	H2AC15	ENSG00000275221	H2AC15	cerebellum	cerebellum	cerebellum	exact	False	58.595
+10	10	5	E	H2AC15	ENSG00000275221	H2AC15	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	43.635
+10	10	6	F	H2AC15	ENSG00000275221	H2AC15	colon	colon	colon	exact	False	58.612
+10	10	7	G	H2AC15	ENSG00000275221	H2AC15	endometrium	endometrium	endometrium	exact	False	40.935
+10	10	8	H	H2AC15	ENSG00000275221	H2AC15	esophagus	esophagus	esophagus	exact	False	43.307500000000005
+10	10	9	I	H2AC15	ENSG00000275221	H2AC15	fallopian tube	fallopian tube	fallopian tube	exact	False	48.27
+10	10	10	J	H2AC15	ENSG00000275221	H2AC15	hypothalamus	hypothalamus	hypothalamus	exact	False	43.7
+10	10	11	K	H2AC15	ENSG00000275221	H2AC15	kidney	kidney	kidney	exact	False	72.77
+10	10	12	L	H2AC15	ENSG00000275221	H2AC15	liver	liver	liver	exact	False	53.1625
+10	10	13	M	H2AC15	ENSG00000275221	H2AC15	lung	lung	lung	exact	False	62.97428571428571
+10	10	14	N	H2AC15	ENSG00000275221	H2AC15	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	49.42555555555556
+10	10	15	O	H2AC15	ENSG00000275221	H2AC15	ovary	ovary	ovary	exact	False	55.086666666666666
+10	10	16	P	H2AC15	ENSG00000275221	H2AC15	pancreas	pancreas	pancreas	exact	False	38.545
+10	10	17	Q	H2AC15	ENSG00000275221	H2AC15	pituitary gland	pituitary gland	pituitary gland	exact	False	55.083000000000006
+10	10	18	R	H2AC15	ENSG00000275221	H2AC15	putamen	putamen	putamen	exact	False	41.274
+10	10	19	S	H2AC15	ENSG00000275221	H2AC15	retina	retina	retina	exact	False	
+10	10	20	T	H2AC15	ENSG00000275221	H2AC15	small intestine	small intestine	small intestine	exact	False	41.5
+10	10	21	U	H2AC15	ENSG00000275221	H2AC15	spinal cord	spinal cord	spinal cord	exact	False	54.79
+10	10	22	V	H2AC15	ENSG00000275221	H2AC15	spleen	spleen	spleen	exact	False	47.8125
+10	10	23	W	H2AC15	ENSG00000275221	H2AC15	stomach	stomach	stomach	exact	False	61.49
+10	10	24	X	H2AC15	ENSG00000275221	H2AC15	substantia nigra	substantia nigra	substantia nigra	exact	False	46.76875
+10	10	25	Y	H2AC15	ENSG00000275221	H2AC15	testis	testis	testis	exact	False	54.56166666666667
+10	10	26	Z	H2AC15	ENSG00000275221	H2AC15	thyroid gland	thyroid gland	thyroid gland	exact	False	52.52076923076923
+10	10	27	AA	H2AC15	ENSG00000275221	H2AC15	urinary bladder	urinary bladder	urinary bladder	exact	False	45.808
+10	10	28	AB	H2AC15	ENSG00000275221	H2AC15	vagina	vagina	vagina	exact	False	47.584
+10	10	29	AC	H2AC15	ENSG00000275221	H2AC15	mammary gland	breast	mammary gland	safe_synonym	True	
+10	10	30	AD	H2AC15	ENSG00000275221	H2AC15	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	50.0875
+10	10	31	AE	H2AC15	ENSG00000275221	H2AC15	uterine cervix	cervix	uterine cervix	safe_synonym	True	46.79
+10	10	32	AF	H2AC15	ENSG00000275221	H2AC15	myocardium	heart muscle	myocardium	safe_synonym	True	
+10	10	33	AG	H2AC15	ENSG00000275221	H2AC15	prostate gland	prostate	prostate gland	safe_synonym	True	70.20764705882353
+10	10	34	AH	H2AC15	ENSG00000275221	H2AC15	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	42.345
+10	10	35	AI	H2AC15	ENSG00000275221	H2AC15	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+11	11	1	A	H2AC16	ENSG00000276903	H2AC16	adipose tissue	adipose tissue	adipose tissue	exact	False	29.055
+11	11	2	B	H2AC16	ENSG00000276903	H2AC16	adrenal gland	adrenal gland	adrenal gland	exact	False	39.07
+11	11	3	C	H2AC16	ENSG00000276903	H2AC16	amygdala	amygdala	amygdala	exact	False	24.565
+11	11	4	D	H2AC16	ENSG00000276903	H2AC16	cerebellum	cerebellum	cerebellum	exact	False	28.92
+11	11	5	E	H2AC16	ENSG00000276903	H2AC16	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	27.595
+11	11	6	F	H2AC16	ENSG00000276903	H2AC16	colon	colon	colon	exact	False	54.05111111111111
+11	11	7	G	H2AC16	ENSG00000276903	H2AC16	endometrium	endometrium	endometrium	exact	False	32.4
+11	11	8	H	H2AC16	ENSG00000276903	H2AC16	esophagus	esophagus	esophagus	exact	False	32.76
+11	11	9	I	H2AC16	ENSG00000276903	H2AC16	fallopian tube	fallopian tube	fallopian tube	exact	False	
+11	11	10	J	H2AC16	ENSG00000276903	H2AC16	hypothalamus	hypothalamus	hypothalamus	exact	False	37.285
+11	11	11	K	H2AC16	ENSG00000276903	H2AC16	kidney	kidney	kidney	exact	False	79.455
+11	11	12	L	H2AC16	ENSG00000276903	H2AC16	liver	liver	liver	exact	False	47.1025
+11	11	13	M	H2AC16	ENSG00000276903	H2AC16	lung	lung	lung	exact	False	59.970000000000006
+11	11	14	N	H2AC16	ENSG00000276903	H2AC16	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	55.17
+11	11	15	O	H2AC16	ENSG00000276903	H2AC16	ovary	ovary	ovary	exact	False	0.0
+11	11	16	P	H2AC16	ENSG00000276903	H2AC16	pancreas	pancreas	pancreas	exact	False	0.0
+11	11	17	Q	H2AC16	ENSG00000276903	H2AC16	pituitary gland	pituitary gland	pituitary gland	exact	False	0.0
+11	11	18	R	H2AC16	ENSG00000276903	H2AC16	putamen	putamen	putamen	exact	False	0.0
+11	11	19	S	H2AC16	ENSG00000276903	H2AC16	retina	retina	retina	exact	False	
+11	11	20	T	H2AC16	ENSG00000276903	H2AC16	small intestine	small intestine	small intestine	exact	False	33.81
+11	11	21	U	H2AC16	ENSG00000276903	H2AC16	spinal cord	spinal cord	spinal cord	exact	False	42.49
+11	11	22	V	H2AC16	ENSG00000276903	H2AC16	spleen	spleen	spleen	exact	False	48.31727272727273
+11	11	23	W	H2AC16	ENSG00000276903	H2AC16	stomach	stomach	stomach	exact	False	61.88666666666666
+11	11	24	X	H2AC16	ENSG00000276903	H2AC16	substantia nigra	substantia nigra	substantia nigra	exact	False	39.0675
+11	11	25	Y	H2AC16	ENSG00000276903	H2AC16	testis	testis	testis	exact	False	28.0
+11	11	26	Z	H2AC16	ENSG00000276903	H2AC16	thyroid gland	thyroid gland	thyroid gland	exact	False	27.75
+11	11	27	AA	H2AC16	ENSG00000276903	H2AC16	urinary bladder	urinary bladder	urinary bladder	exact	False	44.67
+11	11	28	AB	H2AC16	ENSG00000276903	H2AC16	vagina	vagina	vagina	exact	False	34.388
+11	11	29	AC	H2AC16	ENSG00000276903	H2AC16	mammary gland	breast	mammary gland	safe_synonym	True	
+11	11	30	AD	H2AC16	ENSG00000276903	H2AC16	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	31.473333333333333
+11	11	31	AE	H2AC16	ENSG00000276903	H2AC16	uterine cervix	cervix	uterine cervix	safe_synonym	True	35.52
+11	11	32	AF	H2AC16	ENSG00000276903	H2AC16	myocardium	heart muscle	myocardium	safe_synonym	True	
+11	11	33	AG	H2AC16	ENSG00000276903	H2AC16	prostate gland	prostate	prostate gland	safe_synonym	True	71.229
+11	11	34	AH	H2AC16	ENSG00000276903	H2AC16	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	32.385000000000005
+11	11	35	AI	H2AC16	ENSG00000276903	H2AC16	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	0.0
+12	12	1	A	H2AC17	ENSG00000278677	H2AC17	adipose tissue	adipose tissue	adipose tissue	exact	False	40.403333333333336
+12	12	2	B	H2AC17	ENSG00000278677	H2AC17	adrenal gland	adrenal gland	adrenal gland	exact	False	50.78
+12	12	3	C	H2AC17	ENSG00000278677	H2AC17	amygdala	amygdala	amygdala	exact	False	41.46
+12	12	4	D	H2AC17	ENSG00000278677	H2AC17	cerebellum	cerebellum	cerebellum	exact	False	0.0
+12	12	5	E	H2AC17	ENSG00000278677	H2AC17	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	33.58
+12	12	6	F	H2AC17	ENSG00000278677	H2AC17	colon	colon	colon	exact	False	61.63666666666667
+12	12	7	G	H2AC17	ENSG00000278677	H2AC17	endometrium	endometrium	endometrium	exact	False	45.755
+12	12	8	H	H2AC17	ENSG00000278677	H2AC17	esophagus	esophagus	esophagus	exact	False	42.8475
+12	12	9	I	H2AC17	ENSG00000278677	H2AC17	fallopian tube	fallopian tube	fallopian tube	exact	False	0.0
+12	12	10	J	H2AC17	ENSG00000278677	H2AC17	hypothalamus	hypothalamus	hypothalamus	exact	False	38.3425
+12	12	11	K	H2AC17	ENSG00000278677	H2AC17	kidney	kidney	kidney	exact	False	82.89
+12	12	12	L	H2AC17	ENSG00000278677	H2AC17	liver	liver	liver	exact	False	56.566
+12	12	13	M	H2AC17	ENSG00000278677	H2AC17	lung	lung	lung	exact	False	65.72428571428571
+12	12	14	N	H2AC17	ENSG00000278677	H2AC17	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	36.4025
+12	12	15	O	H2AC17	ENSG00000278677	H2AC17	ovary	ovary	ovary	exact	False	27.396666666666665
+12	12	16	P	H2AC17	ENSG00000278677	H2AC17	pancreas	pancreas	pancreas	exact	False	29.64
+12	12	17	Q	H2AC17	ENSG00000278677	H2AC17	pituitary gland	pituitary gland	pituitary gland	exact	False	37.13
+12	12	18	R	H2AC17	ENSG00000278677	H2AC17	putamen	putamen	putamen	exact	False	52.33
+12	12	19	S	H2AC17	ENSG00000278677	H2AC17	retina	retina	retina	exact	False	
+12	12	20	T	H2AC17	ENSG00000278677	H2AC17	small intestine	small intestine	small intestine	exact	False	44.77
+12	12	21	U	H2AC17	ENSG00000278677	H2AC17	spinal cord	spinal cord	spinal cord	exact	False	
+12	12	22	V	H2AC17	ENSG00000278677	H2AC17	spleen	spleen	spleen	exact	False	53.60454545454545
+12	12	23	W	H2AC17	ENSG00000278677	H2AC17	stomach	stomach	stomach	exact	False	67.05333333333333
+12	12	24	X	H2AC17	ENSG00000278677	H2AC17	substantia nigra	substantia nigra	substantia nigra	exact	False	41.355714285714285
+12	12	25	Y	H2AC17	ENSG00000278677	H2AC17	testis	testis	testis	exact	False	44.59285714285714
+12	12	26	Z	H2AC17	ENSG00000278677	H2AC17	thyroid gland	thyroid gland	thyroid gland	exact	False	54.78923076923077
+12	12	27	AA	H2AC17	ENSG00000278677	H2AC17	urinary bladder	urinary bladder	urinary bladder	exact	False	38.95
+12	12	28	AB	H2AC17	ENSG00000278677	H2AC17	vagina	vagina	vagina	exact	False	49.692
+12	12	29	AC	H2AC17	ENSG00000278677	H2AC17	mammary gland	breast	mammary gland	safe_synonym	True	
+12	12	30	AD	H2AC17	ENSG00000278677	H2AC17	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	38.064
+12	12	31	AE	H2AC17	ENSG00000278677	H2AC17	uterine cervix	cervix	uterine cervix	safe_synonym	True	44.15
+12	12	32	AF	H2AC17	ENSG00000278677	H2AC17	myocardium	heart muscle	myocardium	safe_synonym	True	
+12	12	33	AG	H2AC17	ENSG00000278677	H2AC17	prostate gland	prostate	prostate gland	safe_synonym	True	48.11222222222222
+12	12	34	AH	H2AC17	ENSG00000278677	H2AC17	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	38.96
+12	12	35	AI	H2AC17	ENSG00000278677	H2AC17	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	44.625
+13	13	1	A	H2AC18	ENSG00000203812	H2AC18	adipose tissue	adipose tissue	adipose tissue	exact	False	85.16000000000001
+13	13	2	B	H2AC18	ENSG00000203812	H2AC18	adrenal gland	adrenal gland	adrenal gland	exact	False	85.22
+13	13	3	C	H2AC18	ENSG00000203812	H2AC18	amygdala	amygdala	amygdala	exact	False	62.621428571428574
+13	13	4	D	H2AC18	ENSG00000203812	H2AC18	cerebellum	cerebellum	cerebellum	exact	False	56.31666666666666
+13	13	5	E	H2AC18	ENSG00000203812	H2AC18	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	54.67
+13	13	6	F	H2AC18	ENSG00000203812	H2AC18	colon	colon	colon	exact	False	84.9
+13	13	7	G	H2AC18	ENSG00000203812	H2AC18	endometrium	endometrium	endometrium	exact	False	42.985
+13	13	8	H	H2AC18	ENSG00000203812	H2AC18	esophagus	esophagus	esophagus	exact	False	85.495
+13	13	9	I	H2AC18	ENSG00000203812	H2AC18	fallopian tube	fallopian tube	fallopian tube	exact	False	80.28
+13	13	10	J	H2AC18	ENSG00000203812	H2AC18	hypothalamus	hypothalamus	hypothalamus	exact	False	63.46571428571429
+13	13	11	K	H2AC18	ENSG00000203812	H2AC18	kidney	kidney	kidney	exact	False	87.52
+13	13	12	L	H2AC18	ENSG00000203812	H2AC18	liver	liver	liver	exact	False	80.5190909090909
+13	13	13	M	H2AC18	ENSG00000203812	H2AC18	lung	lung	lung	exact	False	81.32571428571428
+13	13	14	N	H2AC18	ENSG00000203812	H2AC18	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	66.66857142857143
+13	13	15	O	H2AC18	ENSG00000203812	H2AC18	ovary	ovary	ovary	exact	False	80.2725
+13	13	16	P	H2AC18	ENSG00000203812	H2AC18	pancreas	pancreas	pancreas	exact	False	62.03
+13	13	17	Q	H2AC18	ENSG00000203812	H2AC18	pituitary gland	pituitary gland	pituitary gland	exact	False	79.87111111111112
+13	13	18	R	H2AC18	ENSG00000203812	H2AC18	putamen	putamen	putamen	exact	False	60.597142857142856
+13	13	19	S	H2AC18	ENSG00000203812	H2AC18	retina	retina	retina	exact	False	
+13	13	20	T	H2AC18	ENSG00000203812	H2AC18	small intestine	small intestine	small intestine	exact	False	75.5
+13	13	21	U	H2AC18	ENSG00000203812	H2AC18	spinal cord	spinal cord	spinal cord	exact	False	
+13	13	22	V	H2AC18	ENSG00000203812	H2AC18	spleen	spleen	spleen	exact	False	92.08272727272728
+13	13	23	W	H2AC18	ENSG00000203812	H2AC18	stomach	stomach	stomach	exact	False	84.53090909090909
+13	13	24	X	H2AC18	ENSG00000203812	H2AC18	substantia nigra	substantia nigra	substantia nigra	exact	False	79.74875
+13	13	25	Y	H2AC18	ENSG00000203812	H2AC18	testis	testis	testis	exact	False	66.31800000000001
+13	13	26	Z	H2AC18	ENSG00000203812	H2AC18	thyroid gland	thyroid gland	thyroid gland	exact	False	73.75846153846155
+13	13	27	AA	H2AC18	ENSG00000203812	H2AC18	urinary bladder	urinary bladder	urinary bladder	exact	False	85.28166666666667
+13	13	28	AB	H2AC18	ENSG00000203812	H2AC18	vagina	vagina	vagina	exact	False	93.362
+13	13	29	AC	H2AC18	ENSG00000203812	H2AC18	mammary gland	breast	mammary gland	safe_synonym	True	
+13	13	30	AD	H2AC18	ENSG00000203812	H2AC18	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	54.3625
+13	13	31	AE	H2AC18	ENSG00000203812	H2AC18	uterine cervix	cervix	uterine cervix	safe_synonym	True	87.54
+13	13	32	AF	H2AC18	ENSG00000203812	H2AC18	myocardium	heart muscle	myocardium	safe_synonym	True	
+13	13	33	AG	H2AC18	ENSG00000203812	H2AC18	prostate gland	prostate	prostate gland	safe_synonym	True	95.15777777777777
+13	13	34	AH	H2AC18	ENSG00000203812	H2AC18	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	89.07
+13	13	35	AI	H2AC18	ENSG00000203812	H2AC18	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	82.6375
+14	14	1	A	H2AC19	ENSG00000272196	H2AC19	adipose tissue	adipose tissue	adipose tissue	exact	False	81.55666666666667
+14	14	2	B	H2AC19	ENSG00000272196	H2AC19	adrenal gland	adrenal gland	adrenal gland	exact	False	87.64666666666666
+14	14	3	C	H2AC19	ENSG00000272196	H2AC19	amygdala	amygdala	amygdala	exact	False	85.22
+14	14	4	D	H2AC19	ENSG00000272196	H2AC19	cerebellum	cerebellum	cerebellum	exact	False	87.59666666666668
+14	14	5	E	H2AC19	ENSG00000272196	H2AC19	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	78.57
+14	14	6	F	H2AC19	ENSG00000272196	H2AC19	colon	colon	colon	exact	False	87.725
+14	14	7	G	H2AC19	ENSG00000272196	H2AC19	endometrium	endometrium	endometrium	exact	False	62.09
+14	14	8	H	H2AC19	ENSG00000272196	H2AC19	esophagus	esophagus	esophagus	exact	False	87.97749999999999
+14	14	9	I	H2AC19	ENSG00000272196	H2AC19	fallopian tube	fallopian tube	fallopian tube	exact	False	80.95
+14	14	10	J	H2AC19	ENSG00000272196	H2AC19	hypothalamus	hypothalamus	hypothalamus	exact	False	85.76125
+14	14	11	K	H2AC19	ENSG00000272196	H2AC19	kidney	kidney	kidney	exact	False	90.165
+14	14	12	L	H2AC19	ENSG00000272196	H2AC19	liver	liver	liver	exact	False	86.9809090909091
+14	14	13	M	H2AC19	ENSG00000272196	H2AC19	lung	lung	lung	exact	False	90.57
+14	14	14	N	H2AC19	ENSG00000272196	H2AC19	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	87.09777777777778
+14	14	15	O	H2AC19	ENSG00000272196	H2AC19	ovary	ovary	ovary	exact	False	77.37
+14	14	16	P	H2AC19	ENSG00000272196	H2AC19	pancreas	pancreas	pancreas	exact	False	71.33000000000001
+14	14	17	Q	H2AC19	ENSG00000272196	H2AC19	pituitary gland	pituitary gland	pituitary gland	exact	False	86.366
+14	14	18	R	H2AC19	ENSG00000272196	H2AC19	putamen	putamen	putamen	exact	False	87.315
+14	14	19	S	H2AC19	ENSG00000272196	H2AC19	retina	retina	retina	exact	False	
+14	14	20	T	H2AC19	ENSG00000272196	H2AC19	small intestine	small intestine	small intestine	exact	False	83.67
+14	14	21	U	H2AC19	ENSG00000272196	H2AC19	spinal cord	spinal cord	spinal cord	exact	False	
+14	14	22	V	H2AC19	ENSG00000272196	H2AC19	spleen	spleen	spleen	exact	False	91.1590909090909
+14	14	23	W	H2AC19	ENSG00000272196	H2AC19	stomach	stomach	stomach	exact	False	89.63666666666667
+14	14	24	X	H2AC19	ENSG00000272196	H2AC19	substantia nigra	substantia nigra	substantia nigra	exact	False	88.32222222222222
+14	14	25	Y	H2AC19	ENSG00000272196	H2AC19	testis	testis	testis	exact	False	96.25
+14	14	26	Z	H2AC19	ENSG00000272196	H2AC19	thyroid gland	thyroid gland	thyroid gland	exact	False	82.77461538461537
+14	14	27	AA	H2AC19	ENSG00000272196	H2AC19	urinary bladder	urinary bladder	urinary bladder	exact	False	82.35833333333333
+14	14	28	AB	H2AC19	ENSG00000272196	H2AC19	vagina	vagina	vagina	exact	False	89.124
+14	14	29	AC	H2AC19	ENSG00000272196	H2AC19	mammary gland	breast	mammary gland	safe_synonym	True	
+14	14	30	AD	H2AC19	ENSG00000272196	H2AC19	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	85.13111111111112
+14	14	31	AE	H2AC19	ENSG00000272196	H2AC19	uterine cervix	cervix	uterine cervix	safe_synonym	True	88.6
+14	14	32	AF	H2AC19	ENSG00000272196	H2AC19	myocardium	heart muscle	myocardium	safe_synonym	True	
+14	14	33	AG	H2AC19	ENSG00000272196	H2AC19	prostate gland	prostate	prostate gland	safe_synonym	True	92.78555555555556
+14	14	34	AH	H2AC19	ENSG00000272196	H2AC19	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	85.43
+14	14	35	AI	H2AC19	ENSG00000272196	H2AC19	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	67.02333333333333
+15	15	1	A	H2AC20	ENSG00000184260	H2AC20	adipose tissue	adipose tissue	adipose tissue	exact	False	64.89999999999999
+15	15	2	B	H2AC20	ENSG00000184260	H2AC20	adrenal gland	adrenal gland	adrenal gland	exact	False	72.58333333333333
+15	15	3	C	H2AC20	ENSG00000184260	H2AC20	amygdala	amygdala	amygdala	exact	False	55.83428571428571
+15	15	4	D	H2AC20	ENSG00000184260	H2AC20	cerebellum	cerebellum	cerebellum	exact	False	56.04
+15	15	5	E	H2AC20	ENSG00000184260	H2AC20	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	48.25
+15	15	6	F	H2AC20	ENSG00000184260	H2AC20	colon	colon	colon	exact	False	75.327
+15	15	7	G	H2AC20	ENSG00000184260	H2AC20	endometrium	endometrium	endometrium	exact	False	52.605
+15	15	8	H	H2AC20	ENSG00000184260	H2AC20	esophagus	esophagus	esophagus	exact	False	63.4125
+15	15	9	I	H2AC20	ENSG00000184260	H2AC20	fallopian tube	fallopian tube	fallopian tube	exact	False	54.78
+15	15	10	J	H2AC20	ENSG00000184260	H2AC20	hypothalamus	hypothalamus	hypothalamus	exact	False	52.8125
+15	15	11	K	H2AC20	ENSG00000184260	H2AC20	kidney	kidney	kidney	exact	False	90.8075
+15	15	12	L	H2AC20	ENSG00000184260	H2AC20	liver	liver	liver	exact	False	66.07636363636364
+15	15	13	M	H2AC20	ENSG00000184260	H2AC20	lung	lung	lung	exact	False	78.79285714285713
+15	15	14	N	H2AC20	ENSG00000184260	H2AC20	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	53.49222222222223
+15	15	15	O	H2AC20	ENSG00000184260	H2AC20	ovary	ovary	ovary	exact	False	68.4475
+15	15	16	P	H2AC20	ENSG00000184260	H2AC20	pancreas	pancreas	pancreas	exact	False	58.03
+15	15	17	Q	H2AC20	ENSG00000184260	H2AC20	pituitary gland	pituitary gland	pituitary gland	exact	False	65.47
+15	15	18	R	H2AC20	ENSG00000184260	H2AC20	putamen	putamen	putamen	exact	False	53.58625
+15	15	19	S	H2AC20	ENSG00000184260	H2AC20	retina	retina	retina	exact	False	
+15	15	20	T	H2AC20	ENSG00000184260	H2AC20	small intestine	small intestine	small intestine	exact	False	62.505
+15	15	21	U	H2AC20	ENSG00000184260	H2AC20	spinal cord	spinal cord	spinal cord	exact	False	
+15	15	22	V	H2AC20	ENSG00000184260	H2AC20	spleen	spleen	spleen	exact	False	68.82090909090908
+15	15	23	W	H2AC20	ENSG00000184260	H2AC20	stomach	stomach	stomach	exact	False	80.34083333333334
+15	15	24	X	H2AC20	ENSG00000184260	H2AC20	substantia nigra	substantia nigra	substantia nigra	exact	False	56.87875
+15	15	25	Y	H2AC20	ENSG00000184260	H2AC20	testis	testis	testis	exact	False	47.2325
+15	15	26	Z	H2AC20	ENSG00000184260	H2AC20	thyroid gland	thyroid gland	thyroid gland	exact	False	59.6576923076923
+15	15	27	AA	H2AC20	ENSG00000184260	H2AC20	urinary bladder	urinary bladder	urinary bladder	exact	False	66.06833333333333
+15	15	28	AB	H2AC20	ENSG00000184260	H2AC20	vagina	vagina	vagina	exact	False	66.766
+15	15	29	AC	H2AC20	ENSG00000184260	H2AC20	mammary gland	breast	mammary gland	safe_synonym	True	
+15	15	30	AD	H2AC20	ENSG00000184260	H2AC20	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	53.43888888888889
+15	15	31	AE	H2AC20	ENSG00000184260	H2AC20	uterine cervix	cervix	uterine cervix	safe_synonym	True	75.66
+15	15	32	AF	H2AC20	ENSG00000184260	H2AC20	myocardium	heart muscle	myocardium	safe_synonym	True	
+15	15	33	AG	H2AC20	ENSG00000184260	H2AC20	prostate gland	prostate	prostate gland	safe_synonym	True	65.37
+15	15	34	AH	H2AC20	ENSG00000184260	H2AC20	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	57.03
+15	15	35	AI	H2AC20	ENSG00000184260	H2AC20	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	56.27
+16	16	1	A	H2AC21	ENSG00000184270	H2AC21	adipose tissue	adipose tissue	adipose tissue	exact	False	39.895
+16	16	2	B	H2AC21	ENSG00000184270	H2AC21	adrenal gland	adrenal gland	adrenal gland	exact	False	44.41
+16	16	3	C	H2AC21	ENSG00000184270	H2AC21	amygdala	amygdala	amygdala	exact	False	29.64
+16	16	4	D	H2AC21	ENSG00000184270	H2AC21	cerebellum	cerebellum	cerebellum	exact	False	34.765
+16	16	5	E	H2AC21	ENSG00000184270	H2AC21	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	28.97
+16	16	6	F	H2AC21	ENSG00000184270	H2AC21	colon	colon	colon	exact	False	58.90444444444445
+16	16	7	G	H2AC21	ENSG00000184270	H2AC21	endometrium	endometrium	endometrium	exact	False	31.15
+16	16	8	H	H2AC21	ENSG00000184270	H2AC21	esophagus	esophagus	esophagus	exact	False	34.58
+16	16	9	I	H2AC21	ENSG00000184270	H2AC21	fallopian tube	fallopian tube	fallopian tube	exact	False	30.57
+16	16	10	J	H2AC21	ENSG00000184270	H2AC21	hypothalamus	hypothalamus	hypothalamus	exact	False	36.696666666666665
+16	16	11	K	H2AC21	ENSG00000184270	H2AC21	kidney	kidney	kidney	exact	False	83.64
+16	16	12	L	H2AC21	ENSG00000184270	H2AC21	liver	liver	liver	exact	False	45.3125
+16	16	13	M	H2AC21	ENSG00000184270	H2AC21	lung	lung	lung	exact	False	63.71428571428572
+16	16	14	N	H2AC21	ENSG00000184270	H2AC21	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	39.8
+16	16	15	O	H2AC21	ENSG00000184270	H2AC21	ovary	ovary	ovary	exact	False	43.875
+16	16	16	P	H2AC21	ENSG00000184270	H2AC21	pancreas	pancreas	pancreas	exact	False	33.375
+16	16	17	Q	H2AC21	ENSG00000184270	H2AC21	pituitary gland	pituitary gland	pituitary gland	exact	False	30.615
+16	16	18	R	H2AC21	ENSG00000184270	H2AC21	putamen	putamen	putamen	exact	False	36.42
+16	16	19	S	H2AC21	ENSG00000184270	H2AC21	retina	retina	retina	exact	False	
+16	16	20	T	H2AC21	ENSG00000184270	H2AC21	small intestine	small intestine	small intestine	exact	False	36.895
+16	16	21	U	H2AC21	ENSG00000184270	H2AC21	spinal cord	spinal cord	spinal cord	exact	False	
+16	16	22	V	H2AC21	ENSG00000184270	H2AC21	spleen	spleen	spleen	exact	False	37.798
+16	16	23	W	H2AC21	ENSG00000184270	H2AC21	stomach	stomach	stomach	exact	False	64.11749999999999
+16	16	24	X	H2AC21	ENSG00000184270	H2AC21	substantia nigra	substantia nigra	substantia nigra	exact	False	36.71
+16	16	25	Y	H2AC21	ENSG00000184270	H2AC21	testis	testis	testis	exact	False	0.0
+16	16	26	Z	H2AC21	ENSG00000184270	H2AC21	thyroid gland	thyroid gland	thyroid gland	exact	False	33.52
+16	16	27	AA	H2AC21	ENSG00000184270	H2AC21	urinary bladder	urinary bladder	urinary bladder	exact	False	47.3575
+16	16	28	AB	H2AC21	ENSG00000184270	H2AC21	vagina	vagina	vagina	exact	False	38.31
+16	16	29	AC	H2AC21	ENSG00000184270	H2AC21	mammary gland	breast	mammary gland	safe_synonym	True	
+16	16	30	AD	H2AC21	ENSG00000184270	H2AC21	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	38.0375
+16	16	31	AE	H2AC21	ENSG00000184270	H2AC21	uterine cervix	cervix	uterine cervix	safe_synonym	True	53.21
+16	16	32	AF	H2AC21	ENSG00000184270	H2AC21	myocardium	heart muscle	myocardium	safe_synonym	True	
+16	16	33	AG	H2AC21	ENSG00000184270	H2AC21	prostate gland	prostate	prostate gland	safe_synonym	True	34.84285714285714
+16	16	34	AH	H2AC21	ENSG00000184270	H2AC21	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	29.47
+16	16	35	AI	H2AC21	ENSG00000184270	H2AC21	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	47.91
+17	17	1	A	H2AC25	ENSG00000181218	H2AW	adipose tissue	adipose tissue	adipose tissue	exact	False	64.93666666666667
+17	17	2	B	H2AC25	ENSG00000181218	H2AW	adrenal gland	adrenal gland	adrenal gland	exact	False	77.53333333333335
+17	17	3	C	H2AC25	ENSG00000181218	H2AW	amygdala	amygdala	amygdala	exact	False	80.12125
+17	17	4	D	H2AC25	ENSG00000181218	H2AW	cerebellum	cerebellum	cerebellum	exact	False	95.21999999999998
+17	17	5	E	H2AC25	ENSG00000181218	H2AW	cerebral cortex	cerebral cortex	cerebral cortex	exact	False	83.08
+17	17	6	F	H2AC25	ENSG00000181218	H2AW	colon	colon	colon	exact	False	72.10499999999999
+17	17	7	G	H2AC25	ENSG00000181218	H2AW	endometrium	endometrium	endometrium	exact	False	67.07
+17	17	8	H	H2AC25	ENSG00000181218	H2AW	esophagus	esophagus	esophagus	exact	False	76.0475
+17	17	9	I	H2AC25	ENSG00000181218	H2AW	fallopian tube	fallopian tube	fallopian tube	exact	False	70.92
+17	17	10	J	H2AC25	ENSG00000181218	H2AW	hypothalamus	hypothalamus	hypothalamus	exact	False	81.35125
+17	17	11	K	H2AC25	ENSG00000181218	H2AW	kidney	kidney	kidney	exact	False	66.07
+17	17	12	L	H2AC25	ENSG00000181218	H2AW	liver	liver	liver	exact	False	53.722
+17	17	13	M	H2AC25	ENSG00000181218	H2AW	lung	lung	lung	exact	False	67.73857142857143
+17	17	14	N	H2AC25	ENSG00000181218	H2AW	nucleus accumbens	nucleus accumbens	nucleus accumbens	exact	False	85.35333333333334
+17	17	15	O	H2AC25	ENSG00000181218	H2AW	ovary	ovary	ovary	exact	False	77.035
+17	17	16	P	H2AC25	ENSG00000181218	H2AW	pancreas	pancreas	pancreas	exact	False	67.335
+17	17	17	Q	H2AC25	ENSG00000181218	H2AW	pituitary gland	pituitary gland	pituitary gland	exact	False	80.308
+17	17	18	R	H2AC25	ENSG00000181218	H2AW	putamen	putamen	putamen	exact	False	84.64375
+17	17	19	S	H2AC25	ENSG00000181218	H2AW	retina	retina	retina	exact	False	
+17	17	20	T	H2AC25	ENSG00000181218	H2AW	small intestine	small intestine	small intestine	exact	False	70.11500000000001
+17	17	21	U	H2AC25	ENSG00000181218	H2AW	spinal cord	spinal cord	spinal cord	exact	False	
+17	17	22	V	H2AC25	ENSG00000181218	H2AW	spleen	spleen	spleen	exact	False	79.5390909090909
+17	17	23	W	H2AC25	ENSG00000181218	H2AW	stomach	stomach	stomach	exact	False	70.94833333333334
+17	17	24	X	H2AC25	ENSG00000181218	H2AW	substantia nigra	substantia nigra	substantia nigra	exact	False	77.14444444444445
+17	17	25	Y	H2AC25	ENSG00000181218	H2AW	testis	testis	testis	exact	False	65.33375
+17	17	26	Z	H2AC25	ENSG00000181218	H2AW	thyroid gland	thyroid gland	thyroid gland	exact	False	59.91692307692308
+17	17	27	AA	H2AC25	ENSG00000181218	H2AW	urinary bladder	urinary bladder	urinary bladder	exact	False	69.31833333333334
+17	17	28	AB	H2AC25	ENSG00000181218	H2AW	vagina	vagina	vagina	exact	False	83.386
+17	17	29	AC	H2AC25	ENSG00000181218	H2AW	mammary gland	breast	mammary gland	safe_synonym	True	
+17	17	30	AD	H2AC25	ENSG00000181218	H2AW	caudate nucleus	caudate	caudate nucleus	safe_synonym	True	83.61444444444444
+17	17	31	AE	H2AC25	ENSG00000181218	H2AW	uterine cervix	cervix	uterine cervix	safe_synonym	True	76.69
+17	17	32	AF	H2AC25	ENSG00000181218	H2AW	myocardium	heart muscle	myocardium	safe_synonym	True	
+17	17	33	AG	H2AC25	ENSG00000181218	H2AW	prostate gland	prostate	prostate gland	safe_synonym	True	76.13555555555556
+17	17	34	AH	H2AC25	ENSG00000181218	H2AW	saliva-secreting gland	salivary gland	saliva-secreting gland	safe_synonym	True	76.51
+17	17	35	AI	H2AC25	ENSG00000181218	H2AW	skeletal muscle tissue	skeletal muscle	skeletal muscle tissue	safe_synonym	True	48.925

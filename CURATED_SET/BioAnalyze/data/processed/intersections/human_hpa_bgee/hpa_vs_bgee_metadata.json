@@ -1,0 +1,466 @@
+{
+  "hpa_tsv": "CURATED_SET/BioAnalyze/data/expression_nTPM/human/h2a_human_gene_ntpm_cells.tsv",
+  "bgee_tsv": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+  "map_tsv": "CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv",
+  "out_fig_dir": "CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee",
+  "out_data_dir": "CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee",
+  "gene_order": [
+    "H2AC1",
+    "H2AC4",
+    "H2AC6",
+    "H2AC7",
+    "H2AC8",
+    "H2AC11",
+    "H2AC12",
+    "H2AC13",
+    "H2AC14",
+    "H2AC15",
+    "H2AC16",
+    "H2AC17",
+    "H2AC18",
+    "H2AC19",
+    "H2AC20",
+    "H2AC21",
+    "H2AC25"
+  ],
+  "gene_numbers": [
+    {
+      "gene_number": 1,
+      "canonical_gene_name": "H2AC1"
+    },
+    {
+      "gene_number": 2,
+      "canonical_gene_name": "H2AC4"
+    },
+    {
+      "gene_number": 3,
+      "canonical_gene_name": "H2AC6"
+    },
+    {
+      "gene_number": 4,
+      "canonical_gene_name": "H2AC7"
+    },
+    {
+      "gene_number": 5,
+      "canonical_gene_name": "H2AC8"
+    },
+    {
+      "gene_number": 6,
+      "canonical_gene_name": "H2AC11"
+    },
+    {
+      "gene_number": 7,
+      "canonical_gene_name": "H2AC12"
+    },
+    {
+      "gene_number": 8,
+      "canonical_gene_name": "H2AC13"
+    },
+    {
+      "gene_number": 9,
+      "canonical_gene_name": "H2AC14"
+    },
+    {
+      "gene_number": 10,
+      "canonical_gene_name": "H2AC15"
+    },
+    {
+      "gene_number": 11,
+      "canonical_gene_name": "H2AC16"
+    },
+    {
+      "gene_number": 12,
+      "canonical_gene_name": "H2AC17"
+    },
+    {
+      "gene_number": 13,
+      "canonical_gene_name": "H2AC18"
+    },
+    {
+      "gene_number": 14,
+      "canonical_gene_name": "H2AC19"
+    },
+    {
+      "gene_number": 15,
+      "canonical_gene_name": "H2AC20"
+    },
+    {
+      "gene_number": 16,
+      "canonical_gene_name": "H2AC21"
+    },
+    {
+      "gene_number": 17,
+      "canonical_gene_name": "H2AC25"
+    }
+  ],
+  "exact_tissues": [
+    "adipose tissue",
+    "adrenal gland",
+    "amygdala",
+    "cerebellum",
+    "cerebral cortex",
+    "colon",
+    "endometrium",
+    "esophagus",
+    "fallopian tube",
+    "hypothalamus",
+    "kidney",
+    "liver",
+    "lung",
+    "nucleus accumbens",
+    "ovary",
+    "pancreas",
+    "pituitary gland",
+    "putamen",
+    "retina",
+    "small intestine",
+    "spinal cord",
+    "spleen",
+    "stomach",
+    "substantia nigra",
+    "testis",
+    "thyroid gland",
+    "urinary bladder",
+    "vagina"
+  ],
+  "safe_tissue_synonyms": {
+    "breast": "mammary gland",
+    "caudate": "caudate nucleus",
+    "cervix": "uterine cervix",
+    "heart muscle": "myocardium",
+    "prostate": "prostate gland",
+    "salivary gland": "saliva-secreting gland",
+    "skeletal muscle": "skeletal muscle tissue"
+  },
+  "excluded_hpa_tissues": [
+    "hippocampus",
+    "skin"
+  ],
+  "tissue_letters": [
+    {
+      "tissue_letter": "A",
+      "compare_tissue_key": "adipose tissue",
+      "hpa_tissue_label": "adipose tissue",
+      "bgee_tissue_label": "adipose tissue",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "B",
+      "compare_tissue_key": "adrenal gland",
+      "hpa_tissue_label": "adrenal gland",
+      "bgee_tissue_label": "adrenal gland",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "C",
+      "compare_tissue_key": "amygdala",
+      "hpa_tissue_label": "amygdala",
+      "bgee_tissue_label": "amygdala",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "D",
+      "compare_tissue_key": "cerebellum",
+      "hpa_tissue_label": "cerebellum",
+      "bgee_tissue_label": "cerebellum",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "E",
+      "compare_tissue_key": "cerebral cortex",
+      "hpa_tissue_label": "cerebral cortex",
+      "bgee_tissue_label": "cerebral cortex",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "F",
+      "compare_tissue_key": "colon",
+      "hpa_tissue_label": "colon",
+      "bgee_tissue_label": "colon",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "G",
+      "compare_tissue_key": "endometrium",
+      "hpa_tissue_label": "endometrium",
+      "bgee_tissue_label": "endometrium",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "H",
+      "compare_tissue_key": "esophagus",
+      "hpa_tissue_label": "esophagus",
+      "bgee_tissue_label": "esophagus",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "I",
+      "compare_tissue_key": "fallopian tube",
+      "hpa_tissue_label": "fallopian tube",
+      "bgee_tissue_label": "fallopian tube",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "J",
+      "compare_tissue_key": "hypothalamus",
+      "hpa_tissue_label": "hypothalamus",
+      "bgee_tissue_label": "hypothalamus",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "K",
+      "compare_tissue_key": "kidney",
+      "hpa_tissue_label": "kidney",
+      "bgee_tissue_label": "kidney",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "L",
+      "compare_tissue_key": "liver",
+      "hpa_tissue_label": "liver",
+      "bgee_tissue_label": "liver",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "M",
+      "compare_tissue_key": "lung",
+      "hpa_tissue_label": "lung",
+      "bgee_tissue_label": "lung",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "N",
+      "compare_tissue_key": "nucleus accumbens",
+      "hpa_tissue_label": "nucleus accumbens",
+      "bgee_tissue_label": "nucleus accumbens",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "O",
+      "compare_tissue_key": "ovary",
+      "hpa_tissue_label": "ovary",
+      "bgee_tissue_label": "ovary",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "P",
+      "compare_tissue_key": "pancreas",
+      "hpa_tissue_label": "pancreas",
+      "bgee_tissue_label": "pancreas",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "Q",
+      "compare_tissue_key": "pituitary gland",
+      "hpa_tissue_label": "pituitary gland",
+      "bgee_tissue_label": "pituitary gland",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "R",
+      "compare_tissue_key": "putamen",
+      "hpa_tissue_label": "putamen",
+      "bgee_tissue_label": "putamen",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "S",
+      "compare_tissue_key": "retina",
+      "hpa_tissue_label": "retina",
+      "bgee_tissue_label": "retina",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "T",
+      "compare_tissue_key": "small intestine",
+      "hpa_tissue_label": "small intestine",
+      "bgee_tissue_label": "small intestine",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "U",
+      "compare_tissue_key": "spinal cord",
+      "hpa_tissue_label": "spinal cord",
+      "bgee_tissue_label": "spinal cord",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "V",
+      "compare_tissue_key": "spleen",
+      "hpa_tissue_label": "spleen",
+      "bgee_tissue_label": "spleen",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "W",
+      "compare_tissue_key": "stomach",
+      "hpa_tissue_label": "stomach",
+      "bgee_tissue_label": "stomach",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "X",
+      "compare_tissue_key": "substantia nigra",
+      "hpa_tissue_label": "substantia nigra",
+      "bgee_tissue_label": "substantia nigra",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "Y",
+      "compare_tissue_key": "testis",
+      "hpa_tissue_label": "testis",
+      "bgee_tissue_label": "testis",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "Z",
+      "compare_tissue_key": "thyroid gland",
+      "hpa_tissue_label": "thyroid gland",
+      "bgee_tissue_label": "thyroid gland",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "AA",
+      "compare_tissue_key": "urinary bladder",
+      "hpa_tissue_label": "urinary bladder",
+      "bgee_tissue_label": "urinary bladder",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "AB",
+      "compare_tissue_key": "vagina",
+      "hpa_tissue_label": "vagina",
+      "bgee_tissue_label": "vagina",
+      "match_type": "exact",
+      "is_underlined": false
+    },
+    {
+      "tissue_letter": "AC",
+      "compare_tissue_key": "mammary gland",
+      "hpa_tissue_label": "breast",
+      "bgee_tissue_label": "mammary gland",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    },
+    {
+      "tissue_letter": "AD",
+      "compare_tissue_key": "caudate nucleus",
+      "hpa_tissue_label": "caudate",
+      "bgee_tissue_label": "caudate nucleus",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    },
+    {
+      "tissue_letter": "AE",
+      "compare_tissue_key": "uterine cervix",
+      "hpa_tissue_label": "cervix",
+      "bgee_tissue_label": "uterine cervix",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    },
+    {
+      "tissue_letter": "AF",
+      "compare_tissue_key": "myocardium",
+      "hpa_tissue_label": "heart muscle",
+      "bgee_tissue_label": "myocardium",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    },
+    {
+      "tissue_letter": "AG",
+      "compare_tissue_key": "prostate gland",
+      "hpa_tissue_label": "prostate",
+      "bgee_tissue_label": "prostate gland",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    },
+    {
+      "tissue_letter": "AH",
+      "compare_tissue_key": "saliva-secreting gland",
+      "hpa_tissue_label": "salivary gland",
+      "bgee_tissue_label": "saliva-secreting gland",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    },
+    {
+      "tissue_letter": "AI",
+      "compare_tissue_key": "skeletal muscle tissue",
+      "hpa_tissue_label": "skeletal muscle",
+      "bgee_tissue_label": "skeletal muscle tissue",
+      "match_type": "safe_synonym",
+      "is_underlined": true
+    }
+  ],
+  "gene_count": 17,
+  "tissue_count": 35,
+  "hpa_matrix_shape": [
+    17,
+    35
+  ],
+  "bgee_matrix_shape": [
+    17,
+    35
+  ],
+  "hpa_log10_vmax": 1.911690158753861,
+  "bgee_log10_vmax": 1.9878896099977454,
+  "hpa_raw_vmax": 80.6,
+  "bgee_raw_vmax": 96.25,
+  "zero_outline_style": {
+    "enabled": true,
+    "description": "Exact zero-valued cells are marked with a thin red outline on all compare heatmaps.",
+    "edgecolor": "#d62728",
+    "linewidth": 0.75,
+    "hpa_exact_zero_count": 150,
+    "bgee_exact_zero_count": 68
+  },
+  "underlined_tissues": [
+    "mammary gland",
+    "caudate nucleus",
+    "uterine cervix",
+    "myocardium",
+    "prostate gland",
+    "saliva-secreting gland",
+    "skeletal muscle tissue"
+  ],
+  "alias_notes": [
+    {
+      "canonical_gene_name": "H2AC25",
+      "ensembl_gene_id": "ENSG00000181218",
+      "bgee_gene_label": "H2AW"
+    }
+  ],
+  "mapping_provenance": {
+    "canonical_gene_names": "Canonical gene identity comes from the Bgee human canonical map and the merged-v4 label refresh pipeline used by the existing heatmap builders.",
+    "tissue_mapping": "Safe tissue synonym mapping is an explicit local compare-layer. The existing repo-level tissue intersection workflows use exact matches only.",
+    "display_labels": "Presentation heatmaps use compact OX/OY codes. Source-native HPA and Bgee labels are preserved in the exported legends and map TSVs.",
+    "hpa_compare_value": "HPA compare values use nTPM from the gene x tissue cells table. In this dataset each gene x tissue cell is unique, so the exported value matches the raw per-cell nTPM.",
+    "bgee_compare_value": "Bgee compare values use cell_mean_score from the processed expression table."
+  }
+}

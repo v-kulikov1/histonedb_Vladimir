@@ -1073,3 +1073,148 @@ H2A.J Tree Clean Short-Sequence Filter (2026-04-01)
   - `h2aj_aligned_historical`: `230 -> 227`
 - Verification note:
   - `All_AA_0206.fasta` contains the two short human records but not the short bat record, so the clean rebuild correctly removes `2` rows there rather than `3`.
+
+Human HPA vs Bgee cH2A Compare Heatmaps (2026-04-01)
+- Goal:
+  - Build a human-only compare layer between the new HPA raw-`nTPM` cH2A
+    workflow and the existing human Bgee cH2A processed heatmap inputs.
+- New script:
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_human_hpa_bgee_compare_heatmaps.py`
+- Inputs:
+  - `CURATED_SET/BioAnalyze/data/expression_nTPM/human/h2a_human_gene_ntpm_cells.tsv`
+  - `CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv`
+  - `CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv`
+- Gene mapping behavior:
+  - Internal compare identity uses canonical human cH2A `gene_name` from the
+    canonical map together with `ensembl_gene_id`.
+  - Bgee display labels remain source-native from the processed TSV.
+  - The compare layer explicitly preserves the alias case
+    `H2AC25 <-> ENSG00000181218 <-> H2AW`.
+- Tissue mapping behavior:
+  - Exact matches are kept as-is.
+  - Safe compare-only synonym pairs are applied for:
+    - `breast -> mammary gland`
+    - `caudate -> caudate nucleus`
+    - `cervix -> uterine cervix`
+    - `heart muscle -> myocardium`
+    - `prostate -> prostate gland`
+    - `salivary gland -> saliva-secreting gland`
+    - `skeletal muscle -> skeletal muscle tissue`
+  - Unresolved HPA tissues left outside the compare axis:
+    - `hippocampus`
+    - `skin`
+- Display behavior:
+  - Heatmaps keep source-native axis labels for manual inspection.
+  - Safe-synonym tissue labels are visually marked by underline on both
+    heatmaps.
+  - Separate color scales are exported for HPA and Bgee because the sources use
+    different value ranges and semantics.
+- Outputs:
+  - Data:
+    - `CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_gene_mapping.tsv`
+    - `CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_tissue_mapping.tsv`
+    - `CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_hpa_aligned_long.tsv`
+    - `CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_bgee_aligned_long.tsv`
+    - `CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_metadata.json`
+  - Figures:
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_hpa_heatmap.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_bgee_heatmap.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_hpa_colorbar.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_bgee_colorbar.(png|svg)`
+- Presentation update:
+  - Compare heatmaps now use compact `OY` gene numbers and shared `OX`
+    tissue letter codes instead of long axis labels.
+  - Added presentation-style legend assets:
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_gene_number_legend.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_hpa_tissue_letter_legend.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_bgee_tissue_letter_legend.(png|svg)`
+  - Added matching map TSVs in the compare figure folder:
+    - `hpa_vs_bgee_gene_number_map.tsv`
+    - `hpa_vs_bgee_hpa_tissue_letter_map.tsv`
+    - `hpa_vs_bgee_bgee_tissue_letter_map.tsv`
+  - Tissue codes extend beyond `Z` to `AA-AI`; safe-synonym slots remain
+    underlined on the heatmaps and in both tissue legends.
+- Mean-value compare update:
+  - The HPA side of the compare workflow now reads the exported HPA gene-by-
+    tissue `nTPM` value instead of `median_nTPM`.
+  - Bgee remains unchanged on `cell_mean_score`.
+  - Because each HPA gene-by-tissue cell is unique in the source TSV, the
+    compare layer is now displayed as plain `nTPM` in titles, legends, reports,
+    and compare TSV exports.
+- Raw-scale compare update:
+  - The compare heatmap builder now also exports raw-scale comparison figures
+    without the `log10(x + 1)` transform.
+  - New raw compare figures:
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_hpa_raw_heatmap.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_bgee_raw_heatmap.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_hpa_raw_colorbar.(png|svg)`
+    - `CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee/hpa_vs_bgee_bgee_raw_colorbar.(png|svg)`
+  - The original log-scale compare figures are kept alongside the raw-scale
+    versions for side-by-side interpretation.
+- Zero-cell compare styling update:
+  - Exact zero-valued cells on the human HPA-vs-Bgee compare heatmaps are now
+    marked with a thin red outline.
+  - This visual marker is applied to all four compare heatmaps:
+    HPA log, Bgee log, HPA raw, and Bgee raw.
+  - The `viridis` palette and color scales are unchanged so `0` is now
+    distinguishable from low nonzero values such as `0.1` without changing the
+    quantitative meaning of the colors.
+- Compare stats update:
+  - Added a separate stats/report workflow for the human HPA-vs-Bgee compare
+    layer without touching the heatmap builder.
+  - New script:
+    - `CURATED_SET/BioAnalyze/scripts/expression/build_human_hpa_bgee_compare_stats.py`
+  - Reads the aligned compare tables from:
+    - `CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/`
+  - Writes stats outputs to:
+    - `CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee/`
+  - Generated outputs:
+    - `paired_cells.tsv`
+    - `correlation_summary.tsv`
+    - `top_differing_cells.tsv`
+    - `gene_difference_summary.tsv`
+    - `tissue_difference_summary.tsv`
+    - `report_md.md`
+    - `metadata.json`
+  - Comparison policy:
+    - primary comparison space is `log10(value + 1)` to match the displayed
+      heatmaps
+    - missing values are excluded, but zero-valued cells are kept
+    - raw `nTPM` and raw `cell_mean_score` are preserved alongside the
+      transformed values for interpretation
+  - Current compare summary:
+    - total compare slots: `595`
+    - non-missing paired cells: `477`
+    - log-space Pearson (`all_non_missing`): `0.438963`
+    - log-space Spearman (`all_non_missing`): `0.813329`
+    - strongest disagreements are dominated by kidney-associated clustered
+      `H2AC` rows, with one top safe-synonym case at
+      `prostate -> prostate gland`
+- Per-gene correlation update:
+  - Added a dedicated per-gene correlation workflow on top of
+    `stats/compare_nTPM_bgee/paired_cells.tsv`.
+  - New script:
+    - `CURATED_SET/BioAnalyze/scripts/expression/build_human_hpa_bgee_gene_correlations.py`
+  - New output folder:
+    - `CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee/per_gene_correlations/`
+  - Generated outputs:
+    - `gene_correlation_keep_zeros.tsv`
+    - `gene_correlation_drop_zeros.tsv`
+    - `pearson_raw_keep_zeros.(png|svg)`
+    - `spearman_raw_keep_zeros.(png|svg)`
+    - `pearson_raw_drop_zeros.(png|svg)`
+    - `spearman_raw_drop_zeros.(png|svg)`
+    - `report_md.md`
+  - Correlation policy:
+    - one Pearson raw and one Spearman raw value per gene across tissues
+    - `keep_zeros` keeps all non-missing pairs
+    - `drop_zeros` keeps only rows where both HPA and Bgee are `> 0`
+  - Current summary:
+    - 15 comparable cH2A genes were scored in both modes
+    - strongest `keep_zeros` Pearson: `H2AC1 = 0.758929`
+    - strongest `keep_zeros` Spearman: `H2AC25/H2AW = 0.873274`
+    - strongest `drop_zeros` Pearson: `H2AC1 = 0.990639` on 3 tissues
+    - weakest `drop_zeros` Pearson: `H2AC14 = -0.170402`
+    - no genes fell into `insufficient_pairs` in the current dataset
+- Expected compare matrix shape:
+  - `17 x 35` for both HPA and Bgee after the fixed gene/tissue mapping is applied.
