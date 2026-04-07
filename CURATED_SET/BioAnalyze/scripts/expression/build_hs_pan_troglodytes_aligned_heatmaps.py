@@ -10,6 +10,7 @@ No normalization is applied. Intersections are exact string matches.
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -18,6 +19,11 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root
 from normalized_expression_common import load_processed_expression_cells
 
 
@@ -30,12 +36,22 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--a-present-gold",
-        default=r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv",
+        default=str(
+            get_bioanalyze_data_root()
+            / "processed"
+            / "homo_sapiens"
+            / "Homo_sapiens_expr_advanced_H2A_present_gold.tsv"
+        ),
         help="Normalized H2A TSV for dataset A.",
     )
     p.add_argument(
         "--b-present-gold",
-        default=r"CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv",
+        default=str(
+            get_bioanalyze_data_root()
+            / "processed"
+            / "pan_troglodytes"
+            / "pan_troglodytes_expr_advanced_H2A_present_gold.tsv"
+        ),
         help="Normalized H2A TSV for dataset B.",
     )
     p.add_argument(
@@ -50,17 +66,17 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--merged",
-        default=r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv",
+        default=str(get_bioanalyze_data_root() / "merged" / "mammalia_H2A_merged_with_taxonomy_v4.csv"),
         help="Merged v4 dataset with gene_name, variant, and IDs.",
     )
     p.add_argument(
         "--out-dir",
-        default=r"CURATED_SET/BioAnalyze/figures/heatmaps/alligned_human_pan",
+        default=str(get_bioanalyze_figures_root() / "heatmaps" / "alligned_human_pan"),
         help="Output directory for heatmaps.",
     )
     p.add_argument(
         "--out-processed-dir",
-        default=r"CURATED_SET/BioAnalyze/data/processed/intersections",
+        default=str(get_bioanalyze_data_root() / "processed" / "intersections"),
         help="Output directory for processed TSVs.",
     )
     p.add_argument(

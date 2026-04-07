@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, List, Sequence, Tuple
@@ -21,11 +22,15 @@ from Bio import SeqIO
 from Bio.Data import CodonTable
 from matplotlib import cm, colors
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_raw_root
+
 
 BIOANALYZE_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT_DIR = Path(
-    r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons"
-)
+DEFAULT_INPUT_DIR = get_bioanalyze_raw_root() / "codons"
 DEFAULT_OUTPUT_DIR = BIOANALYZE_ROOT / "figures" / "codons" / "all_coding_61"
 
 STANDARD_TABLE = CodonTable.unambiguous_dna_by_id[1]

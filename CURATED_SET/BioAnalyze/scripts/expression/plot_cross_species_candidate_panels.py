@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 from gene_compare_common import (
+    CROSS_SPECIES_CLASS_COLORS,
     DEFAULT_GENE_COMPARE_DATA_ROOT,
     DEFAULT_RANKING_PLOTS_DIR,
     DEFAULT_RANKING_TABLES_DIR,
@@ -280,7 +281,7 @@ def plot_overview(
     min_species: int = DEFAULT_MIN_SPECIES,
 ) -> None:
     plot_df = summary_df[summary_df["species_n"] >= int(min_species)].copy()
-    color_map = {"clustered": "#5B7C8D", "variant": "#C06C3E"}
+    color_map = CROSS_SPECIES_CLASS_COLORS
 
     fig, ax = plt.subplots(figsize=(11, 7))
     for gene_class, class_df in plot_df.groupby("gene_class", dropna=False):
@@ -352,7 +353,7 @@ def plot_candidate_panels(
     n_rows = (n_panels + n_cols - 1) // n_cols
     fig, axes = plt.subplots(n_rows, n_cols, figsize=(14, max(4 * n_rows, 6)))
     axes_flat = axes.flatten() if hasattr(axes, "flatten") else [axes]
-    color_map = {"clustered": "#5B7C8D", "variant": "#C06C3E"}
+    color_map = CROSS_SPECIES_CLASS_COLORS
 
     for ax, row in zip(axes_flat, candidate_df.to_dict(orient="records")):
         plot_df = load_candidate_scores(

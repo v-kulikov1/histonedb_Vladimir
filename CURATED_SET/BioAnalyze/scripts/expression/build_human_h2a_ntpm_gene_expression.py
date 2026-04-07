@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Sequence
 
@@ -18,13 +19,16 @@ import pandas as pd
 
 
 SCRIPT_PATH = Path(__file__).resolve()
-REPO_ROOT = SCRIPT_PATH.parents[4]
-GITHUB_ROOT = SCRIPT_PATH.parents[5]
-DEFAULT_INPUT_TSV = (
-    GITHUB_ROOT / "histonedb_external_storage" / "BioAnalyze" / "raw" / "expression_nTPM" / "human" / "test.tsv"
-)
-DEFAULT_OUT_DATA_DIR = REPO_ROOT / "CURATED_SET" / "BioAnalyze" / "data" / "expression_nTPM" / "human"
-DEFAULT_OUT_FIG_DIR = REPO_ROOT / "CURATED_SET" / "BioAnalyze" / "figures" / "expression_nTPM" / "human"
+BIOANALYZE_SCRIPTS_ROOT = SCRIPT_PATH.parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root, get_bioanalyze_raw_root
+
+
+DEFAULT_INPUT_TSV = get_bioanalyze_raw_root() / "expression_nTPM" / "human" / "test.tsv"
+DEFAULT_OUT_DATA_DIR = get_bioanalyze_data_root() / "expression_nTPM" / "human"
+DEFAULT_OUT_FIG_DIR = get_bioanalyze_figures_root() / "expression_nTPM" / "human"
 
 REQUIRED_COLUMNS = ["Gene name", "Tissue", "nTPM", "variant"]
 TRACEABILITY_INPUT_COLUMNS = [
@@ -428,7 +432,7 @@ def plot_h2a5_split_boxplot(nonzero_cells_df: pd.DataFrame, out_dir: Path) -> No
         values,
         vert=False,
         patch_artist=True,
-        tick_labels=ordered_genes,
+        labels=ordered_genes,
     )
     palette = ["#6a8caf", "#8ab17d", "#d4a373", "#b56576", "#7b6d8d"]
     for patch, color in zip(box["boxes"], palette, strict=False):

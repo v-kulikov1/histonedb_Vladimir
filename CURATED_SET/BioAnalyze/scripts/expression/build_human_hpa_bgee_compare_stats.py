@@ -6,23 +6,24 @@ from __future__ import annotations
 import argparse
 import json
 from datetime import datetime
+import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Sequence
 
 import numpy as np
 import pandas as pd
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
 
-DEFAULT_HPA_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_hpa_aligned_long.tsv"
-)
-DEFAULT_BGEE_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_bgee_aligned_long.tsv"
-)
-DEFAULT_COMPARE_METADATA = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_metadata.json"
-)
-DEFAULT_OUT_DIR = Path(r"CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee")
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root, get_bioanalyze_stats_root
+
+
+DEFAULT_HPA_TSV = get_bioanalyze_data_root() / "processed" / "intersections" / "human_hpa_bgee" / "hpa_vs_bgee_hpa_aligned_long.tsv"
+DEFAULT_BGEE_TSV = get_bioanalyze_data_root() / "processed" / "intersections" / "human_hpa_bgee" / "hpa_vs_bgee_bgee_aligned_long.tsv"
+DEFAULT_COMPARE_METADATA = get_bioanalyze_data_root() / "processed" / "intersections" / "human_hpa_bgee" / "hpa_vs_bgee_metadata.json"
+DEFAULT_OUT_DIR = get_bioanalyze_stats_root() / "compare_nTPM_bgee"
 DEFAULT_TOP_N = 20
 
 MERGE_KEYS = [
@@ -415,7 +416,9 @@ def write_report(
     stats_metadata: Dict[str, object],
 ) -> None:
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    figure_dir = str(compare_metadata.get("out_fig_dir", "CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee"))
+    figure_dir = str(
+        compare_metadata.get("out_fig_dir", str(get_bioanalyze_figures_root() / "heatmaps" / "compare_nTPM_bgee"))
+    )
     total_slots = int(stats_metadata["total_compare_slots"])
     non_missing_slots = int(stats_metadata["non_missing_pair_count"])
     nonzero_any_slots = int(stats_metadata["nonzero_any_pair_count"])

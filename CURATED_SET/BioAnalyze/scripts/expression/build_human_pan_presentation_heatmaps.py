@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 from typing import Dict, List, Sequence, Tuple
 
@@ -15,22 +16,21 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root
 from gene_compare_common import normalize_map_df
 from normalized_expression_common import load_processed_expression_cells
 
 
-DEFAULT_ALIGNED_EXPR = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/intersections/homo_sapiens_expr_advanced_H2A_present_gold_intersection.tsv"
+DEFAULT_ALIGNED_EXPR = (
+    get_bioanalyze_data_root() / "processed" / "intersections" / "homo_sapiens_expr_advanced_H2A_present_gold_intersection.tsv"
 )
-DEFAULT_PAN_EXPR = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_expr_advanced_H2A_present_gold.tsv"
-)
-DEFAULT_PAN_MAP = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/pan_troglodytes/pan_troglodytes_h2a_canonical_variant_map.tsv"
-)
-DEFAULT_OUT_DIR = Path(
-    r"CURATED_SET/BioAnalyze/figures/heatmaps/presentation_human_pan"
-)
+DEFAULT_PAN_EXPR = get_bioanalyze_data_root() / "processed" / "pan_troglodytes" / "pan_troglodytes_expr_advanced_H2A_present_gold.tsv"
+DEFAULT_PAN_MAP = get_bioanalyze_data_root() / "processed" / "pan_troglodytes" / "pan_troglodytes_h2a_canonical_variant_map.tsv"
+DEFAULT_OUT_DIR = get_bioanalyze_figures_root() / "heatmaps" / "presentation_human_pan"
 CLASS_COLORS = {
     "clustered": "#6ea6c8",
     "variant": "#d7b46a",

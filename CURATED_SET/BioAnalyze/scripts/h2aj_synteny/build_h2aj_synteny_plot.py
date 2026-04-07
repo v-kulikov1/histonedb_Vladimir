@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import sys
 from pathlib import Path
 from typing import Dict, List, Sequence
 
@@ -12,11 +13,15 @@ import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import pandas as pd
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_synteny_root
+
 
 BIOANALYZE_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT_DIR = Path(
-    r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\synteny"
-)
+DEFAULT_INPUT_DIR = get_bioanalyze_synteny_root()
 DEFAULT_OUTPUT_DIR = BIOANALYZE_ROOT / "figures" / "h2aj_synteny"
 DEFAULT_OUTPUT_STEM = "h2aj_synteny"
 DEFAULT_NEIGHBORS = 1500

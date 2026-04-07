@@ -2,12 +2,16 @@
 
 This repo keeps very large raw inputs outside git to avoid bloating history.
 
-Location (local machine):
-C:\Users\USER\Documents\GitHub\histonedb_external_storage
+Resolved location:
+- `HISTONEDB_EXTERNAL_STORAGE`, if set
+- otherwise sibling to the repo root: `<repo-parent>\histonedb_external_storage`
+
+Current local machine location:
+C:\dev\GitHub\histonedb_external_storage
 
 Current raw datasets:
 - BioAnalyze raw inputs:
-  - C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw
+  - C:\dev\GitHub\histonedb_external_storage\BioAnalyze\raw
 
 Notes:
 - Keep raw files in the external storage.

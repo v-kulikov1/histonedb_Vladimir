@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 from datetime import datetime
+import sys
 from pathlib import Path
 from typing import Dict, List, Sequence
 
@@ -17,16 +18,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
 
-DEFAULT_PAIRED_TSV = Path(
-    r"CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee/paired_cells.tsv"
-)
-DEFAULT_COMPARE_METADATA = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee/hpa_vs_bgee_metadata.json"
-)
-DEFAULT_OUT_DIR = Path(
-    r"CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee/per_gene_correlations"
-)
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root, get_bioanalyze_stats_root
+
+
+DEFAULT_PAIRED_TSV = get_bioanalyze_stats_root() / "compare_nTPM_bgee" / "paired_cells.tsv"
+DEFAULT_COMPARE_METADATA = get_bioanalyze_data_root() / "processed" / "intersections" / "human_hpa_bgee" / "hpa_vs_bgee_metadata.json"
+DEFAULT_OUT_DIR = get_bioanalyze_stats_root() / "compare_nTPM_bgee" / "per_gene_correlations"
 
 GENE_ORDER = [
     "H2AC1",
@@ -290,14 +291,16 @@ def write_report(
     compare_metadata: Dict[str, object],
 ) -> None:
     generated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    figure_dir = str(compare_metadata.get("out_fig_dir", "CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee"))
+    figure_dir = str(
+        compare_metadata.get("out_fig_dir", str(get_bioanalyze_figures_root() / "heatmaps" / "compare_nTPM_bgee"))
+    )
 
     lines: List[str] = [
         "# Per-Gene HPA vs Bgee Correlations",
         "",
         f"Generated: {generated_at}",
         "",
-        f"- Source paired table: `CURATED_SET/BioAnalyze/stats/compare_nTPM_bgee/paired_cells.tsv`",
+        f"- Source paired table: `{DEFAULT_PAIRED_TSV.as_posix()}`",
         f"- Compare figures: `{figure_dir}`",
         "",
         "## Modes",

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from typing import Dict, List, Sequence
 
@@ -19,24 +20,21 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root
 from normalized_expression_common import load_processed_expression_cells
 
 
-DEFAULT_HPA_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/expression_nTPM/human/h2a_human_gene_ntpm_cells.tsv"
+DEFAULT_HPA_TSV = get_bioanalyze_data_root() / "expression_nTPM" / "human" / "h2a_human_gene_ntpm_cells.tsv"
+DEFAULT_BGEE_TSV = (
+    get_bioanalyze_data_root() / "processed" / "homo_sapiens" / "Homo_sapiens_expr_advanced_H2A_present_gold.tsv"
 )
-DEFAULT_BGEE_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/Homo_sapiens_expr_advanced_H2A_present_gold.tsv"
-)
-DEFAULT_MAP_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv"
-)
-DEFAULT_OUT_FIG_DIR = Path(
-    r"CURATED_SET/BioAnalyze/figures/heatmaps/compare_nTPM_bgee"
-)
-DEFAULT_OUT_DATA_DIR = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/intersections/human_hpa_bgee"
-)
+DEFAULT_MAP_TSV = get_bioanalyze_data_root() / "processed" / "homo_sapiens" / "h2a_hs_canonical_variant_map.tsv"
+DEFAULT_OUT_FIG_DIR = get_bioanalyze_figures_root() / "heatmaps" / "compare_nTPM_bgee"
+DEFAULT_OUT_DATA_DIR = get_bioanalyze_data_root() / "processed" / "intersections" / "human_hpa_bgee"
 
 GENE_ORDER = [
     "H2AC1",

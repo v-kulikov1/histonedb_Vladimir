@@ -9,6 +9,7 @@ import hashlib
 import json
 import re
 import shutil
+import sys
 import zipfile
 from dataclasses import dataclass
 from datetime import datetime
@@ -20,24 +21,30 @@ from Bio import Phylo, SeqIO
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import (
+    get_bioanalyze_raw_root,
+    get_documents_root,
+    get_downloads_root,
+)
+
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 BIOANALYZE_ROOT = SCRIPT_DIR.parents[1]
 DEFAULT_OUTPUT_ROOT = BIOANALYZE_ROOT / "data" / "h2aj_tree"
-DEFAULT_EXTERNAL_ROOT = Path(
-    r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\tree"
-)
-DEFAULT_CODONS_ROOT = Path(
-    r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons"
-)
+DEFAULT_EXTERNAL_ROOT = get_bioanalyze_raw_root() / "tree"
+DEFAULT_CODONS_ROOT = get_bioanalyze_raw_root() / "codons"
 
-DEFAULT_HISTONES_ROOT = Path(r"C:\Users\USER\Documents\Гистоны")
-DEFAULT_MY_TEST_ROOT = Path(r"C:\Users\USER\Documents\My_test")
-DEFAULT_GRANT_ROOT = Path(r"C:\Users\USER\Documents\Работа над грантом HistoneJ")
-DEFAULT_CHAT_EXPORT = Path(
-    r"C:\Users\USER\Downloads\Telegram Desktop\ChatExport_2026-03-29\result.json"
+DEFAULT_HISTONES_ROOT = get_documents_root() / "Гистоны"
+DEFAULT_MY_TEST_ROOT = get_documents_root() / "My_test"
+DEFAULT_GRANT_ROOT = get_documents_root() / "Работа над грантом HistoneJ"
+DEFAULT_CHAT_EXPORT = (
+    get_downloads_root() / "Telegram Desktop" / "ChatExport_2026-03-29" / "result.json"
 )
-DEFAULT_DRAFT_DOCX = Path(r"C:\Users\USER\Downloads\Telegram Desktop\Draft2.docx")
+DEFAULT_DRAFT_DOCX = get_downloads_root() / "Telegram Desktop" / "Draft2.docx"
 DEFAULT_DROP_CLEAN_IDS = [
     "Myotis-lucifugus|XM_006084274",
     "Homo-sapiens|AK303301",

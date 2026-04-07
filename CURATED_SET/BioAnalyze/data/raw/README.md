@@ -1,7 +1,11 @@
 Raw source files are stored outside the repo to keep git lean.
 
-External path (local machine):
-C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw
+Resolved external path:
+- `HISTONEDB_EXTERNAL_STORAGE\BioAnalyze\raw`, if `HISTONEDB_EXTERNAL_STORAGE` is set
+- otherwise `<repo-parent>\histonedb_external_storage\BioAnalyze\raw`
+
+Current local machine path:
+C:\dev\GitHub\histonedb_external_storage\BioAnalyze\raw
 
 Files currently there (verified 2026-03-16):
 - Bos_taurus_expr_advanced_all_conditions.tsv (2585987454 bytes, 2024-05-16)

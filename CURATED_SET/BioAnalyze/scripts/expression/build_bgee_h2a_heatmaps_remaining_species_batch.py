@@ -4,19 +4,30 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 from typing import List
 
 import pandas as pd
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import (
+    get_bioanalyze_audits_root,
+    get_bioanalyze_data_root,
+    get_bioanalyze_figures_root,
+    get_bioanalyze_raw_root,
+)
 from build_bgee_h2a_heatmaps_any_species import BuildResult, build_species_heatmaps
 
 
-DEFAULT_RAW_DIR = Path(r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw")
-DEFAULT_MERGED = Path(r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv")
-DEFAULT_OUT_DIR = Path(r"CURATED_SET/BioAnalyze/figures/heatmaps/species")
-DEFAULT_OUT_PROCESSED_DIR = Path(r"CURATED_SET/BioAnalyze/data/processed")
-DEFAULT_AUDIT_OUT = Path(r"CURATED_SET/BioAnalyze/audits/audit_h2a_remaining_species_batch_v4.tsv")
+DEFAULT_RAW_DIR = get_bioanalyze_raw_root()
+DEFAULT_MERGED = get_bioanalyze_data_root() / "merged" / "mammalia_H2A_merged_with_taxonomy_v4.csv"
+DEFAULT_OUT_DIR = get_bioanalyze_figures_root() / "heatmaps" / "species"
+DEFAULT_OUT_PROCESSED_DIR = get_bioanalyze_data_root() / "processed"
+DEFAULT_AUDIT_OUT = get_bioanalyze_audits_root() / "audit_h2a_remaining_species_batch_v4.tsv"
 
 TARGET_SPECIES = [
     "Callithrix jacchus",

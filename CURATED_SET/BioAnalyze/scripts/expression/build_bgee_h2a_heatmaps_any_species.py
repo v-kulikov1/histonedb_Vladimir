@@ -5,6 +5,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -14,6 +15,11 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root
 from normalized_expression_common import (
     build_species_heatmap_display_index,
     build_tissue_coverage_table,
@@ -23,9 +29,9 @@ from normalized_expression_common import (
 )
 
 
-DEFAULT_MERGED = r"CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv"
-DEFAULT_OUT_DIR = r"CURATED_SET/BioAnalyze/figures/heatmaps/species"
-DEFAULT_OUT_PROCESSED_DIR = r"CURATED_SET/BioAnalyze/data/processed"
+DEFAULT_MERGED = get_bioanalyze_data_root() / "merged" / "mammalia_H2A_merged_with_taxonomy_v4.csv"
+DEFAULT_OUT_DIR = get_bioanalyze_figures_root() / "heatmaps" / "species"
+DEFAULT_OUT_PROCESSED_DIR = get_bioanalyze_data_root() / "processed"
 CANONICAL_RULES = ("legacy", "canonical_like")
 
 
@@ -82,17 +88,17 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--merged",
-        default=DEFAULT_MERGED,
+        default=str(DEFAULT_MERGED),
         help="Merged v4 H2A dataset with taxonomy, gene_name, HGNC/VGNC IDs, and variant.",
     )
     p.add_argument(
         "--out-dir",
-        default=DEFAULT_OUT_DIR,
+        default=str(DEFAULT_OUT_DIR),
         help="Base output directory for heatmaps (species subfolder is appended).",
     )
     p.add_argument(
         "--out-processed-dir",
-        default=DEFAULT_OUT_PROCESSED_DIR,
+        default=str(DEFAULT_OUT_PROCESSED_DIR),
         help="Output directory for processed TSVs.",
     )
     p.add_argument(

@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Dict, List, Sequence, Tuple
@@ -21,11 +22,15 @@ from Bio import SeqIO
 from Bio.Data import CodonTable
 from matplotlib import cm, colors
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_raw_root
+
 
 BIOANALYZE_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_INPUT_DIR = Path(
-    r"C:\Users\USER\Documents\GitHub\histonedb_external_storage\BioAnalyze\raw\codons"
-)
+DEFAULT_INPUT_DIR = get_bioanalyze_raw_root() / "codons"
 DEFAULT_OUTPUT_DIR = BIOANALYZE_ROOT / "figures" / "codons"
 
 STANDARD_TABLE = CodonTable.unambiguous_dna_by_id[1]
@@ -59,12 +64,14 @@ DATASETS = {
         "cds": "SQK_nuc(without short).fasta",
         "stem": "sqk_nuc_without_short_codon_entropy_annotated",
         "presentation_mode": True,
+        "cell_mode": "reference-blank-nonsyn",
     },
     "full": {
         "protein": "protein_from_SQK_nuc.fasta",
         "cds": "SQK_nuc.fasta",
         "stem": "sqk_nuc_full_codon_entropy_annotated",
         "presentation_mode": True,
+        "cell_mode": "majority-star-nonsyn",
     },
 }
 
@@ -251,7 +258,7 @@ def synonymous_codons_for_amino_acid(
     return synonymous_codons, has_alternative_amino_acid
 
 
-def normalized_entropy(codons: Sequence[str], reference_aa: str) -> float:
+def normalized_entropy_majority_basis(codons: Sequence[str], reference_aa: str) -> float:
     """Normalize synonymous codon diversity relative to the most frequent amino acid in the cell."""
     basis_aa = basis_amino_acid_for_cell(codons, reference_aa)
     if basis_aa is None:
@@ -266,10 +273,38 @@ def normalized_entropy(codons: Sequence[str], reference_aa: str) -> float:
     return float(shannon_entropy(synonymous_codons) / np.log2(max_synonymous_count))
 
 
+def normalized_entropy_reference_basis_or_nan(
+    codons: Sequence[str], reference_aa: str
+) -> float:
+    """Return NaN when any translated codon is nonsynonymous to the reference AA."""
+    synonymous_codons: List[str] = []
+    for codon in codons:
+        if codon == "---":
+            continue
+        amino_acid = STANDARD_TABLE.forward_table.get(codon)
+        if amino_acid is None:
+            continue
+        if amino_acid != reference_aa:
+            return float("nan")
+        synonymous_codons.append(codon)
+
+    if not synonymous_codons:
+        return float("nan")
+
+    max_synonymous_count = AA_MAX_SYNONYMOUS_CODONS.get(reference_aa)
+    if max_synonymous_count is None:
+        raise ValueError(f"Unsupported amino acid for entropy: {reference_aa}")
+    if max_synonymous_count <= 1 or len(set(synonymous_codons)) <= 1:
+        return 0.0
+    return float(shannon_entropy(synonymous_codons) / np.log2(max_synonymous_count))
+
+
 def collect_position_codons(
     protein_path: Path,
     cds_path: Path,
-) -> Tuple[pd.DataFrame, pd.DataFrame, str]:
+    *,
+    cell_mode: str,
+) -> Tuple[pd.DataFrame, pd.DataFrame | None, str]:
     aa_ref, codons_ref, reference_species = read_reference_sequences(protein_path, cds_path)
     cds_dict = {
         record.description.split("|")[0].strip(): str(record.seq)
@@ -313,11 +348,13 @@ def collect_position_codons(
 
     positions = sorted(position_codons.keys())
     matrix: List[List[float]] = []
-    non_syn_mask = pd.DataFrame(
-        False,
-        index=[position + 1 for position in positions],
-        columns=valid_orders,
-    )
+    non_syn_mask: pd.DataFrame | None = None
+    if cell_mode == "majority-star-nonsyn":
+        non_syn_mask = pd.DataFrame(
+            False,
+            index=[position + 1 for position in positions],
+            columns=valid_orders,
+        )
 
     for position in positions:
         row: List[float] = []
@@ -328,16 +365,18 @@ def collect_position_codons(
                 row.append(np.nan)
                 continue
 
+            if cell_mode == "reference-blank-nonsyn":
+                row.append(normalized_entropy_reference_basis_or_nan(codons, human_aa))
+                continue
+
             basis_aa = basis_amino_acid_for_cell(codons, human_aa)
             if basis_aa is None:
                 row.append(np.nan)
                 continue
 
-            synonymous_codons, has_non_synonymous = synonymous_codons_for_amino_acid(
-                codons, basis_aa
-            )
-            row.append(normalized_entropy(codons, human_aa))
-            if has_non_synonymous:
+            _, has_non_synonymous = synonymous_codons_for_amino_acid(codons, basis_aa)
+            row.append(normalized_entropy_majority_basis(codons, human_aa))
+            if has_non_synonymous and non_syn_mask is not None:
                 non_syn_mask.at[position + 1, order] = True
         matrix.append(row)
 
@@ -455,7 +494,7 @@ def draw_non_syn_markers(ax: plt.Axes, non_syn_mask: pd.DataFrame) -> None:
 def build_heatmap(
     *,
     entropy_df: pd.DataFrame,
-    non_syn_mask: pd.DataFrame,
+    non_syn_mask: pd.DataFrame | None,
     aa_ref: str,
     output_stem: Path,
     presentation_mode: bool,
@@ -500,7 +539,8 @@ def build_heatmap(
             line_width=1.5,
         )
     draw_highlighted_positions(ax, aa_ref)
-    draw_non_syn_markers(ax, non_syn_mask)
+    if non_syn_mask is not None:
+        draw_non_syn_markers(ax, non_syn_mask)
 
     ax.set_xlabel("")
     ax.set_ylabel("")
@@ -582,7 +622,11 @@ def build_dataset(dataset_name: str, input_dir: Path, output_dir: Path) -> pd.Da
     require_file(protein_path)
     require_file(cds_path)
 
-    entropy_df, non_syn_mask, aa_ref = collect_position_codons(protein_path, cds_path)
+    entropy_df, non_syn_mask, aa_ref = collect_position_codons(
+        protein_path,
+        cds_path,
+        cell_mode=str(dataset_config["cell_mode"]),
+    )
     build_heatmap(
         entropy_df=entropy_df,
         non_syn_mask=non_syn_mask,

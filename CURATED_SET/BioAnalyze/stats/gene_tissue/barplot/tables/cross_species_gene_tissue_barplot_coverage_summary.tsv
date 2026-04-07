@@ -1,0 +1,14 @@
+summary_type	total_combos	total_species	species_count	species_dir	species_name	combo_count	selected_species_dirs	selected_species_names	retained_combo_count	tied_optimal_subset_count	tied_optimal_subsets	output_dir
+species_frequency	6632	9		human	Homo sapiens	4410						
+species_frequency	6632	9		bos_taurus	Bos taurus	2265						
+species_frequency	6632	9		canis_lupus_familiaris	Canis lupus familiaris	1040						
+species_frequency	6632	9		sus_scrofa	Sus scrofa	635						
+species_frequency	6632	9		mus_musculus	Mus musculus	567						
+species_frequency	6632	9		macaca_mulatta	Macaca mulatta	477						
+species_frequency	6632	9		equus_caballus	Equus caballus	450						
+species_frequency	6632	9		pan_troglodytes	Pan troglodytes	324						
+species_frequency	6632	9		felis_catus	Felis catus	204						
+optimal_subset	6632	9	4				human,bos_taurus,canis_lupus_familiaris,sus_scrofa	Homo sapiens,Bos taurus,Canis lupus familiaris,Sus scrofa	178	1	human,bos_taurus,canis_lupus_familiaris,sus_scrofa	C:/dev/GitHub/histonedb_Vladimir/CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/k4
+optimal_subset	6632	9	5				human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,sus_scrofa	Homo sapiens,Bos taurus,Canis lupus familiaris,Macaca mulatta,Sus scrofa	110	1	human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,sus_scrofa	C:/dev/GitHub/histonedb_Vladimir/CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/k5
+optimal_subset	6632	9	6				human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,pan_troglodytes,sus_scrofa	Homo sapiens,Bos taurus,Canis lupus familiaris,Macaca mulatta,Pan troglodytes,Sus scrofa	72	1	human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,pan_troglodytes,sus_scrofa	C:/dev/GitHub/histonedb_Vladimir/CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/k6
+optimal_subset	6632	9	7				human,bos_taurus,canis_lupus_familiaris,felis_catus,macaca_mulatta,pan_troglodytes,sus_scrofa	Homo sapiens,Bos taurus,Canis lupus familiaris,Felis catus,Macaca mulatta,Pan troglodytes,Sus scrofa	30	1	human,bos_taurus,canis_lupus_familiaris,felis_catus,macaca_mulatta,pan_troglodytes,sus_scrofa	C:/dev/GitHub/histonedb_Vladimir/CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/k7

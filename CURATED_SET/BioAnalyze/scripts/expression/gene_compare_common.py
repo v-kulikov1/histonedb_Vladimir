@@ -4,10 +4,23 @@
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional
 
 import pandas as pd
+
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import (
+    get_bioanalyze_data_root,
+    get_bioanalyze_figures_root,
+    get_bioanalyze_stats_root,
+    get_gene_tissue_barplot_root,
+    get_gene_tissue_ranking_root,
+)
 
 from normalized_expression_common import (
     CELL_STATUS_OBSERVED_ZERO,
@@ -16,18 +29,25 @@ from normalized_expression_common import (
 )
 
 
-DEFAULT_HEATMAP_ROOT = Path(r"CURATED_SET/BioAnalyze/figures/heatmaps")
+DEFAULT_HEATMAP_ROOT = get_bioanalyze_figures_root() / "heatmaps"
 DEFAULT_HEATMAP_DIR = DEFAULT_HEATMAP_ROOT / "species"
-DEFAULT_PROCESSED_DIR = Path(r"CURATED_SET/BioAnalyze/data/processed")
-DEFAULT_STATS_DIR = Path(r"CURATED_SET/BioAnalyze/stats")
+DEFAULT_PROCESSED_DIR = get_bioanalyze_data_root() / "processed"
+DEFAULT_STATS_DIR = get_bioanalyze_stats_root()
 DEFAULT_SHARED_STATS_DIR = DEFAULT_STATS_DIR / "shared_genes"
 DEFAULT_ACCESSION_STATS_DIR = DEFAULT_STATS_DIR / "accession_stats"
-DEFAULT_RANKING_STATS_DIR = DEFAULT_STATS_DIR / "ranking"
+DEFAULT_GENE_TISSUE_STATS_DIR = DEFAULT_STATS_DIR / "gene_tissue"
+DEFAULT_RANKING_STATS_DIR = get_gene_tissue_ranking_root()
 DEFAULT_RANKING_TABLES_DIR = DEFAULT_RANKING_STATS_DIR / "tables"
 DEFAULT_RANKING_REPORTS_DIR = DEFAULT_RANKING_STATS_DIR / "reports"
 DEFAULT_RANKING_PLOTS_DIR = DEFAULT_RANKING_STATS_DIR / "plots"
+DEFAULT_GENE_TISSUE_BARPLOT_DIR = get_gene_tissue_barplot_root()
+DEFAULT_GENE_TISSUE_BARPLOT_TABLES_DIR = DEFAULT_GENE_TISSUE_BARPLOT_DIR / "tables"
+DEFAULT_GENE_TISSUE_BARPLOT_PLOTS_DIR = DEFAULT_GENE_TISSUE_BARPLOT_DIR / "plots"
+DEFAULT_GENE_TISSUE_BOXPLOT_DIR = DEFAULT_GENE_TISSUE_BARPLOT_DIR
+DEFAULT_GENE_TISSUE_BOXPLOT_TABLES_DIR = DEFAULT_GENE_TISSUE_BARPLOT_TABLES_DIR
+DEFAULT_GENE_TISSUE_BOXPLOT_PLOTS_DIR = DEFAULT_GENE_TISSUE_BARPLOT_PLOTS_DIR
 DEFAULT_GENE_COMPARE_FIG_ROOT = DEFAULT_HEATMAP_ROOT / "gene_compare"
-DEFAULT_GENE_COMPARE_DATA_ROOT = Path(r"CURATED_SET/BioAnalyze/data/gene_compare")
+DEFAULT_GENE_COMPARE_DATA_ROOT = get_bioanalyze_data_root() / "gene_compare"
 DEFAULT_RANKING_OUT_DIR = DEFAULT_RANKING_STATS_DIR
 DEFAULT_INDEX_DIR = DEFAULT_GENE_COMPARE_DATA_ROOT / "index"
 DEFAULT_SHARED_INDEX = DEFAULT_SHARED_STATS_DIR / "shared_h2a_gene_names_across_species.csv"
@@ -40,6 +60,10 @@ GENERIC_TISSUES = {
     "material anatomical entity",
     "anatomical system",
     "multicellular organism",
+}
+CROSS_SPECIES_CLASS_COLORS = {
+    "clustered": "#6ea6c8",
+    "variant": "#C06C3E",
 }
 
 

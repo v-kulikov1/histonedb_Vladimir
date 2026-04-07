@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 from typing import Dict, List, Sequence
 
@@ -12,6 +13,11 @@ from matplotlib.patches import Rectangle
 import numpy as np
 import pandas as pd
 
+BIOANALYZE_SCRIPTS_ROOT = Path(__file__).resolve().parents[1]
+if str(BIOANALYZE_SCRIPTS_ROOT) not in sys.path:
+    sys.path.insert(0, str(BIOANALYZE_SCRIPTS_ROOT))
+
+from bioanalyze_paths import get_bioanalyze_data_root, get_bioanalyze_figures_root
 from gene_compare_common import GENERIC_TISSUES, normalize_map_df
 from normalized_expression_common import (
     build_species_heatmap_display_index,
@@ -20,13 +26,11 @@ from normalized_expression_common import (
 )
 
 
-DEFAULT_EXPR_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/homo_sapiens_expr_advanced_H2A_present_gold.tsv"
+DEFAULT_EXPR_TSV = (
+    get_bioanalyze_data_root() / "processed" / "homo_sapiens" / "homo_sapiens_expr_advanced_H2A_present_gold.tsv"
 )
-DEFAULT_MAP_TSV = Path(
-    r"CURATED_SET/BioAnalyze/data/processed/homo_sapiens/h2a_hs_canonical_variant_map.tsv"
-)
-DEFAULT_OUT_DIR = Path(r"CURATED_SET/BioAnalyze/figures/boxplot/human")
+DEFAULT_MAP_TSV = get_bioanalyze_data_root() / "processed" / "homo_sapiens" / "h2a_hs_canonical_variant_map.tsv"
+DEFAULT_OUT_DIR = get_bioanalyze_figures_root() / "boxplot" / "human"
 DEFAULT_GENERIC_TISSUES = sorted(GENERIC_TISSUES)
 PRESENTATION_GENE_ORDER = [
     "H2AC1",
@@ -343,7 +347,7 @@ def plot_boxplot(
     box = ax.boxplot(
         data,
         vert=False,
-        tick_labels=list(tick_labels),
+        labels=list(tick_labels),
         patch_artist=True,
         widths=0.68,
         showfliers=True,

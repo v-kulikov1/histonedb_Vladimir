@@ -1,0 +1,4 @@
+-r requirements.txt
+ipykernel==6.29.5
+jupyter==1.1.1
+notebook==7.2.2

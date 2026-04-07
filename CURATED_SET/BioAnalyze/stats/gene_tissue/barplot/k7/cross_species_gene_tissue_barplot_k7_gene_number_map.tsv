@@ -1,0 +1,7 @@
+axis	gene_number	gene_name	gene_class	canonical_label
+OY	1	H2AC14	clustered	H2AC14:HGNC:4727
+OY	2	H2AJ	variant	H2AJ:HGNC:14456
+OY	3	H2AZ1	variant	H2AZ1:HGNC:4741
+OY	4	H2AZ2	variant	H2AZ2:HGNC:20664
+OY	5	MACROH2A1	variant	MACROH2A1:HGNC:4740
+OY	6	MACROH2A2	variant	MACROH2A2:HGNC:14453

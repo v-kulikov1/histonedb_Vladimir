@@ -1,6 +1,6 @@
 ﻿# BioAnalyze H2A Merge Worklog
 
-Last updated: 2026-03-31
+Last updated: 2026-04-07
 
 Goal
 - Build a single H2A dataset for mammalia + human with consistent taxonomy fields, gene identifiers, and symbol-style gene names.
@@ -8,6 +8,33 @@ Goal
 
 Canonical Output (current)
 - CURATED_SET/BioAnalyze/data/merged/mammalia_H2A_merged_with_taxonomy_v4.csv
+
+Environment Normalization (2026-04-04)
+- Goal:
+  - Make BioAnalyze reproducible on Windows with a repo-local `.venv` and
+    remove hard-coded `C:\Users\USER\...` defaults from active CLI entrypoints.
+- Added:
+  - `CURATED_SET/BioAnalyze/requirements.txt`
+  - `CURATED_SET/BioAnalyze/requirements-dev.txt`
+  - `CURATED_SET/BioAnalyze/README.md`
+  - `CURATED_SET/BioAnalyze/scripts/bioanalyze_paths.py`
+  - `tools/setup_bioanalyze_env.ps1`
+- Environment policy:
+  - recommended interpreter is `Python 3.11 x64`
+  - standard runtime lives in repo-local `.venv`
+  - notebook extras are optional and installed from `requirements-dev.txt`
+- Path policy:
+  - external storage now resolves from `HISTONEDB_EXTERNAL_STORAGE`
+  - fallback is the sibling directory next to the repo:
+    `..\histonedb_external_storage`
+- Script defaults updated:
+  - `scripts/expression/build_human_h2a_ntpm_gene_expression.py`
+  - `scripts/expression/build_bgee_h2a_heatmaps_remaining_species_batch.py`
+  - `scripts/expression/audit_bgee_h2a_expression_sources.py`
+  - `scripts/codons/build_codon_heatmaps.py`
+  - `scripts/codons/build_codon_heatmaps_all61.py`
+  - `scripts/h2aj_synteny/build_h2aj_synteny_plot.py`
+  - `scripts/h2aj_tree/rebuild_h2aj_tree_history.py`
 
 Key Inputs
 - CURATED_SET/mammalia_genes/*_genes_vgnc.csv
@@ -1218,3 +1245,200 @@ Human HPA vs Bgee cH2A Compare Heatmaps (2026-04-01)
     - no genes fell into `insufficient_pairs` in the current dataset
 - Expected compare matrix shape:
   - `17 x 35` for both HPA and Bgee after the fixed gene/tissue mapping is applied.
+
+Cross-Species Gene:Tissue Boxplots + Path Migration (2026-04-04)
+- Added a shared BioAnalyze path helper:
+  - `CURATED_SET/BioAnalyze/scripts/bioanalyze_paths.py`
+  - Purpose:
+    - resolve the repo-local BioAnalyze root from the current script location
+    - avoid new hard-coded `CURATED_SET/BioAnalyze/...` defaults in expression scripts
+- Updated expression-script defaults to use the path helper instead of the old
+  hard-coded prefix.
+- Moved the default cross-species ranking output tree from:
+  - `CURATED_SET/BioAnalyze/stats/ranking/`
+  to:
+  - `CURATED_SET/BioAnalyze/stats/gene_tissue/ranking/`
+- Added a new cross-species boxplot workflow:
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_cross_species_gene_tissue_boxplots.py`
+- New boxplot output tree:
+  - `CURATED_SET/BioAnalyze/stats/gene_tissue/boxplot/tables/`
+  - `CURATED_SET/BioAnalyze/stats/gene_tissue/boxplot/plots/`
+- Boxplot workflow design:
+  - species coverage is estimated from `data/gene_compare/*/*_gene_compare_long.csv`
+    after removing generic tissues
+  - plotted values are rebuilt from the same ranking-compatible species-level
+    mean layer used by the cross-species ranking workflow
+  - each figure keeps only the selected subset species for its `k`, even if a
+    `gene:tissue` combination exists in more species overall
+  - horizontal boxplots use `x = expression score` and `y = gene:tissue`
+  - clustered and variant boxes reuse the cross-species ranking colors
+- Current comparable cross-species layer:
+  - 9 species are currently represented in `gene_compare`
+  - the remaining processed species still absent from the current
+    cross-species layer are:
+    - `cavia_porcellus`
+    - `heterocephalus_glaber`
+    - `oryctolagus_cuniculus`
+- Species-frequency summary across all comparable `gene:tissue` combinations:
+  - `human`: 4410
+  - `bos_taurus`: 2265
+  - `canis_lupus_familiaris`: 1040
+  - `sus_scrofa`: 635
+  - `mus_musculus`: 567
+  - `macaca_mulatta`: 477
+  - `equus_caballus`: 450
+  - `pan_troglodytes`: 324
+  - `felis_catus`: 204
+- Overlap-optimal fixed-species subsets and retained `gene:tissue` counts:
+  - `k=4`: `human,bos_taurus,canis_lupus_familiaris,sus_scrofa` -> `178`
+  - `k=5`: `human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,sus_scrofa` -> `110`
+  - `k=6`: `human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,pan_troglodytes,sus_scrofa` -> `72`
+  - `k=7`: `human,bos_taurus,canis_lupus_familiaris,felis_catus,macaca_mulatta,pan_troglodytes,sus_scrofa` -> `30`
+- Boxplot outputs written:
+  - coverage summary:
+    - `CURATED_SET/BioAnalyze/stats/gene_tissue/boxplot/tables/cross_species_gene_tissue_boxplot_coverage_summary.tsv`
+  - per-`k` stats tables:
+    - `cross_species_gene_tissue_boxplot_stats_k4.tsv`
+    - `cross_species_gene_tissue_boxplot_stats_k5.tsv`
+    - `cross_species_gene_tissue_boxplot_stats_k6.tsv`
+    - `cross_species_gene_tissue_boxplot_stats_k7.tsv`
+  - per-`k` source tables:
+    - `cross_species_gene_tissue_boxplot_source_k4.tsv`
+    - `cross_species_gene_tissue_boxplot_source_k5.tsv`
+    - `cross_species_gene_tissue_boxplot_source_k6.tsv`
+    - `cross_species_gene_tissue_boxplot_source_k7.tsv`
+  - paginated figures:
+    - `k=4`: 3 page(s)
+    - `k=5`: 2 page(s)
+    - `k=6`: 2 page(s)
+    - `k=7`: 1 page(s)
+- Validation:
+  - `python -m compileall` passed for `CURATED_SET/BioAnalyze/scripts/expression/`
+    and `scripts/bioanalyze_paths.py`
+  - reran:
+    - `rank_cross_species_h2a_differences.py`
+    - `plot_cross_species_candidate_panels.py --include-class-high-panels --include-global-low-panels --include-class-low-panels`
+    - `build_cross_species_gene_tissue_boxplots.py`
+  - confirmed the boxplot workflow reproduced the expected retained counts:
+    `178 / 110 / 72 / 30`
+
+Cross-Species Gene:Tissue Single-Figure Presentation Update (2026-04-06)
+- Goal:
+  - Replace the paginated cross-species `gene:tissue` boxplot pages with
+    single-figure presentation outputs for each fixed-species subset
+    `k=4/5/6/7`, while keeping the same ranking-compatible numeric layer.
+- Script updated:
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_cross_species_gene_tissue_boxplots.py`
+- Presentation changes:
+  - each `k` now writes one combined figure instead of multiple pages
+  - rows are ordered as:
+    - `clustered` first
+    - `variant` second
+    - within each class, the existing heatmap order from `sort_gene_labels`
+    - within each gene, anatomical entities sorted alphabetically
+  - long row labels were replaced by compact `gene_number:anatomical_entity_letter`
+    codes
+  - separate gene and anatomical-entity legend figures plus mapping TSVs are
+    exported beside each main figure
+  - split presentation outputs are written under:
+    - `stats/gene_tissue/boxplot/k*/by_class/clustered/`
+    - `stats/gene_tissue/boxplot/k*/by_class/variant/`
+  - split figures reuse the same global numbering/lettering as the combined
+    figure for the same `k`
+- Validation:
+  - retained row counts stayed unchanged:
+    - `k=4 -> 178`
+    - `k=5 -> 110`
+    - `k=6 -> 72`
+    - `k=7 -> 30`
+
+Cross-Species Gene:Tissue Mean+STD Barplots (2026-04-06)
+- Goal:
+  - Replace the short-lived cross-species Tukey boxplot presentation route with
+    a clearer inter-species summary that shows:
+    - one bar per retained `gene:anatomical_entity`
+    - mean across selected species-level means
+    - symmetric `± std` whiskers across those species-level means
+- Output migration:
+  - the active output root moved from:
+    - `CURATED_SET/BioAnalyze/stats/gene_tissue/boxplot/`
+    to:
+    - `CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/`
+  - ranking outputs remain under:
+    - `CURATED_SET/BioAnalyze/stats/gene_tissue/ranking/`
+- Script/path updates:
+  - `CURATED_SET/BioAnalyze/scripts/expression/build_cross_species_gene_tissue_boxplots.py`
+    now computes barplot summaries instead of Tukey quartiles/whiskers
+  - `CURATED_SET/BioAnalyze/scripts/expression/gene_compare_common.py`
+    now points the active cross-species plot defaults at the `barplot` root
+  - `CURATED_SET/BioAnalyze/scripts/bioanalyze_paths.py`
+    is the shared resolver used by active BioAnalyze scripts instead of
+    hard-coded repo fragments
+- Current barplot semantics:
+  - source TSVs still keep one row per retained
+    `gene:anatomical_entity × species`
+  - the plotted bar value is the arithmetic mean of those selected species
+    points
+  - the whiskers are sample standard deviation with `ddof=1`
+  - `observed_zero` species remain explicit `0.0` inputs
+- Current layout:
+  - combined outputs:
+    - `stats/gene_tissue/barplot/k4/`
+    - `stats/gene_tissue/barplot/k5/`
+    - `stats/gene_tissue/barplot/k6/`
+    - `stats/gene_tissue/barplot/k7/`
+  - split outputs:
+    - `stats/gene_tissue/barplot/k*/by_class/clustered/`
+    - `stats/gene_tissue/barplot/k*/by_class/variant/`
+  - each folder contains:
+    - source TSV
+    - stats TSV
+    - gene-number map TSV
+    - anatomical-entity-letter map TSV
+    - main PNG/SVG
+    - gene legend PNG/SVG
+    - anatomical-entity legend PNG/SVG
+- Current species subsets and retained counts:
+  - `k=4`: `human,bos_taurus,canis_lupus_familiaris,sus_scrofa` -> `178`
+  - `k=5`: `human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,sus_scrofa` -> `110`
+  - `k=6`: `human,bos_taurus,canis_lupus_familiaris,macaca_mulatta,pan_troglodytes,sus_scrofa` -> `72`
+  - `k=7`: `human,bos_taurus,canis_lupus_familiaris,felis_catus,macaca_mulatta,pan_troglodytes,sus_scrofa` -> `30`
+- Presentation adjustments after the first barplot rebuild:
+  - split class figures now show only their own class in the legend
+  - `clustered` color was restored to the earlier blue:
+    - `#6ea6c8`
+  - `variant` remains:
+    - `#C06C3E`
+- Verification:
+  - reran:
+    - `CURATED_SET/BioAnalyze/scripts/expression/build_cross_species_gene_tissue_boxplots.py`
+  - confirmed combined and split counts:
+    - `k=4`: `178 = 78 clustered + 100 variant`
+    - `k=5`: `110 = 40 clustered + 70 variant`
+    - `k=6`: `72 = 12 clustered + 60 variant`
+    - `k=7`: `30 = 5 clustered + 25 variant`
+
+Variant k=5 Presentation Subset Without Genes 6 and 7 (2026-04-07)
+- Goal:
+  - Prepare a presentation-specific copy of the `k=5` variant barplot panel
+    with genes `6` and `7` removed, while leaving the main `k5/by_class/variant`
+    outputs untouched.
+- Source panel:
+  - `CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/k5/by_class/variant/`
+- Removed gene numbers:
+  - `6 = H2AZ2`
+  - `7 = MACROH2A1`
+- Output folder:
+  - `CURATED_SET/BioAnalyze/stats/gene_tissue/barplot/k5/by_class/variant/without_genes_6_7/`
+- Contents written:
+  - `cross_species_gene_tissue_barplot_variant_k5_without_genes_6_7_source.tsv`
+  - `cross_species_gene_tissue_barplot_variant_k5_without_genes_6_7_stats.tsv`
+  - `cross_species_gene_tissue_barplot_variant_k5_without_genes_6_7_gene_number_map.tsv`
+  - `cross_species_gene_tissue_barplot_variant_k5_without_genes_6_7_anatomical_entity_letter_map.tsv`
+  - `cross_species_gene_tissue_barplot_variant_k5_without_genes_6_7.(png|svg)`
+  - gene and anatomical-entity legends in both `png` and `svg`
+- Renumbering:
+  - numbering is compacted only inside this presentation-specific subfolder
+  - in the current `k5` variant dataset this means the surviving former
+    gene `8` becomes `6`
+  - no other source folders are changed
